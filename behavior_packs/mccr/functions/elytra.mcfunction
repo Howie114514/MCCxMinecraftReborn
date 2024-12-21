@@ -1,0 +1,3 @@
+execute as @s unless entity @s[hasitem=[{item=minecraft:elytra,location=slot.armor.chest}]] run particle noxcrew.ft:elytra_gate
+execute as @s unless entity @s[hasitem=[{item=minecraft:elytra,location=slot.armor.chest}]] run titleraw @s actionbar {"rawtext":[{ "translate": "txt.misc.msg7" }]}
+execute as @s unless entity @s[hasitem=[{item=minecraft:elytra,location=slot.armor.chest}]] run replaceitem entity @s slot.armor.chest 0 minecraft:elytra 1 0 {"item_lock": { "mode": "lock_in_slot" } }

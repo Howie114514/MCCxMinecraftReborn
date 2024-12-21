@@ -1,0 +1,135 @@
+import@{Vector3,BlockVolume}:"\@minecraft/server"
+
+export const@points
+objstart
+#起点
+kv3@start 56.02 66.14 2169.45
+objend
+export const@doors
+arrstart
+bv@54 66 2175 57 69 2175
+bv@40 66 2193 40 69 2190
+bv@8 66 2189 8 69 2186
+bv@-18 67 2160 -15 70 2160
+bv@-18 68 2128 -15 71 2128
+bv@7 68 2102 7 71 2105
+bv@47 69 2094 47 72 2097
+bv@65 75 2127 62 78 2127
+arrend
+export const@structure_points/Record<string,BlockVolume>
+objstart
+kbv@r1 48 65 2162 59 70 2173
+kbv@r2 41 65 2177 70 82 2206
+kbv@r3 9 64 2177 38 88 2206
+kbv@r4 -31 65 2161 6 84 2198
+kbv@r5 -28 65 2129 -2 82 2148
+kbv@r6 -31 64 2089 6 83 2126
+kbv@r7 9 64 2081 46 84 2118
+kbv@r8 49 64 2082 94 84 2126
+objend
+
+#硬编码房间融化顺序（迫真）
+export const@hardcoded_melt_order/number[][]
+arrstart
+#room0
+range@10~16
+#room1
+arr@2 7 10 11 12
+arrend
+
+export const@spawners
+arrstart
+arr@
+arrstart
+v3@65 66 2194
+v3@46 66 2182
+v3@44 66 2203
+arrend
+,
+arrstart
+v3@35 65 2204
+v3@30 65 2199
+v3@28 71 2192
+v3@26 65 2192
+v3@32 71 2179
+v3@15 71 2178
+arrend
+,
+arrstart
+v3@-10 66 2187
+v3@0 66 2170
+v3@-19 66 2169
+v3@-19 70 2174
+v3@-25 72 2183
+v3@-13 73 2194
+v3@-1 73 2176
+v3@-13 73 2194
+v3@2 73 2189
+arrend
+,
+arrstart
+v3@-26 67 2154
+v3@-4 67 2155
+v3@-4 67 2143
+v3@-17 67 2146
+v3@-29 68 2135
+v3@-30 72 2144
+v3@-5 73 2146
+v3@-13 68 2135
+v3@-21 75 2135
+arrend
+,
+arrstart
+v3@-28 68 2123
+v3@-18 68 2113
+v3@-25 72 2103
+v3@-20 66 2101
+v3@-8 66 2100
+v3@-2 75 2097
+v3@3 68 2090
+v3@4 68 2109
+v3@1 72 2114
+v3@-1 66 2118
+arrend
+,
+arrstart
+v3@12 75 2114
+v3@28 80 2118
+v3@43 75 2114
+v3@42 69 2114
+v3@34 71 2106
+v3@42 69 2102
+v3@34 71 2096
+v3@27 77 2082
+v3@11 73 2095
+v3@27 77 2082
+v3@41 74 2084
+v3@41 69 2083
+v3@19 68 2117
+arrend
+,
+arrstart
+v3@53 69 2085
+v3@71 70 2084
+v3@71 66 2104
+v3@51 75 2123
+v3@54 71 2123
+v3@68 75 2123
+v3@75 69 2125
+v3@87 69 2122
+v3@88 66 2106
+v3@93 70 2094
+arrend
+arrend
+
+export const@mobs
+arrstart
+arr@
+arr@"noxcrew.ft:md_zombie"
+arr@"noxcrew.ft:md_zombie"
+arr@"noxcrew.ft:md_spider"
+arr@"noxcrew.ft:md_spider" "noxcrew.ft:md_skeleton"
+arr@"noxcrew.ft:md_zombie" "noxcrew.ft:md_blaze"
+arr@"noxcrew.ft:md_skeleton" "noxcrew.ft:md_vindicator"
+arr@"noxcrew.ft:md_blaze" "noxcrew.ft:md_skeleton" "noxcrew.ft:md_vindicator"
+arrend

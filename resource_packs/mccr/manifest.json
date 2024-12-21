@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "MCC复原包",
+    "description": "",
+    "uuid": "73ce64e5-bfce-4fe3-bcdd-338d60f361d1",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 30]
+  },
+  "modules": [
+    {
+      "description": "My Resource Pack",
+      "type": "resources",
+      "uuid": "4d4a5d69-e160-4e74-a2f2-5488bc065a22",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "653b3ae1-4d4d-402b-bc03-b0d5bb5a07fc",
+      "version": [1, 0, 0]
+    }
+  ]
+}

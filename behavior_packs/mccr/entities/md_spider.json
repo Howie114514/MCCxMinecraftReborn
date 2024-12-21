@@ -1,0 +1,186 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew.ft:md_spider",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "noxcrew.ft:frozen": {
+          "client_sync": true,
+          "default": false,
+          "type": "bool"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["md_mob"] },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["mccr:normal"]
+        }
+      },
+      "mccr:freeze": {
+        "remove": {
+          "component_groups": ["mccr:normal"]
+        },
+        "add": {
+          "component_groups": ["mccr:frozen"]
+        },
+        "set_property": {
+          "noxcrew.ft:frozen": true
+        }
+      },
+      "mccr:melt": {
+        "add": {
+          "component_groups": ["mccr:normal"]
+        },
+        "remove": {
+          "component_groups": ["mccr:frozen"]
+        },
+        "set_property": { "noxcrew.ft:frozen": false }
+      }
+    },
+    "component_groups": {
+      "mccr:frozen": {
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "all",
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "mccr:normal": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "projectile",
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "snowgolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  }
+                ]
+              },
+              "max_dist": 16
+            }
+          ],
+          "attack_interval": 5,
+          "must_see": true
+        },
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 5 : 0"
+        },
+        "minecraft:nameable": {},
+        "minecraft:breathable": {
+          "total_supply": 15,
+          "suffocate_time": 0
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/spider.json"
+        },
+        "minecraft:collision_box": {
+          "width": 1.4,
+          "height": 0.9
+        },
+        "minecraft:health": {
+          "value": 16,
+          "max": 16
+        },
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+              "cause": "lava",
+              "damage_per_tick": 4
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.3
+        },
+        "minecraft:navigation.climb": {
+          "can_path_over_water": true,
+          "blocks_to_avoid": ["minecraft:structure_void"]
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:jump.static": {},
+        "minecraft:can_climb": {},
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1.0,
+          "track_target": true,
+          "reach_multiplier": 0.8
+        },
+        "minecraft:behavior.float": {
+          "priority": 1
+        },
+        "minecraft:behavior.mount_pathing": {
+          "priority": 5,
+          "speed_multiplier": 1.25,
+          "target_dist": 0.0,
+          "track_target": true
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 6,
+          "speed_multiplier": 0.8
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 7,
+          "look_distance": 6.0,
+          "probability": 0.02
+        },
+        "minecraft:behavior.random_look_around": {
+          "priority": 7
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": ["zombie"],
+          "seats": {
+            "position": [0.0, 0.54, -0.1]
+          }
+        },
+        "minecraft:physics": {},
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        }
+      }
+    }
+  }
+}

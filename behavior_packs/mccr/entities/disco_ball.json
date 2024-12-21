@@ -1,0 +1,50 @@
+{
+  "format_version": "1.20.40",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew.ft:disco_ball",
+      "is_experimental": false,
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "events": {
+      "mccr:despawn": {
+        "add": {
+          "component_groups": ["despawn"]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "queue_command": { "command": "playsound disco_ball_music @a ~ ~ ~" }
+      }
+    },
+    "component_groups": {
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:timer": {
+        "time": 10,
+        "looping": false,
+        "time_down_event": {
+          "event": "mccr:despawn",
+          "target": "self"
+        }
+      }
+    }
+  }
+}

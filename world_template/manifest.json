@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "MCC X Minecraft",
+    "uuid": "b263cccf-4dc9-4163-bab7-0e400dcf1861",
+    "version": [1, 0, 0],
+    "base_game_version": [1, 21, 2],
+    "min_engine_version": [1, 21, 2]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "world_template",
+      "uuid": "7fddfa04-f8bb-495f-ab4c-a520a5b72502",
+      "version": [1, 0, 0]
+    }
+  ]
+}

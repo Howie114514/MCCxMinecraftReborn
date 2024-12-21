@@ -1,0 +1,1 @@
+execute as @e[type=noxcrew.ft:hub_coin] at @s positioned ~~~ as @p[r=0.5] run scriptevent mccr:collect_coins _

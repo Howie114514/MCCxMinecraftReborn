@@ -1,0 +1,208 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew.ft:md_zombie",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": true,
+      "properties": {
+        "noxcrew.ft:frozen": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["md_mob"] },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:absorption": {
+        "max": 16,
+        "min": 0,
+        "value": 0
+      },
+      "minecraft:collision_box": {
+        "height": 1.8,
+        "width": 0.6
+      },
+      "minecraft:health": {
+        "max": 20,
+        "min": 0,
+        "value": 20
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:lava_movement": {
+        "min": 0,
+        "value": 0
+      },
+      "minecraft:luck": {
+        "max": 1024,
+        "min": -1024,
+        "value": 0
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {
+        "always_show": true
+      },
+      "minecraft:push_through": 1,
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:underwater_movement": {
+        "min": 0,
+        "value": 0
+      }
+    },
+    "component_groups": {
+      "mccr:frozen": {
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "all",
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "mccr:normal": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "projectile",
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:navigation.walk": {
+          "blocks_to_avoid": ["minecraft:structure_void"]
+        },
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:behavior.equip_item": {
+          "priority": 2
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3
+        },
+        "minecraft:behavior.stomp_turtle_egg": {
+          "priority": 4,
+          "speed_multiplier": 1,
+          "search_range": 10,
+          "search_height": 2,
+          "goal_radius": 1.14,
+          "interval": 20
+        },
+        "minecraft:behavior.pickup_items": {
+          "priority": 6,
+          "max_dist": 3,
+          "goal_radius": 2,
+          "speed_multiplier": 1.0,
+          "pickup_based_on_chance": true,
+          "can_pickup_any_item": true,
+          "excluded_items": ["minecraft:glow_ink_sac"]
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 7,
+          "speed_multiplier": 1
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 8,
+          "look_distance": 6,
+          "probability": 0.02
+        },
+        "minecraft:behavior.random_look_around": {
+          "priority": 9
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 25.0,
+          "must_see_forget_duration": 17.0,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test": "is_family", "subject": "other", "value": "player" },
+                  { "test": "is_family", "subject": "other", "value": "snowgolem" },
+                  { "test": "is_family", "subject": "other", "value": "irongolem" }
+                ]
+              },
+              "max_dist": 35
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test": "is_family", "subject": "other", "value": "villager" },
+                  { "test": "is_family", "subject": "other", "value": "wandering_trader" }
+                ]
+              },
+              "max_dist": 35,
+              "must_see": false
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "is_family", "subject": "other", "value": "baby_turtle" },
+                  { "test": "in_water", "subject": "other", "operator": "!=", "value": true }
+                ]
+              },
+              "max_dist": 35
+            }
+          ]
+        },
+        "minecraft:physics": {},
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:conditional_bandwidth_optimization": {}
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["mccr:normal"]
+        }
+      },
+      "mccr:freeze": {
+        "remove": {
+          "component_groups": ["mccr:normal"]
+        },
+        "add": {
+          "component_groups": ["mccr:frozen"]
+        },
+        "set_property": {
+          "noxcrew.ft:frozen": true
+        }
+      },
+      "mccr:melt": {
+        "add": {
+          "component_groups": ["mccr:normal"]
+        },
+        "remove": {
+          "component_groups": ["mccr:frozen"]
+        },
+        "set_property": { "noxcrew.ft:frozen": false }
+      }
+    }
+  }
+}

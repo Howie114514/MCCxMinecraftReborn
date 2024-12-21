@@ -1,0 +1,136 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "pet_frog",
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.frog_prince.1_1.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.frog_prince.1_1.dia2"
+            },
+            {
+              "text": "\n\n"
+            }
+          ]
+        }
+      },
+      {
+        "scene_tag": "talk_frog",
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.frog_prince.1_2.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.frog_prince.1_2.dia2"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.frog_prince.1_2.dia3"
+            }
+          ]
+        }
+      },
+      {
+        "scene_tag": "kiss_frog",
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.frog_prince.2_0.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.frog_prince.2_0.dia2"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.frog_prince.2_0.dia3"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.frog_prince.2_0.dia4"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "dialog.prince.btn"
+                }
+              ]
+            },
+            "commands": ["scriptevent mccr:transform", "dialogue change @s frog_intro"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "frog_intro",
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.frog_prince.1_0.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.frog_prince.1_0.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.pet_frog"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @s @initiator pet_frog"]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.talk_frog"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @s @initiator talk_frog"]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.kiss_frog"
+                }
+              ]
+            },
+            "commands": ["/function frog"]
+          }
+        ]
+      }
+    ]
+  }
+}

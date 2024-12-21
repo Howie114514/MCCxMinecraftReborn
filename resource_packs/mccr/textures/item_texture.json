@@ -1,0 +1,9 @@
+{
+  "resource_pack_name": "mccr",
+  "texture_data": {
+    "applaud": {
+      "textures": ["textures/ui/permissions_visitor_hand"]
+    }
+  },
+  "texture_name": "atlas.items"
+}

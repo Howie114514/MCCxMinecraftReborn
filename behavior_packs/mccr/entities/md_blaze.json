@@ -1,0 +1,159 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew.ft:md_blaze",
+      "is_experimental": true,
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "noxcrew.ft:frozen": {
+          "client_sync": true,
+          "default": false,
+          "type": "bool"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["md_mob"] }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["mccr:normal"]
+        }
+      },
+      "mccr:freeze": {
+        "add": {
+          "component_groups": ["mccr:frozen"]
+        },
+        "remove": {
+          "component_groups": ["mccr:normal"]
+        },
+        "set_property": { "noxcrew.ft:frozen": true }
+      },
+      "mccr:melt": {
+        "add": {
+          "component_groups": ["mccr:normal"]
+        },
+        "remove": {
+          "component_groups": ["mccr:frozen"]
+        },
+        "set_property": { "noxcrew.ft:frozen": false }
+      }
+    },
+    "component_groups": {
+      "mccr:frozen": {
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "all",
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "mccr:normal": {
+        "minecraft:behavior.melee_attack": {
+          "priority": 3
+        },
+
+        "minecraft:collision_box": {
+          "width": 0.5,
+          "height": 1.8
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            { "cause": "fall", "deals_damage": false },
+            { "cause": "projectile", "deals_damage": false }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.23
+        },
+        "minecraft:navigation.walk": {
+          "can_path_over_water": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": true,
+          "blocks_to_avoid": ["minecraft:structure_void"]
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:jump.static": {},
+        "minecraft:can_climb": {},
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": {
+                "test": "in_contact_with_water",
+                "operator": "==",
+                "value": true
+              },
+              "cause": "drowning",
+              "damage_per_tick": 1
+            }
+          ]
+        },
+        "minecraft:follow_range": {
+          "value": 48,
+          "max": 48
+        },
+        "minecraft:fire_immune": {},
+        "minecraft:nameable": {},
+        "minecraft:despawn": {
+          "despawn_from_distance": {}
+        },
+        "minecraft:behavior.float": {
+          "priority": 0
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:attack": {
+          "damage": 4
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 48.0
+            }
+          ]
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:behavior.random_look_around": {
+          "priority": 5
+        },
+        "minecraft:physics": {},
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:on_hurt": {
+          "event": "minecraft:on_hurt_event",
+          "target": "self"
+        },
+        "minecraft:on_hurt_by_player": {
+          "event": "minecraft:on_hurt_event",
+          "target": "self"
+        },
+        "minecraft:conditional_bandwidth_optimization": {}
+      }
+    }
+  }
+}

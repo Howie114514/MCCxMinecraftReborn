@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "MCC复原包",
+    "description": "",
+    "uuid": "653b3ae1-4d4d-402b-bc03-b0d5bb5a07fc",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 30]
+  },
+  "modules": [
+    {
+      "description": "Script resources",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "624bf704-64d9-4195-a33b-02e5949fa61b",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    },
+    {
+      "description": "data",
+      "type": "data",
+      "uuid": "a8353bf8-7d5f-47f2-bd88-89f1eebd7c85",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.16.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.4.0-beta"
+    },
+    {
+      "uuid": "73ce64e5-bfce-4fe3-bcdd-338d60f361d1",
+      "version": [1, 0, 0]
+    }
+  ]
+}
