@@ -1,7 +1,8 @@
-import { Entity, Player } from "@minecraft/server";
+import { Entity, Player, system, world } from "@minecraft/server";
 
 /**
  * 适配插件
+ * https://github.com/Howie114514/MCCxMinecraft-plugin
  */
 export namespace network {
   export function syncEntityProperty(
@@ -10,6 +11,6 @@ export namespace network {
     property: string,
     value: boolean | number | string
   ) {
-    target.runCommand(`mccr syncprop ${player.name} ${property} ${JSON.stringify(value)}`);
+    return target.runCommand(`mccr syncprop ${player.name} ${property} ${JSON.stringify(value)}`).successCount >= 1;
   }
 }

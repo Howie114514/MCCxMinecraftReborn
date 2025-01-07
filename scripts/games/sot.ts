@@ -34,6 +34,8 @@ import { inventory } from "../inventory";
 import { overworld } from "../constants";
 import { showSubTitle } from "../ui/title";
 import { Logger } from "../logger";
+import environment, { envTypes } from "../environment";
+import { network } from "../network";
 
 export type SOTPlayerData = {
   collected_items: Record<string, boolean>;
@@ -342,7 +344,7 @@ export class SandOfTime extends BasicGame {
         } else {
           p.onScreenDisplay.setActionBar("您已经捡起过这个钥匙。");
         }
-      } else {
+      } else if (environment !== envTypes.pluginLoaderWithPlugin) {
         let p = playerByEntity(ev.damagingEntity);
         this.player_data[p.name].collected_items[
           "mccr:collected_a" + Vec3Utils.toMiniString(Vector3Utils.floor(ev.hitEntity.location))
@@ -358,6 +360,23 @@ export class SandOfTime extends BasicGame {
           );
           ul(p);
           ev.hitEntity.setProperty("noxcrew.ft:collected", true);
+        }
+      } else {
+        let p = playerByEntity(ev.damagingEntity);
+        this.player_data[p.name].collected_items[
+          "mccr:collected_a" + Vec3Utils.toMiniString(Vector3Utils.floor(ev.hitEntity.location))
+        ] = true;
+        let collected = ev.hitEntity.getProperty("noxcrew.ft:collected");
+        if (!collected) {
+          overworld.spawnParticle("noxcrew.ft:key_collect", ev.hitEntity.location);
+          showSubTitle(
+            p,
+            new Text()
+              .txt(String.fromCharCode(57747 - (ev.hitEntity.getProperty("noxcrew.ft:unlock_type") as number)))
+              .tr("txt.sot.key")
+          );
+          ul(p);
+          network.syncEntityProperty(ev.hitEntity, p, "noxcrew.ft:collected", true);
         }
       }
     }
