@@ -243,7 +243,6 @@ export class ComplexGame {
       this.tick++;
       if (world.getAllPlayers().length > 0) {
         this.queue.minCount = Math.min(world.getAllPlayers().length, 4);
-        //console.log(this.queue.minCount);
         if (this.queue.items.length >= this.queue.minCount) {
           if (!this.started) this.start();
         }

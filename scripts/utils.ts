@@ -15,7 +15,6 @@ export function forIn<T>(obj: Record<string | number, T>, iter: (v: T, k: string
 }
 export function forInAsync<T>(obj: Record<string | number, T>, iter: (v: T, k: string) => void) {
   let k = Object.keys(obj);
-  console.log(JSON.stringify(k));
   return new Promise<void>((resolve) => {
     system.runJob(
       (function* () {

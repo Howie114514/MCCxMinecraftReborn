@@ -344,7 +344,7 @@ export class SandOfTime extends BasicGame {
         } else {
           p.onScreenDisplay.setActionBar("您已经捡起过这个钥匙。");
         }
-      } else if (environment !== envTypes.pluginLoaderWithPlugin) {
+      } else if (environment !== envTypes.LevilaminaWithPlugin) {
         let p = playerByEntity(ev.damagingEntity);
         this.player_data[p.name].collected_items[
           "mccr:collected_a" + Vec3Utils.toMiniString(Vector3Utils.floor(ev.hitEntity.location))

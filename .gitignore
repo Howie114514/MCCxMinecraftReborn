@@ -1,5 +1,4 @@
 dist/
-ui/
 .VSCodeCounter/
 lib/
 package-lock.json

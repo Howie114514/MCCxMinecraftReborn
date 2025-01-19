@@ -32,6 +32,5 @@ export namespace puzzles {
 }
 
 export function getPuzzles(p: Player) {
-  console.info(p.getDynamicProperty("mccr.p:puzzle_data"));
   return Object.keys(JSON.parse((p.getDynamicProperty("mccr.p:puzzle_data") as string) ?? "{}")).length;
 }

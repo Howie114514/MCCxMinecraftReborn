@@ -1,0 +1,76 @@
+import { ActionFormData, MessageFormData } from "@minecraft/server-ui";
+import flags from "../flags";
+import tr, { itemName } from "../lang";
+
+export const cosmetic_chest = (hats: string[]) => {
+  let ad = new ActionFormData()
+    .title({ rawtext: [{ translate: "txt.title.cosmetic" }, { text: flags.flag_cosmetic_modal }] })
+    .body(tr("txt.ui.cosmetic"))
+    .button(tr("txt.button.remove_hat"));
+  //.show(ev.source);
+  let addItem = (id: string) => {
+    ad.button(itemName(id), `textures/items/hub/${id.replace(/noxcrew\.ft:/, "")}`);
+  };
+  hats.forEach((h) => {
+    addItem(h);
+  });
+  return ad;
+};
+
+export const vendor_mascot = () => {
+  let ad = new ActionFormData().title({
+    rawtext: [{ translate: "txt.title.vendor_mascot" }, { text: flags.flag_vendor_modal }],
+  });
+  //.show(ev.source);
+  let addItem = (color: string) => {
+    let id = "noxcrew.ft:beanie_" + color;
+    let ina = itemName(id);
+    ina.rawtext?.push({ text: "\n\ue17b250" });
+    ad.button(ina, `textures/items/hub/${id.replace(/noxcrew\.ft:/, "")}`);
+  };
+  addItem("aqua");
+  addItem("blue");
+  addItem("cyan");
+  addItem("green");
+  addItem("lime");
+  addItem("orange");
+  addItem("pink");
+  addItem("purple");
+  addItem("red");
+  addItem("yellow");
+  return ad;
+};
+
+export const vendor_hat = (hats: string[]) => {
+  let ad = new ActionFormData().title({
+    rawtext: [{ translate: "txt.title.vendor_hat" }, { text: flags.flag_vendor_modal }],
+  });
+  //.show(ev.source);
+  let addItem = (id: string) => {
+    ad.button(itemName(id), `textures/items/hub/${id.replace(/noxcrew\.ft:/, "")}`);
+  };
+  hats.forEach((h) => {
+    addItem(h);
+  });
+  return ad;
+};
+
+export const vendor_food = (f: string[], price: number[]) => {
+  let ad = new ActionFormData().title({
+    rawtext: [{ translate: "txt.title.vendor_food" }, { text: flags.flag_vendor_modal }],
+  });
+  //.show(ev.source);
+  let addItem = (id: string, p: number) => {
+    let ina = itemName(id);
+    ina.rawtext?.push({ text: "\n\ue17b" + p.toString() });
+    ad.button(ina, `textures/items/hub/${id.replace(/noxcrew\.ft:/, "")}`);
+  };
+  f.forEach((food, i) => {
+    addItem(food, price[i]);
+  });
+  return ad;
+};
+
+export const confirm = async (msg: string, title: string = " ") => {
+  let md = new MessageFormData();
+};
