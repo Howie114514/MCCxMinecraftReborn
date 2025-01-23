@@ -60,7 +60,10 @@ class Interactive implements BlockCustomComponent {
 }
 
 class InteractiveItem implements ItemCustomComponent {
-  constructor() {}
+  constructor() {
+    this.onUse = this.onUse.bind(this);
+    this.onUseOn = this.onUseOn.bind(this);
+  }
   onUse(arg: ItemComponentUseEvent) {}
   onUseOn(arg: any) {}
 }

@@ -129,6 +129,11 @@ export class SandOfTime extends BasicGame {
         this.openChest({ damagingEntity: ev.player, hitEntity: ev.target });
       }
     });
+    world.afterEvents.entityHitEntity.subscribe((ev) => {
+      if (ev.hitEntity.typeId == "noxcrew.ft:treasure_chest") {
+        this.openChest(ev);
+      }
+    });
   }
   hasItem(p: Player, id: string) {
     let inv = p.getComponent(EntityComponentTypes.Inventory);
