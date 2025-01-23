@@ -26,7 +26,7 @@ import { tr, itemName } from "./lang";
 import { MinecraftCameraPresetsTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { showLobbyGameBar } from "./ui/gamebar";
 import { debounce, forIn, rgb, vaildateNum } from "./utils";
-import { cosmetic_chest, vendor_food, vendor_hat, vendor_mascot } from "./ui/screens";
+import { cosmetic_chest, vendor_food, vendor_hat, vendor_mascot, vendor_toys } from "./ui/screens";
 import { gameInstances } from "./games/gameInstance";
 import { addCoins, clearAllData, getCoins, setCoins } from "./gameData";
 import { Lobby } from "./game";
@@ -159,6 +159,39 @@ world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
             return;
           }
           ev.player.runCommand(`give @s ${foods[v.selection as number]}`);
+          ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
+        }
+      });
+  }
+  /**
+   * 玩具商店代码由mc火燃贡献
+   */
+  if (ev.target.typeId == "noxcrew.ft:vendor_toys") {
+    let toys = [
+      "noxcrew.ft:foam_finger",
+      "noxcrew.ft:balloon_animal",
+      "noxcrew.ft:big_bubble_blower",
+      "noxcrew.ft:silly_horn",
+      "noxcrew.ft:party_popper",
+      "noxcrew.ft:confetti_tag_prime",
+      "noxcrew.ft:pizza_box",
+      "noxcrew.ft:celebration_fireworks",
+      "noxcrew.ft:player_gift_giving",
+      "noxcrew.ft:disco_ball",
+      "noxcrew.ft:beach_ball",
+      "noxcrew.ft:balloon_helium",
+    ];
+    let price = [60, 60, 60, 100, 40, 40, 80, 40, 100, 60, 60, 60];
+    vendor_toys(toys, price)
+      .body(`\ue17b${getCoins(ev.player)}`)
+      .show(ev.player)
+      .then((v) => {
+        if (!v.canceled) {
+          if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
+            new MessageFormData().title("").body(tr("txt.error.msg1")).button1("确认").button2("取消").show(ev.player);
+            return;
+          }
+          ev.player.runCommand(`give @s ${toys[v.selection as number]}`);
           ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
         }
       });

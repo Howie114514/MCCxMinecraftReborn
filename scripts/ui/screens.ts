@@ -74,3 +74,19 @@ export const vendor_food = (f: string[], price: number[]) => {
 export const confirm = async (msg: string, title: string = " ") => {
   let md = new MessageFormData();
 };
+
+export const vendor_toys = (t: string[], price: number[]) => {
+  let ad = new ActionFormData().title({
+    rawtext: [{ translate: "txt.title.vendor_toy" }, { text: flags.flag_vendor_modal }],
+  });
+  //.show(ev.source);
+  let addItem = (id: string, p: number) => {
+    let ina = itemName(id);
+    ina.rawtext?.push({ text: "\n\ue17b" + p.toString() });
+    ad.button(ina, `textures/items/hub/${id.replace(/noxcrew\.ft:/, "")}`);
+  };
+  t.forEach((toy, i) => {
+    addItem(toy, price[i]);
+  });
+  return ad;
+};
