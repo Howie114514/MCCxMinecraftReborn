@@ -111,7 +111,7 @@ export class AceRace extends BasicGame {
   }
   player_finish(p: Player): void {
     if (this.players[p.name]) {
-      p.playSound("challenge_complete");
+      sound.play(p, "scoreacquired", undefined);
       let time = (Date.now() - this.timer[p.name]) / 1000;
       let t: Trophy = 1;
       this.trophys.forEach((tro, index) => {

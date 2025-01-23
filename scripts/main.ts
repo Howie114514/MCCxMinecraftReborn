@@ -622,6 +622,9 @@ world.afterEvents.itemUse.subscribe((ev) => {
       sound.play(overworld, "silly_horn", { location: ev.source.location });
       useItem(ev.source, ev.itemStack);
       break;
+    case "noxcrew.ft:disco_ball":
+      overworld.spawnEntity("noxcrew.ft:disco_ball", ev.source.location);
+      break;
   }
 });
 //#endregion
