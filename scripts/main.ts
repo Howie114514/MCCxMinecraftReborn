@@ -18,7 +18,7 @@ import {
   PlayerBreakBlockAfterEvent,
   BlockComponentRegistry,
 } from "@minecraft/server";
-import { ActionFormData, MessageFormData } from "@minecraft/server-ui";
+import { ActionFormData, FormCancelationReason, MessageFormData } from "@minecraft/server-ui";
 import flags from "./flags";
 import { Vector2Builder, Vector3Builder, Vector3Utils } from "@minecraft/math";
 import { Vec3Utils } from "./math";
@@ -26,7 +26,7 @@ import { tr, itemName } from "./lang";
 import { MinecraftCameraPresetsTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { showLobbyGameBar } from "./ui/gamebar";
 import { debounce, forIn, rgb, vaildateNum } from "./utils";
-import { cosmetic_chest, vendor_food, vendor_hat, vendor_mascot, vendor_toys } from "./ui/screens";
+import { cosmetic_chest, info, vendor_food, vendor_hat, vendor_mascot, vendor_toys } from "./ui/screens";
 import { gameInstances } from "./games/gameInstance";
 import { addCoins, clearAllData, getCoins, setCoins } from "./gameData";
 import { Lobby } from "./game";
@@ -468,9 +468,7 @@ world.afterEvents.playerSpawn.subscribe((ev) => {
     }
     system.runTimeout(
       () =>
-        ev.player.sendMessage(
-          "欢迎来到MCC X Minecraft Reborn!\n\n本地图旨在还原MCC X Minecraft活动服务器的玩法！\n\n作者：Howie"
-        ),
+        ev.player.sendMessage("欢迎来到MCC X Minecraft Reborn!\n聊天栏输入.info或.获取信息即可查看本地图的详细信息。"),
       50
     );
     gameInstances.lobby.addPlayer(ev.player);
@@ -503,6 +501,19 @@ world.beforeEvents.chatSend.subscribe((ev) => {
   if (dc) {
     ev.cancel = true;
     ev.sender.sendMessage("\u00a7e聊天在当前世界已被禁用");
+  }
+  if (/^\.获取信息$|^.info$/.test(ev.message)) {
+    ev.sender.sendMessage("退出聊天栏即可查看。");
+    let s = () => {
+      info()
+        .show(ev.sender)
+        .then((r) => {
+          if (r.cancelationReason == FormCancelationReason.UserBusy) {
+            s();
+          }
+        });
+    };
+    s();
   }
 });
 
@@ -657,6 +668,7 @@ world.afterEvents.itemUse.subscribe((ev) => {
       break;
     case "noxcrew.ft:disco_ball":
       overworld.spawnEntity("noxcrew.ft:disco_ball", ev.source.location);
+      useItem(ev.source, ev.itemStack);
       break;
   }
 });

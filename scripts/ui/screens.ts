@@ -90,3 +90,20 @@ export const vendor_toys = (t: string[], price: number[]) => {
   });
   return ad;
 };
+
+export const info = () => {
+  return new ActionFormData().title("信息").body(
+    `===§lMCCxMinecraft §eReborn§r===
+MCCxMinecraft活动服务器地图的社区还原版:一个以GPLv3为协议的开源项目
+
+主要作者：HowieMC(https://github.com/Howie114514)
+本项目的贡献者：
+- §lNoxcrew及Mojang - 为玩家打造令人惊叹的地图§r
+- mc火燃 - 代码及音效修复
+- 一只呱呱捏 - 使用本项目的地图开服务器，使本项目获得大量有效的反馈
+- 每一位向作者提出建议的朋友们
+
+注意：本项目§l并非§rMojang、Microsoft或Noxcrew的项目。
+`
+  );
+};
