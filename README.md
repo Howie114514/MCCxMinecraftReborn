@@ -7,4 +7,5 @@
 ### 命令：
 
 npx just-scripts mctemplate - 导出世界模板
+npx local-deploy - 本地部署（要在游戏中使用，请在.env 文件中修改为"BedrockUWP"）
 fixServerUI.ps1 - 修复@minecraft/server-ui 中自带 node_modules 文件夹导致的不兼容问题
