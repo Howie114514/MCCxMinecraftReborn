@@ -278,7 +278,7 @@ export class ComplexGame {
   start() {
     this.queue.next().forEach((p) => {
       this.players[p] = playerByName(p);
-      //inventory.save(playerByName(p));
+      inventory.save(playerByName(p));
       this.queue.remove(p);
       playerByName(p).sendMessage("你已加入游戏");
       playerByName(p).setDynamicProperty("mccr:game", this.name);

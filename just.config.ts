@@ -20,6 +20,7 @@ import { execSync } from "child_process";
 
 import path from "path";
 import mctemplate from "./mccr-build-tasks/mctemplate";
+import http from "http";
 
 // Setup env variables
 setupEnvironment(path.resolve(__dirname, ".env"));
@@ -69,11 +70,18 @@ task("package", series("clean-collateral", "copyArtifacts"));
 task("set-dev-environment", () => {
   execSync("python setEnv.py true");
 });
+task("reload", () => {
+  try {
+    execSync("curl http://localhost:3000");
+  } catch (err) {
+    console.warn("[自动重载] 无法执行reload");
+  }
+});
 task(
   "local-deploy",
   watchTask(
     ["scripts/**/*.ts", "behavior_packs/**/*.{json,lang,png}", "resource_packs/**/*.{json,lang,png}"],
-    series("clean-local", "set-dev-environment", "build", "package")
+    series("clean-local", "set-dev-environment", "build", "package", "reload")
   )
 );
 task("set-environment", () => {

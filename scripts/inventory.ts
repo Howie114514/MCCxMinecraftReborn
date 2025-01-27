@@ -1,6 +1,7 @@
 import { ItemLockMode, ItemStack, Player } from "@minecraft/server";
 import { forIn } from "./utils";
 import { Logger } from "./logger";
+import { isReloaded } from "./main";
 
 type SetHotbarOpt = {
   lock?: boolean;
@@ -15,6 +16,7 @@ type JSONItem = {
 
 export namespace inventory {
   export function save(p: Player) {
+    if (isReloaded) return;
     let inv = p.getComponent("inventory")?.container;
     if (inv) {
       let s = inv.size;

@@ -1,7 +1,9 @@
-dist/
-.VSCodeCounter/
-lib/
-package-lock.json
-test.js
-mcc还原.code-workspace
-node_modules/
+/dist/
+/.VSCodeCounter/
+/lib/
+/package-lock.json
+/test.js
+/mcc还原.code-workspace
+/node_modules/
+/generatePatches.py
+/originalWorld

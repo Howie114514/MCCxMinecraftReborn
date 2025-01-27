@@ -65,6 +65,7 @@ function joinGame(p: Player) {
     system.runTimeout(() => gameInstances.sot.addPlayer(p), 10);
   } else if ((gameInstances.lobby as Lobby).getPlayerArea(p) == "meltdown") {
     gameInstances.meltdown.addPlayer(p);
+  } else if ((gameInstances.lobby as Lobby).getPlayerArea(p) == "grid_runners") {
   } else {
     p.sendMessage("[!] 这个游戏还没有开发完成＞﹏＜ 敬请期待");
   }
@@ -475,13 +476,19 @@ world.afterEvents.playerSpawn.subscribe((ev) => {
     ev.player.teleport(coordinates.lobby);
   }
 });
+
+export var isReloaded = false;
 world.afterEvents.worldInitialize.subscribe((ev) => {
+  if (world.getAllPlayers().length > 0) {
+    isReloaded = true;
+  }
   world.getAllPlayers().forEach((p) => {
     let g = (p.getDynamicProperty("mccr:game") as string) ?? "lobby";
     if (gameInstances[g]) {
       gameInstances[g].addPlayer(p);
     } else gameInstances.lobby.addPlayer(p);
   });
+  isReloaded = false;
   system.runInterval(() => {
     world
       .getDimension("overworld")
@@ -505,13 +512,15 @@ world.beforeEvents.chatSend.subscribe((ev) => {
   if (/^\.获取信息$|^.info$/.test(ev.message)) {
     ev.sender.sendMessage("退出聊天栏即可查看。");
     let s = () => {
-      info()
-        .show(ev.sender)
-        .then((r) => {
-          if (r.cancelationReason == FormCancelationReason.UserBusy) {
-            s();
-          }
-        });
+      system.run(() =>
+        info()
+          .show(ev.sender)
+          .then((r) => {
+            if (r.cancelationReason == FormCancelationReason.UserBusy) {
+              s();
+            }
+          })
+      );
     };
     s();
   }

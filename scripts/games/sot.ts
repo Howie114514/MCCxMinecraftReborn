@@ -18,7 +18,7 @@ import {
   world,
 } from "@minecraft/server";
 import { BasicGame } from "../game";
-import { coordinates } from "../main";
+import { coordinates, isReloaded } from "../main";
 import { Vec3Utils } from "../math";
 import { Vector3Utils } from "@minecraft/math";
 import { Text } from "../text";

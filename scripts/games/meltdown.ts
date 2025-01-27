@@ -30,6 +30,7 @@ import { rules } from "../rule";
 import { Logger } from "../logger";
 import { showSubTitle } from "../ui/title";
 import { showMDCompleteToast } from "../ui/gametoast";
+import { isReloaded } from "../main";
 
 export type MeltdownPlayerData = {
   room: number;

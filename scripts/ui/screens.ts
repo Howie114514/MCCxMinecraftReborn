@@ -92,8 +92,10 @@ export const vendor_toys = (t: string[], price: number[]) => {
 };
 
 export const info = () => {
-  return new ActionFormData().title("信息").body(
-    `===§lMCCxMinecraft §eReborn§r===
+  return new ActionFormData()
+    .title("信息")
+    .body(
+      `===§lMCCxMinecraft §eReborn§r===
 MCCxMinecraft活动服务器地图的社区还原版:一个以GPLv3为协议的开源项目
 
 主要作者：HowieMC(https://github.com/Howie114514)
@@ -105,5 +107,6 @@ MCCxMinecraft活动服务器地图的社区还原版:一个以GPLv3为协议的�
 
 注意：本项目§l并非§rMojang、Microsoft或Noxcrew的项目。
 `
-  );
+    )
+    .button("好的");
 };
