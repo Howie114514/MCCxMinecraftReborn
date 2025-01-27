@@ -7,3 +7,4 @@
 /node_modules/
 /generatePatches.py
 /originalWorld
+/scripts/buildInfo.ts
