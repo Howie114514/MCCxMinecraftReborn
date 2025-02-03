@@ -1,8 +1,12 @@
 ## MCC X Minecraft Reborn Project
 
+![GitHub License](https://img.shields.io/github/license/Howie114514/MCCxMinecraftReborn)
+![GitHub Repo stars](https://img.shields.io/github/stars/Howie114514/MCCxMinecraftReborn)
+
 还原 MCC 活动服务器的项目，致力于打造怀旧版地图。
 
 [推荐搭配使用这个视频里的地图使用本行为包](https://www.bilibili.com/video/BV1r7iwedEZe/)
+[Levilamina 服务器推荐配合本插件使用](https://github.com/Howie114514/MCCxMinecraftReborn-llplugin)
 
 ---
 

@@ -31,7 +31,7 @@ import { gameInstances } from "./games/gameInstance";
 import { addCoins, clearAllData, getCoins, setCoins } from "./gameData";
 import { Lobby } from "./game";
 import { puzzles } from "./puzzles/puzzle";
-import env from "./environment";
+import env, { envTypes } from "./environment";
 import { inventory } from "./inventory";
 import { LKey } from "./langfile";
 import { rules } from "./rule";
@@ -40,6 +40,8 @@ import { blockCompoents, itemCompoents } from "./compoents";
 import { showSubTitle } from "./ui/title";
 import { sound } from "./sound";
 import { overworld } from "./constants";
+import { network } from "./network";
+import { isDevMode } from "./buildInfo";
 
 world.beforeEvents.worldInitialize.subscribe((init) => {
   forIn(blockCompoents, (v, k) => {
@@ -66,6 +68,7 @@ function joinGame(p: Player) {
   } else if ((gameInstances.lobby as Lobby).getPlayerArea(p) == "meltdown") {
     gameInstances.meltdown.addPlayer(p);
   } else if ((gameInstances.lobby as Lobby).getPlayerArea(p) == "grid_runners") {
+    if (isDevMode) gameInstances.grid_runners.addPlayer(p);
   } else {
     p.sendMessage("[!] 这个游戏还没有开发完成＞﹏＜ 敬请期待");
   }
@@ -246,6 +249,41 @@ world.afterEvents.itemCompleteUse.subscribe((ev) => {
   }
 });
 
+function syncPropertyForPlayer(p: Player) {
+  system.runTimeout(() => {
+    if (network.isLevilamina())
+      system.runJob(
+        (function* () {
+          for (let id of p.getDynamicPropertyIds()) {
+            if (/mccr\:collected_.*/.test(id)) {
+              let p1 = id.replace(/mccr\:collected_/g, "").split("$");
+              let pos: Vector3 = { x: parseInt(p1[0]), y: parseInt(p1[1]), z: parseInt(p1[2]) };
+              network.syncEntityProperty(
+                overworld.getEntitiesAtBlockLocation(pos).filter((e) => e.typeId == "noxcrew.ft:hub_coin")[0],
+                p,
+                "noxcrew.ft:collected",
+                true
+              );
+            }
+            yield;
+          }
+        })()
+      );
+  }, 1 * TicksPerSecond);
+}
+const syncAllProperties = () => {
+  if (network.isLevilamina())
+    system.runJob(
+      (function* () {
+        for (const p of world.getAllPlayers()) {
+          syncPropertyForPlayer(p);
+          yield;
+        }
+      })()
+    );
+};
+if (network.isLevilamina()) system.runInterval(syncAllProperties, 5 * TicksPerSecond);
+
 function teleport(player: Player, dest: "ace_race" | "sot" | "lobby" | string, from: Vector3, to: Vector3) {
   if ((gameInstances.lobby as Lobby).getPlayerArea(player) != dest)
     new MessageFormData()
@@ -265,6 +303,7 @@ function teleport(player: Player, dest: "ace_race" | "sot" | "lobby" | string, f
           sound.play(player, "quick_travel", {});
           player.teleport(to);
           (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
+          if (network.isLevilamina()) syncPropertyForPlayer(player);
         }
         system.runTimeout(() => player.removeTag("inPortal"), 10);
       });
@@ -413,8 +452,11 @@ system.afterEvents.scriptEventReceive.subscribe((ev) => {
         addCoins(p, c);
         showSubTitle(p, tr("txt.lobby.coins" + c.toString()));
         p.setDynamicProperty("mccr:collected_" + Vec3Utils.toMiniString(Vector3Utils.floor(p.location)), true);
+        if (env.type == envTypes.LevilaminaWithPlugin) {
+          network.syncEntityProperty(ce, p, "noxcrew.ft:collected", true);
+        }
       } else {
-        p.onScreenDisplay.setActionBar(tr("mccr.coins.collected"));
+        if (!(env.type == envTypes.LevilaminaWithPlugin)) p.onScreenDisplay.setActionBar(tr("mccr.coins.collected"));
       }
     }
   } else if (ev.id == "mccr:clear_data") {
@@ -441,7 +483,7 @@ system.afterEvents.scriptEventReceive.subscribe((ev) => {
   } else if (ev.id == "mccr.dev:t_disable_block_breaking") {
     disableBlockBreaking = !disableBlockBreaking;
   } else if (ev.id == "mccr.dev:getenv") {
-    world.sendMessage(env);
+    world.sendMessage(env.type);
   }
 });
 world.beforeEvents.playerBreakBlock.subscribe((ev) => {
@@ -449,6 +491,7 @@ world.beforeEvents.playerBreakBlock.subscribe((ev) => {
   if (ev.cancel) system.run(() => ev.player.onScreenDisplay.setActionBar("已阻止一次可能无意间产生的方块破坏"));
 });
 world.afterEvents.playerSpawn.subscribe((ev) => {
+  if (network.isLevilamina()) syncPropertyForPlayer(ev.player);
   if (ev.initialSpawn) {
     let item = ev.player.getComponent("equippable")?.getEquipment(EquipmentSlot.Head);
     (gameInstances.lobby as Lobby).setPlayerArea(ev.player, "lobby");

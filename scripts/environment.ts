@@ -9,19 +9,19 @@ export enum envTypes {
   LevilaminaWithPlugin = "LeviLaminaWithPlugin",
 }
 
-var environment = envTypes.vanilla;
+var environment = { type: envTypes.vanilla };
 
 world.afterEvents.worldInitialize.subscribe(() => {
   try {
     overworld.runCommand("ll list");
-    environment = envTypes.LeviLamina;
+    environment.type = envTypes.LeviLamina;
     overworld.runCommand("mccr detect");
-    environment = envTypes.LevilaminaWithPlugin;
+    environment.type = envTypes.LevilaminaWithPlugin;
   } catch (e) {}
   Logger.info("======环境信息======");
-  Logger.info("环境类型:", environment);
+  Logger.info("环境类型:", environment.type);
   Logger.info("开发者模式:", isDevMode);
-  if (environment == envTypes.LeviLamina) {
+  if (environment.type == envTypes.LeviLamina) {
     Logger.warn("检测到当前正在使用插件服务端，建议安装相应插件以实现更好的功能");
     Logger.warn("支持的插件端：Levilamina");
   }
