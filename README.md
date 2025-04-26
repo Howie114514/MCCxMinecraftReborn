@@ -1,3 +1,5 @@
+![logo](./logo.png)
+
 ## MCC X Minecraft Reborn Project
 
 ![Static Badge](https://img.shields.io/badge/minecraft-1.21.80-purple)
