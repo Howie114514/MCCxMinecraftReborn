@@ -17,8 +17,23 @@ jobs:
         run: npm i --force
       - name: Build
         run: npm run release
-      - name: Upload Artifacts
+      - name: Upload BP
         uses: actions/upload-artifact@v4
         with:
-          name: build-output
-          path: dist/
+          name: mccr_bp_${{github.run_id}}.mcpack
+          path: dist/mccr_bp.mcpack
+      - name: Upload RP
+        uses: actions/upload-artifact@v4
+        with:
+          name: mccr_rp_${{github.run_id}}.mcpack
+          path: dist/mccr_rp.mcpack
+      - name: Upload world
+        uses: actions/upload-artifact@v4
+        with:
+          name: mccr_rp_${{github.run_id}}.mcworld
+          path: dist/MCCxMinecraft.mcworld
+      - name: Upload world template
+        uses: actions/upload-artifact@v4
+        with:
+          name: mccr_rp_${{github.run_id}}.mctemplate
+          path: dist/mccr_rp.mctemplate
