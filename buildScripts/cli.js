@@ -6,8 +6,6 @@ import parseArg from "minimist";
 import watch from "node-watch";
 import path, { resolve } from "path";
 import { Zip } from "zip-lib";
-import { fileURLToPath } from "url";
-import { createServer, runCommand } from "./wsserver";
 
 const args = parseArg(process.argv);
 const subcommand = args._[2];
