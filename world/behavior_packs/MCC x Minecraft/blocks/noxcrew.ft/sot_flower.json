@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "noxcrew.ft:sot_flower",
+			"is_experimental": true,
+			"register_to_creative_menu": true,
+			"menu_category": {
+				"category": "construction",
+				"group": ""
+			}
+		},
+		"components": {
+			"minecraft:collision_box": false,
+			"minecraft:geometry": "geometry.n.ft.sot_flower",
+			"minecraft:light_emission": 7,
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"render_method": "alpha_test",
+					"texture": "sot_flower"
+				}
+			}
+		}
+	}
+}

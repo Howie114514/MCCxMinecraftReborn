@@ -1,0 +1,202 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.key_podium_netherite",
+        "texture_width": 128,
+        "texture_height": 64,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 5,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "podium",
+          "pivot": [
+            0,
+            11.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                18,
+                -6
+              ],
+              "size": [
+                12,
+                2,
+                12
+              ],
+              "uv": [
+                42,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                5,
+                16
+              ],
+              "uv": [
+                0,
+                21
+              ]
+            },
+            {
+              "origin": [
+                -7,
+                5,
+                -7
+              ],
+              "size": [
+                14,
+                8,
+                14
+              ],
+              "uv": [
+                0,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                13,
+                -8
+              ],
+              "size": [
+                16,
+                5,
+                16
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ],
+          "locators": {
+            "sparkle_locator": [
+              0,
+              27,
+              0
+            ]
+          }
+        },
+        {
+          "name": "key",
+          "parent": "podium",
+          "pivot": [
+            0,
+            28,
+            0
+          ]
+        },
+        {
+          "name": "netherite_key",
+          "parent": "key",
+          "pivot": [
+            -3.32843,
+            29.82843,
+            0.5
+          ],
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6.82843,
+                25.82843,
+                -1
+              ],
+              "size": [
+                7,
+                7,
+                3
+              ],
+              "uv": [
+                48,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "a_alph",
+          "parent": "netherite_key",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6.82843,
+                18.82843,
+                0.5
+              ],
+              "size": [
+                7,
+                7,
+                0
+              ],
+              "uv": [
+                0,
+                7
+              ]
+            },
+            {
+              "origin": [
+                -6.82843,
+                32.82843,
+                -1
+              ],
+              "size": [
+                7,
+                2,
+                0
+              ],
+              "uv": [
+                0,
+                14
+              ]
+            },
+            {
+              "origin": [
+                -6.82843,
+                32.82843,
+                2
+              ],
+              "size": [
+                7,
+                2,
+                0
+              ],
+              "uv": [
+                0,
+                14
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

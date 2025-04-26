@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "noxcrew.ft:melt_spawner",
+			"is_experimental": true,
+			"register_to_creative_menu": true,
+			"menu_category": {
+				"category": "construction",
+				"group": ""
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.n.ft.melt_spawner",
+			"minecraft:light_emission": 8,
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": false,
+					"face_dimming": false,
+					"render_method": "alpha_test",
+					"texture": "melt_spawner"
+				}
+			}
+		}
+	}
+}

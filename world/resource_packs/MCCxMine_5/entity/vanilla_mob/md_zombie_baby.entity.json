@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:md_zombie_baby",
+      "textures": {
+        "default": "textures/entity/n/vanilla_mob/zombie",
+        "ice": "textures/entity/n/vanilla_mob/ice"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.zombie_baby",
+        "ice": "geometry.n.ft.tall_ice"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default.v1.0",
+        "move": "animation.humanoid.move.v1.0",
+        "zombie_attack_bare_hand": "animation.zombie.attack_bare_hand",
+        "zombie_attack_bare_hand_ctrl": "controller.animation.zombie.attack_bare_hand",
+        "melt": "animation.n.ft.ice.melt",
+        "melt_ctrl": "controller.animation.melt.ctrl"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ],
+        "animate": [
+          "look_at_target_default",
+          "move",
+          "zombie_attack_bare_hand_ctrl",
+          "melt_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "melting": "noxcrew.ft:melting",
+        "frozen_shatter": "noxcrew.ft:frozen_shatter",
+        "frozen_shatter_e1": "noxcrew.ft:frozen_shatter_e1"
+      },
+      "render_controllers": [
+        "controller.render.md.base",
+        {
+          "controller.render.md_ice": "q.property('noxcrew.ft:frozen')"
+        }
+      ]
+    }
+  }
+}

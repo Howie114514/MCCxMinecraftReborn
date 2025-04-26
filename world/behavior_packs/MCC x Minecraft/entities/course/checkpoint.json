@@ -1,0 +1,243 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.checkpoint",
+      "properties": {
+        "noxcrew:type": {
+          "type": "enum",
+          "values": [
+            "normal",
+            "start",
+            "biome",
+            "finish"
+          ],
+          "default": "normal",
+          "client_sync": true
+        },
+        "noxcrew:tool": {
+          "type": "enum",
+          "values": [
+            "boots",
+            "trident",
+            "elytra"
+          ],
+          "default": "boots",
+          "client_sync": true
+        }
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "component_groups": {
+      "noxcrew:type_start": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "start"
+          ]
+        }
+      },
+      "noxcrew:type_finish": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "finish"
+          ]
+        }
+      },
+      "noxcrew:type_normal_boots": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "normal",
+            "boots"
+          ]
+        }
+      },
+      "noxcrew:type_normal_trident": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "normal",
+            "trident"
+          ]
+        }
+      },
+      "noxcrew:type_normal_elytra": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "normal",
+            "elytra"
+          ]
+        }
+      },
+      "noxcrew:type_biome_boots": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "biome",
+            "boots"
+          ]
+        }
+      },
+      "noxcrew:type_biome_trident": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "biome",
+            "trident"
+          ]
+        }
+      },
+      "noxcrew:type_biome_elytra": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "biome",
+            "elytra"
+          ]
+        }
+      },
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:type_family": {
+        "family": [
+          "checkpoint",
+          "normal"
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "protection": 1
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:set_type.start": {
+        "set_property": {
+          "noxcrew:type": "start"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_start"
+          ]
+        }
+      },
+      "noxcrew:set_type.finish": {
+        "set_property": {
+          "noxcrew:type": "finish"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_finish"
+          ]
+        }
+      },
+      "noxcrew:set_type.normal_boots": {
+        "set_property": {
+          "noxcrew:type": "normal",
+          "noxcrew:tool": "boots"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_normal_boots"
+          ]
+        }
+      },
+      "noxcrew:set_type.normal_trident": {
+        "set_property": {
+          "noxcrew:type": "normal",
+          "noxcrew:tool": "trident"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_normal_trident"
+          ]
+        }
+      },
+      "noxcrew:set_type.normal_elytra": {
+        "set_property": {
+          "noxcrew:type": "normal",
+          "noxcrew:tool": "elytra"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_normal_elytra"
+          ]
+        }
+      },
+      "noxcrew:set_type.biome_boots": {
+        "set_property": {
+          "noxcrew:type": "biome",
+          "noxcrew:tool": "boots"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_biome_boots"
+          ]
+        }
+      },
+      "noxcrew:set_type.biome_trident": {
+        "set_property": {
+          "noxcrew:type": "biome",
+          "noxcrew:tool": "trident"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_biome_trident"
+          ]
+        }
+      },
+      "noxcrew:set_type.biome_elytra": {
+        "set_property": {
+          "noxcrew:type": "biome",
+          "noxcrew:tool": "elytra"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_biome_elytra"
+          ]
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

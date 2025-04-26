@@ -1,0 +1,40 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "MCC x Minecraft",
+		"description": "Adds Blocks, Items and Entities from the server to this world",
+		"uuid": "463d7df0-064e-43b6-a293-2d54ffefe77b",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			19,
+			50
+		]
+	},
+	"modules": [
+		{
+			"uuid": "60693630-c90c-4fda-ae22-4bd049601aff",
+			"description": "Datapack",
+			"type": "data",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "5343b417-f6ec-4e11-8cc6-d92682bff780",
+			"version": [
+				1,
+				0,
+				9
+			]
+		}
+	]
+}

@@ -1,0 +1,250 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.hat_crown_cake",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 6.5,
+        "visible_bounds_offset": [
+          0,
+          2.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "waist",
+          "parent": "root",
+          "pivot": [
+            0,
+            12,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "waist",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "head",
+          "parent": "body",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "hat",
+          "parent": "head",
+          "pivot": [
+            0,
+            24,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                31,
+                -3
+              ],
+              "size": [
+                6,
+                6,
+                6
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                37,
+                -2
+              ],
+              "size": [
+                1,
+                2,
+                1
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                1,
+                37,
+                -2
+              ],
+              "size": [
+                1,
+                2,
+                1
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                1,
+                37,
+                1
+              ],
+              "size": [
+                1,
+                2,
+                1
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                37,
+                1
+              ],
+              "size": [
+                1,
+                2,
+                1
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "detail_alph",
+          "parent": "hat",
+          "pivot": [
+            -4.5,
+            31.4,
+            0.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                31,
+                -4
+              ],
+              "size": [
+                8,
+                5,
+                8
+              ],
+              "inflate": 0.1,
+              "uv": [
+                0,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "name": "flame_alph",
+          "parent": "hat",
+          "pivot": [
+            0,
+            40,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.5,
+                39,
+                1.5
+              ],
+              "size": [
+                2,
+                2,
+                0
+              ],
+              "uv": [
+                0,
+                3
+              ]
+            },
+            {
+              "origin": [
+                -2.5,
+                39,
+                1.5
+              ],
+              "size": [
+                2,
+                2,
+                0
+              ],
+              "uv": [
+                0,
+                3
+              ]
+            },
+            {
+              "origin": [
+                -2.5,
+                39,
+                -1.5
+              ],
+              "size": [
+                2,
+                2,
+                0
+              ],
+              "uv": [
+                0,
+                3
+              ]
+            },
+            {
+              "origin": [
+                0.5,
+                39,
+                -1.5
+              ],
+              "size": [
+                2,
+                2,
+                0
+              ],
+              "uv": [
+                0,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

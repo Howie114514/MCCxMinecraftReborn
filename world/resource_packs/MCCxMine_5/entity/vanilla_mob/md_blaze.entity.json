@@ -1,0 +1,55 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:md_blaze",
+      "textures": {
+        "default": "textures/entity/n/vanilla_mob/blaze",
+        "ice": "textures/entity/n/vanilla_mob/ice"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.blaze",
+        "ice": "geometry.n.ft.wide_ice"
+      },
+      "materials": {
+        "default": "noxcrew_emissive",
+        "alpha": "noxcrew_emissive_alpha"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.blaze.move",
+        "move_ctrl": "controller.animation.blaze.move",
+        "flame_ctrl": "controller.animation.blaze.flame",
+        "melt": "animation.n.ft.ice.melt",
+        "melt_ctrl": "controller.animation.melt.ctrl",
+        "frozen": "animation.n.blaze.frozen"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "move_ctrl": "!q.property('noxcrew.ft:frozen')"
+          },
+          {
+            "flame_ctrl": "!q.property('noxcrew.ft:frozen')"
+          },
+          {
+            "frozen": "q.property('noxcrew.ft:frozen')"
+          },
+          "melt_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "charged_flames": "minecraft:mobflame_emitter",
+        "melting": "noxcrew.ft:melting",
+        "frozen_shatter": "noxcrew.ft:frozen_shatter",
+        "frozen_shatter_e1": "noxcrew.ft:frozen_shatter_e1"
+      },
+      "render_controllers": [
+        "controller.render.md.blaze",
+        {
+          "controller.render.md_ice": "q.property('noxcrew.ft:frozen')"
+        }
+      ]
+    }
+  }
+}

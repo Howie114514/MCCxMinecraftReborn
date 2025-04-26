@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:foam_finger",
+      "textures": {
+        "default": "textures/entity/n/hub/foam_finger"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.foam_finger"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "animations": {
+        "first_person": "animation.n.foam_finger.first_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base"
+      ]
+    }
+  }
+}

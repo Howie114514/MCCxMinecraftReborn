@@ -1,0 +1,1094 @@
+## Meta
+pack.name=MCC x Minecraft 15. évfordulós szerepjáték	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=Erőforráscsomag az MCC x Minecraft 15. évfordulós eseményéhez.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=MC BAJNOKSÁG MINIJÁTÉKOS ESEMÉNYE!	###
+txt.event_overview.2=A Noxcrew elhozta az MC Bajnokság legjobb részét a Bedrock Editionbe! Bulizz egész nap, és küzdj meg a minijátékokban, amelyek próbára teszik a képességeidet, legyen szó parkourozásról vagy szörnyek legyőzéséről.	###
+txt.event_overview.3=Szerezz be 15 ingyenes látványelemet. És egy menci új köpenyt!	###
+txt.event_overview.4=Ragadd meg a kardjaidat – vár az őrület!	###
+txt.event_overview.5=Az esemény itt kezdődik július 27-én 19:00-kor, és augusztus 5-én éjfélig tart	###
+
+##VANILLA
+item.warped_sign.name=Barlangi tábla 	###
+tile.warped_standing_sign.name=Barlangi tábla 	###
+tile.warped_wall_sign.name=Barlangi tábla 	###
+tile.prismarine.dark.name=Fémblokk 	###
+tile.stone_slab2.prismarine.dark.name=Fém lépcsőfok 	###
+tile.dark_prismarine_stairs.name=Fémlépcső 	###
+
+##INTERACT TEXTS
+action.interact.open=Kinyitás	###This is meant as a verb, action.
+action.interact.take=Elvétel	###This is meant as a verb, action.
+action.interact.grab=Megragadás	###This is meant as a verb, action.
+action.interact.pick_up=Felvétel	###This is meant as a verb, action.
+action.interact.use=Használat	###This is meant as a verb, action.
+action.interact.change_color=Színváltás	###This is meant as a verb, action.
+action.interact.deposit=Lerakás	###This is meant as a verb, action.
+action.interact.interact=Interakció	###This is meant as a verb, action.
+action.interact.trash=Szemét	###To throw away or "trash" an item
+action.interact.eat=Evés	###To eat something, like a food
+action.interact.drink=Megivás	###To drink something, like a soda
+action.interact.paint=Festés	###The verb to paint.
+action.interact.gift=Ajándék játékosnak	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=Bolt	###The verb, "to shop" or "to browse"
+action.interact.decorate=Díszítés	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=Koppints a lopakodásra a kilépéshez	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=Koppints a lopakodásra a kilépéshez	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=Nyomd meg a(z) :_input_key.sneak: billentyűt a kilépéshez	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§oMinden nap új festmény vár rád.	###
+txt.sign.cave2=§oOldd meg mind a hetet, és zsebeld be a jutalmat!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=Fagyasztóíj	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=Fagyasztóíj	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=Vaskulcs	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=Aranykulcs	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=Gyémántkulcs	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=Alvilágérc kulcs	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=Üres ecset	###
+item.noxcrew.ft:paintbrush_green.name=Zöld ecset	###
+item.noxcrew.ft:paintbrush_yellow.name=Sárga ecset	###
+item.noxcrew.ft:paintbrush_blue.name=Kék ecset	###
+item.noxcrew.ft:paintbrush_red.name=Piros ecset	###
+item.noxcrew.ft:paintbrush_white.name=Fehér ecset	###
+item.noxcrew.ft:paintbrush_black.name=Fekete ecset	###
+item.noxcrew.ft:paintbrush_brown.name=Barna ecset	###
+item.noxcrew.ft:paintbrush_purple.name=Lila ecset	###
+item.noxcrew.ft:beanie_red.name=Red Rabbits sapka	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=Orange Ocelots sapka	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=Yellow Yaks sapka	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=Lime Llamas sapka	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=Green Geckos sapka	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=Aqua Axolotls sapka	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=Cyan Coyotes sapka	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=Blue Bats sapka	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=Purple Pandas sapka	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=Pink Parrots sapka	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=Partisapka	###
+item.noxcrew.ft:hat_propeller.name=Propelleres sapka	###
+item.noxcrew.ft:hat_crown_cake.name=Tortakorona	###
+item.noxcrew.ft:hat_birthday_present.name=Születésnapi ajándékos kalap	###
+item.noxcrew.ft:hat_jester.name=Udvaribolond-sapka	###
+item.noxcrew.ft:hat_chicken_jockey.name=Csirkezsokés kalap	###
+item.noxcrew.ft:hat_boombox.name=Boomboxos kalap	###
+item.noxcrew.ft:foam_finger.name=Habszivacs ujj	###
+item.noxcrew.ft:balloon_animal.name=Lufiállatka	###
+item.noxcrew.ft:big_bubble_blower.name=Óriás buborékfúvó	###
+item.noxcrew.ft:silly_horn.name=Bolondos szarv	###
+item.noxcrew.ft:party_popper.name=Konfettivető	###
+item.noxcrew.ft:confetti_tag_prime.name=Konfettis címke	###
+item.noxcrew.ft:confetti_tag_leftover.name=Konfettis címke	###
+item.noxcrew.ft:pizza_box.name=Pizzás doboz	###
+item.noxcrew.ft:celebration_fireworks.name=Születésnapi tűzijáték	###
+item.noxcrew.ft:player_gift_giving.name=Ajándékdoboz	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=Ajándékdoboz	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=Diszkógömb	###
+item.noxcrew.ft:beach_ball.name=Strandlabda	###
+item.noxcrew.ft:balloon_helium.name=Héliumos léggömb	###
+item.noxcrew.ft:leave_game.name=§6Kilépés a játékból	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=Pizzaszelet	###
+item.noxcrew.ft:mcc_burger.name=Ízletes hamburger	###
+item.noxcrew.ft:anniversary_hot_dog.name=Ízletes hotdog	###
+item.noxcrew.ft:party_cupcake.name=Muffin	###
+item.noxcrew.ft:party_cake.name=Tortaszelet	###
+item.noxcrew.ft:party_chips.name=Egy tál chips	###
+item.noxcrew.ft:party_cookie.name=Csokis keksz	###
+item.noxcrew.ft:party_soda.name=Szénsavas üdítő	###
+item.noxcrew.ft:cotton_candy.name=Vattacukor	###
+item.noxcrew.ft:popcorn.name=Popcorn	###
+item.noxcrew.ft:super_wrap.name=Egészséges tekercs	###
+item.noxcrew.ft:cosmetic_chest.name=Kinézetmódosító láda	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=Teleporttérkép	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=Kihívások listája	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=Tojás	###
+item.noxcrew.ft:milk_bucket.name=Tejesvödör	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=Fagyasztóíj	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=Fagyasztóíj	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=Vaskulcs	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=Aranykulcs	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=Gyémántkulcs	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=Alvilágérc kulcs	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=Üres ecset	###
+item.noxcrew.ft:paintbrush_green=Zöld ecset	###
+item.noxcrew.ft:paintbrush_yellow=Sárga ecset	###
+item.noxcrew.ft:paintbrush_blue=Kék ecset	###
+item.noxcrew.ft:paintbrush_red=Piros ecset	###
+item.noxcrew.ft:paintbrush_white=Fehér ecset	###
+item.noxcrew.ft:paintbrush_black=Fekete ecset	###
+item.noxcrew.ft:paintbrush_brown=Barna ecset	###
+item.noxcrew.ft:paintbrush_purple=Lila ecset	###
+item.noxcrew.ft:beanie_red=Red Rabbits sapka	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=Orange Ocelots sapka	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=Yellow Yaks sapka	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=Lime Llamas sapka	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=Green Geckos sapka	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=Aqua Axolotls sapka	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=Cyan Coyotes sapka	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=Blue Bats sapka	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=Purple Pandas sapka	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=Pink Parrots sapka	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=Partisapka	###
+item.noxcrew.ft:hat_propeller=Propelleres sapka	###
+item.noxcrew.ft:hat_crown_cake=Tortakorona	###
+item.noxcrew.ft:hat_birthday_present=Születésnapi ajándékos kalap	###
+item.noxcrew.ft:hat_jester=Udvaribolond-sapka	###
+item.noxcrew.ft:hat_chicken_jockey=Csirkezsokés kalap	###
+item.noxcrew.ft:hat_boombox=Boomboxos kalap	###
+item.noxcrew.ft:foam_finger=Habszivacs ujj	###
+item.noxcrew.ft:balloon_animal=Lufiállatka	###
+item.noxcrew.ft:big_bubble_blower=Óriás buborékfúvó	###
+item.noxcrew.ft:silly_horn=Bolondos szarv	###
+item.noxcrew.ft:party_popper=Konfettivető	###
+item.noxcrew.ft:confetti_tag_prime=Konfettis címke	###
+item.noxcrew.ft:confetti_tag_leftover=Konfettis címke	###
+item.noxcrew.ft:pizza_box=Pizzás doboz	###
+item.noxcrew.ft:celebration_fireworks=Születésnapi tűzijáték	###
+item.noxcrew.ft:player_gift_giving=Ajándékdoboz	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=Ajándékdoboz	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=Diszkógömb	###
+item.noxcrew.ft:beach_ball=Strandlabda	###
+item.noxcrew.ft:balloon_helium=Héliumos léggömb	###
+item.noxcrew.ft:leave_game=§6Kilépés a játékból	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=Pizzaszelet	###
+item.noxcrew.ft:mcc_burger=Ízletes hamburger	###
+item.noxcrew.ft:anniversary_hot_dog=Ízletes hotdog	###
+item.noxcrew.ft:party_cupcake=Muffin	###
+item.noxcrew.ft:party_cake=Tortaszelet	###
+item.noxcrew.ft:party_chips=Egy tál chips	###
+item.noxcrew.ft:party_cookie=Csokis keksz	###
+item.noxcrew.ft:party_soda=Szénsavas üdítő	###
+item.noxcrew.ft:cotton_candy=Vattacukor	###
+item.noxcrew.ft:popcorn=Popcorn	###
+item.noxcrew.ft:super_wrap=Egészséges tekercs	###
+item.noxcrew.ft:cosmetic_chest=Kinézetmódosító láda	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=Teleporttérkép	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=Kihívások listája	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=Tojás	###
+item.noxcrew.ft:milk_bucket=Tejesvödör	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=Gyorsító blokk	###
+tile.noxcrew.ft:launch_pad.name=Indítóállás blokk	###
+tile.noxcrew.ft:jump_pad.name=Magasugrás blokk	###
+tile.noxcrew.ft:painting_green.name=Zöld blokk	###
+tile.noxcrew.ft:painting_yellow.name=Sárga blokk	###
+tile.noxcrew.ft:painting_blue.name=Kék blokk	###
+tile.noxcrew.ft:painting_red.name=Vörös blokk	###
+tile.noxcrew.ft:painting_white.name=Fehér blokk	###
+tile.noxcrew.ft:painting_black.name=Fekete blokk	###
+tile.noxcrew.ft:painting_brown.name=Barna blokk	###
+tile.noxcrew.ft:painting_purple.name=Lila blokk	###
+tile.noxcrew.ft:elytra_icon.name=Elytrakapu blokk	###
+tile.noxcrew.ft:audience_member_oof.name=Összerezzenő tag a közönségben	###
+tile.noxcrew.ft:audience_member_angry.name=Mérges tag a közönségben	###
+tile.noxcrew.ft:audience_member_joy.name=Vidám tag a közönségben	###
+tile.noxcrew.ft:audience_member_happy.name=Boldog tag a közönségben	###
+tile.noxcrew.ft:audience_member_unimpressed.name=Közönyös tag a közönségben	###
+tile.noxcrew.ft:audience_member_unsure.name=Bizonytalan tag a közönségben	###
+tile.noxcrew.ft:audience_member_starstruck.name=Lenyűgözött tag a közönségben	###
+tile.noxcrew.ft:cake_centre.name=Torta közepe	###
+tile.noxcrew.ft:cake_edge.name=Torta széle	###
+tile.noxcrew.ft:cake_cherry.name=Tortacseresznye	###
+tile.noxcrew.ft:window_spruce.name=Fenyőfa ablak	###
+tile.noxcrew.ft:window_oak.name=Tölgy ablak	###
+tile.noxcrew.ft:iron_bars.name=Egyenes vasrács	###
+tile.noxcrew.ft:iron_bars_h.name=Fél vasrács	###
+tile.noxcrew.ft:iron_bars_c.name=Sarok vasrács	###
+tile.noxcrew.ft:castle_pink.name=Rózsaszín kastély – terrakotta 	###
+tile.noxcrew.ft:sot_flower.name=Tűzvirág – megvilágított 	###
+tile.noxcrew.ft:metal_rigging_v.name=Vízszintes fémállványzat	###
+tile.noxcrew.ft:metal_rigging_h.name=Függőleges fémállványzat	###
+tile.noxcrew.ft:modern_light.name=Modern fény	###
+tile.noxcrew.ft:rope.name=Kötél blokk	###
+tile.noxcrew.ft:hieroglyph_1_a.name=Barlangi rejtvény, 1. nap, bal felső sarok	###
+tile.noxcrew.ft:hieroglyph_1_b.name=Barlangi rejtvény, 1. nap, jobb felső sarok	###
+tile.noxcrew.ft:hieroglyph_1_c.name=Barlangi rejtvény, 1. nap, bal alsó sarok	###
+tile.noxcrew.ft:hieroglyph_1_d.name=Barlangi rejtvény, 1. nap, jobb alsó sarok	###
+tile.noxcrew.ft:hieroglyph_2_a.name=Barlangi rejtvény, 2. nap, bal felső sarok	###
+tile.noxcrew.ft:hieroglyph_2_b.name=Barlangi rejtvény, 2. nap, jobb felső sarok	###
+tile.noxcrew.ft:hieroglyph_2_c.name=Barlangi rejtvény, 2. nap, bal alsó sarok	###
+tile.noxcrew.ft:hieroglyph_2_d.name=Barlangi rejtvény, 2. nap, jobb alsó sarok	###
+tile.noxcrew.ft:hieroglyph_3_a.name=Barlangi rejtvény, 3. nap, bal felső sarok	###
+tile.noxcrew.ft:hieroglyph_3_b.name=Barlangi rejtvény, 3. nap, jobb felső sarok	###
+tile.noxcrew.ft:hieroglyph_3_c.name=Barlangi rejtvény, 3. nap, bal alsó sarok	###
+tile.noxcrew.ft:hieroglyph_3_d.name=Barlangi rejtvény, 3. nap, jobb alsó sarok	###
+tile.noxcrew.ft:hieroglyph_4_a.name=Barlangi rejtvény, 4. nap, bal felső sarok	###
+tile.noxcrew.ft:hieroglyph_4_b.name=Barlangi rejtvény, 4. nap, jobb felső sarok	###
+tile.noxcrew.ft:hieroglyph_4_c.name=Barlangi rejtvény, 4. nap, bal alsó sarok	###
+tile.noxcrew.ft:hieroglyph_4_d.name=Barlangi rejtvény, 4. nap, jobb alsó sarok	###
+tile.noxcrew.ft:hieroglyph_5_a.name=Barlangi rejtvény, 5. nap, bal felső sarok	###
+tile.noxcrew.ft:hieroglyph_5_b.name=Barlangi rejtvény, 5. nap, jobb felső sarok	###
+tile.noxcrew.ft:hieroglyph_5_c.name=Barlangi rejtvény, 5. nap, bal alsó sarok	###
+tile.noxcrew.ft:hieroglyph_5_d.name=Barlangi rejtvény, 5. nap, jobb alsó sarok	###
+tile.noxcrew.ft:hieroglyph_6_a.name=Barlangi rejtvény, 6. nap, bal felső sarok	###
+tile.noxcrew.ft:hieroglyph_6_b.name=Barlangi rejtvény, 6. nap, jobb felső sarok	###
+tile.noxcrew.ft:hieroglyph_6_c.name=Barlangi rejtvény, 6. nap, bal alsó sarok	###
+tile.noxcrew.ft:hieroglyph_6_d.name=Barlangi rejtvény, 6. nap, jobb alsó sarok	###
+tile.noxcrew.ft:hieroglyph_7_a.name=Barlangi rejtvény, 7. nap, bal felső sarok	###
+tile.noxcrew.ft:hieroglyph_7_b.name=Barlangi rejtvény, 7. nap, jobb felső sarok	###
+tile.noxcrew.ft:hieroglyph_7_c.name=Barlangos rejtvény, 7. nap, bal alsó sarok	###
+tile.noxcrew.ft:hieroglyph_7_d.name=Barlangos rejtvény, 7. nap, jobb alsó sarok	###
+tile.noxcrew.ft:bigcake_top.name=Tortablokk teteje	###
+tile.noxcrew.ft:bigcake_bottom.name=Tortablokk alja	###
+tile.noxcrew.ft:cake_slice.name=Tortaszelet	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=15 hosszú lobogó teteje	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=15 hosszú lobogó alja	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=MCC hosszú lobogó teteje	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=MCC hosszú lobogó alja	###
+tile.noxcrew.ft:decoration_bunting_a.name=Fehér zászlófüzér	###
+tile.noxcrew.ft:decoration_bunting_b.name=Zöld zászlófüzér	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=MCC zászlófüzér	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=Zöld kopjalobogó	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=Fehér kopjalobogó	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=MCC kopjalobogó	###
+tile.noxcrew.ft:decoration_flag_mcc.name=Kicsi MCC zászló	###
+tile.noxcrew.ft:decoration_flag_15.name=15 éves kicsi zászló	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=15 éves zászló teteje	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=15 éves zászló alja	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=MCC zászló teteje	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=MCC zászló alja	###
+tile.noxcrew.ft:plush_red.name=Red Rabbits plüss	###
+tile.noxcrew.ft:plush_orange.name=Orange Ocelots plüss	###
+tile.noxcrew.ft:plush_yellow.name=Yellow Yaks plüss	###
+tile.noxcrew.ft:plush_lime.name=Lime Llamas plüss	###
+tile.noxcrew.ft:plush_green.name=Green Geckos plüss	###
+tile.noxcrew.ft:plush_cyan.name=Cyan Coyotes plüss	###
+tile.noxcrew.ft:plush_aqua.name=Aqua Axolotls plüss	###
+tile.noxcrew.ft:plush_blue.name=Blue Bats plüss	###
+tile.noxcrew.ft:plush_pink.name=Pink Parrots plüss	###
+tile.noxcrew.ft:plush_purple.name=Purple Pandas plüss	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=MCC zászló bal felső része	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=MCC zászló jobb felső része	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=MCC zászló bal alsó része	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=MCC zászló jobb alsó része	###
+tile.noxcrew.ft:decoration_present.name=MCC ajándékdoboz	###
+tile.noxcrew.ft:cup_poster1.name=Bevégzőkupás poszter 1	###
+tile.noxcrew.ft:cup_poster2.name=Bevégzőkupás poszter 2	###
+tile.noxcrew.ft:logo_1.name=Noxcrew logó 1	###
+tile.noxcrew.ft:logo_2.name=Noxcrew logó 2	###
+tile.noxcrew.ft:logo_3.name=Noxcrew logó 3	###
+tile.noxcrew.ft:melt_spawner.name=Meltdown szörnyidéző	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=Érmehalom	###
+entity.noxcrew.ft:treasure_chest.name=Kincsesláda	###
+entity.noxcrew.ft:key_podium.name=Kulcsdobogó	###
+entity.noxcrew.ft:sand_podium.name=Homokdobogó	###
+entity.noxcrew.ft:armor_podium.name=Páncéldobogó	###
+entity.noxcrew.ft:paint_pot.name=Festékes edény	###
+entity.noxcrew.ft:giant_cake.name=Születésnapi torta	###
+entity.noxcrew.ft:beach_ball.name=Strandlabda	###
+entity.noxcrew.ft:balloon_helium.name=Héliumos léggömb	###
+entity.noxcrew.ft:disco_ball.name=Diszkógömb	###
+entity.noxcrew.ft:lost_pearl.name=Titokzatos gyöngy	###
+entity.noxcrew.ft:decoration_awning.name=Díszes napellenző	###
+entity.noxcrew.ft:decoration_bunting.name=Díszes drapéria	###
+entity.noxcrew.ft:decoration_cupcake.name=Születésnapi süti	###
+entity.noxcrew.ft:decoration_ballons.name=Születésnapi léggömbök	###
+entity.noxcrew.ft:decoration_15.name=15 léggömb	###
+entity.noxcrew.ft:decoration_board.name=Születésnapi tábla	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=Csirkés léggömb	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=Kabalás léggömb	###
+entity.noxcrew.ft:trophy_help.name=Segítség	###
+entity.noxcrew.ft:sand_timer.name=Homokóra	###
+entity.noxcrew.ft:crowned_frog.name=Békaherceg	###
+entity.noxcrew.ft:cake_candles.name=Tortagyertya	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=Start gomb	###
+entity.noxcrew.ft:vendor_mascot.name=Kabala kalapok	###
+entity.noxcrew.ft:vendor_hat.name=Kalapok	###
+entity.noxcrew.ft:vendor_toys.name=Játékok	###
+entity.noxcrew.ft:vendor_food.name=Kaják	###
+entity.noxcrew.ft:advert_creator_cup.name=Bevégzőkupa	###
+entity.noxcrew.ft:md_creeper.name=Creeper	###
+entity.noxcrew.ft:md_blaze.name=Őrláng	###
+entity.noxcrew.ft:md_blaze<>.name=Őrláng	###
+entity.noxcrew.ft:md_skeleton.name=Csontváz	###
+entity.noxcrew.ft:md_skeleton<>.name=Csontváz	###
+entity.noxcrew.ft:md_spider.name=Pók	###
+entity.noxcrew.ft:md_vindicator.name=Bosszúálló	###
+entity.noxcrew.ft:md_zombie.name=Zombi	###
+entity.noxcrew.ft:md_zombie_baby.name=Bébizombi	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§oA gyöngy rejtélyesen ringatózik fel s le...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r Felfedeztél egy rejtélyt a barlangban!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=VÁRAKOZÁS A JÁTÉKOSOKRA...	###
+txt.misc.msg4=A játék indulásáig hátralévő idő: 	###
+txt.misc.msg5=Teleportálásra készülsz	###
+txt.misc.msg6_1=§6§l!§r %s ajándékot adott neked!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r %s ajándékot kapott tőled!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r A játékos nem tud további ajándékokat fogadni	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= Elytra felvéve 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §eMegoldottad a rejtvény egyik részét... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §aTeljesítettél egy Barlangi rejtvényt! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: Ugrálós kedvedben vagy? Rohangálj a felhők között az  §6Ace Race§r  minijátékban!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: Kihívásra vágysz? Próbáld elvégezni az összes feladatot a  §6Grid Runners§r  minijátékban!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]: Vár rád a  §6Meltdown§r  minijáték... túléled a szörnyek hordáját?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]: Fedezd fel a misztikus templomot  §6Sands of Time§r  minijátékban!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: A Trófeateremben megnézheted az összes teljesített kihívásod! A  központi hallban, a  §6Grid Runners§r  portálja melletti nagy sátorban találod!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: Szeretnél egy kalapot a fejedre? Menj, és vegyél egyet a Kalapáruházban! A  központi hallban, a nagy kalap alatt találod!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: Szeretnél néhány menő játékot? Vásárolj a Játékáruházban! A  központi hallban, a bevásárlókocsis táblák mellett találod!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: Megkóstolnál egy-két kaját? Vásárolj az Élelmiszerboltban! A  központi hallban, a nagy csirkeszobornál lévő étteremnél találod!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]: Tudtad, hogy  rejtélyes fejtörők megoldása vár rád? A  központi hallban, a hegyen találod a Rejtélyes barlangot!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: Tudtad, hogy minden nap egy új rejtélyes fejtörő vár rád? Ha  jelet látsz  mellett, akkor egy újabb fejtörő jelent meg!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: Tudtad, hogy az összes előszobában érmehalmok várnak rád? Kezdj neki a keresésnek!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: Tele a leltár? A kukánál megszabadulhatsz egy-két dologtól!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cEhhez nincs elég érméd	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cNincs helyed arra, hogy megvásárold ezt az elemet. A meglévő dolgaidtól a kukánál szabadulhatsz meg.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r Már van ilyen kalapod!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s megtelt!§r Gyűjts egy másik hozzávalót!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cNincs kulcsod ehhez a ládához!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6Ezt a ládát már kinyitottad!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=Pizza! Edd meg, és kapsz egy gyorsítót!	###
+txt.shop_info.mcc_burger=Hamburger! Edd meg, és kapsz egy gyorsítót és magasugrást!	###
+txt.shop_info.anniversary_hot_dog=Hot dog! Edd meg, és kapsz egy gyorsítót és magasugrást!	###
+txt.shop_info.party_cupcake=Cupcake! Edd meg, és kapsz egy zuhanáslassítást!	###
+txt.shop_info.party_cake=Torta! Edd meg, és kapsz egy lebegést!	###
+txt.shop_info.party_chips=Csipsz! Edd meg, és kapsz egy gyorsítót!	###
+txt.shop_info.party_cookie=Süti! Edd meg, és kapsz egy magasugrást!	###
+txt.shop_info.party_soda=Üccsi! Idd meg, és kapsz egy gyorsítót!	###
+txt.shop_info.cotton_candy=Vattacukor! Edd meg, és kapsz egy magasugrást!	###
+txt.shop_info.popcorn=Patikuki! Edd meg, és kapsz egy magasugrást!	###
+txt.shop_info.super_wrap=Szupiszendó! Edd meg, és tiéd az összes erősítő!	###
+txt.shop_info.foam_finger=Habszivacs kéz! Tartsd fel, hogy lássák, kivel vagy!	###
+txt.shop_info.balloon_animal=Lufiállatka! Használd, és egy léggömb emelkedik a magasba!	###
+txt.shop_info.big_bubble_blower=Buborékfúvó! Használd buborékok fújására!	###
+txt.shop_info.silly_horn=Vicces kürt! Használd, és hallgasd meg a hangját!	###
+txt.shop_info.party_popper=Konfettiágyú! Használd konfetti kilövésére!	###
+txt.shop_info.confetti_tag_prime=Konfettijelölő! Használd egy játékoson, hogy megjelöld konfettivel!	###
+txt.shop_info.pizza_box=Pizzásdoboz! Használd a játékosokon, és adj nekik pizzát!	###
+txt.shop_info.celebration_fireworks=Tűzijáték! Használd, és élvezd a tűzijátékot!	###
+txt.shop_info.player_gift_giving=Ajándék! Használd más játékosokon, és adj nekik ajándékot!	###
+txt.shop_info.disco_ball=Diszkógömb! Használd, és megjelenik egy táncoló diszkógömb!	###
+txt.shop_info.beach_ball=Strandlabda! Használd, és megjelenik egy strandlabda. Üss rá, és kezdődhet a játék!	###
+txt.shop_info.balloon_helium=Léggömb! Használd, és egy léggömb emelkedik a magasba!	###
+
+##Ace Race
+txt.tut.ace_title= Ace Race 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6Beszélj Seapeekayjel a kezdővonalon tanácsokért és tippekért!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: Versenyezz a célvonalig a gyorsító és ugrópárnákkal!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= Győzd le a fenevadakat!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6Beszélj Smajorral a váróteremben tanácsokért és tippekért!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: Győzz le minél több szörnyet, mielőtt lejár az időzítő!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= Másold le a festményt!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: Használd a színes festékeket, hogy lemásold a festményeket!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= Süss tortákat!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: Gyűjtsd össze a torta hozzávalóit, és helyezd őket középre!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= Futás!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: Juss el a célvonalig!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r Irány a következő szoba!	###
+
+txt.grid.wave_clear=Szörnyhullám legyőzve!	###
+txt.grid.wave_reward= 10 érmét szereztél!	###
+txt.grid.painting_clear=Festmény befejezve!	###
+txt.grid.painting_reward= 10 érmét szereztél!	###
+txt.grid.cake_clear=Torta megsütve!	###
+txt.grid.cake_reward= 10 érmét szereztél!	###
+
+##Meltdown
+txt.tut.melt_title= Meltdown 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6Beszélj hannahxxrose-zal a bejáratnál tanácsokért és tippekért!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: Maradj életben az egyes szobákban, mielőtt leolvadna! Fagyassz meg ellenfeleket az íjaddal, majd üsd meg őket!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= FIGYELMEZTETÉS: LEOLVADÁS 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= VESZÉLY: KRITIKUS LEOLVADÁS 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1= 1/7 leolvadástól megmenekültél 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= 2/7 leolvadástól megmenekültél 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= 3/7 leolvadástól megmenekültél 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= 4/7 leolvadástól megmenekültél 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= 5/7 leolvadástól megmenekültél 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= 6/7 leolvadástól megmenekültél 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= 7/7 leolvadástól megmenekültél 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= %s/7 leolvadástól megmenekültél 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r Irány a következő szoba!	###
+
+##Sands of Time
+txt.tut.sands_title= Sands of Time 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6Beszélj HBomb94-gyel a piramis mellett tanácsokért és tippekért!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: Keress minél több érmét, mielőtt elfogy az időd! Gyűjts homokszemcséket bónusz időért!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= 5 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= 10 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= 20 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= 30 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= 50 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= 100 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= 200 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= 400 érmét találtál!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=Láda kinyitva!	###
+txt.sot.key=Kulcs begyűjtve!	###
+txt.sot.upgraded=Továbbfejlesztve!	###
+
+##Lobby
+txt.lobby.coins5= 5 érmét találtál!	###
+txt.lobby.coins20= 20 érmét találtál!	###
+txt.lobby.coins30= 30 érmét találtál!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=TÉRKÉP	###
+txt.ui.tp.confirm1=Biztos vagy benne?	#
+txt.ui.tp.confirm_target=Ezzel ide teleportálsz: %s.	#
+txt.ui.tp.area_ace_race= Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= Grid Runners	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= Központi hall	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=A teleportáló készen áll!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=Kinézetmódosító láda	###
+txt.ui.cosmetic=Itt megtalálhatod az összes kalapodat!	###
+txt.ui.button.select=Kiválasztás	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=JUTALOM FELOLDVA	###
+txt.ui.title.red_rabbit_cc=Red Rabbits-fej	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=Orange Ocelots-fej	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=Yellow Yaks-fej	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=Lime Llamas-fej	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=Green Geckos-fej	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=Aqua Axolotls-fej	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=Cyan Coyotes-fej	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=Blue Bats-fej	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=Purple Pandas-fej	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=Pink Parrots-fej	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=Csók a közönségnek hangulatjel	###
+txt.ui.title.ride_victory_emote=Lovaglás a győzelem felé hangulatjel	###
+txt.ui.title.cartwheel_victory_emote=Győzelmi cigánykerék hangulatjel	###
+txt.ui.title.flying_chicken_emote=Repülő csirke hangulatjel	###
+txt.ui.title.cape=MCCxMinecraft 15. évfordulós köpeny	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=MCC-korona	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=Feloldottál egy karakteralkotó tárgyat! Nézd meg az öltözőben.	###
+txt.ui.text.cape_unlocked=Gratulálok! Feloldottad az MCC-köpenyt! Nézd meg az öltözőben.	###
+txt.ui.button.claim=MEGSZERZÉS	###
+
+##UI Vendors
+txt.title.vendor_food= Élelem 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= Kabala kalapok 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= Kalapok 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= Játékok 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=Vásárolok	###
+txt.ui.sold_out=ELFOGYOTT	###
+
+##Game Toasts
+txt.ui.toast.time= §lIDŐ§r	###
+txt.ui.toast.coins_collected= §lBEGYŰJTÖTT ÉRMÉK§r	###
+txt.ui.toast.coins_earned= §lMEGSZERZETT ÉRMÉK§r	###
+txt.ui.toast.new_record=§lÚJ REKORD!§r	###
+txt.ui.toast.room=SZOBA	###
+txt.ui.toast.time_spent= §lELTÖLTÖTT IDŐ§r	###
+txt.ui.toast.complete=TELJESÍTVE!	###
+txt.ui.toast.highscore= §lREKORDPONTSZÁM§r	###
+txt.ui.toast.highest_coins= §lLEGJOBB GYŰJTÉS§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §lALVILÁGÉRCÉRMES	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §lGYÉMÁNTÉRMES	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §lARANYÉRMES	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §lVASÉRMES	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §lRÉZÉRMES	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §lKINYITOTT LÁDA§r	###
+txt.ui.toast.sot.escaped= §lMEGMENEKÜLTÉL!§r	###
+txt.ui.toast.sot.failed= §lNEM MENEKÜLTÉL MEG...§r	###
+txt.ui.toast.gr.mobs_slain= §lLEGYŐZÖTT MOB§r	###
+txt.ui.toast.gr.blocks_painted= §lBEFESTETT BLOKK§r	###
+txt.ui.toast.gr.cakes_baked= §lMEGSÜTÖTT TORTA§r	###
+txt.ui.toast.ar.time= §lIDŐ§r	###
+txt.ui.toast.md.slain= §lÖSSZEZÚZOTT MOB§r	###
+txt.ui.toast.md.rooms_survived_0= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_survived_1= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_survived_2= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_survived_3= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_survived_4= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_survived_5= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_survived_6= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_survived_7= §lTÚLÉLT SZOBA§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=KIHÍVÁSOK LISTÁJA	###
+txt.ui.body1.challenge_list=Nyomd meg az ikont a kihívás megtekintéséhez!	###
+txt.ui.reward.cape= JUTALOM KÖPENY	###
+txt.ui.status.cape=Teljesítve	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=Aqua Axolotls kihívás	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=Keresd meg az elveszett gyöngyöt, miközben a §lAqua Axolotls sapkáját§r viseled. Egy hatalmas víztükör mélyén rejtőzik...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oNyerd meg a Aqua Axolotls-fej karakteralkotó tárgyat	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=Blue Bats kihívás	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=Gyűjts 100 homokszemcsét §lSands of Time§r minijátékból, miközben a §lBlue Bats sapkáját§r viseled.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oNyerd meg a Blue Bats-fej karakteralkotó tárgyat	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=%s homokszemcse összegyűjtve.	###
+
+txt.ui.title.cyan_coyote_challenge=Cyan Coyotes kihívás	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=Gyűjts 75 halomnyi érmét §lSands of Timei§r vagy a §lNukleáris erőmű§r minijátékban, miközben a §lCyan Coyotes sapkáját§r viseled.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oNyerd meg a Cyan Coyotes-fej karakteralkotó tárgyat	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=%s halomnyi érme összegyűjtve.	###
+
+txt.ui.title.green_gecko_challenge=Green Geckos kihívás	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=Fess be 200 blokkot a §lGrid Runners§r minijáték „Másold le a festményt” kihívásában, miközben a §lGreen Geckos sapkáját§r viseled.	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oNyerd meg a Green Geckos-fej karakteralkotó tárgyat	###
+txt.ui.progress.green_gecko_challenge=%s blokk lefestve.	###
+
+txt.ui.title.lime_llama_challenge=Lime Llamas kihívás	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=Ajándékozz el 10 ajándékdobozt, miközben a §lLime Llamas sapkáját§r viseled. Az ajándékdobozokat megvásárolhatod a játékárustól a központi világban.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oNyerd meg a Lime Llamas-fej karakteralkotó tárgyat	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=%s ajándékdoboz elajándékozva.	###
+
+txt.ui.title.orange_ocelot_challenge=Orange Ocelots kihívás	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=Haladj át 100 gyorsítón az §lAce Race§r minijáték teljesítésekor, miközben a §lOrange Ocelots sapkáját§r viseled.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oNyerd meg a Orange Ocelots-fej karakteralkotó tárgyat	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=%s gyorsító felhasználva.	###
+
+txt.ui.title.pink_parrot_challenge=Pink Parrots kihívás	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=Fuss át az elytrakapukon 25-ször az §lAce Race§r minijáték teljesítésekor, miközben a §lPink Parrots sapkáját§r viseled.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oNyerd meg a Pink Parrots-fej karakteralkotó tárgyat	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=%s elytrakapu felhasználva.	###
+
+txt.ui.title.purple_panda_challenge=Purple Pandas kihívás	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=Helyezz el 200 hozzávalót a §lGrid Runners§r minijáték „Süss tortát” kihívásában, miközben a §lPurple Pandas sapkáját§r viseled.	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oNyerd meg a Purple Pandas-fej karakteralkotó tárgyat	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=%s hozzávaló elhelyezve.	###
+
+txt.ui.title.red_rabbit_challenge=Red Rabbits kihívás	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=Fuss keresztül egy indítóálláson 50-ször az §lAce Race§r minijáték teljesítésekor, miközben a §lRed Rabbits sapkáját§r viseled.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oNyerd meg a Red Rabbits-fej karakteralkotó tárgyat	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=%s indítóállás felhasználva.	###
+
+txt.ui.title.yellow_yak_challenge=Yellow Yaks kihívás	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=Győzz le 350 fagyott ellenséget a §lMeltdown§r minijátékban, miközben a §lYellow Yaks sapkáját§r viseled.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oNyerd meg a Yellow Yaks-fej karakteralkotó tárgyat	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=%s fagyott ellenség legyőzve.	###
+
+txt.ui.title.ace_race_challenge=Ace Race kihívás	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=Teljesíts egy pályát az §lAce Race§r minijátékban!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§oNyerd meg a „Csók a közönségnek” hangulatjelet	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=Grid Runners kihívás	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=Teljesíts egy §lGrid Runners§r minijátékot!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§oNyerd meg a „Lovaglás a győzelem felé” hangulatjelet	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=Meltdown kihívás	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=Maradj életben a §lMeltdown§r minijáték 3. szobájáig	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§oNyerd meg a „Repülő csirke” hangulatjelet	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=Sands of Time kihívás	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=Lépj be §lSands of Time§r minijátékba, élj túl 2 percet, majd menekülj meg sikeresen!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§oNyerd meg a „Győzelmi cigánykerék” hangulatjelet	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=Rejtélyes barlangos kihívás	###
+txt.ui.body1.cave_challenge=Teljesítsd mind a 7 festett rejtvényes kihívást a rejtélyes kastélyban.	###
+txt.ui.reward.cave_challenge=§oNyerd meg az MCC korona karakteralkotó tárgyat	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=%s rejtvényt megfejtettél a 7-ből.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e VÁRAKOZÁS A JÁTÉKOSOKRA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §fVÁRAKOZÁS A JÁTÉKOSOKRA (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §eVÁRAKOZÁS A JÁTÉKOSOKRA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §eVÁRAKOZÁS A JÁTÉKOSOKRA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §eVÁRAKOZÁS A JÁTÉKOSOKRA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §eVÁRAKOZÁS A JÁTÉKOSOKRA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §eVÁRAKOZÁS A JÁTÉKOSOKRA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§eMaximális várakozási idő:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e VÁRAKOZÁS A JÁTÉKRA… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §fVÁRAKOZÁS A JÁTÉKRA… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e VÁRAKOZÁS A JÁTÉKRA… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e VÁRAKOZÁS A JÁTÉKRA… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e VÁRAKOZÁS A JÁTÉKRA… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e VÁRAKOZÁS A JÁTÉKRA… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e VÁRAKOZÁS A JÁTÉKRA… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eNagyjából §f%s§e perc vagy kevesebb	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eNagyjából §f%s§e perc vagy kevesebb	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aA JÁTÉK KÉSZEN ÁLL!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eTELEPORTÁLÁS §e §f%s MÚLVA!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eTELEPORTÁLTÁL!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§eFelkészülni…	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§eKezdés:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aRAJT!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens és  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=Segítség	###
+txt.title.dia.ender_cup= Bevégzőkupa 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=Békaherceg	###
+
+txt.title.start_game=Játék indítása	###
+txt.title.join_queue=Csatlakozás a várólistához	###
+txt.title.ace_race= Ace Race 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= Grid Runners 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= Meltdown 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= Sands of Time 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= Központi hall 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=Oké	###
+txt.button.yes=Igen	###
+txt.button.no=Nem	###
+txt.button.back=Vissza	###
+txt.button.exit=Kilépés	###
+txt.button.close=Bezárás	###
+txt.button.start_game=Játék indítása	###
+txt.button.join_queue=Csatlakozás a várólistához	###
+txt.button.tutorial=Oktatóanyag	###
+txt.button.challenges_q=Kihívások?	###
+txt.button.who_are_you_q=Ki vagy te?	###
+txt.button.what_games_q=Milyen játékok?	###
+txt.button.cave_mystery_q=Barlangos rejtély?	###
+txt.button.go_to_portal=Ugrás a portálhoz	###
+txt.button.remove_hat=Kalap levétele	###
+txt.button.no_hats=Nincs elérhető kalap. Vásárolj az áruházban!	###
+txt.button.pet_frog=Béka megsimogatása	###
+txt.button.talk_frog=Beszélgetés a békával	###
+txt.button.kiss_frog=Béka megcsókolása	###
+txt.button.love_minecraft_q=Szereted a Minecraftot?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=Szereted az MCC-t?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=Legjobb meneted?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=Ace Race?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=Közvetítés?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=Kedvenc frissítésed?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=Grid Runners?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=Meltdown?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=Kedvenc emléked?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=Sands of Time?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=Következő	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=Szia!   Jens vagyok!	###
+txt.jagnes.1_0.dia2=Én pedig  Agnes vagyok!	###
+txt.jagnes.1_0.dia3=Üdvözöllek az MCC Minecraft 15. évfordulós buliján!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=Én és Noxcrew azért vagyunk itt, hogy minijátékokat játsszunk az MC Bajnokságból!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=Fedezz fel, játssz minijátékokat, és oldd meg a barlang rejtélyét!	###
+txt.jagnes.1_0.dia6=Kövesd az ösvényt a portálokhoz, és próbálj ki egy minijátékot!	###
+txt.jagnes.1_0.dia6_1=A kezdéshez kövesd az ösvényt a portálokhoz, és próbálj ki egy minijátékot!	###
+txt.jagnes.1_0.dia6_2=A kezdéshez kövesd a lebegő  koronákat a portálhoz, és próbálj ki egy minijátékot!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=Lépj át a portálokon, hogy részt vehess az MC Bajnokságból kölcsönzött minijátékokban.	###
+txt.jagnes.2_0.dia2=A minijátékok: §1Ace Race§r, §1Grid Runners§r, §1Meltdown§r és §1Sands of Time§r!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=Próbáld ki mindet, és válaszd ki a kedvenced!	###
+
+##What games?
+txt.jagnes.2_1.dia1=Lépj át a portálokon, hogy részt vehess az MC Bajnokságból kölcsönzött minijátékokban.	###
+txt.jagnes.2_1.dia2=Emelkedj a felhők közé az §1Ászok versenyében§r, és szeld át az égboltot!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=Látogasd meg a §1Grid Runners§r stadiont, és teljesítsd a kihívásokat!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=Lépj be a §1Meltdown§r kihívásba, majd éld túl a zombikat és a leolvadó szobákat!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=Merészkedj be §1Sands of Time§r templomába, és fedezd fel a felhalmozott kincseket!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=Próbáld ki mindet, és válaszd ki a kedvenced!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= Azt rebesgetik, hogy egy rejtélyes barlang bújik meg a hegyekben.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=Állítólag festett  fejtörők várnak arra, hogy megoldd őket!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=Keresd meg a barlangot, és fedd fel a titkát!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=Kövesd a lebegő  koronákat az  §6Ace Race§r  minijáték portáljához!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=Kövesd a lebegő  koronákat a   §6Grid Runners§r  minijáték portáljához!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=Kövesd a lebegő  koronákat a  §6Meltdown§r  minijáték portáljához!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=Kövesd a lebegő  koronákat  §6Sands of Time§r  minijáték portáljához!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=Találtál egy áruházat!	###
+txt.jagnes.help_shop2=Vásárolj tárgyakat a minijátékokban szerzett érméiddel!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=Megtaláltad a  Trófeatermet!	###
+txt.jagnes.help_trophy2=Itt megtekintheted a teljesített kihívásokért kapott trófeáidat és jutalmaidat!	###
+txt.jagnes.help_trophy3=Készíts egy fotót, és tedd közzé az eredményeidet!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=Megtaláltad a Torta szobát!	###
+txt.jagnes.help_cake2=A torta gyertyáin megtekintheted az eredményeidet. Teljesítsd mindet, és zsebelj be különleges díjakat!	###
+txt.jagnes.help_cake3=Készíts egy fotót, és tedd közzé az eredményeidet!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=Találtál egy minijátékhoz vezető portált!	###
+txt.jagnes.help_portal2=Lépj át a portálon a minijáték világába!	###
+txt.jagnes.help_portal3=Hajrá, csak sétálj rajta keresztül!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=Remek! Megtaláltad az  §6Ace Race§r   portált!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=Emelkedj a felhők közé, és szeld át az égboltot!	###
+txt.jagnes.help_ace_race_portal3=Hajrá, csak sétálj rajta keresztül!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=Ó, nézd csak! Itt a  §6Grid Runners§r  portál!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=Látogasd meg a stadiont, és teljesítsd a kihívásokat a különböző szobákban!	###
+txt.jagnes.help_grid_runners_portal3=Hajrá, csak sétálj rajta keresztül!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=Á, megtaláltad a  §6Meltdown§r  portált!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=Lépj be az épületbe, majd éld túl a zombikat és a leolvadó szobákat!	###
+txt.jagnes.help_meltdown_portal3=Hajrá, csak sétálj rajta keresztül!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=Nagyszerű! Megtaláltad  §6Sands of Time§r  portált!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=Merészkedj be az ősi templomba, és fedezd fel a felhalmozott kincseket!	###
+txt.jagnes.help_sot_portal3=Hajrá, csak sétálj rajta keresztül!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=Ez igen! Megtaláltad a  rejtélyes barlangot! 	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=Vajon meg tudod oldani a naponta megjelenő rejtvényeket?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=Nocsak! Találtál egy tevékenységet!	###
+txt.jagnes.help_activity2=Van kedved itt maradni, és játszani valamit?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lMiért szereted a Minecraftot?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lMi a kedvenc emléked az MCC-ről?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lLegjobb meneted az MCC-n?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lMit szeretsz a legjobban az Ászok versenyében?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lMiért érdemes megnézni a Bevégzőkupa-közvetítésedet?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=Szia! §1Seapeekay§r vagyok, és üdvözöllek az §1Ászok versenyén§r!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=Használd az erősítőket és a párnákat, hogy elsőként érj a célba!	###
+txt.creator_ace.1_0.dia3=További információkért nyomd meg az „Oktatás” gobmot.	###
+txt.creator_ace.1_0.dia4=Vagy nyomd meg a „Játék indítása” gombot, ha készen állsz a játékra!	###
+txt.creator_ace.2_0.dia1=Az §1Ászok versenyén§r a fellegek felett járhatsz!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=Haladj végig a pályán, amilyen gyorsan csak tudsz, és lépd át a célvonalat!	###
+txt.creator_ace.2_0.dia3=Használhatsz ugrópárnákat, gyorsító párnákat és elytrakapukat, hogy minél gyorsabban érj célba!	###
+txt.creator_ace.2_0.dia4=Találkozunk a célvonalnál!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=Helló! §1Seapeekay§r vagyok, Minecraft-streamer, és szeretem, ha sikerül egyensúlyt találni a verseny és a szórakozás között.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Gyere a Twitchre, és keress rá arra, hogy „Seapeekay”.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=Azért fontos nekem, mert a játék rendkívül nyílt világú, lehet kísérletezni, és bármit meg lehet benne tenni.	###
+txt.creator_ace.3_1.dia2=Olyan kreatív lehetsz benne, amilyen csak szeretnél, nincs játékmód, ami jobb lenne a többinél.	###
+txt.creator_ace.3_1.dia3=És a barátaim közül szinte mindenkit a játékban ismertem meg.	###
+txt.creator_ace.3_1.dia4=Ezért aztán semmilyen más játéknak nem volt akkora hatása az életemre, mint ennek.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=Kedvenc emlékem az MC Bajnokságról az 5. MCC, mert ott sikerült először nyernem!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=Ráadásul egy olyan csapattal, ami a közvélekedéssel ellentétben egyáltalán nem volt túltápolva; ez egy megérdemelt győzelem volt.	###
+txt.creator_ace.3_2.dia3=De soha nem voltam túl jó Minecraft-játékos, és az MCC adta meg a lökést, hogy továbbfejlesszem magam.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=Mostanra egész jó lettem, szóval ez egy szuper tendencia.	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=A legjobb menetem az MCC-n egyértelműen az volt, amikor megnyertem az §1Ászok versenyét§r.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=A közösség már egy jó ideje „Mr. Ászok versenyének” hívott, de valójában soha nem nyertem meg egyet sem.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=Ezért örökké emlékezni fogok arra a napra, amikor végre nyertem.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=A legjobban azt szeretem az §1Ászok versenyében§r, hogy sokféle különböző módon lehet teljesíteni a pályát.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=Egy csomó különböző ügyességi szintű játékos számára megugorható.	###
+txt.creator_ace.3_4.dia3=Vannak gyorsabb módszerek… vannak nehezebb módszerek…	###
+txt.creator_ace.3_4.dia4=De az a legfontosabb, hogy mindenki átlépje a célvonalat.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=Azért érdemes az én szemszögemből nézni a Bevégzőkupát, mert biztosan érződni fog ez az egyensúly: kell a szórakozás, a rengeteg mókázás…	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=De az is biztos, hogy nyerni akarok!	###
+txt.creator_ace.3_5.dia4=Szóval ez a verseny szórakoztató oldala, ami szerintem a legjobb oldal.	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lMi a kedvenc Minecraft-frissítésed?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lKedvenc részed az MCC-n?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lMi a Grid Runners legjobb része?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lMiért érdemes megnézni a Bevégzőkupa-közvetítésedet?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=Szia! §1Smajor§r vagyok, és üdvözöllek a §1Grid Runners§r pályán!	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=Teljesítsd a kihívásokat minden szobában, ahányszor csak tudod, hogy a lehető legjobb eredményt érd el!	###
+txt.creator_grid.1_0.dia3=További információkért nyomd meg a  “Oktatás” gombot.	###
+txt.creator_grid.1_0.dia4=Vagy nyomd meg a „Csatlakozás a várólistához” gombot, ha készen állsz a játékra!	###
+txt.creator_grid.2_0.dia1=A §1Grid Runners§r egy kihívássorozat, amely 4 különböző szobát tartalmaz!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=Minden szobában egy új kihívást találsz, amit teljesítened kell, mielőtt továbbléphetnél.	###
+txt.creator_grid.2_0.dia3=Minden szobában 1 perced van, szóval jobb, ha sietsz!	###
+txt.creator_grid.3_0.dia1=A nevem §1Smajor§r!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Különböző játékokat streamelek, de a Minecraft a fő témaköröm.	###
+txt.creator_grid.3_0.dia3=Ha kíváncsi vagy a streamjeimre, keress meg a Twitchen!	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=A kedvenc frissítésem az Aquatic frissítés!	###
+txt.creator_grid.3_1.dia2=Nagyon tetszenek azok a dolgok, amiket az óceáni biomokhoz ad, és sokkal szórakoztatóbbá tette a felfedezést.	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=Az MC Bajnokságban az a legjobb, ahogy a Minecraft és a tartalomgyártás különböző területein jeleskedő alkotók összegyűlnek, és egy csapatként játszanak az esemény keretei között.	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=Imádom, hogy itt olyan emberek között alakulhatnak ki barátságok, akik másképp soha nem is találkoztak volna.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=A §1Grid Runnersban§r az a legjobb, hogy a csapatmunkára összpontosít.	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=Nincs is annál izgalmasabb, mint amikor a csapatod egy olajozott gépezetként teljesíti a kihívásokat.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=Fantasztikus lesz a hangulat!	###
+txt.creator_grid.3_4.dia3=Amikor az MC Bajnokságot közvetítem, mindig az a lényeg, hogy én és a csapatom jól érezzük magukat!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=Még akkor is, ha ez azt jelenti, hogy utolsókként érünk a célba!	###
+
+txt.creator_grid.4_0.dia1=4 különböző kihívás vár rád: Győzd le a fenevadakat, Másold le a festményt, Süss tortát és Futás!	###
+txt.creator_grid.4_0.dia2=A Győzd le a fenevadakat kihívásban le kell győznöd minden szörnyet a szobában.	###
+txt.creator_grid.4_0.dia3=A Másold le a festményt kihívásban le kell másolnod egy festményt a szobában található ecset és vödrök segítségével.	###
+txt.creator_grid.4_0.dia4=A Süss tortát kihívásban össze kell gyűjtened a torta összes hozzávalóját, és középre kell raknod őket!	###
+txt.creator_grid.4_0.dia5=A Futás kihívásban futnod kell a célvonalig!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lMi a kedvenc Minecraft-frissítésed?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lA legjobb rész a Minecraftban?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lMi a kedvenc emléked az MCC-ről?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lMi a Meltdown legjobb része?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lMiért érdemes megnézni a Bevégzőkupa-közvetítésedet?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=Szia! §1Hannahxxrose§r vagyok, és üdvözöllek a §1Meltdown§r területén!	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=Haladj végig a szobákon, és maradj életben, még mielőtt a nukleáris katasztrófa bekövetkezik! Győzz le szörnyeket bónusz pontokért.	###
+txt.creator_melt.1_0.dia3=További információkért nyomd meg a  „Oktatás” gombot.	###
+txt.creator_melt.1_0.dia4=Vagy nyomd meg a „Csatlakozás a várólistához” gombot, ha készen állsz a játékra!	###
+txt.creator_melt.2_0.dia1=A §1Meltdown§r egy különböző szobákat tartalmazó létesítmény, amely bármely pillanatban leolvadhat!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=Túl kell élned az egyes szobákat, mielőtt a következő szobába vezető ajtó kinyílna.	###
+txt.creator_melt.2_0.dia3=Bónusz pontokért megfagyaszthatod, majd megütheted a fagyasztott szörnyeket!	###
+txt.creator_melt.2_0.dia4=Tovább bónusz pontokért érmét is gyűjthetsz!	###
+txt.creator_melt.3_0.dia1=A nevem §1Hannahxxrose§r, és Minecraft-tartalomgyártó vagyok!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=A közvetítéseimet áthatja a versenyszellem és a jó hangulat!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=A kedvenc Minecraft-frissítésem az „Ösvények és mesés történetek”, méghozzá az új cseresznyevirágos biom miatt!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=A legjobb dolog a Minecraftban... természetesen a PvP!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=A legkedvesebb emlékem az MC Bajnokságról az, amikor megnyertem a 2024-es MCC Pride bajnokságot a Cyan Coyotes!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=A §1Meltdown§r legjobb része a versenyszellem és a csapatmunka.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=Ha követsz engem az MC Bajnokságban, rengeteg csapatmunkában és menő PvP-pillanatban lehet részed.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=Ha kíváncsi vagy rám az MC Bajnokságban, gyere a Twitch-csatornámra!	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lMiért fontos a Minecraft?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lMi a legelső emléked a Minecraftból?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lMi a legkedvesebb emléked a Minecraftból?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§lMi Sands of Time legjobb része?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lMiért érdemes megnézni a Bevégzőkupa-közvetítésedet?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=Szia! §1HBomb94§r vagyok, és üdvözöllek §1Sands of Time§r templomában!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=A célod, hogy felfedezd a templomot, és keress annyi érmét, amennyit csak tudsz, mielőtt lejár az időd!	###
+txt.creator_sands.1_0.dia3=Látod azt az „Oktatás” gombot? További információkért kattints rá.	###
+txt.creator_sands.1_0.dia4=Vagy ha készen állsz a játékra, nyomd meg a „Játék indítása” gombot! 	###
+txt.creator_sands.2_0.dia1=§1Sands of Time§r egy kazamata, ahol annyi érmét kell gyűjtened, amennyit csak tudsz!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=A kazamatában szörnyeket, érméket, ládakulcsokat, páncélokat és még extra homokot is találhatsz, amivel több időt nyerhetsz a kazamatában!	###
+txt.creator_sands.2_0.dia3=A játék kezdetekor 2 perc áll a rendelkezésedre, és minden homokszemcsével további 10 másodpercet nyersz, de óvatosnak kell lenned!	###
+txt.creator_sands.2_0.dia4=Ha meghalsz vagy bent rekedsz a kazamatában, a kijutásért fel kell áldoznod valamennyit az összegyűjtött érméidből.	###
+txt.creator_sands.3_0.dia1=A nevem §1HBomb94§r!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=Twitch-streamer vagyok, és itt találhatsz meg:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=A Minecraft egész felnőtt életemben nagyon fontos volt számomra.	###
+txt.creator_sands.3_1.dia2=Most 30 éves vagyok, és amikor elkezdtem videókat feltölteni, még csak... 18 voltam?	###
+txt.creator_sands.3_1.dia3=Szóval már 12 éve csinálom?	###
+txt.creator_sands.3_1.dia4=Istenem... Milyen öreg vagyok!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Az első emlékem a Minecraftból az, amikor megteremtettem az első világomat.	###
+txt.creator_sands.3_2.dia2=Építettem egy borzalmas kastélyt, ami kizárólag zúzottkőből és egyetlen tölgyfa ajtóból állt.	###
+txt.creator_sands.3_2.dia3=Aztán meghaltam, és fogalmam sem volt róla, hogy vannak teremtődési pontok…	###
+txt.creator_sands.3_2.dia4=És akkoriban fogalmam sem volt a koordinátákról...	###
+txt.creator_sands.3_2.dia5=Szóval örökre elveszett a világban. Órákon át próbáltam megtalálni, de soha nem sikerült.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=Ez nagyon könnyű kérdés!	###
+txt.creator_sands.3_3.dia2=A 9. MC Bajnokságban, amikor a Túlélőjátékok véget értek, emlékszem, ahogy ránéztem az eredménytáblára.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=És azt kiabáltam a csapatomnak: „Nézzétek, mennyivel vezetünk!”	###
+txt.creator_sands.3_3.dia4=A mai napig libabőrös leszek tőle.	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=§1Sands of Timei§r legjobb része az, amikor mindenki elkezd pánikolni.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=Amikor az emberek pánikba esnek, és elkezdenek kapkodni és egymással kiabálni, akkor történnek a legviccesebb dolgok.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=Ez könnyű!	###
+txt.creator_sands.3_5.dia3=A mi csapatunkban van a legjobb hangulat, és csapatjátékokban mindenkit lesöprünk a pályáról.	###
+txt.creator_sands.3_5.dia4=De nem PvP-játékok... vagy parkour.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=Üdvözlünk a trófeateremben!	###
+txt.trophy_help.1_0.dia2=Minden gyertya egy kihívás, amit teljesíthetsz!	###
+txt.trophy_help.1_0.dia3=§6Használd§r az egyik gyertyát, hogy megnézhesd a kihívást, és láthasd, hogyan halad.	###
+txt.trophy_help.1_0.dia4=Képes leszel teljesíteni az összes kihívást?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=Csatlakozz hozzánk a §1Ender Cup§r Nézd meg a közvetítéseket: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Nézd meg, ahogy a Minecraft legnagyobb tartalomalkotói közül 40-en csatáznak 10 csapatban a 8 különböző minijátékban.	###
+txt.ender_cup.1_0.dia3=Nézd egy versenyző élő közvetítését JÚLIUS 27-én 19:00-tól!	###
+
+txt.ender_cup.ad1=Csatlakozz hozzánk a §1Ender Cup§r Nézd meg a közvetítéseket: https://www.twitch.tv/minecraft	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Nézd meg, ahogy a Minecraft legnagyobb tartalomalkotói közül 40-en csatáznak 10 csapatban a 8 különböző minijátékban.	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§oA koronás béka várakozva néz rád.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§oMit szeretnél tenni?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oA béka felé nyúlsz, hogy megsimogasd, de az rémülten visszahőköl.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oA béka összevonja a szemöldökét, és megigazítja a koronáját.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oBelekezdesz egy hosszú beszédbe, amely több témára is kitér...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oA csapatban töltött idődre, a különböző játékokra, a rejtélyes barlangra...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oDe úgy tűnik, hogy a békát nem érdekli túlzottan.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=Megtörted az átkot! Köszönöm!	###
+txt.frog_prince.2_0.dia2=Már §oévek óta§r itt ülök, és várom, hogy valaki megcsókoljon...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=Hány ember járt itt, aki csak beszélt és beszélt!	###
+txt.frog_prince.2_0.dia4=Volt, aki a koronámat is el akarta venni!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= Fejtörősegéd 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=Megjelent az összes   fejtörő, és van néhány hozzáfűznivalóm!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=Segítségre van szükséged a megoldásukhoz?	###
+txt.puzzle_help.landing.dia3=Válaszd ki a kívánt falat az alábbi gombokkal, és tippeket kapsz az egyes fejtörőkhöz!	###
+txt.button.day1=1. nap	###
+txt.button.day2=2. nap	###
+txt.button.day3=3. nap	###
+txt.button.day4=4. nap	###
+txt.button.day5=5. nap	###
+txt.button.day6=6. nap	###
+txt.button.day7=7. nap	###
+txt.button.wall1=Bal oldali fal	###
+txt.button.wall2=Középső fal	###
+txt.button.wall3=Jobb oldali fal	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=Az első festmények közül néhány, amelyeket megmutattam.	###
+txt.puzzle_help.wall1.dia2=Három napig tartott!	###
+txt.puzzle_help.wall1.dia3=Melyik fejtörőhöz szeretnél tippeket kapni?	###
+
+txt.puzzle_help.wall2.dia1=Á, azok a festmények, amiket a közepén megmutattam.	###
+txt.puzzle_help.wall2.dia2=Ekkor kezdtek jönni az ötletek!	###
+txt.puzzle_help.wall2.dia3=Melyik fejtörőhöz szeretnél tippeket kapni?	###
+
+txt.puzzle_help.wall3.dia1=A legutolsó festmények, amelyeket megmutattam.	###
+txt.puzzle_help.wall3.dia2=Ez kemény munka volt, de a végére értünk!	###
+txt.puzzle_help.wall3.dia3=Melyik fejtörőhöz szeretnél tippeket kapni?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§oEgy integető kéz egy korona szimbólum felett...	###
+txt.puzzle_help_day1.dia2=Keress egy nagy koronát vörös háttérrel, és integess, miközben rajta állsz!	###
+
+txt.puzzle_help_day2.dia1=§oKonfettivető egy drágakövekkel kirakott kőarc előtt...	###
+txt.puzzle_help_day2.dia2=Keress egy kőszobrot, aminek drágakövek vannak a szemei helyén, és indítsd be előtte a konfettivetőt!	###
+
+txt.puzzle_help_day3.dia1=§oEgy hatalmas víztömeg, amely lefelé örvénylik...	###
+txt.puzzle_help_day3.dia2=A titok biztosan egy óriási pocsolya fenekén van... vagy egy tóban!	###
+
+txt.puzzle_help_day4.dia1=§oKristálygömb az elkápráztatott zöld közönség előtt...	###
+txt.puzzle_help_day4.dia2=Helyezz el egy diszkógömböt az elkápráztatott zöld közönség előtt!	###
+
+txt.puzzle_help_day5.dia1=§oEgy fekete-sárga csíkos, négyzet alakú nyílás, valamint egy szelet torta egy „H” betű fölött…	###
+txt.puzzle_help_day5.dia2=Keress egy fekete-sárga csíkos bejáratot! Ez elvezet a „H” betűhöz, majd egyél tortát!	###
+
+txt.puzzle_help_day6.dia1=§oTűzijáték egy jeges hegy tetején…	###
+txt.puzzle_help_day6.dia2=Mászd meg a legmagasabb hegycsúcsot, és indíts be egy tűzijátékot!	###
+
+txt.puzzle_help_day7.dia1=§oEgy ajtó, tapsoló kezek és egy koronás békaherceg...	###
+txt.puzzle_help_day7.dia2=Keresd meg az ajtót, és tapsolj előtte! Ez elvezet a Békaherceghez.	###
+txt.puzzle_help_day7.dia3=De mihez kezdesz egy békaherceggel?	###
+txt.puzzle_help_day7.dia3_1=Hallottam egy mesét, amiben meg kellett csókolni egy békaherceget, de itt biztos nem erről van szó...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=A festmények miatt jöttél? Az összes  az egyes  sorokban egy új festményt mutat meg!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=Ez az első olyan, mint egy integető kéz, de nem vagyok biztos benne...	###
+txt.puzzle_lore_day1.dia3=Az összeset meg kell mutatnom, és csak utána kezdenek jönni az ötletek.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=A festmények miatt jöttél? Az összes  az egyes  sorokban egy új festményt mutat meg!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=Most mutattam egy arcot és egy konfettiágyút.	###
+txt.puzzle_lore_day2.dia3=De nem igazán tudom, hogy mit jelentenek...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=A festmények miatt jöttél? Az összes  az egyes  sorokban egy új festményt mutat meg!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=A legutóbbi olyan, mint egy nagy medence, vagy csak csobbanó víz?	###
+txt.puzzle_lore_day3.dia3=Több időre van szükségem, hogy biztos legyek benne...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=A festmények miatt jöttél? Az összes  az egyes  sorokban egy új festményt mutat meg!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=Az előzőn egy diszkógömb és egy ember volt?	###
+txt.puzzle_lore_day4.dia3=Mindegyik nagyon különös és rejtélyes...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=A festmények miatt jöttél? Az összes  az egyes  sorokban egy új festményt mutat meg!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=Az utolsó eléggé zavarba ejtő. Egy fekete és sárga kör, egy tortával és egy H-val?	###
+txt.puzzle_lore_day5.dia3=Talán a perjel elválasztja őket…	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=A festmények miatt jöttél? Az összes  az egyes  sorokban egy új festményt mutat meg!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=A tegnapi festményen szikrázó számok voltak! És egy hegy!	###
+txt.puzzle_lore_day6.dia3=Lenyűgöző cucc!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=Végre kész! Az összes  festmény látható!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=Ez az utolsó eléggé összezavart.	###
+txt.puzzle_lore_day7.dia3=Olyan, mintha valaki összetette volna a kezeit? Vagy tapsolna?	###
+txt.puzzle_lore_day7.dia4=Ezután egy béka és egy ajtó van...	###
+txt.puzzle_lore_day7.dia5=Némi időre van szükségem, hogy összeszedjem a gondolataim.	###
+txt.puzzle_lore_day7.dia6=Holnap megoldom a rejtélyeket!	###

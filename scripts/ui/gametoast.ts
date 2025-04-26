@@ -1,5 +1,6 @@
 import { Player } from "@minecraft/server";
 import { replace } from "../utils";
+import { Text } from "../text";
 
 export enum Trophy {
   netherrite = 1,
@@ -53,5 +54,15 @@ export function showMDCompleteToast(
   t = replace(t, 63, coins.toString());
   t = replace(t, 79, killed.toString());
 
+  p.onScreenDisplay.setActionBar(t);
+}
+
+export function showGRCompleteToast(p: Player, coins: number, mobs: number, blocks: number, cakes: number) {
+  let t = new Text();
+  t.txt("§znox:complete nox:type_gr ");
+  t.txt("§zd1" + coins.toString() + "~".repeat(11 - coins.toString().length));
+  t.txt(" §zd2" + mobs.toString() + "~".repeat(11 - mobs.toString().length));
+  t.txt(" §zd3" + blocks.toString() + "~".repeat(11 - blocks.toString().length));
+  t.txt(" §zd4" + cakes.toString() + "~".repeat(11 - cakes.toString().length));
   p.onScreenDisplay.setActionBar(t);
 }

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:sand_blocks",
+      "textures": {
+        "default": "textures/entity/n/sot/sand_blocks"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.sand_blocks"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "animations": {
+        "spinbob": "animation.n.podiums.spinbob"
+      },
+      "sound_effects": {
+        "sparkle": "sparkle"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "spinbob": "!q.property('noxcrew.ft:collected')"
+          }
+        ],
+        "should_update_effects_offscreen": true
+      },
+      "particle_effects": {
+        "idle_sparkle": "noxcrew.ft:idle_sparkle",
+        "sand_falling": "noxcrew.ft:sand_falling"
+      },
+      "render_controllers": [
+        "controller.render.sand_blocks"
+      ]
+    }
+  }
+}

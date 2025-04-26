@@ -1,0 +1,119 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.hats.propeller": {
+      "loop": true,
+      "bones": {
+        "hat_alph": {
+          "rotation": [
+            0,
+            "query.modified_distance_moved * 30",
+            0
+          ]
+        }
+      }
+    },
+    "animation.n.hats.boombox": {
+      "loop": true,
+      "bones": {
+        "notes": {
+          "scale": "math.clamp((query.ground_speed * 0.25),0,1)"
+        },
+        "note1_alph": {
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 480) *1",
+            0
+          ]
+        },
+        "note2_alph": {
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 480 +180) *1",
+            0
+          ]
+        },
+        "note3_alph": {
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 480 +120) *1",
+            0
+          ]
+        },
+        "note4_alph": {
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 480 +60) *1",
+            0
+          ]
+        }
+      }
+    },
+    "animation.n.hats.jester": {
+      "loop": true,
+      "bones": {
+        "hat_alph": {
+          "rotation": [
+            "Math.cos(query.anim_time * 180 +90) *1 -1",
+            0,
+            "Math.cos(query.anim_time * 270) *1"
+          ],
+          "scale": [
+            1,
+            "1 + Math.cos(query.anim_time * 540) *0.05",
+            1
+          ]
+        }
+      }
+    },
+    "animation.n.hats.crown_cake": {
+      "loop": true,
+      "animation_length": 0.5,
+      "bones": {
+        "flame_alph": {
+          "scale": {
+            "0.0": [
+              1,
+              1,
+              1
+            ],
+            "0.25": {
+              "pre": [
+                1,
+                1,
+                1
+              ],
+              "post": [
+                -1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "hat": {
+          "scale": 1.1
+        }
+      }
+    },
+    "animation.n.hats.chicken_jockey": {
+      "loop": true,
+      "bones": {
+        "chicken_head": {
+          "rotation": [
+            "Math.cos(query.modified_distance_moved * 45 -90) *2.5",
+            0,
+            0
+          ]
+        },
+        "arm": {
+          "rotation": [
+            "Math.cos(query.modified_distance_moved * 45) *10",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

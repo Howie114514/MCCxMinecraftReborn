@@ -31,7 +31,7 @@ export class BasicGame {
     });
     system.runInterval(() => {
       forInAsync(this.players, (v, n) => {
-        if (v && !v.isValid()) this.removePlayerByName(n);
+        if (v && !v.isValid) this.removePlayerByName(n);
         if (v) this.player_onTick(v);
       });
     });
@@ -223,7 +223,7 @@ export class ComplexGame {
       if (this.queue.items.length >= this.queue.minCount) {
         if (this.started) {
           this.queue.items.forEach((p) => {
-            playerByName(p).onScreenDisplay.setActionBar(
+            playerByName(p)?.onScreenDisplay.setActionBar(
               tr("txt.matchmaking.status.preparing." + (this.anim_t % 6).toString())
             );
           });
@@ -231,7 +231,7 @@ export class ComplexGame {
         }
       } else {
         this.queue.items.forEach((p) => {
-          playerByName(p).onScreenDisplay.setActionBar(
+          playerByName(p)?.onScreenDisplay.setActionBar(
             tr(
               "txt.matchmaking.status.in_queue." + (this.anim_t % 6).toString(),
               `${this.queue.items.length}/${this.queue.minCount}`
@@ -249,7 +249,10 @@ export class ComplexGame {
           if (!this.started) this.start();
         }
         this.queue.items.forEach((v) => {
-          if (!playerByName(v) || (gameInstances.lobby as Lobby).getPlayerArea(playerByName(v)) != "meltdown") {
+          if (
+            !playerByName(v) ||
+            (playerByName(v) && (gameInstances.lobby as Lobby).getPlayerArea(playerByName(v) as Player) != "meltdown")
+          ) {
             this.queue.remove(v);
           }
         });
@@ -263,9 +266,9 @@ export class ComplexGame {
     system.runInterval(() => {
       forInAsync(this.players, (p, n) => {
         if (!p) {
-          delete this.players[p];
+          delete this.players[n];
         }
-        if (!p.isValid()) {
+        if (!p.isValid) {
           this.removePlayerByName(n);
         }
         this.showGamebar(p);
@@ -282,12 +285,14 @@ export class ComplexGame {
   }
   start() {
     this.queue.next().forEach((p) => {
-      this.players[p] = playerByName(p);
-      inventory.save(playerByName(p));
+      let player = playerByName(p);
+      if (!player) return;
+      this.players[p] = player;
+      inventory.save(player);
       this.queue.remove(p);
-      playerByName(p).sendMessage("你已加入游戏");
-      playerByName(p).setDynamicProperty("mccr:game", this.name);
-      playerByName(p).playMusic(this.music, { loop: true });
+      player.sendMessage("你已加入游戏");
+      player.setDynamicProperty("mccr:game", this.name);
+      player.playMusic(this.music, { loop: true });
     });
     //system.runTimeout(() => this.end(), 100);
     this.started = true;
@@ -311,6 +316,6 @@ export class ComplexGame {
   }
   removePlayer(p: Player) {
     gameInstances.lobby.addPlayer(p);
-    delete this.players[p.name];
+    this.removePlayerByName(p.name);
   }
 }

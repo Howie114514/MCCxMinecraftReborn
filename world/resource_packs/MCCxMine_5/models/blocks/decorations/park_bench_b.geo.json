@@ -1,0 +1,170 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.park_bench_b",
+        "texture_width": 64,
+        "texture_height": 32,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bone",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                6,
+                -8
+              ],
+              "size": [
+                16,
+                3,
+                10
+              ],
+              "uv": [
+                12,
+                19
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                5,
+                11,
+                -9
+              ],
+              "size": [
+                4,
+                3,
+                12
+              ],
+              "uv": [
+                10,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -8,
+                11,
+                3
+              ],
+              "size": [
+                14,
+                7,
+                3
+              ],
+              "pivot": [
+                0,
+                13,
+                4.5
+              ],
+              "rotation": [
+                -20,
+                0,
+                0
+              ],
+              "uv": [
+                30,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                5.75,
+                5,
+                2.5
+              ],
+              "size": [
+                3,
+                14,
+                4
+              ],
+              "pivot": [
+                2,
+                13,
+                4.5
+              ],
+              "rotation": [
+                -20,
+                0,
+                0
+              ],
+              "uv": [
+                0,
+                11
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                5.5,
+                0,
+                0
+              ],
+              "size": [
+                3,
+                6,
+                4
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                5,
+                0,
+                -8
+              ],
+              "size": [
+                3,
+                6,
+                4
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                5,
+                9,
+                -8
+              ],
+              "size": [
+                3,
+                2,
+                4
+              ],
+              "uv": [
+                50,
+                10
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

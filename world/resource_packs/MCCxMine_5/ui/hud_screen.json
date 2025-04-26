@@ -1,0 +1,134 @@
+{
+    "namespace": "hud",
+
+    "horse_heart_renderer": {
+        "ignored": true
+    },
+    "hunger_renderer": {
+        "ignored": true
+    },
+    "progress_text_label": {
+        "text": ""
+    },
+
+    "hud_screen": {
+        "render_only_when_topmost": true,
+        "$screen_animations": [],
+        "$background_animations": []
+    },
+
+    "root_panel": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_front",
+                "value": [
+                    { "hud_elements_panel@hud.hud_elements_panel": {} },
+                    {
+                        "fake_subtitle_factory@fake_subtitle.fake_subtitle_factory": {}
+                    },
+                    {
+                        "fake_subchat_factory@fake_subtitle.fake_subchat_factory": {}
+                    },
+                    {
+                        "jens_agnes_entry_factory@jens_agnes.jens_agnes_entry_factory": {}
+                    },
+                    {
+                        "jens_agnes_exit_factory@jens_agnes.jens_agnes_exit_factory": {}
+                    },
+                    {
+                        "complete_entry_factory@complete.complete_entry_factory": {}
+                    }
+                ]
+            }
+        ]
+    },
+
+    "hud_elements_panel": {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "controls": [{ "gamebar@gamebar.gamebar_panel": {} }]
+    },
+
+    "hud_title_text": {
+        "visible": "(($title_text - '§z' = $title_text) and ($title_text - 'nox:' = $title_text))",
+        "alpha": 1,
+        "offset": [0, 0]
+    },
+
+    "hud_actionbar_text/actionbar_message": {
+        "$atext": "$actionbar_text",
+        "visible": "(($atext - '§z') = $atext))",
+        "offset": [0, 0]
+    },
+
+    "hud_actionbar_text": {
+        //pos lowest, coins picked up in sot, countdown etc
+        "$top_offset|default": [0, 0],
+        "anchor_from": "bottom_middle",
+        "size": [ "100%c + 12px", "100%c + 5px" ],
+        "offset": "$top_offset",
+        "variables": [
+            {
+              "requires": "$desktop_screen",
+              "$top_offset": [0, -80]
+            },
+            {
+                "requires": "$pocket_screen",
+                "$top_offset": [0, -80]
+            }
+          ],        "$atext": "$actionbar_text",
+        "visible": "(($atext - '§z') = $atext))"
+    },
+
+    // Remove chat messages which are used as subtitles
+    "chat_grid_item": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "replace",
+                "control_name": "chat_background",
+                "value": [
+                    {
+                        "chat_background": {
+                            "type": "image",
+                            "texture": "textures/ui/Black",
+                            "alpha": 0.7,
+                            "size": ["100%", "100%c + 4px"],
+                            "anims": ["@hud.anim_chat_bg_wait"],
+                            "controls": [
+                                {
+                                    "chat_text@chat_label": {
+                                        "anchor_from": "top_left",
+                                        "anchor_to": "top_left",
+                                        "offset": [2, 2]
+                                    }
+                                }
+                            ],
+                            "$flag_subtile": "§z§v",
+                            "bindings": [
+                                {
+                                    "binding_name": "#chat_text",
+                                    "binding_name_override": "#text",
+                                    "binding_type": "collection",
+                                    "binding_collection_name": "chat_text_grid"
+                                },
+                                {
+                                    "binding_type": "view",
+                                    "source_property_name": "(((#text - $flag_subtile) = #text) or (not ((#text - '§n§o§x') = #text)))",
+                                    "target_property_name": "#visible"
+                                },
+                                {
+                                    "binding_type": "view",
+                                    "source_property_name": "(((#text - $flag_subtile) = #text) or (not ((#text - '§n§o§x') = #text)))",
+                                    "target_property_name": "#enabled"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

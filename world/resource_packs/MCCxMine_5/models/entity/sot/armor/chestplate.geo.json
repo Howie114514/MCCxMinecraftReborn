@@ -1,0 +1,201 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.armor_podium_chestplate",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 9,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "podium",
+          "pivot": [
+            0,
+            11.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                18,
+                -6
+              ],
+              "size": [
+                12,
+                2,
+                12
+              ],
+              "uv": [
+                42,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                5,
+                16
+              ],
+              "uv": [
+                0,
+                21
+              ]
+            },
+            {
+              "origin": [
+                -7,
+                5,
+                -7
+              ],
+              "size": [
+                14,
+                8,
+                14
+              ],
+              "uv": [
+                0,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                13,
+                -8
+              ],
+              "size": [
+                16,
+                5,
+                16
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ],
+          "locators": {
+            "sparkle_locator": [
+              0,
+              27,
+              0
+            ]
+          }
+        },
+        {
+          "name": "armor",
+          "parent": "podium",
+          "pivot": [
+            0,
+            23,
+            0
+          ]
+        },
+        {
+          "name": "chestplate_alph",
+          "parent": "armor",
+          "pivot": [
+            0,
+            23,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                21,
+                -1.4
+              ],
+              "size": [
+                8,
+                11,
+                4
+              ],
+              "pivot": [
+                0,
+                28.5,
+                0
+              ],
+              "rotation": [
+                -20.38733,
+                -48.54712,
+                -0.25238
+              ],
+              "uv": [
+                16,
+                80
+              ]
+            },
+            {
+              "origin": [
+                -7.9,
+                23,
+                -1.4
+              ],
+              "size": [
+                4,
+                9,
+                4
+              ],
+              "pivot": [
+                0,
+                28.5,
+                0
+              ],
+              "rotation": [
+                -20.38733,
+                -48.54712,
+                -0.25238
+              ],
+              "uv": [
+                40,
+                80
+              ]
+            },
+            {
+              "origin": [
+                1.7504,
+                22.87013,
+                2.56375
+              ],
+              "size": [
+                4,
+                9,
+                4
+              ],
+              "pivot": [
+                3.7504,
+                27.37013,
+                4.56375
+              ],
+              "rotation": [
+                -20.38733,
+                -48.54712,
+                -0.25238
+              ],
+              "uv": [
+                40,
+                80
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

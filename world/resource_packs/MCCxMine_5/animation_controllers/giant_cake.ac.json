@@ -1,0 +1,111 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.giant_cake.ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "candle": "v.cake_completion >= 8"
+            },
+            {
+              "cherries": "v.cake_completion >= 6"
+            },
+            {
+              "icing": "v.cake_completion >= 4"
+            },
+            {
+              "sponge": "v.cake_completion >= 2"
+            },
+            {
+              "empty": "v.cake_completion < 2"
+            }
+          ]
+        },
+        "empty": {
+          "animations": [
+            "empty"
+          ],
+          "transitions": [
+            {
+              "sponge": "v.cake_completion >= 2"
+            }
+          ]
+        },
+        "sponge": {
+          "animations": [
+            "sponge"
+          ],
+          "transitions": [
+            {
+              "icing": "v.cake_completion >= 4"
+            }
+          ]
+        },
+        "icing": {
+          "animations": [
+            "icing"
+          ],
+          "transitions": [
+            {
+              "cherries": "v.cake_completion >= 6"
+            }
+          ]
+        },
+        "cherries": {
+          "animations": [
+            "cherries"
+          ],
+          "transitions": [
+            {
+              "candle": "v.cake_completion >= 8"
+            }
+          ]
+        },
+        "candle": {
+          "animations": [
+            "candle"
+          ],
+          "transitions": [
+            {
+              "complete": "v.trans == 1"
+            }
+          ]
+        },
+        "complete": {
+          "animations": [
+            "complete"
+          ],
+          "transitions": [
+            {
+              "empty": "v.trans == 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.giant_cake.disapear_ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "disapear": "q.property('noxcrew.ft:disappear')"
+            }
+          ]
+        },
+        "disapear": {
+          "animations": [
+            "disapear"
+          ],
+          "transitions": [
+            {
+              "default": "!q.property('noxcrew.ft:disappear')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

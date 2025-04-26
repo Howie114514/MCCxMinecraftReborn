@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:beanie_purple",
+      "textures": {
+        "default": "textures/entity/n/hub/beanie/purple_pandas"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.beanie"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "render_controllers": [
+        "controller.render.base"
+      ]
+    }
+  }
+}

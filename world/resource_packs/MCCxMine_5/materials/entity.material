@@ -1,0 +1,10 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "noxcrew_base:entity": {},
+    "noxcrew_alpha:entity_alphatest": {},
+    "noxcrew_emissive:entity_emissive": {},
+    "noxcrew_emissive_alpha:entity_emissive_alpha": {},
+	  "noxcrew_invisible:entity_alphatest": {}
+  }
+}

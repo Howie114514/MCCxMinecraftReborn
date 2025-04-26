@@ -1,0 +1,51 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "noxcrew.ft:fake_pot",
+			"is_experimental": true,
+			"register_to_creative_menu": true,
+			"menu_category": {
+				"category": "construction",
+				"group": ""
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"enabled": 1,
+				"origin": [
+					-5.5,
+					0,
+					-5.5
+				],
+				"size": [
+					11,
+					16,
+					11
+				]
+			},
+			"minecraft:geometry": "geometry.n.ft.fake_pot",
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"render_method": "opaque",
+					"texture": "fake_pot"
+				}
+			},
+			"minecraft:selection_box": {
+				"enabled": 1,
+				"origin": [
+					-5.5,
+					0,
+					-5.5
+				],
+				"size": [
+					11,
+					16,
+					11
+				]
+			}
+		}
+	}
+}

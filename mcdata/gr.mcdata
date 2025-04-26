@@ -1,7 +1,104 @@
+import@{Vector3}:"\@minecraft/server"
+import@{createBlockVolumeArgs}:"../utils"
+
 export const@starts
 arrstart
 v3@2104.35 73.13 4266.50
 v3@2104.58 73.13 4259.56
 v3@2104.52 73.13 4252.43
 v3@2104.59 73.13 4245.57
+arrend
+
+export const@doors
+arrstart
+bv@2159 64 4255 2159 66 4256
+bv@2191 64 4255 2191 66 4256
+bv@2223 64 4255 2223 66 4256
+bv@2255 64 4255 2255 66 4256
+arrend
+
+export const@start_blocks
+arrstart
+bv@2106 73 4267 2106 75 4265
+bv@2106 73 4260 2106 75 4258
+bv@2106 73 4253 2106 75 4251
+bv@2106 73 4246 2106 75 4244
+arrend
+
+export const@mob_spawnpoints
+arrstart
+v3@2176.06 61.00 4256.09
+v3@2173.36 61.00 4258.58
+v3@2178.67 61.00 4258.56
+v3@2178.45 61.00 4253.39
+v3@2173.48 61.00 4253.53
+arrend
+
+#画
+export const@paintings
+arrstart
+arrstart
+palette set@# minecraft:light_blue_concrete
+palette set@x minecraft:yellow_concrete
+palette set@o minecraft:lime_concrete
+palette set@% minecraft:brown_concrete
+#画1
+blocklist@#xx##ooo
+blocklist@#xx##ooo
+blocklist@######%#
+blocklist@oooo%ooo
+blocklist@ooo%%ooo
+arrend
+,
+arrstart
+palette set@# minecraft:purple_concrete
+palette set@b minecraft:black_concrete
+palette set@r minecraft:red_concrete
+#画2
+blocklist@###bbbbb
+blocklist@r#bbxb##
+blocklist@xrbbbbbb
+blocklist@xxx#bbbb
+blocklist@r#bbb#bb
+arrend
+,
+arrstart
+#画3
+blocklist@rbbbbrxr
+blocklist@rb##brxr
+blocklist@rb##brxr
+blocklist@rb##bxxx
+blocklist@bbbbbbbb
+arrend
+,
+arrstart
+#画4
+palette set@w minecraft:white_concrete
+blocklist@rrrrrrrr
+blocklist@rxrxxrwr
+blocklist@rxxxwxwr
+blocklist@rxxxxxxr
+blocklist@rrrrrrrr
+arrend
+arrend
+
+export const@wheats
+arrstart
+bv@2236 67 4244 2237 67 4243
+bv@2228 68 4264 2227 68 4265
+bv@2228 68 4267 2227 68 4268
+bv@2241 66 4246 2240 66 4245
+arrend
+
+export const@reeds
+arrstart
+v3@2251 64 4242
+v3@2252 64 4243
+v3@2253 64 4244
+v3@2253 64 4245
+
+v3@2243 64 4268
+v3@2242 64 4269
+v3@2240 64 4269
+v3@2239 64 4269
 arrend

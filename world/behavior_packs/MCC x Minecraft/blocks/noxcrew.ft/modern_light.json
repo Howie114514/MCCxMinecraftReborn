@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "noxcrew.ft:modern_light",
+			"is_experimental": true,
+			"register_to_creative_menu": true,
+			"menu_category": {
+				"category": "construction",
+				"group": ""
+			}
+		},
+		"components": {
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:light_emission": 15,
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": false,
+					"face_dimming": false,
+					"render_method": "opaque",
+					"texture": "modern_light"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,201 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.hat_party",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 4.5,
+        "visible_bounds_offset": [
+          0,
+          1.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "waist",
+          "parent": "root",
+          "pivot": [
+            0,
+            12,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "waist",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "head",
+          "parent": "body",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "hat",
+          "parent": "head",
+          "pivot": [
+            0,
+            24,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.1,
+                31,
+                -4.5
+              ],
+              "size": [
+                5,
+                4,
+                9
+              ],
+              "inflate": 0.1,
+              "uv": [
+                0,
+                19
+              ]
+            },
+            {
+              "origin": [
+                0.1,
+                31,
+                -4.5
+              ],
+              "size": [
+                5,
+                4,
+                9
+              ],
+              "inflate": 0.1,
+              "uv": [
+                0,
+                19
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -4,
+                34.5,
+                -3.5
+              ],
+              "size": [
+                4,
+                4,
+                7
+              ],
+              "uv": [
+                0,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                38.5,
+                -2.5
+              ],
+              "size": [
+                3,
+                3,
+                5
+              ],
+              "uv": [
+                12,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                41.5,
+                -1.5
+              ],
+              "size": [
+                2,
+                3,
+                3
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                0,
+                41.5,
+                -1.5
+              ],
+              "size": [
+                2,
+                3,
+                3
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                0,
+                38.5,
+                -2.5
+              ],
+              "size": [
+                3,
+                3,
+                5
+              ],
+              "uv": [
+                12,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                0,
+                34.5,
+                -3.5
+              ],
+              "size": [
+                4,
+                4,
+                7
+              ],
+              "uv": [
+                0,
+                8
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

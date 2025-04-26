@@ -1,0 +1,69 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew.ft:paint_proj",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": true,
+      "properties": {
+        "noxcrew.ft:color": {
+          "type": "enum",
+          "values": [
+            "none",
+            "black",
+            "blue",
+            "brown",
+            "green",
+            "purple",
+            "red",
+            "white",
+            "yellow"
+          ],
+          "default": "none",
+          "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "height": 0.25,
+        "width": 0.25
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "deals_damage": false
+        }
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:nameable": {
+        "always_show": true
+      },
+      "minecraft:push_through": 1,
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "stick_in_ground": {
+            "shake_time": 0
+          }
+        },
+        "power": 4,
+        "gravity": 0.0,
+        "uncertainty_base": 0,
+        "uncertainty_multiplier": 0,
+        "stop_on_hurt": true,
+        "should_bounce": false,
+        "offset": [0, -0.1, 0]
+      },
+      "minecraft:physics": {
+        "has_collision": false
+      },
+      "minecraft:scale": {
+        "value": 1
+      }
+    }
+  }
+}

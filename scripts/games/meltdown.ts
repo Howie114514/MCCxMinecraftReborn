@@ -14,14 +14,13 @@ import {
 } from "@minecraft/server";
 import { doors, hardcoded_melt_order, mobs, points, spawners, structure_points } from "../data/meltdown";
 import { BasicGame, ComplexGame } from "../game";
-import { forIn, forInAsync, playerByEntity } from "../utils";
+import { BlockVolumeArguments, fill, forIn, forInAsync, initializeBlockVolume, playerByEntity } from "../utils";
 import { showMDGameBar } from "../ui/gamebar";
 import { addCoins, getCoins } from "../gameData";
 import { coordinates } from "../main";
 import { inventory } from "../inventory";
 import { sound } from "../sound";
 import { MinecraftBlockTypes, MinecraftEnchantmentTypes } from "@minecraft/vanilla-data";
-import { overworld } from "../constants";
 import { Vector3Utils } from "@minecraft/math";
 import { gameInstances } from "./gameInstance";
 import { Queue } from "../queue";
@@ -44,14 +43,14 @@ class MDRoom {
   isMelting: boolean = false;
   restTime: number = 70 * TicksPerSecond;
   isValid: boolean = false;
-  volume: BlockVolume;
+  volume: BlockVolumeArguments;
   id = 0;
   gameUid = 0;
   time;
   anim_tick = 0;
   melt_tick = 0;
   meltdown: Meltdown;
-  constructor(volume: BlockVolume, id: number, md: Meltdown, time: number | undefined = default_time) {
+  constructor(volume: BlockVolumeArguments, id: number, md: Meltdown, time: number | undefined = default_time) {
     this.volume = volume;
     this.meltdown = md;
     system.runInterval(() => {
@@ -68,14 +67,16 @@ class MDRoom {
       }
       if (this.isValid && !this.isMelting) {
         spawners[this.id]?.forEach(async (p) => {
-          overworld.spawnParticle("minecraft:mob_block_spawn_emitter", p);
+          world.getDimension("overworld").spawnParticle("minecraft:mob_block_spawn_emitter", p);
           let l = mobs[this.id]?.length;
           if (l) {
             let id = Math.floor(Math.random() * l);
-            let e = overworld.spawnEntity(
-              mobs[this.id]?.[id],
-              Vector3Utils.add(p, { x: Math.random(), y: Math.random(), z: Math.random() })
-            );
+            let e = world
+              .getDimension("overworld")
+              .spawnEntity(
+                mobs[this.id]?.[id],
+                Vector3Utils.add(p, { x: Math.random(), y: Math.random(), z: Math.random() })
+              );
             e.addTag("md_room_" + this.id.toString());
           }
         });
@@ -92,7 +93,10 @@ class MDRoom {
     //let uid = this.gameUid;
     this.gameUid = this.meltdown.gameUniqueId;
     this.meltdown.loadStructure(this.id);
-    overworld.getEntities({ tags: ["md_room_" + this.id.toString()] }).forEach((e) => e.remove());
+    world
+      .getDimension("overworld")
+      .getEntities({ tags: ["md_room_" + this.id.toString()] })
+      .forEach((e) => e.remove());
     this.closeDoor();
     system.runTimeout(() => {
       if (this.meltdown.inTheSameGame(this.gameUid)) {
@@ -105,30 +109,28 @@ class MDRoom {
   }
   openDoor() {
     let d = doors[this.id];
-    world.getDimension("overworld").fillBlocks(d, MinecraftBlockTypes.StructureVoid);
+    fill(d, MinecraftBlockTypes.StructureVoid);
   }
   closeDoor() {
     let d = doors[this.id];
-    world.getDimension("overworld").fillBlocks(d, MinecraftBlockTypes.IronBlock);
+    fill(d, MinecraftBlockTypes.IronBlock);
   }
   melt() {
-    let bv = this.volume;
+    let bv = initializeBlockVolume(this.volume);
     this.isMelting = true;
     system.runTimeout(() => {
       this.melt_tick = 0;
     }, 4 * TicksPerSecond);
     [Direction.East, Direction.North, Direction.South, Direction.West].forEach((d) => {
-      overworld.fillBlocks(
-        bv,
-        BlockPermutation.resolve("noxcrew.ft:rotating_light", { "minecraft:cardinal_direction": d }),
-        {
+      world
+        .getDimension("overworld")
+        .fillBlocks(bv, BlockPermutation.resolve("noxcrew.ft:rotating_light", { "minecraft:cardinal_direction": d }), {
           blockFilter: {
             includePermutations: [
               BlockPermutation.resolve("noxcrew.ft:rotating_light_off", { "minecraft:cardinal_direction": d }),
             ],
           },
-        }
-      );
+        });
     });
 
     system.runJob(
@@ -153,11 +155,11 @@ class MDRoom {
         for (let section of sections) {
           /*
           system.runTimeout(() => {
-            overworld.fillBlocks(section, "noxcrew.ft:md_a", {
+            fill(section, "noxcrew.ft:md_a", {
               blockFilter: { excludeTypes: [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock] },
             });
             system.runTimeout(() => {
-              overworld.fillBlocks(section, MinecraftBlockTypes.Air, {
+              fill(section, MinecraftBlockTypes.Air, {
                 blockFilter: { includeTypes: ["noxcrew.ft:md_a"] },
               });
             }, 5 * TicksPerSecond);
@@ -169,12 +171,12 @@ class MDRoom {
           }
           system.runTimeout(() => {
             if (thisarg.meltdown.inTheSameGame(thisarg.gameUid) && thisarg.isMelting) {
-              overworld.fillBlocks(section, "noxcrew.ft:md_a", {
-                blockFilter: { excludeTypes: [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock] },
+              fill(section, "noxcrew.ft:md_a", {
+                blockFilter: { excludeTypes: [MinecraftBlockTypes.Air, "minecraft:light_block"] },
               });
               system.runTimeout(() => {
                 if (thisarg.meltdown.inTheSameGame(thisarg.gameUid) && thisarg.isMelting)
-                  overworld.fillBlocks(section, MinecraftBlockTypes.Air, {
+                  fill(section, MinecraftBlockTypes.Air, {
                     blockFilter: { includeTypes: ["noxcrew.ft:md_a"] },
                   });
               }, 10 * TicksPerSecond);
@@ -184,7 +186,11 @@ class MDRoom {
           yield;
         }
         system.runTimeout(
-          () => overworld.getEntities({ tags: ["md_room_" + thisarg.id.toString()] }).forEach((e) => e.remove()),
+          () =>
+            world
+              .getDimension("overworld")
+              .getEntities({ tags: ["md_room_" + thisarg.id.toString()] })
+              .forEach((e) => e.remove()),
           30 * TicksPerSecond
         );
       })(this)
@@ -262,7 +268,7 @@ export class Meltdown extends ComplexGame {
         let e = ev.getEntityHit().entity;
         e?.triggerEvent("mccr:freeze");
         system.runTimeout(() => {
-          if (e?.isValid()) {
+          if (e?.isValid) {
             e.triggerEvent("mccr:melt");
           }
         }, 10 * TicksPerSecond);
@@ -270,7 +276,7 @@ export class Meltdown extends ComplexGame {
     });
     world.afterEvents.entityHitEntity.subscribe((ev) => {
       if (/md_/.test(ev.hitEntity.typeId)) {
-        if (ev.hitEntity.isValid() ? ev.hitEntity.getProperty("noxcrew.ft:frozen") : false) {
+        if (ev.hitEntity.isValid ? ev.hitEntity.getProperty("noxcrew.ft:frozen") : false) {
           ev.hitEntity.dimension.spawnParticle("noxcrew.ft:frozen_shatter", ev.hitEntity.location);
           ev.hitEntity.dimension.spawnParticle("noxcrew.ft:coin_burst_small", ev.hitEntity.location);
           sound.play(ev.hitEntity.dimension, "enemy_shatter", { location: ev.hitEntity.location });
@@ -284,7 +290,7 @@ export class Meltdown extends ComplexGame {
     });
     system.runInterval(() => {
       forInAsync(this.players, (p, n) => {
-        if (!p.isValid()) {
+        if (!p.isValid) {
           delete this.players[n];
         }
         if (p && !this.rooms[this.player_data[p?.name]?.room]?.isValid) {
@@ -306,7 +312,7 @@ export class Meltdown extends ComplexGame {
   }
   loadStructure(r: number) {
     let { x, y, z } = structure_points[`r${r + 1}`].from;
-    overworld.runCommand(`structure load r${r + 1} ${x} ${y} ${z}`);
+    world.getDimension("overworld").runCommand(`structure load r${r + 1} ${x} ${y} ${z}`);
   }
   closeDoor(id: number) {}
 
@@ -324,7 +330,7 @@ export class Meltdown extends ComplexGame {
       this.player_data[p.name] = { room: 0, coins: 0, killed: 0 };
       let bis = new ItemStack("minecraft:bow");
       bis.getComponent("enchantable")?.addEnchantments([
-        { type: EnchantmentTypes.get(MinecraftEnchantmentTypes.Infinity) as EnchantmentType, level: 1 },
+        { type: EnchantmentTypes.get(MinecraftEnchantmentTypes.BowInfinity) as EnchantmentType, level: 1 },
         { type: EnchantmentTypes.get(MinecraftEnchantmentTypes.Unbreaking) as EnchantmentType, level: 3 },
       ]);
       inventory.save(p);

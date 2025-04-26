@@ -1,15 +1,21 @@
 import { Player, system, TicksPerSecond, world } from "@minecraft/server";
 import { Logger } from "./logger";
+import { runAfterStartup } from "./utils";
 
 export var rules: Record<string, string | number> = {
   md_min_players: 4,
   md_default_time: 105 * TicksPerSecond,
 };
-try {
-  Object.assign(rules, JSON.parse((world.getDynamicProperty("mccr:rules") as string) ?? "{}"));
-} catch (e) {
-  Logger.warn("在加载规则集时发生错误");
-}
+
+runAfterStartup(() => {
+  try {
+    Object.assign(rules, JSON.parse((world.getDynamicProperty("mccr:rules") as string) ?? "{}"));
+  } catch (e) {
+    Logger.warn("在加载规则集时发生错误");
+    world.setDynamicProperty("mccr:rules", "{}");
+  }
+});
+
 system.afterEvents.scriptEventReceive.subscribe((ev) => {
   let sender = ev.sourceEntity as Player;
   if (ev.id == "mccr:set_rule") {

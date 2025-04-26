@@ -1,0 +1,1094 @@
+## Meta
+pack.name=Набор ресурсов для коллаборации MCC и Minecraft — праздничного события в честь 15-летия	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=Набор ресурсов для коллаборации MCC и Minecraft — праздничного события в честь 15-летия.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=ТУРНИР MC CHAMPIONSHIP ПО МИНИ-ИГРАМ!	###
+txt.event_overview.2=Самый известный турнир — MC Championship теперь на Bedrock Edition! Веселитесь весь день и сражайтесь в мини-играх, которые проверят ваших навыков в разных дисциплинах — от паркура до сражений с монстрами.	###
+txt.event_overview.3=Получите 15 бесплатных декоративных предметов и новенький шикарный плащ!	###
+txt.event_overview.4=Хватайте меч — врагам голову с плеч!	###
+txt.event_overview.5=Мероприятие начнется 22 июля в 20:00 по МСК и продлится до 4 августа 13:00 по МСК	###
+
+##VANILLA
+item.warped_sign.name=Табличка пещеры 	###
+tile.warped_standing_sign.name=Табличка пещеры 	###
+tile.warped_wall_sign.name=Табличка пещеры 	###
+tile.prismarine.dark.name=Металлический блок 	###
+tile.stone_slab2.prismarine.dark.name=Металлическая плита 	###
+tile.dark_prismarine_stairs.name=Металлические ступени 	###
+
+##INTERACT TEXTS
+action.interact.open=Открыть	###This is meant as a verb, action.
+action.interact.take=Взять	###This is meant as a verb, action.
+action.interact.grab=Схватить	###This is meant as a verb, action.
+action.interact.pick_up=Подобрать	###This is meant as a verb, action.
+action.interact.use=Использовать	###This is meant as a verb, action.
+action.interact.change_color=Изменить цвет	###This is meant as a verb, action.
+action.interact.deposit=Размещ.	###This is meant as a verb, action.
+action.interact.interact=Взаимодействовать	###This is meant as a verb, action.
+action.interact.trash=Уничтожить	###To throw away or "trash" an item
+action.interact.eat=Есть	###To eat something, like a food
+action.interact.drink=Пить	###To drink something, like a soda
+action.interact.paint=Краска	###The verb to paint.
+action.interact.gift=Подарок игроку	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=Магазин	###The verb, "to shop" or "to browse"
+action.interact.decorate=Украшать	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=Нажмите кнопку «Красться», чтобы выйти	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=Нажмите кнопку «Красться», чтобы выйти	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=Нажмите кнопку :_input_key.sneak:, чтобы выйти	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§oНовые картины открываются каждый день.	###
+txt.sign.cave2=§oРешите все семь и получите вознаграждение!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=Замораживающий лук	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=Замораживающий лук	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=Железный ключ	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=Золотой ключ	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=Алмазный ключ	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=Незеритовый ключ	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=Чистая кисть	###
+item.noxcrew.ft:paintbrush_green.name=Зеленая кисть	###
+item.noxcrew.ft:paintbrush_yellow.name=Желтая кисть	###
+item.noxcrew.ft:paintbrush_blue.name=Синяя кисть	###
+item.noxcrew.ft:paintbrush_red.name=Красная кисть	###
+item.noxcrew.ft:paintbrush_white.name=Белая кисть	###
+item.noxcrew.ft:paintbrush_black.name=Черная кисть	###
+item.noxcrew.ft:paintbrush_brown.name=Коричневая кисть	###
+item.noxcrew.ft:paintbrush_purple.name=Фиолетовая кисть	###
+item.noxcrew.ft:beanie_red.name=Шапка-бини красного кролика	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=Шапка-бини оранжевого оцелота	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=Шапка-бини желтого яка	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=Шапка-бини лаймовой ламы	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=Шапка-бини зеленого геккона	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=Шапка-бини бирюзового аксолотля	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=Шапка-бини сине-зеленого койота	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=Шапка-бини синей летучей мыши	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=Шапка-бини фиолетовой панды	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=Шапка-бини розового попугая	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=Праздничный колпак	###
+item.noxcrew.ft:hat_propeller.name=Шляпа-пропеллер	###
+item.noxcrew.ft:hat_crown_cake.name=Верхушка торта	###
+item.noxcrew.ft:hat_birthday_present.name=Шляпа-подарок на день рождения	###
+item.noxcrew.ft:hat_jester.name=Шляпа шута	###
+item.noxcrew.ft:hat_chicken_jockey.name=Шляпа куриного наездника	###
+item.noxcrew.ft:hat_boombox.name=Шляпа-бумбокс	###
+item.noxcrew.ft:foam_finger.name=Пенный палец	###
+item.noxcrew.ft:balloon_animal.name=Животные-шарики	###
+item.noxcrew.ft:big_bubble_blower.name=Гигантский надуватель пузырей	###
+item.noxcrew.ft:silly_horn.name=Забавный рог	###
+item.noxcrew.ft:party_popper.name=Хлопушка	###
+item.noxcrew.ft:confetti_tag_prime.name=Бирка от конфетти	###
+item.noxcrew.ft:confetti_tag_leftover.name=Бирка от конфетти	###
+item.noxcrew.ft:pizza_box.name=Коробка из-под пиццы	###
+item.noxcrew.ft:celebration_fireworks.name=Фейерверк в честь дня рождения	###
+item.noxcrew.ft:player_gift_giving.name=Подарочная коробка	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=Подарочная коробка	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=Диско-шар	###
+item.noxcrew.ft:beach_ball.name=Пляжный мяч	###
+item.noxcrew.ft:balloon_helium.name=Гелиевый шарик	###
+item.noxcrew.ft:leave_game.name=§6Покиньте игру	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=Кусочек пиццы	###
+item.noxcrew.ft:mcc_burger.name=Вкусный бургер	###
+item.noxcrew.ft:anniversary_hot_dog.name=Вкусный хот-дог	###
+item.noxcrew.ft:party_cupcake.name=Капкейк	###
+item.noxcrew.ft:party_cake.name=Кусочек тортика	###
+item.noxcrew.ft:party_chips.name=Миска чипсов	###
+item.noxcrew.ft:party_cookie.name=Печенье	###
+item.noxcrew.ft:party_soda.name=Газировка	###
+item.noxcrew.ft:cotton_candy.name=Сахарная вата	###
+item.noxcrew.ft:popcorn.name=Попкорн	###
+item.noxcrew.ft:super_wrap.name=Полезный ролл	###
+item.noxcrew.ft:cosmetic_chest.name=Декоративный сундук	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=Карта телепортов	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=Список испытаний	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=Яйцо	###
+item.noxcrew.ft:milk_bucket.name=Ведро с молоком	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=Замораживающий лук	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=Замораживающий лук	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=Железный ключ	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=Золотой ключ	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=Алмазный ключ	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=Незеритовый ключ	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=Чистая кисть	###
+item.noxcrew.ft:paintbrush_green=Зеленая кисть	###
+item.noxcrew.ft:paintbrush_yellow=Желтая кисть	###
+item.noxcrew.ft:paintbrush_blue=Синяя кисть	###
+item.noxcrew.ft:paintbrush_red=Красная кисть	###
+item.noxcrew.ft:paintbrush_white=Белая кисть	###
+item.noxcrew.ft:paintbrush_black=Черная кисть	###
+item.noxcrew.ft:paintbrush_brown=Коричневая кисть	###
+item.noxcrew.ft:paintbrush_purple=Фиолетовая кисть	###
+item.noxcrew.ft:beanie_red=Шапка-бини красного кролика	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=Шапка-бини оранжевого оцелота	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=Шапка-бини желтого яка	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=Шапка-бини лаймовой ламы	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=Шапка-бини зеленого геккона	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=Шапка-бини бирюзового аксолотля	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=Шапка-бини сине-зеленого койота	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=Шапка-бини синей летучей мыши	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=Шапка-бини фиолетовой панды	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=Шапка-бини розового попугая	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=Праздничный колпак	###
+item.noxcrew.ft:hat_propeller=Шляпа-пропеллер	###
+item.noxcrew.ft:hat_crown_cake=Корона-торт	###
+item.noxcrew.ft:hat_birthday_present=Шляпа-подарок на день рождения	###
+item.noxcrew.ft:hat_jester=Шляпа шута	###
+item.noxcrew.ft:hat_chicken_jockey=Шляпа куриного наездника	###
+item.noxcrew.ft:hat_boombox=Шляпа-бумбокс	###
+item.noxcrew.ft:foam_finger=Пенный палец	###
+item.noxcrew.ft:balloon_animal=Животные-шарики	###
+item.noxcrew.ft:big_bubble_blower=Гигантский надуватель пузырей	###
+item.noxcrew.ft:silly_horn=Забавный рог	###
+item.noxcrew.ft:party_popper=Хлопушка	###
+item.noxcrew.ft:confetti_tag_prime=Бирка от конфетти	###
+item.noxcrew.ft:confetti_tag_leftover=Бирка от конфетти	###
+item.noxcrew.ft:pizza_box=Коробка из-под пиццы	###
+item.noxcrew.ft:celebration_fireworks=Фейерверк в честь дня рождения	###
+item.noxcrew.ft:player_gift_giving=Подарочная коробка	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=Подарочная коробка	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=Диско-шар	###
+item.noxcrew.ft:beach_ball=Пляжный мяч	###
+item.noxcrew.ft:balloon_helium=Гелиевый шарик	###
+item.noxcrew.ft:leave_game=§6Покиньте игру	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=Кусочек пиццы	###
+item.noxcrew.ft:mcc_burger=Вкусный бургер	###
+item.noxcrew.ft:anniversary_hot_dog=Вкусный хот-дог	###
+item.noxcrew.ft:party_cupcake=Капкейк	###
+item.noxcrew.ft:party_cake=Кусочек тортика	###
+item.noxcrew.ft:party_chips=Миска чипсов	###
+item.noxcrew.ft:party_cookie=Печенье	###
+item.noxcrew.ft:party_soda=Газировка	###
+item.noxcrew.ft:cotton_candy=Сахарная вата	###
+item.noxcrew.ft:popcorn=Попкорн	###
+item.noxcrew.ft:super_wrap=Полезный ролл	###
+item.noxcrew.ft:cosmetic_chest=Декоративный сундук	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=Карта телепортов	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=Список испытаний	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=Яйцо	###
+item.noxcrew.ft:milk_bucket=Ведро с молоком	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=Блок ускорения	###
+tile.noxcrew.ft:launch_pad.name=Блок-батут	###
+tile.noxcrew.ft:jump_pad.name=Блок суперпрыжка	###
+tile.noxcrew.ft:painting_green.name=Зеленый блок	###
+tile.noxcrew.ft:painting_yellow.name=Желтый блок	###
+tile.noxcrew.ft:painting_blue.name=Синий блок	###
+tile.noxcrew.ft:painting_red.name=Красный блок	###
+tile.noxcrew.ft:painting_white.name=Белый блок	###
+tile.noxcrew.ft:painting_black.name=Черный блок	###
+tile.noxcrew.ft:painting_brown.name=Коричневый блок	###
+tile.noxcrew.ft:painting_purple.name=Фиолетовый блок	###
+tile.noxcrew.ft:elytra_icon.name=Блок врат для элитр	###
+tile.noxcrew.ft:audience_member_oof.name=Подмигивающий участник	###
+tile.noxcrew.ft:audience_member_angry.name=Злой участник	###
+tile.noxcrew.ft:audience_member_joy.name=Радостный участник	###
+tile.noxcrew.ft:audience_member_happy.name=Счастливый участник	###
+tile.noxcrew.ft:audience_member_unimpressed.name=Невпечатленный участник	###
+tile.noxcrew.ft:audience_member_unsure.name=Неуверенный участник	###
+tile.noxcrew.ft:audience_member_starstruck.name=Звездный участник	###
+tile.noxcrew.ft:cake_centre.name=Центр торта	###
+tile.noxcrew.ft:cake_edge.name=Край торта	###
+tile.noxcrew.ft:cake_cherry.name=Вишня для торта	###
+tile.noxcrew.ft:window_spruce.name=Окно из сосны	###
+tile.noxcrew.ft:window_oak.name=Окно из дуба	###
+tile.noxcrew.ft:iron_bars.name=Прямая железная решетка	###
+tile.noxcrew.ft:iron_bars_h.name=Половинная железная решетка	###
+tile.noxcrew.ft:iron_bars_c.name=Угловая железная решетка	###
+tile.noxcrew.ft:castle_pink.name=Розовый замок из терракоты 	###
+tile.noxcrew.ft:sot_flower.name=Зажженный огнецвет 	###
+tile.noxcrew.ft:metal_rigging_v.name=Горизонтальная металлическая обшивка	###
+tile.noxcrew.ft:metal_rigging_h.name=Вертикальная металлическая обшивка	###
+tile.noxcrew.ft:modern_light.name=Современный свет	###
+tile.noxcrew.ft:rope.name=Блок веревки	###
+tile.noxcrew.ft:hieroglyph_1_a.name=Головоломка в пещере: вверху слева. День 1	###
+tile.noxcrew.ft:hieroglyph_1_b.name=Головоломка в пещере: вверху справа. День 1	###
+tile.noxcrew.ft:hieroglyph_1_c.name=Головоломка в пещере: внизу слева. День 1	###
+tile.noxcrew.ft:hieroglyph_1_d.name=Головоломка в пещере: внизу справа. День 1	###
+tile.noxcrew.ft:hieroglyph_2_a.name=Головоломка в пещере: вверху слева. День 2	###
+tile.noxcrew.ft:hieroglyph_2_b.name=Головоломка в пещере: вверху справа. День 2	###
+tile.noxcrew.ft:hieroglyph_2_c.name=Головоломка в пещере: внизу слева. День 2	###
+tile.noxcrew.ft:hieroglyph_2_d.name=Головоломка в пещере: внизу справа. День 2	###
+tile.noxcrew.ft:hieroglyph_3_a.name=Головоломка в пещере: вверху слева. День 3	###
+tile.noxcrew.ft:hieroglyph_3_b.name=Головоломка в пещере: вверху справа. День 3	###
+tile.noxcrew.ft:hieroglyph_3_c.name=Головоломка в пещере: внизу слева. День 3	###
+tile.noxcrew.ft:hieroglyph_3_d.name=Головоломка в пещере: внизу справа. День 3	###
+tile.noxcrew.ft:hieroglyph_4_a.name=Головоломка в пещере: вверху слева. День 4	###
+tile.noxcrew.ft:hieroglyph_4_b.name=Головоломка в пещере: вверху справа. День 4	###
+tile.noxcrew.ft:hieroglyph_4_c.name=Головоломка в пещере: внизу слева. День 4	###
+tile.noxcrew.ft:hieroglyph_4_d.name=Головоломка в пещере: внизу справа. День 4	###
+tile.noxcrew.ft:hieroglyph_5_a.name=Головоломка в пещере: вверху слева. День 5	###
+tile.noxcrew.ft:hieroglyph_5_b.name=Головоломка в пещере: вверху справа. День 5	###
+tile.noxcrew.ft:hieroglyph_5_c.name=Головоломка в пещере: внизу слева. День 5	###
+tile.noxcrew.ft:hieroglyph_5_d.name=Головоломка в пещере: внизу справа. День 5	###
+tile.noxcrew.ft:hieroglyph_6_a.name=Головоломка в пещере: вверху слева. День 6	###
+tile.noxcrew.ft:hieroglyph_6_b.name=Головоломка в пещере: вверху справа. День 6	###
+tile.noxcrew.ft:hieroglyph_6_c.name=Головоломка в пещере: внизу слева. День 6	###
+tile.noxcrew.ft:hieroglyph_6_d.name=Головоломка в пещере: внизу справа. День 6	###
+tile.noxcrew.ft:hieroglyph_7_a.name=Головоломка в пещере: вверху слева. День 7	###
+tile.noxcrew.ft:hieroglyph_7_b.name=Головоломка в пещере: вверху справа. День 7	###
+tile.noxcrew.ft:hieroglyph_7_c.name=Головоломка в пещере: внизу слева. День 7	###
+tile.noxcrew.ft:hieroglyph_7_d.name=Головоломка в пещере: внизу справа. День 7	###
+tile.noxcrew.ft:bigcake_top.name=Верх торта	###
+tile.noxcrew.ft:bigcake_bottom.name=Низ торта	###
+tile.noxcrew.ft:cake_slice.name=Кусочек тортика	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=Длинное знамя 15 — верх	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=Длинное знамя 15 — низ	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=Длинное знамя MCC — верх	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=Длинное знамя MCC — низ	###
+tile.noxcrew.ft:decoration_bunting_a.name=Белый флаг с бантиком	###
+tile.noxcrew.ft:decoration_bunting_b.name=Зеленый флаг с бантиком	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=Флаг с бантиком MCC	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=Зеленый вымпел	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=Белый вымпел	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=Вымпел MCC	###
+tile.noxcrew.ft:decoration_flag_mcc.name=Маленький флаг MCC	###
+tile.noxcrew.ft:decoration_flag_15.name=Маленький флаг 15	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=Маленький флаг 15 — верх	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=Маленький флаг 15 — низ	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=Флаг MCC — верх	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=Флаг MCC — низ	###
+tile.noxcrew.ft:plush_red.name=Плюшевый красный кролик	###
+tile.noxcrew.ft:plush_orange.name=Плюшевый оранжевый оцелот	###
+tile.noxcrew.ft:plush_yellow.name=Плюшевый желтый як	###
+tile.noxcrew.ft:plush_lime.name=Плюшевая лаймовая лама	###
+tile.noxcrew.ft:plush_green.name=Плюшевый зеленый геккон	###
+tile.noxcrew.ft:plush_cyan.name=Плюшевый бирюзовый койот	###
+tile.noxcrew.ft:plush_aqua.name=Плюшевый бирюзовый аксолотль	###
+tile.noxcrew.ft:plush_blue.name=Плюшевая синяя летучая мышь	###
+tile.noxcrew.ft:plush_pink.name=Плюшевый розовый попугай	###
+tile.noxcrew.ft:plush_purple.name=Плюшевая фиолетовая панда	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=Знамя MCC — левый низ	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=Знамя MCC — правый верх	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=Знамя MCC — левый низ	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=Знамя MCC — правый низ	###
+tile.noxcrew.ft:decoration_present.name=Подарочная коробка MCC	###
+tile.noxcrew.ft:cup_poster1.name=Плакат кубка Края 1	###
+tile.noxcrew.ft:cup_poster2.name=Плакат кубка Края 2	###
+tile.noxcrew.ft:logo_1.name=Логотип Noxcrew 1	###
+tile.noxcrew.ft:logo_2.name=Логотип Noxcrew 2	###
+tile.noxcrew.ft:logo_3.name=Логотип Noxcrew 3	###
+tile.noxcrew.ft:melt_spawner.name=Спаунер монстров Meltdown	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=Куча монет	###
+entity.noxcrew.ft:treasure_chest.name=Сундук с сокровищами	###
+entity.noxcrew.ft:key_podium.name=Подставка для ключа	###
+entity.noxcrew.ft:sand_podium.name=Подставка для песка	###
+entity.noxcrew.ft:armor_podium.name=Подставка для доспехов	###
+entity.noxcrew.ft:paint_pot.name=Горшок с краской	###
+entity.noxcrew.ft:giant_cake.name=Торт на день рождения	###
+entity.noxcrew.ft:beach_ball.name=Пляжный мяч	###
+entity.noxcrew.ft:balloon_helium.name=Гелиевый шарик	###
+entity.noxcrew.ft:disco_ball.name=Диско-шар	###
+entity.noxcrew.ft:lost_pearl.name=Таинственная жемчужина	###
+entity.noxcrew.ft:decoration_awning.name=Украшенный тент	###
+entity.noxcrew.ft:decoration_bunting.name=Праздничные флажки	###
+entity.noxcrew.ft:decoration_cupcake.name=Кекс на день рождения	###
+entity.noxcrew.ft:decoration_ballons.name=Праздничные шарики	###
+entity.noxcrew.ft:decoration_15.name=15 воздушных шаров	###
+entity.noxcrew.ft:decoration_board.name=Календарь дней рождения	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=Воздушный шарик в виде курицы	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=Воздушный шарик в виде талисмана	###
+entity.noxcrew.ft:trophy_help.name=Справка	###
+entity.noxcrew.ft:sand_timer.name=Песочные часы	###
+entity.noxcrew.ft:crowned_frog.name=Принц-лягушонок	###
+entity.noxcrew.ft:cake_candles.name=Свеча для торта	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Агнес	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Йенс	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=Кнопка Start	###
+entity.noxcrew.ft:vendor_mascot.name=Шляпы-талисманы	###
+entity.noxcrew.ft:vendor_hat.name=Головные уборы	###
+entity.noxcrew.ft:vendor_toys.name=Игрушки	###
+entity.noxcrew.ft:vendor_food.name=Еда	###
+entity.noxcrew.ft:advert_creator_cup.name=Кубок Края	###
+entity.noxcrew.ft:md_creeper.name=Крипер	###
+entity.noxcrew.ft:md_blaze.name=Ифрит	###
+entity.noxcrew.ft:md_blaze<>.name=Ифрит	###
+entity.noxcrew.ft:md_skeleton.name=Рама	###
+entity.noxcrew.ft:md_skeleton<>.name=Рама	###
+entity.noxcrew.ft:md_spider.name=Паук	###
+entity.noxcrew.ft:md_vindicator.name=Поборник	###
+entity.noxcrew.ft:md_zombie.name=Зомби	###
+entity.noxcrew.ft:md_zombie_baby.name=Детеныш зомби	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§oЖемчужина загадочно покачивается вверх-вниз...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§rВы разгадали секрет пещеры!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=ОЖИДАНИЕ ИГРОКОВ...	###
+txt.misc.msg4=Игра вот-вот начнется 	###
+txt.misc.msg5=Вас вот-вот телепортируют	###
+txt.misc.msg6_1=§6§l!§r %s сделал вам подарок!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r Вы сделали %s подарок!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r Этот игрок не может принять еще один подарок	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= Элитры экипированы 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §eЭтот этап головоломки пройден... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §aВы решили головоломку в пещере! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: Хотите попрыгать? Тогда прыгайте по облакам в мини-игре  §6Ace Race§r !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: Жаждите испытаний? Попробуйте выполнить все задания в мини-игре  §6Grid Runners§r !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]: Мини-игра  §6Meltdown§r  уже ждет вас... Сможете одолеть и выжить среди орд монстров?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]: Исследуйте загадочный храм в мини-игре  §6Sands of Time§r !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: Вы можете увидеть все пройденные испытания в зале трофеев! Загляните в палатку возле портала  §6Grid Runners§r  в  главном лобби!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: Хотите приобрести шляпку? Посетите шляпный магазин в  главном лобби, что возле огромной шляпы!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: Ищите крутые игрушки? Посетите магазин игрушек в  главном лобби, что возле табличек и вагонеток!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: Хотите вкусно перекусить? Посетите продуктовый магазин в  главном лобби, что возле огромной статуи курицы!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]: А вы знали, что можете попробовать разгадать  таинственную головоломку? Отправляйтесь в таинственную пещеру в  главном лобби, что вверху на горе!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: Знаете ли вы, что каждый день вас будет ждать новая головоломка? Каждая  рядом с  означает, что головоломка раскрыта!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: В лобби можно найти кучки с монетами. Отправляйтесь на поиски!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: Заполнился инвентарь? Не беда! Просто выбросите ненужные вещи в мусорное ведро!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cУ вас недостаточно монет	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cУ вас недостаточно места! Выбросьте лишние предметы в мусорное ведро.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r У вас уже есть эта шляпа!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s слишком много!§r Соберите другой ингредиент!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cУ вас нет ключа!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6Вы уже открыли этот сундук!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=Пицца! Съешьте, чтобы получить прибавку к скорости!	###
+txt.shop_info.mcc_burger=Бургер! Съешьте, чтобы получить прибавку к скорости и высоте прыжка!	###
+txt.shop_info.anniversary_hot_dog=Хотдог! Съешьте, чтобы получить прибавку к скорости и высоте прыжка!	###
+txt.shop_info.party_cupcake=Кекс! Съешьте, чтобы получить эффект замедленного падения!	###
+txt.shop_info.party_cake=Торт! Съешьте, чтобы получить эффект левитации!	###
+txt.shop_info.party_chips=Чипсы! Съешьте, чтобы получить прибавку к скорости!	###
+txt.shop_info.party_cookie=Печенье! Съешьте, чтобы получить прибавку к высоте прыжка!	###
+txt.shop_info.party_soda=Содовая! Выпейте, чтобы получить ускорение!	###
+txt.shop_info.cotton_candy=Сахарная вата! Съешьте, чтобы получить прибавку к высоте прыжка!	###
+txt.shop_info.popcorn=Попкорн! Съешьте, чтобы получить прибавку к высоте прыжка!	###
+txt.shop_info.super_wrap=Супер-обертка! Съешьте, чтобы получить все эффекты!	###
+txt.shop_info.foam_finger=Пенопластовый палец! Покажите всем свою поддержку!	###
+txt.shop_info.balloon_animal=Животное из воздушного шарика! Используйте, чтобы запустить воздушный шар!	###
+txt.shop_info.big_bubble_blower=Пускатель пузырей! Надувайте пузырики!	###
+txt.shop_info.silly_horn=Рожок! Используйте его, чтобы издать звук!	###
+txt.shop_info.party_popper=Хлопушка! Используйте ее, чтобы лопнуть конфетти!	###
+txt.shop_info.confetti_tag_prime=Бирка-конфети! Используйте ее на персонаже, чтобы осыпать его конфети!	###
+txt.shop_info.pizza_box=Коробка из-под пиццы! Используйте на игроков, чтобы дать им пиццу!	###
+txt.shop_info.celebration_fireworks=Фейерверки! Используйте их, чтобы запустить фейерверк!	###
+txt.shop_info.player_gift_giving=Подарок! Используйте на игроков, чтобы подарить им подарок!	###
+txt.shop_info.disco_ball=Дискотека! Используйте, чтобы закатить вечеринку!	###
+txt.shop_info.beach_ball=Пляжный мяч! Используйте, чтобы запустить его в игрока!	###
+txt.shop_info.balloon_helium=Шарик! Используйте, чтобы запустить воздушный шар!	###
+
+##Ace Race
+txt.tut.ace_title= Ace Race 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6Поговорите с Seapeekay у линии старта, чтобы получить подсказки и советы!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: Доберитесь до финиша, используя блоки для ускорения и суперпрыжка!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= Победите зверей!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6Поговорите с Smajor у линии старта, чтобы получить подсказки и советы!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: Победите как можно больше монстров, пока не закончится время!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= Скопируйте картину!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: С помощью горшков с краской скопируйте картины!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= Испеките торты!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: Соберите ингредиенты для торта и положите их в центр!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= Бегите!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: Доберитесь до финиша!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r Доберитесь до следующей комнаты!	###
+
+txt.grid.wave_clear=Волна монстров пройдена!	###
+txt.grid.wave_reward= Вы получили 10 монет!	###
+txt.grid.painting_clear=Рисунок завершен!	###
+txt.grid.painting_reward= Вы получили 10 монет!	###
+txt.grid.cake_clear=Торт испечен!	###
+txt.grid.cake_reward= Вы получили 10 монет!	###
+
+##Meltdown
+txt.tut.melt_title= Meltdown 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6Поговорите с hannahxxrose у входа, чтобы получить подсказки и советы!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: Выживите в каждой из комнат, прежде чем они начнут разрушаться! Замораживайте врагов луком и бейте их!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= ВНИМАНИЕ: MELTDOWN 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= ОПАСНО: КРИТИЧЕСКИЙ MELTDOWN 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1= Пройдена 1/7 волн Meltdowns 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= Пройдены 2/7 волн Meltdowns 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= Пройдены 3/7 волн Meltdowns 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= Пройдены 4/7 волн Meltdowns 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= Пройдены 5/7 волн Meltdowns 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= Пройдены 6/7 волн Meltdowns 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= Пройдены 7/7 волн Meltdowns 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= Пройдено волн Meltdowns: %s/7 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r Доберитесь до следующей комнаты!	###
+
+##Sands of Time
+txt.tut.sands_title= Sands of Time 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6Поговорите с HBomb94 у пирамиды, чтобы получить подсказки и советы!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: Найдите как можно больше монет, пока время не истекло! Собирайте песок, чтобы получить дополнительное время!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= Вы нашли 5 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= Вы нашли 10 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= Вы нашли 20 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= Вы нашли 30 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= Вы нашли 50 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= Вы нашли 100 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= Вы нашли 200 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= Вы нашли 400 монет!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=Сундук открыт!	###
+txt.sot.key=Вы нашли ключ!	###
+txt.sot.upgraded=Улучшено!	###
+
+##Lobby
+txt.lobby.coins5= Вы нашли 5 монет!	###
+txt.lobby.coins20= Вы нашли 20 монет!	###
+txt.lobby.coins30= Вы нашли 30 монет!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=КАРТА	###
+txt.ui.tp.confirm1=Вы уверены?	#
+txt.ui.tp.confirm_target=Телепорт в %s.	#
+txt.ui.tp.area_ace_race= Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= Grid Runners	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= Главное лобби	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=Телепорт готов!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=Декоративный сундук	###
+txt.ui.cosmetic=Найдите все шляпы!	###
+txt.ui.button.select=Выбрать	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=НАГРАДА РАЗБЛОКИРОВАНА	###
+txt.ui.title.red_rabbit_cc=Голова красного кролика	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=Голова оранжевого оцелота	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=Голова желтого яка	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=Голова лаймовой ламы	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=Голова зеленого геккона	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=Голова бирюзового аксолотля	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=Голова сине-зеленого койота	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=Голова синей летучей мыши	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=Голова фиолетовой панды	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=Голова розового попугая	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=Эмоция «Воздушный поцелуй»	###
+txt.ui.title.ride_victory_emote=Эмоция «Путь к победе»	###
+txt.ui.title.cartwheel_victory_emote=Эмоция «Победный кувырок»	###
+txt.ui.title.flying_chicken_emote=Эмоция «Летающая курица»	###
+txt.ui.title.cape=Плащ в честь 15-летия MCCxMinecraft	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=Корона победителя MCC	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=Вы получили предмет для средства создания персонажей! Загляните в гардеробную.	###
+txt.ui.text.cape_unlocked=Поздравляем! Вы получили предмет для средства создания персонажей! Загляните в гардеробную.	###
+txt.ui.button.claim=ПОЛУЧИТЬ	###
+
+##UI Vendors
+txt.title.vendor_food= Еда 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= Шляпы-талисманы 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= Шляпы 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= Игрушки 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=Купить	###
+txt.ui.sold_out=ПРОДАНО	###
+
+##Game Toasts
+txt.ui.toast.time= §lВРЕМЯ§r	###
+txt.ui.toast.coins_collected= §lСОБРАНО МОНЕТ§r	###
+txt.ui.toast.coins_earned= §lЗАРАБОТАНО МОНЕТ§r	###
+txt.ui.toast.new_record=§lНОВЫЙ РЕКОРД!§r	###
+txt.ui.toast.room=КОМНАТА	###
+txt.ui.toast.time_spent= §lПОТРАЧЕНО ВРЕМЕНИ§r	###
+txt.ui.toast.complete=ЗАВЕРШЕНО!	###
+txt.ui.toast.highscore= §lВЫСОКИЙ РЕКОРД§r	###
+txt.ui.toast.highest_coins= §lЛУЧШИЙ ЗАБЕГ§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §lНЕЗЕРИТОВЫЙ МЕДАЛИСТ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §lАЛМАЗНЫЙ МЕДАЛИСТ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §lЗОЛОТОЙ МЕДАЛИСТ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §lЖЕЛЕЗНЫЙ МЕДАЛИСТ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §lМЕДНЫЙ МЕДАЛИСТ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §lОТКРЫТО СУНДУКОВ§r	###
+txt.ui.toast.sot.escaped= §lВЫ СБЕЖАЛИ!§r	###
+txt.ui.toast.sot.failed= §lВАМ НЕ УДАЛОСЬ СБЕЖАТЬ...§r	###
+txt.ui.toast.gr.mobs_slain= §lПОБЕЖДЕНО МОБОВ§r	###
+txt.ui.toast.gr.blocks_painted= §lПОКРАШЕНО БЛОКОВ§r	###
+txt.ui.toast.gr.cakes_baked= §lИСПЕЧЕНО ТОРТОВ§r	###
+txt.ui.toast.ar.time= §lВРЕМЯ§r	###
+txt.ui.toast.md.slain= §lСОКРУШЕНО МОБОВ§r	###
+txt.ui.toast.md.rooms_survived_0= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_survived_1= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_survived_2= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_survived_3= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_survived_4= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_survived_5= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_survived_6= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_survived_7= §lПРОЙДЕНО КОМНАТ§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=СПИСОК ИСПЫТАНИЙ	###
+txt.ui.body1.challenge_list=Нажмите на значок, чтобы посмотреть испытание!	###
+txt.ui.reward.cape= НАГРАДА: ПЛАЩ	###
+txt.ui.status.cape=Завершено	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=Испыт. бирюзового аксолотля	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=Наденьте §lшапку-бини бирюзового аксолотля§r и найдите потерянную жемчужину. Она спрятана в воде...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oПолучите предмет для средства создания персонажа «Голова бирюзового аксолотля»	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=Испыт. синей летучей мыши	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=Наденьте §lшапку-бини синей летучей мыши§r и соберите 100 ед. песка в мини-игре §lSands of Time§r.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oПолучите предмет для средства создания персонажа «Голова синей летучей мыши»	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=Собрано песка: %s ед.	###
+
+txt.ui.title.cyan_coyote_challenge=Испыт. сине-зеленого койота	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=Наденьте §lшапку-бини сине-зеленого койота§r и соберите 75 гор монет в мини-игре §lSands of Time§r или §lMeltdown§r.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oПолучите предмет для средства создания персонажа «Голова сине-зеленого койота»	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=Собрано гор монет: %s.	###
+
+txt.ui.title.green_gecko_challenge=Испытание зеленого геккона	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=Наденьте §lшапку-бини зеленого геккона§r и раскрасьте 200 блоков в испытании «Перерисуй картину» (мини-игра §lGrid Runners§r).	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oПолучите предмет для средства создания персонажа «Голова зеленого геккона»	###
+txt.ui.progress.green_gecko_challenge=Раскрашено блоков: %s.	###
+
+txt.ui.title.lime_llama_challenge=Испытание лаймовой ламы	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=Наденьте §lшапку-бини лаймовой ламы§r и раздайте 10 подарочных коробок. Их можно приобрести у торговца игрушками в центре.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oПолучите предмет для средства создания персонажа «Голова лаймовой ламы»	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=Роздано подарочных коробок: %s.	###
+
+txt.ui.title.orange_ocelot_challenge=Испыт. оранжевого оцелота	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=Наденьте §lшапку-бини оранжевого оцелота§r и соберите 100 ускорителей в мини-игре §lAce Race§r.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oПолучите предмет для средства создания персонажа «Голова оранжевого оцелота»	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=Использовано ускорителей: %s.	###
+
+txt.ui.title.pink_parrot_challenge=Испытание розового попугая	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=Наденьте §lшапку-бини розового попугая§r и 25 раз пробегите через врата для элитр в мини-игре §lAce Race§r.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oПолучите предмет для средства создания персонажа «Голова розового попугая»	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=Использовано врат для элитр: %s.	###
+
+txt.ui.title.purple_panda_challenge=Испыт. фиолетовой панды	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=Наденьте §lшапку-бини фиолетовой панды§r и добудьте 200 ингредиентов для испытания «Пора печь торты» в мини-игре §lGrid Runners§r.	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oПолучите предмет для средства создания персонажа «Голова фиолетовой панды»	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=Добыто ингредиентов: %s.	###
+
+txt.ui.title.red_rabbit_challenge=Испытание красного кролика	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=Наденьте §lшапку-бини красного кролика§r и пробегите по 50 блокам-батутам в мини-игре §lAce Race§r.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oПолучите предмет для средства создания персонажа «Голова красного кролика»	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=Использовано блоков-батутов: %s.	###
+
+txt.ui.title.yellow_yak_challenge=Испытание желтого яка	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=Наденьте §lшапку-бини желтого яка§r и уничтожьте 350 замороженных врагов в мини-игре §lMeltdown§r.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oПолучите предмет для средства создания персонажа «Голова желтого яка»	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=Уничтожено замороженных врагов: %s.	###
+
+txt.ui.title.ace_race_challenge=Испытание «Гонка асов»	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=Пройдите мини-игру §lAce Race§r!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§oПолучите эмоцию «Воздушный поцелуй»	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=Испытание «Бегуны по сетке»	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=Пройдите мини-игру §lGrid Runners§r!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§oПолучите эмоцию «Путь к победе»	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=Испытание «Плавильный цех»	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=Дойдите до 3-й комнаты в мини-игре §lMeltdown§r	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§oПолучите эмоцию «Летающая курица»	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=Испытание «Пески времени»	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=Зайдите в мини-игру §lSands of Time§r, продержитесь в ней 2 минуты и успешно сбегите!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§oПолучите эмоцию «Победный кувырок»	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=Испыт. «Таинственная пещера»	###
+txt.ui.body1.cave_challenge=Решите все 7 головоломок в таинственной пещере.	###
+txt.ui.reward.cave_challenge=§oПолучите предмет для средства создания персонажа «Корона победителя MCC»	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=Решено головоломок: %s/7.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e ОЖИДАНИЕ ИГРОКОВ §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §fОЖИДАНИЕ ИГРОКОВ (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §eОЖИДАНИЕ ИГРОКОВ §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §eОЖИДАНИЕ ИГРОКОВ §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §eОЖИДАНИЕ ИГРОКОВ §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §eОЖИДАНИЕ ИГРОКОВ §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §eОЖИДАНИЕ ИГРОКОВ §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§eМаксимальное время ожидания:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e ОЖИДАНИЕ ИГРЫ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §fОЖИДАНИЕ ИГРЫ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e ОЖИДАНИЕ ИГРЫ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e ОЖИДАНИЕ ИГРЫ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e ОЖИДАНИЕ ИГРЫ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e ОЖИДАНИЕ ИГРЫ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e ОЖИДАНИЕ ИГРЫ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eПриблизительно §f%s§e мин. или меньше	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eПриблизительно §f%s§e мин. или меньше	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aИГРА ГОТОВА!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eТЕЛЕПОРТАЦИЯ§eЧЕРЕЗ §f %s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eТЕЛЕПОРТИРОВАН!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§eПриготовьтесь...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§eНачало через:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aСТАРТ!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Йенс	### This is a name or gamertag of a person
+txt.title.dia.agnes=Агнес	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Йенс и  Агнес	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=Справка	###
+txt.title.dia.ender_cup= Кубок Края 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=Принц-лягушонок	###
+
+txt.title.start_game=Начать игру	###
+txt.title.join_queue=Присоединиться к очереди	###
+txt.title.ace_race= Ace Race 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= Grid Runners 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= Meltdown 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= Sands of Time 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= Главное лобби 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=Хорошо	###
+txt.button.yes=Да	###
+txt.button.no=Нет	###
+txt.button.back=Назад	###
+txt.button.exit=Выйти	###
+txt.button.close=Закрыть	###
+txt.button.start_game=Начать игру	###
+txt.button.join_queue=Присоединиться к очереди	###
+txt.button.tutorial=Обучение	###
+txt.button.challenges_q=Испытания?	###
+txt.button.who_are_you_q=Кто вы?	###
+txt.button.what_games_q=Мини-игры?	###
+txt.button.cave_mystery_q=Что за тайна?	###
+txt.button.go_to_portal=Идите к порталу	###
+txt.button.remove_hat=Снять шляпу	###
+txt.button.no_hats=У вас пока нет шапок. Приобретите парочку в магазине!	###
+txt.button.pet_frog=Погладить лягушку	###
+txt.button.talk_frog=Поговорить с лягушкой	###
+txt.button.kiss_frog=Поцеловать лягушку	###
+txt.button.love_minecraft_q=Любите Minecraft?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=Вам нравится MCC?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=Лучший момент?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=Ace Race?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=Трансляция?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=Лучшее обновление?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=Grid Runners?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=Meltdown?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=Лучшее воспоминание?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=Sands of Time?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=Вперёд	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=Привет! Я  Йенс!	###
+txt.jagnes.1_0.dia2=Привет! Я  Йенс!	###
+txt.jagnes.1_0.dia3=Добро пожаловать на вечеринку в честь 15-летия Minecraft на сервере MCC!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=Мы здесь с Noxcrew. Мы сыграем в мини-игры с MC Championship!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=Исследуйте, играйте в мини-игры, разгадывайте тайну пещеры!	###
+txt.jagnes.1_0.dia6=Отправляйтесь к порталам и сыграйте в крутые мини-игры!	###
+txt.jagnes.1_0.dia6_1=Для начала, отправляйтесь к порталу и сыграйте в крутую мини-игру!	###
+txt.jagnes.1_0.dia6_2=Для начала, следуйте за парящими  коронами к порталу и сыграйте в крутую мини-игру!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=Путешествуйте сквозь порталы и сыграйте в крутые мини игры с MC Championship.	###
+txt.jagnes.2_0.dia2=Вас ждут такие мини-игры, как §1Ace Race§r, §1Grid Runners§r, §1Meltdown§r и §1Sands of Time§r!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=Поиграйте в каждую из мини-игр и выберите любимую!	###
+
+##What games?
+txt.jagnes.2_1.dia1=Путешествуйте сквозь порталы и сыграйте в крутые мини игры с MC Championship.	###
+txt.jagnes.2_1.dia2=В мини-игре §1Ace Race§r вы попадете на облачную гонку через все небеса!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=Попробуйте §1Grid Runners§r и преодолейте все испытания!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=В режиме §1Meltdown§r, вам предстоит выжить среди полчищ зомби в плавильных комнатах!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=Бросьте вызов храму §1Sands of Time§r и заберите все сокровища!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=Поиграйте в каждую и выберите любимую!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= Ходят слухи, что где-то высоко в горах есть таинственная пещера.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=Говорят, что в ней можно найти нарисованные  головоломки, которые нужно решить!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=Найдите пещеру и узнайте все ее тайны!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=Следуйте за парящими  коронами к порталу  §6Ace Race§r  и сыграйте в мини-игру!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=Следуйте за парящими  коронами к порталу  §6Grid Runners§r  и сыграйте в мини-игру!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=Следуйте за парящими  коронами к порталу  §6Meltdown§r  и сыграйте в мини-игру!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=Следуйте за парящими  коронами к порталу  §6Sands of Time§r  и сыграйте в мини-игру!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=Вы нашли магазин!	###
+txt.jagnes.help_shop2=Покупайте предметы за заработанные в мини-играх монеты!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=Вы нашли  зал трофеев!	###
+txt.jagnes.help_trophy2=Осматривайте свои трофеи, полученные за пройденные испытания!	###
+txt.jagnes.help_trophy3=Сделайте снимок и поделитесь прогрессом!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=Вы нашли комнату с тортом!	###
+txt.jagnes.help_cake2=Свечи на торте — достижения. Выполняйте их, чтобы получить особые призы!	###
+txt.jagnes.help_cake3=Сделайте снимок и поделитесь прогрессом!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=Вы нашли портал с мини-игрой!	###
+txt.jagnes.help_portal2=Пройдите через портал в мир мини-игры!	###
+txt.jagnes.help_portal3=Идите вперед и пройдите через портал!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=Отлично, вы нашли портал в мини-игру  §6Ace Race§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=Попадите на облачную гонку через все небеса!	###
+txt.jagnes.help_ace_race_portal3=Идите вперед и пройдите через портал!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=О, смотрите, это портал в мини-игру  §6Grid Runners§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=Попадите на стадион и преодолейте все испытания!	###
+txt.jagnes.help_grid_runners_portal3=Идите вперед и пройдите через портал!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=О, вы нашли портал в мини-игру  §6Meltdown§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=В этом помещении вам предстоит выжить среди полчищ зомби в плавильных комнатах!	###
+txt.jagnes.help_meltdown_portal3=Идите вперед и пройдите через портал!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=Хорошие новости, вы нашли портал в мини-игру  §6Sands of Time§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=Сбегите из песчаного храма и заполучите все его сокровища!	###
+txt.jagnes.help_sot_portal3=Идите вперед и пройдите через портал!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=Ого, вы нашли  таинственную пещеру! 	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=Приходите сюда каждый день и решайте головоломки!	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=Вы нашли новое событие!	###
+txt.jagnes.help_activity2=Хотите потусоваться и поиграть в мини-игры?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lПочему вы любите Minecraft?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lСамый памятный момент с MCC?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lКакой лучший момент был когда-либо в MCC?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lЧто больше всего нравится в Ace Race?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lЗачем смотреть вашу прямую трансляцию «Кубок Края»?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=Привет! Я — §1Seapeekay§r. Добро пожаловать в мини-игру §1Ace Race§r!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=Используйте ускорители и батуты, чтобы добраться до финиша!	###
+txt.creator_ace.1_0.dia3=Нажмите «Обучение» для дополнительной информации.	###
+txt.creator_ace.1_0.dia4=Или нажмите «Начать игру», если готовы сыграть!	###
+txt.creator_ace.2_0.dia1=§1Ace Race§r — это прогулка по облакам!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=Бегите вперед по трассе как можно быстрее и доберитесь до финиша первым!	###
+txt.creator_ace.2_0.dia3=Используйте батуты, ускорение, суперпрыжки и врата для элитр, чтобы ускориться!	###
+txt.creator_ace.2_0.dia4=Увидимся на финише!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=Привет! Я — §1Seapeekay§r, стример Minecraft, который любит баланс между соревнованием и весельем.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Найдите меня на платформе Twitch по запросу «Seapeekay».	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=Для меня это важно, потому что в игре предоставлен безгранично-открытый мир в жанре «Песочница». Так что вы можете делать все, на что у вас хватит фантазии!	###
+txt.creator_ace.3_1.dia2=В Minecraft не существует «правильного» способа играть. Вы вольны творить и делать то, что душе угодно!	###
+txt.creator_ace.3_1.dia3=И со всеми (практически) нынешними друзьями я познакомился именно в Minecraft.	###
+txt.creator_ace.3_1.dia4=И я думаю, что эта игра абсолютно точно изменила мою жизнь.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=Больше всего мне запомнился MCC 5, потому что я наконец-то смог одержать свою первую победу!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=И это было в команде, которая определенно была не самой сильной. Несмотря на то, что говорило сообщество, это была заслуженная победа.	###
+txt.creator_ace.3_2.dia3=Я никогда не был хорошим игроком в Minecraft, и MCC подтолкнула меня к тому, чтобы стать лучше.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=И теперь я действительно хорош, так что это очень крутой турнир!	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=Моя лучшая игра в MCC — когда я наконец-то выиграл в мини-игру §1Ace Race§r.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=В сообществе меня долгое время называли «Мистер Гонка асов», но, по правде говоря, я никогда не выигрывал.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=Так что тот день, когда я наконец это сделал, навсегда останется в моей памяти.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=Больше всего в мини-игре §1Ace Race§r мне нравятся различные варианты прохождения трассы.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=Режим доступен как новичкам, так и профессионалам.	###
+txt.creator_ace.3_4.dia3=Некоторые трассы требуют от вас скорости, некоторые же требуют больших умений...	###
+txt.creator_ace.3_4.dia4=Но ключ к победе — финишная прямая.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=Советую посмотреть как эти трассы прохожу я на прямой трансляции «Кубка Края», потому что вы определенно получите тот самый баланс хорошего времяпрепровождения и веселья.	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=Я определенно намерен победить!	###
+txt.creator_ace.3_5.dia4=Вам точно будет интересно и весело наблюдать за этим!	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lЛюбимое обновление Minecraft?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lЧто больше всего нравится в MCC?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lЧто больше всего нравится в Grid Runners?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lЗачем смотреть вашу прямую трансляцию «Кубок Края»?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=Привет! Я — §1Smajor§r. Добро пожаловать в мини-игру §1Grid Runners§r!	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=Выполняйте каждое испытание столько раз, сколько сможете, чтобы набрать наивысшую оценку!	###
+txt.creator_grid.1_0.dia3=Нажмите «Обучение» для дополнительной информации.	###
+txt.creator_grid.1_0.dia4=Или нажмите «Встать в очередь», если готовы сыграть!	###
+txt.creator_grid.2_0.dia1=§1Grid Runners§r — это испытание с 4 разными комнатами!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=В каждой комнате вас ждет новое испытание, которое нужно выполнить, чтобы попасть в следующую комнату.	###
+txt.creator_grid.2_0.dia3=У вас есть ровно по одной минуте в каждой комнате. Не тормозите!	###
+txt.creator_grid.3_0.dia1=Я — §1SMajor§r!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Я — стример, который специализируется на Minecraft!	###
+txt.creator_grid.3_0.dia3=Если захотите познакомиться с моим творчеством, буду ждать вас на моем Twitch-канале.	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=Мое самое любимое обновление Minecraft — «Водное обновление»!	###
+txt.creator_grid.3_1.dia2=Самым крутым изменением стало обновление океана. Теперь его стало гораздо веселее исследовать!	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=Больше всего в MCC мне нравится то, как все создатели из разных областей Minecraft и создания контента собираются вместе, чтобы сыграть в одной команде!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=Приятно видеть, как люди, которые раньше никогда бы не встретились, узнают друг друга и становятся друзьями.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=§1Grid Runners§r — игра, ориентированная на командную игру. Я ее просто обожаю!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=И нет ничего более захватывающего, чем команда, работающая как один отлаженный механизм.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=Атмосфера будет просто потрясной!	###
+txt.creator_grid.3_4.dia3=На MCC, моя главная цель — чтобы я и моя команда провели время как можно лучше!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=Даже если мы никогда больше не увидимся — это будет лучшее времяпрепровождение!	###
+
+txt.creator_grid.4_0.dia1=Есть 4 типа испытаний: «Зверобойня», «Перерисуй картину», «Пора печь торты» и «Бег»!	###
+txt.creator_grid.4_0.dia2=В испытании «Зверобойня» вам предстоит победить всех монстров в комнате.	###
+txt.creator_grid.4_0.dia3=В испытании «Перерисуй картину» вам предстоит перерисовать картину при помощи кисти и ведра.	###
+txt.creator_grid.4_0.dia4=В испытании «Пора печь торты» вам нужно испечь вкуснейший торт из собранных ингредиентов и поставить его в тортовый механизм в центре!	###
+txt.creator_grid.4_0.dia5=В испытании «Бег» вам нужно как можно быстрее добежать до финиша!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lЛюбимое обновление Minecraft?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lЧто больше всего нравится в Minecraft?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lСамый памятный момент с MCC?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lЧто самое приятное в Meltdown?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lЗачем смотреть вашу прямую трансляцию «Кубок Края»?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=Привет! Я — §1hannahxxrose§r. Добро пожаловать в мини-игру §1Meltdown§r!	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=Вам предстоит выжить в каждой из комнат, прежде чем они начнут разрушаться! Побеждайте монстров, чтобы получить дополнительные очки.	###
+txt.creator_melt.1_0.dia3=Нажмите «Обучение» для дополнительной информации.	###
+txt.creator_melt.1_0.dia4=Или нажмите «Встать в очередь», если готовы сыграть!	###
+txt.creator_melt.2_0.dia1=§1Meltdown§r — это комплекс, состоящий из комнат, которые вот-вот расплавятся!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=Вам нужно выжить в каждой комнате, пока не откроется дверь в следующую.	###
+txt.creator_melt.2_0.dia3=Замораживайте и разбивайте замороженных монстров, чтобы получить дополнительные очки!	###
+txt.creator_melt.2_0.dia4=А еще вы можете подбирать горстки монет, чтобы получить еще больше очков!	###
+txt.creator_melt.3_0.dia1=Я — §1Hannahxxrose§r, и я создатель контента в Minecraft!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=На моих трансляциях вас ждет настоящий соревновательный дух и хорошее настроение!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=Мое самое любимое обновление Minecraft — «Тропы и сказки» из-за нового биома цветущей вишни!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=Больше всего в Minecraft мне нравится... PvP, конечно же!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=Мое любимое воспоминание о MCC — победа в MCC Pride 2024 с командой Cyan Coyotes!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=Больше всего в §1Meltdown§r мне нравится соревновательность и командная работа.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=Если вы понаблюдаете за мной на этом турнире, то увидите слаженную командную работу и крутые PvP-моменты.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=А посмотреть за игрой вы можете на моем Twitch-канале!	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lПочему Minecraft так важен для вас?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lПервое воспоминание о Minecraft?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lЛюбимое воспоминание о Minecraft?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§lЧто самое приятное в Sands of Time?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lЗачем смотреть вашу прямую трансляцию «Кубок Края»?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=Привет! Я — §1HBomb94§r. Добро пожаловать в мини-игру §1Sands of Time§r!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=Ваша цель — исследовать песчаный храм и найти как можно больше монет, пока время не истекло!	###
+txt.creator_sands.1_0.dia3=Видите кнопку «Обучение»? Коснитесь, чтобы получить дополнительные сведения.	###
+txt.creator_sands.1_0.dia4=Или нажмите «Начать игру», если готовы сыграть! 	###
+txt.creator_sands.2_0.dia1=§1Sands of Time§r — это подземелье, где вам нужно получить как можно больше монет!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=В подземелье вы найдёте монстров, монеты, ключи для сундуков, доспехи и песок, который прибавит вам немного времени!	###
+txt.creator_sands.2_0.dia3=У вас есть 2 минуты, чтобы пройти подземелье. Подбирайте песок, чтобы добавить 10 сек. к таймеру, но будьте осторожны!	###
+txt.creator_sands.2_0.dia4=Если вы умрете в подземелье или попадете в ловушку, вам придется потратить часть собранных монет, чтобы выбраться.	###
+txt.creator_sands.3_0.dia1=Я —§1HBomb94§r!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=Я стример на платформе Twitch. Вы можете найти меня тут:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft был очень важен для меня всю мою взрослую жизнь.	###
+txt.creator_sands.3_1.dia2=Сейчас мне 30 лет, а снимать видео я начал в... 18?	###
+txt.creator_sands.3_1.dia3=Значит, прошло уже двенадцать лет?!	###
+txt.creator_sands.3_1.dia4=Господи... Какой я старый!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Самым ранним моим воспоминанием о Minecraft был первый мир, который я создал.	###
+txt.creator_sands.3_2.dia2=Я построил ужасный на вид замок, состоящий из булыжников и одной дубовой двери.	###
+txt.creator_sands.3_2.dia3=А потом я умер... Тогда я еще не знал, что точки спауна — это полезная штука...	###
+txt.creator_sands.3_2.dia4=А еще я не знал, что координаты — очень полезная вещь...	###
+txt.creator_sands.3_2.dia5=Так я навсегда затерялся в своем первом мире. Я часами пытался найти замок снова, но так и не смог.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=На самом деле, потеряться — очень просто!	###
+txt.creator_sands.3_3.dia2=Помню момент из MCC 9, когда вот-вот закончились «Голодные игры», и я стоял и смотрел на табло.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=И кричал своей команде: «Посмотрите на лидеров!»	###
+txt.creator_sands.3_3.dia4=Как вспомню, аж мурашки бегут по коже!	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=Больше всего в §1Sands of Time§r мне нравится момент, когда все начинают паниковать.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=В момент, когда все начинают паниковать, происходит самое интересное — все начинают сходить с ума и кричать друг на друга.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=Да-да, это так!	###
+txt.creator_sands.3_5.dia3=Наш командный дух очень силен, и мы будем легко доминировать в любой мини-игре.	###
+txt.creator_sands.3_5.dia4=Кроме PvP-игр и... паркура.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=Добро пожаловать в зал трофеев!	###
+txt.trophy_help.1_0.dia2=Каждая свеча — это испытание, которое вы можете пройти!	###
+txt.trophy_help.1_0.dia3=§6Нажимайте§r на свечи, чтобы увидеть задачу и прогресс выполнения.	###
+txt.trophy_help.1_0.dia4=Удастся ли вам пройти все испытания?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=Присоединяйтесь к трансляции §1«Кубка Края»§r! на сайте: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Посмотрите, как 40 крупнейших создателей контента Minecraft сражаются в 10 командах в 8 различных мини-играх!	###
+txt.ender_cup.1_0.dia3=Следите за прямой трансляцией конкурса 27 июля в 20:00 по МСК!	###
+
+txt.ender_cup.ad1=Присоединяйтесь к трансляции §1«Кубка Края»§r! на сайте: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Посмотрите, как 40 крупнейших создателей контента Minecraft сражаются в 10 командах в 8 различных мини-играх!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§oКоронованная лягушка смотрит на вас с ожиданием.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§oЧто вы хотите сделать?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oВы протягиваете руку, чтобы погладить лягушку, но она отпрыгивает в ужасе.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oЛягушка хмурится и поправляет корону.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oВы начинаете длинную речь, в которой говорите о самых разных вещах...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oКак провели время на вечеринке, сыграли в различные мини-игры, как побывали в таинственной пещере...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oНо лягушке это, похоже, неинтересно.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=Вы сняли мое проклятие! Спасибо!	###
+txt.frog_prince.2_0.dia2=Я сижу здесь уже много-много лет и жду, когда кто-нибудь меня §oпоцелует§r…	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=Много людей проходило здесь!	###
+txt.frog_prince.2_0.dia4=Кто-то даже пытался украсть мою корону!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= Подсказки для головоломки 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=А, помню эти  головоломки и могу подсказать, если нужно!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=Нужны подсказки как решить их?	###
+txt.puzzle_help.landing.dia3=Нажмите на кнопку рядом с головоломкой, чтобы получить подсказку!	###
+txt.button.day1=День 1	###
+txt.button.day2=День 2	###
+txt.button.day3=День 3	###
+txt.button.day4=День 4	###
+txt.button.day5=День 5	###
+txt.button.day6=День 6	###
+txt.button.day7=День 7	###
+txt.button.wall1=Левая стена	###
+txt.button.wall2=Средняя стена	###
+txt.button.wall3=Правая стена	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=Один из первых рисунков, которые я разгадал!	###
+txt.puzzle_help.wall1.dia2=У меня это заняло целых три дня!	###
+txt.puzzle_help.wall1.dia3=Для какой головоломки вы бы хотели получить подсказку?	###
+
+txt.puzzle_help.wall2.dia1=А, центральная картина...	###
+txt.puzzle_help.wall2.dia2=Как раз тогда ко мне и начали приходить идеи!	###
+txt.puzzle_help.wall2.dia3=Для какой головоломки вы бы хотели получить подсказку?	###
+
+txt.puzzle_help.wall3.dia1=Это самая последняя головоломка, которую я разгадал.	###
+txt.puzzle_help.wall3.dia2=Это было не просто, но мы справились!	###
+txt.puzzle_help.wall3.dia3=Для какой головоломки вы бы хотели получить подсказку?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§oВзмах руки над символом короны...	###
+txt.puzzle_help_day1.dia2=Найдите большую корону на красном фоне, встаньте на нее и помашите рукой!	###
+
+txt.puzzle_help_day2.dia1=§oХлопушка перед каменным лицом, украшенным драгоценными камнями...	###
+txt.puzzle_help_day2.dia2=Найдите каменную статую с драгоценными камнями на месте глаз и установите перед ней хлопушку!	###
+
+txt.puzzle_help_day3.dia1=§oТолща воды, что по спирали уходит вниз...	###
+txt.puzzle_help_day3.dia2=Разгадка, должно быть, лежит на дне огромной лужи... или озера!	###
+
+txt.puzzle_help_day4.dia1=§oКристальный шар перед восхищенной зеленой толпой...	###
+txt.puzzle_help_day4.dia2=Установите кристальный диско-шар перед восхищенной зеленой толпой...	###
+
+txt.puzzle_help_day5.dia1=§oКусочек тортика над H, и полосатый черно-желтый квадрат открывается...	###
+txt.puzzle_help_day5.dia2=Найдите полосатый черно-желтый проход! Он должен привести к H. Скушайте кусочек торта!	###
+
+txt.puzzle_help_day6.dia1=§oФейерверк на вершине ледяной горы...	###
+txt.puzzle_help_day6.dia2=Заберитесь на самую высокую гору и установите фейерверк!	###
+
+txt.puzzle_help_day7.dia1=§oДверь, хлопок в ладоши и принц-лягушонок с короной на голове...	###
+txt.puzzle_help_day7.dia2=Найдите дверь и хлопните перед ней в ладоши! Это должно привести к принцу-лягушонку.	###
+txt.puzzle_help_day7.dia3=Но как быть с принцем-лягушонком?	###
+txt.puzzle_help_day7.dia3_1=Мне доводилось слышать истории о том, что заколдованных принцев нужно поцеловать, но явно не в этом случае...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=Вы здесь за головоломками? Каждая  в  ряду означает, что ее уже решили!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=Первая, кажется, машет рукой, но я не уверен...	###
+txt.puzzle_lore_day1.dia3=Мне нужно раскрыть их все, только потом будем думать.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=Вы здесь за головоломками? Каждая  в  ряду означает, что ее уже решили!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=Я вижу здесь лицо и хлопушку.	###
+txt.puzzle_lore_day2.dia3=Я не уверен до конца, что они означают, но...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=Вы здесь за головоломками? Каждая  в  ряду означает, что ее уже решили!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=Последняя напоминает мне шикарный бассейн или, может быть, брызги воды?	###
+txt.puzzle_lore_day3.dia3=Нужно больше времени, чтобы убедиться...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=Вы здесь за головоломками? Каждая  в  ряду означает, что ее уже решили!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=А на последней изображен диско-шар и... человек?	###
+txt.puzzle_lore_day4.dia3=Это очень необычно и загадочно...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=Вы здесь за головоломками? Каждая  в  ряду означает, что ее уже решили!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=Последняя прям сбивает с толку. Желто-черный круг, торт и буква H?	###
+txt.puzzle_lore_day5.dia3=Полоса... скорее всего, она разделяет их.	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=Вы здесь за головоломками? Каждая  в  ряду означает, что ее уже решили!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=А на вчерашней головоломке были сверкающие номера и гора!	###
+txt.puzzle_lore_day6.dia3=Потрясающе!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=Вот и все! Все  рисунки разгаданы!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=Последняя — самая запутанная.	###
+txt.puzzle_lore_day7.dia3=Кажется, эти руки держаться вместе? А, может быть, просто хлопают?	###
+txt.puzzle_lore_day7.dia4=А вот здесь лягушка и дверь...	###
+txt.puzzle_lore_day7.dia5=Мне нужно время, чтобы привести мысли в порядок.	###
+txt.puzzle_lore_day7.dia6=Завтра я обязательно разгадаю тайны!	###

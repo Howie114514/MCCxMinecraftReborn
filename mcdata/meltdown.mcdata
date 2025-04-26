@@ -1,4 +1,5 @@
-import@{Vector3,BlockVolume}:"\@minecraft/server"
+import@{Vector3}:"\@minecraft/server"
+import@{createBlockVolumeArgs,BlockVolumeArguments}:"../utils"
 
 export const@points
 objstart
@@ -16,7 +17,7 @@ bv@7 68 2102 7 71 2105
 bv@47 69 2094 47 72 2097
 bv@65 75 2127 62 78 2127
 arrend
-export const@structure_points/Record<string,BlockVolume>
+export const@structure_points/Record<string,BlockVolumeArguments>
 objstart
 kbv@r1 48 65 2162 59 70 2173
 kbv@r2 41 65 2177 70 82 2206

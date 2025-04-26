@@ -1,0 +1,134 @@
+/*
+{
+	"namespace": "npc_interact",
+	"npc_screen_contents/teacher": {
+		"visible":false,
+		"bindings": []
+	},
+	"npc_screen_contents/student": {
+		"visible": true,
+		"bindings": []
+	},
+	"student_view_content": {
+		"visible": true,
+		"bindings": []
+	},
+
+	"banner_fill": {
+		"type": "image",
+		"texture": "textures/ui/banners2"
+	},
+  // Point on the speach bubble, positioned right at the edge of the bubble pointing into the paper doll window
+  "bubble_point": {
+    "type": "image",
+    "texture": "textures/ui/dialog_bubble_point",
+    "size": [16, 18],
+    "layer": 6,
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    // Offset to be on just to the left of the text
+    "offset": ["-221px + 1px", 0]
+  },
+	"npc_screen_contents": {
+		"type": "panel",
+		"controls": [
+			{
+				// Teacher window containing basic and advanced editing screens
+				"teacher@npc_interact.root_panel": {
+					"$child_control": "npc_interact.main_content",
+					"bindings": [
+						{
+							"binding_name": "#teacher_view_visible",
+							"binding_name_override": "#visible",
+							"binding_type": "global"
+						}
+					]
+				}
+			},
+			{
+				// Student view is form fitting because there could be any amount of student buttons and we don't want dead space
+				"student@common_dialogs.form_fitting_main_panel_no_buttons": {
+					"$panel_size": [320, "100%cm"],
+					"size": "$panel_size",
+					"$child_control": "npc_interact.student_view_content",
+					"$title_panel": "common_dialogs.standard_title_label",
+					"$text_name": "#title_text",
+					"$title_text_binding_type": "global",
+					// Don't show default close button, we want our own
+					"$show_close_button": false,
+					"$custom_background": "common_dialogs.dialog_noxcrew",
+					"bindings": [
+						{
+							"binding_name": "#student_view_visible",
+							"binding_name_override": "#visible",
+							"binding_type": "global"
+						}
+					]
+				}
+			},
+			{
+				"npc_screen_close@npc_interact.close_text": {
+					"anchor_to": "bottom_left",
+					"anchor_from": "bottom_left",
+					"offset": [20, 0]
+				}
+			}
+		]
+	},
+	"student_button@common.empty_panel": {
+		// Grid has 3 columns, so 1/3 size
+		"size": ["33.3333%", 20],
+		"controls": [
+			{
+				"button@common_buttons.light_text_button_noxcrew": {
+					"$button_type_panel": "npc_interact.student_button_label_panel",
+					"$pressed_button_name": "button.student_button",
+					"layer": 4,
+					"size": ["100% - 2px", "100% - 2px"],
+					"bindings": [
+						{
+							"binding_type": "collection_details",
+							"binding_collection_name": "student_buttons_collection",
+							"binding_collection_prefix": "student_buttons"
+						}
+					]
+				}
+			}
+		],
+		"bindings": [
+			{
+				"binding_name": "#student_button_visible",
+				"binding_type": "collection",
+				"binding_name_override": "#visible",
+				"binding_collection_name": "student_buttons_collection"
+			}
+		]
+	},
+	"x_close_button@common.close_button_noxcrew": {
+		"button_mappings": [
+			{
+				"from_button_id": "button.menu_select",
+				"to_button_id": "$close_button_to_button_id",
+				"mapping_type": "pressed"
+			},
+			{
+				"from_button_id": "button.menu_ok",
+				"to_button_id": "$close_button_to_button_id",
+				"mapping_type": "focused"
+			},
+			{
+				// Catch ESC here too
+				"from_button_id": "button.menu_cancel",
+				"to_button_id": "$close_button_to_button_id",
+				"mapping_type": "global"
+			}
+		],
+		"bindings": [
+			{
+				"binding_name": "$visibility_binding_name",
+				"binding_name_override": "#visible"
+			}
+		]
+	}
+}
+*/

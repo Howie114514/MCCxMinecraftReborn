@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:hat_crown_cake",
+      "textures": {
+        "default": "textures/entity/n/hub/hat_crown_cake"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.hat_crown_cake"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "crown_cake": "animation.n.hats.crown_cake"
+      },
+      "scripts": {
+        "animate": [
+          "crown_cake"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

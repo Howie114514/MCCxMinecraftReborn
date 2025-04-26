@@ -1,0 +1,1094 @@
+## Meta
+pack.name=MCC x Minecraft 15 週年紀念 RP	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=MCC x Minecraft 15 週年慶活動資源包。	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=MC 錦標賽小遊戲活動！	###
+txt.event_overview.2=Noxcrew 帶著 MC 錦標賽的精華抵達基岩版了！開一整天的派對，在小遊戲中一決高下，在跑酷以及對戰怪物中考驗你的技能。	###
+txt.event_overview.3=獲得 15 件免費外觀道具。還有一件奢華的新披風！	###
+txt.event_overview.4=拿起你的劍，混亂就在眼前！	###
+txt.event_overview.5=活動將於太平洋標準時間 7 月 22 日上午 10 點開始，一直持續到太平洋標準時間 8 月 4 日下午 4 點	###
+
+##VANILLA
+item.warped_sign.name=洞穴牌子 	###
+tile.warped_standing_sign.name=洞穴牌子 	###
+tile.warped_wall_sign.name=洞穴牌子 	###
+tile.prismarine.dark.name=金屬方塊 	###
+tile.stone_slab2.prismarine.dark.name=金屬板 	###
+tile.dark_prismarine_stairs.name=金屬梯 	###
+
+##INTERACT TEXTS
+action.interact.open=開啟	###This is meant as a verb, action.
+action.interact.take=拿起	###This is meant as a verb, action.
+action.interact.grab=抓取	###This is meant as a verb, action.
+action.interact.pick_up=撿起	###This is meant as a verb, action.
+action.interact.use=使用	###This is meant as a verb, action.
+action.interact.change_color=變更色彩	###This is meant as a verb, action.
+action.interact.deposit=放置	###This is meant as a verb, action.
+action.interact.interact=互動	###This is meant as a verb, action.
+action.interact.trash=垃圾	###To throw away or "trash" an item
+action.interact.eat=吃	###To eat something, like a food
+action.interact.drink=喝	###To drink something, like a soda
+action.interact.paint=油漆	###The verb to paint.
+action.interact.gift=送禮物給玩家	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=商店	###The verb, "to shop" or "to browse"
+action.interact.decorate=裝飾	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=點擊潛行以離開	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=點擊潛行以離開	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=按 :_input_key.sneak: 離開	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§o每天都會顯示新的圖畫。	###
+txt.sign.cave2=§o解決全部 7 個並收集獎勵！	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=霜凍弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=霜凍弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=鐵鑰匙	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=黃金鑰匙	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=鑽石鑰匙	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=獄髓錠鑰匙	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=空白畫筆	###
+item.noxcrew.ft:paintbrush_green.name=綠色畫筆	###
+item.noxcrew.ft:paintbrush_yellow.name=黃色畫筆	###
+item.noxcrew.ft:paintbrush_blue.name=藍色畫筆	###
+item.noxcrew.ft:paintbrush_red.name=紅色畫筆	###
+item.noxcrew.ft:paintbrush_white.name=白色畫筆	###
+item.noxcrew.ft:paintbrush_black.name=黑色畫筆	###
+item.noxcrew.ft:paintbrush_brown.name=棕色畫筆	###
+item.noxcrew.ft:paintbrush_purple.name=紫色畫筆	###
+item.noxcrew.ft:beanie_red.name=紅色兔子毛帽	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=橙色豹貓毛帽	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=黃色犛牛毛帽	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=淡黃綠色羊駝毛帽	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=綠色壁虎毛帽	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=水藍色墨西哥鈍口螈毛帽	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=青綠色土狼毛帽	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=藍色蝙蝠毛帽	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=紫色熊貓毛帽	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=粉紅色鸚鵡毛帽	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=派對帽	###
+item.noxcrew.ft:hat_propeller.name=螺旋槳帽	###
+item.noxcrew.ft:hat_crown_cake.name=蛋糕皇冠	###
+item.noxcrew.ft:hat_birthday_present.name=生日禮物帽	###
+item.noxcrew.ft:hat_jester.name=小丑帽	###
+item.noxcrew.ft:hat_chicken_jockey.name=雞騎士帽	###
+item.noxcrew.ft:hat_boombox.name=音箱帽	###
+item.noxcrew.ft:foam_finger.name=泡沫手指	###
+item.noxcrew.ft:balloon_animal.name=氣球動物	###
+item.noxcrew.ft:big_bubble_blower.name=巨型吹泡泡機	###
+item.noxcrew.ft:silly_horn.name=蠢蠢號角	###
+item.noxcrew.ft:party_popper.name=派對拉炮	###
+item.noxcrew.ft:confetti_tag_prime.name=彩色紙屑圖標	###
+item.noxcrew.ft:confetti_tag_leftover.name=彩色紙屑圖標	###
+item.noxcrew.ft:pizza_box.name=盒裝披薩	###
+item.noxcrew.ft:celebration_fireworks.name=生日煙火	###
+item.noxcrew.ft:player_gift_giving.name=禮物盒	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=禮物盒	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=迪斯可球	###
+item.noxcrew.ft:beach_ball.name=沙灘球	###
+item.noxcrew.ft:balloon_helium.name=氦氣球	###
+item.noxcrew.ft:leave_game.name=§6離開遊戲	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=披薩片	###
+item.noxcrew.ft:mcc_burger.name=美味漢堡	###
+item.noxcrew.ft:anniversary_hot_dog.name=美味熱狗	###
+item.noxcrew.ft:party_cupcake.name=杯子蛋糕	###
+item.noxcrew.ft:party_cake.name=蛋糕塊	###
+item.noxcrew.ft:party_chips.name=一碗洋芋片	###
+item.noxcrew.ft:party_cookie.name=餅乾	###
+item.noxcrew.ft:party_soda.name=碳酸汽水	###
+item.noxcrew.ft:cotton_candy.name=棉花糖	###
+item.noxcrew.ft:popcorn.name=爆米花	###
+item.noxcrew.ft:super_wrap.name=健康捲餅	###
+item.noxcrew.ft:cosmetic_chest.name=裝飾品箱子	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=傳送地圖	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=挑戰清單	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=蛋	###
+item.noxcrew.ft:milk_bucket.name=牛奶桶	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=霜凍弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=霜凍弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=鐵鑰匙	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=黃金鑰匙	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=鑽石鑰匙	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=獄髓錠鑰匙	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=空白畫筆	###
+item.noxcrew.ft:paintbrush_green=綠色畫筆	###
+item.noxcrew.ft:paintbrush_yellow=黃色畫筆	###
+item.noxcrew.ft:paintbrush_blue=藍色畫筆	###
+item.noxcrew.ft:paintbrush_red=紅色畫筆	###
+item.noxcrew.ft:paintbrush_white=白色畫筆	###
+item.noxcrew.ft:paintbrush_black=黑色畫筆	###
+item.noxcrew.ft:paintbrush_brown=棕色畫筆	###
+item.noxcrew.ft:paintbrush_purple=紫色畫筆	###
+item.noxcrew.ft:beanie_red=紅色兔子毛帽	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=橙色豹貓毛帽	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=黃色犛牛毛帽	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=淡黃綠色羊駝毛帽	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=綠色壁虎毛帽	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=水藍色墨西哥鈍口螈毛帽	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=青綠色土狼毛帽	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=藍色蝙蝠毛帽	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=紫色熊貓毛帽	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=粉紅色鸚鵡毛帽	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=派對帽	###
+item.noxcrew.ft:hat_propeller=螺旋槳帽	###
+item.noxcrew.ft:hat_crown_cake=蛋糕皇冠	###
+item.noxcrew.ft:hat_birthday_present=生日禮物帽	###
+item.noxcrew.ft:hat_jester=小丑帽	###
+item.noxcrew.ft:hat_chicken_jockey=雞騎士帽	###
+item.noxcrew.ft:hat_boombox=音箱帽	###
+item.noxcrew.ft:foam_finger=泡沫手指	###
+item.noxcrew.ft:balloon_animal=氣球動物	###
+item.noxcrew.ft:big_bubble_blower=巨型吹泡泡機	###
+item.noxcrew.ft:silly_horn=蠢蠢號角	###
+item.noxcrew.ft:party_popper=派對拉炮	###
+item.noxcrew.ft:confetti_tag_prime=彩色紙屑圖標	###
+item.noxcrew.ft:confetti_tag_leftover=彩色紙屑圖標	###
+item.noxcrew.ft:pizza_box=盒裝披薩	###
+item.noxcrew.ft:celebration_fireworks=生日煙火	###
+item.noxcrew.ft:player_gift_giving=禮物盒	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=禮物盒	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=迪斯可球	###
+item.noxcrew.ft:beach_ball=沙灘球	###
+item.noxcrew.ft:balloon_helium=氦氣球	###
+item.noxcrew.ft:leave_game=§6離開遊戲	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=披薩片	###
+item.noxcrew.ft:mcc_burger=美味漢堡	###
+item.noxcrew.ft:anniversary_hot_dog=美味熱狗	###
+item.noxcrew.ft:party_cupcake=杯子蛋糕	###
+item.noxcrew.ft:party_cake=蛋糕塊	###
+item.noxcrew.ft:party_chips=一碗洋芋片	###
+item.noxcrew.ft:party_cookie=餅乾	###
+item.noxcrew.ft:party_soda=碳酸汽水	###
+item.noxcrew.ft:cotton_candy=棉花糖	###
+item.noxcrew.ft:popcorn=爆米花	###
+item.noxcrew.ft:super_wrap=健康捲餅	###
+item.noxcrew.ft:cosmetic_chest=裝飾品箱子	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=傳送地圖	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=挑戰清單	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=蛋	###
+item.noxcrew.ft:milk_bucket=牛奶桶	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=加速方塊	###
+tile.noxcrew.ft:launch_pad.name=發射台方塊	###
+tile.noxcrew.ft:jump_pad.name=跳躍增強方塊	###
+tile.noxcrew.ft:painting_green.name=綠色方塊	###
+tile.noxcrew.ft:painting_yellow.name=黃色方塊	###
+tile.noxcrew.ft:painting_blue.name=藍色方塊	###
+tile.noxcrew.ft:painting_red.name=紅色方塊	###
+tile.noxcrew.ft:painting_white.name=白色方塊	###
+tile.noxcrew.ft:painting_black.name=黑色方塊	###
+tile.noxcrew.ft:painting_brown.name=棕色方塊	###
+tile.noxcrew.ft:painting_purple.name=紫色方塊	###
+tile.noxcrew.ft:elytra_icon.name=鞘翅之門方塊	###
+tile.noxcrew.ft:audience_member_oof.name=畏縮的觀眾成員	###
+tile.noxcrew.ft:audience_member_angry.name=憤怒的觀眾成員	###
+tile.noxcrew.ft:audience_member_joy.name=歡樂的觀眾成員	###
+tile.noxcrew.ft:audience_member_happy.name=快樂的觀眾成員	###
+tile.noxcrew.ft:audience_member_unimpressed.name=感覺普通的觀眾成員	###
+tile.noxcrew.ft:audience_member_unsure.name=不確定的觀眾成員	###
+tile.noxcrew.ft:audience_member_starstruck.name=追星的觀眾成員	###
+tile.noxcrew.ft:cake_centre.name=蛋糕中心	###
+tile.noxcrew.ft:cake_edge.name=蛋糕邊緣	###
+tile.noxcrew.ft:cake_cherry.name=蛋糕櫻桃	###
+tile.noxcrew.ft:window_spruce.name=杉木窗戶	###
+tile.noxcrew.ft:window_oak.name=橡木窗戶	###
+tile.noxcrew.ft:iron_bars.name=鐵欄杆直杆	###
+tile.noxcrew.ft:iron_bars_h.name=鐵欄杆半杆	###
+tile.noxcrew.ft:iron_bars_c.name=鐵欄杆角落	###
+tile.noxcrew.ft:castle_pink.name=粉紅城堡陶瓦 	###
+tile.noxcrew.ft:sot_flower.name=火炬花亮起 	###
+tile.noxcrew.ft:metal_rigging_v.name=水平金屬索具	###
+tile.noxcrew.ft:metal_rigging_h.name=垂直金屬索具	###
+tile.noxcrew.ft:modern_light.name=現代燈	###
+tile.noxcrew.ft:rope.name=繩索方塊	###
+tile.noxcrew.ft:hieroglyph_1_a.name=洞穴謎題第 1 天左上	###
+tile.noxcrew.ft:hieroglyph_1_b.name=洞穴謎題第 1 天右上	###
+tile.noxcrew.ft:hieroglyph_1_c.name=洞穴謎題第 1 天左下	###
+tile.noxcrew.ft:hieroglyph_1_d.name=洞穴謎題第 1 天右下	###
+tile.noxcrew.ft:hieroglyph_2_a.name=洞穴謎題第 2 天左上	###
+tile.noxcrew.ft:hieroglyph_2_b.name=洞穴謎題第 2 天右上	###
+tile.noxcrew.ft:hieroglyph_2_c.name=洞穴謎題第 2 天左下	###
+tile.noxcrew.ft:hieroglyph_2_d.name=洞穴謎題第 2 天右下	###
+tile.noxcrew.ft:hieroglyph_3_a.name=洞穴謎題第 3 天左上	###
+tile.noxcrew.ft:hieroglyph_3_b.name=洞穴謎題第 3 天右上	###
+tile.noxcrew.ft:hieroglyph_3_c.name=洞穴謎題第 3 天左下	###
+tile.noxcrew.ft:hieroglyph_3_d.name=洞穴謎題第 3 天右下	###
+tile.noxcrew.ft:hieroglyph_4_a.name=洞穴謎題第 4 天左上	###
+tile.noxcrew.ft:hieroglyph_4_b.name=洞穴謎題第 4 天右上	###
+tile.noxcrew.ft:hieroglyph_4_c.name=洞穴謎題第 4 天左下	###
+tile.noxcrew.ft:hieroglyph_4_d.name=洞穴謎題第 4 天右下	###
+tile.noxcrew.ft:hieroglyph_5_a.name=洞穴謎題第 5 天左上	###
+tile.noxcrew.ft:hieroglyph_5_b.name=洞穴謎題第 5 天右上	###
+tile.noxcrew.ft:hieroglyph_5_c.name=洞穴謎題第 5 天左下	###
+tile.noxcrew.ft:hieroglyph_5_d.name=洞穴謎題第 5 天右下	###
+tile.noxcrew.ft:hieroglyph_6_a.name=洞穴謎題第 6 天左上	###
+tile.noxcrew.ft:hieroglyph_6_b.name=洞穴謎題第 6 天右上	###
+tile.noxcrew.ft:hieroglyph_6_c.name=洞穴謎題第 6 天左下	###
+tile.noxcrew.ft:hieroglyph_6_d.name=洞穴謎題第 6 天右下	###
+tile.noxcrew.ft:hieroglyph_7_a.name=洞穴謎題第 7 天左上	###
+tile.noxcrew.ft:hieroglyph_7_b.name=洞穴謎題第 7 天右上	###
+tile.noxcrew.ft:hieroglyph_7_c.name=洞穴謎題第 7 天左下	###
+tile.noxcrew.ft:hieroglyph_7_d.name=洞穴謎題第 7 天右下	###
+tile.noxcrew.ft:bigcake_top.name=蛋糕方塊上衣	###
+tile.noxcrew.ft:bigcake_bottom.name=蛋糕方塊褲子	###
+tile.noxcrew.ft:cake_slice.name=蛋糕塊	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=15 週年旗幟長上衣	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=15 週年旗幟長褲	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=MCC 旗幟長上衣	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=MCC 旗幟長褲	###
+tile.noxcrew.ft:decoration_bunting_a.name=白色三角旗幟	###
+tile.noxcrew.ft:decoration_bunting_b.name=綠色三角旗幟	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=MCC 三角旗幟	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=綠色尖旗幟	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=白色尖旗幟	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=MCC 尖旗幟	###
+tile.noxcrew.ft:decoration_flag_mcc.name=綠色尖旗幟	###
+tile.noxcrew.ft:decoration_flag_15.name=15 週年小旗幟	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=15 週年旗幟上衣	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=15 週年旗幟褲子	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=MCC 旗幟上衣	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=MCC 旗幟褲子	###
+tile.noxcrew.ft:plush_red.name=紅色兔子絨毛玩具	###
+tile.noxcrew.ft:plush_orange.name=橙色豹貓絨毛玩具	###
+tile.noxcrew.ft:plush_yellow.name=黃色牦牛絨毛玩具	###
+tile.noxcrew.ft:plush_lime.name=淡黃綠色羊駝絨毛玩具	###
+tile.noxcrew.ft:plush_green.name=綠色壁虎絨毛玩具	###
+tile.noxcrew.ft:plush_cyan.name=青綠色土狼絨毛玩具	###
+tile.noxcrew.ft:plush_aqua.name=水藍色墨西哥鈍口螈絨毛玩具	###
+tile.noxcrew.ft:plush_blue.name=藍色蝙蝠絨毛玩具	###
+tile.noxcrew.ft:plush_pink.name=粉紅色鸚鵡絨毛玩具	###
+tile.noxcrew.ft:plush_purple.name=紫色熊貓絨毛玩具	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=MCC 旗幟上衣左側	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=MCC 旗幟上衣右側	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=MCC 旗幟褲子左側	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=MCC 旗幟褲子右側	###
+tile.noxcrew.ft:decoration_present.name=MCC 禮物盒	###
+tile.noxcrew.ft:cup_poster1.name=終界盃海報 1	###
+tile.noxcrew.ft:cup_poster2.name=終界盃海報 2	###
+tile.noxcrew.ft:logo_1.name=Noxcrew 標誌 1	###
+tile.noxcrew.ft:logo_2.name=Noxcrew 標誌 2	###
+tile.noxcrew.ft:logo_3.name=Noxcrew 標誌 3	###
+tile.noxcrew.ft:melt_spawner.name=熔毀怪物生成器	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=錢幣堆	###
+entity.noxcrew.ft:treasure_chest.name=寶藏箱	###
+entity.noxcrew.ft:key_podium.name=主要講臺	###
+entity.noxcrew.ft:sand_podium.name=沙子講臺	###
+entity.noxcrew.ft:armor_podium.name=護甲講臺	###
+entity.noxcrew.ft:paint_pot.name=顏料罐	###
+entity.noxcrew.ft:giant_cake.name=生日蛋糕	###
+entity.noxcrew.ft:beach_ball.name=沙灘球	###
+entity.noxcrew.ft:balloon_helium.name=氦氣球	###
+entity.noxcrew.ft:disco_ball.name=迪斯可球	###
+entity.noxcrew.ft:lost_pearl.name=神秘珍珠	###
+entity.noxcrew.ft:decoration_awning.name=裝飾遮陽篷	###
+entity.noxcrew.ft:decoration_bunting.name=裝飾彩旗	###
+entity.noxcrew.ft:decoration_cupcake.name=生日杯子蛋糕	###
+entity.noxcrew.ft:decoration_ballons.name=生日氣球	###
+entity.noxcrew.ft:decoration_15.name=15 個氣球	###
+entity.noxcrew.ft:decoration_board.name=生日木板	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=小雞氣球	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=吉祥物氣球	###
+entity.noxcrew.ft:trophy_help.name=說明	###
+entity.noxcrew.ft:sand_timer.name=沙子計時器	###
+entity.noxcrew.ft:crowned_frog.name=青蛙王子	###
+entity.noxcrew.ft:cake_candles.name=蛋糕蠟燭	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=艾格妮絲	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=延斯	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=START 鍵	###
+entity.noxcrew.ft:vendor_mascot.name=吉祥物帽子	###
+entity.noxcrew.ft:vendor_hat.name=帽子	###
+entity.noxcrew.ft:vendor_toys.name=玩具	###
+entity.noxcrew.ft:vendor_food.name=食物	###
+entity.noxcrew.ft:advert_creator_cup.name=終界杯	###
+entity.noxcrew.ft:md_creeper.name=苦力怕	###
+entity.noxcrew.ft:md_blaze.name=烈焰使者	###
+entity.noxcrew.ft:md_blaze<>.name=烈焰使者	###
+entity.noxcrew.ft:md_skeleton.name=骷髏	###
+entity.noxcrew.ft:md_skeleton<>.name=骷髏	###
+entity.noxcrew.ft:md_spider.name=蜘蛛	###
+entity.noxcrew.ft:md_vindicator.name=衛道士	###
+entity.noxcrew.ft:md_zombie.name=殭屍	###
+entity.noxcrew.ft:md_zombie_baby.name=殭屍寶寶	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l！§r§o珍珠神秘地上下擺動...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l！§r 你發現了神秘洞穴！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=正在等待玩家…	###
+txt.misc.msg4=遊戲即將開始： 	###
+txt.misc.msg5=你即將被傳送	###
+txt.misc.msg6_1=§6§l！§r%s 送給你一份禮物！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l！§r 你送給 %s 一份禮物！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l！§r 那位玩家無法接受另一份禮物	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= 已裝備鞘翅 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §e 已完成一個解謎關卡… 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §a你已完成一個洞穴謎題！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l！§r]：覺得緊張刺激嗎？不如來 §6王牌競速§r 小遊戲在雲端上奔跑吧！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l！§r]：想要挑戰？ 嘗試完成 §6網格跑者§r 小遊戲的所有任務！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l！§r]  §6 熔毀§r 小遊戲正在等著你... 你能在怪物群中生存下來嗎？	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l！§r]：探索 §6時間之沙§r 小遊戲的神秘神殿！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l！§r]：想看自己完成哪些挑戰？獎盃室裡通通看得到！獎盃室就在  大廳裡靠近 §6網格跑者§r 傳送門的大帳篷！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l！§r]：想戴頂帽子耍帥嗎？去帽子商店逛逛吧！  大廳裡的大帽子下面就是了！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l！§r]：想玩點酷炫的玩具嗎？玩具商店裡有得買！在  大廳的手推車標誌附近就找得到！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l！§r]：嘴饞想吃東西嗎？美食商店買得到！就在  大廳大雞雕像旁的餐廳！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l！§r]：你知道有  神秘謎題可以解嗎？去  大廳裡山上的神秘洞穴看看吧！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l！§r]：你知道每天都會有新的神秘謎題可以解嗎？每個出現在  旁邊的  就代表新謎題出現了！	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l！§r]：你知道所有大廳都有可能找到金幣堆嗎？趕快開始探索吧！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l！§r]：物品欄滿了？你可以把一些物品丟到垃圾桶！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§c你沒有足夠的錢幣	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§c你的空間不足，無法購買此物品！請將一些物品丟棄到垃圾桶裡。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l！§r 你已經有這頂帽子了！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s 已經滿了！§r 收集不同的原料！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§c你沒有這個箱子的鑰匙！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6你已經開啟這個箱子了！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=披薩！吃掉它就能獲得加速！	###
+txt.shop_info.mcc_burger=漢堡！吃掉它就能獲得速度和跳躍增強！	###
+txt.shop_info.anniversary_hot_dog=熱狗！吃掉它就能獲得速度和跳躍增強！	###
+txt.shop_info.party_cupcake=杯子蛋糕！吃掉它就能獲得慢速掉落！	###
+txt.shop_info.party_cake=蛋糕！吃掉它就能獲得漂浮！	###
+txt.shop_info.party_chips=脆片！吃掉它就能獲得加速！	###
+txt.shop_info.party_cookie=餅乾！吃掉它就能獲得跳躍增強！	###
+txt.shop_info.party_soda=汽水！吃掉它就能獲得加速！	###
+txt.shop_info.cotton_candy=棉花糖！吃掉它就能獲得跳躍增強！	###
+txt.shop_info.popcorn=爆米花！吃掉它就能獲得跳躍增強！	###
+txt.shop_info.super_wrap=超級包裝！吃掉它就能獲得全提升！	###
+txt.shop_info.foam_finger=泡沫手指！拿著它，展現你的支持！	###
+txt.shop_info.balloon_animal=氣球動物！用它來放飛氣球！	###
+txt.shop_info.big_bubble_blower=吹泡泡機！用它來吹泡泡！	###
+txt.shop_info.silly_horn=搞笑喇叭！用它來發出聲音！	###
+txt.shop_info.party_popper=派對拉砲！用它來放出彩色紙屑！	###
+txt.shop_info.confetti_tag_prime=五彩紙屑圖標！用它標記玩家，在他們身上灑滿五彩紙屑！	###
+txt.shop_info.pizza_box=披薩盒！在玩家身上使用即可給予他們披薩！	###
+txt.shop_info.celebration_fireworks=煙火！用它來施放煙火！	###
+txt.shop_info.player_gift_giving=禮物！在玩家身上使用它即可給予他們禮物！	###
+txt.shop_info.disco_ball=迪斯可！用它來建造迪斯可舞池！	###
+txt.shop_info.beach_ball=沙灘球！用它來做成沙灘球，就能用來打球了！	###
+txt.shop_info.balloon_helium=氣球！用它來放飛氣球！	###
+
+##Ace Race
+txt.tut.ace_title=王牌競速	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l！§r]：§6在起跑線上與 Seapeekay 交談來獲得提示和秘訣！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l！§r]：使用加速和跳躍增強墊衝向終點！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title=擊敗野獸！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l！§r]：§6在起始大廳與 Smajor 交談來獲得提示和秘訣！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l！§r]：在時間結束前盡可能擊敗更多怪物！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title=臨摹圖畫！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l！§r]：使用彩色的顏料罐來臨摹圖畫！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title=烤些蛋糕！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l！§r]：收集蛋糕的原料，並將原料放在中心！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title=衝刺！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l！§r]：奔向終點線！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l ！§r 前往下一間房間！	###
+
+txt.grid.wave_clear=已擊敗一波怪物！	###
+txt.grid.wave_reward= 你已獲得 10 個錢幣！	###
+txt.grid.painting_clear=已完成圖畫！	###
+txt.grid.painting_reward= 你已獲得 10 個錢幣！	###
+txt.grid.cake_clear=蛋糕烤好了！	###
+txt.grid.cake_reward= 你已獲得 10 個錢幣！	###
+
+##Meltdown
+txt.tut.melt_title=熔毀	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l！§r]：§6在入口與 hannahxxrose 交談來獲得提示和秘訣！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l！§r]：在每個房間熔毀前生存下來！用你的弓凍結敵人，然後揍他們！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= 警告：熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= 危險：危急熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1=已成功逃脫 1/7 個熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= 已成功逃脫 2/7 個熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= 已成功逃脫 3/7 個熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= 已成功逃脫 4/7 個熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= 已成功逃脫 5/7 個熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= 已成功逃脫 6/7 個熔毀 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= 已成功逃脫 7/7 個熔毀	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= 已成功逃脫 %s/7 個熔毀 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l ！§r 前往下一間房間！	###
+
+##Sands of Time
+txt.tut.sands_title=時間之沙	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l！§r]：§6在金字塔附近與 HBomb94 交談來獲得提示和秘訣！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l！§r]：在時間結束前盡可能找到更多錢幣！收集沙子來獲得額外時間！	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= 你找到了 5 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= 你找到了 10 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= 你找到了 20 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= 你找到了 30 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= 你找到了 50 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= 你找到了 100 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= 你找到了 200 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= 你找到了 400 枚錢幣！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=箱子已開啟！	###
+txt.sot.key=已收集鑰匙！	###
+txt.sot.upgraded=已升級！	###
+
+##Lobby
+txt.lobby.coins5= 你找到了 5 枚錢幣！	###
+txt.lobby.coins20= 你找到了 20 枚錢幣！	###
+txt.lobby.coins30= 你找到了 30 枚錢幣！	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=地圖	###
+txt.ui.tp.confirm1=你確定嗎？	#
+txt.ui.tp.confirm_target=這將把你傳送到 %s。	#
+txt.ui.tp.area_ace_race= 王牌競速	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= 網格跑者	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= 主大廳	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= 時間之沙	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= 熔毀	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=傳送器已準備就緒！	#
+
+##Cosmetic Chest
+txt.title.cosmetic=裝飾品箱子	###
+txt.ui.cosmetic=在這裡找到所有帽子！	###
+txt.ui.button.select=選取	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=獎勵已解除鎖定	###
+txt.ui.title.red_rabbit_cc=紅色兔子頭顱	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=橙色豹貓頭顱	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=黃色犛牛頭顱	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=淡黃綠色羊駝頭顱	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=綠色壁虎頭顱	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=水藍色墨西哥鈍口螈頭顱	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=青綠色土狼頭顱	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=藍色蝙蝠頭顱	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=紫色熊貓頭顱	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=粉紅色鸚鵡頭顱	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=親吻眾人表情	###
+txt.ui.title.ride_victory_emote=騎向勝利表情	###
+txt.ui.title.cartwheel_victory_emote=勝利翻跟斗表情動作	###
+txt.ui.title.flying_chicken_emote=飛翔雞表情動作	###
+txt.ui.title.cape=MCCxMinecraft 15 週年紀念披風	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=MCC 王冠	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=你已解鎖自訂角色物品！請前往更衣室查看。	###
+txt.ui.text.cape_unlocked=恭喜！你解鎖了 MCC 披風！請前往更衣室查看。	###
+txt.ui.button.claim=領取	###
+
+##UI Vendors
+txt.title.vendor_food=食物	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= 吉祥物帽子 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat=帽子	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy=玩具	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=購買	###
+txt.ui.sold_out=銷售一空	###
+
+##Game Toasts
+txt.ui.toast.time= §l時間§r	###
+txt.ui.toast.coins_collected= §l已收集的錢幣§r	###
+txt.ui.toast.coins_earned= §l已賺取的錢幣§r	###
+txt.ui.toast.new_record=§l新紀錄！§r	###
+txt.ui.toast.room=房間	###
+txt.ui.toast.time_spent= §l已花費的時間§r	###
+txt.ui.toast.complete=完成！	###
+txt.ui.toast.highscore= §l高分§r	###
+txt.ui.toast.highest_coins= §l最佳收穫量§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §l獄髓錠獎牌得主	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §l鑽石獎牌得主	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §l黃金獎牌得主	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §l鐵獎牌得主	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §l銅獎牌得主	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §l已打開的箱子§r	###
+txt.ui.toast.sot.escaped= §l你逃脫了！§r	###
+txt.ui.toast.sot.failed= §l你沒逃脫……§r	###
+txt.ui.toast.gr.mobs_slain= §l已擊敗的生物§r	###
+txt.ui.toast.gr.blocks_painted= §l已彩繪的方塊§r	###
+txt.ui.toast.gr.cakes_baked= §l已烤好的蛋糕§r	###
+txt.ui.toast.ar.time= §l時間§r	###
+txt.ui.toast.md.slain= §l已粉碎的生物§r	###
+txt.ui.toast.md.rooms_survived_0= §l已生存過的房間§r	###
+txt.ui.toast.md.rooms_survived_1= §l已生存過的房間§r	###
+txt.ui.toast.md.rooms_survived_2= §l已生存過的房間§r	###
+txt.ui.toast.md.rooms_survived_3= §l已生存過的房間§r	###
+txt.ui.toast.md.rooms_survived_4= §l已生存過的房間§r	###
+txt.ui.toast.md.rooms_survived_5= §l已生存過的房間§r	###
+txt.ui.toast.md.rooms_survived_6= §l已生存過的房間§r	###
+txt.ui.toast.md.rooms_survived_7= §l存活的房間數§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=挑戰清單	###
+txt.ui.body1.challenge_list=按下圖示來查看挑戰！	###
+txt.ui.reward.cape= 披風獎勵	###
+txt.ui.status.cape=完成	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=水藍色墨西哥鈍口螈挑戰	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=戴著§l水藍色墨西哥鈍口螈毛帽§r，找到失落的珍珠。它藏在一個水池裡...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§o獲得水藍色墨西哥鈍口螈頭顱自訂角色物品	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=藍色蝙蝠挑戰	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=戴著§l藍色蝙蝠毛帽§r，從§l時間之沙§r小遊戲收集 100 個沙子。	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§o獲得藍色蝙蝠頭顱自訂角色物品	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=已收集 %s 粒沙子。	###
+
+txt.ui.title.cyan_coyote_challenge=青綠色土狼挑戰	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=戴著§l青綠色土狼毛帽§r，從§l時間之沙§r或§l熔毀§r小遊戲中收集 75 個金幣堆。	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§o獲得青綠色土狼頭顱自訂角色物品	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=已收集 %s 堆硬幣堆。	###
+
+txt.ui.title.green_gecko_challenge=綠色壁虎挑戰	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=戴著§l綠色壁虎毛帽§r，在§l網格跑者§r小遊戲的「臨摹圖畫」挑戰中塗繪 200 個方塊。	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§o獲得綠色壁虎頭顱自訂角色物品	###
+txt.ui.progress.green_gecko_challenge=已彩繪 %s 個方塊。	###
+
+txt.ui.title.lime_llama_challenge=淡黃綠色羊駝挑戰	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=戴著§l淡黃綠色羊駝毛帽§r，送出 10 個禮物盒。你可以在內容中心世界從玩具商人那裡購買禮物盒。	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§o獲得淡黃綠色羊駝頭顱自訂角色物品	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=已送出 %s 個禮物盒。	###
+
+txt.ui.title.orange_ocelot_challenge=橙色豹貓挑戰	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=戴著§l橘色貓咪毛帽§r，在完成§l王牌競速§r小遊戲時跑過 100 個加速道具。	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§o獲得橙色豹貓頭顱自訂角色物品	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=已使用 %s 次加速。	###
+
+txt.ui.title.pink_parrot_challenge=粉紅色鸚鵡挑戰	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=戴著 §l粉紅色鸚鵡毛帽§r，在完成§l王牌競速§r小遊戲時通過 25 次鞘翅之門。	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§o獲取粉紅色鸚鵡頭顱自訂角色物品	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=已使用 %s 扇鞘翅之門。	###
+
+txt.ui.title.purple_panda_challenge=紫色熊貓挑戰	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=戴著§l紫色貓熊毛帽§r，在§l網格跑者§r小遊戲的「烤蛋糕」挑戰中放置 200 個原料。	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§o獲得紫色熊貓頭顱自訂角色物品	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=已放置 %s 份原料。	###
+
+txt.ui.title.red_rabbit_challenge=紅色兔子挑戰	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=戴著§l紅色兔子毛帽§r，在完成§l王牌競速§r小遊戲時跑過 50 次彈射台。	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§o獲得紅色兔子頭顱自訂角色物品	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=已使用 %s 次發射台。	###
+
+txt.ui.title.yellow_yak_challenge=黃色犛牛挑戰	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=戴著§l黃色犛牛毛帽§r，在§l熔毀§r小遊戲中擊敗 350 個冰凍敵人。	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§o獲得黃色犛牛頭顱自訂角色物品	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=已打敗 %s 個凍結的敵人。	###
+
+txt.ui.title.ace_race_challenge=王牌競速挑戰	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=完成§l王牌競速§r小遊戲的課程！	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§o獲得「親吻眾人」表情動作	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=網格跑者挑戰	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=完成一個§l網格跑者§r小遊戲！	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§o獲得「騎向勝利」表情動作	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=熔毀挑戰	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=在§l熔毀§r小遊戲中存活至第 3 個房間	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§o獲得「飛翔雞」表情	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=時間之沙挑戰	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=進入§l時間之沙§r 小遊戲，存活 2 分鐘，然後成功逃脫！	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§o獲得「勝利翻跟斗」表情動作	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=神秘洞穴挑戰	###
+txt.ui.body1.cave_challenge=在神秘洞穴中完成所有 7 個彩繪謎題挑戰。	###
+txt.ui.reward.cave_challenge=§o獲得 MCC 皇冠自訂角色物品	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=已完成 7 個謎題中的 %s 個。	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e 正在等待玩家 §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §f正在等待玩家 (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §e 正在等待玩家§f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §e 正在等待玩家§f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §e 正在等待玩家§f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §e 正在等待玩家§f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §e正在等待玩家§f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§e最長等待時間：§f %s	###
+
+txt.matchmaking.status.preparing.0=§e 正在等待遊戲… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §f正在等待遊戲… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e 正在等待遊戲…§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e 正在等待遊戲… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e 正在等待遊戲… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e 正在等待遊戲… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e 正在等待遊戲… §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§e大約 §f%s§e 分鐘或更快	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§e大約 §f%s§e 分鐘或更快	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§a遊戲已準備就緒！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§f%s 後§e傳送§e！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§e已傳送！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§e各就各位…	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§e開始時間：	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§a 上！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=延斯	### This is a name or gamertag of a person
+txt.title.dia.agnes=艾格妮絲	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens 與  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=說明	###
+txt.title.dia.ender_cup= 終界杯 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=青蛙王子	###
+
+txt.title.start_game=開始遊戲	###
+txt.title.join_queue=加入佇列	###
+txt.title.ace_race= 王牌競速 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= 網格跑者 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= 熔毀 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= 時間之沙 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= 主大廳 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=好	###
+txt.button.yes=是	###
+txt.button.no=否	###
+txt.button.back=返回	###
+txt.button.exit=離開	###
+txt.button.close=關閉	###
+txt.button.start_game=開始遊戲	###
+txt.button.join_queue=加入佇列	###
+txt.button.tutorial=教學課程	###
+txt.button.challenges_q=挑戰？	###
+txt.button.who_are_you_q=你是誰？	###
+txt.button.what_games_q=什麼遊戲？	###
+txt.button.cave_mystery_q=洞穴之謎？	###
+txt.button.go_to_portal=前往傳送門	###
+txt.button.remove_hat=脫下帽子	###
+txt.button.no_hats=沒有帽子可用。從商店購買吧！	###
+txt.button.pet_frog=撫摸青蛙	###
+txt.button.talk_frog=與青蛙交談	###
+txt.button.kiss_frog=親吻青蛙	###
+txt.button.love_minecraft_q=喜歡 Minecraft 嗎？	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=喜歡 MCC 嗎？	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=最佳表現？	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=王牌競速？	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=直播？	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=最佳更新？	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=網格跑者？	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=熔毀？	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=最佳回憶？	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=時間之沙？	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=下一個	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=你好！我是延斯！	###
+txt.jagnes.1_0.dia2=我是艾格妮絲！	###
+txt.jagnes.1_0.dia3=歡迎來到 MCC Minecraft 15 週年紀念派對！	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=我們在這裡與 Noxcrew 一起遊玩 MC 錦標賽的小遊戲！	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=探索、遊玩小遊戲，並解開洞穴的謎團！	###
+txt.jagnes.1_0.dia6=跟隨傳送門的路徑，試試小遊戲！	###
+txt.jagnes.1_0.dia6_1=若要開始，請跟隨傳送門的路徑，並試試小遊戲！	###
+txt.jagnes.1_0.dia6_2=若要開始，請跟隨漂浮  皇冠前往傳送門來嘗試遊玩小遊戲！	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=穿越傳送門，遊玩 MC 錦標賽的小遊戲。	###
+txt.jagnes.2_0.dia2=小遊戲是§1王牌競速§r，§1網格跑者§r，§1熔毀§r，以及§1時間之沙§r！	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=都試試看吧，從中選出你的最愛！	###
+
+##What games?
+txt.jagnes.2_1.dia1=穿越傳送門，遊玩 MC 錦標賽的小遊戲。	###
+txt.jagnes.2_1.dia2=前往§1王牌競速§r的雲層，穿越天空！	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=前往§1網格跑者§r體育場，完成挑戰！	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=進入§1熔毀§r，在殭屍和熔毀房間中生存下來！	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=勇敢挑戰§1時間之沙§r神殿，發現其中存放的寶藏！	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=試試看，然後選出你最喜歡的！	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1=傳說高山中有一個神秘洞穴。	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=據說那裡有你能解開的彩繪謎題！	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=找到那個洞穴，看看裡面有什麼！	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=跟隨漂浮  皇冠到 §6王牌競技§r 小遊戲傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=跟隨漂浮  皇冠到 §6網格跑者§r 小遊戲傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=跟隨漂浮  皇冠到 §6熔毀§r 小遊戲傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=跟隨漂浮  皇冠到 §6時間之沙§r 小遊戲傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=你找到一間商店！	###
+txt.jagnes.help_shop2=用遊玩小遊戲獲得的錢幣購買物品！	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=你找到了獎盃房！	###
+txt.jagnes.help_trophy2=檢視你完成的挑戰所獲得的獎盃和獎勵！	###
+txt.jagnes.help_trophy3=拍照並發布你的進度！	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=你找到了蛋糕房！	###
+txt.jagnes.help_cake2=檢視蛋糕蠟燭上的成就。完成成就即可獲得特殊獎品！	###
+txt.jagnes.help_cake3=拍照並分享你的進度！	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=你找到了「小遊戲傳送門」！	###
+txt.jagnes.help_portal2=穿越傳送門前往小遊戲的世界！	###
+txt.jagnes.help_portal3=走吧，繼續前進吧！	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=很好，你找到了 §6 王牌競速§r 傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=前往雲端，衝破天際！	###
+txt.jagnes.help_ace_race_portal3=走吧，繼續前進吧！	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=喔，快看，是 §6網格跑者§r 傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=造訪體育場，完成挑戰房！	###
+txt.jagnes.help_grid_runners_portal3=走吧，繼續前進吧！	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=啊，你找到了 §6熔毀§r 傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=進入設施，嘗試在殭屍和融化房間中生存下來！	###
+txt.jagnes.help_meltdown_portal3=走吧，繼續前進吧！	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=很好，你找到了 §6時間之沙§r 傳送門！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=勇敢挑戰古代神殿，發現存放的寶藏！	###
+txt.jagnes.help_sot_portal3=走吧，繼續前進吧！	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=哇，你找到神秘洞穴了！	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=你能夠解決每天出現在這裡的謎題嗎？	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=太好了，你找到了一個活動！	###
+txt.jagnes.help_activity2=想一起出去玩些遊戲嗎？	###
+
+##creator_ace
+txt.creator_ace.title_who1=§l你為什麼喜歡 Minecraft？§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§l最喜歡的 MCC 回憶？§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lMCC 最佳表現？§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§l最喜歡王牌競速的哪一點？§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§l為什麼要觀看終界盃直播？§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=你好！我是 §1Seapeekay§r，歡迎來到§1王牌競速§r的天空！	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=使用加速和跳台衝向終點線！	###
+txt.creator_ace.1_0.dia3=按下「教學」以進一步了解。	###
+txt.creator_ace.1_0.dia4=如果你準備好要進行遊戲，請按下「開始遊戲」按鈕！	###
+txt.creator_ace.2_0.dia1=§1王牌競速§r就像在雲中漫步！	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=盡你所能地盡快完成賽道，抵達終點線！	###
+txt.creator_ace.2_0.dia3=你可以使用跳台、發射台、加速墊和鞘翅之門，來幫助你跑得更快！	###
+txt.creator_ace.2_0.dia4=我們終點線見！	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=你好！我是§1Seapeekay§r，我是 Minecraft 主播，喜歡在競爭和娛樂之間找到良好的平衡。	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=歡迎在 Twitch 上搜尋「Seapeekay」就可以找到我的台。	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=這對我來說很重要，因為這款遊戲是開放世界和沙盒類型，你可以做任何想做的事。	###
+txt.creator_ace.3_1.dia2=你可以隨心所欲地發揮創意。沒有正確的玩法。	###
+txt.creator_ace.3_1.dia3=而且透過玩遊戲，我認識了現在所有的朋友 (非常多)。	###
+txt.creator_ace.3_1.dia4=我認為這使它成為影響我一生最大的遊戲。	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=我最喜歡的 MCC 記憶是 MCC 5，因為我終於贏得了第一場勝利！	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=這是一支絕對沒有壓倒性力量的隊伍，所以不管社群怎麼說，這是一場當之無愧的勝利。	###
+txt.creator_ace.3_2.dia3=但我一直不太擅長玩 Minecraft，是 MCC 促使我在遊戲上有更好的表現。	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=而現在我其實已經有很好的表現了，所以這是一個非常酷的成長過程。	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=我在 MCC 中最好的表現無疑是當我最終贏得了§1王牌競速§r比賽時。	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=社群給我一個「王牌競速先生」的外號很久了，但實際上我之前從未贏得勝利。	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=所以我終於贏得勝利的那一天就會永遠地深深刻在我的記憶中。	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=我最喜歡的§1王牌競速§r部分絕對是能用各種不同方式來完成比賽。	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=這讓不同技能等級的人都超級容易上手。	###
+txt.creator_ace.3_4.dia3=有些方法會更快… 有些方法會更難…	###
+txt.creator_ace.3_4.dia4=但重要的是，大家都能到達終點線。	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=應該有人在終界杯中觀看我的第一視角，因為你肯定會在享受美好時光時取得良好的平衡... 非常有趣...	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=但是無論如何，我還是想贏！	###
+txt.creator_ace.3_5.dia4=因此，這就是競爭有趣的一面，也是我認為最好的一面。	###
+
+##creator_grid
+txt.creator_grid.title_who1=§l最喜歡的 Minecraft 更新？§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lMCC 最棒的部分？§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§l網格跑者最棒的部分？§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§l為什麼要觀看終界盃直播？§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=哈囉！我是 §1Smajor§r，歡迎來到§1網格跑者§r賽道！	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=盡可能重複完成每個房間的挑戰來獲得最高分數吧！	###
+txt.creator_grid.1_0.dia3=按下「教學」以進一步了解。	###
+txt.creator_grid.1_0.dia4=或者，若你準備好開始遊玩，請按下「加入佇列」按鈕！	###
+txt.creator_grid.2_0.dia1=§1網格跑者§r是個有 4 個不同房間的挑戰關卡！	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=在每個房間中，你需要完成新挑戰，才能移動到下一個房間。	###
+txt.creator_grid.2_0.dia3=每個房間只有 1 分鐘，所以你最好動作快！	###
+txt.creator_grid.3_0.dia1=我的名字是 §1SMajor§r！	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=我是主要專注於 Minecraft 的多元化直播主！	###
+txt.creator_grid.3_0.dia3=如果你想找我，可以在 Twitch 上搜尋我。	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=我最喜歡的更新是「新式潛水艇」！	###
+txt.creator_grid.3_1.dia2=我真的很喜歡所有在這款更新中新增到海洋生態域的物品，這讓我探索起來有更有趣的感覺。	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=關於 MCC，我最喜歡的事情是看到來自 Minecraft 和內容創作等不同領域的所有創作者齊聚一堂，組成隊伍參加活動。	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=我喜歡看到以前從未見過的人互相認識並成為朋友。	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=我最喜歡§1網格跑者§r的一點是它非常注重團隊合作。	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=而且不會有比你的隊伍像一台運轉良好的機器一樣工作來完成挑戰更令人興奮的了。	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=這氣氛肯定會很棒！	###
+txt.creator_grid.3_4.dia3=當我直播 MCC 時，我的目標是讓我和隊伍成員能盡情享受最美好的時光！	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=即使這意味著我們最後會玩得很開心！	###
+
+txt.creator_grid.4_0.dia1=4 種不同的挑戰，「擊敗野獸」、「臨摹圖畫」、「烤蛋糕」和「衝刺」！	###
+txt.creator_grid.4_0.dia2=在「擊敗野獸」中，你需要擊敗房間中所有的怪物。	###
+txt.creator_grid.4_0.dia3=在「臨摹圖畫」中，你需要使用房間裡提供的畫筆和桶子來複製圖畫。	###
+txt.creator_grid.4_0.dia4=在「烤蛋糕」中，你需要收集製作蛋糕的原料，然後把它們加到中間的蛋糕機裡！	###
+txt.creator_grid.4_0.dia5=在「衝刺」中，你需要衝向終點線！	###
+
+##creator_melt
+txt.creator_melt.title_who1=§l最愛的 Minecraft 更新？§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lMinecraft 最棒的部分？§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§l最喜歡的 MCC 回憶？§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§l熔毀最棒的部分？§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§l為什麼要觀看終界盃直播？§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=你好！我是§1hannahxxrose§r，歡迎來到§1熔毀§r設施！	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=在每個房間開始熔毀之前存活下來！擊敗怪物來獲得額外積分。	###
+txt.creator_melt.1_0.dia3=按下「教學」以進一步了解。	###
+txt.creator_melt.1_0.dia4=或者，若你準備好開始遊玩，請按下「加入佇列」按鈕！	###
+txt.creator_melt.2_0.dia1=§1熔毀§r是一個有著許多房間的設施，裡面的房間真的就要熔毀了！	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=你需要在下一扇門開啟之前，在每個房間中存活下來。	###
+txt.creator_melt.2_0.dia3=你可以凍結和打擊冰凍怪物來獲得額外積分！	###
+txt.creator_melt.2_0.dia4=你也可以撿錢幣堆，賺取更多積分！	###
+txt.creator_melt.3_0.dia1=我的名字是 §1Hannahxxrose§r，我是 Minecraft 內容創作者！	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=來看我的直播，保證讓你熱血沸騰、心情愉快！	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=我最喜歡的 Minecraft 更新是「足跡和故事」，因為有新的櫻花生態域！	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=我最喜歡 Minecraft 的部分…當然是 PvP！	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=我最喜歡的 MCC 記憶是與 Cyan Coyotes 一起贏得 MCC Pride 2024！	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=§1熔毀§r中我最喜歡的地方是遊戲的競爭力和團隊合作。	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=如果你在 MCC 中觀看我的比賽，就能一起感受大量團隊合作和精彩的 PvP 時刻。	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=你可以在我的 Twitch 頻道上觀看我在 MCC 中的比賽！	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§l為什麼 Minecraft 很重要？§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§l對 Minecraft 最早的記憶是什麼？§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§l對 MCC 最美好的回憶是什麼？§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§l時間之沙最精彩的部分是什麼？§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§l為什麼要觀看終界盃直播？§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=你好！我是§1HBomb94§r，歡迎來到§1時間之沙§r神殿！	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=你的目標是在時間內盡情探索這座神殿，找到越多錢幣越好！	###
+txt.creator_sands.1_0.dia3=看到那個「教學」按鈕了嗎？ 按一下按鈕以了解更多資訊。	###
+txt.creator_sands.1_0.dia4=或如果你準備好進行遊戲，請按「開始遊戲」按鈕吧！ 	###
+txt.creator_sands.2_0.dia1=§1時間之沙§r是一座地下城，目標是在時間內盡可能收集最多的錢幣！	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=在地下城中，你會發現怪物、錢幣、箱子鑰匙、護甲，甚至還有額外的沙子都可以讓你在地下城待更久！	###
+txt.creator_sands.2_0.dia3=一開始你有 2 分鐘的時間，每一粒沙子都會給你額外 10 秒，但是請小心！	###
+txt.creator_sands.2_0.dia4=如果你在地下城中死亡，或是被困在裡面，你必須支付一些你收集到的錢幣才能逃出。	###
+txt.creator_sands.3_0.dia1=我是 §1HBomb94§r ！	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=我是 Twitch 主播，你可以在以下的地方找到我：	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft 對我整個成年後的生活至關重要。	###
+txt.creator_sands.3_1.dia2=我滿 30 歲了，我好像… 18 歲時就開始上傳影片了？	###
+txt.creator_sands.3_1.dia3=那就是已經十二年了嗎？	###
+txt.creator_sands.3_1.dia4=天哪... 我已經這麼老了！	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=我對 Minecraft 最早的記憶其實就是我建立的第一個世界。	###
+txt.creator_sands.3_2.dia2=我建造了一座看起來很糟的城堡，通體鵝卵石製造，還有一扇橡木門。	###
+txt.creator_sands.3_2.dia3=然後我死了，而我還不知道重生點是什麼...	###
+txt.creator_sands.3_2.dia4=而且我也不知道有座標這東西...	###
+txt.creator_sands.3_2.dia5=就這樣，它從那個世界裡永遠消失了。我試著花了好幾個小時再次尋找，但從此找不到了。	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=其實就是這麼簡單！	###
+txt.creator_sands.3_3.dia2=MCC 9 的時刻，生存遊戲才剛結束，我記得當時正看著計分板。	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=然後對著隊伍大喊，「看看那領先的隊伍！」	###
+txt.creator_sands.3_3.dia4=至今仍讓我起雞皮疙瘩。	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=§1時間之沙§r中我最喜歡的部分就是大家開始慌張的那一刻。	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=大家開始慌張的那一刻，就是最好玩的時候，大家會開始瘋狂尖叫，互相大喊大叫。	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=這很簡單！	###
+txt.creator_sands.3_5.dia3=我們隊伍會有最好的氣氛，且輕鬆主宰任何以隊伍為單位的遊戲。	###
+txt.creator_sands.3_5.dia4=就是不要玩，呃... PVP 遊戲... 或跑酷。	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=歡迎來到獎盃房間！	###
+txt.trophy_help.1_0.dia2=每根蠟燭都是你完成的挑戰！	###
+txt.trophy_help.1_0.dia3=與蠟燭§6互動§r來查看挑戰和進度。	###
+txt.trophy_help.1_0.dia4=你能完成所有挑戰嗎？	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=加入我們的§1終界盃§r！快到 https://endercup.com/ 觀看直播	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=觀賞 40 位 Minecraft 最大的內容創作者分成 10 個隊伍，在 8 個不同的小遊戲中激烈對戰！	###
+txt.ender_cup.1_0.dia3=7 月 27 日美國東部時間下午 1 點，鎖定參賽者直播！	###
+
+txt.ender_cup.ad1=加入我們的§1終界盃§r！快到 https://www.twitch.tv/minecraft 觀看直播	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=觀賞 40 位 Minecraft 最大的內容創作者分成 10 個隊伍，在 8 個不同的小遊戲中激烈對戰！	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§o戴著王冠的青蛙滿懷期待地看著你。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§o你想怎麼做？	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§o你伸手撫摸青蛙，但青蛙驚恐地往後退。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§o青蛙皺起眉頭，並重新戴好王冠。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§o你開始了一場長篇闊論，談論了許多不同的事情...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§o在派對上的時光，不同的遊戲，神祕的洞穴...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§o但是青蛙似乎沒興趣。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=你破解了我的詛咒！謝謝你！	###
+txt.frog_prince.2_0.dia2=我坐在這裡等待別人吻我已經§o好幾年§r了…	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=一位接著一位接著一位！	###
+txt.frog_prince.2_0.dia4=甚至還有人想拿走我的王冠！	###
+
+##Puzzle Helper
+txt.puzzle_help.title=解謎小幫手	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=我發現了所有的謎題，我有一些想法！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=需要解謎提示嗎？	###
+txt.puzzle_help.landing.dia3=選擇下方的按鈕，並取得每個謎題的提示！	###
+txt.button.day1=第 1 天	###
+txt.button.day2=第 2 天	###
+txt.button.day3=第 3 天	###
+txt.button.day4=第 4 天	###
+txt.button.day5=第 5 天	###
+txt.button.day6=第 6 天	###
+txt.button.day7=第 7 天	###
+txt.button.wall1=左牆	###
+txt.button.wall2=中牆	###
+txt.button.wall3=右牆	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=我剛發現的第一批圖畫！	###
+txt.puzzle_help.wall1.dia2=整整花了我三天！	###
+txt.puzzle_help.wall1.dia3=你想得到哪些謎題的提示？	###
+
+txt.puzzle_help.wall2.dia1=啊，我中途發現的畫。	###
+txt.puzzle_help.wall2.dia2=那就是我開始有點子的時候！	###
+txt.puzzle_help.wall2.dia3=你想得到哪些謎題的提示？	###
+
+txt.puzzle_help.wall3.dia1=我發現的最後幾幅畫。	###
+txt.puzzle_help.wall3.dia2=這是一項艱苦的工作，但我們最終還是做到了！	###
+txt.puzzle_help.wall3.dia3=你想得到哪些謎題的提示？	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§o在皇冠符號上揮舞的手...…	###
+txt.puzzle_help_day1.dia2=在紅色背景上尋找一頂巨大皇冠，然後站在上面揮手！	###
+
+txt.puzzle_help_day2.dia1=§o一個在鑲有寶石的石頭臉前面翻跟斗的派對拉炮……	###
+txt.puzzle_help_day2.dia2=在他們的眼睛裡找到一座石像雕像，對他們拉炮！	###
+
+txt.puzzle_help_day3.dia1=§o一大池水，盤旋而下……	###
+txt.puzzle_help_day3.dia2=秘密一定是在一個大水坑的底部...…或是湖底！	###
+
+txt.puzzle_help_day4.dia1=§o一顆在讚嘆不已的綠色觀眾面前的水晶球……	###
+txt.puzzle_help_day4.dia2=在讚嘆不已的綠色觀眾面前放置一個迪斯可球！	###
+
+txt.puzzle_help_day5.dia1=§o一個黑黃條紋的方形開口，有一片蛋糕在 H 上面...…	###
+txt.puzzle_help_day5.dia2=尋找黑黃條紋的入口！那裡應該可以通往 H，然後試著吃點蛋糕！	###
+
+txt.puzzle_help_day6.dia1=§o在冰山山頂揮舞的煙火...…	###
+txt.puzzle_help_day6.dia2=爬上最高的頂峰，然後放煙火！	###
+
+txt.puzzle_help_day7.dia1=§o一扇門、拍手，和一隻戴著皇冠的青蛙王子...…	###
+txt.puzzle_help_day7.dia2=找到門並在門前拍手！那樣一定可以找到青蛙王子。	###
+txt.puzzle_help_day7.dia3=但是你要對青蛙王子做什麼？	###
+txt.puzzle_help_day7.dia3_1=我有聽過一個關於親吻青蛙王子的故事，但是肯定不是這樣...…	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=來這裡找畫？  線上的每一個  都代表已發現的一幅新畫！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=第一幅看起來像是一隻揮動的手，但我不能確定...	###
+txt.puzzle_lore_day1.dia3=必須要先把它們全部找出來，我才會有點子。	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=來這裡找畫？  線上的每一個  都代表新發現的一幅新畫！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=我剛剛發現了一張臉和派對拉砲。	###
+txt.puzzle_lore_day2.dia3=我還不確定這些代表什麼意思...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=來這裡找畫？  線上的每一個  都代表發現的一幅新畫！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=最新那幅看起來像是一個巨大的池塘，或可能是一片水花？	###
+txt.puzzle_lore_day3.dia3=我需要更多時間來確定...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=來這裡找畫？  線上的每一個  都代表一幅發現的新畫！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=前一幅有一個迪斯可舞池和一個人？	###
+txt.puzzle_lore_day4.dia3=這些都很奇特又神秘...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=來這裡找畫？  線上的每一個  都代表發現的一幅新畫！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=最後一幅實在令人費解。一個黑色和黃色的圓圈，上面有一個蛋糕和一個 H？	###
+txt.puzzle_lore_day5.dia3=也許是斜線將它們分開...	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=來這裡找畫？  線上的每一個  都代表發現的一幅新畫！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=昨天的畫有閃閃發光的數字！還有一座山！	###
+txt.puzzle_lore_day6.dia3=這東西真令人著迷！	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=我終於解完所有  圖畫的謎題了！	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=最後一幅最令人困惑。	###
+txt.puzzle_lore_day7.dia3=雙手好像握在一起？還是在鼓掌？	###
+txt.puzzle_lore_day7.dia4=之後有一隻青蛙和一扇門...	###
+txt.puzzle_lore_day7.dia5=我需要一點時間，整理一下思緒。	###
+txt.puzzle_lore_day7.dia6=明天我就會解開謎團！	###

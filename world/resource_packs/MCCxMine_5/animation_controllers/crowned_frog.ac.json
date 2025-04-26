@@ -1,0 +1,123 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.crowned_frog.ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "frog": "!q.property('noxcrew.ft:transform')"
+            },
+            {
+              "prince": "q.property('noxcrew.ft:transform')"
+            }
+          ]
+        },
+        "frog": {
+          "animations": [
+            "frog_idle"
+          ],
+          "transitions": [
+            {
+              "transform": "q.property('noxcrew.ft:transform')"
+            }
+          ]
+        },
+        "transform": {
+          "animations": [
+            "transform"
+          ],
+          "transitions": [
+            {
+              "prince": "q.any_animation_finished"
+            }
+          ]
+        },
+        "prince": {
+          "animations": [
+            "prince_idle"
+          ],
+          "transitions": [
+            {
+              "frog": "!q.property('noxcrew.ft:transform')"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.crowned_frog.special_ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "special_random"
+          ],
+          "transitions": [
+            {
+              "special1": "v.random == 1"
+            },
+            {
+              "special1": "v.random == 5"
+            },
+            {
+              "special1": "v.random == 7"
+            },
+            {
+              "special2": "v.random == 2"
+            },
+            {
+              "special2": "v.random == 6"
+            },
+            {
+              "special3": "v.random == 3"
+            },
+            {
+              "special4": "v.random == 4"
+            }
+          ]
+        },
+        "special1": {
+          "animations": [
+            "special1"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        },
+        "special2": {
+          "animations": [
+            "special2"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        },
+        "special3": {
+          "animations": [
+            "special3"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        },
+        "special4": {
+          "animations": [
+            "special4"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

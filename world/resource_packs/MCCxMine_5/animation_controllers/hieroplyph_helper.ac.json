@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hieroglyph_helper.ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "brushing"
+          ],
+          "transitions": [
+            {
+              "special": "q.any_animation_finished && v.special == 1"
+            }
+          ]
+        },
+        "special": {
+          "animations": [
+            "special"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

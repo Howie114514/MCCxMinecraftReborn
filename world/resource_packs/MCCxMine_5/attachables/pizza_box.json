@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:pizza_box",
+      "textures": {
+        "default": "textures/entity/n/hub/pizza_box"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.pizza_box"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "first_person": "animation.n.pizza_box.first_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

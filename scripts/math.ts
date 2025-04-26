@@ -1,5 +1,5 @@
 import { Vector3Utils } from "@minecraft/math";
-import { BlockVolume, Vector3 } from "@minecraft/server";
+import { BlockVolume, Player, Vector3 } from "@minecraft/server";
 
 export namespace Vec3Utils {
   export function isBetween(v: Vector3, v1: Vector3, v2: Vector3) {
@@ -21,5 +21,16 @@ export namespace Vec3Utils {
   export function getVolume(bv: BlockVolume) {
     let delta = Vector3Utils.subtract(bv.getMax(), bv.getMin());
     return delta.x * delta.y * delta.z;
+  }
+  export function getProjectileMotion(player: Player, speed: number) {
+    let pitch = player.getRotation().x,
+      yaw = player.getRotation().y;
+    let y1 = (yaw + 90) * (Math.PI / 180);
+    let p1 = pitch * -(Math.PI / 180);
+    return {
+      x: Math.cos(y1) * Math.cos(p1) * speed,
+      y: Math.sin(p1) * speed,
+      z: Math.sin(y1) * Math.cos(p1) * speed,
+    };
   }
 }

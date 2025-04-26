@@ -1,0 +1,1094 @@
+## Meta
+pack.name=MCC x Minecraft 15 周年記念 RP	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=MCC x Minecraft 15周年記念イベントのリソース パックです。	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=MC チャンピオンシップ ミニゲーム イベント!	###
+txt.event_overview.2=Noxcrew が MC チャンピオンシップの醍醐味を Bedrock Edition にお届けします!！一日中パーティーを楽しみながら、パルクールからモンスターとの戦いまで、腕前が試されるミニゲームで戦いましょう。	###
+txt.event_overview.3=15 個の無料コスメティック アイテムと、おしゃれな新しいマントを手に入れましょう！	###
+txt.event_overview.4=剣をつかみましょう - 大騒乱が待ち受けています！	###
+txt.event_overview.5=イベントは 7 月 23 日午前 3 時 (日本時間) に始まり 8 月 5 日午前 9 時 (日本時間) まで開催されます。	###
+
+##VANILLA
+item.warped_sign.name=洞窟の看板 	###
+tile.warped_standing_sign.name=洞窟の看板 	###
+tile.warped_wall_sign.name=洞窟の看板 	###
+tile.prismarine.dark.name=金属ブロック 	###
+tile.stone_slab2.prismarine.dark.name=金属ハーフブロック 	###
+tile.dark_prismarine_stairs.name=金属の階段 	###
+
+##INTERACT TEXTS
+action.interact.open=開く	###This is meant as a verb, action.
+action.interact.take=取る	###This is meant as a verb, action.
+action.interact.grab=つかみ取る	###This is meant as a verb, action.
+action.interact.pick_up=ピックアップ	###This is meant as a verb, action.
+action.interact.use=使う	###This is meant as a verb, action.
+action.interact.change_color=色の変更	###This is meant as a verb, action.
+action.interact.deposit=搬入	###This is meant as a verb, action.
+action.interact.interact=操作	###This is meant as a verb, action.
+action.interact.trash=ゴミ	###To throw away or "trash" an item
+action.interact.eat=食べる	###To eat something, like a food
+action.interact.drink=飲む	###To drink something, like a soda
+action.interact.paint=ペイント	###The verb to paint.
+action.interact.gift=プレイヤーへのギフト	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=ショップ	###The verb, "to shop" or "to browse"
+action.interact.decorate=飾る	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=スニークをタップして終了	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=スニークをタップして終了	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=:_input_key.sneak: を押して終了	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§o毎日、新しい絵画が発表されます。	###
+txt.sign.cave2=§o7 つ全てを解いて報酬を集めましょう!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=凍結の弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=凍結の弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=鉄の鍵	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=金の鍵	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=ダイヤモンドの鍵	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=ネザライトの鍵	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=空白の絵筆	###
+item.noxcrew.ft:paintbrush_green.name=緑の絵筆	###
+item.noxcrew.ft:paintbrush_yellow.name=黄色の絵筆	###
+item.noxcrew.ft:paintbrush_blue.name=青い絵筆	###
+item.noxcrew.ft:paintbrush_red.name=赤い絵筆	###
+item.noxcrew.ft:paintbrush_white.name=白い絵筆	###
+item.noxcrew.ft:paintbrush_black.name=黒い絵筆	###
+item.noxcrew.ft:paintbrush_brown.name=茶色の絵筆	###
+item.noxcrew.ft:paintbrush_purple.name=紫の絵筆	###
+item.noxcrew.ft:beanie_red.name=赤いウサギのニット帽	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=オレンジのヤマネコのニット帽	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=黄色のヤクのニット帽	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=黄緑のラマのニット帽	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=緑のヤモリのニット帽	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=水色のウーパールーパーのニット帽	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=水色のコヨーテのニット帽	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=青いコウモリのニット帽	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=紫のパンダのニット帽	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=ピンクのオウムのニット帽	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=パーティー帽子	###
+item.noxcrew.ft:hat_propeller.name=プロペラ帽子	###
+item.noxcrew.ft:hat_crown_cake.name=ケーキの王冠	###
+item.noxcrew.ft:hat_birthday_present.name=バースデープレゼントの帽子	###
+item.noxcrew.ft:hat_jester.name=道化師の帽子	###
+item.noxcrew.ft:hat_chicken_jockey.name=チキン ジョッキーの帽子	###
+item.noxcrew.ft:hat_boombox.name=ラジカセ帽子	###
+item.noxcrew.ft:foam_finger.name=泡の指	###
+item.noxcrew.ft:balloon_animal.name=バルーンアニマル	###
+item.noxcrew.ft:big_bubble_blower.name=巨大なバブルブロワー	###
+item.noxcrew.ft:silly_horn.name=おかしな角笛	###
+item.noxcrew.ft:party_popper.name=パーティーポッパー	###
+item.noxcrew.ft:confetti_tag_prime.name=紙吹雪タグ	###
+item.noxcrew.ft:confetti_tag_leftover.name=紙吹雪タグ	###
+item.noxcrew.ft:pizza_box.name=箱入りピザ	###
+item.noxcrew.ft:celebration_fireworks.name=誕生日の花火	###
+item.noxcrew.ft:player_gift_giving.name=ギフトボックス	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=ギフトボックス	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=ミラーボール	###
+item.noxcrew.ft:beach_ball.name=ビーチ ボール	###
+item.noxcrew.ft:balloon_helium.name=ヘリウムバルーン	###
+item.noxcrew.ft:leave_game.name=§6ゲーム退出	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=一切れのピザ	###
+item.noxcrew.ft:mcc_burger.name=おいしいバーガー	###
+item.noxcrew.ft:anniversary_hot_dog.name=おいしいホットドッグ	###
+item.noxcrew.ft:party_cupcake.name=カップケーキ	###
+item.noxcrew.ft:party_cake.name=ケーキの一切れ	###
+item.noxcrew.ft:party_chips.name=皿に盛ったチップス	###
+item.noxcrew.ft:party_cookie.name=クッキー	###
+item.noxcrew.ft:party_soda.name=炭酸ソーダ	###
+item.noxcrew.ft:cotton_candy.name=コットン キャンディー	###
+item.noxcrew.ft:popcorn.name=ポップコーン	###
+item.noxcrew.ft:super_wrap.name=ヘルシーなラップ	###
+item.noxcrew.ft:cosmetic_chest.name=化粧品チェスト	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=テレポート マップ	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=チャレンジ リスト	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=卵	###
+item.noxcrew.ft:milk_bucket.name=ミルク バケツ	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=凍結の弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=凍結の弓	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=鉄の鍵	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=金の鍵	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=ダイヤモンドの鍵	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=ネザライトの鍵	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=空白の絵筆	###
+item.noxcrew.ft:paintbrush_green=緑の絵筆	###
+item.noxcrew.ft:paintbrush_yellow=黄色の絵筆	###
+item.noxcrew.ft:paintbrush_blue=青い絵筆	###
+item.noxcrew.ft:paintbrush_red=赤い絵筆	###
+item.noxcrew.ft:paintbrush_white=白い絵筆	###
+item.noxcrew.ft:paintbrush_black=黒い絵筆	###
+item.noxcrew.ft:paintbrush_brown=茶色の絵筆	###
+item.noxcrew.ft:paintbrush_purple=紫の絵筆	###
+item.noxcrew.ft:beanie_red=赤いウサギのニット帽	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=オレンジのヤマネコのニット帽	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=黄色のヤクのニット帽	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=黄緑のラマのニット帽	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=緑のヤモリのニット帽	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=水色のウーパールーパーのニット帽	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=水色のコヨーテのニット帽	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=青いコウモリのニット帽	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=紫のパンダのニット帽	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=ピンクのオウムのニット帽	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=パーティー帽子	###
+item.noxcrew.ft:hat_propeller=プロペラ帽子	###
+item.noxcrew.ft:hat_crown_cake=ケーキの王冠	###
+item.noxcrew.ft:hat_birthday_present=バースデープレゼントの帽子	###
+item.noxcrew.ft:hat_jester=道化師の帽子	###
+item.noxcrew.ft:hat_chicken_jockey=チキンジョッキーの帽子	###
+item.noxcrew.ft:hat_boombox=ラジカセ帽子	###
+item.noxcrew.ft:foam_finger=泡の指	###
+item.noxcrew.ft:balloon_animal=バルーンアニマル	###
+item.noxcrew.ft:big_bubble_blower=巨大なバブルブロワー	###
+item.noxcrew.ft:silly_horn=おかしな角笛	###
+item.noxcrew.ft:party_popper=パーティーポッパー	###
+item.noxcrew.ft:confetti_tag_prime=紙吹雪タグ	###
+item.noxcrew.ft:confetti_tag_leftover=紙吹雪タグ	###
+item.noxcrew.ft:pizza_box=箱入りピザ	###
+item.noxcrew.ft:celebration_fireworks=誕生日の花火	###
+item.noxcrew.ft:player_gift_giving=ギフト用ボックス	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=ギフトボックス	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=ミラーボール	###
+item.noxcrew.ft:beach_ball=ビーチ ボール	###
+item.noxcrew.ft:balloon_helium=ヘリウムバルーン	###
+item.noxcrew.ft:leave_game=§6ゲーム退出	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=一切れのピザ	###
+item.noxcrew.ft:mcc_burger=おいしいバーガー	###
+item.noxcrew.ft:anniversary_hot_dog=おいしいホットドッグ	###
+item.noxcrew.ft:party_cupcake=カップケーキ	###
+item.noxcrew.ft:party_cake=ケーキの一切れ	###
+item.noxcrew.ft:party_chips=皿に盛ったチップス	###
+item.noxcrew.ft:party_cookie=クッキー	###
+item.noxcrew.ft:party_soda=炭酸ソーダ	###
+item.noxcrew.ft:cotton_candy=コットン キャンディー	###
+item.noxcrew.ft:popcorn=ポップコーン	###
+item.noxcrew.ft:super_wrap=ヘルシーなラップ	###
+item.noxcrew.ft:cosmetic_chest=化粧品チェスト	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=テレポート マップ	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=チャレンジ リスト	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=卵	###
+item.noxcrew.ft:milk_bucket=ミルク バケツ	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=移動速度上昇ブロック	###
+tile.noxcrew.ft:launch_pad.name=発射台ブロック	###
+tile.noxcrew.ft:jump_pad.name=跳躍力上昇ブロック	###
+tile.noxcrew.ft:painting_green.name=緑のブロック	###
+tile.noxcrew.ft:painting_yellow.name=黄色のブロック	###
+tile.noxcrew.ft:painting_blue.name=青のブロック	###
+tile.noxcrew.ft:painting_red.name=赤のブロック	###
+tile.noxcrew.ft:painting_white.name=白のブロック	###
+tile.noxcrew.ft:painting_black.name=黒のブロック	###
+tile.noxcrew.ft:painting_brown.name=茶色のブロック	###
+tile.noxcrew.ft:painting_purple.name=紫のブロック	###
+tile.noxcrew.ft:elytra_icon.name=エリトラ ゲート ブロック	###
+tile.noxcrew.ft:audience_member_oof.name=たじろぐ観客	###
+tile.noxcrew.ft:audience_member_angry.name=怒っている観客	###
+tile.noxcrew.ft:audience_member_joy.name=喜んでいる観客	###
+tile.noxcrew.ft:audience_member_happy.name=幸せそうな観客	###
+tile.noxcrew.ft:audience_member_unimpressed.name=興味がなさそうな観客	###
+tile.noxcrew.ft:audience_member_unsure.name=不安そうな観客	###
+tile.noxcrew.ft:audience_member_starstruck.name=スターに夢中な観客	###
+tile.noxcrew.ft:cake_centre.name=ケーキセンター	###
+tile.noxcrew.ft:cake_edge.name=ケーキの端	###
+tile.noxcrew.ft:cake_cherry.name=ケーキのチェリー	###
+tile.noxcrew.ft:window_spruce.name=トウヒの窓	###
+tile.noxcrew.ft:window_oak.name=樫の窓	###
+tile.noxcrew.ft:iron_bars.name=鉄格子 (まっすぐ)	###
+tile.noxcrew.ft:iron_bars_h.name=鉄格子 (半分)	###
+tile.noxcrew.ft:iron_bars_c.name=鉄格子 (コーナー)	###
+tile.noxcrew.ft:castle_pink.name=ピンクの城テラコッタ 	###
+tile.noxcrew.ft:sot_flower.name=トーチフラワー 点火 	###
+tile.noxcrew.ft:metal_rigging_v.name=水平金属索具	###
+tile.noxcrew.ft:metal_rigging_h.name=垂直金属索具	###
+tile.noxcrew.ft:modern_light.name=モダンなライト	###
+tile.noxcrew.ft:rope.name=ロープ ブロック	###
+tile.noxcrew.ft:hieroglyph_1_a.name=洞窟パズル 1 日目 (左上)	###
+tile.noxcrew.ft:hieroglyph_1_b.name=洞窟パズル 1 日目 (右上)	###
+tile.noxcrew.ft:hieroglyph_1_c.name=洞窟パズル 1 日目 (左下)	###
+tile.noxcrew.ft:hieroglyph_1_d.name=洞窟パズル 1 日目 (右下)	###
+tile.noxcrew.ft:hieroglyph_2_a.name=洞窟パズル 2 日目 (左上)	###
+tile.noxcrew.ft:hieroglyph_2_b.name=洞窟パズル 2 日目 (右上)	###
+tile.noxcrew.ft:hieroglyph_2_c.name=洞窟パズル 2 日目 (左下)	###
+tile.noxcrew.ft:hieroglyph_2_d.name=洞窟パズル 2 日目 (右下)	###
+tile.noxcrew.ft:hieroglyph_3_a.name=洞窟パズル 3 日目 (左上)	###
+tile.noxcrew.ft:hieroglyph_3_b.name=洞窟パズル 3 日目 (右上)	###
+tile.noxcrew.ft:hieroglyph_3_c.name=洞窟パズル 3 日目 (左下)	###
+tile.noxcrew.ft:hieroglyph_3_d.name=洞窟パズル 3 日目 (右下)	###
+tile.noxcrew.ft:hieroglyph_4_a.name=洞窟パズル 4 日目 (左上)	###
+tile.noxcrew.ft:hieroglyph_4_b.name=洞窟パズル 4 日目 (右上)	###
+tile.noxcrew.ft:hieroglyph_4_c.name=洞窟パズル 4 日目 (左下)	###
+tile.noxcrew.ft:hieroglyph_4_d.name=洞窟パズル 4 日目 (右下)	###
+tile.noxcrew.ft:hieroglyph_5_a.name=洞窟パズル 5 日目 (左上)	###
+tile.noxcrew.ft:hieroglyph_5_b.name=洞窟パズル 5 日目 (右上)	###
+tile.noxcrew.ft:hieroglyph_5_c.name=洞窟パズル 5 日目 (左下)	###
+tile.noxcrew.ft:hieroglyph_5_d.name=洞窟パズル 5 日目 (右下)	###
+tile.noxcrew.ft:hieroglyph_6_a.name=洞窟パズル 6 日目 (左上)	###
+tile.noxcrew.ft:hieroglyph_6_b.name=洞窟パズル 6 日目 (右上)	###
+tile.noxcrew.ft:hieroglyph_6_c.name=洞窟パズル 6 日目 (左下)	###
+tile.noxcrew.ft:hieroglyph_6_d.name=洞窟パズル 6 日目 (右下)	###
+tile.noxcrew.ft:hieroglyph_7_a.name=洞窟パズル 7 日目 (左上)	###
+tile.noxcrew.ft:hieroglyph_7_b.name=洞窟パズル 7 日目 (右上)	###
+tile.noxcrew.ft:hieroglyph_7_c.name=洞窟パズル 7 日目 (左下)	###
+tile.noxcrew.ft:hieroglyph_7_d.name=洞窟パズル 7 日目 (右下)	###
+tile.noxcrew.ft:bigcake_top.name=ケーキ ブロック (上部)	###
+tile.noxcrew.ft:bigcake_bottom.name=ケーキ ブロック (下部)	###
+tile.noxcrew.ft:cake_slice.name=ケーキの一切れ	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=15 旗 ロング トップ	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=15 旗 ロング ボトム	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=MCC 旗 ロング トップ	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=MCC 旗 ロング ボトム	###
+tile.noxcrew.ft:decoration_bunting_a.name=垂れ旗 (白)	###
+tile.noxcrew.ft:decoration_bunting_b.name=垂れ旗 (緑)	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=垂れ旗 (MCC)	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=三角旗 (緑)	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=三角旗 (白)	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=三角旗 (MCC)	###
+tile.noxcrew.ft:decoration_flag_mcc.name=MCC 旗 (小)	###
+tile.noxcrew.ft:decoration_flag_15.name=15 周年の旗 (小)	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=15 周年の旗 (上部)	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=15 周年の旗 (下部)	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=MCC の旗 (上部)	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=MCC の旗 (下部)	###
+tile.noxcrew.ft:plush_red.name=赤いウサギのぬいぐるみ	###
+tile.noxcrew.ft:plush_orange.name=オレンジのヤマネコのぬいぐるみ	###
+tile.noxcrew.ft:plush_yellow.name=黄色のヤクのぬいぐるみ	###
+tile.noxcrew.ft:plush_lime.name=黄緑のラマのぬいぐるみ	###
+tile.noxcrew.ft:plush_green.name=緑のヤモリのぬいぐるみ	###
+tile.noxcrew.ft:plush_cyan.name=水色のコヨーテのぬいぐるみ	###
+tile.noxcrew.ft:plush_aqua.name=水色のウーパールーパーのぬいぐるみ	###
+tile.noxcrew.ft:plush_blue.name=青いコウモリのぬいぐるみ	###
+tile.noxcrew.ft:plush_pink.name=ピンクのオウムのぬいぐるみ	###
+tile.noxcrew.ft:plush_purple.name=紫のパンダのぬいぐるみ	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=MCC の旗 (左上)	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=MCC の旗 (右上)	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=MCC の旗 (左下)	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=MCC の旗 (右下)	###
+tile.noxcrew.ft:decoration_present.name=MCC のギフトボックス	###
+tile.noxcrew.ft:cup_poster1.name=エンダー カップ ポスター 1	###
+tile.noxcrew.ft:cup_poster2.name=エンダー カップ ポスター 2	###
+tile.noxcrew.ft:logo_1.name=Noxcrew ロゴ 1	###
+tile.noxcrew.ft:logo_2.name=Noxcrew ロゴ 2	###
+tile.noxcrew.ft:logo_3.name=Noxcrew ロゴ 3	###
+tile.noxcrew.ft:melt_spawner.name=メルトダウン モンスター スポナー	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=コインの山	###
+entity.noxcrew.ft:treasure_chest.name=財宝の宝箱	###
+entity.noxcrew.ft:key_podium.name=鍵の演台	###
+entity.noxcrew.ft:sand_podium.name=砂の演台	###
+entity.noxcrew.ft:armor_podium.name=防具の演台	###
+entity.noxcrew.ft:paint_pot.name=ペイントポット	###
+entity.noxcrew.ft:giant_cake.name=バースデーケーキ	###
+entity.noxcrew.ft:beach_ball.name=ビーチ ボール	###
+entity.noxcrew.ft:balloon_helium.name=ヘリウムバルーン	###
+entity.noxcrew.ft:disco_ball.name=ミラーボール	###
+entity.noxcrew.ft:lost_pearl.name=謎の真珠	###
+entity.noxcrew.ft:decoration_awning.name=飾り付きの日よけ	###
+entity.noxcrew.ft:decoration_bunting.name=飾り付きの垂れ布	###
+entity.noxcrew.ft:decoration_cupcake.name=バースデーカップケーキ	###
+entity.noxcrew.ft:decoration_ballons.name=バースデーバルーン	###
+entity.noxcrew.ft:decoration_15.name=15 周年バルーン	###
+entity.noxcrew.ft:decoration_board.name=バースデーボード	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=ニワトリの風船	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=マスコットの風船	###
+entity.noxcrew.ft:trophy_help.name=ヘルプ	###
+entity.noxcrew.ft:sand_timer.name=サンドタイマー	###
+entity.noxcrew.ft:crowned_frog.name=カエルの王子	###
+entity.noxcrew.ft:cake_candles.name=ケーキ用のろうそく	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=スタートボタン	###
+entity.noxcrew.ft:vendor_mascot.name=マスコットの帽子	###
+entity.noxcrew.ft:vendor_hat.name=帽子	###
+entity.noxcrew.ft:vendor_toys.name=おもちゃ	###
+entity.noxcrew.ft:vendor_food.name=フード	###
+entity.noxcrew.ft:advert_creator_cup.name=エンダーカップ	###
+entity.noxcrew.ft:md_creeper.name=クリーパー	###
+entity.noxcrew.ft:md_blaze.name=ブレイズ	###
+entity.noxcrew.ft:md_blaze<>.name=ブレイズ	###
+entity.noxcrew.ft:md_skeleton.name=スケルトン	###
+entity.noxcrew.ft:md_skeleton<>.name=スケルトン	###
+entity.noxcrew.ft:md_spider.name=クモ	###
+entity.noxcrew.ft:md_vindicator.name=ヴィンディケーター	###
+entity.noxcrew.ft:md_zombie.name=ゾンビ	###
+entity.noxcrew.ft:md_zombie_baby.name=赤ちゃんゾンビ	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§o真珠が神秘的に上下に揺れる...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r 洞窟の謎を発見しました!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=プレイヤーを待機中...	###
+txt.misc.msg4=ゲームの開始まで約 	###
+txt.misc.msg5=テレポートされようとしています	###
+txt.misc.msg6_1=§6§l!§r %s から贈り物をもらいました!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r %s に贈り物をしました!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l！§r そのプレイヤーは他のギフトを受け取ることができません	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7=     エリトラ装備   	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8=    §eパズル ステージが完了しました... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9=    §a洞窟パズルはクリアしています! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: 気分が高ぶってる? それなら雲の上を駆け上る、    §6エース レース§r     ミニゲーム!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: 挑戦してみますか? それなら全てのタスクをクリアしてみよう、    §6グリッド ランナー §r     ミニゲーム!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]: ミニゲーム     §6メルトダウン§r     で待ち受ける... モンスターの大群から生き残れるかな?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]: 神秘的な神殿を探検しよう、    §6時の砂§r     ミニゲーム!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: クリアしたチャレンジは、トロフィールームで見ることができます!     §6グリッド ランナー§r     ポータル近くの  メイン ロビーの大きなテントにあります!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: 帽子をお探しですか? 帽子屋に行って買いましょう!     メイン ロビーの大きな帽子の下にあります!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: クールなおもちゃを試してみたい? おもちゃ屋さんで買えます!     メイン ロビーのトロリー カートの看板近くにあります!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: 食べ物はいかがですか? フード ストアで買えます!     メイン ロビーの大きなニワトリ像の近くにレストランがあります!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]:     謎解きパズルがあるのを知っていましたか?     メイン ロビーの山にある謎の洞窟に行ってみてください!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: 毎日新しい謎解きパズルがあるのを知っていましたが? 各     が     の隣にあるのは新しいパズルがあることを示しています!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: すべてのロビーにコインの山があることをご存知ですか? 探索してください!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]:持ち物がいっぱいですか? ゴミ箱でアイテムを捨てることができます!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cこれには十分なコインがありません	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cこれを買うスペースがない! ゴミ箱にアイテムを捨てましょう。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r この帽子はすでに持っています!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s がいっぱいです!§r 別の材料を集めましょう!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cこのチェストの鍵を持っていません！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6このチェストはもう開けています！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=ピザ! 食べてスピードをブーストしよう!	###
+txt.shop_info.mcc_burger=バーガー! 食べてスピードとジャンプをブーストしよう!	###
+txt.shop_info.anniversary_hot_dog=ホットドッグ! 食べてスピードとジャンプをブーストしよう!	###
+txt.shop_info.party_cupcake=カップケーキ! 食べると落下スピードが下がります!	###
+txt.shop_info.party_cake=ケーキ! 食べると浮遊できます!	###
+txt.shop_info.party_chips=フライドポテト! 食べるとスピードがブーストします!	###
+txt.shop_info.party_cookie=クッキー! 食べるとジャンプ力がブーストします!	###
+txt.shop_info.party_soda=ソーダ! 飲むとスピードがブーストします!	###
+txt.shop_info.cotton_candy=綿菓子! 食べるとジャンプ力がブーストします!	###
+txt.shop_info.popcorn=ポップコーン! 食べるとジャンプ力がブーストします!	###
+txt.shop_info.super_wrap=スーパーラップ! 食べるとすべてがブーストします!	###
+txt.shop_info.foam_finger=応援フィンガー! 長押しであなたの支持を示しましょう!	###
+txt.shop_info.balloon_animal=バルーン アニマル! 風船を飛ばすのに使います!	###
+txt.shop_info.big_bubble_blower=バブル ブロワー! 泡を吹くのに使います!	###
+txt.shop_info.silly_horn=パフパフ! 音を鳴らすのに使います!	###
+txt.shop_info.party_popper=パーティー ポッパー! 紙吹雪をポップするするのに使います!	###
+txt.shop_info.confetti_tag_prime=紙吹雪タグ! プレイヤーに使って、紙吹雪でタグをつけてみよう!	###
+txt.shop_info.pizza_box=ピザ ボックス! プレイヤーにピザを送るのに使います!	###
+txt.shop_info.celebration_fireworks=花火! 花火を打ち上げるのに使います!	###
+txt.shop_info.player_gift_giving=ギフト! プレイヤーにギフトを送るのに使います!	###
+txt.shop_info.disco_ball=ディスコ! 踊るディスコボールを作るのに使います!	###
+txt.shop_info.beach_ball=ビーチボール! ビーチボールを作って遊びましょう!	###
+txt.shop_info.balloon_helium=バルーン! 風船を飛ばすのに使いいます	###
+
+##Ace Race
+txt.tut.ace_title=    エース レース 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6スタート ラインで Seapeekay に話しかけてヒントをもらおう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: 移動速度上昇や跳躍力上昇のパッドを使ってゴールまでレース!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title=    ビーストを倒せ!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6スタート ロビーで Smajor に話しかけてヒントをもらおう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: 時間切れになる前にできるだけ多くのモンスターを倒そう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title=    絵画をコピーしよう!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: 絵の具の入った壺を使って絵画を写そう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title=    ケーキを焼こう!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: ケーキの材料を集めて中央に届けよう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title=    スプリント!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: ゴールを目指そう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r 次の部屋に向かいましょう!	###
+
+txt.grid.wave_clear=モンスター ウェーブを撃破しました！	###
+txt.grid.wave_reward=     コインを 10 枚獲得しました！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.grid.painting_clear=塗装を完了しました！	###
+txt.grid.painting_reward=     コインを 10 枚獲得しました！	###Contains unicode symbols, ensure they remain in the translation.**
+txt.grid.cake_clear=ケーキが焼けました！	###
+txt.grid.cake_reward=     コインを 10 枚獲得しました！	###Contains unicode symbols, ensure they remain in the translation.**
+
+##Meltdown
+txt.tut.melt_title=    メルトダウン 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6入り口付近で hannahxxrose に話しかけてヒントをもらおう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: 各部屋で溶ける前にサバイバル! 弓で敵を凍らせてからパンチを打とう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning=     警告: メルトダウン   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger=     危険: 重大なメルトダウン   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1=     1/7メルトダウンから脱出   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2=     2/7メルトダウンから脱出   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3=     3/7メルトダウンから脱出   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4=     4/7メルトダウンから脱出   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5=     5/7メルトダウンから脱出   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6=     6/7メルトダウンから脱出   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7=     7/7メルトダウンから脱出   	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room=    %s/7 メルトダウンから脱出   	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r 次の部屋に向かおう!	###
+
+##Sands of Time
+txt.tut.sands_title=    時の砂 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6ピラミッドの近くにいる HBomb94 に話しかけて、ヒントをもらおう!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: 時間切れになる前にできるだけ多くのコインを見つけよう! 砂を集めると時間延長!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5=    コインを 5 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10=    コインを 10 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20=    コインを 20 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30=    コインを 30 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50=    コインを 50 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100=    コインを 100 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200=    コインを 200 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400=    コインを 400 枚見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=チェストが開きました！	###
+txt.sot.key=鍵を回収しました！	###
+txt.sot.upgraded=アップグレードしました！	###
+
+##Lobby
+txt.lobby.coins5=    5!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.lobby.coins20=    20!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.lobby.coins30=    30!	###Contains unicode symbols, ensure they remain in the translation.**
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=マップ	###
+txt.ui.tp.confirm1=よろしいですか?	#
+txt.ui.tp.confirm_target=%s にテレポートします。	#
+txt.ui.tp.area_ace_race=    エースレース	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners=    グリッドランナー	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby=    ザ・ハブ	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot=    時の砂	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown=    メルトダウン	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=テレポート準備完了！	#
+
+##Cosmetic Chest
+txt.title.cosmetic=化粧品チェスト	###
+txt.ui.cosmetic=帽子はここに全部あります!	###
+txt.ui.button.select=選択	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=リワードがアンロックされました	###
+txt.ui.title.red_rabbit_cc=赤いウサギの頭	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=オレンジのヤマネコの頭	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=黄色のヤクの頭	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=黄緑のラマの頭	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=緑のヤモリの頭	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=水色のウーパールーパー ヘッド	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=水色のコヨーテ ヘッド	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=青のコウモリ ヘッド	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=紫のパンダの頭	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=ピンクのオウムの頭	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=エモート「群衆にキス」	###
+txt.ui.title.ride_victory_emote=エモート「勝利」	###
+txt.ui.title.cartwheel_victory_emote=エモート「勝利の側転」	###
+txt.ui.title.flying_chicken_emote=エモート「はばたくニワトリ」	###
+txt.ui.title.cape=MCCxMinecraft 15 周年記念マント	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=MCC 王冠	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=キャラクター クリエイター アイテムをアンロックしました! 更衣室で見てみましょう。	###
+txt.ui.text.cape_unlocked=おめでとう! MCC マントをアンロックしました! 更衣室をチェックしてください。	###
+txt.ui.button.claim=受け取る	###
+
+##UI Vendors
+txt.title.vendor_food=    食べ物 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot=    マスコット帽子 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat=    帽子 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy=    おもちゃ 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=購入	###
+txt.ui.sold_out=売り切れ	###
+
+##Game Toasts
+txt.ui.toast.time=    §l時間§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.coins_collected=      §l集めたコイン§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.coins_earned=      §l獲得したコイン§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.new_record=§l新記録!§r	###
+txt.ui.toast.room=部屋	###
+txt.ui.toast.time_spent=      §l使った時間§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.complete=完了!	###
+txt.ui.toast.highscore=    §lハイスコア§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.highest_coins=    §l最大収穫量§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1=    §lネザライト メダリスト	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2=    §lダイヤモンド メダリスト	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3=    §l金メダリスト	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4=    §l鉄メダリスト	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5=    §l銅メダリスト	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened=      §l開けたチェスト§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.sot.escaped=    §l逃走成功!§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.sot.failed=    §lあなたは逃げませんでした...§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.gr.mobs_slain=      §l倒したモブ§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.gr.blocks_painted=    §l塗装したブロック§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.gr.cakes_baked=    §l焼いたケーキ§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.ar.time=      §l時間§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.slain=      §l粉々になったモブ§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_0=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_1=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_2=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_3=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_4=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_5=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_6=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_survived_7=      §l生き延びた部屋§r	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=チャレンジ リスト	###
+txt.ui.body1.challenge_list=アイコンを押すとそのチャレンジが見られます!	###
+txt.ui.reward.cape= マントの報酬	###
+txt.ui.status.cape=完了	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=水色のウーパールーパー チャレンジ	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=§l水色ウーパールーパーのニット帽§rをかぶった状態で、失われし真珠を見つけます。水場に隠されています...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oキャラクター クリエイター アイテム「水色のウーパールーパー ヘッド」を入手する	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=青のコウモリ チャレンジ	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=§l青のコウモリのニット帽§rをかぶった状態で、ミニゲーム§l「時の砂」§rで砂を 100 集めます。	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oキャラクター クリエイター アイテム「青のコウモリ ヘッド」を入手する	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=集めた砂: %s	###
+
+txt.ui.title.cyan_coyote_challenge=水色のコヨーテ チャレンジ	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=§l水色コヨーテのニット帽§rをかぶった状態で、ミニゲーム§l「時の砂」§rまたは§l「メルトダウン」§rでコインパイルを 75 枚集めます。	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oキャラクター クリエイター アイテム「水色のコヨーテ ヘッド」を入手する	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=集めたコインの山: %s	###
+
+txt.ui.title.green_gecko_challenge=緑のヤモリ チャレンジ	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=§l緑のヤモリのニット帽§rをかぶった状態で、ミニゲーム§l「グリッド ランナー」§rのチャレンジ「絵画を写せ」でブロックを 200 個ペイントします。	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oキャラクター クリエイター アイテム「緑のヤモリ ヘッド」を入手する	###
+txt.ui.progress.green_gecko_challenge=塗ったブロック: %s	###
+
+txt.ui.title.lime_llama_challenge=黄緑のラマ チャレンジ	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=§l黄緑のラマのニット帽§rをかぶった状態で、ギフトボックスを10 個配ります。ギフトボックスは、ハブ世界のおもちゃ売りから購入できます。	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oキャラクター クリエイター アイテム「黄緑のラマ ヘッド」を入手する	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=配ったギフト ボックス: %s	###
+
+txt.ui.title.orange_ocelot_challenge=オレンジのヤマネコ チャレンジ	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=§lオレンジのヤマネコのニット帽§rをかぶった状態で、100 のスピードブーストの上を走ってミニゲーム§l「エース レース」§rをクリアします。	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oキャラクター クリエイター アイテム「オレンジのヤマネコ ヘッド」を入手する	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=使用した移動速度上昇ブースト: %s	###
+
+txt.ui.title.pink_parrot_challenge=ピンクのオウム チャレンジ	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=§lピンクのオウムのニット帽§rをかぶった状態で、エリトラゲートを駆け抜けてミニゲーム§l「エース レース」§rを 25 回クリアします。	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oキャラクター クリエイター アイテム「ピンクのオウム ヘッド」を入手する	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=使用したエリトラ ゲート: %s	###
+
+txt.ui.title.purple_panda_challenge=紫のパンダ チャレンジ	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=§l紫のパンダのニット帽§rをかぶった状態で、ミニゲーム§l「グリッド ランナー」§rのチャレンジ「ケーキを焼こう」で 200 個の材料を配置します。	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oキャラクター クリエイター アイテム「紫のパンダ ヘッド」を入手する	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=入れた材料: %s	###
+
+txt.ui.title.red_rabbit_challenge=赤いウサギ チャレンジ	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=§l赤いウサギのニット帽§rをかぶった状態で、発射台の上を 50 回走りミニゲーム§l「エース レース」§rをクリアします。	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oキャラクター クリエイター アイテム「赤いウサギ ヘッド」を入手する	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=使用した発射台: %s	###
+
+txt.ui.title.yellow_yak_challenge=黄色のヤク チャレンジ	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=§l黄色のヤクのニット帽§rをかぶった状態で、ミニゲーム§l「メルトダウン」§rで 350 体の凍った敵を倒します。	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oキャラクター クリエイター アイテム「黄色のヤク ヘッド」を入手する	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=倒した凍結した敵: %s	###
+
+txt.ui.title.ace_race_challenge=エース レース チャレンジ	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=ミニゲーム §l「エース レース」§r のコースをクリアしよう!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§oエモート「群衆にキス」を入手する	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=グリッド ランナー チャレンジ	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=ミニゲーム§l「グリッド ランナー」§r をクリアしよう!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§oエモート「勝利」を入手する	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=メルトダウン チャレンジ	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=ミニゲーム §l「メルトダウン」§rで 3 番目の部屋まで生き残る	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§oエモート「はばたくニワトリ」を入手する	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=時の砂 チャレンジ	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=ミニゲーム§l「時の砂」§rに入って、2 分間生き残ってからうまく脱出しましょう!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§oエモート「勝利の側転」を入手する	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=謎の洞窟チャレンジ	###
+txt.ui.body1.cave_challenge=謎の洞窟で、色の塗られたパズル チャレンジ 7 つをすべてクリアする。	###
+txt.ui.reward.cave_challenge=§oキャラクター クリエイター アイテム「MCC 王冠」を入手する	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=完成したパズル: %s/7	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e    プレイヤーを待っています §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e    §fプレイヤーを待っています (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e    §eプレイヤーを待っています §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e    §eプレイヤーを待っています §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e    §eプレイヤーを待っています §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e    §eプレイヤーを待っています §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e    §eプレイヤーを待っています §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§e最大待機時間:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e    ゲームを待機中... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e    §fゲームを待機中... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e    ゲームを待機中... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e    ゲームを待機中... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e    ゲームを待機中... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e    ゲームを待機中... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e    ゲームを待機中... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eおよそ§f%s§e 分以下	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eおよそ§f%s§e 分以下	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aゲームの準備完了!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eテレポート中 §e§f%s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eテレポートしました!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§e準備はいいですか...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§e開始まで:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aゴー!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes=  イェンス と   アグネス	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace=  Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid=  Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt=  hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands=  HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=ヘルプ	###
+txt.title.dia.ender_cup=  エンダー カップ 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=カエルの王子様	###
+
+txt.title.start_game=ゲームを開始	###
+txt.title.join_queue=キューに参加	###
+txt.title.ace_race=  エース レース 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners=  グリッド ランナー 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown=  メルトダウン 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot=  時の砂 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby=  メイン ロビー 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=OK	###
+txt.button.yes=はい	###
+txt.button.no=いいえ	###
+txt.button.back=戻る	###
+txt.button.exit=終了	###
+txt.button.close=閉じる	###
+txt.button.start_game=ゲームを開始	###
+txt.button.join_queue=キューに参加	###
+txt.button.tutorial=チュートリアル	###
+txt.button.challenges_q=チャレンジ?	###
+txt.button.who_are_you_q=誰だ?	###
+txt.button.what_games_q=どんなゲーム?	###
+txt.button.cave_mystery_q=洞窟の謎?	###
+txt.button.go_to_portal=ポータルに移動	###
+txt.button.remove_hat=帽子を外す	###
+txt.button.no_hats=帽子はありません。ストアで買いましょう!	###
+txt.button.pet_frog=カエルを撫でる	###
+txt.button.talk_frog=カエルと話す	###
+txt.button.kiss_frog=カエルにキス	###
+txt.button.love_minecraft_q=Minecraft が好きですか?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=MCC を気に入ってますか?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=一番のプレイは?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=エース レース?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=ストリーミングを見る理由は?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=一番のアップデートは?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=グリッド ランナー?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=メルトダウン?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=一番の思い出は?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=時の砂?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=次へ	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=こんにちは! 私は      Jens です!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.jagnes.1_0.dia2=そして、私は   Agnes です!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.jagnes.1_0.dia3=MCC Minecraft 15 周年記念パーティーへようこそ!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=Noxcrew と一緒に MC チャンピオンシップのミニゲームをプレイします!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=探索し、ミニゲームをプレイし、洞窟の謎を解き明かしましょう!	###
+txt.jagnes.1_0.dia6=ポータルへの道をたどって、ミニゲームを試してみてください!	###
+txt.jagnes.1_0.dia6_1=まず、ポータルへの道をたどって、ミニゲームを試してみてください!	###
+txt.jagnes.1_0.dia6_2=まずは浮かぶ     王冠をたどってポータルに行き、ミニゲームに挑戦しましょう！	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=ポータルを旅して、MC チャンピオンシップのミニゲームをプレイします。	###
+txt.jagnes.2_0.dia2=ミニゲームは、§1エースレース§r、§1グリッドランナー§r、§1メルトダウン§r、§1時の砂§rです!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=それらを試してみて、お気に入りを選んでください!	###
+
+##What games?
+txt.jagnes.2_1.dia1=ポータルを旅して、MC チャンピオンシップのミニゲームをプレイします。	###
+txt.jagnes.2_1.dia2=§1エース レース§rの雲に行って、空を駆け抜けましょう!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=§1グリッド ランナー スタジアム§rを訪れて、チャレンジを完了してください!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=§1メルトダウン§rに入り、ゾンビや溶ける部屋から生き延びましょう!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=§1時の砂§rの神殿を冒険して、宝の山を発見してください!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=ぜひ試してみて、お気に入りを選んでください!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1=    噂によると、山の高地に神秘的な洞窟があるそうです。	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=絵の     パズルがあるそうです。解いてみましょう!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=洞窟を見つけて、何が出てくるか見てみましょう!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=浮かぶ     王冠をたどって     §6エース レース§r     ミニゲーム ポータルへ!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=浮かぶ     王冠をたどって     §6グリッド ランナー§r     ミニゲーム ポータルへ!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=浮かぶ     王冠をたどって     §6メルトダウン§r     ミニゲーム ポータルへ!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=浮かぶ     王冠をたどって     §6時の砂§r     ミニゲーム ポータルへ!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=お店を見つけました!	###
+txt.jagnes.help_shop2=ミニゲームで獲得したコインでアイテムを購入しましょう!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=    トロフィー ルームを見つけました!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.jagnes.help_trophy2=完了したチャレンジのトロフィーや報酬をチェックしましょう!	###
+txt.jagnes.help_trophy3=写真を撮って進捗状況を投稿しましょう!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=ケーキ ルームを見つけました!	###
+txt.jagnes.help_cake2=ケーキ キャンドルの実績を表示します。達成して特別報酬を獲得しましょう!	###
+txt.jagnes.help_cake3=写真を撮って進捗状況を共有しましょう!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=ミニゲーム ポータルを見つけました!	###
+txt.jagnes.help_portal2=ポータルを通ってミニゲーム世界へ!	###
+txt.jagnes.help_portal3=さあ、通り抜けましょう!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=よし、    §6エース レース§r  ポータルを見つけました!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=雲の上に旅立ち大空を駆け抜けましょう!	###
+txt.jagnes.help_ace_race_portal3=さあ、通り抜けましょう!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=あっ、これは…     §6グリッド ランナー§r ポータルです!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=スタジアムを訪問してチャレンジルームをクリアしましょう!	###
+txt.jagnes.help_grid_runners_portal3=さあ、通り抜けましょう!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=ああ、    §6メルトダウン§r  ポータルを見つけましたね!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=建物に入ってゾンビや溶ける部屋から生き延びましょう!	###
+txt.jagnes.help_meltdown_portal3=さあ、通り抜けましょう!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=よし、    §6時の砂§r  ポータルを見つけました!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=古代の寺院に乗り込んで宝の山を発見しましょう!	###
+txt.jagnes.help_sot_portal3=さあ、通り抜けましょう!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=わお、    謎の洞窟  を見つけましたよ!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=日替わりで現れるパズルを解くことができますか?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=いいですね、アクティビティーを見つけましたよ!	###
+txt.jagnes.help_activity2=一緒にゲームをして遊びませんか?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lMinecraft が好きな理由は?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lMCC での一番の思い出は?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lMCC での一番のプレイは?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lエースレースの好きなところは?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lエンダーカップの配信を見る理由は?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=こんにちは！私は §1Seapeekay§r です。§1エースレース§rの空へようこそ！	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=ブーストとパッドを活用して、ゴール ラインまでレースしよう!	###
+txt.creator_ace.1_0.dia3=詳細については、「チュートリアル」を押してください。	###
+txt.creator_ace.1_0.dia4=または、プレイする準備ができたら、「ゲームの開始」ボタンを押してください!	###
+txt.creator_ace.2_0.dia1=§1エースレース§rはまるで雲の上を歩くようなものです!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=できるだけ速くコースを走り抜けてゴールラインに到達しよう!	###
+txt.creator_ace.2_0.dia3=ジャンプ パッド、発射台、移動速度上昇パッド、エリトラ ゲートを使用すると、より速く進めます!	###
+txt.creator_ace.2_0.dia4=ゴールで待っています!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=こんにちは！私は §1Seapeekay§r といって、競技と楽しみのバランスを見つけるのが大好きな Minecraft 配信者です。	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Twitch で「Seapeekay」と検索して私を見つけてくださいね。	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=このゲームはまさにオープンワールドなサンドボックスで、私にとってはやりたいことを何でもできるところが重要です。	###
+txt.creator_ace.3_1.dia2=思いのままにクリエイティブになることができる。正しい遊び方はありません。	###
+txt.creator_ace.3_1.dia3=それに今いる友達はほとんど全員、ゲームをプレイして出会いました。	###
+txt.creator_ace.3_1.dia4=だから私の人生で最も影響力のあるゲームだと思います。	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=私のお気に入りの MCC の思い出は、ついに初勝利を掴んだ MCC 5 です！	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=それにコミュニティが何と言おうと、間違いなく強すぎるチームではなかったので、勝利にちゃんと価値がありました。	###
+txt.creator_ace.3_2.dia3=でも Minecraft が最高に得意ってわけじゃなかったので、MCC が上達のきっかけになってくれました。	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=そして今、実際かなり上手になったので、本当にうまく成長の波に乗っています。	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=MCC での私の一番のプレイは、間違いなく§1エースレース§rでようやく勝てた時です。	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=長い間、コミュニティから「ミスター エース レース」と呼ばれていましたが、実は一度も勝ったことがありませんでした。	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=だから、ついに達成したその日は、私の記憶に永遠に刻まれるような出来事なのです。	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=§1エースレース§rの好きなところは、非常に多くの、多種多様な方法でコースを完走できる点です。	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=どんなに異なるスキルレベルの人も遊びやすい。	###
+txt.creator_ace.3_4.dia3=速い方法もあれば... 難しい方法もあって...	###
+txt.creator_ace.3_4.dia4=けれど、重要なことは誰もがゴールを迎えるところ。	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=エンダーカップの私の POV を見てくれたら、間違いなく充実した時を過ごせ... たくさん楽しめる... そういった良いバランスの意味がわかるはずです。	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=それでも、やっぱり勝ちたいものです！	###
+txt.creator_ace.3_5.dia4=だから、それが競技の面白いところであり、一番のポイントだと思います。	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lお気に入りの Minecraft アップデートは?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lMCC の一番の魅力は?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lグリッドランナーの一番の魅力は?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lエンダーカップの配信を見る理由は?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=こんにちは！私は §1Smajor§r です。§1グリッド ランナー§rコースにようこそ！	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=各部屋のチャレンジをできるだけ多くクリアして、ハイスコアを目指そう!	###
+txt.creator_grid.1_0.dia3=詳細については、「チュートリアル」を押してください。	###
+txt.creator_grid.1_0.dia4=または、プレイする準備ができたら「キューに参加」ボタンを押してください！	###
+txt.creator_grid.2_0.dia1=§1グリッドランナー§rは、 4 つの異なる部屋を備えたチャレンジガントレットです!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=各部屋には新しいチャレンジがあり、次の部屋に進む前にクリアする必要があります。	###
+txt.creator_grid.2_0.dia3=各部屋の制限時間は 1 分なので、急いでください!	###
+txt.creator_grid.3_0.dia1=私は §1SMajor§r と言います！	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Minecraft を中心に活動するバラエティ ストリーマーです！	###
+txt.creator_grid.3_0.dia3=よければ、Twitch で検索してみてください。	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=私のお気に入りのアプデは「アクアティック アップデート」です！	###
+txt.creator_grid.3_1.dia2=海のバイオームに追加されたものがとても気に入っていますし、探索がもっと楽しくなったように感じました。	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=MCC で一番好きなのは、Minecraft やコンテンツ制作のさまざまな分野のクリエイターたちが、イベントのためにチームとして集まってプレイするところを見られることです。	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=今まで出会ったことのない人たちがお互いを知り、友達になっていく様を見るのが大好きです。	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=§1グリッド ランナー§rで私が気に入っているのは、チームに焦点を当てたゲームであるという所です。	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=そして、チームがよく整備された機械のように稼働して課題をクリアすることほど、エキサイティングなことはありません。	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=あの雰囲気は素晴らしいものになりますよ！	###
+txt.creator_grid.3_4.dia3=MCC をストリーミングしているとき、私の目標はチームが可能な限り最高の時間を過ごすことです！	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=たとえ私たちが最下位になっていたとしてもです！	###
+
+txt.creator_grid.4_0.dia1=チャレンジは「野獣を倒せ」「絵画を写せ」「ケーキを焼け」「スプリント」の 4 種類です!	###
+txt.creator_grid.4_0.dia2=「野獣を倒せ」では、部屋にいるすべてのモンスターを倒す必要があります。	###
+txt.creator_grid.4_0.dia3=「絵画を写せ」では、部屋にある絵筆とバケツを使用して絵画を写します。	###
+txt.creator_grid.4_0.dia4=「ケーキを焼け」では、ケーキを作るために必要な材料をすべて集めて、中央のケーキマシンに入れます!	###
+txt.creator_grid.4_0.dia5=「スプリント」では、ゴール ラインを目指して走る必要があります!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lお気に入りの Minecraft アップデートは?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lMinecraft の一番の魅力は?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lMCC での一番の思い出は?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lメルトダウンの一番の魅力は?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lEnder Cup の配信を見る理由は?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=こんにちは！私は §1hannahxxrose§r です。§1メルトダウン§r施設へようこそ！	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=メルトダウンが始まるまでそれぞれの部屋でサバイバル! モンスターを倒すと追加ポイントがもらえます。	###
+txt.creator_melt.1_0.dia3=詳細については、「チュートリアル」を押してください。	###
+txt.creator_melt.1_0.dia4=または、プレイする準備ができたら「キューに参加」ボタンを押してください!	###
+txt.creator_melt.2_0.dia1=§1メルトダウン§rは、文字通りメルトダウン寸前の部屋がある施設です!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=次の部屋への扉が開くまで、各部屋で生き残らなければなりません。	###
+txt.creator_melt.2_0.dia3=モンスターを凍らせてパンチすると、追加ポイントを獲得できます!	###
+txt.creator_melt.2_0.dia4=コインの山を拾うと、より多くの追加ポイントを獲得できます!	###
+txt.creator_melt.3_0.dia1=私は §1hannahxxrose§rと言います。Minecraft のコンテンツクリエーターです！	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=私の配信を見ていただければ、他所に負けない内容に加え、良い雰囲気をお楽しみいただけます！	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=私のお気に入りの Minecraft のアップデートは「Trails & Tales (旅路と物語)」です。桜のバイオームが追加されましたからね！	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=Minecraft で一番好きなのは... もちろん PvP です！	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=MCC での一番の思い出は、水色のコヨーテと一緒に MCC プライド 2024 で優勝したことです！	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=§1メルトダウン§rの好きなところは、ゲームの競技性とチームワークです。	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=MCC で私のプレーを見れば、チームワークとクールな PvP の瞬間がたくさん見られると思います。	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=私の Twitch チャンネルで MCC でのプレイを見ることができますよ！	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lなぜ Minecraft が大切なのですか?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lMinecraft の一番古い思い出は?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lMCC の一番の思い出は?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§l時の砂の一番の魅力は?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lEnder Cup の配信を見る理由は?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=こんにちは！私は §1HBomb94§r です。§1時の砂§rの神殿へようこそ！	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=あなたの目標は制限時間内に神殿を探索してできるだけ多くのコインを見つけることです!	###
+txt.creator_sands.1_0.dia3=「チュートリアル」ボタンが見えますか? クリックして、詳細を確認してください。	###
+txt.creator_sands.1_0.dia4=または、プレイする準備ができたら、[ゲームを開始] ボタンを押してください! 	###
+txt.creator_sands.2_0.dia1=§1時の砂§rは、できるだけ多くのコインを手に入れることが目的であるダンジョンです!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=ダンジョンには、モンスター、コイン、チェストの鍵、防具、さらには制限時間を延長できる追加の砂があります。	###
+txt.creator_sands.2_0.dia3=最初は 2 分間で、砂 1 つごとに 10 秒が追加されますが、注意してください。	###
+txt.creator_sands.2_0.dia4=ダンジョン内で死んだり、閉じ込められたりした場合は、集めたコインの一部を使って脱出しなければなりません。	###
+txt.creator_sands.3_0.dia1=私は§1HBomb94§rです!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=私は Twitch の配信者です。こちらから私を見つけてくださいね:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=私にとって Minecraft は、大人になってからずっと超重要なものです。	###
+txt.creator_sands.3_1.dia2=私は今 30 歳だけど、動画を上げ始めたのは...18 の頃だったかな？	###
+txt.creator_sands.3_1.dia3=12 年くらい経ったんですね？	###
+txt.creator_sands.3_1.dia4=ああ... 年をとっちゃったね！	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Minecraft に関する私の一番古い記憶は、実は初めて作った世界のことです。	###
+txt.creator_sands.3_2.dia2=丸石と 1 枚のオークドアだけでできた、ひどい外観の城を建てたんです。	###
+txt.creator_sands.3_2.dia3=それで私はやられてしまったんですが、スポーン地点が問題だとは知りませんでした...	###
+txt.creator_sands.3_2.dia4=それに、座標というものを知らなかった......	###
+txt.creator_sands.3_2.dia5=だから、その世界で永遠に見失ったのです。見つけようと何時間も費やしたけど、結局見つからず終い。	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=それは実際にはとても簡単です！	###
+txt.creator_sands.3_3.dia2=MCC 9 でサバイバルゲームが終わった瞬間、スコアボードを見たのを覚えています。	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=そしてチームに向かって「あのリードを見てみろ！」と叫んでました。	###
+txt.creator_sands.3_3.dia4=今でも鳥肌が立ちますね。	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=§1時の砂§rで一番好きなのは、みんながパニックに陥り始める瞬間です。	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=みんながパニックになる瞬間が最も面白いときで、みんなパニクってお互いに怒鳴り合い始める。	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=それは簡単です！	###
+txt.creator_sands.3_5.dia3=私たちのチームは最高の雰囲気を持っているし、どんなチーム戦も簡単に支配できます。	###
+txt.creator_sands.3_5.dia4=PvP ゲームやパルクールはちょっとね…	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=トロフィーの部屋へようこそ！	###
+txt.trophy_help.1_0.dia2=各キャンドルはきみがクリアするチャレンジです！	###
+txt.trophy_help.1_0.dia3=キャンドルに§6インタラクト§rすると、チャレンジと進捗状況を確認できます。	###
+txt.trophy_help.1_0.dia4=すべてのチャレンジをクリアできますか？	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=§1Ender Cup§r にご参加ください! 配信はこちら: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Minecraft の最大のコンテンツ クリエーター 総勢 40 人が 10 チームに分かれて 8 つの異なるミニゲームで戦うのをご覧ください!	###
+txt.ender_cup.1_0.dia3=7 月 28 日 02:00 (日本時間) に開催される出場者のライブ配信を視聴しましょう!	###
+
+txt.ender_cup.ad1=§1Ender Cup§r にご参加ください! 配信はこちら: https://www.twitch.tv/minecraft	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Minecraft の最大のコンテンツ クリエーター 総勢 40 人が 10 チームに分かれて 8 つの異なるミニゲームで戦うのをご覧ください!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§o王冠をかぶったカエルが期待の眼差しであなたを見つめています。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§o何をしたいですか？	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oカエルを撫でようと手を伸ばすと、カエルは恐怖で後ずさりします。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oカエルは眉をひそめ、王冠を整えます。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oあなたは、長いスピーチでいろいろな事を話し始めます...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oパーティーでの時間、さまざまなゲーム、謎の洞窟など...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oしかし、カエルは興味がないようです。	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=あなたは私の呪いを解いてくれた！ありがとう！	###
+txt.frog_prince.2_0.dia2=私はここに座って誰かがキスをしてくれるのを§oずっと§r待っていた...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=多くの人たちがずんずん進んでいくし！	###
+txt.frog_prince.2_0.dia4=中には私の王冠を奪おうとする者もいる。	###
+
+##Puzzle Helper
+txt.puzzle_help.title=    パズル ヘルパー 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=すべての     パズルを解いて、思いついたぞ!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=解決のお手伝いをしましょうか?	###
+txt.puzzle_help.landing.dia3=下のボタンで壁を選んで、各パズルのヒントを手に入れてください!	###
+txt.button.day1=1 日目	###
+txt.button.day2=2 日目	###
+txt.button.day3=3 日目	###
+txt.button.day4=4 日目	###
+txt.button.day5=5 日目	###
+txt.button.day6=6 日目	###
+txt.button.day7=7 日目	###
+txt.button.wall1=左の壁	###
+txt.button.wall2=中央の壁	###
+txt.button.wall3=右の壁	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=私が最初に公開した絵画のいくつかです!	###
+txt.puzzle_help.wall1.dia2=3 日かかりました!	###
+txt.puzzle_help.wall1.dia3=どのパズルのヒントが必要ですか?	###
+
+txt.puzzle_help.wall2.dia1=ああ、真ん中の絵ですね。	###
+txt.puzzle_help.wall2.dia2=その時、アイデアが浮かびました!	###
+txt.puzzle_help.wall2.dia3=どのパズルのヒントが必要ですか?	###
+
+txt.puzzle_help.wall3.dia1=最後に見せた絵です。	###
+txt.puzzle_help.wall3.dia2=苦労したけれど、何とかここまでたどり着きました!	###
+txt.puzzle_help.wall3.dia3=どのパズルのヒントが必要ですか?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§o王冠のマークの上で左右に揺れる手...	###
+txt.puzzle_help_day1.dia2=赤い背景の大きな王冠を見つけて、その上に立って手を振ろう!	###
+
+txt.puzzle_help_day2.dia1=§o宝石で飾られた石像の顔の前でクラッカー...	###
+txt.puzzle_help_day2.dia2=目玉に宝石の入った石像を見つけて、その前でクラッカーを鳴らそう！	###
+
+txt.puzzle_help_day3.dia1=§oらせん状に流れ落ちる大きな水場...	###
+txt.puzzle_help_day3.dia2=大きな水たまり... つまり湖の底に秘密が隠されているはず!	###
+
+txt.puzzle_help_day4.dia1=§oまばゆい緑の観客の前でミラーボール...	###
+txt.puzzle_help_day4.dia2=まばゆい緑の観客の前にミラーボール ファインドを置こう！	###
+
+txt.puzzle_help_day5.dia1=§o黒と黄色の縞模様の四角い穴、そして H の上に一切れのケーキ...	###
+txt.puzzle_help_day5.dia2=黒と黄色の縞模様の入口を見つけよう！その先には H があるはず、そしてケーキを食べよう！	###
+
+txt.puzzle_help_day6.dia1=§o凍り付いた山頂で花火...	###
+txt.puzzle_help_day6.dia2=一番高い山頂に登って花火を打ち上げよう！	###
+
+txt.puzzle_help_day7.dia1=§o扉、拍手、冠をかぶったカエルの王子様...	###
+txt.puzzle_help_day7.dia2=扉を見つけ、その前で拍手しよう! そうするとカエルの王子様に会えるはず。	###
+txt.puzzle_help_day7.dia3=でもカエルの王子様に会ってどうするのかって?	###
+txt.puzzle_help_day7.dia3_1=カエルの王子様とキスするという話を聞いたことはあるけど、それはさすがに関係ないはず...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=絵画を見に来たの?     行の各     は、新しい絵が公開されていることを示しています。	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=最初の 1 枚は手を振っているように見えますが、よくわかりません...	###
+txt.puzzle_lore_day1.dia3=すべて明らかにすれば、アイデアが浮かぶでしょう。	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=絵画を見に来たの?     行の各     は、新しい絵が公開されていることを示しています。	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=顔とパーティー ポッパーを公開しました。	###
+txt.puzzle_lore_day2.dia3=しかし、それらが何を意味するのかはまだわかりません...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=絵画を見に来たの?     行の各     は、新しい絵が公開されていることを示しています。	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=最新の絵は、素晴らしいプールまたは水しぶきのようですね?	###
+txt.puzzle_lore_day3.dia3=確定するにはもっと時間が必要です...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=絵画を見に来たの?     行の各     は、新しい絵が公開されていることを示しています!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=前の絵には、ディスコ ボールと人が描かれていましたね?	###
+txt.puzzle_lore_day4.dia3=どれもとても奇妙でミステリアス...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=絵画を見に来たの?     行の各     は、新しい絵が公開されていることを示しています!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=最後の 1 枚は不可解です。黒と黄色の円、ケーキと H の文字?	###
+txt.puzzle_lore_day5.dia3=おそらく、スラッシュはそれらを分けているのでしょう...	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=絵画を見に来たの?     行の各     は、新しい絵が公開されていることを示しています!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=昨日の絵には、キラキラした数字がありました! それに山!	###
+txt.puzzle_lore_day6.dia3=魅力的なもの!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=ついに出来た! 全ての     絵画が公開されました!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=この最後の絵は最も混乱しています。	###
+txt.puzzle_lore_day7.dia3=手と手を結んでいるのか? それとも拍手?	###
+txt.puzzle_lore_day7.dia4=それから、カエルとドア...	###
+txt.puzzle_lore_day7.dia5=アイデアをまとめるのに時間が必要です。	###
+txt.puzzle_lore_day7.dia6=明日! 謎を解きます!	###

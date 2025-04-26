@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.ui_popup",
+      "textures": {
+        "default": "textures/entity/ui_popup"
+      },
+      "geometry": {
+        "default": "geometry.ui_popup"
+      },
+      "materials": {
+        "default": "base",
+        "alpha": "transparency"
+      },
+      "animations": {
+        "ui": "animation.ui.popup"
+      },
+      "scripts": {
+        "animate": [
+          "ui"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

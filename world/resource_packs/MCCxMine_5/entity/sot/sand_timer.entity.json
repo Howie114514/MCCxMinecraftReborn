@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:sand_timer",
+      "textures": {
+        "default": "textures/entity/n/sot/sand_timer"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.sand_timer"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "timer": "animation.n.sand_timer.timer"
+      },
+      "scripts": {
+        "animate": [
+          "timer"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

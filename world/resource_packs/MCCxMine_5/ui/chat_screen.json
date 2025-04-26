@@ -1,0 +1,19 @@
+{
+    "messages_text": {
+        "$flag_subtile": "§z§v",
+        "visible": false,
+        "bindings": [
+            {
+                "binding_name": "#text"
+            },
+            {
+                "binding_name": "#chat_visible"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "((((#text - $flag_subtile) = #text) or (not ((#text - '§n§o§x') = #text))) and (#chat_visible))",
+                "target_property_name": "#visible"
+            }
+        ]
+    }
+}

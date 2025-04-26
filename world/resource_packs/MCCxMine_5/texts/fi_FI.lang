@@ -1,0 +1,1094 @@
+## Meta
+pack.name=MCC x Minecraftin 15. vuosipäivän RP	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=Resurssipaketti MCC x Minecraftin 15. vuosipäivän tapahtumaan.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=MC-MESTARUUSKILPAILUN MINIPELIT -TAPAHTUMA MINECRAFTISSA!	###
+txt.event_overview.2=Noxcrew tuo MC-mestaruuskilpailun parhaat puolet Bedrock Editioniin! Juhli koko päivä ja ottele minipeleissä, jotka on suunniteltu laittamaan taitosi koetukselle aina parkourista hirviöitä vastaan taistelemiseen.	###
+txt.event_overview.3=Hanki 15 ilmaista ulkoasuesinettä. Ja kiva uusi viitta!	###
+txt.event_overview.4=Tartu miekkoihisi –  sekasorto odottaa!	###
+txt.event_overview.5=Tapahtuma alkaa täällä 22.7. klo 20.00 Suomen aikaa (10.00 PST), ja kestää 5.8. klo 02.00 saakka	###
+
+##VANILLA
+item.warped_sign.name=Luolakyltti 	###
+tile.warped_standing_sign.name=Luolakyltti 	###
+tile.warped_wall_sign.name=Luolakyltti 	###
+tile.prismarine.dark.name=Metallikuutio 	###
+tile.stone_slab2.prismarine.dark.name=Metallilaatta 	###
+tile.dark_prismarine_stairs.name=Metalliportaat 	###
+
+##INTERACT TEXTS
+action.interact.open=Avaa	###This is meant as a verb, action.
+action.interact.take=Ota	###This is meant as a verb, action.
+action.interact.grab=Nappaa	###This is meant as a verb, action.
+action.interact.pick_up=Poimi	###This is meant as a verb, action.
+action.interact.use=Käytä	###This is meant as a verb, action.
+action.interact.change_color=Vaihda väriä	###This is meant as a verb, action.
+action.interact.deposit=Deposit	###This is meant as a verb, action.
+action.interact.interact=Käytä	###This is meant as a verb, action.
+action.interact.trash=Roska	###To throw away or "trash" an item
+action.interact.eat=Syö	###To eat something, like a food
+action.interact.drink=Juo	###To drink something, like a soda
+action.interact.paint=Maali	###The verb to paint.
+action.interact.gift=Lahjoita pelaajalle	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=Kauppa	###The verb, "to shop" or "to browse"
+action.interact.decorate=Sisusta	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=Poistu napauttamalla hiipimistä	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=Poistu napauttamalla hiipimistä	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=Poistu painamalla :_input_key.sneak:	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§oJoka päivä paljastetaan uusi maalaus.	###
+txt.sign.cave2=§oRatkaise kaikki seitsemän ja kerää palkinto!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=Jäädytysjousi	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=Jäädytysjousi	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=Rauta-avain	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=Kulta-avain	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=Timanttiavain	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=Horniittiavain	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=Tyhjä sivellin	###
+item.noxcrew.ft:paintbrush_green.name=Vihreä sivellin	###
+item.noxcrew.ft:paintbrush_yellow.name=Keltainen sivellin	###
+item.noxcrew.ft:paintbrush_blue.name=Sininen sivellin	###
+item.noxcrew.ft:paintbrush_red.name=Punainen sivellin	###
+item.noxcrew.ft:paintbrush_white.name=Valkoinen sivellin	###
+item.noxcrew.ft:paintbrush_black.name=Musta sivellin	###
+item.noxcrew.ft:paintbrush_brown.name=Ruskea sivellin	###
+item.noxcrew.ft:paintbrush_purple.name=Violetti sivellin	###
+item.noxcrew.ft:beanie_red.name=Red Rabbits-pipo	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=Orange Ocelots-pipo	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=Yellow Yaks-pipo	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=Lime Llamas-pipo	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=Green Geckos-pipo	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=Aqua Axolotls-pipo	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=Cyan Coyotes-pipo	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=Blue Bats-pipo	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=Purple Panda-pipo	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=Pink Parrots-pipo	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=Bilehattu	###
+item.noxcrew.ft:hat_propeller.name=Propellihattu	###
+item.noxcrew.ft:hat_crown_cake.name=Kakkukruunu	###
+item.noxcrew.ft:hat_birthday_present.name=Syntymäpäivälahjahattu	###
+item.noxcrew.ft:hat_jester.name=Narrin hattu	###
+item.noxcrew.ft:hat_chicken_jockey.name=Kanaratsastajahattu	###
+item.noxcrew.ft:hat_boombox.name=Mankkahattu	###
+item.noxcrew.ft:foam_finger.name=Vaahtomuovisormi	###
+item.noxcrew.ft:balloon_animal.name=Ilmapalloeläin	###
+item.noxcrew.ft:big_bubble_blower.name=Jättikuplapuhallin	###
+item.noxcrew.ft:silly_horn.name=Hassu sarvi	###
+item.noxcrew.ft:party_popper.name=Paukkuserpentiini	###
+item.noxcrew.ft:confetti_tag_prime.name=Konfettimerkki	###
+item.noxcrew.ft:confetti_tag_leftover.name=Konfettimerkki	###
+item.noxcrew.ft:pizza_box.name=Pizzalaatikko	###
+item.noxcrew.ft:celebration_fireworks.name=Syntymäpäivän ilotulitus	###
+item.noxcrew.ft:player_gift_giving.name=Lahjapaketti	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=Lahjalaatikko	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=Diskopallo	###
+item.noxcrew.ft:beach_ball.name=Rantapallo	###
+item.noxcrew.ft:balloon_helium.name=Heliumpallo	###
+item.noxcrew.ft:leave_game.name=§6Poistu pelistä	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=Pizzaviipale	###
+item.noxcrew.ft:mcc_burger.name=Maukas hampurilainen	###
+item.noxcrew.ft:anniversary_hot_dog.name=Maukas hot dog	###
+item.noxcrew.ft:party_cupcake.name=Kuppikakku	###
+item.noxcrew.ft:party_cake.name=Kakkupala	###
+item.noxcrew.ft:party_chips.name=Sipsikulho	###
+item.noxcrew.ft:party_cookie.name=Keksi	###
+item.noxcrew.ft:party_soda.name=Poreileva limsa	###
+item.noxcrew.ft:cotton_candy.name=Hattara	###
+item.noxcrew.ft:popcorn.name=Popcorn	###
+item.noxcrew.ft:super_wrap.name=Terveellinen wrappi	###
+item.noxcrew.ft:cosmetic_chest.name=Kosmeettinen arkku	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=Teleporttikartta	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=Haasteluettelo	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=Kananmuna	###
+item.noxcrew.ft:milk_bucket.name=Maitoämpäri	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=Jäädytysjousi	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=Jäädytysjousi	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=Rauta-avain	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=Kulta-avain	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=Timanttiavain	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=Horniittiavain	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=Tyhjä sivellin	###
+item.noxcrew.ft:paintbrush_green=Vihreä sivellin	###
+item.noxcrew.ft:paintbrush_yellow=Keltainen sivellin	###
+item.noxcrew.ft:paintbrush_blue=Sininen sivellin	###
+item.noxcrew.ft:paintbrush_red=Punainen sivellin	###
+item.noxcrew.ft:paintbrush_white=Valkoinen sivellin	###
+item.noxcrew.ft:paintbrush_black=Musta sivellin	###
+item.noxcrew.ft:paintbrush_brown=Ruskea sivellin	###
+item.noxcrew.ft:paintbrush_purple=Violetti sivellin	###
+item.noxcrew.ft:beanie_red=Red Rabbits-pipo	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=Orange Ocelots-pipo	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=Yellow Yaks-pipo	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=Lime Llamas-pipo	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=Green Geckos-pipo	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=Aqua Axolotls-pipo	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=Cyan Coyotes-pipo	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=Blue Bats-pipo	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=Purple Pandas-pipo	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=Pink Parrots-pipo	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=Bilehattu	###
+item.noxcrew.ft:hat_propeller=Propellihattu	###
+item.noxcrew.ft:hat_crown_cake=Kakkukruunu	###
+item.noxcrew.ft:hat_birthday_present=Syntymäpäivälahjahattu	###
+item.noxcrew.ft:hat_jester=Narrin hattu	###
+item.noxcrew.ft:hat_chicken_jockey=Kanaratsastajahattu	###
+item.noxcrew.ft:hat_boombox=Mankkahattu	###
+item.noxcrew.ft:foam_finger=Vaahtomuovisormi	###
+item.noxcrew.ft:balloon_animal=Ilmapalloeläin	###
+item.noxcrew.ft:big_bubble_blower=Jättikuplapuhallin	###
+item.noxcrew.ft:silly_horn=Hassu sarvi	###
+item.noxcrew.ft:party_popper=Paukkuserpentiini	###
+item.noxcrew.ft:confetti_tag_prime=Konfettimerkki	###
+item.noxcrew.ft:confetti_tag_leftover=Konfettimerkki	###
+item.noxcrew.ft:pizza_box=Pizzalaatikko	###
+item.noxcrew.ft:celebration_fireworks=Syntymäpäivän ilotulitus	###
+item.noxcrew.ft:player_gift_giving=Lahjapaketti	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=Lahjalaatikko	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=Diskopallo	###
+item.noxcrew.ft:beach_ball=Rantapallo	###
+item.noxcrew.ft:balloon_helium=Heliumpallo	###
+item.noxcrew.ft:leave_game=§6Poistu pelistä	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=Pizzaviipale	###
+item.noxcrew.ft:mcc_burger=Maukas hampurilainen	###
+item.noxcrew.ft:anniversary_hot_dog=Maukas hot dog	###
+item.noxcrew.ft:party_cupcake=Kuppikakku	###
+item.noxcrew.ft:party_cake=Kakkupala	###
+item.noxcrew.ft:party_chips=Sipsikulho	###
+item.noxcrew.ft:party_cookie=Keksi	###
+item.noxcrew.ft:party_soda=Poreileva limsa	###
+item.noxcrew.ft:cotton_candy=Hattara	###
+item.noxcrew.ft:popcorn=Popcorn	###
+item.noxcrew.ft:super_wrap=Terveellinen wrappi	###
+item.noxcrew.ft:cosmetic_chest=Kosmeettinen arkku	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=Teleporttikartta	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=Haasteluettelo	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=Kananmuna	###
+item.noxcrew.ft:milk_bucket=Maitoämpäri	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=Lisävauhtikuutio	###
+tile.noxcrew.ft:launch_pad.name=Laukaisualustakuutio	###
+tile.noxcrew.ft:jump_pad.name=Tehohyppykuutio	###
+tile.noxcrew.ft:painting_green.name=Vihreä kuutio	###
+tile.noxcrew.ft:painting_yellow.name=Keltainen kuutio	###
+tile.noxcrew.ft:painting_blue.name=Sininen kuutio	###
+tile.noxcrew.ft:painting_red.name=Punainen kuutio	###
+tile.noxcrew.ft:painting_white.name=Valkoinen kuutio	###
+tile.noxcrew.ft:painting_black.name=Musta kuutio	###
+tile.noxcrew.ft:painting_brown.name=Ruskea kuutio	###
+tile.noxcrew.ft:painting_purple.name=Violetti kuutio	###
+tile.noxcrew.ft:elytra_icon.name=Liitosiipiporttikuutio	###
+tile.noxcrew.ft:audience_member_oof.name=Vavahtava yleisön jäsen	###
+tile.noxcrew.ft:audience_member_angry.name=Vihainen yleisön jäsen	###
+tile.noxcrew.ft:audience_member_joy.name=Hilpeä yleisön jäsen	###
+tile.noxcrew.ft:audience_member_happy.name=Iloinen yleisön jäsen	###
+tile.noxcrew.ft:audience_member_unimpressed.name=Välinpitämätön yleisön jäsen	###
+tile.noxcrew.ft:audience_member_unsure.name=Epävarma yleisön jäsen	###
+tile.noxcrew.ft:audience_member_starstruck.name=Ihastunut yleisön jäsen	###
+tile.noxcrew.ft:cake_centre.name=Kakun keskus	###
+tile.noxcrew.ft:cake_edge.name=Kakun reuna	###
+tile.noxcrew.ft:cake_cherry.name=Kakun kirsikka	###
+tile.noxcrew.ft:window_spruce.name=Kuusi-ikkuna	###
+tile.noxcrew.ft:window_oak.name=Tammi-ikkuna	###
+tile.noxcrew.ft:iron_bars.name=Suorat rautatangot	###
+tile.noxcrew.ft:iron_bars_h.name=Puolikkaat rautatangot	###
+tile.noxcrew.ft:iron_bars_c.name=Rautatankojen kulma	###
+tile.noxcrew.ft:castle_pink.name=Vaaleanpunainen linnan terrakotta 	###
+tile.noxcrew.ft:sot_flower.name=Syttynyt soihtuinkivääriö 	###
+tile.noxcrew.ft:metal_rigging_v.name=Vaakasuora metallitakila	###
+tile.noxcrew.ft:metal_rigging_h.name=Pystysuora metallitakila	###
+tile.noxcrew.ft:modern_light.name=Moderni valo	###
+tile.noxcrew.ft:rope.name=Köysikuutio	###
+tile.noxcrew.ft:hieroglyph_1_a.name=Luolapulmapäivä 1, ylävasen	###
+tile.noxcrew.ft:hieroglyph_1_b.name=Luolapulmapäivä 1, yläoikea	###
+tile.noxcrew.ft:hieroglyph_1_c.name=Luolapulmapäivä 1, alavasen	###
+tile.noxcrew.ft:hieroglyph_1_d.name=Luolapulmapäivä 1, alaoikea	###
+tile.noxcrew.ft:hieroglyph_2_a.name=Luolapulmapäivä 2, ylävasen	###
+tile.noxcrew.ft:hieroglyph_2_b.name=Luolapulmapäivä 2, yläoikea	###
+tile.noxcrew.ft:hieroglyph_2_c.name=Luolapulmapäivä 2, alavasen	###
+tile.noxcrew.ft:hieroglyph_2_d.name=Luolapulmapäivä 2, alaoikea	###
+tile.noxcrew.ft:hieroglyph_3_a.name=Luolapulmapäivä 3, ylävasen	###
+tile.noxcrew.ft:hieroglyph_3_b.name=Luolapulmapäivä 3, yläoikea	###
+tile.noxcrew.ft:hieroglyph_3_c.name=Luolapulmapäivä 3, alavasen	###
+tile.noxcrew.ft:hieroglyph_3_d.name=Luolapulmapäivä 3, alaoikea	###
+tile.noxcrew.ft:hieroglyph_4_a.name=Luolapulmapäivä 4, ylävasen	###
+tile.noxcrew.ft:hieroglyph_4_b.name=Luolapulmapäivä 4, yläoikea	###
+tile.noxcrew.ft:hieroglyph_4_c.name=Luolapulmapäivä 4, alavasen	###
+tile.noxcrew.ft:hieroglyph_4_d.name=Luolapulmapäivä 4, alaoikea	###
+tile.noxcrew.ft:hieroglyph_5_a.name=Luolapulmapäivä 5, ylävasen	###
+tile.noxcrew.ft:hieroglyph_5_b.name=Luolapulmapäivä 5, yläoikea	###
+tile.noxcrew.ft:hieroglyph_5_c.name=Luolapulmapäivä 5, alavasen	###
+tile.noxcrew.ft:hieroglyph_5_d.name=Luolapulmapäivä 5, alaoikea	###
+tile.noxcrew.ft:hieroglyph_6_a.name=Luolapulmapäivä 6, ylävasen	###
+tile.noxcrew.ft:hieroglyph_6_b.name=Luolapulmapäivä 6, yläoikea	###
+tile.noxcrew.ft:hieroglyph_6_c.name=Luolapulmapäivä 6, alavasen	###
+tile.noxcrew.ft:hieroglyph_6_d.name=Luolapulmapäivä 6, alaoikea	###
+tile.noxcrew.ft:hieroglyph_7_a.name=Luolapulmapäivä 7, ylävasen	###
+tile.noxcrew.ft:hieroglyph_7_b.name=Luolapulmapäivä 7, yläoikea	###
+tile.noxcrew.ft:hieroglyph_7_c.name=Luolapulmapäivä 7, alavasen	###
+tile.noxcrew.ft:hieroglyph_7_d.name=Luolapulmapäivä 7, alaoikea	###
+tile.noxcrew.ft:bigcake_top.name=Kakkukuutioyläosa	###
+tile.noxcrew.ft:bigcake_bottom.name=Kakkukuutioalaosa	###
+tile.noxcrew.ft:cake_slice.name=Kakkupala	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=15 lippu pitkä yläosa	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=15 lippu pitkä alaosa	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=MCC-lippu pitkä yläosa	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=MCC-lippu pitkä alaosa	###
+tile.noxcrew.ft:decoration_bunting_a.name=Valkoinen koristelippu	###
+tile.noxcrew.ft:decoration_bunting_b.name=Vihreä koristelippu	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=MCC-koristelippu	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=Vihreä viirilippu	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=Valkoinen viirilippu	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=MCC-viirilippu	###
+tile.noxcrew.ft:decoration_flag_mcc.name=Pieni MCC-lippu	###
+tile.noxcrew.ft:decoration_flag_15.name=15 vuoden pieni lippu	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=15 vuoden lipun yläosa	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=15 vuoden lipun alaosa	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=MCC-lipun yläosa	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=MCC-lipun alaosa	###
+tile.noxcrew.ft:plush_red.name=Red Rabbits-pehmolelu	###
+tile.noxcrew.ft:plush_orange.name=Orange Ocelots-pehmolelu	###
+tile.noxcrew.ft:plush_yellow.name=Yellow Yaks-pehmolelu	###
+tile.noxcrew.ft:plush_lime.name=Lime Llamas-pehmolelu	###
+tile.noxcrew.ft:plush_green.name=Green Geckos-pehmolelu	###
+tile.noxcrew.ft:plush_cyan.name=Cyan Coyotes-pehmolelu	###
+tile.noxcrew.ft:plush_aqua.name=Aqua Axolotls-pehmolelu	###
+tile.noxcrew.ft:plush_blue.name=Blue Bats-pehmolelu	###
+tile.noxcrew.ft:plush_pink.name=Vaaleanpunainen papukaija-pehmolelu	###
+tile.noxcrew.ft:plush_purple.name=Purple Pandas-pehmolelu	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=MCC-lippu ylävasen	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=MCC-lippu yläoikea	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=MCC-lippu alavasen	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=MCC-lippu alaoikea	###
+tile.noxcrew.ft:decoration_present.name=MCC-lahjalaatikko	###
+tile.noxcrew.ft:cup_poster1.name=Äärikuppijuliste 1	###
+tile.noxcrew.ft:cup_poster2.name=Äärikuppijuliste 2	###
+tile.noxcrew.ft:logo_1.name=Noxcrew-logo 1	###
+tile.noxcrew.ft:logo_2.name=Noxcrew-logo 2	###
+tile.noxcrew.ft:logo_3.name=Noxcrew-logo 3	###
+tile.noxcrew.ft:melt_spawner.name=Meltdownhirviöiden luontipaikka	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=Kolikkoläjä	###
+entity.noxcrew.ft:treasure_chest.name=Aarrearkku	###
+entity.noxcrew.ft:key_podium.name=Avainkoroke	###
+entity.noxcrew.ft:sand_podium.name=Hiekkakoroke	###
+entity.noxcrew.ft:armor_podium.name=Panssarikoroke	###
+entity.noxcrew.ft:paint_pot.name=Maalipurkki	###
+entity.noxcrew.ft:giant_cake.name=Syntymäpäiväkakku	###
+entity.noxcrew.ft:beach_ball.name=Rantapallo	###
+entity.noxcrew.ft:balloon_helium.name=Heliumpallo	###
+entity.noxcrew.ft:disco_ball.name=Diskopallo	###
+entity.noxcrew.ft:lost_pearl.name=Salaperäinen helmi	###
+entity.noxcrew.ft:decoration_awning.name=Koristeltu markiisi	###
+entity.noxcrew.ft:decoration_bunting.name=Koristeltu lippu	###
+entity.noxcrew.ft:decoration_cupcake.name=Synttärikuppikakku	###
+entity.noxcrew.ft:decoration_ballons.name=Syntymäpäiväilmapallot	###
+entity.noxcrew.ft:decoration_15.name=15 ilmapalloa	###
+entity.noxcrew.ft:decoration_board.name=Syntymäpäivätaulu	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=Kanailmapallo	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=Maskotti-ilmapallo	###
+entity.noxcrew.ft:trophy_help.name=Ohje	###
+entity.noxcrew.ft:sand_timer.name=Hiekka-ajastin	###
+entity.noxcrew.ft:crowned_frog.name=Sammakkoprinssi	###
+entity.noxcrew.ft:cake_candles.name=Kakkukynttilä	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=Start-painike	###
+entity.noxcrew.ft:vendor_mascot.name=Maskottihatut	###
+entity.noxcrew.ft:vendor_hat.name=Hatut	###
+entity.noxcrew.ft:vendor_toys.name=Lelut	###
+entity.noxcrew.ft:vendor_food.name=Ruoat	###
+entity.noxcrew.ft:advert_creator_cup.name=Äärikuppi	###
+entity.noxcrew.ft:md_creeper.name=Creeper	###
+entity.noxcrew.ft:md_blaze.name=Lieska	###
+entity.noxcrew.ft:md_blaze<>.name=Lieska	###
+entity.noxcrew.ft:md_skeleton.name=Luuranko	###
+entity.noxcrew.ft:md_skeleton<>.name=Luuranko	###
+entity.noxcrew.ft:md_spider.name=Hämähäkki	###
+entity.noxcrew.ft:md_vindicator.name=Puhdistaja	###
+entity.noxcrew.ft:md_zombie.name=Zombi	###
+entity.noxcrew.ft:md_zombie_baby.name=Vauvazombi	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§oHelmi keikkuu omituisesti ylös ja alas...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r Löysit luolamysteerin!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=ODOTETAAN PELAAJIA...	###
+txt.misc.msg4=Pelin alkuun: 	###
+txt.misc.msg5=Sinut kaukosiirretään pian	###
+txt.misc.msg6_1=§6§l!§r %s antoi sinulle lahjan!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r %s sai sinulta lahjan!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r Pelaaja ei voi hyväksyä toista lahjaa	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= Liitosiivet varustettu 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §ePulmakenttä on suoritettu... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §aOlet suorittanut luolapulman! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: Hyppelyttääkö? Miksetpä siis juoksentelisi pilvien seassa  §6Ace Race§r  -minipelissä!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: Haluatko haastetta? Yritä suorittaa kaikki tehtävät  §6Grid Runners§r  -minipelissä!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]:  §6Meltdown§r  -minipeli odottaa... pystytkö selviytymään hirviölaumoista?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]: Tutki salaperäistä temppeliä  §6Sands of Time§r  -minipelissä!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: Näet kaikki suorittamasi haasteet trophy-huoneessa! Löydät sen isosta teltasta läheltä  §6Ruudukkojuoksijoiden§r  portaalia  pääaulassa!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: Etsitkö hattua päähäsi? Mene ostoksille hattukauppaan! Löydät sen ison hatun alta  pääaulassa!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: Haluatko kokeilla siistejä leluja? Voit ostaa niitä lelukaupasta! Löydät sen raitiovaunumerkkien läheltä  pääaulassa!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: Haluatko kokeilla jotain syötävää? Voit ostaa sitä ruokakaupasta! Löydät sen ravintolasta ison kanapatsaan läheltä  pääaulassa!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]: Tiesitkö, että on olemassa  mysteeripulmia, joita voit ratkaista? Mene mysteeriluolaan vuorenrinteelle  pääaulassa!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: Tiesitkö, että joka päivä tulee uusi mysteeripulma ratkottavaksi? Jokainen  :n vieressä tarkoittaa, että pulma on ilmestynyt!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: Tiesitkö, että voit löytää kolikkoläjiä kaikista auloista? Lähde etsimään!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: Onko tavaraluettelo liian täynnä? Pääset eroon joistakin esineistäsi roskiksen luona!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cSinulla ei ole tarpeeksi kolikoita tähän	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cSinulla ei ole tilaa tämän ostamiseen! Hävitä roskiksessa olevia esineitä.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r Sinulla on jo tämä hattu!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s on täynnä!§r Kerää eri ainesosa!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cSinulla ei ole avainta tähän arkkuun!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6Olet jo avannut tämän arkun!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=Pizza! Syö se, niin saat lisävauhdin!	###
+txt.shop_info.mcc_burger=Hampurilainen! Syö se, niin saat lisävauhdin ja tehohypyn!	###
+txt.shop_info.anniversary_hot_dog=Hodari! Syö se, niin saat lisävauhdin ja tehohypyn!	###
+txt.shop_info.party_cupcake=Kuppikakku! Syö se, niin putoat hitaasti!	###
+txt.shop_info.party_cake=Kakku! Syö se, niin saat leijumisen!	###
+txt.shop_info.party_chips=Sipsiä! Syö se, niin saat lisävauhdin!	###
+txt.shop_info.party_cookie=Keksi! Syö se, niin saat tehohypyn!	###
+txt.shop_info.party_soda=Limsaa! Juo se, niin saat lisävauhdin!	###
+txt.shop_info.cotton_candy=Hattara! Syö se, niin saat tehohypyn!	###
+txt.shop_info.popcorn=Popcornia! Syö se, niin saat tehohypyn!	###
+txt.shop_info.super_wrap=Superkääre! Syö se, niin saat kaikki tehostukset!	###
+txt.shop_info.foam_finger=Vaahtosormi! Pitele sitä, niin osoitat tukeasi!	###
+txt.shop_info.balloon_animal=Ilmapalloeläin! Käytä se, niin laukaiset ilmapallon!	###
+txt.shop_info.big_bubble_blower=Kuplapuhallin! Käytä se, niin puhallat kuplia!	###
+txt.shop_info.silly_horn=Hupsu torvi! Käytä se, niin päästät äänen!	###
+txt.shop_info.party_popper=Paukkuserpentiini! Käytä se, niin poksautat konfettia!	###
+txt.shop_info.confetti_tag_prime=Konfettitagi! Käytä sitä pelaajaan, jotta voit merkitä hänet konfettilla!	###
+txt.shop_info.pizza_box=Pizzalaatikko! Käytä sitä pelaajille, niin he saavat pizzaa!	###
+txt.shop_info.celebration_fireworks=Ilotulitteita! Käytä se, niin ammut ilotulitteita!	###
+txt.shop_info.player_gift_giving=Lahja! Käytä sitä pelaajille, niin he saavat lahjan!	###
+txt.shop_info.disco_ball=Disko! Käytä se, niin teet tanssivan diskopallon!	###
+txt.shop_info.beach_ball=Rantapallo! Käytä se, niin teet rantapallon, lyö sitä pelataksesi!	###
+txt.shop_info.balloon_helium=Ilmapallo! Käytä se, niin ammut ilmapallon!	###
+
+##Ace Race
+txt.tut.ace_title= Ace Race 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6Puhu Seapeekaylle lähtöviivalla saadaksesi vinkkejä ja neuvoja!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: Kisaa maaliin käyttämällä lisävauhti- ja tehohyppyalustoja!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= Kukista pedot!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6Puhu Smajorille aloitusaulassa saadaksesi vinkkejä ja neuvoja!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: Kukista mahdollisimman monta hirviötä ennen kuin aika loppuu!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= Kopioi maalaus!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: Käytä värillisiä maalipurkkeja ja kopioi maalaukset!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= Leivo kakkuja!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: Kerää ainesosia kakkuun ja talleta ne keskukseen!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= Juokse!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: Saavuta maaliviiva!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r Siirry seuraavaan huoneeseen!	###
+
+txt.grid.wave_clear=Hirviöaalto kukistettu!	###
+txt.grid.wave_reward= Olet ansainnut 10 kolikkoa!	###
+txt.grid.painting_clear=Maalaus suoritettu!	###
+txt.grid.painting_reward= Olet ansainnut 10 kolikkoa!	###
+txt.grid.cake_clear=Kakku leivottu!	###
+txt.grid.cake_reward= Olet ansainnut 10 kolikkoa!	###
+
+##Meltdown
+txt.tut.melt_title= Meltdown 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6Puhu hannahxxroselle sisäänkäynnin luona saadaksesi vinkkejä ja neuvoja!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: Selviydy huoneista ennen kuin ne sulavat! Jäädytä viholliset jousellasi ja lyö sitten niitä!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= VAROITUS: SULATUS 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= VAARA: KRIITTINEN SULATUS 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1=1/7 sulatuksesta paettu 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= 2/7 sulatuksesta paettu 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= 3/7 sulatuksesta paettu 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= 4/7 sulatuksesta paettu 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= 5/7 sulatuksesta paettu 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= 6/7 sulatuksesta paettu 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= 7/7 sulatuksesta paettu 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= %s/7 sulatuksesta paettu 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r Siirry seuraavaan huoneeseen!	###
+
+##Sands of Time
+txt.tut.sands_title= Sands of Time 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6Puhu HBomb94:lle pyramidin lähellä saadaksesi vinkkejä ja neuvoja!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: Etsi mahdollisimman monta kolikkoa ennen kuin aika loppuu! Kerää hiekkaa lisäajaksi!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= Löysit 5 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= Löysit 10 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= Löysit 20 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= Löysit 30 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= Löysit 50 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= Löysit 100 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= Löysit 200 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= Löysit 400 kolikkoa!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=Arkku avattu!	###
+txt.sot.key=Avain kerätty!	###
+txt.sot.upgraded=Päivitetty!	###
+
+##Lobby
+txt.lobby.coins5= Löysit 5 kolikkoa!	###
+txt.lobby.coins20= Löysit 20 kolikkoa!	###
+txt.lobby.coins30= Löysit 30 kolikkoa!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=KARTTA	###
+txt.ui.tp.confirm1=Oletko varma?	#
+txt.ui.tp.confirm_target=Tämä kaukosiirtää sinut kohteeseen %s.	#
+txt.ui.tp.area_ace_race= Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= Grid Runners	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= Pääaula	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=Teleportti valmiina!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=Kosmeettinen arkku	###
+txt.ui.cosmetic=Täältä löydät kaikki hattusi!	###
+txt.ui.button.select=Valitse	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=PALKINTO AVATTU	###
+txt.ui.title.red_rabbit_cc=Red Rabbits pää	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=Orange Ocelots pää	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=Yellow Yaks pää	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=Lime Llamas pää	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=Green Geckos pää	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=Aqua Axolotls pää	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=Cyan Coyotes pää	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=Blue Bats pää	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=Purple Panda pää	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=Pink Parrots pää	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=Suutele yleisöä -ele	###
+txt.ui.title.ride_victory_emote=Ratsasta voittoon -ele	###
+txt.ui.title.cartwheel_victory_emote=Voitokas kärrynpyörä -ele	###
+txt.ui.title.flying_chicken_emote=Lentävä kana -ele	###
+txt.ui.title.cape=MCCxMinecraft – 15. vuosipäivän viitta	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=MCC-kruunu	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=Olet avannut hahmonluontiesineen! Tutustu siihen pukuhuoneessa.	###
+txt.ui.text.cape_unlocked=Onnittelut! Olet avannut MCC-viitan! Tutustu siihen pukuhuoneessa.	###
+txt.ui.button.claim=LUNASTA	###
+
+##UI Vendors
+txt.title.vendor_food= Ruoka 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= Maskottihatut 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= Hatut 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= Lelut 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=Osta	###
+txt.ui.sold_out=LOPPUUNMYYTY	###
+
+##Game Toasts
+txt.ui.toast.time= §lAIKA§r	###
+txt.ui.toast.coins_collected= §lKERÄTYT KOLIKOT§r	###
+txt.ui.toast.coins_earned= §lANSAITUT KOLIKOT§r	###
+txt.ui.toast.new_record=§lUUSI ENNÄTYS!§r	###
+txt.ui.toast.room=HUONE	###
+txt.ui.toast.time_spent= §lKÄYTETTY AIKA§r	###
+txt.ui.toast.complete=VALMIS!	###
+txt.ui.toast.highscore= §lPISTE-ENNÄTYS§r	###
+txt.ui.toast.highest_coins= §lPARAS SAALIS§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §lHORNIITTIMITALISTI	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §lTIMANTTIMITALISTI	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §lKULTAMITALISTI	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §lRAUTAMITALISTI	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §lKUPARIMITALISTI	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §lAVATUT ARKUT§r	###
+txt.ui.toast.sot.escaped= §lPÄÄSIT PAKOON!§r	###
+txt.ui.toast.sot.failed= §lET PÄÄSSYT PAKOON...§r	###
+txt.ui.toast.gr.mobs_slain= §lKUKISTETUT OLIOT§r	###
+txt.ui.toast.gr.blocks_painted= §lMAALATUT KUUTIOT§r	###
+txt.ui.toast.gr.cakes_baked= §lLEIVOTUT KAKUT§r	###
+txt.ui.toast.ar.time= §lAIKA§r	###
+txt.ui.toast.md.slain= §lSÄRJETYT OLIOT§r	###
+txt.ui.toast.md.rooms_survived_0= §lHUONEET SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_survived_1= §lHUONEET SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_survived_2= §lHUONEET SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_survived_3= §lHUONEET SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_survived_4= §lHUONEET SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_survived_5= §lHUONEET SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_survived_6= §lHUONEET SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_survived_7= §lHUONETTA SELVIYDYTTY§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=HAASTELUETTELO	###
+txt.ui.body1.challenge_list=Katso haastetta painamalla sen kuvaketta!	###
+txt.ui.reward.cape= VIITTAPALKINTO	###
+txt.ui.status.cape=Valmis	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=Vedensinisen aksolotlin haaste	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=Kun päässäsi on §lAqua Axolotls-pipo§r, etsi kadonnut helmi. Se on piilotettu vesialtaaseen...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oAnsaitse Aqua Axolotls pää -hahmonluontiesine	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=Blue Bats haaste	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=Kun päässäsi on§lBlue Bats-pipo§r, kerää 100 hiekkaa §lSands of Time-§rminipelistä.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oAnsaitse Blue Bats pää -hahmonluontiesine	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=%s hiekkaa kerätty.	###
+
+txt.ui.title.cyan_coyote_challenge=Cyan Coyotes haaste	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=Kun päässäsi on §lCyan Coyotes-pipo§r, kerää 75 kolikkoa §lSands of Time-§r tai §lMeltdown-§r minipeleistä.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oAnsaitse Cyan Coyotes pää -hahmonluontiesine	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=%s kolikkoläjää kerätty.	###
+
+txt.ui.title.green_gecko_challenge=Green Geckos -haaste	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=Kun päässäsi on §lGreen Geckos-pipo§r, maalaa 200 kuutiota ”Kopioi maalaus” -haasteessa §lGrid Runners-§rminipelissä.	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oAnsaitse Green Geckos pää -hahmonluontiesine	###
+txt.ui.progress.green_gecko_challenge=%s kuutiota maalattu.	###
+
+txt.ui.title.lime_llama_challenge=Lime Llamas -haaste	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=Kun päässäsi on §lLime Llamas-pipo§r, anna 10 lahjapakettia. Voit ostaa lahjapaketteja lelukauppiaalta keskusmaailmasta.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oAnsaitse Lime Llamasn pää -hahmonluontiesine	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=%s lahjapakettia annettu.	###
+
+txt.ui.title.orange_ocelot_challenge=Orange Ocelots -haaste	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=Kun päässäsi on §lOrange Ocelots-pipo§r, juokse 100 lisävauhtitehosteen yli§lAce Race-§r minipelissä.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oAnsaitse Orange Ocelots pää -hahmonluontiesine	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=%s lisävauhtitehostetta käytetty.	###
+
+txt.ui.title.pink_parrot_challenge=Pink Parrots -haaste	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=Kun päässäsi on §lvaaleanpunainen papukaija-pipo§r, juokse liitosiipiporttien läpi §lAce Race-§r minipelissä 25 kertaa.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oAnsaitse Pink Parrots pää -hahmonluontiesine	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=%s liitosiipiporttia läpäisty.	###
+
+txt.ui.title.purple_panda_challenge=Purple Panda -haaste	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=Kun päässäsi on §lPurple Panda-pipo§r, aseta 200 ainesosaa ”Leivo kakku” -haasteessa §lGrid Runners-§r minipelissä.	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oAnsaitse Purple Panda pää -hahmonluontiesine	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=%s ainesosaa asetettu.	###
+
+txt.ui.title.red_rabbit_challenge=Red Rabbits -haaste	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=Kun päässäsi on §lRed Rabbits-pipo§r, juokse laukaisualustan yli 50 kertaa suorittaessasi §lAce Race-§r minipeliä.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oAnsaitse Red Rabbits pää -hahmonluontiesine	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=%s laukaisualustaa käytetty.	###
+
+txt.ui.title.yellow_yak_challenge=Yellow Yaks -haaste	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=Kun päässäsi on §lYellow Yaks-pipo§r, kukista 350 jäätynyttä vihollista §lMeltdown-§r minipelissä.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oAnsaitse Yellow Yaks pää -hahmonluontiesine	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=%s jäätynyttä vihollista kukistettu.	###
+
+txt.ui.title.ace_race_challenge=Ace Race-haaste	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=Suorita rata §lAce Race-§r minipelissä!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§oAnsaitse “Suutele väkijoukkoa” -ele	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=Grid Runners-haaste	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=Suorita §lGrid Runners-§r minipeli!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§oAnsaitse “Ratsasta voittoon” -ele	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=Meltdown-haaste	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=Selviydy kolmanteen huoneeseen §lMeltdown-§r minipelissä	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§oAnsaitse ”Lentävä kana” -ele	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=Sands of Time -haaste	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=Astu §lSands of Time-§r minipeliin, selviydy 2 minuutin ajan ja pakene sitten onnistuneesti!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§oAnsaitse “Voitokas kärrynpyörä” -ele	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=Mysteeriluolahaaste	###
+txt.ui.body1.cave_challenge=Suorita kaikki 7 maalattua pulmahaastetta salaperäisessä luolassa.	###
+txt.ui.reward.cave_challenge=§oAnsaitse MCC-kruunu-hahmonluontiesine	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=%s seitsemästä pulmasta suoritettu.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e ODOTETAAN PELAAJIA §f (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §fODOTETAAN PELAAJIA (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §eODOTETAAN PELAAJIA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §eODOTETAAN PELAAJIA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §eODOTETAAN PELAAJIA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §eODOTETAAN PELAAJIA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §eODOTETAAN PELAAJIA §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§eEnimmäisodotus:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e ODOTETAAN PELIÄ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §fODOTETAAN PELIÄ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e ODOTETAAN PELIÄ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e ODOTETAAN PELIÄ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e ODOTETAAN PELIÄ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e ODOTETAAN PELIÄ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e ODOTETAAN PELIÄ... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eNoin §f%s§e minuuttia tai vähemmän	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eNoin §f%s§e minuuttia tai vähemmän	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aPELI VALMIS!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eKAUKOSIIRTYMISEEN §e §f%s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eKAUKOSIIRRYTTY!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§eValmistaudu...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§eAlkaa:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aHEP!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens &  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=Ohje	###
+txt.title.dia.ender_cup= Äärikuppi 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=Sammakkoprinssi	###
+
+txt.title.start_game=Aloita peli	###
+txt.title.join_queue=Liity jonoon	###
+txt.title.ace_race= Ace Race 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= Grid Runners 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= Meltdown 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= Sands of Time 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= Pääaula 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=Okei	###
+txt.button.yes=Kyllä	###
+txt.button.no=Ei	###
+txt.button.back=Edellinen	###
+txt.button.exit=Poistu	###
+txt.button.close=Sulje	###
+txt.button.start_game=Aloita peli	###
+txt.button.join_queue=Liity jonoon	###
+txt.button.tutorial=Tutoriaali	###
+txt.button.challenges_q=Haasteita?	###
+txt.button.who_are_you_q=Kuka sinä olet?	###
+txt.button.what_games_q=Mitä pelejä?	###
+txt.button.cave_mystery_q=Luolamysteeri?	###
+txt.button.go_to_portal=Mene portaaliin	###
+txt.button.remove_hat=Poista hattu käytöstä	###
+txt.button.no_hats=Ei hattuja saatavilla. Osta ne kaupasta!	###
+txt.button.pet_frog=Silitä sammakkoa	###
+txt.button.talk_frog=Puhu sammakolle	###
+txt.button.kiss_frog=Suutele sammakkoa	###
+txt.button.love_minecraft_q=Tykkäätkö Minecraftista?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=Tykkäätkö MCC:stä?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=Paras pelisi?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=Ace Race?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=Striimiä?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=Paras päivitys?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=Grid Runners?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=Meltdown?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=Paras muistosi?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=Sands of Time?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=Seuraava	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=Hei! Olen  Jens!	###
+txt.jagnes.1_0.dia2=Ja minä olen  Agnes!	###
+txt.jagnes.1_0.dia3=Tervetuloa MCC Minecraftin 15. vuosipäivän juhliin!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=Olemme täällä Noxcrew’n kanssa pelaamassa MC-mestaruuskisojen minipelejä!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=Tutki, pelaa minipelejä ja ratkaise luolan mysteeri!	###
+txt.jagnes.1_0.dia6=Seuraa polkuja portaaleihin ja kokeile minipeliä!	###
+txt.jagnes.1_0.dia6_1=Aloita seuraamalla polkuja portaaleihin ja kokeilemalla minipeliä!	###
+txt.jagnes.1_0.dia6_2=Aloita seuraamalla leijuvia  kruunuja portaaliin ja kokeilemalla minipeliä!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=Matkusta portaalien läpi pelaamaan MC-mestaruuskisojen minipelejä.	###
+txt.jagnes.2_0.dia2=Minipelit ovat §1Ace Race§r, §1Grid Runners§r, §1Meltdown§r ja §1Sand of Time§r!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=Kokeile ja valitse suosikkisi!	###
+
+##What games?
+txt.jagnes.2_1.dia1=Matkusta portaalien läpi pelaamaan MC-mestaruuskisojen minipelejä.	###
+txt.jagnes.2_1.dia2=Nouse pilviin §1Ace Race§r -kisassa ja kiidä taivaiden halki!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=Vieraile §1Grid Runners§r -stadionilla ja selätä haasteet!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=Astu sisään §1Sulatukseen§r ja selviydy zombeista ja sulavista huoneista!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=Uskaltaudu §1Ajan hiekan§r temppeliin ja löydä aarrekätköt!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=Kokeile ja valitse suosikkisi!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= Huhut kertovat salaperäisestä luolasta korkealla vuorilla.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=Sanotaan, että siellä on maalattuja  pulmia, joita voit ratkaista!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=Etsi luola ja katso, mitä paljastuu!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=Seuraa leijuvia  kruunuja  §6Ace Race§r  -minipelin portaaliin!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=Seuraa leijuvia  kruunuja  §6Grid Runners§r  -minipelin portaaliin!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=Seuraa leijuvia  kruunuja  §6Meltdown§r  -minipelin portaaliin!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=Seuraa leijuvia  kruunuja  §6Sands of Time§r  -minipelin portaaliin!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=Löysit kaupan!	###
+txt.jagnes.help_shop2=Osta esineitä kolikoilla, joita ansaitset pelaamalla minipelejä!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=Olet löytänyt  trophy-huoneen!	###
+txt.jagnes.help_trophy2=Katso trophyja ja palkintoja suoritetuista haasteistasi!	###
+txt.jagnes.help_trophy3=Ota kuva ja julkaise edistymisesi!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=Löysit kakkuhuoneen!	###
+txt.jagnes.help_cake2=Katso saavutukset kakkukynttilöistä. Suorita niitä ansaitaksesi erikoispalkintoja!	###
+txt.jagnes.help_cake3=Ota kuva ja jaa edistymisesi!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=Olet löytänyt minipelin portaalin!	###
+txt.jagnes.help_portal2=Matkusta portaalin läpi minipelimaailmaan!	###
+txt.jagnes.help_portal3=Kävele vain läpi!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=Kiva juttu, löysit  §6Ace Racen§r   portaalin!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=Matkusta pilviin ja singahtele halki taivaan!	###
+txt.jagnes.help_ace_race_portal3=Kävele vain läpi!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=Ooh, katsohan, tuossa on  §6Ruudukkojuoksijoiden§r  portaali!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=Käy stadionilla ja suorita haastehuoneet!	###
+txt.jagnes.help_grid_runners_portal3=Kävele vain läpi!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=Ah, löysit  §6Sulatuksen§r  portaalin!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=Astu sisään laitokseen ja yritä selviytyä zombeista ja sulavista huoneista!	###
+txt.jagnes.help_meltdown_portal3=Kävele vain läpi!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=Hienoa, löysit  §6Ajan hiekan§r  portaalin!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=Uskaltaudu muinaiseen temppeliin ja löydä aarrekätköt!	###
+txt.jagnes.help_sot_portal3=Kävele vain läpi!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=Vau, löysit  mysteeriluolan! 	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=Pystytkö ratkaisemaan arvoitukset, joita tänne ilmestyy joka päivä?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=Hienoa, löysit tapahtuman!	###
+txt.jagnes.help_activity2=Haluatko hengailla ja pelata pelejä?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lMiksi tykkäät Minecraftista?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lMCC-lempimuistosi?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lParas MCC-pelisi?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lLempiasia Ace Racessa?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lMiksi katsoa Äärikuppistriimiäsi?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=Hei! Olen §1Seapeekay§r, tervetuloa §1Ace Racen§rtaivaalle!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=Käytä tehosteita ja alustoja kisataksesi ensimmäisenä maaliviivan yli!	###
+txt.creator_ace.1_0.dia3=Paina ”Tutoriaali” saadaksesi lisätietoja.	###
+txt.creator_ace.1_0.dia4=Tai paina Aloita peli -painiketta, jos olet valmis pelaamaan!	###
+txt.creator_ace.2_0.dia1=§1Ace Racessa§r kirmataan pilvissä!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=Läpäise rata niin nopeasti kuin pystyt ja ylitä maaliviiva!	###
+txt.creator_ace.2_0.dia3=Voit käyttää hyppyalustoja, laukaisualustoja, lisävauhtialustoja ja liitosiipiportteja vauhdittaaksesi kulkuasi!	###
+txt.creator_ace.2_0.dia4=Nähdään maaliviivalla!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=Hei! Olen §1Seapeekay§r, olen Minecraft-striimaaja, joka tykkää löytää hyvän tasapainon kilpailun ja hauskanpidon välillä.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Tule ja löydä minut Twitchistä hakemalla ”Seapeekay”.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=Se on minulle tärkeää, sillä pelin maailma on niin avoin hiekkalaatikko, että voit tehdä mitä ikinä haluat.	###
+txt.creator_ace.3_1.dia2=Voit olla niin luova kuin haluat. Ei ole oikea tapaa pelata.	###
+txt.creator_ace.3_1.dia3=Ja olen tavannut kaikki nykyiset ystäväni (jotakuinkin) pelaamalla peliä.	###
+txt.creator_ace.3_1.dia4=Ja luulen, että se tekee siitä elämäni merkittävimmän pelin.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=MCC-lempimuistoni oli MCC 5, koska onnistuin vihdoinkin saamaan ensimmäisen voittoni!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=Ja se oli joukkueessa, joka ei todellakaan ollut ylivoimainen yhteisön puheista huolimatta, se oli ansaittu voitto.	###
+txt.creator_ace.3_2.dia3=Mutta en ollut koskaan ollut kovin hyvä Minecraftissa, ja MCC sai minut ryhtymään paremmaksi pelissä.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=Ja nyt olen oikeasti varsin hyvä, joten tällaisessa kaaressa on ollut tosi siistiä.	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=Paras MCC-pelini oli todellakin se kerta, kun voitin vihdoinkin §1Ace Racen§r.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=Minua kutsuttiin todella pitkään yhteisössä Herra Ace Raceksi, mutta en ollut koskaan oikeasti voittanut sitä.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=Joten kun se päivä vihdoinkin koitti, se muisto juurtui mieleeni ikuisesti.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=Lempijuttuni §1Ace Racessa§r on ehdottomasti se, miten monella eri tavalla radan voi oikeasti suorittaa.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=Se on erittäin helposti lähestyttävä monille eri taitotasoille.	###
+txt.creator_ace.3_4.dia3=Jotkut tavat ovat nopeampia... jotkut tavat ovat vaikeampia...	###
+txt.creator_ace.3_4.dia4=Mutta tärkeintä on, että kaikki pääsevät maaliviivan yli.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=Jonkun pitäisi katsoa Äärikuppi minun näkökulmastani, koska siinä todellakin näkyy, miten hauskanpidon tasapaino säilyy... se oli tosi hauskaa...	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=Mutta haluan yhä ehdottomasti voittaa!	###
+txt.creator_ace.3_5.dia4=Joten tämä on kilpailussa se hauska puoli, ja uskon sen olevan se paras puoli.	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lMieluisin Minecraft-päivityksesi?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lParasta MCC:ssä?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lParasta Ruudukkojuoksijoissa?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lMiksi katsoa Äärikuppistriimiäsi?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=Hei! Olen §1Smajor§r, ja tervetuloa §1Grid Runners§r -radalle!	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=Suorita huoneiden haasteet niin monta kertaa kuin pystyt saadaksesi korkeimmat pisteet!	###
+txt.creator_grid.1_0.dia3=Paina ”Tutoriaali” saadaksesi lisätietoja.	###
+txt.creator_grid.1_0.dia4=Tai paina Liity jonoon -painiketta, jos olet valmis pelaamaan!	###
+txt.creator_grid.2_0.dia1=§1Grid Runners§r on 4 erilaiseen huoneeseen pystytetty kilparata!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=Jokaisessa huoneessa saat uuden haasteen, joka sinun on suoritettava ennen seuraavaan siirtymistä.	###
+txt.creator_grid.2_0.dia3=Sinulla on 1 minuutti aikaa kussakin huoneessa, joten parasta olla nopea!	###
+txt.creator_grid.3_0.dia1=Nimeni on §1Smajor§r!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Olen monipuolinen striimaaja, joka keskittyy pääasiassa Minecraftiin!	###
+txt.creator_grid.3_0.dia3=Jos kiinnostut, voit etsiä minut Twitchistä.	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=Suosikkipäivitykseni on Vesipäivitys!	###
+txt.creator_grid.3_1.dia2=Pidän todella kaikesta, mitä se lisäsi valtameribiomeihin. Minusta tuntuu, että niitä on nyt paljon hauskempaa tutkia.	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=Parasta MC-mestaruuskilpailussa on nähdä kaikkien Minecraftin ja sisällöntuotannon eri osa-alueiden tekijöiden kokoontuvan yhteen pelaamaan tiiminä tapahtumassa.	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=Rakastan nähdä ihmisten, jotka eivät olisi muuten koskaan tavanneet aiemmin, tutustuvan toisiinsa ja ystävystyvän.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=Suosikkijuttuni §1Ruudukkojuoksijoissa§r on se, että se on niin joukkuekeskeinen.	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=Mikään ei ole jännittävämpää kuin se, että joukkueesi työskentelee kuin hyvin öljytty kone haasteiden suorittamiseksi.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=Tunnelmat tulevat olemaan uskomattomia!	###
+txt.creator_grid.3_4.dia3=Kun striimaan MC-mestaruuskilpailua, tavoitteeni on, että minulla ja joukkueellani on mahdollisimman hauskaa!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=Vaikka se sitten tarkoittaisi, että meillä on hauskaa tullessamme viimeisiksi!	###
+
+txt.creator_grid.4_0.dia1=Haasteita on 4 erilaista: Kukista pedot, Kopioi maalaus, Leivo kakku ja Sprintti!	###
+txt.creator_grid.4_0.dia2=Kukista pedot -haasteessa sinun on päihitettävä kaikki huoneessa olevat hirviöt.	###
+txt.creator_grid.4_0.dia3=Kopioi maalaus -haasteessa sinun on kopioitava maalaus käyttämällä sivellintä ja huoneessa olevia ämpäreitä.	###
+txt.creator_grid.4_0.dia4=Leivo kakku -haasteessa sinun on kerättävä kaikki ainesosat kakun valmistamiseksi ja lisättävä ne kakkukoneeseen keskelle!	###
+txt.creator_grid.4_0.dia5=Sprintissä sinun täytyy juosta maaliin!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lMieluisin Minecraft-päivityksesi?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lParasta Minecraftissa?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lMCC-lempimuistosi?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lParasta Meltdownissa?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lMiksi katsoa Ender Cup -striimiäsi?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=Hei! Olen §1hannahxxrose§r, tervetuloa §1Meltdown§r-laitokseen!	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=Selviydy jokaisesta huoneesta ennen kuin ne alkavat sulaa! Kukista hirviöitä saadaksesi lisäpisteitä.	###
+txt.creator_melt.1_0.dia3=Paina ”Tutoriaali” saadaksesi lisätietoja.	###
+txt.creator_melt.1_0.dia4=Tai paina Liity jonoon -painiketta, jos olet valmis pelaamaan!	###
+txt.creator_melt.2_0.dia1=§1Meltdown§r-laitos koostuu huoneista, jotka ovat kirjaimellisesti sulamassa!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=Sinun on selviydyttävä jokaisessa huoneessa, kunnes seuraava ovi avautuu.	###
+txt.creator_melt.2_0.dia3=Voit jäädyttää ja lyödä jäätyneitä hirviöitä saadaksesi lisäpisteitä!	###
+txt.creator_melt.2_0.dia4=Voit myös poimia kolikkoläjiä saadaksesi lisäpisteitä!	###
+txt.creator_melt.3_0.dia1=Nimeni on §1Hannahxxrose§r  ja olen Minecraft-sisällöntuottaja!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=Striimeistäni löydät sekä kilpailuhenkisyyttä, että hyviä viboja!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=Suosikkini Minecraft-päivityksistä on Polkuja ja tarinoita sen uuden kirsikankukkabiomin vuoksi!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=Rakastan Minecraftissa eniten... PvP:tä tietysti!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=Suosikkini MC-mestaruuskilpailumuistoista on MCC Pride 2024 -kilpailun voitto Cyan Coyotesin kanssa!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=Eniten §1Meltdownissa§r pidän pelin kilpailullisuudesta ja tiimityöstä.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=Jos seuraat minua MC-mestaruuskilpailussa, näet paljon tiimityötä ja hienoja PvP-hetkiä.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=Voit katsella pelaamistani MC-mestaruuskilpailussa Twitch-kanavallani!	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lMiksi Minecraft on tärkeää?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lMikä on varhaisin Minecraftin-muistosi?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lMieluisin Minecraft-muistosi?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§lParasta Sands of Timessa?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lMiksi katsoa Ender Cup -striimiäsi?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=Hei! Olen §1HBomb94§r, tervetuloa §1Sands of Time§r -temppeliin!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=Tavoitteesi on tutkia temppeliä ja poimia niin paljon kolikoita kuin ehdit ennen kuin aikasi loppuu!	###
+txt.creator_sands.1_0.dia3=Näetkö tuon Tutoriaali-painikkeen? Napsauta sitä saadaksesi lisätietoja.	###
+txt.creator_sands.1_0.dia4=Tai paina Aloita peli -painiketta, jos olet valmis pelaamaan! 	###
+txt.creator_sands.2_0.dia1=§1Sands of Time§r on luolasto, jossa tavoite on saada mahdollisimman monta kolikkoa!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=Luolastosta löydät hirviöitä, kolikoita, arkkuavaimia, panssareita ja lisää hiekkaa, jolla saat lisäaikaa luolastossa!	###
+txt.creator_sands.2_0.dia3=Aluksi sinulla on 2 minuuttia aikaa, ja jokainen lisähiekka antaa sinulle 10 sekuntia lisää, mutta ole varovainen!	###
+txt.creator_sands.2_0.dia4=Jos kuolet luolastossa tai jäät loukkuun sen sisälle, sinun on käytettävä osa keräämistäsi kolikoista päästäksesi ulos.	###
+txt.creator_sands.3_0.dia1=Olen §1HBomb94§r!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=Olen Twitch-striimaaja, ja löydät minut täältä:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft on ollut minulle supertärkeä koko aikuisikäni.	###
+txt.creator_sands.3_1.dia2=Olen nyt 30-vuotias ja aloin lähettää videoita ollessani... 18-vuotias?	###
+txt.creator_sands.3_1.dia3=Joten siitä on ehkä 12 vuotta.	###
+txt.creator_sands.3_1.dia4=Voi juku... olen niin vanha!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Varhaisin muistoni Minecraftista on itse asiassa ensimmäinen maailma, jonka olen koskaan luonut.	###
+txt.creator_sands.3_2.dia2=Rakensin kauhean näköisen linnan, joka oli tehty pelkästään mukulakivestä ja yhdestä tammiovesta.	###
+txt.creator_sands.3_2.dia3=Ja sitten kuolin, en tiennyt maailmaantulopisteiden olevan jokin juttu...	###
+txt.creator_sands.3_2.dia4=Enkä myöskään tiennyt, että koordinaatit olivat tärkeitä...	###
+txt.creator_sands.3_2.dia5=Joten se hukkui siihen maailmaan ikiajoiksi. Vietin tuntikausia yrittäen löytää sen uudelleen, mutta en vain koskaan onnistunut.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=Tuo on itse asiassa todella helppo!	###
+txt.creator_sands.3_3.dia2=Se hetki MCC 9:ssä, kun Selviytymispeli juuri päättyi, ja muistan katsoneeni pistetaulukkoa.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=Ja vain huusin joukkueelleni: ”Katsokaa, millainen johto!”	###
+txt.creator_sands.3_3.dia4=Ihoni menee vielä nykyäänkin kananlihalle.	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=Suosikkiasiani §1Sands of Timessa§r  on varmaankin se hetki, jolloin kaikki alkavat panikoida.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=Se, kun kaikki alkavat panikoida, on kaikkein viihdyttävintä. Kaikki alkavat seota ja huutaa toisilleen.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=Tuo on yksinkertaista!	###
+txt.creator_sands.3_5.dia3=Joukkueellamme on paras fiilis ja se dominoi myös helposti mitä tahansa joukkuepeliä.	###
+txt.creator_sands.3_5.dia4=Kunhan ei, tuota- PVP-pelejä... tai parkouria.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=Tervetuloa trophy-huoneeseen!	###
+txt.trophy_help.1_0.dia2=Jokainen kynttilä on haaste, jonka voit suorittaa!	###
+txt.trophy_help.1_0.dia3=§6Käytä§r kynttilää, niin näet haasteen ja sen edistymisen.	###
+txt.trophy_help.1_0.dia4=Pystytkö suorittamaan kaikki haasteet?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=Liity seuraamme §1Ender Cup§r -kisaan! Katsasta striimi osoitteessa: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Katso kun 40 Minecraftin suurinta sisällöntuottajaa ottavat yhteen kymmenessä tiimissä kahdeksan erilaisen minipelin parissa!	###
+txt.ender_cup.1_0.dia3=Katso kisaajien livestriimejä 27.7. klo 13.00 (EDT), eli klo 20.00 Suomen aikaa!	###
+
+txt.ender_cup.ad1=Liity seuraamme §1Ender Cup§r -kisaan! Katsasta striimi osoitteessa: https://www.twitch.tv/minecraft	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Katso kun 40 Minecraftin suurinta sisällöntuottajaa ottavat yhteen kymmenessä tiimissä kahdeksan erilaisen minipelin parissa!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§oKruunattu sammakko katsoo sinua odottavasti.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§oMitä haluat tehdä?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oOjennat kätesi silittääksesi sammakkoa, niin sammakko kavahtaa kauhuissaan.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oSammakko rypistää kulmiaan ja suoristaa kruunuaan.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oAloitat pitkän puheen monista eri asioista...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oAjastasi juhlissa, erilaisista peleistä, mysteeriluolasta...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oMutta sammakko ei näytä olevan kiinnostunut.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=Olet murtanut kiroukseni! Kiitos!	###
+txt.frog_prince.2_0.dia2=Olen istunut täällä odottamassa §oikiajat§r, että joku suutelisi minua...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=Ihmisiä vain tulee ja tulee!	###
+txt.frog_prince.2_0.dia4=Jotkut heistä yrittävät jopa viedä kruunun!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= Pulma-apuri 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=Olen paljastanut kaikki  pulmat ja minulla on ajatuksia!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=Tarvitsetko vinkkejä niiden ratkaisemiseen?	###
+txt.puzzle_help.landing.dia3=Valitse seinä alla olevilla painikkeilla ja saat vihjeitä jokaiseen pulmaan!	###
+txt.button.day1=Päivä 1	###
+txt.button.day2=Päivä 2	###
+txt.button.day3=Päivä 3	###
+txt.button.day4=Päivä 4	###
+txt.button.day5=Päivä 5	###
+txt.button.day6=Päivä 6	###
+txt.button.day7=Päivä 7	###
+txt.button.wall1=Vasen seinä	###
+txt.button.wall2=Keskiseinä	###
+txt.button.wall3=Oikea seinä	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=Eräät ensimmäisistä maalauksista, jotka paljastin!	###
+txt.puzzle_help.wall1.dia2=Vei minulta kolme päivää!	###
+txt.puzzle_help.wall1.dia3=Mihin pulmaan haluaisit saada vinkkejä?	###
+
+txt.puzzle_help.wall2.dia1=Ah, maalaukset, jotka paljastin keskellä.	###
+txt.puzzle_help.wall2.dia2=Silloin aloin saada ideoita!	###
+txt.puzzle_help.wall2.dia3=Mihin pulmaan haluaisit saada vinkkejä?	###
+
+txt.puzzle_help.wall3.dia1=Aivan viimeiset maalaukset, jotka paljastin.	###
+txt.puzzle_help.wall3.dia2=Se oli hankala homma, mutta pääsimme sinne asti lopulta!	###
+txt.puzzle_help.wall3.dia3=Mihin pulmaan haluaisit saada vinkkejä?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§oVilkuttava käsi kruunusymbolin yllä...	###
+txt.puzzle_help_day1.dia2=Etsi suuri kruunu punaisella taustalla ja vilkuta seisoessasi sen päällä!	###
+
+txt.puzzle_help_day2.dia1=§oPaukkuserpentiini jalokivikoristeisten kivikasvojen edessä...	###
+txt.puzzle_help_day2.dia2=Etsi kivipatsas, jolla on jalokivet silminä, ja laukaise siihen paukkuserpentiiniä!	###
+
+txt.puzzle_help_day3.dia1=§oSuuri vesiallas, joka kiertyy alas...	###
+txt.puzzle_help_day3.dia2=Salaisuuden on oltava suuren lätäkön... tai järven pohjalla!	###
+
+txt.puzzle_help_day4.dia1=§oKristallipallo häikäistyneen vihreän yleisön edessä...	###
+txt.puzzle_help_day4.dia2=Aseta Diskopallolöytö häikäistyneen vihreän yleisön edessä!	###
+
+txt.puzzle_help_day5.dia1=§oMustakeltaraidallinen ja nelikulmainen aukko, jossa on kakkusiivu H-kirjaimen yläpuolella...	###
+txt.puzzle_help_day5.dia2=Etsi mustakeltaraidallinen sisäänkäynti! Sen täytyy johtaa H:hon. Syö sitten kakkua!	###
+
+txt.puzzle_help_day6.dia1=§oIlotulite jäisen vuoren huipulla...	###
+txt.puzzle_help_day6.dia2=Kiipeä korkeimmalle huipulle ja laukaise ilotulite!	###
+
+txt.puzzle_help_day7.dia1=§oOvi, taputtavat kädet ja kruunattu sammakkoprinssi...	###
+txt.puzzle_help_day7.dia2=Etsi ovi ja taputa sen edessä! Sen täytyy johtaa sammakkoprinssin luo.	###
+txt.puzzle_help_day7.dia3=Mutta mitä teet sammakkoprinssin kanssa?	###
+txt.puzzle_help_day7.dia3_1=Kuulin sadun sammakkoprinssin suutelemisesta, mutta ei kai nyt varmastikaan...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=Oletko täällä maalauksien vuoksi? Jokainen   viivalla tarkoittaa, että uusi maalaus paljastuu!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=Ensimmäinen näyttää kuin heiluttavalta kädeltä, mutta en ole varma...	###
+txt.puzzle_lore_day1.dia3=Minun täytyy paljastaa ne kaikki ennen kuin saan ideoita.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=Oletko täällä maalauksien vuoksi? Jokainen   viivalla tarkoittaa, että uusi maalaus paljastuu!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=Olen juuri paljastanut kasvot ja paukkuserpentiinin.	###
+txt.puzzle_lore_day2.dia3=En ole vielä varma, mitä ne tarkoittavat...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=Oletko täällä maalauksien vuoksi? Jokainen   viivalla tarkoittaa, että uusi maalaus paljastuu!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=Viimeisin näyttää kuin suurelta altaalta, tai kenties vesiloiskahdukselta?	###
+txt.puzzle_lore_day3.dia3=Tarvitsen lisää aikaa ollakseni varma...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=Oletko täällä maalauksien vuoksi? Jokainen   viivalla tarkoittaa, että uusi maalaus paljastuu!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=Edellisessäkö on diskopallo ja henkilö?	###
+txt.puzzle_lore_day4.dia3=Ne kaikki ovat erittäin outoja ja salaperäisiä...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=Oletko täällä maalauksien vuoksi? Jokainen   viivalla tarkoittaa, että uusi maalaus paljastuu!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=Viimeinen hämmentää. Musta ja keltainen ympyrä, jossa on kakku ja H-kirjain?	###
+txt.puzzle_lore_day5.dia3=Ehkä vinoviiva erottaa niitä...	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=Oletko täällä maalauksien vuoksi? Jokainen   viivalla tarkoittaa, että uusi maalaus paljastuu!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=Eilisen maalauksessa oli säihkyviä numeroita! Ja vuori!	###
+txt.puzzle_lore_day6.dia3=Onpa kiehtovaa!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=Olen vihdoin valmis! Kaikki  maalaukset paljastetaan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=Tämä viimeinen on kaikkein sekavin.	###
+txt.puzzle_lore_day7.dia3=Kädet näyttävät olevan yhdessä? Tai taputtavat?	###
+txt.puzzle_lore_day7.dia4=Sitten siinä on sammakko ja ovi...	###
+txt.puzzle_lore_day7.dia5=Tarvitsen hetken kootakseni ideoitani.	###
+txt.puzzle_lore_day7.dia6=Huomenna ratkaisen mysteerit!	###

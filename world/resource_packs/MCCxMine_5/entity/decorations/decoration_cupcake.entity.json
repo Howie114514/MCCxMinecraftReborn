@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:decoration_cupcake",
+      "textures": {
+        "default": "textures/entity/n/decorations/cupcake/default",
+        "b": "textures/entity/n/decorations/cupcake/aqua_axolotls",
+        "c": "textures/entity/n/decorations/cupcake/blue_bats",
+        "d": "textures/entity/n/decorations/cupcake/cyan_coyotes",
+        "e": "textures/entity/n/decorations/cupcake/lime_llamas",
+        "f": "textures/entity/n/decorations/cupcake/green_geckos",
+        "g": "textures/entity/n/decorations/cupcake/orange_ocelots",
+        "h": "textures/entity/n/decorations/cupcake/pink_parrots",
+        "i": "textures/entity/n/decorations/cupcake/purple_pandas",
+        "j": "textures/entity/n/decorations/cupcake/red_rabbits",
+        "k": "textures/entity/n/decorations/cupcake/yellow_yaks"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.decoration_cupcake"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "render_controllers": [
+        "controller.render.eleven"
+      ]
+    }
+  }
+}

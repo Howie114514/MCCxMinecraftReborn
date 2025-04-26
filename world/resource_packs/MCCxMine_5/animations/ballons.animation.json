@@ -1,0 +1,103 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.ballons.idle": {
+      "loop": true,
+      "bones": {
+        "balloon": {
+          "rotation": [
+            "Math.cos(query.anim_time * 60) *2.5",
+            "Math.cos(query.anim_time * 135) *1.5",
+            "Math.cos(query.anim_time * 90) *5"
+          ]
+        }
+      }
+    },
+    "animation.n.ballons.helium": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 10,
+      "bones": {
+        "root": {
+          "rotation": {
+            "0.0": [
+              0,
+              "v.rand_rot",
+              0
+            ],
+            "1.0": [
+              "Math.cos(query.anim_time * 90 +25) *5",
+              "v.rand_rot",
+              "Math.cos(query.anim_time * 90 +90) *5"
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.0": [
+              "Math.cos(query.anim_time * 60 +60) *2",
+              0,
+              "Math.cos(query.anim_time * 90 +50) *2"
+            ]
+          },
+          "scale": {
+            "0.0": [
+              1,
+              1,
+              1
+            ],
+            "9.5": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "9.6": [
+              0.465,
+              0.465,
+              0.465
+            ],
+            "9.7": [
+              0.3883,
+              0.3883,
+              0.3883
+            ],
+            "9.8": [
+              0.28,
+              0.28,
+              0.28
+            ],
+            "9.9": [
+              0.14,
+              0.14,
+              0.14
+            ],
+            "10.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "helium"
+        }
+      }
+    },
+    "animation.n.ballons.sway": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            "Math.cos(query.anim_time * 120) *1",
+            "Math.cos(query.anim_time * 60) *5",
+            "Math.cos(query.anim_time * 90) *1"
+          ]
+        }
+      }
+    }
+  }
+}

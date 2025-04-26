@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:hieroglyph_helper",
+      "textures": {
+        "default": "textures/entity/n/npc/hieroglyph_helper"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.hieroglyph_helper"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "brushing": "animation.n.hieroglyph_helper.brushing",
+        "special": "animation.n.hieroglyph_helper.special",
+        "ctrl": "controller.animation.hieroglyph_helper.ctrl",
+        "sitting": "animation.n.hieroglyph_helper.sitting",
+        "hints": "animation.n.hieroglyph_helper.hints"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.special = 0;"
+        ],
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "particle_effects": {
+        "dust": "noxcrew.ft:dusting"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

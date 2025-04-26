@@ -1,0 +1,1865 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.giant_cake",
+        "texture_width": 256,
+        "texture_height": 256,
+        "visible_bounds_width": 7,
+        "visible_bounds_height": 10,
+        "visible_bounds_offset": [
+          0,
+          3,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "name": "podium",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            -2
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -16,
+                0,
+                -16
+              ],
+              "size": [
+                32,
+                5,
+                32
+              ],
+              "uv": [
+                114,
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "name": "top_launcher",
+          "parent": "podium",
+          "pivot": [
+            0,
+            6,
+            -2
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -22,
+                5,
+                -22
+              ],
+              "size": [
+                44,
+                7,
+                44
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -5,
+                0.78834,
+                -23.18222
+              ],
+              "size": [
+                10,
+                8,
+                4
+              ],
+              "pivot": [
+                0,
+                10.5,
+                0.5
+              ],
+              "rotation": [
+                -15,
+                0,
+                0
+              ],
+              "uv": [
+                228,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -5,
+                0.78834,
+                -23.18222
+              ],
+              "size": [
+                10,
+                8,
+                4
+              ],
+              "pivot": [
+                0,
+                10.5,
+                0.5
+              ],
+              "rotation": [
+                -15,
+                -90,
+                0
+              ],
+              "uv": [
+                228,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -5,
+                0.78834,
+                -23.18222
+              ],
+              "size": [
+                10,
+                8,
+                4
+              ],
+              "pivot": [
+                0,
+                10.5,
+                0.5
+              ],
+              "rotation": [
+                -15,
+                90,
+                0
+              ],
+              "uv": [
+                228,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -5,
+                0.78834,
+                -23.18222
+              ],
+              "size": [
+                10,
+                8,
+                4
+              ],
+              "pivot": [
+                0,
+                10.5,
+                0.5
+              ],
+              "rotation": [
+                -15,
+                180,
+                0
+              ],
+              "uv": [
+                228,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -13,
+                1,
+                -13
+              ],
+              "size": [
+                26,
+                5,
+                26
+              ],
+              "uv": [
+                132,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "spring_alph",
+          "parent": "top_launcher",
+          "pivot": [
+            0,
+            2,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -12.90487,
+                -18.18885,
+                -11
+              ],
+              "size": [
+                26,
+                0,
+                22
+              ],
+              "pivot": [
+                0.09513,
+                -18.18885,
+                0
+              ],
+              "rotation": [
+                180,
+                0,
+                -170
+              ],
+              "uv": [
+                0,
+                136
+              ]
+            },
+            {
+              "origin": [
+                -13.3958,
+                -6.94471,
+                -11
+              ],
+              "size": [
+                26,
+                0,
+                22
+              ],
+              "pivot": [
+                -0.3958,
+                -6.94471,
+                0
+              ],
+              "rotation": [
+                -180,
+                0,
+                -170
+              ],
+              "uv": [
+                52,
+                153
+              ]
+            }
+          ]
+        },
+        {
+          "name": "spring2_alph",
+          "parent": "spring_alph",
+          "pivot": [
+            0,
+            -16,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -15.84554,
+                -10.39277,
+                -11
+              ],
+              "size": [
+                26,
+                0,
+                22
+              ],
+              "pivot": [
+                -8.18105,
+                -25.05197,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                20
+              ],
+              "uv": [
+                0,
+                136
+              ]
+            },
+            {
+              "origin": [
+                -21.89277,
+                -19.88502,
+                -11
+              ],
+              "size": [
+                26,
+                0,
+                22
+              ],
+              "pivot": [
+                -14.22828,
+                -34.54422,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                20
+              ],
+              "uv": [
+                0,
+                136
+              ]
+            },
+            {
+              "origin": [
+                -4.39993,
+                -4.31724,
+                -11
+              ],
+              "size": [
+                26,
+                0,
+                22
+              ],
+              "pivot": [
+                8.60007,
+                -4.31724,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                20
+              ],
+              "uv": [
+                0,
+                136
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chutearrows_alph",
+          "parent": "top_launcher",
+          "pivot": [
+            0,
+            16,
+            -24
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                16,
+                -21
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "uv": [
+                22,
+                21
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                16,
+                -26
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "pivot": [
+                0,
+                16,
+                -2
+              ],
+              "rotation": [
+                0,
+                180,
+                0
+              ],
+              "uv": [
+                22,
+                21
+              ]
+            },
+            {
+              "origin": [
+                -1,
+                16,
+                -23
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "pivot": [
+                2,
+                16,
+                1
+              ],
+              "rotation": [
+                0,
+                90,
+                0
+              ],
+              "uv": [
+                22,
+                21
+              ]
+            },
+            {
+              "origin": [
+                -5,
+                16,
+                -24
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "pivot": [
+                -2,
+                16,
+                0
+              ],
+              "rotation": [
+                0,
+                -90,
+                0
+              ],
+              "uv": [
+                22,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "name": "plate",
+          "parent": "podium",
+          "pivot": [
+            0,
+            13,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -19,
+                12,
+                -19
+              ],
+              "size": [
+                38,
+                2,
+                38
+              ],
+              "uv": [
+                0,
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "name": "no_cake",
+          "parent": "plate",
+          "pivot": [
+            -0.29046,
+            13.5223,
+            0.5237
+          ],
+          "rotation": [
+            0,
+            -17.5,
+            0
+          ]
+        },
+        {
+          "name": "side_a",
+          "parent": "no_cake",
+          "pivot": [
+            0.63305,
+            32.5223,
+            1.39469
+          ],
+          "rotation": [
+            -15,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8.30071,
+                13.04167,
+                -0.48937
+              ],
+              "size": [
+                16,
+                20,
+                1
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "side_b",
+          "parent": "no_cake",
+          "pivot": [
+            -1.21397,
+            32.6223,
+            1.15271
+          ],
+          "rotation": [
+            15,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8.30071,
+                13.35489,
+                0.85463
+              ],
+              "size": [
+                16,
+                20,
+                1
+              ],
+              "pivot": [
+                -0.30071,
+                23.35489,
+                1.35463
+              ],
+              "rotation": [
+                0,
+                180,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cake",
+          "parent": "plate",
+          "pivot": [
+            0,
+            14,
+            0
+          ],
+          "locators": {
+            "cake_center": [
+              0,
+              14,
+              0
+            ]
+          }
+        },
+        {
+          "name": "cake_1",
+          "parent": "cake",
+          "pivot": [
+            0,
+            20,
+            2
+          ]
+        },
+        {
+          "name": "sponge",
+          "parent": "cake_1",
+          "pivot": [
+            0,
+            22.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -16,
+                14,
+                -16
+              ],
+              "size": [
+                32,
+                17,
+                32
+              ],
+              "uv": [
+                104,
+                104
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cake_2",
+          "parent": "cake",
+          "pivot": [
+            0,
+            27,
+            0
+          ]
+        },
+        {
+          "name": "frost",
+          "parent": "cake_2",
+          "pivot": [
+            0,
+            26,
+            0
+          ]
+        },
+        {
+          "name": "a_alph",
+          "parent": "frost",
+          "pivot": [
+            0,
+            -2,
+            2
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -17,
+                21,
+                -17
+              ],
+              "size": [
+                34,
+                11,
+                34
+              ],
+              "uv": [
+                0,
+                91
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cake_3",
+          "parent": "cake",
+          "pivot": [
+            0,
+            33,
+            0
+          ]
+        },
+        {
+          "name": "strawberry1",
+          "parent": "cake_3",
+          "pivot": [
+            -10.20841,
+            31.81777,
+            -11.56064
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -20.16922,
+                31.6353,
+                -11.88898
+              ],
+              "size": [
+                7,
+                4,
+                7
+              ],
+              "pivot": [
+                -10.66922,
+                33.6353,
+                -2.38898
+              ],
+              "rotation": [
+                8.26418,
+                -52.00445,
+                -6.18473
+              ],
+              "uv": [
+                0,
+                33
+              ]
+            }
+          ]
+        },
+        {
+          "name": "strawberry4",
+          "parent": "cake_3",
+          "pivot": [
+            -1.79692,
+            34.04773,
+            0.50018
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -16.29692,
+                30.04773,
+                -1.99982
+              ],
+              "size": [
+                5,
+                4,
+                5
+              ],
+              "pivot": [
+                -1.79692,
+                35.04773,
+                0.50018
+              ],
+              "rotation": [
+                4.44372,
+                37.06227,
+                4.31798
+              ],
+              "uv": [
+                102,
+                91
+              ]
+            }
+          ]
+        },
+        {
+          "name": "strawberry3",
+          "parent": "cake_3",
+          "pivot": [
+            10.68066,
+            32.2081,
+            10.34527
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6.58479,
+                31.31069,
+                7.25606
+              ],
+              "size": [
+                7,
+                4,
+                7
+              ],
+              "pivot": [
+                10.08479,
+                34.71069,
+                9.75606
+              ],
+              "rotation": [
+                -1.73582,
+                52.00445,
+                6.18473
+              ],
+              "uv": [
+                0,
+                33
+              ]
+            }
+          ]
+        },
+        {
+          "name": "strawberry2",
+          "parent": "cake_3",
+          "pivot": [
+            11.43102,
+            31.77566,
+            -7.91786
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8.93102,
+                30.77566,
+                -10.41786
+              ],
+              "size": [
+                5,
+                4,
+                5
+              ],
+              "pivot": [
+                11.43102,
+                32.77566,
+                -7.91786
+              ],
+              "rotation": [
+                -3.76318,
+                19.60613,
+                -2.90076
+              ],
+              "uv": [
+                102,
+                91
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cake_4",
+          "parent": "cake",
+          "pivot": [
+            0,
+            37,
+            0
+          ]
+        },
+        {
+          "name": "candle",
+          "parent": "cake_4",
+          "pivot": [
+            2.30116,
+            40.76066,
+            0.40576
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                30.7,
+                -3
+              ],
+              "size": [
+                5,
+                12,
+                5
+              ],
+              "pivot": [
+                0,
+                37,
+                0
+              ],
+              "rotation": [
+                -0.88045,
+                -9.96156,
+                5.07673
+              ],
+              "uv": [
+                1,
+                72
+              ]
+            }
+          ]
+        },
+        {
+          "name": "candle_top_alph",
+          "parent": "candle",
+          "pivot": [
+            0,
+            37,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0,
+                42.7,
+                0
+              ],
+              "size": [
+                3,
+                5,
+                0
+              ],
+              "pivot": [
+                0,
+                37,
+                0
+              ],
+              "rotation": [
+                -0.88045,
+                -9.96156,
+                5.07673
+              ],
+              "uv": [
+                0,
+                21
+              ]
+            }
+          ],
+          "locators": {
+            "candle_flame": [
+              3,
+              44,
+              0
+            ]
+          }
+        },
+        {
+          "name": "ui_body_y_rotation",
+          "parent": "root",
+          "pivot": [
+            0,
+            28,
+            0
+          ]
+        },
+        {
+          "name": "right",
+          "parent": "ui_body_y_rotation",
+          "pivot": [
+            -53.75,
+            21,
+            -31
+          ],
+          "rotation": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "name": "milk",
+          "parent": "right",
+          "pivot": [
+            -40.83333,
+            5.66667,
+            0
+          ]
+        },
+        {
+          "name": "milk_plus_alph",
+          "parent": "milk",
+          "pivot": [
+            -27,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -31,
+                1,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                -27,
+                5,
+                0
+              ],
+              "rotation": [
+                0,
+                -5,
+                0
+              ],
+              "uv": [
+                6,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "name": "milk_full",
+          "parent": "milk",
+          "pivot": [
+            -40,
+            -33,
+            -7
+          ]
+        },
+        {
+          "name": "milk_blip1_full_alph",
+          "parent": "milk_full",
+          "pivot": [
+            -45,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -49,
+                1,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ]
+            }
+          ]
+        },
+        {
+          "name": "milk_blip2_full_alph",
+          "parent": "milk_full",
+          "pivot": [
+            -35,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -39,
+                1,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ]
+            }
+          ]
+        },
+        {
+          "name": "milk_empty",
+          "parent": "milk",
+          "pivot": [
+            -40,
+            -33,
+            -7
+          ]
+        },
+        {
+          "name": "milk_blip1_empty_alph",
+          "parent": "milk_empty",
+          "pivot": [
+            -45,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -48,
+                2,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "name": "milk_blip2_empty_alph",
+          "parent": "milk_empty",
+          "pivot": [
+            -42.5,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -38,
+                2,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "name": "milk_icon_alph",
+          "parent": "milk",
+          "pivot": [
+            -40,
+            -33,
+            -7
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -57,
+                1,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                102,
+                100
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eggs",
+          "parent": "right",
+          "pivot": [
+            -40.83333,
+            -3.33333,
+            0
+          ]
+        },
+        {
+          "name": "eggs_full",
+          "parent": "eggs",
+          "pivot": [
+            -40,
+            -42,
+            -7
+          ]
+        },
+        {
+          "name": "eggs_blip1_full_alph",
+          "parent": "eggs_full",
+          "pivot": [
+            -44.75,
+            -4.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -49,
+                -8.5,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eggs_blip2_full_alph",
+          "parent": "eggs_full",
+          "pivot": [
+            -44.75,
+            -4.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -39,
+                -8.5,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eggs_empty",
+          "parent": "eggs",
+          "pivot": [
+            -40,
+            -42,
+            -7
+          ]
+        },
+        {
+          "name": "eggs_blip1_empty_alph",
+          "parent": "eggs_empty",
+          "pivot": [
+            -35,
+            -4.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -48,
+                -7.5,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ]
+            },
+            {
+              "origin": [
+                -48,
+                -7.5,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eggs_blip2_empty_alph",
+          "parent": "eggs_empty",
+          "pivot": [
+            -35,
+            -4.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -38,
+                -7.5,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eggs_icon_alph",
+          "parent": "eggs",
+          "pivot": [
+            -40,
+            -42,
+            -7
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -57,
+                -8,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                102,
+                108
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eggs_plus_alph",
+          "parent": "eggs",
+          "pivot": [
+            -27,
+            -4.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -31,
+                -8.5,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                -27,
+                -4.5,
+                0
+              ],
+              "rotation": [
+                0,
+                -5,
+                0
+              ],
+              "uv": [
+                6,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "name": "left",
+          "parent": "ui_body_y_rotation",
+          "pivot": [
+            53.75,
+            21,
+            -31
+          ],
+          "rotation": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "name": "wheat",
+          "parent": "left",
+          "pivot": [
+            40.83333,
+            5.66667,
+            0
+          ]
+        },
+        {
+          "name": "wheat_full",
+          "parent": "wheat",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wheat_blip1_full_alph",
+          "parent": "wheat_full",
+          "pivot": [
+            48,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                41,
+                2,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                45,
+                6,
+                -1
+              ],
+              "rotation": [
+                180,
+                0,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "wheat_blip2_full_alph",
+          "parent": "wheat_full",
+          "pivot": [
+            44,
+            15,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                31,
+                2,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                35,
+                6,
+                -1
+              ],
+              "rotation": [
+                180,
+                -5,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "wheat_empty",
+          "parent": "wheat",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wheat_blip1_empty_alph",
+          "parent": "wheat_empty",
+          "pivot": [
+            46.5,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                42,
+                3,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "pivot": [
+                45,
+                6,
+                0
+              ],
+              "rotation": [
+                2.5,
+                0,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "wheat_blip2_empty_alph",
+          "parent": "wheat_empty",
+          "pivot": [
+            42.5,
+            5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                32,
+                3,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "pivot": [
+                35,
+                6,
+                0
+              ],
+              "rotation": [
+                2.5,
+                0,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "wheat_icon_alph",
+          "parent": "wheat",
+          "pivot": [
+            40,
+            -33,
+            -7
+          ],
+          "cubes": [
+            {
+              "origin": [
+                49,
+                1,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                118,
+                108
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "wheat_plus_alph",
+          "parent": "wheat",
+          "pivot": [
+            27,
+            6,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                23,
+                2,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                27,
+                6,
+                0
+              ],
+              "rotation": [
+                180,
+                -5,
+                0
+              ],
+              "uv": [
+                6,
+                21
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "sugar",
+          "parent": "left",
+          "pivot": [
+            40.83333,
+            -3.33333,
+            0
+          ]
+        },
+        {
+          "name": "sugar_full",
+          "parent": "sugar",
+          "pivot": [
+            40,
+            -42,
+            -7
+          ]
+        },
+        {
+          "name": "sugar_blip1_full_alph",
+          "parent": "sugar_full",
+          "pivot": [
+            45,
+            -3.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                41,
+                -8,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                45,
+                -4,
+                -1
+              ],
+              "rotation": [
+                180,
+                0,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "sugar_blip2_full_alph",
+          "parent": "sugar_full",
+          "pivot": [
+            44,
+            -4,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                31,
+                -8,
+                -1
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                35,
+                -4,
+                -1
+              ],
+              "rotation": [
+                180,
+                -5,
+                0
+              ],
+              "uv": [
+                0,
+                57
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "sugar_empty",
+          "parent": "sugar",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "sugar_blip1_empty_alph",
+          "parent": "sugar_empty",
+          "pivot": [
+            46.5,
+            -4,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                42,
+                -7,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "pivot": [
+                45,
+                -4,
+                0
+              ],
+              "rotation": [
+                2.5,
+                0,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "sugar_blip2_empty_alph",
+          "parent": "sugar_empty",
+          "pivot": [
+            42.5,
+            -4,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                32,
+                -7,
+                0
+              ],
+              "size": [
+                6,
+                6,
+                0
+              ],
+              "pivot": [
+                35,
+                -4,
+                0
+              ],
+              "rotation": [
+                2.5,
+                0,
+                0
+              ],
+              "uv": [
+                12,
+                51
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "sugar_icon_alph",
+          "parent": "sugar",
+          "pivot": [
+            40,
+            -42,
+            -7
+          ],
+          "cubes": [
+            {
+              "origin": [
+                49,
+                -8,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                118,
+                100
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "sugar_plus_alph",
+          "parent": "sugar",
+          "pivot": [
+            27,
+            -4,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                23,
+                -8,
+                0
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "pivot": [
+                27,
+                -4,
+                0
+              ],
+              "rotation": [
+                180,
+                -5,
+                0
+              ],
+              "uv": [
+                6,
+                21
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

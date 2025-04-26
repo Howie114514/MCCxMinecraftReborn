@@ -1,0 +1,107 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:tnt_minecart",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "component_groups": {
+      "noxcrew:explode": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 0.5,
+          "causes_fire": false,
+          "breaks_blocks": false
+        },
+        "minecraft:is_ignited": {}
+      },
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "minecart",
+          "inanimate"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.98,
+        "height": 0.7
+      },
+      "minecraft:rail_movement": {},
+      "minecraft:physics": {},
+      "minecraft:entity_sensor": {
+        "event_filters": {
+          "test": "is_family",
+          "subject": "other",
+          "value": "player"
+        },
+        "sensor_range": 0.3,
+        "event": "noxcrew:add_explode"
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 60,
+          "max_dropped_ticks": 20,
+          "use_motion_prediction_hints": true
+        },
+        "conditional_values": [
+          {
+            "max_optimized_distance": 0,
+            "max_dropped_ticks": 0,
+            "conditional_values": [
+              {
+                "test": "is_moving",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      }
+    },
+    "events": {
+      "noxcrew:add_explode": {
+        "add": {
+          "component_groups": [
+            "noxcrew:explode"
+          ]
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

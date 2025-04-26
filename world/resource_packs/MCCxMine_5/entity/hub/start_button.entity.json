@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:start_button",
+      "textures": {
+        "default": "textures/entity/n/hub/start_button"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.start_button"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "idle": "animation.n.start_button.idle",
+        "interact": "animation.n.start_button.interact",
+        "ctrl": "controller.animation.start_button.ctrl",
+        "special": "animation.n.start_button.special",
+        "special_random": "animation.n.start_button.special_random",
+        "special_ctrl": "controller.animation.start_button.special_ctrl"
+      },
+      "sound_effects": {
+        "interact": "start_button_interact",
+        "special": "start_button_special"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.random = 0;"
+        ],
+        "animate": [
+          "ctrl",
+          "special_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "click": "noxcrew.ft:console_click"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

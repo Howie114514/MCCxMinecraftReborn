@@ -1,0 +1,163 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.fake_pot",
+        "texture_width": 64,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bone",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                0,
+                -4
+              ],
+              "size": [
+                4,
+                3,
+                8
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                11,
+                -4
+              ],
+              "size": [
+                4,
+                3,
+                8
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -5,
+                14,
+                -5
+              ],
+              "size": [
+                5,
+                3,
+                10
+              ],
+              "uv": [
+                24,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -6,
+                3,
+                -6
+              ],
+              "size": [
+                6,
+                8,
+                12
+              ],
+              "uv": [
+                0,
+                12
+              ]
+            },
+            {
+              "origin": [
+                0,
+                3,
+                -6
+              ],
+              "size": [
+                6,
+                8,
+                12
+              ],
+              "uv": [
+                0,
+                12
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                0,
+                0,
+                -4
+              ],
+              "size": [
+                4,
+                3,
+                8
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                0,
+                11,
+                -4
+              ],
+              "size": [
+                4,
+                3,
+                8
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                0,
+                14,
+                -5
+              ],
+              "size": [
+                5,
+                3,
+                10
+              ],
+              "uv": [
+                24,
+                0
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

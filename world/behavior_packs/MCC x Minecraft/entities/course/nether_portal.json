@@ -1,0 +1,67 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.fake_netherportal",
+      "animations": {
+        "portal": "animation.portal_sound_detect"
+      },
+      "scripts": {
+        "animate": [
+          "portal"
+        ]
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "fake_netherportal"
+        ]
+      },
+      "minecraft:collision_box": {
+        "height": 0,
+        "width": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

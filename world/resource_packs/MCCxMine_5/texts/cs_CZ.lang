@@ -1,0 +1,1091 @@
+## Meta
+pack.name=MCC x 15. výročí Minecraft RP	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=Balíček zdrojů pro 15. výroční akci MCC x Minecraft.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=UDÁLOST MC MISTROVSTVÍ V MINIHRÁCH!	###
+txt.event_overview.2=Noxcrew přináší to nejlepší z MC Mistrovství do Bedrock Edition! Flámujte celý den a rozdejte si to v minihrách navržených tak, aby otestovaly vaše dovednosti, od parkouru až po boje s nestvůrami.	###
+txt.event_overview.3=Získejte 15 kosmetických položek zdarma. A nový luxusní plášť!	###
+txt.event_overview.4=Popadněte své meče - čeká vás pořádná mela!	###
+txt.event_overview.5=Událost začíná přímo tady, 22. července v 19:00 CET a poběží až do 5. srpna do 01:00 CET	###
+
+##VANILLA
+item.warped_sign.name=Jeskynní symbol 	###
+tile.warped_standing_sign.name=Jeskynní symbol 	###
+tile.warped_wall_sign.name=Jeskynní symbol 	###
+tile.prismarine.dark.name=Kovový blok 	###
+tile.stone_slab2.prismarine.dark.name=Kovový panel 	###
+tile.dark_prismarine_stairs.name=Kovové schody 	###
+
+##INTERACT TEXTS
+action.interact.open=Otevřít	###This is meant as a verb, action.
+action.interact.take=Vzít	###This is meant as a verb, action.
+action.interact.grab=Vzít	###This is meant as a verb, action.
+action.interact.pick_up=Zvednout	###This is meant as a verb, action.
+action.interact.use=Použít	###This is meant as a verb, action.
+action.interact.change_color=Změnit barvu	###This is meant as a verb, action.
+action.interact.deposit=Vklad	###This is meant as a verb, action.
+action.interact.interact=Interagovat	###This is meant as a verb, action.
+action.interact.trash=Odpadky	###To throw away or "trash" an item
+action.interact.eat=Sníst	###To eat something, like a food
+action.interact.drink=Nápoj	###To drink something, like a soda
+action.interact.paint=Lak	###The verb to paint.
+action.interact.gift=Dárek pro hráče	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=Obchod	###The verb, "to shop" or "to browse"
+action.interact.decorate=Výzdoba	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=Pro ukončení klepněte na „Plížení“	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=Pro ukončení klepněte na „Plížení“	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=Pro ukončení stiskněte :_input_key.sneak:	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§oKaždý den bude odhalen nový obraz.	###
+txt.sign.cave2=§oVyřešte všech sedm a získejte odměnu!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=Mrazivý luk	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=Mrazivý luk	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=Železný klíč	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=Zlatý klíč	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=Diamantový klíč	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=Netheritový klíč	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=Čistý štětec	###
+item.noxcrew.ft:paintbrush_green.name=Zelený štětec	###
+item.noxcrew.ft:paintbrush_yellow.name=Žlutý štětec	###
+item.noxcrew.ft:paintbrush_blue.name=Modrý štětec	###
+item.noxcrew.ft:paintbrush_red.name=Červený štětec	###
+item.noxcrew.ft:paintbrush_white.name=Bílý štětec	###
+item.noxcrew.ft:paintbrush_black.name=Černý štětec	###
+item.noxcrew.ft:paintbrush_brown.name=Hnědý štětec	###
+item.noxcrew.ft:paintbrush_purple.name=Fialový štětec	###
+item.noxcrew.ft:beanie_red.name=Kulich Red Rabbits	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=Kulich Orange Ocelots	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=Kulich Yellow Yaks	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=Kulich Lime Llamas	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=Kulich Green Geckos	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=Kulich Aqua Axolotls	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=Kulich Cyan Coyotes	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=Kulich Blue Bats	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=Kulich Purple Pandas	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=Kulich Pink Parrots	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=Párty klobouček	###
+item.noxcrew.ft:hat_propeller.name=Čepice s vrtulkou	###
+item.noxcrew.ft:hat_crown_cake.name=Dortová koruna	###
+item.noxcrew.ft:hat_birthday_present.name=Klobouk s narozeninovým dárkem	###
+item.noxcrew.ft:hat_jester.name=Klobouk šaška	###
+item.noxcrew.ft:hat_chicken_jockey.name=Slepičí žokejská čapka	###
+item.noxcrew.ft:hat_boombox.name=Klobouk s magneťákem	###
+item.noxcrew.ft:foam_finger.name=Pěnový prst	###
+item.noxcrew.ft:balloon_animal.name=Balónek ve tvaru zvířete	###
+item.noxcrew.ft:big_bubble_blower.name=Obří bublifuk	###
+item.noxcrew.ft:silly_horn.name=Bláznivý roh	###
+item.noxcrew.ft:party_popper.name=Konfeta	###
+item.noxcrew.ft:confetti_tag_prime.name=Štítek s konfetami	###
+item.noxcrew.ft:confetti_tag_leftover.name=Štítek s konfetami	###
+item.noxcrew.ft:pizza_box.name=Krabice s pizzou	###
+item.noxcrew.ft:celebration_fireworks.name=Narozeninový ohňostroj	###
+item.noxcrew.ft:player_gift_giving.name=Dárková krabička	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=Dárková krabička	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=Disko koule	###
+item.noxcrew.ft:beach_ball.name=Plážový míč	###
+item.noxcrew.ft:balloon_helium.name=Heliový balónek	###
+item.noxcrew.ft:leave_game.name=§6Opustit hru	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=Plátek pizzy	###
+item.noxcrew.ft:mcc_burger.name=Chutný burger	###
+item.noxcrew.ft:anniversary_hot_dog.name=Chutný párek v rohlíku	###
+item.noxcrew.ft:party_cupcake.name=Cupcake	###
+item.noxcrew.ft:party_cake.name=Kousek dortu	###
+item.noxcrew.ft:party_chips.name=Miska chipsů	###
+item.noxcrew.ft:party_cookie.name=Sušenka	###
+item.noxcrew.ft:party_soda.name=Šumivá soda	###
+item.noxcrew.ft:cotton_candy.name=Cukrová vata	###
+item.noxcrew.ft:popcorn.name=Popcorn	###
+item.noxcrew.ft:super_wrap.name=Zdravý wrap	###
+item.noxcrew.ft:cosmetic_chest.name=Kosmetická truhla	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=Teleportační mapa	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=Seznam výzev	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=Vejce	###
+item.noxcrew.ft:milk_bucket.name=Kbelík na mléko	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=Mrazivý luk	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=Mrazivý luk	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=Železný klíč	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=Zlatý klíč	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=Diamantový klíč	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=Netheritový klíč	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=Čistý štětec	###
+item.noxcrew.ft:paintbrush_green=Zelený štětec	###
+item.noxcrew.ft:paintbrush_yellow=Žlutý štětec	###
+item.noxcrew.ft:paintbrush_blue=Modrý štětec	###
+item.noxcrew.ft:paintbrush_red=Červený štětec	###
+item.noxcrew.ft:paintbrush_white=Bílý štětec	###
+item.noxcrew.ft:paintbrush_black=Černý štětec	###
+item.noxcrew.ft:paintbrush_brown=Hnědý štětec	###
+item.noxcrew.ft:paintbrush_purple=Fialový štětec	###
+item.noxcrew.ft:beanie_red=Kulich Red Rabbits	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=Kulich Orange Ocelots	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=Kulich Yellow Yaks	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=Kulich Lime Llamas	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=Kulich Green Geckos	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=Kulich Aqua Axolotls	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=Kulich Cyan Coyotes	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=Kulich Blue Bats	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=Kulich Purple Pandas	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=Kulich Pink Parrots	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=Párty klobouček	###
+item.noxcrew.ft:hat_propeller=Čepice s vrtulkou	###
+item.noxcrew.ft:hat_crown_cake=Dortová koruna	###
+item.noxcrew.ft:hat_birthday_present=Klobouk s narozeninovým dárkem	###
+item.noxcrew.ft:hat_jester=Klobouk šaška	###
+item.noxcrew.ft:hat_chicken_jockey=Klobouk slepičího jezdce	###
+item.noxcrew.ft:hat_boombox=Klobouk s magneťákem	###
+item.noxcrew.ft:foam_finger=Pěnový prst	###
+item.noxcrew.ft:balloon_animal=Balónek ve tvaru zvířete	###
+item.noxcrew.ft:big_bubble_blower=Obří bublifuk	###
+item.noxcrew.ft:silly_horn=Bláznivý roh	###
+item.noxcrew.ft:party_popper=Konfeta	###
+item.noxcrew.ft:confetti_tag_prime=Štítek s konfetami	###
+item.noxcrew.ft:confetti_tag_leftover=Štítek s konfetami	###
+item.noxcrew.ft:pizza_box=Krabice s pizzou	###
+item.noxcrew.ft:celebration_fireworks=Narozeninový ohňostroj	###
+item.noxcrew.ft:player_gift_giving=Dárková krabička	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=Dárková krabička	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=Disko koule	###
+item.noxcrew.ft:beach_ball=Plážový míč	###
+item.noxcrew.ft:balloon_helium=Heliový balónek	###
+item.noxcrew.ft:leave_game=§6Opustit hru	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=Plátek pizzy	###
+item.noxcrew.ft:mcc_burger=Chutný burger	###
+item.noxcrew.ft:anniversary_hot_dog=Chutný párek v rohlíku	###
+item.noxcrew.ft:party_cupcake=Cupcake	###
+item.noxcrew.ft:party_cake=Kousek dortu	###
+item.noxcrew.ft:party_chips=Miska chipsů	###
+item.noxcrew.ft:party_cookie=Sušenka	###
+item.noxcrew.ft:party_soda=Šumivá soda	###
+item.noxcrew.ft:cotton_candy=Cukrová vata	###
+item.noxcrew.ft:popcorn=Popcorn	###
+item.noxcrew.ft:super_wrap=Zdravý wrap	###
+item.noxcrew.ft:cosmetic_chest=Kosmetická truhla	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=Teleportační mapa	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=Seznam výzev	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=Vejce	###
+item.noxcrew.ft:milk_bucket=Kbelík na mléko	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=Blok zrychlení	###
+tile.noxcrew.ft:launch_pad.name=Blok odpalovací plošiny	###
+tile.noxcrew.ft:jump_pad.name=Blok posílení skoku	###
+tile.noxcrew.ft:painting_green.name=Zelený blok	###
+tile.noxcrew.ft:painting_yellow.name=Žlutý blok	###
+tile.noxcrew.ft:painting_blue.name=Modrý blok	###
+tile.noxcrew.ft:painting_red.name=Červený blok	###
+tile.noxcrew.ft:painting_white.name=Bílý blok	###
+tile.noxcrew.ft:painting_black.name=Černý blok	###
+tile.noxcrew.ft:painting_brown.name=Hnědý blok	###
+tile.noxcrew.ft:painting_purple.name=Fialový blok	###
+tile.noxcrew.ft:elytra_icon.name=Blok brány s krovkami	###
+tile.noxcrew.ft:audience_member_oof.name=Šklebící se divák	###
+tile.noxcrew.ft:audience_member_angry.name=Rozzlobený divák	###
+tile.noxcrew.ft:audience_member_joy.name=Radostný divák	###
+tile.noxcrew.ft:audience_member_happy.name=Šťastný divák	###
+tile.noxcrew.ft:audience_member_unimpressed.name=Nepřesvědčený divák	###
+tile.noxcrew.ft:audience_member_unsure.name=Nejistý divák	###
+tile.noxcrew.ft:audience_member_starstruck.name=Okouzlený divák	###
+tile.noxcrew.ft:cake_centre.name=Střed dortu	###
+tile.noxcrew.ft:cake_edge.name=Okraj dortu	###
+tile.noxcrew.ft:cake_cherry.name=Třešnička na dortu	###
+tile.noxcrew.ft:window_spruce.name=Smrkové okno	###
+tile.noxcrew.ft:window_oak.name=Dubové okno	###
+tile.noxcrew.ft:iron_bars.name=Rovné železné mříže	###
+tile.noxcrew.ft:iron_bars_h.name=Polovina železné mříže	###
+tile.noxcrew.ft:iron_bars_c.name=Roh železné mříže	###
+tile.noxcrew.ft:castle_pink.name=Růžový hrad z terakoty 	###
+tile.noxcrew.ft:sot_flower.name=Zapálený zázvor okrasný 	###
+tile.noxcrew.ft:metal_rigging_v.name=Vodorovné kovové lanoví	###
+tile.noxcrew.ft:metal_rigging_h.name=Svislé kovové lanoví	###
+tile.noxcrew.ft:modern_light.name=Moderní světlo	###
+tile.noxcrew.ft:rope.name=Lanový blok	###
+tile.noxcrew.ft:hieroglyph_1_a.name=Jeskynní hádanka – den 1 – vlevo nahoře	###
+tile.noxcrew.ft:hieroglyph_1_b.name=Jeskynní hádanka – den 1 – vpravo nahoře	###
+tile.noxcrew.ft:hieroglyph_1_c.name=Jeskynní hádanka – den 1 – vlevo dole	###
+tile.noxcrew.ft:hieroglyph_1_d.name=Jeskynní hádanka – den 1 – vpravo dole	###
+tile.noxcrew.ft:hieroglyph_2_a.name=Jeskynní hádanka – den 2 – vlevo nahoře	###
+tile.noxcrew.ft:hieroglyph_2_b.name=Jeskynní hádanka – den 2 – vpravo nahoře	###
+tile.noxcrew.ft:hieroglyph_2_c.name=Jeskynní hádanka – den 2 – vlevo dole	###
+tile.noxcrew.ft:hieroglyph_2_d.name=Jeskynní hádanka – den 2 – vpravo dole	###
+tile.noxcrew.ft:hieroglyph_3_a.name=Jeskynní hádanka – den 3 – vlevo nahoře	###
+tile.noxcrew.ft:hieroglyph_3_b.name=Jeskynní hádanka – den 3 – vpravo nahoře	###
+tile.noxcrew.ft:hieroglyph_3_c.name=Jeskynní hádanka – den 3 – vlevo dole	###
+tile.noxcrew.ft:hieroglyph_3_d.name=Jeskynní hádanka – den 3 – vpravo dole	###
+tile.noxcrew.ft:hieroglyph_4_a.name=Jeskynní hádanka – den 4 – vlevo nahoře	###
+tile.noxcrew.ft:hieroglyph_4_b.name=Jeskynní hádanka – den 4 – vpravo nahoře	###
+tile.noxcrew.ft:hieroglyph_4_c.name=Jeskynní hádanka – den 4 – vlevo dole	###
+tile.noxcrew.ft:hieroglyph_4_d.name=Jeskynní hádanka – den 4 – vpravo dole	###
+tile.noxcrew.ft:hieroglyph_5_a.name=Jeskynní hádanka – den 5 – vlevo nahoře	###
+tile.noxcrew.ft:hieroglyph_5_b.name=Jeskynní hádanka – den 5 – vpravo nahoře	###
+tile.noxcrew.ft:hieroglyph_5_c.name=Jeskynní hádanka – den 5 – vlevo dole	###
+tile.noxcrew.ft:hieroglyph_5_d.name=Jeskynní hádanka – den 5 – vpravo dole	###
+tile.noxcrew.ft:hieroglyph_6_a.name=Jeskynní hádanka – den 6 – vlevo nahoře	###
+tile.noxcrew.ft:hieroglyph_6_b.name=Jeskynní hádanka – den 6 – vpravo nahoře	###
+tile.noxcrew.ft:hieroglyph_6_c.name=Jeskynní hádanka – den 6 – vlevo dole	###
+tile.noxcrew.ft:hieroglyph_6_d.name=Jeskynní hádanka – den 6 – vpravo dole	###
+tile.noxcrew.ft:hieroglyph_7_a.name=Jeskynní hádanka – den 7 – vlevo nahoře	###
+tile.noxcrew.ft:hieroglyph_7_b.name=Jeskynní hádanka – den 7 – vpravo nahoře	###
+tile.noxcrew.ft:hieroglyph_7_c.name=7. den jeskynních hádanek vlevo dole	###
+tile.noxcrew.ft:hieroglyph_7_d.name=7. den jeskynních hádanek vpravo dole	###
+tile.noxcrew.ft:bigcake_top.name=Vrchní strana dortového bloku	###
+tile.noxcrew.ft:bigcake_bottom.name=Spodní strana dortového bloku	###
+tile.noxcrew.ft:cake_slice.name=Kousek dortu	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=Vrchní strana dlouhého praporu s číslem 15	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=Spodní strana dlouhého praporu s číslem 15	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=Vrchní strana dlouhého praporu s logem MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=Spodní strana dlouhého praporu s logem MCC	###
+tile.noxcrew.ft:decoration_bunting_a.name=Bíla vlaječka vlajkoslávy	###
+tile.noxcrew.ft:decoration_bunting_b.name=Zelená vlaječka vlajkoslávy	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=Vlaječka vlajkoslávy s logem MCC	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=Zelená vlaječka praporku	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=Bílá vlaječka praporku	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=Vlaječka praporku s logem MCC	###
+tile.noxcrew.ft:decoration_flag_mcc.name=Malá vlajka s logem MCC	###
+tile.noxcrew.ft:decoration_flag_15.name=Malá vlajka s motivem výročí 15 let	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=Vrchní strana vlajky s motivem výročí 15 let	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=Spodní strana vlajky s motivem výročí 15 let	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=Vrchní strana vlajky s logem MCC	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=Spodní strana vlajky s logem MCC	###
+tile.noxcrew.ft:plush_red.name=Plyšák Red Rabbits	###
+tile.noxcrew.ft:plush_orange.name=Plyšák Orange Ocelots	###
+tile.noxcrew.ft:plush_yellow.name=Plyšák Yellow Yaks	###
+tile.noxcrew.ft:plush_lime.name=Plyšák Lime Llamas	###
+tile.noxcrew.ft:plush_green.name=Plyšák Green Geckos	###
+tile.noxcrew.ft:plush_cyan.name=Plyšák Cyan Coyotes	###
+tile.noxcrew.ft:plush_aqua.name=Plyšák Aqua Axolotls	###
+tile.noxcrew.ft:plush_blue.name=Plyšák Blue Bats	###
+tile.noxcrew.ft:plush_pink.name=Plyšák Pink Parrots	###
+tile.noxcrew.ft:plush_purple.name=Plyšák Purple Pandas	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=Vrchní levá strana praporu s logem MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=Vrchní pravá strana praporu s logem MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=Spodní levá strana praporu s logem MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=Spodní pravá strana praporu s logem MCC	###
+tile.noxcrew.ft:decoration_present.name=MCC dárkový box	###
+tile.noxcrew.ft:cup_poster1.name=Plakát Poháru enderu 1	###
+tile.noxcrew.ft:cup_poster2.name=Plakát Poháru enderu 2	###
+tile.noxcrew.ft:logo_1.name=Noxcrew logo 1	###
+tile.noxcrew.ft:logo_2.name=Noxcrew logo 2	###
+tile.noxcrew.ft:logo_3.name=Noxcrew logo 3	###
+tile.noxcrew.ft:melt_spawner.name=Líheň nestvůr z minihry Meltdown	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=Hromada mincí	###
+entity.noxcrew.ft:treasure_chest.name=Truhla s pokladem	###
+entity.noxcrew.ft:key_podium.name=Klíčové pódium	###
+entity.noxcrew.ft:sand_podium.name=Písečné pódium	###
+entity.noxcrew.ft:armor_podium.name=Obrněné pódium	###
+entity.noxcrew.ft:paint_pot.name=Nádoba na barvu	###
+entity.noxcrew.ft:giant_cake.name=Narozeninový dort	###
+entity.noxcrew.ft:beach_ball.name=Plážový míč	###
+entity.noxcrew.ft:balloon_helium.name=Heliový balónek	###
+entity.noxcrew.ft:disco_ball.name=Disko koule	###
+entity.noxcrew.ft:lost_pearl.name=Tajemná perla	###
+entity.noxcrew.ft:decoration_awning.name=Zdobená stříška	###
+entity.noxcrew.ft:decoration_bunting.name=Zdobený závěs s vlajkami	###
+entity.noxcrew.ft:decoration_cupcake.name=Narozeninový dortík	###
+entity.noxcrew.ft:decoration_ballons.name=Narozeninové balónky	###
+entity.noxcrew.ft:decoration_15.name=15 balónků	###
+entity.noxcrew.ft:decoration_board.name=Narozeninová tabule	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=Balónek ve tvaru kuřete	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=Balónek s maskotem	###
+entity.noxcrew.ft:trophy_help.name=Nápověda	###
+entity.noxcrew.ft:sand_timer.name=Přesýpací hodiny	###
+entity.noxcrew.ft:crowned_frog.name=Žabí princ	###
+entity.noxcrew.ft:cake_candles.name=Dortová svíčka	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=tlačítko Start	###
+entity.noxcrew.ft:vendor_mascot.name=Čepice maskotů	###
+entity.noxcrew.ft:vendor_hat.name=Čepice	###
+entity.noxcrew.ft:vendor_toys.name=Hračky	###
+entity.noxcrew.ft:vendor_food.name=Jídla	###
+entity.noxcrew.ft:advert_creator_cup.name=Enderový pohár	###
+entity.noxcrew.ft:md_creeper.name=Plíživec	###
+entity.noxcrew.ft:md_blaze.name=Ohnivec	###
+entity.noxcrew.ft:md_blaze<>.name=Ohnivec	###
+entity.noxcrew.ft:md_skeleton.name=Kostlivec	###
+entity.noxcrew.ft:md_skeleton<>.name=Kostlivec	###
+entity.noxcrew.ft:md_spider.name=Pavouk	###
+entity.noxcrew.ft:md_vindicator.name=Mstitel	###
+entity.noxcrew.ft:md_zombie.name=Zombie	###
+entity.noxcrew.ft:md_zombie_baby.name=Dětská zombie	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§oPerla se záhadně pohupuje nahoru a dolů...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r Objevili jste tajemství jeskyně!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=ČEKÁ SE NA HRÁČE…	###
+txt.misc.msg4=Hra začne za 	###
+txt.misc.msg5=Za malou chvíli budete teleportováni	###
+txt.misc.msg6_1=§6§l!§r %s vám dal(a) dárek!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r Dali jste dárek hráči %s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r Tento hráč nemůže přijmout další dárek	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= Krovky nasazeny 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §eÚroveň s hádankami byla dokončena… 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §aDokončili jste Jeskynní hádanku! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: Máte chuť si zaskákat? A co takhle se proběhnout v oblacích v minihře  §6Ace Race§r  !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: Chcete opravdovou výzvu? Zkuste dokončit všechny úkoly v minihře  §6Grid Runners§r  !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]: Minihra  §6Meltdown§r  už na vás čeká… dokážete přežít proti hordám nestvůr?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]: Prozkoumejte tajemný chrám v minihře  §6Sands of Time§r  !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r ]! Všechny své splněné výzvy uvidíte v Místnosti trofejí! Ta se nachází ve velkém stanu poblíž portálu do minihry  §6Grid Runners§r  v  hlavním lobby!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: Sháníte pokrývku hlavy? Tak si nějakou kupte v Obchodě s čepicemi a klobouky! Ten se nachází pod velkým kloboukem v  hlavním lobby!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: Chcete si pohrát s opravdu parádními hračkami? Tak si nějaké kupte v Hračkářství! To se nachází poblíž cedulí s vozíky v  hlavním lobby!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: Chcete ochutnat různé druhy jídla? Tak si nějaké kupte v Obchodě s potravinami! Ten se nachází v restauraci poblíž obří sochy slepice v  hlavním lobby!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]: Věděli jste, že tu jsou   tajemné hádanky, které můžete vyřešit? Jděte do Tajemné jeskyně na vrcholku hory v  hlavním lobby!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r ]: Věděli jste, že každý den vychází nová tajemná hádanka, kterou můžete vyřešit? Každá  vedle  znamená, že byla odhalena další hádanka!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: Věděli jste, že v každém lobby můžete najít hromádky mincí? Tak se pusťte se do hledání!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: Máte plný inventář? Některých položek se můžete zbavit tím, že je hodíte do koše!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cNa to nemáte dostatek mincí	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cNemáte dostatek místa k zakoupení! Vymažte položky v koši.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r Tento klobouk již máte!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s je plné!§r Seberte jinou přísadu!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cK této truhle nemáte klíč!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6Tuto truhlu jste již otevřeli!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=Pizza! Snězte ji a získáte zrychlení!	###
+txt.shop_info.mcc_burger=Burger! Snězte ho a získáte zrychlení a posílení skoku!	###
+txt.shop_info.anniversary_hot_dog=Hot Dog! Snězte ho a získáte zrychlení a posílení skoku!	###
+txt.shop_info.party_cupcake=Košíček! Snězte ho a získáte efekt pírko, čímž zpomalíte pád!	###
+txt.shop_info.party_cake=Dort! Snězte ho a získáte levitaci!	###
+txt.shop_info.party_chips=Brambůrky! Snězte je a získáte zrychlení!	###
+txt.shop_info.party_cookie=Sušenka! Snězte ji a získáte posílení skoku!	###
+txt.shop_info.party_soda=Limonáda! Vypijte ji a získáte zrychlení!	###
+txt.shop_info.cotton_candy=Cukrová vata! Snězte ji a získáte posílení skoku!	###
+txt.shop_info.popcorn=Popcorn! Snězte ho a získáte posílení skoku!	###
+txt.shop_info.super_wrap=Super wrap! Snězte ho a získáte všechna posílení!	###
+txt.shop_info.foam_finger=Molitanový prst! Zvedněte ho a ukažte, komu fandíte!	###
+txt.shop_info.balloon_animal=Balonkové zvířátko! Použijte ho ke spuštění balonku!	###
+txt.shop_info.big_bubble_blower=Bublifuk! Použijte ho k foukání bublin!	###
+txt.shop_info.silly_horn=Trumpetka! Použijte ji k vydávání zvuků!	###
+txt.shop_info.party_popper=Konfetové dělo! Použijte ho k vystřelení konfet!	###
+txt.shop_info.confetti_tag_prime=Konfetový štítek! Použijte ho, abyste hráče označili konfetou!	###
+txt.shop_info.pizza_box=Krabice s pizzou! Použijte ji na hráče a tím mu darujete pizzu!	###
+txt.shop_info.celebration_fireworks=Ohňostroje! Použijte je k odpálení ohňostroje!	###
+txt.shop_info.player_gift_giving=Dárek! Použijte ho na hráče a tím mu darujete dárek!	###
+txt.shop_info.disco_ball=Disko! Použijte ho k vytvoření taneční disko koule!	###
+txt.shop_info.beach_ball=Plážový míč! Použijte ho k vytvoření plážového míče. Trefte ho a začněte hrát!	###
+txt.shop_info.balloon_helium=Balonek! Použijte ho ke spuštění balonku!	###
+
+##Ace Race
+txt.tut.ace_title= Ace Race 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6Promluvte si se Seapeekayem u startovní čáry pro tipy a triky!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: Závoďte až do cíle a používejte zrychlovací plošiny a plošiny pro posílení skoku!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= Porazte bestie!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6Promluvte si se Smajorem ve startovním lobby pro tipy a triky!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: Porazte co nejvíce nestvůr, než vyprší časový limit!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= Zkopírujte obraz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: Použijte nádoby s barvami a okopírujte obrazy!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= Upečte dorty!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: Shromážděte přísady pro dort a umístěte je na střed!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= Sprintujte!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: Dostaňte se k cílové čáře!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r Dostaňte se do další místnosti!	###
+
+txt.grid.wave_clear=Vlna nestvůr poražena!	###
+txt.grid.wave_reward= Získali jste 10 mincí!	###
+txt.grid.painting_clear=Obraz dokončen!	###
+txt.grid.painting_reward= Získali jste 10 mincí!	###
+txt.grid.cake_clear=Dort upečen!	###
+txt.grid.cake_reward= Získali jste 10 mincí!	###
+
+##Meltdown
+txt.tut.melt_title= Meltdown 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6Promluvite si s hannahxxrose u vchodu pro tipy a triky!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]! Přežijte v každé místnosti, než se zhroutí! Zmrazte nepřátelé svým lukem a pak jim dejte pořádnou ránu!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= VAROVÁNÍ: NEBEZPEČÍ ZHROUCENÍ 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= VAROVÁNÍ: NEBEZPEČÍ KRITICKÉHO ZHROUCENÍ 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1= 1/7 zhroucení překonáno 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= 2/7 zhroucení překonáno 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= 3/7 zhroucení překonáno 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= 4/7 zhroucení překonáno 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= 5/7 zhroucení překonáno 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= 6/7 zhroucení překonáno 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= 7/7 zhroucení překonáno 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= %s/7 zhroucení překonáno 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r Dostaňte se do další místnosti!	###
+
+##Sands of Time
+txt.tut.sands_title= Sands of Time 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6Promluvte si s HBomb94 poblíž pyramidy pro tipy a triky!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: Posbírejte co nejvíce mincí, než vyprší časový limit! Sbírejte písek a získejte čas navíc!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= Našli jste 5 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= Našli jste 10 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= Našli jste 20 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= Našli jste 30 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= Našli jste 50 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= Našli jste 100 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= Našli jste 200 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= Našli jste 400 mincí!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=Truhla byla otevřena!	###
+txt.sot.key=Klíč byl sebrán!	###
+txt.sot.upgraded=Vylepšeno!	###
+
+##Lobby
+txt.lobby.coins5= Našli jste 5 mincí!	###
+txt.lobby.coins20= Našli jste 20 mincí!	###
+txt.lobby.coins30= Našli jste 30 mincí!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=MAPA	###
+txt.ui.tp.confirm1=Opravdu?	#
+txt.ui.tp.confirm_target=Tohle vás teleportuje do %s.	#
+txt.ui.tp.area_ace_race= Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= Grid Runners	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= Hlavní lobby	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=Teleportér připraven!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=Kosmetická truhla	###
+txt.ui.cosmetic=Tady najdete všechny své klobouky!	###
+txt.ui.button.select=Vybrat	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=ODMĚNA ODEMKNUTA	###
+txt.ui.title.red_rabbit_cc=Hlava Red Rabbits	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=Hlava Orange Ocelots	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=Hlava Yellow Yaks	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=Hlava Lime Llamas	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=Hlava Green Geckos	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=Hlava Aqua Axolotls	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=Hlava Cyan Coyotes	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=Hlava Blue Bats	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=Hlava Purple Pandas	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=Hlava Pink Parrots	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=Emote Polibek davu	###
+txt.ui.title.ride_victory_emote=Emote Jízda k vítězství	###
+txt.ui.title.cartwheel_victory_emote=Emote Vítězná hvězda	###
+txt.ui.title.flying_chicken_emote=Emote Létající slepice	###
+txt.ui.title.cape=Plášť k 15. výročí MCCxMinecraft	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=Koruna MCC	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=Odemkli jste předmět do Tvůrce postav! Prohlédněte si ho v šatně.	###
+txt.ui.text.cape_unlocked=Gratulujeme! Odemkli jste plášť MCC! Omrkněte ho v Šatně!	###
+txt.ui.button.claim=ZÍSKAT	###
+
+##UI Vendors
+txt.title.vendor_food= Jídlo 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= Čepice maskotů 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= Čepice a klobouky 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= Hračky 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=Koupit	###
+txt.ui.sold_out=VYPRODÁNO	###
+
+##Game Toasts
+txt.ui.toast.time= §lČAS§r	###
+txt.ui.toast.coins_collected= §lMINCÍ POSBÍRÁNO§r	###
+txt.ui.toast.coins_earned= §lMINCÍ ZÍSKÁNO§r	###
+txt.ui.toast.new_record=§lNOVÝ REKORD!§r	###
+txt.ui.toast.room=MÍSTNOST	###
+txt.ui.toast.time_spent= §lSTRÁVENÝ ČAS§r	###
+txt.ui.toast.complete=DOKONČENO!	###
+txt.ui.toast.highscore= §lNEJVYŠŠÍ SKÓRE§r	###
+txt.ui.toast.highest_coins= §lNEJLEPŠÍ ÚLOVEK§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §lNETHERITOVÝ MEDAILISTA	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §lDIAMANTOVÝ MEDAILISTA	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §lZLATÝ MEDAILISTA	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §lŽELEZNÝ MEDAILISTA	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §lMĚDĚNÝ MEDAILISTA	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §lTRUHEL OTEVŘENO§r	###
+txt.ui.toast.sot.escaped= §lUNIKLI JSTE!§r	###
+txt.ui.toast.sot.failed= §lNEPODAŘILO SE VÁM UNIKNOUT…§r	###
+txt.ui.toast.gr.mobs_slain= §lSTVOŘENÍ PORAŽENO§r	###
+txt.ui.toast.gr.blocks_painted= §lBLOKŮ OBARVENO§r	###
+txt.ui.toast.gr.cakes_baked= §lDORTŮ UPEČENO§r	###
+txt.ui.toast.ar.time= §lČAS§r	###
+txt.ui.toast.md.slain= §lSTVOŘENÍ ZNIČENO§r	###
+txt.ui.toast.md.rooms_survived_0= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_survived_1= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_survived_2= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_survived_3= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_survived_4= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_survived_5= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_survived_6= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_survived_7= §lMÍSTNOSTÍ PŘEKONÁNO§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=SEZNAM VÝZEV	###
+txt.ui.body1.challenge_list=Stisknutím ikony zobrazíte její výzvu!	###
+txt.ui.reward.cape= PLÁŠŤ ZA ODMĚNU	###
+txt.ui.status.cape=Hotovo	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=Výzva Aqua Axolotls	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=Najděte Ztracenou perlu, zatímco na sobě máte §lČepici Aqua Axolotls§r. Perla je ukrytá někde ve vodě…	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oZískejte předmět Hlava Aqua Axolotls do Tvůrce postav	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=Výzva Blue Bats	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=Posbírejte 100 zrníček písku v minihře §lSands of Time§r, zatímco na sobě máte §lČepici Blue Bats§r.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oZískejte předmět Hlava Blue Bats do Tvůrce postav	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=%s písku nasbíráno.	###
+
+txt.ui.title.cyan_coyote_challenge=Výzva Cyan Coyotes	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=Posbírejte 75 hromádek mincí v minihrách §lSands of Time§r nebo §lMeltdown§r, zatímco na sobě máte §lČepici azurových kojotů§r.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oZískejte předmět Hlava Cyan Coyotes do Tvůrce postav	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=%s hromad mincí nasbíráno.	###
+
+txt.ui.title.green_gecko_challenge=Výzva Green Geckos	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=Obarvěte 200 bloků ve výzvě „Zkopírujte obraz“ v minihře §lGrid Runners§r, zatímco na sobě máte §lČepici Green Geckos§r.	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oZískejte předmět Hlava Green Geckos do Tvůrce postav	###
+txt.ui.progress.green_gecko_challenge=%s bloků pomalováno.	###
+
+txt.ui.title.lime_llama_challenge=Výzva Lime Llamas	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=Rozdejte 10 dárkových boxů, zatímco na sobě máte §lČepici Lime Llamas§r. Dárkové boxy můžete zakoupit od obchodníka s hračkami ve středisku světa.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oZískejte předmět Hlava Lime Llamas do Tvůrce postav	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=%s dárků rozdáno.	###
+
+txt.ui.title.orange_ocelot_challenge=Výzva Orange Ocelots	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=Přeběhněte přes 100 zrychlení během minihry §lAce Race§r, zatímco na sobě máte §lČepici Orange Ocelots§r.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oZískejte předmět Hlava Orange Ocelots do Tvůrce postav	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=%s zrychlení použito.	###
+
+txt.ui.title.pink_parrot_challenge=Výzva Pink Parrots	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=Proběhněte skrze 25 krovkových bran během minihry §lAce Race§r, zatímco na sobě máte §lČepici Pink Parrots§r.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oZískejte předmět Hlava Pink Parrots do Tvůrce postav	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=Použito %s bran s krovkami.	###
+
+txt.ui.title.purple_panda_challenge=Výzva Purple Pandas	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=Umístěte 200 přísad ve výzvě „Upečte dort“ v minihře §lGrid Runners§r, zatímco na sobě máte §lČepici Purple Pandas§r.	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oZískejte předmět Hlava Purple Pandas do Tvůrce postav	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=%s ingrediencí umístěno.	###
+
+txt.ui.title.red_rabbit_challenge=Výzva Red Rabbits	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=Přeběhněte přes 50 vystřelovacích plošin během minihry §lAce Race§r, zatímco na sobě máte §lČepici Red Rabbits§r.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oZískejte předmět Hlava Red Rabbits do Tvůrce postav	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=Použito %s odpalovacích plošin.	###
+
+txt.ui.title.yellow_yak_challenge=Výzva Yellow Yaks	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=Porazte 350 zmrzlých nepřátel v minihře §lMeltdown§r, zatímco na sobě máte §lČepici Yellow Yaks§r.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oZískejte předmět Hlava Yellow Yaks do Tvůrce postav	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=Poraženo %s zmražených nepřátel.	###
+
+txt.ui.title.ace_race_challenge=Výzva minihry Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=Dokončete trať minihry §lAce Race§r !	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§oZískejte Emote „Polib dav“	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=Výzva minihry Grid Runners	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=Dokončete minihru §lGrid Runners§r !	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§oZískejte Emote „Jízda k vítězství“	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=Výzva minihry Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=Přežijte v minihře §lMeltdown§r až do 3. místnosti	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§oZískejte Emote „Létající slepice“	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=Výzva minihry Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=Vstupte do minihry §lSands of Time§r, přežijte 2 minuty a pak úspěšně unikněte!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§oZískejte Emote „Vítězná hvězda“	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=Výzva tajemné jeskyně	###
+txt.ui.body1.cave_challenge=Dokončete všech 7 namalovaných hádankových výzev v tajemné jeskyni.	###
+txt.ui.reward.cave_challenge=§oZískejte předmět MCC Koruna do Tvůrce postav	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=Dokončeno %s ze 7 hádanek.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e ČEKÁ SE NA HRÁČE §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §fČEKÁ SE NA HRÁČE (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §eČEKÁ SE NA HRÁČE §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §eČEKÁ SE NA HRÁČE §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §eČEKÁ SE NA HRÁČE §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §eČEKÁ SE NA HRÁČE §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §eČEKÁ SE NA HRÁČE §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§eMaximální čekání:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e ČEKÁ SE NA HRU...§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §fČEKÁ SE NA HRU...§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e ČEKÁ SE NA HRU...§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e ČEKÁ SE NA HRU...§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e ČEKÁ SE NA HRU...§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e ČEKÁ SE NA HRU...§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e ČEKÁ SE NA HRU...§e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eZhruba §f%s§e Pár minut nebo méně	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eZhruba §f%s§e Minuta nebo méně	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aHRA PŘIPRAVENA!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eTELEPORTOVÁNÍ §eZA §f%s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eTELEPORTOVÁNI!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§ePřipravte se…	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§eZačínáme za:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aJEĎTE!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens a  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=Nápověda	###
+txt.title.dia.ender_cup= Ender Cup 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=Žabí princ	###
+
+txt.title.start_game=Spustit hru	###
+txt.title.join_queue=Připojit se ke frontě	###
+txt.title.ace_race= Ace Race 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= Grid Runners 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= Meltdown 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= Sands of Time 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= Hlavní lobby 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=OK	###
+txt.button.yes=Ano	###
+txt.button.no=Ne	###
+txt.button.back=Zpět	###
+txt.button.exit=Konec	###
+txt.button.close=Zavřít	###
+txt.button.start_game=Spustit hru	###
+txt.button.join_queue=Připojit se ke frontě	###
+txt.button.tutorial=Výukový kurz	###
+txt.button.challenges_q=Výzvy?	###
+txt.button.who_are_you_q=Kdo jste?	###
+txt.button.what_games_q=Jaké hry?	###
+txt.button.cave_mystery_q=Tajemství jeskyně?	###
+txt.button.go_to_portal=Přejít k portálu	###
+txt.button.remove_hat=Sundat klobouk	###
+txt.button.no_hats=Nejsou k dispozici žádné čepice ani klobouky. Kupte si je v obchodech!	###
+txt.button.pet_frog=Pohladit žábu	###
+txt.button.talk_frog=Promluvit si s žábou	###
+txt.button.kiss_frog=Políbit žábu	###
+txt.button.love_minecraft_q=Máte rádi Minecraft?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=Máte rádi MCC?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=Nejlépe zahraná situace?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=Ace Race?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=Stream?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=Nejlepší aktualizace?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=Grid Runners?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=Meltdown?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=Nejlepší vzpomínka?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=Sands of Time?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=Další	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=Ahoj! Jsem  Jens!	###
+txt.jagnes.1_0.dia2=A já jsem  Agnes!	###
+txt.jagnes.1_0.dia3=Vítejte na oslavě 15. výročí MCC Minecraft!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=Jsme tu s Noxcrew, abychom si zahráli minihry z mistrovství MC!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=Prozkoumávejte, zahrajte si minihry a vyřešte tajemství jeskyně!	###
+txt.jagnes.1_0.dia6=Vydejte se po cestách k portálům a vyzkoušejte si minihru!	###
+txt.jagnes.1_0.dia6_1=Nejdřív se vydejte po cestách k portálům a vyzkoušejte si minihru!	###
+txt.jagnes.1_0.dia6_2=Pro začátek hry následujte vznášející se  koruny k portálu, kde si vyzkoušíte minihru!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=Procházejte portály a zahrajte si minihry z mistrovství MC.	###
+txt.jagnes.2_0.dia2=Minihry jsou §1Ace Race§r, §1Grid Runners§r, §1Meltdown§r a §1Sands of Time§r!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=Vyzkoušejte je a vyberte si své oblíbené!	###
+
+##What games?
+txt.jagnes.2_1.dia1=Procházejte portály a zahrajte si minihry z mistrovství MC.	###
+txt.jagnes.2_1.dia2=Vydejte se do oblak v minihře §1Ace Race§r a létejte v nebesích!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=Navštivte stadion minihry §1Grid Runners§r a dokončete výzvy!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=Vstupte do minihry §1Meltdown§r, přežijte proti zombie a unikněte z hroutících se místnosti!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=Vydejte se do se chrámu v minihře §1Sands of Time§r a objevte hromady pokladů!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=Vyzkoušejte je a vyberte si svou oblíbenou!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= Proslýchá se, že vysoko v horách se nachází tajemná jeskyně.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=Říká se, že se tam nachází malby  hádanek, které můžete vyřešit!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=Najděte tu jeskyni a podívejte se, co se v ní skrývá!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=Následujte vznášející se  Koruny až k portálu minihry  §6Ace Race§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=Následujte vznášející se  Koruny až k portálu minihry  §6Grid Runners§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=Následujte vznášející se  Koruny až k portálu minihry  §6Meltdown§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=Následujte vznášející se  Koruny až k portálu minihry  §6Sands of Time§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=Našli jste obchod!	###
+txt.jagnes.help_shop2=Nakupujte předměty za mince získané hraním miniher!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=Našli jste  Místnost trofejí!	###
+txt.jagnes.help_trophy2=Prohlédněte si trofeje a odměny za své splněné výzvy!	###
+txt.jagnes.help_trophy3=Vyfoťte se a zveřejněte svůj postup!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=Našli jste dortovou místnost!	###
+txt.jagnes.help_cake2=Prohlédněte si herní úspěchy na dortových svíčkách. Jejich splněním získáte speciální ceny!	###
+txt.jagnes.help_cake3=Vyfoťte se a sdílejte svůj postup!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=Našli jste portál miniher!	###
+txt.jagnes.help_portal2=Projděte portálem do světa miniher!	###
+txt.jagnes.help_portal3=Pokračujte a projděte jím!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=Skvělé, našli jste portál minihry  §6Ace Race§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=Cestujte do oblak a prohánějte se po obloze!	###
+txt.jagnes.help_ace_race_portal3=Pokračujte a projděte jím!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=Podívejte, to je portál minihry  §6Grid Runners§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=Navštivte stadion a dokončete místnosti s výzvami!	###
+txt.jagnes.help_grid_runners_portal3=Pokračujte a projděte jím!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=Našli jste portál minihry  §6Meltdown§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=Vstupte do zařízení a přežijte proti zombie a v hroutících se místnostech!	###
+txt.jagnes.help_meltdown_portal3=Pokračujte a projděte jím!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=Paráda, našli jste portál minihry  §6Sands of Time§r  !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=Vydejte se do starobylého chrámu a objevte hromady pokladů!	###
+txt.jagnes.help_sot_portal3=Pokračujte a projděte jím!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=Páni, našli jste  tajemnou jeskyni! 	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=Dokážete vyřešit hádanky, které se tady objevují každý den?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=Super, našli jste aktivitu!	###
+txt.jagnes.help_activity2=Chcete se pobavit a zahrát si nějaké hry?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lProč máte rádi Minecraft?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lJaká je vaše oblíbená vzpomínka na MCC?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lJaká byla vaše nejlépe zahraná situace na MCC?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lCo máte nejraději na minihře Ace Race?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lProč by měli lidé sledovat zrovna váš stream během Poháru enderu?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=Ahoj! Jsem §1Seapeekay§r a vítejte v nebesích v minihře §1Ace Race§r!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=Používejte vylepšení a plošiny a závoďte až do cíle!	###
+txt.creator_ace.1_0.dia3=Chcete-li se dozvědět více, stiskněte „Výuka“.	###
+txt.creator_ace.1_0.dia4=Nebo stiskněte tlačítko „Start hry“, pokud jste připraveni hrát!	###
+txt.creator_ace.2_0.dia1=§1Ace Race§r je jako procházka v oblacích!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=Proběhněte trať co nejrychleji a dorazte až do cíle!	###
+txt.creator_ace.2_0.dia3=Použitím skákacích plošin, odpalovacích plošin, zrychlovacích plošin a bran s krovkami můžete běžet ještě rychleji!	###
+txt.creator_ace.2_0.dia4=Uvidíme se v cíli!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=Ahoj! Jsem §1Seapeekay§r, streamer Minecraftu, který má rád rovnováhu mezi soutěživostí a zábavou.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Na platformě Twitch mě najdete tak, že vyhledáte „Seapeekay“.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=Je pro mě důležitý, protože tahle hra má tak otevřené světy a je tak sandboxová, že můžete opravdu dělat úplně cokoliv.	###
+txt.creator_ace.3_1.dia2=Můžete být tak kreativní, jak jen chcete. Není jen jeden správný způsob, jak hru hrát.	###
+txt.creator_ace.3_1.dia3=A všechny své současné přátele jsem potkal, (víceméně), při hraní této hry.	###
+txt.creator_ace.3_1.dia4=A myslím, že právě proto je to hra, která měla na můj život největší vliv.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=Moje oblíbená vzpomínka na MCC je MCC 5, protože tam jsem se konečně dočkal své první výhry!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=A byl jsem v týmu, který rozhodně nebyl nejsilnější. I navzdory tomu, co tvrdila komunita, to byla zasloužená výhra.	###
+txt.creator_ace.3_2.dia3=Ale já jsem nikdy nebyl v Minecraftu moc dobrý a MCC mě dotlačilo k tomu se ve hře zlepšit.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=A teď už jsem v té hře vlastně docela dobrý, což je opravdu skvělé.	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=Moje nejlépe zahraná situace v MCC byl rozhodně moment, kdy jsem konečně vyhrál §1Ace Race§r.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=Opravdu dlouho se mi v komunitě říkalo „Pan Ace Race“, ale já ve skutečnosti žádný závod nevyhrál.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=Takže den, kdy jsem ho konečně vyhrál, je něco, co se mi navždy vrylo do paměti.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=Na minihře §1Ace Race§r mám rozhodně nejraději všechny ty různé cesty, kterými lze trať dokončit.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=Je to skvěle dostupná minihra pro hráče všech různých úrovní.	###
+txt.creator_ace.3_4.dia3=Některé způsoby jsou rychlejší... jiné jsou zase těžší...	###
+txt.creator_ace.3_4.dia4=Ale hlavní věc je, aby se každý dostal do cíle.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=Měli byste si pustit Ender cup z mého pohledu, protože to pro vás určitě bude ta správná míra zábavy... spousty zábavy...	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=Ale rozhodně chci pořád vyhrát!	###
+txt.creator_ace.3_5.dia4=Takže to je ta zábavná část soutěžení a já si myslím, že je to ta nejlepší část.	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lJaká je vaše nejoblíbenější Minecraft aktualizace?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lCo je na MCC nejlepší?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lCo je nejlepší na minihře Grid Runners?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lProč by měli lidé sledovat zrovna váš stream během Poháru enderu?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=Ahoj! Jsem §1Smajor§r a vítejte na trati minihry §1Grid Runners§r !	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=Dokončete výzvy v každé místnosti kolikrát jen dokážete a získejte tak nejvyšší skóre!	###
+txt.creator_grid.1_0.dia3=Chcete-li se dozvědět více, stiskněte „Výuka“.	###
+txt.creator_grid.1_0.dia4=Nebo stiskněte tlačítko Přidat se do fronty, pokud jste připraveni hrát!	###
+txt.creator_grid.2_0.dia1=§1Grid Runners§r je soubor výzev napříč 4 různými místnostmi!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=V každé místnosti dostanete novou výzvu, kterou musíte splnit, než se budete moct posunout do další.	###
+txt.creator_grid.2_0.dia3=V každé místnosti máte 1 minutu, tak si raději pospěšte!	###
+txt.creator_grid.3_0.dia1=Jmenuji se §1Smajor§r!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Jsem varietní streamer, který se soustředí hlavně na Minecraft!	###
+txt.creator_grid.3_0.dia3=Jestli si mě chcete najít, vyhledejte si mě na Twitchi.	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=Aktualizace Aquatic je moje nejoblíbenější!	###
+txt.creator_grid.3_1.dia2=Líbí se mi všechen obsah, který díky ní přibyl do oceánských biomů. Díky tomu je mnohem větší zábava tyhle biomy prozkoumávat.	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=Na MCC mám nejraději to, že vidím všechny tvůrce z různých oblastí Minecraftu a tvorby obsahu, jak se spojí se dohromady a hrají během této události za jeden tým.	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=Rád sleduji, jak se z lidí, kteří by se jinak nikdy nepotkali, stávají přátelé.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=Na minihře §1Grid Runners§r mám nejraději to, že je to opravdu týmově orientovaná hra.	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=Není nic lepšího, než když váš tým funguje jako dobře namazaný stroj, který plní výzvy.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=Atmosféra bude úžasná!	###
+txt.creator_grid.3_4.dia3=Když streamuji MCC, je pro mě nejdůležitější, abychom se já a můj tým co nejlépe bavili!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=I kdyby to mělo znamenat, že prohrajeme, ale budeme se u toho dobře bavit.	###
+
+txt.creator_grid.4_0.dia1=K dispozici jsou 4 různé výzvy, Porazte bestie, Okopírujte obraz, Upečte dort a Sprint!	###
+txt.creator_grid.4_0.dia2=Ve výzvě Porazte bestie budete muset porazit všechny nestvůry v místnosti.	###
+txt.creator_grid.4_0.dia3=Ve výzvě Zkopírujte obraz musíte napodobit obraz pomocí štětců a kbelíků, které máte v místnosti k dispozici.	###
+txt.creator_grid.4_0.dia4=Ve výzvě Upečte dort budete muset posbírat ingredience k upečení dortu a pak je vložit do stroje na výrobu dortu uprostřed!	###
+txt.creator_grid.4_0.dia5=Ve výzvě Sprint budete muset doběhnout k cílové čáře!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lJaká je vaše oblíbená Minecraft aktualizace?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lCo je na Minecraftu nejlepší?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lJaká je vaše oblíbená vzpomínka na Minecraft mistrovství?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lCo je nejlepší na minihře Meltdown?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lProč by měli lidé sledovat zrovna váš stream během Poháru enderu?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=Ahoj! Jsem §1hannahxxrose§r a vítejte v zázemí minihry §1Meltdown§r !	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=Přežijte v každé místnosti, než se začne hroutit! Porazte nestvůry a získejte bonusové body.	###
+txt.creator_melt.1_0.dia3=Chcete-li se dozvědět více, stiskněte „Výuka“.	###
+txt.creator_melt.1_0.dia4=Nebo stiskněte tlačítko Přidat se do fronty, pokud jste připraveni hrát!	###
+txt.creator_melt.2_0.dia1=§1Meltdown§r je komplex s místnostmi, které se doslova každou chvíli mohou zhroutit!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=Budete muset v každé místnosti přežít tak dlouho, dokud se neotevřou dveře do další.	###
+txt.creator_melt.2_0.dia3=Nestvůry můžete zmrazit a udeřit, abyste získali bonusové body!	###
+txt.creator_melt.2_0.dia4=Můžete také sbírat hromádky mincí a získat tak další bonusové body!	###
+txt.creator_melt.3_0.dia1=Jmenuji se §1hannahxxrose§r a jsem tvůrce Minecraft obsahu!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=Pokud sledujete mé streamy, dostane se vám soutěživosti a dobré nálady!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=Moje oblíbená aktualizace je „Cesty a příběhy“, hlavně kvůli novému biomu květů sakury!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=To, co mám nejraději na Minecraftu je… samozřejmě režim PvP!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=Moje nejmilejší vzpomínka na MCC je vítězství v MCC Pride 2024 se Zelenomodrými Kojoty!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=Na minihře §1Meltdown§r mám nejraději soutěživost a týmovou hru.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=Pokud mě budete sledovat během MCC, uvidíte hromady dobré týmové spolupráce a parádní momenty z režimu PvP.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=Na mém kanále na Twitchi můžete sledovat, jak hraju na MCC.	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lProč je pro vás Minecraft důležitý?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lJaká je vaše první vzpomínka na Minecraft?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lJaká je vaše oblíbená vzpomínka na Minecraft mistrovství?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§lCo je nejlepší na minihře Sands of Time?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lProč by měli lidé sledovat zrovna váš stream během Poháru enderu?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=Ahoj! Já jsem§1HBomb94§r a vítejte v chrámu minihry §1Sands of Time§r!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=Vaším cílem je prozkoumat chrám, najít co nejvíce mincí a to vše splnit, než vám vyprší čas!	###
+txt.creator_sands.1_0.dia3=Vidíte tlačítko „Tutoriál“? Klikněte na něj, abyste se dozvěděli více.	###
+txt.creator_sands.1_0.dia4=Nebo pokud jste připraveni hrát, stiskněte tlačítko Začít hru! 	###
+txt.creator_sands.2_0.dia1=§1Sands of Time§r jsou podzemí, ve kterém je vaším cílem získat co nejvíce mincí!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=V podzemí najdete nestvůry, mince, klíče k truhlám, zbroje a dokonce i další písek, kterým získáte v podzemí více času!	###
+txt.creator_sands.2_0.dia3=Začínáte se 2 minutami času a každé zrníčko písku vám přidá dalších 10 sekund. Ale musíte být opatrní!	###
+txt.creator_sands.2_0.dia4=Pokud v podzemí zemřete, nebo zůstanete uvězněni, budete muset utratit některé ze svých nasbíraných mincí, abyste se dostali ven.	###
+txt.creator_sands.3_0.dia1=Jsem §1Hbomb94§r!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=Jsem streamer na twitchi a můžete mě najít na:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft je pro mě po celou dospělost hrozně důležitý.	###
+txt.creator_sands.3_1.dia2=Teď je mi 30 a videa jsem začal nahrávat, když mi bylo... 18?	###
+txt.creator_sands.3_1.dia3=Takže je to zhruba dvanáct let?	###
+txt.creator_sands.3_1.dia4=Bože… jsem tak starý!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Moje první vzpomínka na Minecraft je vlastně první svět, který jsem kdy vytvořil.	###
+txt.creator_sands.3_2.dia2=Postavil jsem fakt ošklivý hrad, který se skládal výhradně z kamenných kostek a měl jedny dubové dveře.	###
+txt.creator_sands.3_2.dia3=A pak jsem umřel a netušil jsem, že existuje něco jako body vstupu do hry...	###
+txt.creator_sands.3_2.dia4=A také jsem vůbec neměl tušení, co jsou to souřadnice…	###
+txt.creator_sands.3_2.dia5=Takže se ten hrad v tom světě nadobro ztratil. Strávil jsem hodiny jeho hledáním - ale nikdy se mi to nepovedlo.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=Přitom je to tak jednoduché!	###
+txt.creator_sands.3_3.dia2=Moment v MCC 9, když skončily Hry o přežití. Pamatuji si přesně, jak se dívám na výsledkovou tabuli.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=A jak křičím na svůj tým „Podívejte na ten náskok!“	###
+txt.creator_sands.3_3.dia4=Mám z toho husí kůži ještě dnes.	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=Na minihře §1Sands of Time§r mám nejraději moment, kdy všichni začnou panikařit.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=Ve chvíli, kdy všichni začnou panikařit, je to ta největší zábava. Všichni začnou zmatkovat a křičet jeden na druhého.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=To je jednoduché!	###
+txt.creator_sands.3_5.dia3=Náš tým nastolí tu nejlepší atmosféru a s lehkostí ovládne každou týmovou hru.	###
+txt.creator_sands.3_5.dia4=Až na hry typu PvP… nebo parkour.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=Vítejte v Síni trofejí!	###
+txt.trophy_help.1_0.dia2=Každá svíčka symbolizuje výzvu, kterou můžete dokončit!	###
+txt.trophy_help.1_0.dia3=§6Interagujte§r se svíčkou, abyste zobrazili výzvu a její postup.	###
+txt.trophy_help.1_0.dia4=Dokážete splnit všechny výzvy?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=Přidejte se k nám během §1Poháru enderu§r! Sledujte streamy na: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Sledujte, jak si to 40 největších tvůrců Minecraft obsahu rozdá v 10 týmech v 8 různých minihrách!	###
+txt.ender_cup.1_0.dia3=Nalaďte si živý stream soutěžících 27. července v 19:00 CET!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§oŽába s korunkou na vás hledí pohledem plným očekávání.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§oCo chcete udělat?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oNatáhnete se, abyste žábu pohladili, a ta s hrůzou ucukne.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oŽába se zamračí a narovná si korunku.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oZačnete dlouhý proslov, mluvíte o spoustě různých věcí…	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oO tom, jak jste se měli na párty, o různých hrách, o tajemné jeskyni…	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oAle žába vypadá, že ji to moc nezajímá.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=Zlomil jsi mou kletbu! Děkuji!	###
+txt.frog_prince.2_0.dia2=Seděla jsem tu a čekala, až mě někdo políbí snad §ocelou věčnost§r...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=Tolik lidí, kterých tu prošlo!	###
+txt.frog_prince.2_0.dia4=Někteří se mi dokonce snažili vzít korunku!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= Pomocník s hádankami 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=Odkryl jsem všechny  hádanky a mám pár nápadů!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=Potřebujete pomoc s jejich řešením?	###
+txt.puzzle_help.landing.dia3=Vyberte si stěnu pomocí tlačítek níže a získejte nápovědu ke každé hádance!	###
+txt.button.day1=1. den	###
+txt.button.day2=2. den	###
+txt.button.day3=3. den	###
+txt.button.day4=4. den	###
+txt.button.day5=5. den	###
+txt.button.day6=6. den	###
+txt.button.day7=7. den	###
+txt.button.wall1=Levá zeď	###
+txt.button.wall2=Prostřední zeď	###
+txt.button.wall3=Pravá zeď	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=Pár prvních maleb, které jsem odkryl!	###
+txt.puzzle_help.wall1.dia2=Trvalo mi to tři dny!	###
+txt.puzzle_help.wall1.dia3=Pro kterou hádanku si přejete získat nápovědu?	###
+
+txt.puzzle_help.wall2.dia1=Aha, ty malby, které jsem odkryl uprostřed.	###
+txt.puzzle_help.wall2.dia2=V tu chvíli mě něco napadlo!	###
+txt.puzzle_help.wall2.dia3=Pro kterou hádanku si přejete získat nápovědu?	###
+
+txt.puzzle_help.wall3.dia1=Pro malby, které jsem odkryl jako úplně poslední.	###
+txt.puzzle_help.wall3.dia2=Byla to fuška, ale nakonec jsme to zvládli!	###
+txt.puzzle_help.wall3.dia3=Pro kterou hádanku si přejete získat nápovědu?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§oMávající ruka nad symbolem koruny….	###
+txt.puzzle_help_day1.dia2=Najděte velkou korunu na červeném pozadí a zamávejte, zatímco na ní budete stát!	###
+
+txt.puzzle_help_day2.dia1=§oVystřelovací konfety před kamennou tváří posázenou drahokamy...	###
+txt.puzzle_help_day2.dia2=Najděte kamennou sochu s drahokamy v očích a odpalte pro ni vystřelovací konfety!	###
+
+txt.puzzle_help_day3.dia1=§oVelká vodní plocha, vinoucí se ve spirále směrem dolů...	###
+txt.puzzle_help_day3.dia2=Tajemství musí být na dně velké louže... a nebo jezera!	###
+
+txt.puzzle_help_day4.dia1=§oKřišťálová koule před oslněným zeleným publikem...	###
+txt.puzzle_help_day4.dia2=Umístěte disco kouli před oslněné zelené publikum!	###
+
+txt.puzzle_help_day5.dia1=§oČerně a žlutě pruhovaný čtvercový otvor, s kouskem dortu nad H...	###
+txt.puzzle_help_day5.dia2=Najděte černě a žlutě pruhovaný vstup! Ten musí vést k H, pak snězte kousek dortu!	###
+
+txt.puzzle_help_day6.dia1=§oOhňostroj na vrcholu ledové hory...	###
+txt.puzzle_help_day6.dia2=Vyšplhejte na nejvyšší vrchol a odpalte ohňostroj!	###
+
+txt.puzzle_help_day7.dia1=§oDveře, tleskající ruce a korunovaný žabí princ...	###
+txt.puzzle_help_day7.dia2=Najděte dveře a zatleskejte před nimi! Ty musí vést k žabímu princi.	###
+txt.puzzle_help_day7.dia3=Ale co uděláte s žabím princem?	###
+txt.puzzle_help_day7.dia3_1=Slyšel jsem příběh o líbání žabího prince, ale to určitě nemůže být ono...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=Jste tu kvůli malbám? Každý  na  čáře znamená, že byla odkryta nová malba!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=První vypadá jako mávající ruka, ale nejsem si jistý…	###
+txt.puzzle_lore_day1.dia3=Musím je nejdříve všechny odkrýt, aby mě něco napadlo.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=Jste tu kvůli malbám? Každý  na  čáře znamená, že byla odkryta nová malba!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=Právě jsem odkryl obličej a konfetové dělo.	###
+txt.puzzle_lore_day2.dia3=Ale nejsem si jistý, co to znamená…	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=Jste tu kvůli malbám? Každý  na  čáře znamená, že byla odkryta nová malba!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=Poslední vypadá jako velký bazén, nebo možná cákanec vody?	###
+txt.puzzle_lore_day3.dia3=Potřebuji více času, abych si byl jistý…	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=Jste tu kvůli malbám? Každý  na  čáře znamená, že byla odkryta nová malba!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=Ta předchozí má na sobě disko kouli a člověka?	###
+txt.puzzle_lore_day4.dia3=Všechny ty malby jsou dost podivné a tajemné…	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=Jste tu kvůli malbám? Každý  na  čáře znamená, že byla odkryta nová malba!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=Ta poslední je matoucí. Černožlutý kruh s dortem a písmenem H?	###
+txt.puzzle_lore_day5.dia3=Ten řez. Možná je rozděluje…	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=Jste tu kvůli malbám? Každý  na  čáře znamená, že byla odkryta nová malba!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=Na včerejší malbě byly jiskřivé číslice! A hora!	###
+txt.puzzle_lore_day6.dia3=Fascinující!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=Konečně mám hotovo! Všechny  malby jsou odkryté!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=Ta poslední je nejpodivnější.	###
+txt.puzzle_lore_day7.dia3=Ty ruce vypadají, že se navzájem drží? Nebo tleskají?	###
+txt.puzzle_lore_day7.dia4=Pak je tam žába a dveře…	###
+txt.puzzle_lore_day7.dia5=Potřebuji chvíli času, abych si uspořádal myšlenky.	###
+txt.puzzle_lore_day7.dia6=Zítra ty záhady odhalím!	###

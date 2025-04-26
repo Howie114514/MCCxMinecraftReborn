@@ -1,0 +1,1094 @@
+## Meta
+pack.name=Pacote de Recursos para o evento do 15º Aniversário de Minecraft x MCC	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=Pacote de Recursos para o evento do 15º Aniversário de Minecraft x MCC.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=EVENTO DE MINIJOGOS DE MINECRAFT MC!	###
+txt.event_overview.2=A Noxcrew traz o melhor do Campeonato MC para a Bedrock Edition! Festeje o dia todo e lute em minijogos projetados para colocar suas habilidades à prova, desde parkour até luta com monstros.	###
+txt.event_overview.3=Ganhe 15 itens cosméticos gratuitos. E um visual novo incrível!	###
+txt.event_overview.4=Pegue suas espadas - o caos espera!	###
+txt.event_overview.5=Evento começa em 22 de julho - 14h00 (Horário de Brasília) e vai até 4 de agosto - 8h00 (Horário de Brasília)	###
+
+##VANILLA
+item.warped_sign.name=Placa de Caverna 	###
+tile.warped_standing_sign.name=Placa de Caverna 	###
+tile.warped_wall_sign.name=Placa de Caverna 	###
+tile.prismarine.dark.name=Bloco de Metal 	###
+tile.stone_slab2.prismarine.dark.name=Laje de Metal 	###
+tile.dark_prismarine_stairs.name=Escada de Metal 	###
+
+##INTERACT TEXTS
+action.interact.open=Abrir	###This is meant as a verb, action.
+action.interact.take=Pegar	###This is meant as a verb, action.
+action.interact.grab=Pegar	###This is meant as a verb, action.
+action.interact.pick_up=Pegar	###This is meant as a verb, action.
+action.interact.use=Usar	###This is meant as a verb, action.
+action.interact.change_color=Trocar de Cor	###This is meant as a verb, action.
+action.interact.deposit=Depositar	###This is meant as a verb, action.
+action.interact.interact=Interagir	###This is meant as a verb, action.
+action.interact.trash=Lixo	###To throw away or "trash" an item
+action.interact.eat=Comer	###To eat something, like a food
+action.interact.drink=Beber	###To drink something, like a soda
+action.interact.paint=Tinta	###The verb to paint.
+action.interact.gift=Presente para o Jogador	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=Loja	###The verb, "to shop" or "to browse"
+action.interact.decorate=Decorar	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=Toque Esgueirar-se para sair	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=Toque Esgueirar-se para sair	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=Pressione :_input_key.sneak: para sair	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§oCada dia uma nova pintura será revelada.	###
+txt.sign.cave2=§oResolva todas as sete e colete uma recompensa!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=Arco Congelante	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=Arco Congelante	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=Chave de Ferro	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=Chave de Ouro	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=Chave de Diamante	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=Chave de Netherita	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=Pincel em Branco	###
+item.noxcrew.ft:paintbrush_green.name=Pincel Verde	###
+item.noxcrew.ft:paintbrush_yellow.name=Pincel Amarelo	###
+item.noxcrew.ft:paintbrush_blue.name=Pincel Azul	###
+item.noxcrew.ft:paintbrush_red.name=Pincel Vermelho	###
+item.noxcrew.ft:paintbrush_white.name=Pincel Branco	###
+item.noxcrew.ft:paintbrush_black.name=Pincel Preto	###
+item.noxcrew.ft:paintbrush_brown.name=Pincel Marrom	###
+item.noxcrew.ft:paintbrush_purple.name=Pincel Lilás	###
+item.noxcrew.ft:beanie_red.name=Gorro de Coelhos Vermelho	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=Gorro de Jaguatiricas Laranja	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=Gorro de Iaques Amarelo	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=Gorro de Lhamas Verde-Limão	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=Gorro de Lagartixas Verde	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=Gorro de Axolotes Azul Mar	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=Gorro de Coiotes Ciano	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=Gorro de Morcegos Azul	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=Gorro de Pandas Lilás	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=Gorro de Papagaios Rosa	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=Chapéu de Festa	###
+item.noxcrew.ft:hat_propeller.name=Chapéu de Hélice	###
+item.noxcrew.ft:hat_crown_cake.name=Coroa de Bolo	###
+item.noxcrew.ft:hat_birthday_present.name=Chapéu de Presente de Aniv.	###
+item.noxcrew.ft:hat_jester.name=Chapéu de Bobo da Corte	###
+item.noxcrew.ft:hat_chicken_jockey.name=Chapéu de Jóquei de Galinha	###
+item.noxcrew.ft:hat_boombox.name=Chapéu de Aparelho de Som	###
+item.noxcrew.ft:foam_finger.name=Dedo de Espuma	###
+item.noxcrew.ft:balloon_animal.name=Animal de Balão	###
+item.noxcrew.ft:big_bubble_blower.name=Soprador de Bolhas Gigantes	###
+item.noxcrew.ft:silly_horn.name=Chifre Bobo	###
+item.noxcrew.ft:party_popper.name=Lança Confetes	###
+item.noxcrew.ft:confetti_tag_prime.name=Identificação de Confete	###
+item.noxcrew.ft:confetti_tag_leftover.name=Identificação de Confete	###
+item.noxcrew.ft:pizza_box.name=Caixa de Pizza	###
+item.noxcrew.ft:celebration_fireworks.name=Fogos de Artifício de Aniv.	###
+item.noxcrew.ft:player_gift_giving.name=Caixa de Presentes	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=Caixa de Presente	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=Bola de Discoteca	###
+item.noxcrew.ft:beach_ball.name=Bola de Praia	###
+item.noxcrew.ft:balloon_helium.name=Balão Hélio	###
+item.noxcrew.ft:leave_game.name=§6Sair do Jogo	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=Fatia de Pizza	###
+item.noxcrew.ft:mcc_burger.name=Hambúrguer Saboroso	###
+item.noxcrew.ft:anniversary_hot_dog.name=Cachorro-Quente Saboroso	###
+item.noxcrew.ft:party_cupcake.name=Cupcake	###
+item.noxcrew.ft:party_cake.name=Fatia de Bolo	###
+item.noxcrew.ft:party_chips.name=Tigela de Batatas Fritas	###
+item.noxcrew.ft:party_cookie.name=Biscoito	###
+item.noxcrew.ft:party_soda.name=Refrigerante Gasoso	###
+item.noxcrew.ft:cotton_candy.name=Algodão Doce	###
+item.noxcrew.ft:popcorn.name=Pipoca	###
+item.noxcrew.ft:super_wrap.name=Wrap Saudável	###
+item.noxcrew.ft:cosmetic_chest.name=Baú Cosmético	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=Mapa de Teleporte	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=Lista de Desafios	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=Ovo	###
+item.noxcrew.ft:milk_bucket.name=Balde de Leite	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=Arco Congelante	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=Arco Congelante	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=Chave de Ferro	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=Chave de Ouro	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=Chave de Diamante	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=Chave de Netherita	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=Pincel em Branco	###
+item.noxcrew.ft:paintbrush_green=Pincel Verde	###
+item.noxcrew.ft:paintbrush_yellow=Pincel Amarelo	###
+item.noxcrew.ft:paintbrush_blue=Pincel Azul	###
+item.noxcrew.ft:paintbrush_red=Pincel Vermelho	###
+item.noxcrew.ft:paintbrush_white=Pincel Branco	###
+item.noxcrew.ft:paintbrush_black=Pincel Preto	###
+item.noxcrew.ft:paintbrush_brown=Pincel Marrom	###
+item.noxcrew.ft:paintbrush_purple=Pincel Lilás	###
+item.noxcrew.ft:beanie_red=Gorro de Coelhos Vermelho	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=Gorro de Jaguatiricas Laranja	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=Gorro de Iaques Amarelo	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=Gorro de Lhamas Verde-limão	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=Gorro de Lagartixas Verde	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=Gorro de Axolotes Azul Mar	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=Gorro de Coiotes Ciano	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=Gorro de Morcegos Azul	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=Gorro de Pandas Lilás	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=Gorro de Papagaios Rosa	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=Chapéu de Festa	###
+item.noxcrew.ft:hat_propeller=Chapéu de Hélice	###
+item.noxcrew.ft:hat_crown_cake=Coroa de Bolo	###
+item.noxcrew.ft:hat_birthday_present=Chapéu de Presente de Aniv.	###
+item.noxcrew.ft:hat_jester=Chapéu de Bobo da Corte	###
+item.noxcrew.ft:hat_chicken_jockey=Chapéu de Jóquei de Galinha	###
+item.noxcrew.ft:hat_boombox=Chapéu de Aparelho de Som	###
+item.noxcrew.ft:foam_finger=Dedo de Espuma	###
+item.noxcrew.ft:balloon_animal=Animal de Balão	###
+item.noxcrew.ft:big_bubble_blower=Soprador de Bolhas Gigantes	###
+item.noxcrew.ft:silly_horn=Chifre Bobo	###
+item.noxcrew.ft:party_popper=Lança Confetes	###
+item.noxcrew.ft:confetti_tag_prime=Identificação de Confete	###
+item.noxcrew.ft:confetti_tag_leftover=Identificação de Confete	###
+item.noxcrew.ft:pizza_box=Caixa de Pizza	###
+item.noxcrew.ft:celebration_fireworks=Fogos de Artifício de Aniv.	###
+item.noxcrew.ft:player_gift_giving=Caixa de Presentes	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=Caixa de Presente	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=Bola de Discoteca	###
+item.noxcrew.ft:beach_ball=Bola de Praia	###
+item.noxcrew.ft:balloon_helium=Balão de Hélio	###
+item.noxcrew.ft:leave_game=§6Sair do Jogo	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=Fatia de Pizza	###
+item.noxcrew.ft:mcc_burger=Hambúrguer Saboroso	###
+item.noxcrew.ft:anniversary_hot_dog=Cachorro-Quente Saboroso	###
+item.noxcrew.ft:party_cupcake=Cupcake	###
+item.noxcrew.ft:party_cake=Fatia de Bolo	###
+item.noxcrew.ft:party_chips=Tigela de Batatas Fritas	###
+item.noxcrew.ft:party_cookie=Biscoito	###
+item.noxcrew.ft:party_soda=Refrigerante Gasoso	###
+item.noxcrew.ft:cotton_candy=Algodão Doce	###
+item.noxcrew.ft:popcorn=Pipoca	###
+item.noxcrew.ft:super_wrap=Wrap Saudável	###
+item.noxcrew.ft:cosmetic_chest=Baú Cosmético	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=Mapa de Teleporte	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=Lista de Desafios	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=Ovo	###
+item.noxcrew.ft:milk_bucket=Balde de Leite	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=Bloco de Aumento de Velocidade	###
+tile.noxcrew.ft:launch_pad.name=Bloco Plataforma de Lançamento	###
+tile.noxcrew.ft:jump_pad.name=Bloco Bônus de Salto	###
+tile.noxcrew.ft:painting_green.name=Bloco Verde	###
+tile.noxcrew.ft:painting_yellow.name=Bloco Amarelo	###
+tile.noxcrew.ft:painting_blue.name=Bloco Azul	###
+tile.noxcrew.ft:painting_red.name=Bloco Vermelho	###
+tile.noxcrew.ft:painting_white.name=Bloco Branco	###
+tile.noxcrew.ft:painting_black.name=Bloco Preto	###
+tile.noxcrew.ft:painting_brown.name=Bloco Marrom	###
+tile.noxcrew.ft:painting_purple.name=Bloco Lilás	###
+tile.noxcrew.ft:elytra_icon.name=Bloco de Portão de Élitro	###
+tile.noxcrew.ft:audience_member_oof.name=Membro Vibrante da Plateia	###
+tile.noxcrew.ft:audience_member_angry.name=Membro Zangado da Plateia	###
+tile.noxcrew.ft:audience_member_joy.name=Membro Alegre da Plateia	###
+tile.noxcrew.ft:audience_member_happy.name=Membro Feliz da Plateia	###
+tile.noxcrew.ft:audience_member_unimpressed.name=Membro Indiferente da Plateia	###
+tile.noxcrew.ft:audience_member_unsure.name=Membro em Dúvida da Plateia	###
+tile.noxcrew.ft:audience_member_starstruck.name=Membro Fascinado da Plateia	###
+tile.noxcrew.ft:cake_centre.name=Centro de Bolos	###
+tile.noxcrew.ft:cake_edge.name=Borda de Bolo	###
+tile.noxcrew.ft:cake_cherry.name=Cereja do Bolo	###
+tile.noxcrew.ft:window_spruce.name=Janela de Pinheiro	###
+tile.noxcrew.ft:window_oak.name=Janela de Carvalho	###
+tile.noxcrew.ft:iron_bars.name=Reta de Barras de Ferro	###
+tile.noxcrew.ft:iron_bars_h.name=Barras de Ferro Metade	###
+tile.noxcrew.ft:iron_bars_c.name=Barras de Ferro Canto	###
+tile.noxcrew.ft:castle_pink.name=Terracota do Castelo Rosa 	###
+tile.noxcrew.ft:sot_flower.name=Plantocha Acesa 	###
+tile.noxcrew.ft:metal_rigging_v.name=Cordame de Metal Horizontal	###
+tile.noxcrew.ft:metal_rigging_h.name=Cordame de Metal Vertical	###
+tile.noxcrew.ft:modern_light.name=Luz Moderna	###
+tile.noxcrew.ft:rope.name=Bloco de Corda	###
+tile.noxcrew.ft:hieroglyph_1_a.name=Quebra-Cabeça da Caverna Dia 1 Superior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_1_b.name=Quebra-Cabeça da Caverna Dia 1 Superior Direito	###
+tile.noxcrew.ft:hieroglyph_1_c.name=Quebra-Cabeça da Caverna Dia 1 Inferior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_1_d.name=Quebra-Cabeça da Caverna Dia 1 Inferior Direito	###
+tile.noxcrew.ft:hieroglyph_2_a.name=Quebra-Cabeça da Caverna Dia 2 Superior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_2_b.name=Quebra-Cabeça da Caverna Dia 2 Superior Direito	###
+tile.noxcrew.ft:hieroglyph_2_c.name=Quebra-Cabeça da Caverna Dia 2 Inferior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_2_d.name=Quebra-Cabeça da Caverna Dia 2 Inferior Direito	###
+tile.noxcrew.ft:hieroglyph_3_a.name=Quebra-Cabeça da Caverna Dia 3 Superior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_3_b.name=Quebra-Cabeça da Caverna Dia 3 Superior Direito	###
+tile.noxcrew.ft:hieroglyph_3_c.name=Quebra-Cabeça da Caverna Dia 3 Inferior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_3_d.name=Quebra-Cabeça da Caverna Dia 3 Inferior Direito	###
+tile.noxcrew.ft:hieroglyph_4_a.name=Quebra-Cabeça da Caverna Dia 4 Superior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_4_b.name=Quebra-Cabeça da Caverna Dia 4 Superior Direito	###
+tile.noxcrew.ft:hieroglyph_4_c.name=Quebra-Cabeça da Caverna Dia 4 Inferior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_4_d.name=Quebra-Cabeça da Caverna Dia 4 Inferior Direito	###
+tile.noxcrew.ft:hieroglyph_5_a.name=Quebra-Cabeça da Caverna Dia 5 Superior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_5_b.name=Quebra-Cabeça da Caverna Dia 5 Superior Direito	###
+tile.noxcrew.ft:hieroglyph_5_c.name=Quebra-Cabeça da Caverna Dia 5 Inferior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_5_d.name=Quebra-Cabeça da Caverna Dia 5 Inferior Direito	###
+tile.noxcrew.ft:hieroglyph_6_a.name=Quebra-Cabeça da Caverna Dia 6 Superior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_6_b.name=Quebra-Cabeça da Caverna Dia 6 Superior Direito	###
+tile.noxcrew.ft:hieroglyph_6_c.name=Quebra-Cabeça da Caverna Dia 6 Inferior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_6_d.name=Quebra-Cabeça da Caverna Dia 6 Inferior Direito	###
+tile.noxcrew.ft:hieroglyph_7_a.name=Quebra-Cabeça da Caverna Dia 7 Superior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_7_b.name=Quebra-Cabeça da Caverna Dia 7 Superior Direito	###
+tile.noxcrew.ft:hieroglyph_7_c.name=Quebra-Cabeça da Caverna Dia 7 Inferior Esquerdo	###
+tile.noxcrew.ft:hieroglyph_7_d.name=Quebra-Cabeça da Caverna Dia 7 Inferior Direito	###
+tile.noxcrew.ft:bigcake_top.name=Topo do Bloco de Bolo	###
+tile.noxcrew.ft:bigcake_bottom.name=Base do Bloco de Bolo	###
+tile.noxcrew.ft:cake_slice.name=Fatia de Bolo	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=Topo Longo do Estandarte 15	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=Base Longa do Estandarte 15	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=Topo Longo do Estandarte MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=Base Longa do Estandarte MCC	###
+tile.noxcrew.ft:decoration_bunting_a.name=Bandeirinha Branca	###
+tile.noxcrew.ft:decoration_bunting_b.name=Bandeirinha Verde	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=Bandeirinha MCC	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=Bandeira em V Verde	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=Bandeira em V Branca	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=Bandeira em V MCC	###
+tile.noxcrew.ft:decoration_flag_mcc.name=Bandeira Pequena MCC	###
+tile.noxcrew.ft:decoration_flag_15.name=Bandeira Pequena de 15 Anos	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=Topo da Bandeira de 15 Anos	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=Base da Bandeira de 15 Anos	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=Topo da Bandeira MCC	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=Base da Bandeira MCC	###
+tile.noxcrew.ft:plush_red.name=Pelúcia de Coelho Vermelho	###
+tile.noxcrew.ft:plush_orange.name=Pelúcia de Jaguatirica Laranja	###
+tile.noxcrew.ft:plush_yellow.name=Pelúcia de Iaque Amarelo	###
+tile.noxcrew.ft:plush_lime.name=Pelúcia de Lhama Verde-Limão	###
+tile.noxcrew.ft:plush_green.name=Pelúcia de Lagartixa Verde	###
+tile.noxcrew.ft:plush_cyan.name=Pelúcia de Coiote Ciano	###
+tile.noxcrew.ft:plush_aqua.name=Pelúcia de Axolote Azul-Mar	###
+tile.noxcrew.ft:plush_blue.name=Pelúcia de Morcego Azul	###
+tile.noxcrew.ft:plush_pink.name=Pelúcia de Papagaio Rosa	###
+tile.noxcrew.ft:plush_purple.name=Pelúcia de Panda Lilás	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=Topo Esquerdo da Bandeira MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=Topo Direito da Bandeira MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=Base Esquerda da Bandeira MCC	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=Base Direita da Bandeira MCC	###
+tile.noxcrew.ft:decoration_present.name=Caixa de Presentes MCC	###
+tile.noxcrew.ft:cup_poster1.name=Pôster da Copa Ender 1	###
+tile.noxcrew.ft:cup_poster2.name=Pôster da Copa Ender 2	###
+tile.noxcrew.ft:logo_1.name=Logo 1 da Noxcrew	###
+tile.noxcrew.ft:logo_2.name=Logo 2 da Noxcrew	###
+tile.noxcrew.ft:logo_3.name=Logo 3 da Noxcrew	###
+tile.noxcrew.ft:melt_spawner.name=Invocador de Monstros do Colapso	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=Pilha de Moeda	###
+entity.noxcrew.ft:treasure_chest.name=Baú de Tesouro	###
+entity.noxcrew.ft:key_podium.name=Pódio de Chave	###
+entity.noxcrew.ft:sand_podium.name=Pódio de Areia	###
+entity.noxcrew.ft:armor_podium.name=Pódio de Armadura	###
+entity.noxcrew.ft:paint_pot.name=Pote de Tinta	###
+entity.noxcrew.ft:giant_cake.name=Bolo de Aniversário	###
+entity.noxcrew.ft:beach_ball.name=Bola de Praia	###
+entity.noxcrew.ft:balloon_helium.name=Balão de Hélio	###
+entity.noxcrew.ft:disco_ball.name=Bola de Discoteca	###
+entity.noxcrew.ft:lost_pearl.name=Pérola Misteriosa	###
+entity.noxcrew.ft:decoration_awning.name=Toldo Decorado	###
+entity.noxcrew.ft:decoration_bunting.name=Bandeirola Decorada	###
+entity.noxcrew.ft:decoration_cupcake.name=Cupcake de Aniversário	###
+entity.noxcrew.ft:decoration_ballons.name=Balões de Aniversário	###
+entity.noxcrew.ft:decoration_15.name=Balões 15	###
+entity.noxcrew.ft:decoration_board.name=Quadro de Aniversário	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=Balão de Galinha	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=Balão de Mascote	###
+entity.noxcrew.ft:trophy_help.name=Ajuda	###
+entity.noxcrew.ft:sand_timer.name=Ampulheta	###
+entity.noxcrew.ft:crowned_frog.name=Sapo Príncipe	###
+entity.noxcrew.ft:cake_candles.name=Vela de Bolo	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=Botão Start	###
+entity.noxcrew.ft:vendor_mascot.name=Chapéus de Mascote	###
+entity.noxcrew.ft:vendor_hat.name=Chapéus	###
+entity.noxcrew.ft:vendor_toys.name=Brinquedos	###
+entity.noxcrew.ft:vendor_food.name=Alimentos	###
+entity.noxcrew.ft:advert_creator_cup.name=Copa do Ender	###
+entity.noxcrew.ft:md_creeper.name=Creeper	###
+entity.noxcrew.ft:md_blaze.name=Chama	###
+entity.noxcrew.ft:md_blaze<>.name=Chama	###
+entity.noxcrew.ft:md_skeleton.name=Esqueleto	###
+entity.noxcrew.ft:md_skeleton<>.name=Esqueleto	###
+entity.noxcrew.ft:md_spider.name=Aranha	###
+entity.noxcrew.ft:md_vindicator.name=Vingador	###
+entity.noxcrew.ft:md_zombie.name=Zumbi	###
+entity.noxcrew.ft:md_zombie_baby.name=Bebê Zumbi	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§oA pérola sobe e desce misteriosamente...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r Você descobriu um mistério de caverna!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=AGUARDANDO JOGADORES...	###
+txt.misc.msg4=O jogo vai começar em 	###
+txt.misc.msg5=Você está prestes a se teleportar	###
+txt.misc.msg6_1=§6§l!§r %s lhe deu um presente!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r Você deu um presente para %s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r Esse jogador não pode aceitar outro presente	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= Élitro Equipado 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §eUma etapa do quebra-cabeça foi concluída... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §aVocê completou um Quebra-Cabeça da Caverna! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: Deu vontade de pular? Que tal correr pelas nuvens no minijogo  §6Corrida de Ás§r ?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: Topa um desafio? Tente completar todas as tarefas no minijogo  §6Corredores da Pista§r !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]: O minijogo  §6Colapso§r  te aguarda... você consegue sobreviver às hordas de monstros?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]: Explore o misterioso templo do minijogo  §6Areias do Tempo§r !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: Você pode ver todos os seus desafios concluídos na Sala de Troféus! Encontre na tenda grande perto do portal dos  §6Corredores da Pista§r  no  saguão principal!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: Procurando um chapéu? Corra na Loja de Chapéus e encontre o seu preferido! Encontre-a sob o chapelão no  saguão principal!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: Quer experimentar alguns brinquedinhos descolados? Você pode comprar alguns na Loja de Brinquedos! Encontre-a perto das placas de carrinho no  saguão principal!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: Quer experimentar alguma comida? Você pode comprar na Loja de Comida! Encontre-a no restaurante perto da grande estátua de galinha no  saguão principal!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]: Você sabia que existem  quebra-cabeças misteriosos que você pode resolver? Vá para a Caverna Misteriosa na montanha no  saguão principal!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: Você sabia que todo dia tem um novo quebra-cabeça misterioso para resolver? Cada  ao lado de  significa que um quebra-cabeça foi revelado!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: Você sabia que pode encontrar pilhas de moedas em todos os saguões? Comece a procurar!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: O inventário está muito cheio? Você pode se livrar de alguns itens em uma lata de lixo!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cVocê não tem moedas suficientes para isso	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cVocê não tem espaço para comprar isso! Descarte alguns itens em uma lata de lixo.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r Você já tem este Chapéu!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s encheu!§r Colete um ingrediente diferente!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cVocê não tem uma chave para este baú!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6Você já abriu este baú!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=Pizza! Coma para ganhar velocidade turbinada!	###
+txt.shop_info.mcc_burger=Hambúrguer! Coma para ganhar velocidade e salto turbinados!	###
+txt.shop_info.anniversary_hot_dog=Cachorro-quente! Coma para ganhar velocidade e salto turbinados!	###
+txt.shop_info.party_cupcake=Cupcake! Coma para ganhar queda lenta!	###
+txt.shop_info.party_cake=Bolo! Coma para ganhar levitação!	###
+txt.shop_info.party_chips=Batatas fritas! Coma para ganhar velocidade turbinada!	###
+txt.shop_info.party_cookie=Biscoito! Coma para ganhar salto turbinado!	###
+txt.shop_info.party_soda=Refrigerante! Coma para ganhar velocidade turbinada!	###
+txt.shop_info.cotton_candy=Algodão Doce! Coma para ganhar salto turbinado!	###
+txt.shop_info.popcorn=Pipoca! Coma para ganhar salto turbinado!	###
+txt.shop_info.super_wrap=Super Wrap! Coma para ganhar todos os bônus!	###
+txt.shop_info.foam_finger=Dedo de Espuma! Segure para mostrar seu apoio!	###
+txt.shop_info.balloon_animal=Balão de Bicho! Use-o para soltar um balão!	###
+txt.shop_info.big_bubble_blower=Bolhas de Sabão! Use para estourar bolhas!	###
+txt.shop_info.silly_horn=Buzina Boba! Use para fazer um som!	###
+txt.shop_info.party_popper=Confete de Festa! Use para jogar confete!	###
+txt.shop_info.confetti_tag_prime=Identificação de Confete! Use em um jogador para marcá-lo com confete!	###
+txt.shop_info.pizza_box=Caixa de Pizza! Use nos jogadores para dar pizza para eles!	###
+txt.shop_info.celebration_fireworks=Fogos de Artifício! Use para soltar fogos de artifício!	###
+txt.shop_info.player_gift_giving=Presente! Use nos jogadores para dar um presente para eles!	###
+txt.shop_info.disco_ball=Discoteca! Use para fazer uma bola de discoteca!	###
+txt.shop_info.beach_ball=Bola de Praia! Use-a para fazer uma bola de praia, bata para jogar!	###
+txt.shop_info.balloon_helium=Balão! Use-o para soltar um balão!	###
+
+##Ace Race
+txt.tut.ace_title= Corrida de Ás 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6Fale com Seapeekay na linha de partida para obter dicas e sugestões!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: Corra até o final usando as marcas de salto e aumento de velocidade!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= Derrote as Feras!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6Fale com Smajor no saguão inicial para obter dicas e sugestões!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: Derrote o máximo de monstros que puder antes que o tempo acabe!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= Copie a Pintura!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: Use os vasos de tinta colorida e copie as pinturas!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= Asse alguns Bolos!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: Reúna ingredientes para o bolo e deposite-os no centro!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= Corra!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: Alcance a linha de chegada!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r Vá para a próxima sala!	###
+
+txt.grid.wave_clear=Onda de Monstros derrotada!	###
+txt.grid.wave_reward= Você ganhou 10 moedas!	###
+txt.grid.painting_clear=Pintura concluída!	###
+txt.grid.painting_reward= Você ganhou 10 moedas!	###
+txt.grid.cake_clear=Bolo assado!	###
+txt.grid.cake_reward= Você ganhou 10 moedas!	###
+
+##Meltdown
+txt.tut.melt_title= Colapso 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6Fale com hannahxxrose na entrada para dicas e sugestões!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: Sobreviva em cada cômodo antes que ele entre em colapso! Congele os inimigos com seu arco e dê um soco neles!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= AVISO: COLAPSO 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= AVISO: COLAPSO CRÍTICO 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1= 1/7 Colapsos Evitados 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= 2/7 Colapsos Evitados 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= 3/7 Colapsos Evitados 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= 4/7 Colapsos Evitados 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= 5/7 Colapsos Evitados 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= 6/7 Colapsos Evitados 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= 7/7 Colapsos Evitados 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= %s/7 Colapsos Evitados 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r Vá para a próxima sala!	###
+
+##Sands of Time
+txt.tut.sands_title= Areias do Tempo 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6Fale com HBomb94 perto da pirâmide para dicas e sugestões!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: Encontre o máximo de moedas que puder antes que o tempo acabe! Colete areia para ganhar tempo extra!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= Você encontrou 5 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= Você encontrou 10 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= Você encontrou 20 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= Você encontrou 30 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= Você encontrou 50 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= Você encontrou 100 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= Você encontrou 200 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= Você encontrou 400 moedas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=Baú aberto!	###
+txt.sot.key=Chave coletada!	###
+txt.sot.upgraded=Aprimorado!	###
+
+##Lobby
+txt.lobby.coins5= 5!	###
+txt.lobby.coins20= 20!	###
+txt.lobby.coins30= 30!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=MAPA	###
+txt.ui.tp.confirm1=Tem certeza?	#
+txt.ui.tp.confirm_target=Isso teleportará você para %s.	#
+txt.ui.tp.area_ace_race= Corrida de Ás	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= Corredores de Pista	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= O Hub	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= Areias do Tempo	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= Colapso	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=Teletransportador pronto!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=Baú Cosmético	###
+txt.ui.cosmetic=Temos todos os chapéus bem aqui!	###
+txt.ui.button.select=Selecionar	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=RECOMPENSA DESBLOQUEADA	###
+txt.ui.title.red_rabbit_cc=Cabeça de Coelho Vermelho	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=Cabeça de Jaguatirica Laranja	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=Cabeça de Iaque Amarela	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=Cabeça de Lhama Verde-Limão	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=Cabeça de Lagartixa Verde	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=Cabeça de Axolote Azul Mar	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=Cabeça de Coiote Ciano	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=Cabeça de Morcego Azul	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=Cabeça de Panda Lilás	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=Cabeça de Papagaio Rosa	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=Emote Beijinho para a Plateia	###
+txt.ui.title.ride_victory_emote=Emote Cavalgada da Vitória	###
+txt.ui.title.cartwheel_victory_emote=Emote de Estrelinha da Vitória	###
+txt.ui.title.flying_chicken_emote=Emote de Galinha Voadora	###
+txt.ui.title.cape=Capa do 15º aniversário do MinecraftxMCC	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=Coroa MCC	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=Você desbloqueou um item do Criador de Personagem! Confira no Vestiário.	###
+txt.ui.text.cape_unlocked=Parabéns! Você desbloqueou a Capa MCC! Confira no Vestiário.	###
+txt.ui.button.claim=REIVINDICAR	###
+
+##UI Vendors
+txt.title.vendor_food= Comida 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= Chapéus de Mascote 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= Chapéus 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= Brinquedos 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=Comprar	###
+txt.ui.sold_out=ESGOTADO	###
+
+##Game Toasts
+txt.ui.toast.time= §lTEMPO§r	###
+txt.ui.toast.coins_collected= §lMOEDAS COLETADAS§r	###
+txt.ui.toast.coins_earned= §lMOEDAS GANHAS§r	###
+txt.ui.toast.new_record=§lNOVO RECORDE!§r	###
+txt.ui.toast.room=QUARTO	###
+txt.ui.toast.time_spent= §lTEMPO GASTO§r	###
+txt.ui.toast.complete=CONCLUÍDO!	###
+txt.ui.toast.highscore= §lMAIOR PONTUAÇÃO§r	###
+txt.ui.toast.highest_coins= §lMELHOR AQUISIÇÃO§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §lMEDALHISTA DE NETHERITA	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §lMEDALHISTA DE DIAMANTE	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §lMEDALHISTA DE OURO	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §lMEDALHISTA DE FERRO	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §lMEDALHISTA DE COBRE	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §lBAÚS ABERTOS§r	###
+txt.ui.toast.sot.escaped= §lVOCÊ ESCAPOU!§r	###
+txt.ui.toast.sot.failed= §lVOCÊ NÃO ESCAPOU...§r	###
+txt.ui.toast.gr.mobs_slain= §lCRIATURAS DERROTADAS§r	###
+txt.ui.toast.gr.blocks_painted= §lBLOCOS PINTADOS§r	###
+txt.ui.toast.gr.cakes_baked= §lBOLOS ASSADOS§r	###
+txt.ui.toast.ar.time= §lTEMPO§r	###
+txt.ui.toast.md.slain= §lCRIATURAS DESTRUÍDAS§r	###
+txt.ui.toast.md.rooms_survived_0= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_survived_1= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_survived_2= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_survived_3= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_survived_4= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_survived_5= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_survived_6= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_survived_7= §lSALAS SOBREVIVIDAS§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=LISTA DE DESAFIOS	###
+txt.ui.body1.challenge_list=Pressione um Ícone para ver seu desafio!	###
+txt.ui.reward.cape= RECOMPENSA DE CAPA	###
+txt.ui.status.cape=Completo	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=Desafio de Axolote Azul Mar	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=Enquanto estiver usando o §lGorro de Axolote Azul Mar§r, encontre a Pérola Perdida. Ela está escondida em uma piscina de água...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oGanhe o Item de cabeça de Axolote Azul Mar do Criador de Personagem	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=Desafio de Morcego Azul	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=Enquanto estiver usando o §lGorro de Morcegos Azul§r, colete 100 areia do minijogo §lAreias do Tempo§r.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oGanhe o Item de cabeça de Morcego Azul do Criador de Personagem	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=%s Areia coletada.	###
+
+txt.ui.title.cyan_coyote_challenge=Desafio do Coiote Ciano	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=Enquanto estiver usando o §lGorro de Coiotes Ciano§r, colete 75 pilhas de moedas dos minijogos §lAreias do Tempo§r ou §lColapso§r.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oGanhe o Item de cabeça de Coiote Ciano do Criador de Personagem	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=%s Pilhas de Moedas coletadas.	###
+
+txt.ui.title.green_gecko_challenge=Desafio Lagartixa Verde	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=Enquanto estiver usando o §lGorro de Lagartixas Verde§r, pinte 200 blocos no desafio ''Copie a Pintura'' do minijogo §lCorredores de Pista§r.	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oGanhe o Item de cabeça de Lagartixa Verde do Criador de Personagem	###
+txt.ui.progress.green_gecko_challenge=%s blocos pintados.	###
+
+txt.ui.title.lime_llama_challenge=Desafio Lhama Verde-Limão	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=Enquanto estiver usando o §lGorro de Lhamas Verde-Limão§r, distribua 10 Caixas de Presente. Você pode comprar Caixas de Presente do Vendedor de Brinquedos no mundo central.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oGanhe o Item de cabeça de Lhama Verde-limão do Criador de Personagem	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=%s Caixas de Presentes presenteadas.	###
+
+txt.ui.title.orange_ocelot_challenge=Desafio Jaguatirica Laranja	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=Enquanto estiver usando o §lGorro de Jaguatiricas Laranja§r, execute mais de 100 Bônus de Velocidade enquanto completa o minijogo §lCorrida de Ás§r.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oGanhe o Item de cabeça de Jaguatirica Laranja do Criador de Personagem	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=%s Bônus de Velocidade usados.	###
+
+txt.ui.title.pink_parrot_challenge=Desafio Papagaio Rosa	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=Enquanto estiver usando o §lGorro de Papagaios Rosa§r, corra pelos Portões de Élitro enquanto completa o minijogo §lCorrida de Ás§r 25 vezes.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oGanhe o Item de cabeça de Papagaio Rosa do Criador de Personagem	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=%s Portões de Élitro usados.	###
+
+txt.ui.title.purple_panda_challenge=Desafio Panda Lilás	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=Enquanto estiver usando o §lGorro de Pandas Lilás§r, coloque 200 ingredientes no desafio ''Asse o Bolo'' do minijogo §lCorredores de Pista§r.	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oGanhe o Item de cabeça de Panda Lilás do Criador de Personagem	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=%s ingredientes colocados.	###
+
+txt.ui.title.red_rabbit_challenge=Desafio Coelho Vermelho	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=Enquanto estiver usando o §lGorro de Coelhos Vermelhos§r, passe por cima de uma Plataforma de Lançamento 50 vezes enquanto completa o minijogo §lCorrida de Ás§r.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oGanhe o Item de cabeça de Coelho Vermelho do Criador de Personagem	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=%s Marcas de Lançamento usadas.	###
+
+txt.ui.title.yellow_yak_challenge=Desafio Iaque Amarelo	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=Enquanto estiver usando o §lGorro de Iaques Amarelo§r, derrote 350 inimigos congelados no minijogo §lColapso§r.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oGanhe o Item de cabeça de Iaque Amarelo do Criador de Personagem	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=%s inimigos congelados derrotados.	###
+
+txt.ui.title.ace_race_challenge=Desafio de Corrida de Ás	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=Complete um percurso do minijogo §lCorrida de Ás§r!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§oGanhe o Emote ''Beijinho para a Plateia''	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=Desafio Corredores de Pista	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=Complete um minijogo §lCorredores de Pista§r!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§oGanhe o Emote ''Cavalgada da Vitória''	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=Desafio Colapso	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=Sobreviva até a 3ª sala no minijogo §lColapso§r	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§oGanhe o Emote ''Galinha Voadora''	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=Desafio Areias do Tempo	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=Entre no minijogo §lAreias do Tempo§r, sobreviva por 2 minutos, e então escape com sucesso!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§oGanhe o Emote ''Estrelinha da Vitória''	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=Desafio da Caverna Misteriosa	###
+txt.ui.body1.cave_challenge=Complete todos os 7 desafios de quebra-cabeça pintados na caverna misteriosa.	###
+txt.ui.reward.cave_challenge=§oGanhe o Item Coroa MCC do Criador de Personagem	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=%s de 7 quebra-cabeças concluídos.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e AGUARDANDO JOGADORES §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §fAGUARDANDO JOGADORES (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §eAGUARDANDO JOGADORES §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §eAGUARDANDO JOGADORES §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §eAGUARDANDO JOGADORES §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §eAGUARDANDO JOGADORES §f (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §eAGUARDANDO JOGADORES §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§eTempo de espera máximo:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e AGUARDANDO O JOGO... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §fAGUARDANDO O JOGO... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e AGUARDANDO O JOGO... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e AGUARDANDO O JOGO... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e AGUARDANDO O JOGO... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e AGUARDANDO O JOGO... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e AGUARDANDO O JOGO... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eAproximadamente §f%s§e minutos ou menos	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eAproximadamente §f%s§e minutos ou menos	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aJOGO PRONTO	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eTELEPORTANDO §eEM §f%s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eTELEPORTOU!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§ePrepare-se...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§eIniciando em:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aVAI!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens e  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=Ajuda	###
+txt.title.dia.ender_cup= Copa Ender 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=Príncipe Sapo	###
+
+txt.title.start_game=Iniciar o Jogo	###
+txt.title.join_queue=Entrar na fila	###
+txt.title.ace_race= Corrida de Ás 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= Corredores de Pista 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= Colapso 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= Areias do Tempo 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= Saguão Principal 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=OK	###
+txt.button.yes=Sim	###
+txt.button.no=Não	###
+txt.button.back=Voltar	###
+txt.button.exit=Sair	###
+txt.button.close=Fechar	###
+txt.button.start_game=Iniciar o Jogo	###
+txt.button.join_queue=Entrar na fila	###
+txt.button.tutorial=Tutorial	###
+txt.button.challenges_q=Desafios?	###
+txt.button.who_are_you_q=Quem é você?	###
+txt.button.what_games_q=Que Jogos?	###
+txt.button.cave_mystery_q=Mistério da Caverna?	###
+txt.button.go_to_portal=Ir para o Portal	###
+txt.button.remove_hat=Tirar Chapéu	###
+txt.button.no_hats=Nenhum chapéu disponível. Compre alguns nas lojas!	###
+txt.button.pet_frog=Acariciar o Sapo	###
+txt.button.talk_frog=Falar com o Sapo	###
+txt.button.kiss_frog=Beijar o Sapo	###
+txt.button.love_minecraft_q=Você ama Minecraft?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=Ama o MCC?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=Melhor Jogada?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=Corrida de Ás?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=Stream?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=Melhor Atualização?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=Corredores de Pistas?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=Colapso?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=Melhor Memória?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=Areias do Tempo?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=Próximo	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=Olá! Eu sou  Jens!	###
+txt.jagnes.1_0.dia2=E eu sou  Agnes!	###
+txt.jagnes.1_0.dia3=Boas-vindas à Festa do 15º Aniversário do Minecraft MCC!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=Estamos aqui com Noxcrew para jogar minijogos do Campeonato MC!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=Explore, jogue minijogos e resolva o mistério da caverna!	###
+txt.jagnes.1_0.dia6=Siga os caminhos até os portais e experimente um minijogo!	###
+txt.jagnes.1_0.dia6_1=Para começar, siga os caminhos até os portais e experimente um minijogo!	###
+txt.jagnes.1_0.dia6_2=Para começar, siga as Coroas  flutuantes até o portal para experimentar um minijogo!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=Viaje pelos portais para jogar minijogos do Campeonato MC.	###
+txt.jagnes.2_0.dia2=Os minijogos são §1Corrida de Ás§r, §1Corredores de Pista§r, §1Colapso§r, e §1Areias do Tempo§r!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=Experimente e escolha seus favoritos!	###
+
+##What games?
+txt.jagnes.2_1.dia1=Viaje pelos portais para jogar minijogos do Campeonato MC.	###
+txt.jagnes.2_1.dia2=Vá para as nuvens da §1Corrida de Ás§r e corra pelos céus!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=Visite o estádio dos §1Corredores de Pista§r e complete os desafios!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=Entre no §1Colapso§r e sobreviva aos zumbis e quartos derretidos!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=Desbrave o templo das §1Areias do Tempo§r e descubra os tesouros!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=Experimente e escolha seus favoritos!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= Rumores falam de uma caverna misteriosa no alto das montanhas.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=Dizem que há  quebra-cabeças pintados que você pode resolver!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=Encontre a caverna e veja o que é revelado!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=Siga as  Coroas flutuantes até o portal do Minijogo  §6Corrida de Ás§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=Siga as  Coroas flutuantes até o portal do Minijogo  §6Corredores de Pista§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=Siga as  Coroas flutuantes até o portal do Minijogo  §6Colapso§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=Siga as  Coroas flutuantes até o portal do Minijogo  §6Areias do Tempo§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=Você encontrou uma loja!	###
+txt.jagnes.help_shop2=Compre itens com moedas que você ganha jogando minijogos!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=Você encontrou a  Sala de Troféus!	###
+txt.jagnes.help_trophy2=Veja os troféus e prêmios dos seus Desafios concluídos!	###
+txt.jagnes.help_trophy3=Tire uma foto e publique seu progresso!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=Você encontrou a Sala do Bolo!	###
+txt.jagnes.help_cake2=Veja as conquistas nas velas de bolo. Complete-as para ganhar prêmios especiais!	###
+txt.jagnes.help_cake3=Tire uma foto e compartilhe seu progresso!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=Você encontrou um Portal de Minijogo!	###
+txt.jagnes.help_portal2=Viaje pelo portal para o mundo Minijogo!	###
+txt.jagnes.help_portal3=Vá em frente e atravesse!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=Legal, você encontrou o Portal da  §6Corrida de Ás§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=Viaje para as nuvens e corra pelos céus!	###
+txt.jagnes.help_ace_race_portal3=Vá em frente e atravesse!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=Olha só, é o Portal do  §6Corredores de Pista§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=Visite o estádio e complete as salas de desafio!	###
+txt.jagnes.help_grid_runners_portal3=Vá em frente e atravesse!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=Ah, você encontrou o Portal do  §6Colapso§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=Entre na instalação e tente sobreviver aos zumbis e quartos derretidos!	###
+txt.jagnes.help_meltdown_portal3=Vá em frente e atravesse!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=Ótimo, você encontrou o Portal para  §6Areias do Tempo§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=Desbrave o templo antigo e descubra os tesouros ocultos!	###
+txt.jagnes.help_sot_portal3=Vá em frente e atravesse!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=Uau, você encontrou a  caverna misteriosa! 	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=Você consegue resolver os quebra-cabeças que aparecem aqui todos os dias?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=Legal, você encontrou uma atividade!	###
+txt.jagnes.help_activity2=Quer sair e jogar alguns jogos?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lPor que você ama Minecraft?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lMemória favorita do MCC?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lMelhor Jogada no MCC?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lParte favorita sobre a Corrida de Ás?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lPor que assistir às suas Streams da Copa Ender?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=Olá! Eu sou §1Seapeekay§r, boas-vindas aos céus da §1Corrida de Ás§r!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=Use os bônus e plataformas para correr até a linha de chegada!	###
+txt.creator_ace.1_0.dia3=Pressione ''Tutorial'' para saber mais.	###
+txt.creator_ace.1_0.dia4=Ou pressione o botão Iniciar Jogo se você já quer jogar!	###
+txt.creator_ace.2_0.dia1=A §1Corrida de Ás§r é uma caminhada nas nuvens!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=Corra pelo percurso o mais rápido possível e alcance a linha de chegada!	###
+txt.creator_ace.2_0.dia3=Você pode usar Plataformas de Salto, Plataformas de Lançamento, Plataformas de Velocidade e Portões de Élitro para ir mais rápido!	###
+txt.creator_ace.2_0.dia4=Te vejo na linha de chegada!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=Oi! Eu sou §1Seapeekay§r, sou um streamer de Minecraft que adora encontrar um bom equilíbrio entre competição e diversão.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Venha me encontrar na Twitch pesquisando por ''Seapeekay''.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=É importante para mim porque o jogo seja tão de mundo aberto e sandbox, que você pode fazer o que quiser.	###
+txt.creator_ace.3_1.dia2=Você pode ser o quão criativo você quiser. Não tem um jeito certo de brincar.	###
+txt.creator_ace.3_1.dia3=E eu conheci todos os meus amigos atuais, (praticamente,) jogando.	###
+txt.creator_ace.3_1.dia4=E acho que isso torna o jogo mais influente na minha vida.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=Minha Memória favorita do MCC foi durante o MCC 5, porque finalmente consegui ganhar pela primeira vez!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=E foi em um time que definitivamente não era apelão, apesar do que a comunidade disse, foi uma vitória merecida.	###
+txt.creator_ace.3_2.dia3=Mas eu nunca fui muito bom em Minecraft e MCC me empurrou para melhorar no jogo.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=E agora eu até que mando muito bem, então é um arco muito legal de se estar.	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=Minha melhor jogada no MCC com certeza foi quando finalmente ganhei uma §1Corrida de Ás§r.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=Fui chamado de ''Sr. Corrida do Ás'' por bastante tempo pela comunidade, mas eu nunca ganharia uma.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=Então o dia em que eu finalmente ganhei, é algo que vai estar em minha memória para sempre.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=A minha coisa favorita da §1Corrida de Ás§r é definitivamente todas as diferentes maneiras de terminar o curso.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=É superacessível para vários níveis de habilidade diferentes.	###
+txt.creator_ace.3_4.dia3=Algumas maneiras são mais rápidas... outras são mais difíceis...	###
+txt.creator_ace.3_4.dia4=Mas o fundamental é que todos ultrapassam a linha.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=Alguém deve assistir ao meu POV na Copa Ender porque você definitivamente vai ter esse bom equilíbrio se divertindo... se divertindo muito...	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=Mas eu definitivamente quero vencer!	###
+txt.creator_ace.3_5.dia4=Então é o lado divertido da competição e acho que é o melhor lado.	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lAtualização favorita do Minecraft?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lMelhor parte do MCC?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lMelhor parte sobre os Corredores de Pista?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lPor que assistir às suas Streams da Copa Ender?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=Olá! Me chamo §1Smajor§r. Boas-vindas ao percurso §1Corredores de Pista§r!	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=Complete os desafios em cada sala quantas vezes puder para conseguir a pontuação mais alta!	###
+txt.creator_grid.1_0.dia3=Pressione ''Tutorial'' para saber mais.	###
+txt.creator_grid.1_0.dia4=Ou pressione o botão Iniciar Jogo se você já quer jogar!	###
+txt.creator_grid.2_0.dia1=§1Corredores de Pista§r é um corredor de desafio com 4 salas diferentes!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=Em cada sala haverá um novo desafio, que você precisa concluir antes de avançar para o próximo.	###
+txt.creator_grid.2_0.dia3=Você tem 1 minuto em cada sala, então vá rápido!	###
+txt.creator_grid.3_0.dia1=Meu nome é §1Smajor§r!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Eu sou um streamer de variedades que foca principalmente em Minecraft!	###
+txt.creator_grid.3_0.dia3=Se quiser me encontrar, pode procurar por mim na Twitch.	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=Minha atualização favorita é a Atualização Aquática!	###
+txt.creator_grid.3_1.dia2=Eu realmente gosto de todas as coisas que isso acrescentou aos biomas oceânicos e parecia que eles eram muito mais divertidos para eu explorar.	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=O que eu mais gosto no MCC é ver todos os criadores de diferentes áreas de Minecraft e criação de conteúdo se reunirem para jogar como uma equipe para o evento.	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=Adoro ver pessoas que jamais se conheceriam se conhecendo e se tornando amigas.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=O que eu mais gosto em §1Corredores de Pista§r é o fato de que é um jogo focado em equipe.	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=E não há nada mais empolgante do que sua equipe trabalhando como uma máquina bem lubrificada para completar os desafios.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=Vai ser uma vibe incrível!	###
+txt.creator_grid.3_4.dia3=Quando estou fazendo streaming de MCC, meu objetivo é me divertir o máximo possível com minha equipe!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=Mesmo que isso signifique se divertir por último!	###
+
+txt.creator_grid.4_0.dia1=Existem 4 desafios diferentes, Derrote as Feras, Copie a Pintura, Asse o Bolo e Corra!	###
+txt.creator_grid.4_0.dia2=Em Derrote as Feras, você precisará derrotar todos os monstros na sala.	###
+txt.creator_grid.4_0.dia3=Em Copie a Pintura, você precisará copiar a pintura usando o Pincel e os Baldes na sala.	###
+txt.creator_grid.4_0.dia4=Em Asse o Bolo, você precisará coletar os ingredientes para fazer um bolo e depois colocá-los na máquina de bolo do meio!	###
+txt.creator_grid.4_0.dia5=Em Corra, você precisa correr até a linha de chegada!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lAtualização favorita do Minecraft?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lMelhor parte do Minecraft?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lMemória favorita do MCC?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lMelhor parte do Colapso?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lPor que assistir às suas Streams da Copa Ender?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=Olá! Eu sou §1hannahxxrose§r, boas-vindas às Instalações do §1Colapso§r!	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=Sobreviva em cada sala antes que ela comece a colapsar! Derrote os monstros para ganhar pontos extras.	###
+txt.creator_melt.1_0.dia3=Pressione ''Tutorial'' para saber mais.	###
+txt.creator_melt.1_0.dia4=Ou pressione o botão Entrar na Fila se você já quer jogar!	###
+txt.creator_melt.2_0.dia1=§1Colapso§r é uma instalação com salas que estão literalmente prestes a colapsar!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=Você precisará sobreviver em cada sala até que a porta para a próxima se abra.	###
+txt.creator_melt.2_0.dia3=Você pode congelar e socar monstros congelados para ganhar pontos extras!	###
+txt.creator_melt.2_0.dia4=Você também pode pegar pilhas de moedas para ganhar mais pontos!	###
+txt.creator_melt.3_0.dia1=Meu nome é §1hannahxxrose§r e sou criadora de conteúdo de Minecraft!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=Se você assistir minhas transmissões, encontrará competitividade e boas vibrações!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=Minha atualização favorita de Minecraft é ''Rastros e Relatos'' por causa do novo bioma de flor de cerejeira!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=O que eu mais amo no Minecraft é... o JvJ, é claro!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=Minha Memória favorita do MCC foi ganhar o Orgulho MCC 2024 com os Cyan Coyotes!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=O que eu mais gosto no §1Colapso§r é a competitividade e trabalho em equipe do jogo.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=Se você me assistir no MCC, vai ver uma tonelada de trabalho em equipe e momentos legais de JvJ.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=Você pode me assistir jogar no MCC no meu canal da Twitch!	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lPor que o Minecraft é importante?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lMemória mais antiga do Minecraft?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lMemória favorita do MCC?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§lMelhor parte de Areias do Tempo?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lPor que assistir às suas Streams da Copa Ender?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=Olá! Eu sou §1HBomb94§r, boas-vindas ao templo de §1Areias do Tempo§r!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=Seu objetivo é explorar o templo, encontrar o máximo de moedas que puder e fazer isso antes que seu tempo acabe!	###
+txt.creator_sands.1_0.dia3=Está vendo aquele botão ''Tutorial''? Clique nele para saber mais.	###
+txt.creator_sands.1_0.dia4=Ou se você estiver com tudo pronto para jogar, pressione o botão Iniciar Jogo! 	###
+txt.creator_sands.2_0.dia1=§1Areias do Tempo§r é uma masmorra onde o objetivo é conseguir o máximo de moedas possível!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=Na masmorra, você encontrará monstros, moedas, chaves de baú, armaduras e até mais areia para obter mais tempo na masmorra!	###
+txt.creator_sands.2_0.dia3=Você começará com 2 minutos, e cada pedaço de areia concede mais 10 segundos, mas tenha cuidado!	###
+txt.creator_sands.2_0.dia4=Se morrer na masmorra ou não conseguir sair, você terá que gastar algumas das moedas que coletou.	###
+txt.creator_sands.3_0.dia1=Eu sou §1HBomb94§r!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=Sou um streamer da Twitch e você pode me encontrar em:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft tem sido super importante para mim durante toda a minha vida adulta.	###
+txt.creator_sands.3_1.dia2=Tenho 30 anos agora e comecei a criar vídeos quando tinha... 18?	###
+txt.creator_sands.3_1.dia3=Então já se passaram doze anos?	###
+txt.creator_sands.3_1.dia4=Ah, mano... Eu estou velho!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Minha memória mais antiga de Minecraft é, na verdade, o primeiro mundo que criei.	###
+txt.creator_sands.3_2.dia2=Eu construí um castelo de aparência horrível que era estritamente feito de paralelepípedos e uma porta de carvalho.	###
+txt.creator_sands.3_2.dia3=E eu morri, e eu não sabia que os pontos de invocação existiam...	###
+txt.creator_sands.3_2.dia4=E eu também não sabia que coordenadas existiam...	###
+txt.creator_sands.3_2.dia5=Então, ele se perdeu naquele mundo para sempre. Passei horas tentando encontrá-lo novamente e simplesmente nunca consegui.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=Na verdade isso é muito fácil!	###
+txt.creator_sands.3_3.dia2=O momento no MCC 9, quando os Jogos de Sobrevivência acabaram de terminar, e me lembro de olhar para o placar.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=E eu gritei pra minha equipe, ''Olha essa liderança!''	###
+txt.creator_sands.3_3.dia4=Ainda me dá arrepios até hoje.	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=O que eu mais gosto em §1Areias do Tempo§r tem que ser o momento quando todos começam a entrar em pânico.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=O momento em que todo mundo começa a entrar em pânico é quando acontece mais entretenimento e todo mundo começa a surtar, gritando um com o outro.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=Isso é simples!	###
+txt.creator_sands.3_5.dia3=Nossa equipe terá as melhores vibes e também dominará facilmente qualquer jogo em equipe.	###
+txt.creator_sands.3_5.dia4=Menos... hm, JvJ... ou parkour.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=Boas-vindas à Sala de Troféus!	###
+txt.trophy_help.1_0.dia2=Cada vela é um desafio que você pode completar!	###
+txt.trophy_help.1_0.dia3=§6Interaja§r com uma vela para ver o desafio e seu progresso.	###
+txt.trophy_help.1_0.dia4=Você consegue completar todos os desafios?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=Junte-se a nós para a §1Copa do Ender§r! Confira as transmissões em: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Assista a 40 dos maiores criadores de conteúdo do Minecraft batalhando em 10 equipes em 8 minijogos diferentes!	###
+txt.ender_cup.1_0.dia3=Sintonizem-se com a transmissão ao vivo do competidor em 27 de Julho às 14h BRT!	###
+
+txt.ender_cup.ad1=Junte-se a nós para a §1Copa do Ender§r! Confira as transmissões em: https://www.twitch.tv/minecraft	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Assista a 40 dos maiores criadores de conteúdo do Minecraft batalhando em 10 equipes em 8 minijogos diferentes!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§oO sapo coroado olha para você com expectativa.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§oO que você quer fazer?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oVocê estende a mão para acariciar o sapo e o sapo recua horrorizado.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oO sapo franze e ajusta a coroa.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oVocê começa um longo discurso falando sobre muitas coisas diferentes...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oComo foi a festa, os diferentes jogos, a caverna misteriosa...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oMas o sapo parece desinteressado.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=Você quebrou minha maldição! Valeu!	###
+txt.frog_prince.2_0.dia2=Estive aqui sentado por §oanos§r esperando que alguém me beijasse	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=A quantidade de gente indo e voltando!	###
+txt.frog_prince.2_0.dia4=Alguns deles até tentam tirar a minha coroa!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= Ajudante de Quebra-Cabeça 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=Eu revelei todos os  quebra-cabeças e tenho opiniões!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=Precisa de ajuda para resolvê-los?	###
+txt.puzzle_help.landing.dia3=Escolha qual parede com os botões abaixo e obtenha dicas para cada quebra-cabeça!	###
+txt.button.day1=Dia 1	###
+txt.button.day2=Dia 2	###
+txt.button.day3=Dia 3	###
+txt.button.day4=Dia 4	###
+txt.button.day5=Dia 5	###
+txt.button.day6=Dia 6	###
+txt.button.day7=Dia 7	###
+txt.button.wall1=Parede da Esquerda	###
+txt.button.wall2=Parede do Meio	###
+txt.button.wall3=Parede da Direita	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=Algumas das primeiras pinturas que eu revelei!	###
+txt.puzzle_help.wall1.dia2=Levei três dias!	###
+txt.puzzle_help.wall1.dia3=Para qual quebra-cabeça você gostaria de obter dicas?	###
+
+txt.puzzle_help.wall2.dia1=Ah, as pinturas que eu revelei no meio.	###
+txt.puzzle_help.wall2.dia2=Foi aí que eu comecei a ter ideias!	###
+txt.puzzle_help.wall2.dia3=Para qual quebra-cabeça você gostaria de obter dicas?	###
+
+txt.puzzle_help.wall3.dia1=As últimas pinturas que eu revelei.	###
+txt.puzzle_help.wall3.dia2=Foi difícil, mas chegamos lá no final!	###
+txt.puzzle_help.wall3.dia3=Para qual quebra-cabeça você gostaria de obter dicas?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§oUma mão acenando sobre o símbolo de uma coroa...	###
+txt.puzzle_help_day1.dia2=Encontre uma grande coroa em um fundo vermelho e acene enquanto estiver sobre ela!	###
+
+txt.puzzle_help_day2.dia1=§oUm lança confetes na frente de um rosto de pedra ornado de joias...	###
+txt.puzzle_help_day2.dia2=Encontre uma estátua de pedra com joias nos olhos e estoure um lança confetes nela!	###
+
+txt.puzzle_help_day3.dia1=§oUma grande massa de água descendo em espiral...	###
+txt.puzzle_help_day3.dia2=O segredo deve estar no fundo de uma grande poça... ou um lago!	###
+
+txt.puzzle_help_day4.dia1=§oUma bola de cristal diante de um público verde deslumbrado...	###
+txt.puzzle_help_day4.dia2=Coloque uma Bola de Discoteca na frente de um público verde deslumbrado!	###
+
+txt.puzzle_help_day5.dia1=§oUma abertura quadrada listrada preta e amarela, com uma fatia de bolo sobre um H...	###
+txt.puzzle_help_day5.dia2=Encontre a abertura listrada em preto e amarelo! Isso deve levar a H, então coma um bolo!	###
+
+txt.puzzle_help_day6.dia1=§oFogos de artifício no topo de uma montanha congelada.	###
+txt.puzzle_help_day6.dia2=Suba o pico mais alto e solte um fogo de artifício!	###
+
+txt.puzzle_help_day7.dia1=§oUma porta, aplausos e um príncipe sapo coroado...	###
+txt.puzzle_help_day7.dia2=Encontre a porta e bata palmas na frente dela! Isso deve levar ao Príncipe Sapo.	###
+txt.puzzle_help_day7.dia3=Mas o que você faz com um príncipe sapo?	###
+txt.puzzle_help_day7.dia3_1=Já ouvi uma história sobre beijar um príncipe sapo, mas certamente não deve ser isso...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=Está aqui pelas pinturas? Cada  na linha  significa que uma nova pintura é revelada!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=Aquele primeiro parece uma mão acenando, mas não tenho certeza...	###
+txt.puzzle_lore_day1.dia3=Preciso revelar elas antes que eu tenha alguma ideia.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=Está aqui pelas pinturas? Cada  na linha  significa que uma nova pintura é revelada!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=Acabei de revelar um rosto e um confete de festa.	###
+txt.puzzle_lore_day2.dia3=Mas ainda não sei o que significam...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=Está aqui pelas pinturas? Cada  na linha  significa que uma nova pintura é revelada!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=A mais recente parece uma grande piscina, ou talvez um esguicho de água?	###
+txt.puzzle_lore_day3.dia3=Preciso de mais tempo para ter certeza...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=Está aqui pelas pinturas? Cada  na linha  significa que uma nova pintura é revelada!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=A anterior tem uma bola de discoteca e uma pessoa?	###
+txt.puzzle_lore_day4.dia3=Elas são muito estranhas e misteriosas...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=Está aqui pelas pinturas? Cada  na linha  significa que uma nova pintura é revelada!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=A último é desconcertante. Um círculo preto e amarelo, com um Bolo e um H?	###
+txt.puzzle_lore_day5.dia3=Talvez a barra esteja separando...	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=Está aqui pelas pinturas? Cada  na linha  significa que uma nova pintura é revelada!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=A pintura de ontem tinha números brilhantes! E uma montanha!	###
+txt.puzzle_lore_day6.dia3=Fascinante!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=Finalmente terminei! Todos as  pinturas foram reveladas!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=Essa última é a mais confusa.	###
+txt.puzzle_lore_day7.dia3=Não parece que as mãos estão se segurando? Ou batendo palmas?	###
+txt.puzzle_lore_day7.dia4=Aí tem um sapo e uma porta...	###
+txt.puzzle_lore_day7.dia5=Preciso de um tempo para colocar minhas ideias no lugar.	###
+txt.puzzle_lore_day7.dia6=Amanhã eu vou resolver os mistérios!	###

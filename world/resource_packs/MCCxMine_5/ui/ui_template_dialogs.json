@@ -1,0 +1,104 @@
+{
+	"namespace": "common_dialogs",
+	"dialog_background_hollow_common@common_dialogs.dialog_background_common": {
+		"layer": 2,
+		"$fill_alpha|default": 0.8,
+		"$dialog_background_texture|default": "textures/ui/control",
+		"variables": [
+			{
+				"requires": "$is_holographic",
+				"$fill_alpha": 1.0
+			}
+		],
+		"controls": [
+			{
+				"control": {
+					"type": "image",
+					"texture": "$dialog_background_texture",
+					"layer": 1,
+					"$common_background_size|default": ["100% - 16px", "100%c - 27px"],
+					"$close_button_offset|default": [6, -21],
+					"size": "$common_background_size",
+					"offset": [0, 7],
+					"alpha": "$fill_alpha",
+					"variables": [
+						{
+							"requires": "($show_close_button and $use_compact_close_button)",
+							"$common_background_size": ["100% - 16px", "100%c - 19px"],
+							"$close_button_offset": [6, -13]
+						},
+						{
+							"requires": "(not $show_close_button)",
+							"$common_background_size": ["100% - 16px", "100%c - 6px"]
+						}
+					],
+					"controls": [
+						{
+							"inside_header_panel@$child_control": {}
+						},
+						{
+							"close_button_holder": {
+								"type": "stack_panel",
+								"visible": "$show_close_button",
+								"anchor_from": "top_right",
+								"anchor_to": "top_right",
+								"size": ["100%c", "100%c"],
+								"offset": "$close_button_offset",
+								"controls": [
+									{
+										"close@common.close_button": {
+											"layer": 2,
+											"ignored": "$use_compact_close_button"
+										}
+									},
+									{
+										"compact_close@common.compact_close_button": {
+											"layer": 2,
+											"visible": "$use_compact_close_button"
+										}
+									}
+								]
+							}
+						},
+						{
+							"title_label@common_dialogs.title_label": {
+								"anchor_from": "top_middle",
+								"anchor_to": "top_middle",
+								"offset": [0, -15]
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+	"dialog_noxcrew@common_dialogs.dialog_background_hollow_common": {
+		"size": ["100%", "100%c + 31px"],
+		"texture": "textures/ui/dialog_background_opaque_noxcrew",
+		"$fill_alpha": 0.0
+	},
+	"standard_title_label": {
+		"type": "label",
+		"size": ["default", 10],
+		"color": "$title_text_color_noxcrew",
+		"text": "$text_name",
+		"layer": 4,
+		"shadow": false,
+		"property_bag": {
+			"#tts_dialog_title": "$text_name"
+		},
+		"bindings": [
+			{
+				"binding_type": "$title_text_binding_type",
+				"binding_condition": "$title_binding_condition",
+				"binding_name": "$text_name",
+				"binding_name_override": "$text_name"
+			},
+			{
+				"binding_type": "global",
+				"binding_condition": "once",
+				"binding_name": "#tts_dialog_title"
+			}
+		]
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.lost_pearl.idle": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 135) *0.5",
+            0
+          ]
+        },
+        "pearl": {
+          "rotation": [
+            "query.anim_time * 135",
+            "query.anim_time * 90",
+            "query.anim_time * 180"
+          ]
+        },
+        "bubble_alph": {
+          "rotation": [
+            "query.rotation_to_camera(0)",
+            "query.rotation_to_camera(1)",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

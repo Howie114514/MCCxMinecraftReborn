@@ -1,0 +1,101 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.logo_3",
+        "texture_width": 128,
+        "texture_height": 64,
+        "visible_bounds_width": 6,
+        "visible_bounds_height": 6,
+        "visible_bounds_offset": [
+          0,
+          3,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            -16,
+            8,
+            -6
+          ]
+        },
+        {
+          "name": "3",
+          "parent": "root",
+          "pivot": [
+            -16,
+            8,
+            -6
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -14,
+                -1,
+                1
+              ],
+              "size": [
+                12,
+                13,
+                9
+              ],
+              "inflate": -2,
+              "uv": [
+                59,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -6.27689,
+                0.75433,
+                1
+              ],
+              "size": [
+                9,
+                11,
+                9
+              ],
+              "inflate": -2,
+              "pivot": [
+                -12.27689,
+                -12.24567,
+                8
+              ],
+              "rotation": [
+                0,
+                0,
+                5
+              ],
+              "uv": [
+                71,
+                13
+              ]
+            },
+            {
+              "origin": [
+                2,
+                0,
+                1
+              ],
+              "size": [
+                10,
+                10,
+                9
+              ],
+              "inflate": -2,
+              "uv": [
+                90,
+                33
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

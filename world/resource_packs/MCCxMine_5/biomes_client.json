@@ -1,0 +1,50 @@
+{
+  "biomes": {
+    "default": {
+      "water_surface_color": "#178cd8",
+      "water_surface_transparency": 0.65,
+      "water_fog_color": "#178cd8",
+      "water_fog_distance": 15
+    },
+    "plains": {
+      "fog_identifier": "noxcrew.ft:hub",
+      "fog_ids_to_merge": [
+        "noxcrew.ft:hub"
+      ],
+      "inherit_from_prior_fog": false,
+      "water_surface_color": "#1cbacf"
+    },
+    "birch_forest": {
+      "fog_identifier": "noxcrew.ft:ace",
+      "fog_ids_to_merge": [
+        "noxcrew.ft:ace"
+      ],
+      "inherit_from_prior_fog": false,
+      "water_surface_color": "#0685ce"
+    },
+    "forest": {
+      "fog_identifier": "noxcrew.ft:grid",
+      "fog_ids_to_merge": [
+        "noxcrew.ft:grid"
+      ],
+      "inherit_from_prior_fog": false,
+      "water_surface_color": "#06a6ce"
+    },
+    "desert": {
+      "fog_identifier": "noxcrew.ft:melt",
+      "fog_ids_to_merge": [
+        "noxcrew.ft:melt"
+      ],
+      "inherit_from_prior_fog": false,
+      "water_surface_color": "#2467b4"
+    },
+    "jungle": {
+      "fog_identifier": "noxcrew.ft:sand",
+      "fog_ids_to_merge": [
+        "noxcrew.ft:sand"
+      ],
+      "inherit_from_prior_fog": false,
+      "water_surface_color": "#529eca"
+    }
+  }
+}

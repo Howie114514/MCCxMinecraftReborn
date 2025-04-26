@@ -1,0 +1,75 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "noxcrew.ft:horn",
+      "basic_render_parameters": {
+        "material": "particles_blend",
+        "texture": "textures/particles/horn"
+      }
+    },
+    "components": {
+      "minecraft:emitter_local_space": {
+        "position": true,
+        "rotation": true
+      },
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 5
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1
+      },
+      "minecraft:emitter_lifetime_events": {
+        "creation_event": "event1"
+      },
+      "minecraft:emitter_shape_sphere": {
+        "radius": 1,
+        "direction": [
+          "math.random(-30, 30)",
+          "math.random(45, 130)",
+          "math.random(-30, 30)"
+        ]
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "1.3+(variable.particle_random_2 * 0.2)"
+      },
+      "minecraft:particle_initial_spin": {
+        "rotation": "math.random(-30, 30)",
+        "rotation_rate": "math.random(5,10)"
+      },
+      "minecraft:particle_initial_speed": 7.5,
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 5,
+        "rotation_acceleration": "math.random(14,20)"
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          "math.clamp(variable.particle_random_1*0.2,0.35,0.5)",
+          "math.clamp(variable.particle_random_1*0.2,0.35,0.5)"
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "uv": {
+          "texture_width": 16,
+          "texture_height": 80,
+          "uv": [
+            0,
+            "16 * (0.0625 * (math.round(variable.particle_random_1*4)*16))"
+          ],
+          "uv_size": [
+            16,
+            16
+          ]
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "color": {
+          "interpolant": "v.particle_age / v.particle_lifetime",
+          "gradient": {
+            "0.86": "#FFFFFFFF",
+            "1.0": "#00FFFFFF"
+          }
+        }
+      }
+    }
+  }
+}

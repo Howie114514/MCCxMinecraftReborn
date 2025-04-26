@@ -1,0 +1,193 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.base": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.base_alpha": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.base_emissive": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        },
+        {
+          "*emis": "Material.emissive"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.base_lit": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "ignore_lighting": true
+    },
+    "controller.render.base_alpha_lit": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "ignore_lighting": true
+    },
+    "controller.render.invisible": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.translucent_lit": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        },
+        {
+          "*emis": "Material.emissive"
+        },
+        {
+          "*tran": "Material.translucent"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "ignore_lighting": true
+    },
+    "controller.render.translucent_emissive": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        },
+        {
+          "*emis": "Material.emissive"
+        },
+        {
+          "*tran": "Material.translucent"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.base_alpha_three": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": [
+            "Geometry.default",
+            "Geometry.b",
+            "Geometry.c"
+          ]
+        }
+      },
+      "geometry": "Array.geos[q.property('noxcrew:variant')]",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.no_damage": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "is_hurt_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "controller.render.base_alpha_decor": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.default",
+            "Texture.a",
+            "Texture.b",
+            "Texture.c"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Array.skins[q.property('noxcrew:variant')]"
+      ]
+    }
+  }
+}

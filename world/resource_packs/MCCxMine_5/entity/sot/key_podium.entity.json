@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:key_podium",
+      "textures": {
+        "default": "textures/entity/n/sot/key_podium"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.key_podium_iron",
+        "a": "geometry.n.ft.key_podium_gold",
+        "b": "geometry.n.ft.key_podium_diamond",
+        "c": "geometry.n.ft.key_podium_netherite"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "spinbob": "animation.n.podiums.spinbob"
+      },
+      "sound_effects": {
+        "sparkle": "sparkle"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "spinbob": "!q.property('noxcrew.ft:collected')"
+          }
+        ],
+        "should_update_effects_offscreen": true
+      },
+      "particle_effects": {
+        "idle_sparkle": "noxcrew.ft:idle_sparkle"
+      },
+      "render_controllers": [
+        "controller.render.key_podium"
+      ]
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.disco_ball",
+        "texture_width": 64,
+        "texture_height": 32,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 4.5,
+        "visible_bounds_offset": [
+          0,
+          1.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "disco_ball",
+          "parent": "root",
+          "pivot": [
+            0,
+            40,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2,
+                49,
+                -2
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                20,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -1,
+                42,
+                -1
+              ],
+              "size": [
+                2,
+                7,
+                2
+              ],
+              "uv": [
+                0,
+                23
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                41,
+                -2
+              ],
+              "size": [
+                4,
+                1,
+                4
+              ],
+              "uv": [
+                0,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fan_alph",
+          "parent": "disco_ball",
+          "pivot": [
+            0,
+            41,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0,
+                51,
+                0
+              ],
+              "size": [
+                10,
+                0,
+                10
+              ],
+              "uv": [
+                -10,
+                0
+              ]
+            },
+            {
+              "origin": [
+                0,
+                51,
+                0
+              ],
+              "size": [
+                10,
+                0,
+                10
+              ],
+              "pivot": [
+                0,
+                51,
+                0
+              ],
+              "rotation": [
+                0,
+                180,
+                0
+              ],
+              "uv": [
+                -10,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ball",
+          "parent": "disco_ball",
+          "pivot": [
+            0,
+            35,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.5,
+                30,
+                -5.5
+              ],
+              "size": [
+                11,
+                11,
+                11
+              ],
+              "uv": [
+                10,
+                9
+              ]
+            }
+          ],
+          "locators": {
+            "locator": [
+              0,
+              35,
+              -1
+            ],
+            "floor": [
+              0,
+              -7.25,
+              -1
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

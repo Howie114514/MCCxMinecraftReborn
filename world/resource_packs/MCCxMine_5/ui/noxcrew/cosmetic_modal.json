@@ -1,0 +1,304 @@
+{
+    "namespace": "cosmetic_modal",
+    "main_panel@common_modal_ui.main_panel": {
+        // Varibles that send data to the common modal
+        // Skye - These change the overall design of the UI
+        "$top_content_texture": "textures/ui/n/cosmetic/border_cell",
+        "$main_content": "cosmetic_modal.variable_scrollbar",
+        "$main_content_texture": "textures/ui/n/cosmetic/secondary_content_cell",
+        "$side_icon": "textures/ui/n/cosmetic",
+        "$side_icon_offset": [-150, 0],
+        "$modal_size": [350, "100%"]
+    },
+    "variable_scrollbar": {
+        "type": "panel",
+        "size": ["100%", "100%cm"],
+        "anchor_to": "top_left",
+        "anchor_from": "top_left",
+        "controls": [
+            {
+                "scrollable_content@cosmetic_modal.icon_button_renderer_scroll_panel": {}
+            },
+            {
+                "no_scrollable_content@cosmetic_modal.icon_button_renderer_no_scroll_panel": {}
+            }
+        ]
+    },
+    "icon_button_renderer_scroll_panel@common.scrolling_panel": {
+        "anchor_to": "top_left",
+        "anchor_from": "top_left",
+        "$show_background": false,
+        "$scroll_bar_contained": false,
+        "size": ["100%", 140],
+        "$scrolling_content": "cosmetic_modal.icon_button_renderer",
+        "$scroll_size": [5, "100%"],
+        "$scrolling_pane_size": ["100% - 12px", "100% - 8px"],
+        "$scrolling_pane_offset": [6, 10],
+        "$scroll_bar_right_padding_size": [0, 0],
+        "$scroll_bar_left_padding_size": [0, 0],
+        "$scroll_track_image_control": "cosmetic_modal.scroll_bg",
+        "bindings": [
+            {
+                "binding_name": "(#form_button_length > 4)",
+                "binding_name_override": "#visible"
+            },
+            {
+                "binding_name": "(#form_button_length > 4)",
+                "binding_name_override": "#enabled"
+            }
+        ]
+    },
+    "icon_button_renderer_no_scroll_panel": {
+        "type": "panel",
+        "anchor_to": "center",
+        "anchor_from": "center",
+        "offset": [0, 7],
+        "size": ["100% - 12px", 120],
+        "controls": [
+            {
+                "content@cosmetic_modal.icon_button_renderer": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "(#form_button_length < 5)",
+                "binding_name_override": "#visible"
+            },
+            {
+                "binding_name": "(#form_button_length < 5)",
+                "binding_name_override": "#enabled"
+            }
+        ]
+    },
+    "scroll_bg": {
+        "size": ["100% - 2px", "100%"],
+        "type": "image",
+        "texture": "textures/ui/n/white_pixel",
+        "color": [0.176, 0.176, 0.176],
+        "keep_ratio": false
+    },
+    // Render the buttons
+    "icon_button_renderer": {
+        "type": "grid",
+        "size": ["100%", "100%c + 2px"],
+        "offset": [0, 1],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "grid_item_template": "cosmetic_modal.icon_button_entry",
+        "grid_rescaling_type": "horizontal",
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#maximum_grid_items"
+            }
+        ]
+    },
+    // Button list entry (allows it to be clickable and nests the inside)
+    "icon_button_entry": {
+        "type": "panel",
+        "$flag_content": "§m§a",
+        "size": ["25%", "88px"],
+        "controls": [
+            {
+                "button@common.button": {
+                    "size": ["100%", "100%"],
+                    "layer": 1,
+                    "$pressed_button_name": "button.form_button_click",
+                    "default_focus_precedence": 1,
+                    "controls": [
+                        {
+                            "default@cosmetic_modal.button_list_entry_inside": {
+                                "$state": "default"
+                            }
+                        },
+                        {
+                            "hover@cosmetic_modal.button_list_entry_inside": {
+                                "$state": "hover"
+                            }
+                        },
+                        {
+                            "pressed@cosmetic_modal.button_list_entry_inside": {
+                                "$state": "pressed"
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_type": "collection_details",
+                            "binding_collection_name": "form_buttons"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Inside the button, displays the image & the text
+    "button_list_entry_inside": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        // Skye - Changes these for default hover textures
+        "$text_texture|default": "textures/ui/n/cosmetic/item_bottom",
+        "$icon_texture|default": "textures/ui/n/cosmetic/item_top",
+        "$text|default": "#form_button_text",
+        "$text_size|default": 0.7,
+        "size": ["100% - 1px", "100% - 2px"],
+        "offset": [0, 1],
+        // Skye - Changes textures on hover
+        "variables": [
+            {
+                "requires": "($state = 'hover')",
+                "$text_texture": "textures/ui/n/cosmetic/item_bottom_hover",
+                "$icon_texture": "textures/ui/n/cosmetic/item_top_hover",
+                "$text": "txt.ui.button.select",
+                "$text_size": 0.9
+            }
+        ],
+        "controls": [
+            {
+                "gray_button": {
+                    "size": ["100% - 4px", "100% - 4px"],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "$text_texture",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "button_inside@cosmetic_modal.button_inside": {}
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "button_inside": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": ["100% - 4px", "100% - 4px"],
+        "offset": [0, 4],
+        "controls": [
+            {
+                "button_icon@cosmetic_modal.button_icon_wrapper": {}
+            },
+            {
+                "button_label@cosmetic_modal.button_label": {
+                    "size": ["100%", "fill"]
+                }
+            }
+        ]
+    },
+    // Wraps the button and adds right padding for text
+    "button_icon_wrapper": {
+        "type": "panel",
+        "size": ["100%", "100%c"],
+        "controls": [
+            {
+                "button_icon@cosmetic_modal.button_icon": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "#form_button_texture",
+                "binding_name_override": "#button_texture",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_name": "#form_button_texture_file_system",
+                "binding_name_override": "#texture_file_system",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(not ((#button_texture = '') or (#button_texture = 'loading')))",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "button_icon": {
+        "size": ["100% + 4px", "60px"],
+        "offset": [0, -8],
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "layer": 2,
+        "type": "image",
+        "texture": "$icon_texture",
+        "keep_ratio": false,
+        "controls": [
+            {
+                "button_icon_image@cosmetic_modal.button_icon_image": {}
+            }
+        ]
+    },
+    "button_icon_image": {
+        "size": ["100% - 20px", "100% - 20px"],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer": 2,
+        "type": "image",
+        "keep_ratio": true,
+        "bilinear": true,
+        "bindings": [
+            {
+                "binding_name": "#form_button_texture",
+                "binding_name_override": "#texture",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_name": "#form_button_texture_file_system",
+                "binding_name_override": "#texture_file_system",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "button_label": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+            {
+                "button_label_text": {
+                    "type": "label",
+                    "text": "$text",
+                    "line_padding": 1,
+                    "color": "white",
+                    "font_scale_factor": "$text_size",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "text_alignment": "center",
+                    "offset": [1, -6],
+                    "size": ["100%", "default"],
+                    "layer": 5,
+                    "shadow": false,
+                    "bindings": [
+                        {
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons",
+                            "binding_condition": "none",
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

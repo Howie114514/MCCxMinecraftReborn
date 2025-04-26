@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:md_vindicator",
+      "textures": {
+        "default": "textures/entity/n/vanilla_mob/vindicator",
+        "ice": "textures/entity/n/vanilla_mob/ice"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.vindicator",
+        "ice": "geometry.n.ft.tall_ice"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "vindicator_base": "animation.vindicator.base",
+        "vindicator_attack": "animation.vindicator.attack",
+        "vindicator_walk": "animation.vindicator.walk",
+        "celebrating": "animation.humanoid.celebrating",
+        "controller_vindicator_base": "controller.animation.vindicator.base.v1.0",
+        "melt": "animation.n.ft.ice.melt",
+        "melt_ctrl": "controller.animation.melt.ctrl"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "animate": [
+          "look_at_target_default",
+          "controller_vindicator_base",
+          "melt_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "melting": "noxcrew.ft:melting",
+        "frozen_shatter": "noxcrew.ft:frozen_shatter",
+        "frozen_shatter_e1": "noxcrew.ft:frozen_shatter_e1"
+      },
+      "render_controllers": [
+        "controller.render.md.vindicator",
+        {
+          "controller.render.md_ice": "q.property('noxcrew.ft:frozen')"
+        }
+      ]
+    }
+  }
+}

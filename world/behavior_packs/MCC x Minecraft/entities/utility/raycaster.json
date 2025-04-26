@@ -1,0 +1,57 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.raycaster",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

@@ -1,0 +1,151 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "noxcrew.ft:balloon_animal",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particles/balloon_flying"
+      }
+    },
+    "curves": {
+      "variable.curve": {
+        "type": "linear",
+        "input": "v.particle_age",
+        "horizontal_range": 3,
+        "nodes": [
+          0,
+          19.76,
+          -10.02,
+          -26.97,
+          8.32,
+          -29.01,
+          -19.19,
+          11.33,
+          -2.34
+        ]
+      }
+    },
+    "events": {
+      "end": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:balloon_flop",
+          "type": "emitter"
+        }
+      },
+      "trail": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:balloon_trail",
+          "type": "emitter"
+        }
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 1
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1
+      },
+      "minecraft:emitter_shape_point": {
+        "offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": 5
+      },
+      "minecraft:particle_lifetime_events": {
+        "expiration_event": "end",
+        "timeline": {
+          "0.10": "trail",
+          "0.20": "trail",
+          "0.30": "trail",
+          "0.40": "trail",
+          "0.50": "trail",
+          "0.60": "trail",
+          "0.70": "trail",
+          "0.80": "trail",
+          "0.90": "trail",
+          "1.00": "trail",
+          "1.10": "trail",
+          "1.20": "trail",
+          "1.40": "trail",
+          "1.50": "trail",
+          "1.60": "trail",
+          "1.70": "trail",
+          "1.80": "trail",
+          "1.90": "trail",
+          "2.00": "trail",
+          "2.10": "trail",
+          "2.20": "trail",
+          "2.30": "trail",
+          "2.40": "trail",
+          "2.50": "trail",
+          "2.60": "trail",
+          "2.70": "trail",
+          "2.80": "trail",
+          "2.90": "trail",
+          "3.00": "trail",
+          "3.10": "trail",
+          "3.20": "trail",
+          "3.30": "trail",
+          "3.40": "trail",
+          "3.50": "trail",
+          "3.60": "trail",
+          "3.70": "trail",
+          "3.80": "trail",
+          "3.90": "trail",
+          "4.00": "trail",
+          "4.10": "trail",
+          "4.20": "trail",
+          "4.30": "trail",
+          "4.50": "trail",
+          "4.60": "trail",
+          "4.70": "trail",
+          "4.80": "trail",
+          "4.90": "trail",
+          "5.00": "trail"
+        }
+      },
+      "minecraft:particle_initial_spin": {
+        "rotation_rate": -60
+      },
+      "minecraft:particle_initial_speed": 2,
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [
+          "variable.curve/10",
+          "variable.curve*2",
+          "variable.curve/10"
+        ],
+        "rotation_acceleration": -60
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          0.5,
+          0.5
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "uv": {
+          "texture_width": 16,
+          "texture_height": 16,
+          "uv": [
+            0,
+            0
+          ],
+          "uv_size": [
+            16,
+            16
+          ]
+        }
+      },
+      "minecraft:particle_motion_collision": {
+        "collision_drag": 0.1,
+        "coefficient_of_restitution": 0.2,
+        "collision_radius": 0.2
+      }
+    }
+  }
+}

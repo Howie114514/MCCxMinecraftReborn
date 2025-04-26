@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "MCC x Minecraft 15th Anniversary Party - Grid Runners RP",
+    "name": "MCC x Minecraft 15th Anniversary Party - Grid Runners RP",
+    "uuid": "6197cfd8-3a3d-4dfe-9de4-c2cad4455495",
+    "version": [
+      1,
+      0,
+      8
+    ],
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "MCC x Minecraft 15th Anniversary Party - Grid Runners RP",
+      "type": "resources",
+      "uuid": "f2665785-2029-42f0-81fa-f1e31d63fd13",
+      "version": [
+        1,
+        0,
+        8
+      ]
+    }
+  ]
+}

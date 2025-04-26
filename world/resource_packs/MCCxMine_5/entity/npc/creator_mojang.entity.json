@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:creator_mojang",
+      "textures": {
+        "default": "textures/entity/n/npc/creator_mojang"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.creator_mojang"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "agnes_idle": "animation.n.creator.agnes.idle",
+        "agnes_special1": "animation.n.creator.agnes.special1",
+        "agnes_special2": "animation.n.creator.agnes.special2",
+        "agnes_ctrl": "controller.animation.agnes.special_ctrl",
+        "jens_idle": "animation.n.creator.jens.idle",
+        "jens_special1": "animation.n.creator.jens.special1",
+        "jens_special2": "animation.n.creator.jens.special2",
+        "jens_ctrl": "controller.animation.jens.special_ctrl"
+      },
+      "sound_effects": {
+        "agnes_special1": "agnes_special1",
+        "agnes_special2": "agnes_special2",
+        "jens_special1": "jens_special1",
+        "jens_special2": "jens_special2"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.agnes = 0;",
+          "variable.jens = 0;"
+        ],
+        "animate": [
+          "agnes_ctrl",
+          "jens_ctrl"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

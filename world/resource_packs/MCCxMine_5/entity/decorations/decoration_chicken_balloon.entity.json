@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:decoration_chicken_balloon",
+      "textures": {
+        "default": "textures/entity/n/decorations/chicken_balloon"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.decoration_chicken_balloon"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "idle": "animation.n.ballons.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

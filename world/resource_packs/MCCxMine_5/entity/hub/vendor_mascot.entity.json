@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:vendor_mascot",
+      "textures": {
+        "default": "textures/entity/n/hub/vendor_mascot"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.vendor_mascot"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "idle": "animation.n.vendor_mascot.idle",
+        "special": "animation.n.vendor_mascot.special",
+        "ctrl": "controller.animation.vendor.ctrl",
+        "particle": "animation.n.vendors.particle"
+      },
+      "sound_effects": {
+        "vendor_mascot": "vendor_mascot"
+      },
+      "particle_effects": {
+        "vendor_icon": "noxcrew.ft:vendor_icon"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.special = 0;"
+        ],
+        "animate": [
+          "ctrl",
+          "particle"
+        ],
+        "should_update_bones_and_effects_offscreen": true
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

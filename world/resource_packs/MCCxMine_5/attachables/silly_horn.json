@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:silly_horn",
+      "textures": {
+        "default": "textures/entity/n/hub/horn"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.silly_horn"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "first_person": "animation.n.silly_horn.first_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

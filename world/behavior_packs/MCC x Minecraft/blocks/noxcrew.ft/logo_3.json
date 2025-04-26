@@ -1,0 +1,137 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "noxcrew.ft:logo_3",
+			"is_experimental": true,
+			"register_to_creative_menu": true,
+			"menu_category": {
+				"category": "construction",
+				"group": ""
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 0
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": false,
+			"minecraft:geometry": "geometry.n.ft.logo_3",
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"render_method": "alpha_test",
+					"texture": "logo"
+				}
+			},
+			"minecraft:selection_box": {
+				"enabled": 1,
+				"origin": [
+					-8,
+					0,
+					-2
+				],
+				"size": [
+					0,
+					0,
+					0
+				]
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						],
+						"scale": [
+							1,
+							1,
+							1
+						],
+						"translation": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'"
+			},
+			{
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						],
+						"scale": [
+							1,
+							1,
+							1
+						],
+						"translation": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'"
+			},
+			{
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						],
+						"scale": [
+							1,
+							1,
+							1
+						],
+						"translation": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'"
+			},
+			{
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						],
+						"scale": [
+							1,
+							1,
+							1
+						],
+						"translation": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'"
+			}
+		]
+	}
+}

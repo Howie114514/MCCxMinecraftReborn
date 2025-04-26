@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:treasure_chest",
+      "textures": {
+        "default": "textures/entity/n/sot/treasure_chest"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.treasure_chest_iron",
+        "a": "geometry.n.ft.treasure_chest_gold",
+        "b": "geometry.n.ft.treasure_chest_diamond",
+        "c": "geometry.n.ft.treasure_chest_netherite"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "open": "animation.n.ft.treasure_chest.open",
+        "opened": "animation.n.ft.treasure_chest.opened",
+        "wrong1": "animation.n.ft.treasure_chest.wrong1",
+        "wrong2": "animation.n.ft.treasure_chest.wrong2",
+        "ctrl": "controller.animation.treasure_chest.ctrl"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "particle_effects": {
+        "treasure_chest_coins": "noxcrew.ft:coin_burst_small",
+        "treasure_chest_sparkles": "noxcrew.ft:treasure_chest_sparkles"
+      },
+      "render_controllers": [
+        "controller.render.sot_type"
+      ]
+    }
+  }
+}

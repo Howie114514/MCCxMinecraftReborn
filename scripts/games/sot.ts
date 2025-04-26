@@ -31,11 +31,11 @@ import { addCoins } from "../gameData";
 import { MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { points as sotMobSpawnPoints } from "../data/sot";
 import { inventory } from "../inventory";
-import { overworld } from "../constants";
 import { showSubTitle } from "../ui/title";
 import { Logger } from "../logger";
 import { network } from "../network";
 import environment, { envTypes } from "../environment";
+import { sound } from "../sound";
 
 export type SOTPlayerData = {
   collected_items: Record<string, boolean>;
@@ -56,6 +56,48 @@ export class SandOfTime extends BasicGame {
 
   constructor() {
     super();
+    const syncPropertyForPlayer = (p: Player) => {
+      system.runTimeout(() => {
+        if (network.isLevilamina())
+          system.runJob(
+            (function* (sot: SandOfTime) {
+              for (let id of Object.keys(sot.player_data[p.name].collected_items)) {
+                let p1 = id
+                  .replace(/mccr\:collected_c|mccr\:collected_s|mccr\:collected_a|mccr\:collected_t/g, "")
+                  .split("$");
+                let pos: Vector3 = { x: parseInt(p1[0]), y: parseInt(p1[1]), z: parseInt(p1[2]) };
+                if (Vec3Utils.distance(pos, p.location) < 100)
+                  network.syncEntityProperty(
+                    world
+                      .getDimension("overworld")
+                      .getEntitiesAtBlockLocation(pos)
+                      .filter((e) =>
+                        /^(noxcrew.ft:treasure_chest|noxcrew.ft:armor_podium|noxcrew.ft:key_podium|noxcrew.ft:coin_stack|noxcrew.ft:sand_blocks)$/.test(
+                          e.typeId
+                        )
+                      )[0],
+                    p,
+                    "noxcrew.ft:collected",
+                    sot.player_data[p.name].collected_items[id]
+                  );
+                yield;
+              }
+            })(this)
+          );
+      }, 1 * TicksPerSecond);
+    };
+    const syncAllProperties = () => {
+      if (network.isLevilamina())
+        system.runJob(
+          (function* (sot: SandOfTime) {
+            for (const p of Object.values(sot.players)) {
+              syncPropertyForPlayer(p);
+              yield;
+            }
+          })(this)
+        );
+    };
+    if (network.isLevilamina()) system.runInterval(syncAllProperties, 5 * TicksPerSecond);
     world.afterEvents.entityHitEntity.subscribe((ev) => this.collect(ev));
     world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
       let eheEvent: EntityHitEntityAfterEvent = { damagingEntity: ev.player, hitEntity: ev.target };
@@ -72,7 +114,7 @@ export class SandOfTime extends BasicGame {
         ev.damageSource.damagingEntity?.typeId == "minecraft:player" &&
         this.players[(ev.damageSource.damagingEntity as Player)?.name]
       ) {
-        overworld.spawnParticle("noxcrew.ft:coin_burst_small", ev.deadEntity.location);
+        world.getDimension("overworld").spawnParticle("noxcrew.ft:coin_burst_small", ev.deadEntity.location);
         this.player_data[(ev.damageSource.damagingEntity as Player)?.name].coins += 3;
       }
     });
@@ -157,13 +199,13 @@ export class SandOfTime extends BasicGame {
     if (this.hasItem(p, requiredItemId)) {
       let t = ev.hitEntity.getProperty("noxcrew.ft:unlock_type");
       let c = t == 0 ? 50 : t == 1 ? 100 : t == 2 ? 200 : 400;
-      this.player_data[p.name].coins += c;
 
       if (this.getProperty<boolean>("single_mode", false)) {
         if (!ev.hitEntity.getProperty("noxcrew.ft:collected")) {
           ev.hitEntity.setProperty("noxcrew.ft:collected", true);
           p.playSound("treasure_chest_open");
           p.playSound("bigcoins");
+          this.player_data[p.name].coins += c;
           ev.damagingEntity.runCommand(`clear @s ${requiredItemId} 0 1`);
           showSubTitle(p, tr("txt.sot.coins" + c.toString()));
           this.player_data[p.name].opened_chests++;
@@ -180,6 +222,7 @@ export class SandOfTime extends BasicGame {
           ev.damagingEntity.runCommand(`clear @s ${requiredItemId} 0 1`);
           p.playSound("bigcoins");
           p.playSound("treasure_chest_open");
+          this.player_data[p.name].coins += c;
           showSubTitle(p, tr("txt.sot.coins" + c.toString()));
           ev.hitEntity.setProperty("noxcrew.ft:collected", true);
           system.runTimeout(() => ev.hitEntity.setProperty("noxcrew.ft:collected", false), 2000);
@@ -194,7 +237,7 @@ export class SandOfTime extends BasicGame {
     } else {
       if (environment.type == envTypes.LevilaminaWithPlugin)
         network.spawnParticleForPlayer(p, "noxcrew.ft:treasure_chest_wrong", ev.hitEntity.location);
-      else overworld.spawnParticle("noxcrew.ft:treasure_chest_wrong", ev.hitEntity.location);
+      else world.getDimension("overworld").spawnParticle("noxcrew.ft:treasure_chest_wrong", ev.hitEntity.location);
       showSubTitle(p, tr("txt.error.msg5"));
       ev.hitEntity.playAnimation("animation.n.ft.treasure_chest.wrong1");
       p.playSound("treasure_chest_wrong");
@@ -341,6 +384,7 @@ export class SandOfTime extends BasicGame {
             "mccr:collected_a" + Vec3Utils.toMiniString(Vector3Utils.floor(ev.hitEntity.location))
           ];
         if (!collected) {
+          sound.play(p, "key_unlock", {});
           this.player_data[p.name].collected_items[
             "mccr:collected_a" + Vec3Utils.toMiniString(Vector3Utils.floor(ev.hitEntity.location))
           ] = true;
@@ -352,8 +396,10 @@ export class SandOfTime extends BasicGame {
           );
           if (environment.type == envTypes.LevilaminaWithPlugin)
             network.spawnParticleForPlayer(p, "noxcrew.ft:key_collect", ev.hitEntity.location);
-          else overworld.spawnParticle("noxcrew.ft:key_collect", ev.hitEntity.location);
+          else world.getDimension("overworld").spawnParticle("noxcrew.ft:key_collect", ev.hitEntity.location);
           ul(p);
+
+          network.syncEntityProperty(ev.hitEntity, p, "noxcrew.ft:collected", true);
         } else {
         }
       } else {
@@ -365,7 +411,7 @@ export class SandOfTime extends BasicGame {
         if (!collected) {
           if (environment.type == envTypes.LevilaminaWithPlugin)
             network.spawnParticleForPlayer(p, "noxcrew.ft:key_collect", ev.hitEntity.location);
-          else overworld.spawnParticle("noxcrew.ft:key_collect", ev.hitEntity.location);
+          else world.getDimension("overworld").spawnParticle("noxcrew.ft:key_collect", ev.hitEntity.location);
           showSubTitle(
             p,
             new Text()
@@ -373,7 +419,7 @@ export class SandOfTime extends BasicGame {
               .tr("txt.sot.key")
           );
           ul(p);
-          network.syncEntityProperty(ev.hitEntity, p, "noxcrew.ft:collected", true);
+          ev.hitEntity.setProperty("noxcrew.ft:collected", true);
         }
       }
     }
@@ -487,7 +533,7 @@ export class SandOfTime extends BasicGame {
           let mindex = Math.floor(this.mobs.length * Math.random());
           let e = world.getDimension("overworld").spawnEntity(this.mobs[mindex], this.spawner_points[pindex]);
           system.runTimeout(() => {
-            e.isValid() ? e.remove() : undefined;
+            e.isValid ? e.remove() : undefined;
           }, 30 * TicksPerSecond);
         }
       } catch (e) {}

@@ -1,0 +1,203 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.zombie_baby",
+        "texture_width": 32,
+        "texture_height": 16,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            12,
+            1
+          ]
+        },
+        {
+          "name": "waist",
+          "parent": "root",
+          "pivot": [
+            0,
+            6,
+            1
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "waist",
+          "pivot": [
+            0,
+            12,
+            1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2,
+                6,
+                -1
+              ],
+              "size": [
+                4,
+                6,
+                2
+              ],
+              "uv": [
+                8,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "name": "head",
+          "parent": "body",
+          "pivot": [
+            0,
+            12,
+            1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2,
+                13,
+                -2
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "inflate": 1,
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rightArm",
+          "parent": "body",
+          "pivot": [
+            -2,
+            11,
+            1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                6,
+                -1
+              ],
+              "size": [
+                2,
+                6,
+                2
+              ],
+              "uv": [
+                20,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "name": "leftArm",
+          "parent": "body",
+          "pivot": [
+            2,
+            11,
+            1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2,
+                6,
+                -1
+              ],
+              "size": [
+                2,
+                6,
+                2
+              ],
+              "uv": [
+                20,
+                8
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "rightLeg",
+          "parent": "body",
+          "pivot": [
+            -0.9,
+            6,
+            1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.9,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                6,
+                2
+              ],
+              "uv": [
+                0,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "name": "leftLeg",
+          "parent": "body",
+          "pivot": [
+            0.9,
+            6,
+            1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.1,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                6,
+                2
+              ],
+              "uv": [
+                0,
+                8
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

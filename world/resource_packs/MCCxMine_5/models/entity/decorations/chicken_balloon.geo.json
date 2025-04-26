@@ -1,0 +1,377 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.decoration_chicken_balloon",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 4.5,
+        "visible_bounds_offset": [
+          0,
+          1.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "anti_rot",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "balloon",
+          "parent": "anti_rot",
+          "pivot": [
+            0,
+            23,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                23,
+                -6
+              ],
+              "size": [
+                12,
+                10,
+                12
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                28,
+                5
+              ],
+              "size": [
+                6,
+                4,
+                7
+              ],
+              "pivot": [
+                0,
+                30,
+                4.5
+              ],
+              "rotation": [
+                37.5,
+                0,
+                0
+              ],
+              "uv": [
+                8,
+                53
+              ]
+            },
+            {
+              "origin": [
+                2,
+                18,
+                -2
+              ],
+              "size": [
+                3,
+                6,
+                4
+              ],
+              "pivot": [
+                3.5,
+                24,
+                0
+              ],
+              "rotation": [
+                27.5,
+                0,
+                -12.5
+              ],
+              "uv": [
+                36,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -5,
+                18,
+                -2
+              ],
+              "size": [
+                3,
+                6,
+                4
+              ],
+              "pivot": [
+                -3.5,
+                24,
+                0
+              ],
+              "rotation": [
+                27.5,
+                0,
+                12.5
+              ],
+              "uv": [
+                36,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -14,
+                28,
+                -5
+              ],
+              "size": [
+                8,
+                5,
+                10
+              ],
+              "pivot": [
+                -6,
+                28.5,
+                0
+              ],
+              "rotation": [
+                -5.23619,
+                -14.0761,
+                20.6469
+              ],
+              "uv": [
+                28,
+                22
+              ]
+            },
+            {
+              "origin": [
+                6,
+                28,
+                -5
+              ],
+              "size": [
+                8,
+                5,
+                10
+              ],
+              "pivot": [
+                6,
+                28.5,
+                0
+              ],
+              "rotation": [
+                -5.23619,
+                14.0761,
+                -20.6469
+              ],
+              "uv": [
+                28,
+                22
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "bone",
+          "parent": "balloon",
+          "pivot": [
+            0,
+            33,
+            -6
+          ],
+          "rotation": [
+            -10,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                33,
+                -12
+              ],
+              "size": [
+                6,
+                3,
+                6
+              ],
+              "uv": [
+                14,
+                23
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                1,
+                36,
+                -10
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                36,
+                37
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -4,
+                29,
+                -8
+              ],
+              "size": [
+                8,
+                12,
+                7
+              ],
+              "uv": [
+                34,
+                45
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                27,
+                -10
+              ],
+              "size": [
+                4,
+                7,
+                4
+              ],
+              "pivot": [
+                0,
+                34,
+                -7.5
+              ],
+              "rotation": [
+                -27.5,
+                0,
+                0
+              ],
+              "uv": [
+                0,
+                42
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -2,
+                40,
+                -8
+              ],
+              "size": [
+                4,
+                6,
+                4
+              ],
+              "pivot": [
+                0,
+                40,
+                -6
+              ],
+              "rotation": [
+                30,
+                0,
+                0
+              ],
+              "uv": [
+                2,
+                28
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -1.5,
+                40,
+                -5
+              ],
+              "size": [
+                3,
+                5,
+                3
+              ],
+              "uv": [
+                52,
+                37
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -5,
+                36,
+                -10
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                36,
+                37
+              ]
+            }
+          ]
+        },
+        {
+          "name": "line_alph",
+          "parent": "anti_rot",
+          "pivot": [
+            0.5,
+            0,
+            -1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                0,
+                0
+              ],
+              "size": [
+                2,
+                24,
+                0
+              ],
+              "uv": [
+                60,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

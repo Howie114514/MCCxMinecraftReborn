@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.trophy_help.idle": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            0,
+            "query.anim_time * 60",
+            0
+          ],
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 180) *0.5",
+            0
+          ]
+        },
+        "a_alph": {
+          "scale": "(v.differnce > 167.5 && v.differnce < 192.5 && query.distance_from_camera < 3.75) ? 1 : 0"
+        }
+      }
+    }
+  }
+}

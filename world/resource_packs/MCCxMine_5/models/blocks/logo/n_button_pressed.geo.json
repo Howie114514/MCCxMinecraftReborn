@@ -1,0 +1,169 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.n_button_pressed",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                0,
+                -3
+              ],
+              "size": [
+                6,
+                2,
+                6
+              ],
+              "uv": [
+                0,
+                13
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                0,
+                6
+              ],
+              "size": [
+                4,
+                1,
+                2
+              ],
+              "uv": [
+                15,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -1.5,
+                0.5,
+                3
+              ],
+              "size": [
+                3,
+                1,
+                4
+              ],
+              "uv": [
+                0,
+                8
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                2,
+                -2
+              ],
+              "size": [
+                2,
+                11,
+                4
+              ],
+              "uv": [
+                18,
+                4
+              ]
+            },
+            {
+              "origin": [
+                0,
+                2,
+                -2
+              ],
+              "size": [
+                2,
+                11,
+                4
+              ],
+              "uv": [
+                18,
+                4
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "bone",
+          "parent": "body",
+          "pivot": [
+            0,
+            13.75,
+            -1
+          ],
+          "rotation": [
+            40,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                11,
+                -5
+              ],
+              "size": [
+                8,
+                3,
+                8
+              ],
+              "uv": [
+                0,
+                21
+              ]
+            },
+            {
+              "origin": [
+                -2.5,
+                13,
+                -3.5
+              ],
+              "size": [
+                5,
+                2,
+                5
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

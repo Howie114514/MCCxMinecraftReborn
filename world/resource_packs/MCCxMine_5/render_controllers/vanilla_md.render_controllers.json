@@ -1,0 +1,127 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.md.base": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "overlay_color": {
+        "r": "0.0 * (q.property('noxcrew.ft:frozen'))",
+        "g": "0.5 * (q.property('noxcrew.ft:frozen'))",
+        "b": "0.7 * (q.property('noxcrew.ft:frozen'))",
+        "a": "0.5 * (q.property('noxcrew.ft:frozen'))"
+      }
+    },
+    "controller.render.md.blaze": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "head": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "overlay_color": {
+        "r": "0.0 * (q.property('noxcrew.ft:frozen'))",
+        "g": "0.5 * (q.property('noxcrew.ft:frozen'))",
+        "b": "0.7 * (q.property('noxcrew.ft:frozen'))",
+        "a": "0.5 * (q.property('noxcrew.ft:frozen'))"
+      }
+    },
+    "controller.render.md.skeleton": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "part_visibility": [
+        {
+          "rightItem": false
+        }
+      ],
+      "overlay_color": {
+        "r": "0.0 * (q.property('noxcrew.ft:frozen'))",
+        "g": "0.5 * (q.property('noxcrew.ft:frozen'))",
+        "b": "0.7 * (q.property('noxcrew.ft:frozen'))",
+        "a": "0.5 * (q.property('noxcrew.ft:frozen'))"
+      }
+    },
+    "controller.render.md.vindicator": {
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        {
+          "rightArm": "query.is_angry || query.is_celebrating"
+        },
+        {
+          "leftArm": "query.is_angry || query.is_celebrating"
+        },
+        {
+          "axe": "query.is_angry"
+        },
+        {
+          "gimble": "query.is_angry"
+        },
+        {
+          "arms": "!(query.is_angry || query.is_celebrating)"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "overlay_color": {
+        "r": "0.0 * (q.property('noxcrew.ft:frozen'))",
+        "g": "0.5 * (q.property('noxcrew.ft:frozen'))",
+        "b": "0.7 * (q.property('noxcrew.ft:frozen'))",
+        "a": "0.5 * (q.property('noxcrew.ft:frozen'))"
+      }
+    },
+    "controller.render.creator_melt": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "overlay_color": {
+        "r": "0.0 * (1 - v.idle)",
+        "g": "0.5 * (1 - v.idle)",
+        "b": "0.7 * (1 - v.idle)",
+        "a": "0.5 * (1 - v.idle)"
+      }
+    }
+  }
+}

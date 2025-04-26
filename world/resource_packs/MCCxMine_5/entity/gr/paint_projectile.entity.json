@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:paint_proj",
+      "textures": {
+        "default": "textures/entity/n/gr/paint/proj_black",
+        "blue": "textures/entity/n/gr/paint/proj_blue",
+        "brown": "textures/entity/n/gr/paint/proj_brown",
+        "green": "textures/entity/n/gr/paint/proj_green",
+        "purple": "textures/entity/n/gr/paint/proj_purple",
+        "red": "textures/entity/n/gr/paint/proj_red",
+        "white": "textures/entity/n/gr/paint/proj_white",
+        "yellow": "textures/entity/n/gr/paint/proj_yellow"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.paint_projectile"
+      },
+      "materials": {
+        "default": "noxcrew_alpha"
+      },
+      "animations": {
+        "trail_black": "animation.n.paintproj.trail.black",
+        "fling_black": "animation.n.paintproj.fling.black",
+        "trail_blue": "animation.n.paintproj.trail.blue",
+        "fling_blue": "animation.n.paintproj.fling.blue",
+        "trail_brown": "animation.n.paintproj.trail.brown",
+        "fling_brown": "animation.n.paintproj.fling.brown",
+        "trail_green": "animation.n.paintproj.trail.green",
+        "fling_green": "animation.n.paintproj.fling.green",
+        "trail_purple": "animation.n.paintproj.trail.purple",
+        "fling_purple": "animation.n.paintproj.fling.purple",
+        "trail_red": "animation.n.paintproj.trail.red",
+        "fling_red": "animation.n.paintproj.fling.red",
+        "trail_white": "animation.n.paintproj.trail.white",
+        "fling_white": "animation.n.paintproj.fling.white",
+        "trail_yellow": "animation.n.paintproj.trail.yellow",
+        "fling_yellow": "animation.n.paintproj.fling.yellow",
+        "spin": "animation.n.paintproj.spin"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "trail_black": "q.property('noxcrew.ft:color') == 'black'"
+          },
+          {
+            "fling_black": "q.property('noxcrew.ft:color') == 'black'"
+          },
+          {
+            "trail_blue": "q.property('noxcrew.ft:color') == 'blue'"
+          },
+          {
+            "fling_blue": "q.property('noxcrew.ft:color') == 'blue'"
+          },
+          {
+            "trail_brown": "q.property('noxcrew.ft:color') == 'brown'"
+          },
+          {
+            "fling_brown": "q.property('noxcrew.ft:color') == 'brown'"
+          },
+          {
+            "trail_green": "q.property('noxcrew.ft:color') == 'green'"
+          },
+          {
+            "fling_green": "q.property('noxcrew.ft:color') == 'green'"
+          },
+          {
+            "trail_purple": "q.property('noxcrew.ft:color') == 'purple'"
+          },
+          {
+            "fling_purple": "q.property('noxcrew.ft:color') == 'purple'"
+          },
+          {
+            "trail_red": "q.property('noxcrew.ft:color') == 'red'"
+          },
+          {
+            "fling_red": "q.property('noxcrew.ft:color') == 'red'"
+          },
+          {
+            "trail_white": "q.property('noxcrew.ft:color') == 'white'"
+          },
+          {
+            "fling_white": "q.property('noxcrew.ft:color') == 'white'"
+          },
+          {
+            "trail_yellow": "q.property('noxcrew.ft:color') == 'yellow'"
+          },
+          {
+            "fling_yellow": "q.property('noxcrew.ft:color') == 'yellow'"
+          },
+          "spin"
+        ]
+      },
+      "particle_effects": {
+        "fling_black": "noxcrew.ft:brush_fling_black",
+        "trail_black": "noxcrew.ft:proj_trail_black",
+        "fling_blue": "noxcrew.ft:brush_fling_blue",
+        "trail_blue": "noxcrew.ft:proj_trail_blue",
+        "fling_brown": "noxcrew.ft:brush_fling_brown",
+        "trail_brown": "noxcrew.ft:proj_trail_brown",
+        "fling_green": "noxcrew.ft:brush_fling_green",
+        "trail_green": "noxcrew.ft:proj_trail_green",
+        "fling_purple": "noxcrew.ft:brush_fling_purple",
+        "trail_purple": "noxcrew.ft:proj_trail_purple",
+        "fling_red": "noxcrew.ft:brush_fling_red",
+        "trail_red": "noxcrew.ft:proj_trail_red",
+        "fling_white": "noxcrew.ft:brush_fling_white",
+        "trail_white": "noxcrew.ft:proj_trail_white",
+        "fling_yellow": "noxcrew.ft:brush_fling_yellow",
+        "trail_yellow": "noxcrew.ft:proj_trail_yellow"
+      },
+      "render_controllers": [
+        {
+          "controller.render.proj.black": "q.property('noxcrew.ft:color') == 'black'"
+        },
+        {
+          "controller.render.proj.blue": "q.property('noxcrew.ft:color') == 'blue'"
+        },
+        {
+          "controller.render.proj.brown": "q.property('noxcrew.ft:color') == 'brown'"
+        },
+        {
+          "controller.render.proj.green": "q.property('noxcrew.ft:color') == 'green'"
+        },
+        {
+          "controller.render.proj.purple": "q.property('noxcrew.ft:color') == 'purple'"
+        },
+        {
+          "controller.render.proj.red": "q.property('noxcrew.ft:color') == 'red'"
+        },
+        {
+          "controller.render.proj.white": "q.property('noxcrew.ft:color') == 'white'"
+        },
+        {
+          "controller.render.proj.yellow": "q.property('noxcrew.ft:color') == 'yellow'"
+        }
+      ]
+    }
+  }
+}

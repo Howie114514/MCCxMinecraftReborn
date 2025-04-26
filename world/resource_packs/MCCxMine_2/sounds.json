@@ -1,0 +1,22 @@
+{
+  "individual_event_sounds": {
+    "events": {
+      "bow": {
+        "pitch": [
+          0.83,
+          1.25
+        ],
+        "sound": "random.bow",
+        "volume": 1
+      },
+      "bow.hit": {
+        "pitch": [
+          1.09,
+          1.3
+        ],
+        "sound": "random.bowhit",
+        "volume": 1
+      }
+    }
+  }
+}

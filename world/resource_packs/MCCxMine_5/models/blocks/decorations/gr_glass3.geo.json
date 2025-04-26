@@ -1,0 +1,73 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.gr_glass3",
+        "texture_width": 32,
+        "texture_height": 16,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "group",
+          "pivot": [
+            8,
+            0,
+            -8.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                -7.5,
+                15
+              ],
+              "size": [
+                16,
+                16,
+                0
+              ],
+              "pivot": [
+                0,
+                8,
+                7.5
+              ],
+              "rotation": [
+                -90,
+                0,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -2,
+                6,
+                -4.5
+              ],
+              "size": [
+                1,
+                7,
+                9
+              ],
+              "uv": [
+                12,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

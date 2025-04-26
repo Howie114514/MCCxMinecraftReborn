@@ -5,6 +5,5 @@
 /test.js
 /mcc还原.code-workspace
 /node_modules/
-/generatePatches.py
-/originalWorld
 /scripts/buildInfo.ts
+/build

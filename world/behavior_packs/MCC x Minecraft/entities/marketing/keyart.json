@@ -1,0 +1,61 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.keyart",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

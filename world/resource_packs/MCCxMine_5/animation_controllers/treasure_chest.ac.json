@@ -1,0 +1,72 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.treasure_chest.ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "wrong1": "q.property('noxcrew.ft:wrong')"
+            },
+            {
+              "open": "q.property('noxcrew.ft:collected')"
+            }
+          ]
+        },
+        "wrong1": {
+          "animations": [
+            "wrong1"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            },
+            {
+              "wrong2": "q.anim_time > 0.15 && q.property('noxcrew.ft:wrong')"
+            },
+            {
+              "open": "q.property('noxcrew.ft:collected')"
+            }
+          ]
+        },
+        "wrong2": {
+          "animations": [
+            "wrong2"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            },
+            {
+              "wrong1": "q.anim_time > 0.15 && q.property('noxcrew.ft:wrong')"
+            },
+            {
+              "open": "q.property('noxcrew.ft:collected')"
+            }
+          ]
+        },
+        "open": {
+          "animations": [
+            "open"
+          ],
+          "transitions": [
+            {
+              "opened": "q.any_animation_finished"
+            }
+          ]
+        },
+        "opened": {
+          "animations": [
+            "opened"
+          ],
+          "transitions": [
+            {
+              "default": "!q.property('noxcrew.ft:collected')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

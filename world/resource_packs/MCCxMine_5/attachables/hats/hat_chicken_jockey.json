@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:hat_chicken_jockey",
+      "textures": {
+        "default": "textures/entity/n/hub/hat_chicken_jockey"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.hat_chicken_jockey"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "animations": {
+        "chicken_jockey": "animation.n.hats.chicken_jockey"
+      },
+      "scripts": {
+        "animate": [
+          "chicken_jockey"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base"
+      ]
+    }
+  }
+}

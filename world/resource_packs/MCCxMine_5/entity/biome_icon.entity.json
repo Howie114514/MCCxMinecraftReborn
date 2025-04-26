@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.biome_icon",
+      "textures": {
+        "default": "textures/entity/biome_icon"
+      },
+      "geometry": {
+        "default": "geometry.biome_icon"
+      },
+      "materials": {
+        "default": "base",
+        "alpha": "transparency"
+      },
+      "animations": {
+        "idle": "animation.biome_icon.idle",
+        "thursters": "animation.biome_icon.thrusters"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          "thursters"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.biome_icon"
+      ]
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.four": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.default",
+            "Texture.b",
+            "Texture.c",
+            "Texture.d"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Array.skins[q.property('noxcrew:variant')]"
+      ]
+    },
+    "controller.render.eight": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.default",
+            "Texture.b",
+            "Texture.c",
+            "Texture.d",
+            "Texture.e",
+            "Texture.f",
+            "Texture.g",
+            "Texture.h"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Array.skins[q.property('noxcrew:variant')]"
+      ]
+    },
+    "controller.render.eleven": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.default",
+            "Texture.b",
+            "Texture.c",
+            "Texture.d",
+            "Texture.e",
+            "Texture.f",
+            "Texture.g",
+            "Texture.h",
+            "Texture.i",
+            "Texture.j",
+            "Texture.k"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Array.skins[q.property('noxcrew:variant')]"
+      ]
+    },
+    "controller.render.fifteen": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.default",
+            "Texture.b",
+            "Texture.c",
+            "Texture.d",
+            "Texture.e",
+            "Texture.f",
+            "Texture.g",
+            "Texture.h",
+            "Texture.i",
+            "Texture.j",
+            "Texture.k",
+            "Texture.l",
+            "Texture.m",
+            "Texture.n",
+            "Texture.o"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": [
+        "Array.skins[q.property('noxcrew:variant')]"
+      ]
+    }
+  }
+}

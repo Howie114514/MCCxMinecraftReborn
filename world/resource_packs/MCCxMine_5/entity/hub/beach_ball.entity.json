@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:beach_ball",
+      "textures": {
+        "default": "textures/entity/n/hub/beachball"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.beachball"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "roll": "animation.n.beachball.roll"
+      },
+      "scripts": {
+        "animate": [
+          "roll"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.no_damage"
+      ]
+    }
+  }
+}

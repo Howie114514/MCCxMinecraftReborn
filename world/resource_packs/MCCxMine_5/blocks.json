@@ -1,0 +1,75 @@
+{
+  "border_block": {
+    "sound": "stone",
+    "blockshape": "invisible",
+    "textures": "border_block"
+  },
+  "blackstone_double_slab": {
+    "sound": "stone",
+    "textures": "custom_yellow"
+  },
+  "blackstone_slab": {
+    "sound": "stone",
+    "textures": "custom_yellow"
+  },
+  "blackstone_stairs": {
+    "sound": "stone",
+    "textures": "custom_yellow"
+  },
+  "blackstone_wall": {
+    "sound": "stone",
+    "textures": "prismarine_dark"
+  },
+  "budding_amethyst": {
+    "sound": "wood",
+    "textures": {
+      "down": "box_bottom",
+      "east": "box_side",
+      "north": "box",
+      "south": "box_side_tape",
+      "up": "box_top",
+      "west": "box_side"
+    }
+  },
+  "format_version": "1.21.0",
+  "hardened_clay": {
+    "isotropic": false,
+    "sound": "stone",
+    "textures": "hardened_clay"
+  },
+  "noxcrew.ft:gr_glass1": {
+    "sound": "glass",
+    "textures": "gr_glass1"
+  },
+  "noxcrew.ft:cake_centre": {
+    "sound": "slime",
+    "textures": "cake_centre"
+  },
+  "noxcrew.ft:cake_edge": {
+    "sound": "slime",
+    "textures": "cake_edge"
+  },
+  "noxcrew.ft:cake_cherry": {
+    "sound": "slime",
+    "textures": "cake_cherry"
+  },
+  "noxcrew.ft:gr_glass2": {
+    "sound": "glass",
+    "textures": "gr_glass2"
+  },
+  "stained_hardened_clay": {
+    "isotropic": false,
+    "sound": "stone",
+    "textures": "stained_clay"
+  },
+  "crimson_pressure_plate": {
+    "sound": "stone",
+    "textures": "polished_blackstone"
+  },
+  "snow": {
+    "brightness_gamma": 0.45,
+    "isotropic": false,
+    "sound": "snow",
+    "textures": "snow"
+  }
+}

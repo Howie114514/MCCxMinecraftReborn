@@ -5,7 +5,7 @@
 
 还原 MCC 活动服务器的项目，致力于打造怀旧版地图。
 
-[推荐搭配使用这个视频里的地图使用本行为包](https://www.bilibili.com/video/BV1r7iwedEZe/)
+[本地图修改自视频中的地图](https://www.bilibili.com/video/BV1r7iwedEZe/)
 <br>
 [Levilamina 服务器推荐配合本插件使用](https://github.com/Howie114514/MCCxMinecraftReborn-llplugin)
 
@@ -38,6 +38,7 @@
 
 ### 命令：
 
-npx just-scripts mctemplate - 导出世界模板<br><br>
-npx local-deploy - 本地部署（要在游戏中使用，请在.env 文件中修改为"BedrockUWP"）<br><br>
-fixServerUI.ps1 - 修复@minecraft/server-ui 中自带 node_modules 文件夹导致的不兼容问题
+注：@minecraft/math 与一切测试版@minecraft/server 不兼容，使用任何修改 npm 包的命令请加上--force 选项
+npm run release- 导出<br><br>
+npm run sync - 同步世界文件<br><br>
+rm .\\node_modules\\@minecraft\\server-ui\\node_modules\\ -Recurse - 移除 server-ui 中的 node_modules 文件，防止版本不兼容

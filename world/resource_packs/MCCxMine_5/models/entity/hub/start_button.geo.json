@@ -1,0 +1,433 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.start_button",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 4.5,
+        "visible_bounds_offset": [
+          0,
+          1.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "start_button",
+          "parent": "root",
+          "pivot": [
+            0.08,
+            39.23307,
+            -4.68
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -24,
+                22.88,
+                -8.6
+              ],
+              "size": [
+                12,
+                29,
+                14
+              ],
+              "pivot": [
+                -17.4,
+                37.28,
+                -1.4
+              ],
+              "rotation": [
+                0,
+                0,
+                10
+              ],
+              "uv": [
+                52,
+                31
+              ]
+            },
+            {
+              "origin": [
+                12,
+                22.88,
+                -8.6
+              ],
+              "size": [
+                12,
+                29,
+                14
+              ],
+              "pivot": [
+                17.4,
+                37.28,
+                -1.4
+              ],
+              "rotation": [
+                0,
+                0,
+                -10
+              ],
+              "uv": [
+                52,
+                31
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -13.2,
+                31.4,
+                -8.6
+              ],
+              "size": [
+                27,
+                17,
+                12
+              ],
+              "uv": [
+                2,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "name": "a_alph",
+          "parent": "start_button",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26.2,
+                22.4,
+                -8.7
+              ],
+              "size": [
+                53,
+                33,
+                0
+              ],
+              "uv": [
+                0,
+                95
+              ]
+            }
+          ]
+        },
+        {
+          "name": "creeper_alph",
+          "parent": "start_button",
+          "pivot": [
+            -0.2,
+            42.4,
+            -8.9
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.2,
+                38.4,
+                -8.9
+              ],
+              "size": [
+                8,
+                8,
+                0
+              ],
+              "uv": [
+                112,
+                78
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dpad",
+          "parent": "start_button",
+          "pivot": [
+            -15.8,
+            41.36667,
+            -8.4
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -13.2,
+                39,
+                -10.4
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                82,
+                12
+              ]
+            },
+            {
+              "origin": [
+                -17.2,
+                35.4,
+                -10.4
+              ],
+              "size": [
+                4,
+                11,
+                4
+              ],
+              "uv": [
+                0,
+                74
+              ]
+            },
+            {
+              "origin": [
+                -21.2,
+                39,
+                -10.4
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                76,
+                78
+              ]
+            }
+          ]
+        },
+        {
+          "name": "l",
+          "parent": "start_button",
+          "pivot": [
+            -7.1,
+            35.3,
+            -8.1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.6,
+                30.8,
+                -13
+              ],
+              "size": [
+                8,
+                8,
+                3
+              ],
+              "uv": [
+                69,
+                1
+              ]
+            },
+            {
+              "origin": [
+                -8.6,
+                32.8,
+                -10
+              ],
+              "size": [
+                4,
+                4,
+                3
+              ],
+              "uv": [
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "name": "buttons",
+          "parent": "start_button",
+          "pivot": [
+            11.8,
+            41.4,
+            -8.4
+          ],
+          "locators": {
+            "locator": [
+              16,
+              45,
+              -12
+            ]
+          }
+        },
+        {
+          "name": "a",
+          "parent": "buttons",
+          "pivot": [
+            11.8,
+            41.4,
+            -8.4
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9.8,
+                39.4,
+                -10.4
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                64,
+                74
+              ]
+            }
+          ]
+        },
+        {
+          "name": "b",
+          "parent": "buttons",
+          "pivot": [
+            15.4,
+            37,
+            -8.4
+          ],
+          "cubes": [
+            {
+              "origin": [
+                13.8,
+                35.4,
+                -10.4
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                48,
+                74
+              ]
+            }
+          ]
+        },
+        {
+          "name": "c",
+          "parent": "buttons",
+          "pivot": [
+            19,
+            41.4,
+            -8.4
+          ],
+          "cubes": [
+            {
+              "origin": [
+                17.8,
+                39.4,
+                -10.4
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                32,
+                74
+              ]
+            }
+          ]
+        },
+        {
+          "name": "d",
+          "parent": "start_button",
+          "pivot": [
+            15.4,
+            45.8,
+            -8.4
+          ],
+          "cubes": [
+            {
+              "origin": [
+                13.8,
+                43.4,
+                -10.4
+              ],
+              "size": [
+                4,
+                4,
+                4
+              ],
+              "uv": [
+                16,
+                74
+              ]
+            }
+          ]
+        },
+        {
+          "name": "r",
+          "parent": "start_button",
+          "pivot": [
+            7.1,
+            34.8,
+            -8.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2.6,
+                30.8,
+                -13
+              ],
+              "size": [
+                8,
+                8,
+                3
+              ],
+              "uv": [
+                69,
+                1
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                4.6,
+                32.8,
+                -10
+              ],
+              "size": [
+                4,
+                4,
+                3
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

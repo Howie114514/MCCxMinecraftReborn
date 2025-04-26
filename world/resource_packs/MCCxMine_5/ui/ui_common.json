@@ -1,0 +1,77 @@
+{
+	"namespace": "common",
+
+	"close_button_noxcrew": {
+		"type": "button",
+		"size": [21, 21],
+		"layer": 10,
+		"anchor_from": "top_right",
+		"anchor_to": "top_right",
+		"$close_button_offset|default": [-2, 2],
+		"offset": "$close_button_offset",
+		"locked_control": "",
+		"default_control": "default",
+		"hover_control": "hover",
+		"pressed_control": "pressed",
+		"sound_name": "random.click",
+		"sound_volume": 1.0,
+		"sound_pitch": 1.0,
+		"$close_button_panel_size|default": [15, 15],
+		"$close_button_to_button_id|default": "button.menu_exit",
+		"$default_button_alpha|default": 1,
+		"$default_hover_alpha|default": 1,
+		"$default_pressed_alpha|default": 1,
+		"$close_button_visible_binding_name|default": "#close_button_visible",
+		"$close_button_visible_binding_type|default": "none",
+
+		"$button_tts_name|default": "",
+		"$button_tts_header|default": "accessibility.button.close",
+		"$tts_section_header|default": "",
+
+		"tts_name": "$button_tts_name",
+		"tts_control_header": "$button_tts_header",
+		"tts_section_header": "$tts_section_header",
+
+		"bindings": [
+			{
+				"binding_type": "$close_button_visible_binding_type",
+				"binding_name": "$close_button_visible_binding_name",
+				"binding_name_override": "#visible"
+			},
+			{
+				"binding_name": "#tts_enabled",
+				"binding_name_override": "#focus_enabled"
+			}
+		],
+		"button_mappings": [
+			{
+				"from_button_id": "button.menu_select",
+				"to_button_id": "$close_button_to_button_id",
+				"mapping_type": "pressed"
+			},
+			{
+				"from_button_id": "button.menu_ok",
+				"to_button_id": "$close_button_to_button_id",
+				"mapping_type": "focused"
+			}
+		],
+		"controls": [
+			{
+				"default@common.close_button_panel": {
+					"$close_button_texture": "textures/ui/close_button_default_noxcrew",
+					"$button_alpha": "$default_button_alpha"
+				}
+			},
+			{
+				"hover@common.close_button_panel": {
+					"$close_button_texture": "textures/ui/close_button_hover_noxcrew"
+				}
+			},
+			{
+				"pressed@common.close_button_panel": {
+					"$close_button_texture": "textures/ui/close_button_pressed_noxcrew"
+				}
+			}
+		]
+	}
+}

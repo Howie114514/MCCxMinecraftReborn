@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:trophy_help",
+      "textures": {
+        "default": "textures/entity/n/hub/trophy_help"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.trophy_help"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "idle": "animation.n.trophy_help.idle"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.camera_rotation = query.camera_rotation(1);",
+          "variable.rotation_to_camera = query.rotation_to_camera(1);",
+          "variable.differnce = math.abs(v.camera_rotation - v.rotation_to_camera);"
+        ],
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

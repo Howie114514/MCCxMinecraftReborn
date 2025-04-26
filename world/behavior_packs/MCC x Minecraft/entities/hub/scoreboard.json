@@ -1,0 +1,401 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.scoreboard",
+      "animations": {
+        "update": "animation.update_scoreboard"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "update": "query.property('noxcrew:update')"
+          }
+        ]
+      },
+      "properties": {
+        "noxcrew:stars": {
+          "client_sync": true,
+          "type": "int",
+          "range": [
+            0,
+            3
+          ],
+          "default": 0
+        },
+        "noxcrew:ms": {
+          "client_sync": true,
+          "type": "int",
+          "range": [
+            0,
+            99
+          ],
+          "default": 0
+        },
+        "noxcrew:seconds": {
+          "client_sync": true,
+          "type": "int",
+          "range": [
+            0,
+            59
+          ],
+          "default": 0
+        },
+        "noxcrew:minutes": {
+          "client_sync": true,
+          "type": "int",
+          "range": [
+            0,
+            59
+          ],
+          "default": 0
+        },
+        "noxcrew:biomes": {
+          "client_sync": true,
+          "type": "enum",
+          "values": [
+            "locked",
+            "nether",
+            "plains",
+            "jungle",
+            "caves",
+            "desert",
+            "ocean",
+            "cold",
+            "all"
+          ],
+          "default": "locked"
+        },
+        "noxcrew:update": {
+          "type": "bool",
+          "default": false
+        }
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "noxcrew:biome.plains": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "biome.plains"
+          ]
+        }
+      },
+      "noxcrew:biome.ocean": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "biome.ocean"
+          ]
+        }
+      },
+      "noxcrew:biome.desert": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "biome.desert"
+          ]
+        }
+      },
+      "noxcrew:biome.caves": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "biome.caves"
+          ]
+        }
+      },
+      "noxcrew:biome.jungle": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "biome.jungle"
+          ]
+        }
+      },
+      "noxcrew:biome.nether": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "biome.nether"
+          ]
+        }
+      },
+      "noxcrew:biome.cold": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "biome.cold"
+          ]
+        }
+      },
+      "noxcrew:course": {
+        "minecraft:type_family": {
+          "family": [
+            "scoreboard",
+            "course"
+          ]
+        }
+      },
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:set_update.false": {
+        "set_property": {
+          "noxcrew:update": false
+        }
+      },
+      "noxcrew:set_update.true": {
+        "set_property": {
+          "noxcrew:update": true
+        }
+      },
+      "noxcrew:add_biome.plains": {
+        "add": {
+          "component_groups": [
+            "noxcrew:biome.plains"
+          ]
+        }
+      },
+      "noxcrew:add_biome.ocean": {
+        "add": {
+          "component_groups": [
+            "noxcrew:biome.ocean"
+          ]
+        }
+      },
+      "noxcrew:add_biome.desert": {
+        "add": {
+          "component_groups": [
+            "noxcrew:biome.desert"
+          ]
+        }
+      },
+      "noxcrew:add_biome.caves": {
+        "add": {
+          "component_groups": [
+            "noxcrew:biome.caves"
+          ]
+        }
+      },
+      "noxcrew:add_biome.jungle": {
+        "add": {
+          "component_groups": [
+            "noxcrew:biome.jungle"
+          ]
+        }
+      },
+      "noxcrew:add_biome.nether": {
+        "add": {
+          "component_groups": [
+            "noxcrew:biome.nether"
+          ]
+        }
+      },
+      "noxcrew:add_biome.cold": {
+        "add": {
+          "component_groups": [
+            "noxcrew:biome.cold"
+          ]
+        }
+      },
+      "noxcrew:add_course": {
+        "add": {
+          "component_groups": [
+            "noxcrew:course"
+          ]
+        }
+      },
+      "noxcrew:set_biome.nether": {
+        "set_property": {
+          "noxcrew:biomes": "nether"
+        }
+      },
+      "noxcrew:set_biome.plains": {
+        "set_property": {
+          "noxcrew:biomes": "plains"
+        }
+      },
+      "noxcrew:set_biome.jungle": {
+        "set_property": {
+          "noxcrew:biomes": "jungle"
+        }
+      },
+      "noxcrew:set_biome.caves": {
+        "set_property": {
+          "noxcrew:biomes": "caves"
+        }
+      },
+      "noxcrew:set_biome.desert": {
+        "set_property": {
+          "noxcrew:biomes": "desert"
+        }
+      },
+      "noxcrew:set_biome.ocean": {
+        "set_property": {
+          "noxcrew:biomes": "ocean"
+        }
+      },
+      "noxcrew:set_biome.cold": {
+        "set_property": {
+          "noxcrew:biomes": "cold"
+        }
+      },
+      "noxcrew:set_biome.all": {
+        "set_property": {
+          "noxcrew:biomes": "all"
+        }
+      },
+      "noxcrew:set_star.0": {
+        "set_property": {
+          "noxcrew:stars": 0
+        }
+      },
+      "noxcrew:set_star.1": {
+        "set_property": {
+          "noxcrew:stars": 1
+        }
+      },
+      "noxcrew:set_star.2": {
+        "set_property": {
+          "noxcrew:stars": 2
+        }
+      },
+      "noxcrew:set_star.3": {
+        "set_property": {
+          "noxcrew:stars": 3
+        }
+      },
+      "noxcrew:set_ms.0": {
+        "set_property": {
+          "noxcrew:ms": 0
+        }
+      },
+      "noxcrew:set_seconds.0": {
+        "set_property": {
+          "noxcrew:seconds": 0
+        }
+      },
+      "noxcrew:set_minutes.0": {
+        "set_property": {
+          "noxcrew:minutes": 0
+        }
+      },
+      "noxcrew:reset.scoreboard": {
+        "set_property": {
+          "noxcrew:minutes": 0,
+          "noxcrew:seconds": 0,
+          "noxcrew:ms": 0
+        }
+      },
+      "noxcrew:add_ms.1": {
+        "set_property": {
+          "noxcrew:ms": "query.property('noxcrew:ms') + 1"
+        }
+      },
+      "noxcrew:add_ms.10": {
+        "set_property": {
+          "noxcrew:ms": "query.property('noxcrew:ms') + 10"
+        }
+      },
+      "noxcrew:remove_ms.1": {
+        "set_property": {
+          "noxcrew:ms": "query.property('noxcrew:ms') - 1"
+        }
+      },
+      "noxcrew:remove_ms.10": {
+        "set_property": {
+          "noxcrew:ms": "query.property('noxcrew:ms') - 10"
+        }
+      },
+      "noxcrew:add_seconds.1": {
+        "set_property": {
+          "noxcrew:seconds": "query.property('noxcrew:seconds') + 1"
+        }
+      },
+      "noxcrew:add_seconds.10": {
+        "set_property": {
+          "noxcrew:seconds": "query.property('noxcrew:seconds') + 10"
+        }
+      },
+      "noxcrew:remove_seconds.1": {
+        "set_property": {
+          "noxcrew:seconds": "query.property('noxcrew:seconds') - 1"
+        }
+      },
+      "noxcrew:remove_seconds.10": {
+        "set_property": {
+          "noxcrew:seconds": "query.property('noxcrew:seconds') - 10"
+        }
+      },
+      "noxcrew:add_minutes.1": {
+        "set_property": {
+          "noxcrew:minutes": "query.property('noxcrew:minutes') + 1"
+        }
+      },
+      "noxcrew:add_minutes.10": {
+        "set_property": {
+          "noxcrew:minutes": "query.property('noxcrew:minutes') + 10"
+        }
+      },
+      "noxcrew:remove_minutes.1": {
+        "set_property": {
+          "noxcrew:minutes": "query.property('noxcrew:minutes') - 1"
+        }
+      },
+      "noxcrew:remove_minutes.10": {
+        "set_property": {
+          "noxcrew:minutes": "query.property('noxcrew:ms') - 10"
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

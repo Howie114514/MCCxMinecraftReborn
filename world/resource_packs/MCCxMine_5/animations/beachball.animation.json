@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.beachball.roll": {
+      "loop": true,
+      "bones": {
+        "ball": {
+          "rotation": [
+            "-query.modified_distance_moved * 30",
+            0,
+            "Math.cos(query.modified_distance_moved * 20.0 ) * 40 - 40"
+          ]
+        }
+      }
+    }
+  }
+}

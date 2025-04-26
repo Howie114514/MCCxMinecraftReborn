@@ -1,0 +1,1094 @@
+## Meta
+pack.name=MCŞ x Minecraft 15. Yıl Dönümü Rol Yapma Oyunu	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=MCŞ x Minecraft 15. Yıl Dönümü etkinliği için Kaynak Paketi.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=MC ŞAMPİYONASI MİNİ OYUNLARI ETKİNLİĞİ!	###
+txt.event_overview.2=Noxcrew, MC Şampiyonası'nın en iyilerini Bedrock Edition'a getiriyor! Gün boyu parti yapın. Parkurdan canavarlarla savaşmaya kadar birçok becerinizi test etmek için tasarlanmış mini oyunlarda savaşın.	###
+txt.event_overview.3=15 adet ücretsiz kozmetik eşya alın. Bir de havalı yeni bir pelerin!	###
+txt.event_overview.4=Kılıçlarınızı alın, kargaşa sizi bekliyor!	###
+txt.event_overview.5=Etkinlik, burada, 22 Temmuz 20.00'de başlayacak ve 5 Ağustos 02.00'ye kadar devam edecek	###
+
+##VANILLA
+item.warped_sign.name=Mağara Levhası 	###
+tile.warped_standing_sign.name=Mağara Levhası 	###
+tile.warped_wall_sign.name=Mağara Levhası 	###
+tile.prismarine.dark.name=Metal Blok 	###
+tile.stone_slab2.prismarine.dark.name=Metal Tabla 	###
+tile.dark_prismarine_stairs.name=Metal Merdivenler 	###
+
+##INTERACT TEXTS
+action.interact.open=Aç	###This is meant as a verb, action.
+action.interact.take=Al	###This is meant as a verb, action.
+action.interact.grab=Al	###This is meant as a verb, action.
+action.interact.pick_up=Seçmek	###This is meant as a verb, action.
+action.interact.use=Kullan	###This is meant as a verb, action.
+action.interact.change_color=Renk Değiştir	###This is meant as a verb, action.
+action.interact.deposit=Koy	###This is meant as a verb, action.
+action.interact.interact=Etkɨleşɨme gɨr	###This is meant as a verb, action.
+action.interact.trash=At	###To throw away or "trash" an item
+action.interact.eat=Ye	###To eat something, like a food
+action.interact.drink=İç	###To drink something, like a soda
+action.interact.paint=Boya	###The verb to paint.
+action.interact.gift=Oyuncuya Hediye Et	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=Mağaza	###The verb, "to shop" or "to browse"
+action.interact.decorate=Dekorasyon	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=Çıkmak için Gizlice Dolaş düğmesine dokunun	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=Çıkmak için Gizlice Dolaş düğmesine dokunun	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=Çıkmak için :_input_key.sneak: düğmesine basın	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§oHer gün yeni bir tablo ortaya çıkacak.	###
+txt.sign.cave2=§oYedisini de çözün ve bir ödül alın!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=Dondurucu Yay	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=Dondurucu Yay	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=Demir Anahtar	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=Altın Anahtar	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=Elmas Anahtar	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=Netherit Anahtar	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=Boş Boya Fırçası	###
+item.noxcrew.ft:paintbrush_green.name=Yeşil Boya fırçası	###
+item.noxcrew.ft:paintbrush_yellow.name=Sarı Boya fırçası	###
+item.noxcrew.ft:paintbrush_blue.name=Mavi Boya fırçası	###
+item.noxcrew.ft:paintbrush_red.name=Kırmızı Boya Fırçası	###
+item.noxcrew.ft:paintbrush_white.name=Beyaz Boya Fırçası	###
+item.noxcrew.ft:paintbrush_black.name=Siyah Boya Fırçası	###
+item.noxcrew.ft:paintbrush_brown.name=Kahverengi Boya Fırçası	###
+item.noxcrew.ft:paintbrush_purple.name=Mor Boya Fırçası	###
+item.noxcrew.ft:beanie_red.name=Kırmızı Tavşanlar Beresi	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=Turuncu Vahşi Kediler Beresi	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=Sarı Yaklar Beresi	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=Açık Yeşil Lamalar Beresi	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=Yeşil Gekolar Beresi	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=Deniz Mavisi Aksolotllar Beresi	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=Camgöbeği Kır Kurtları Beresi	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=Mavi Yarasalar Beresi	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=Mor Pandalar Beresi	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=Pembe Papağanlar Beresi	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=Parti Şapkası	###
+item.noxcrew.ft:hat_propeller.name=Pervaneli Şapka	###
+item.noxcrew.ft:hat_crown_cake.name=Kek Tacı	###
+item.noxcrew.ft:hat_birthday_present.name=Doğum Günü Hediyesi Şapkası	###
+item.noxcrew.ft:hat_jester.name=Soytarı Şapkası	###
+item.noxcrew.ft:hat_chicken_jockey.name=Tavuk Jokeyi Şapkası	###
+item.noxcrew.ft:hat_boombox.name=Teyp Şapka	###
+item.noxcrew.ft:foam_finger.name=Köpük Parmak	###
+item.noxcrew.ft:balloon_animal.name=Balon Hayvan	###
+item.noxcrew.ft:big_bubble_blower.name=Dev Baloncuk Üfleyici	###
+item.noxcrew.ft:silly_horn.name=Şapşal Boynuz	###
+item.noxcrew.ft:party_popper.name=Parti Patlangacı	###
+item.noxcrew.ft:confetti_tag_prime.name=Konfeti Etiketi	###
+item.noxcrew.ft:confetti_tag_leftover.name=Konfeti Etiketi	###
+item.noxcrew.ft:pizza_box.name=Pizza Kutusu	###
+item.noxcrew.ft:celebration_fireworks.name=Doğum Günü Havai Fişekleri	###
+item.noxcrew.ft:player_gift_giving.name=Hediye Kutusu	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=Hediye Kutusu	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=Disko Topu	###
+item.noxcrew.ft:beach_ball.name=Plaj Topu	###
+item.noxcrew.ft:balloon_helium.name=Helyum Balon	###
+item.noxcrew.ft:leave_game.name=§6Oyundan Ayrıl	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=Pizza Dilimi	###
+item.noxcrew.ft:mcc_burger.name=Lezzetli Burger	###
+item.noxcrew.ft:anniversary_hot_dog.name=Leziz Sosisli Sandviç	###
+item.noxcrew.ft:party_cupcake.name=Cupcake	###
+item.noxcrew.ft:party_cake.name=Kek Dilimi	###
+item.noxcrew.ft:party_chips.name=Cips Kâsesi	###
+item.noxcrew.ft:party_cookie.name=Kurabiye	###
+item.noxcrew.ft:party_soda.name=Gazlı İçecek	###
+item.noxcrew.ft:cotton_candy.name=Pamuk Şeker	###
+item.noxcrew.ft:popcorn.name=Patlamış Mısır	###
+item.noxcrew.ft:super_wrap.name=Sağlıklı Dürüm	###
+item.noxcrew.ft:cosmetic_chest.name=Kozmetik Sandığı	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=Işınlanma Haritası	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=Kapışma Listesi	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=Yumurta	###
+item.noxcrew.ft:milk_bucket.name=Süt Kovası	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=Dondurucu Yay	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=Dondurucu Yay	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=Demir Anahtar	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=Altın Anahtar	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=Elmas Anahtar	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=Netherit Anahtar	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=Boş Boya Fırçası	###
+item.noxcrew.ft:paintbrush_green=Yeşil Boya fırçası	###
+item.noxcrew.ft:paintbrush_yellow=Sarı Boya fırçası	###
+item.noxcrew.ft:paintbrush_blue=Mavi Boya fırçası	###
+item.noxcrew.ft:paintbrush_red=Kırmızı Boya Fırçası	###
+item.noxcrew.ft:paintbrush_white=Beyaz Boya Fırçası	###
+item.noxcrew.ft:paintbrush_black=Siyah Boya Fırçası	###
+item.noxcrew.ft:paintbrush_brown=Kahverengi Boya Fırçası	###
+item.noxcrew.ft:paintbrush_purple=Mor Boya Fırçası	###
+item.noxcrew.ft:beanie_red=Kırmızı Tavşanlar Beresi	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=Turuncu Vahşi Kediler Beresi	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=Sarı Yaklar Beresi	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=Açık Yeşil Lamalar Beresi	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=Yeşil Gekolar Beresi	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=Deniz Mavisi Aksolotllar Beresi	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=Camgöbeği Kır Kurtları Beresi	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=Mavi Yarasalar Beresi	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=Mor Pandalar Beresi	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=Pembe Papağanlar Beresi	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=Parti Şapkası	###
+item.noxcrew.ft:hat_propeller=Pervaneli Şapka	###
+item.noxcrew.ft:hat_crown_cake=Kek Tacı	###
+item.noxcrew.ft:hat_birthday_present=Doğum Günü Hediyesi Şapkası	###
+item.noxcrew.ft:hat_jester=Soytarı Şapkası	###
+item.noxcrew.ft:hat_chicken_jockey=Tavuk Jokeyi Şapkası	###
+item.noxcrew.ft:hat_boombox=Teyp Şapka	###
+item.noxcrew.ft:foam_finger=Köpük Parmak	###
+item.noxcrew.ft:balloon_animal=Balon Hayvan	###
+item.noxcrew.ft:big_bubble_blower=Dev Baloncuk Üfleyici	###
+item.noxcrew.ft:silly_horn=Şapşal Boynuz	###
+item.noxcrew.ft:party_popper=Parti Patlangacı	###
+item.noxcrew.ft:confetti_tag_prime=Konfeti Etiketi	###
+item.noxcrew.ft:confetti_tag_leftover=Konfeti Etiketi	###
+item.noxcrew.ft:pizza_box=Pizza Kutusu	###
+item.noxcrew.ft:celebration_fireworks=Doğum Günü Havai Fişekleri	###
+item.noxcrew.ft:player_gift_giving=Hediye Kutusu	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=Hediye Kutusu	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=Disko Topu	###
+item.noxcrew.ft:beach_ball=Plaj Topu	###
+item.noxcrew.ft:balloon_helium=Helyum Balon	###
+item.noxcrew.ft:leave_game=§6Oyundan Ayrıl	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=Pizza Dilimi	###
+item.noxcrew.ft:mcc_burger=Lezzetli Burger	###
+item.noxcrew.ft:anniversary_hot_dog=Leziz Sosisli Sandviç	###
+item.noxcrew.ft:party_cupcake=Cupcake	###
+item.noxcrew.ft:party_cake=Kek Dilimi	###
+item.noxcrew.ft:party_chips=Cips Kâsesi	###
+item.noxcrew.ft:party_cookie=Kurabiye	###
+item.noxcrew.ft:party_soda=Gazlı İçecek	###
+item.noxcrew.ft:cotton_candy=Pamuk Şeker	###
+item.noxcrew.ft:popcorn=Patlamış Mısır	###
+item.noxcrew.ft:super_wrap=Sağlıklı Dürüm	###
+item.noxcrew.ft:cosmetic_chest=Kozmetik Sandığı	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=Işınlanma Haritası	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=Kapışma Listesi	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=Yumurta	###
+item.noxcrew.ft:milk_bucket=Süt Kovası	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=Hız Arttırma Bloku	###
+tile.noxcrew.ft:launch_pad.name=Fırlatma Yastığı Bloku	###
+tile.noxcrew.ft:jump_pad.name=Zıplama Arttırma Bloku	###
+tile.noxcrew.ft:painting_green.name=Yeşil Blok	###
+tile.noxcrew.ft:painting_yellow.name=Sarı Blok	###
+tile.noxcrew.ft:painting_blue.name=Mavi Blok	###
+tile.noxcrew.ft:painting_red.name=Kırmızı Blok	###
+tile.noxcrew.ft:painting_white.name=Beyaz Blok	###
+tile.noxcrew.ft:painting_black.name=Siyah Blok	###
+tile.noxcrew.ft:painting_brown.name=Kahverengi Blok	###
+tile.noxcrew.ft:painting_purple.name=Mor Blok	###
+tile.noxcrew.ft:elytra_icon.name=Elytra Kapısı Bloku	###
+tile.noxcrew.ft:audience_member_oof.name=Yüzünü Buruşturmuş Bir Seyirci	###
+tile.noxcrew.ft:audience_member_angry.name=Kızgın Bir Seyirci	###
+tile.noxcrew.ft:audience_member_joy.name=Neşeli Bir Seyirci	###
+tile.noxcrew.ft:audience_member_happy.name=Mutlu Bir Seyirci	###
+tile.noxcrew.ft:audience_member_unimpressed.name=Etkilenmemiş Bir Seyirci	###
+tile.noxcrew.ft:audience_member_unsure.name=Emin Olmayan Bir Seyirci	###
+tile.noxcrew.ft:audience_member_starstruck.name=Ünlü Meraklısı Bir Seyirci	###
+tile.noxcrew.ft:cake_centre.name=Kekin Ortası	###
+tile.noxcrew.ft:cake_edge.name=Kekin Kenarı	###
+tile.noxcrew.ft:cake_cherry.name=Kekin Kirazı	###
+tile.noxcrew.ft:window_spruce.name=Ladin Pencere	###
+tile.noxcrew.ft:window_oak.name=Meşe Pencere	###
+tile.noxcrew.ft:iron_bars.name=Düz Demir Çubuklar	###
+tile.noxcrew.ft:iron_bars_h.name=Yarım Demir Çubuklar	###
+tile.noxcrew.ft:iron_bars_c.name=Köşe Demir Çubuklar	###
+tile.noxcrew.ft:castle_pink.name=Pembe Kale Terakota 	###
+tile.noxcrew.ft:sot_flower.name=Fener Çiçeği Aydınlatması 	###
+tile.noxcrew.ft:metal_rigging_v.name=Yatay Metal Arma	###
+tile.noxcrew.ft:metal_rigging_h.name=Dikey Metal Arma	###
+tile.noxcrew.ft:modern_light.name=Modern Işık	###
+tile.noxcrew.ft:rope.name=Halat Bloku	###
+tile.noxcrew.ft:hieroglyph_1_a.name=Mağara Bulmacası 1. Gün Sol Üst	###
+tile.noxcrew.ft:hieroglyph_1_b.name=Mağara Bulmacası 1. Gün Sağ Üst	###
+tile.noxcrew.ft:hieroglyph_1_c.name=Mağara Bulmacası 1. Gün Sol Alt	###
+tile.noxcrew.ft:hieroglyph_1_d.name=Mağara Bulmacası 1. Gün Sağ Alt	###
+tile.noxcrew.ft:hieroglyph_2_a.name=Mağara Bulmacası 2. Gün Sol Üst	###
+tile.noxcrew.ft:hieroglyph_2_b.name=Mağara Bulmacası 2. Gün Sağ Üst	###
+tile.noxcrew.ft:hieroglyph_2_c.name=Mağara Bulmacası 2. Gün Sol Alt	###
+tile.noxcrew.ft:hieroglyph_2_d.name=Mağara Bulmacası 2. Gün Sağ Alt	###
+tile.noxcrew.ft:hieroglyph_3_a.name=Mağara Bulmacası 3. Gün Sol Üst	###
+tile.noxcrew.ft:hieroglyph_3_b.name=Mağara Bulmacası 3. Gün Sağ Üst	###
+tile.noxcrew.ft:hieroglyph_3_c.name=Mağara Bulmacası 3. Gün Sol Alt	###
+tile.noxcrew.ft:hieroglyph_3_d.name=Mağara Bulmacası 3. Gün Sağ Alt	###
+tile.noxcrew.ft:hieroglyph_4_a.name=Mağara Bulmacası 4. Gün Sol Üst	###
+tile.noxcrew.ft:hieroglyph_4_b.name=Mağara Bulmacası 4. Gün Sağ Üst	###
+tile.noxcrew.ft:hieroglyph_4_c.name=Mağara Bulmacası 4. Gün Sol Alt	###
+tile.noxcrew.ft:hieroglyph_4_d.name=Mağara Bulmacası 4. Gün Sağ Alt	###
+tile.noxcrew.ft:hieroglyph_5_a.name=Mağara Bulmacası 5. Gün Sol Üst	###
+tile.noxcrew.ft:hieroglyph_5_b.name=Mağara Bulmacası 5. Gün Sağ Üst	###
+tile.noxcrew.ft:hieroglyph_5_c.name=Mağara Bulmacası 5. Gün Sol Alt	###
+tile.noxcrew.ft:hieroglyph_5_d.name=Mağara Bulmacası 5. Gün Sağ Alt	###
+tile.noxcrew.ft:hieroglyph_6_a.name=Mağara Bulmacası 6. Gün Sol Üst	###
+tile.noxcrew.ft:hieroglyph_6_b.name=Mağara Bulmacası 6. Gün Sağ Üst	###
+tile.noxcrew.ft:hieroglyph_6_c.name=Mağara Bulmacası 6. Gün Sol Alt	###
+tile.noxcrew.ft:hieroglyph_6_d.name=Mağara Bulmacası 6. Gün Sağ Alt	###
+tile.noxcrew.ft:hieroglyph_7_a.name=Mağara Bulmacası 7. Gün Sol Üst	###
+tile.noxcrew.ft:hieroglyph_7_b.name=Mağara Bulmacası 7. Gün Sağ Üst	###
+tile.noxcrew.ft:hieroglyph_7_c.name=Mağara Bulmacası 7. Gün Sol Alt	###
+tile.noxcrew.ft:hieroglyph_7_d.name=Mağara Bulmacası 7. Gün Sağ Alt	###
+tile.noxcrew.ft:bigcake_top.name=Kek Blok Üst	###
+tile.noxcrew.ft:bigcake_bottom.name=Kek Blok Alt	###
+tile.noxcrew.ft:cake_slice.name=Kek Dilimi	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=15 Flama Uzun Üst	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=15 Flama Uzun Alt	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=MCŞ Flaması Uzun Üst	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=MCŞ Flaması Uzun Alt	###
+tile.noxcrew.ft:decoration_bunting_a.name=Sıralı Bayrak Beyaz	###
+tile.noxcrew.ft:decoration_bunting_b.name=Sıralı Bayrak Yeşil	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=Sıralı Bayrak MCŞ	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=Üçgen Flama Yeşil	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=Üçgen Flama Beyaz	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=Üçgen Flama MCŞ	###
+tile.noxcrew.ft:decoration_flag_mcc.name=MCŞ Bayrağı Küçük	###
+tile.noxcrew.ft:decoration_flag_15.name=15. Yıl Bayrağı Küçük	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=15. Yıl Bayrağı Üst	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=15. Yıl Bayrağı Alt	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=MCŞ Bayrağı Üst	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=MCŞ Bayrağı Alt	###
+tile.noxcrew.ft:plush_red.name=Kırmızı Pelüş Tavşan	###
+tile.noxcrew.ft:plush_orange.name=Turuncu Pelüş Vahşi Kedi	###
+tile.noxcrew.ft:plush_yellow.name=Sarı Pelüş Yak	###
+tile.noxcrew.ft:plush_lime.name=Açık Yeşil Pelüş Lama	###
+tile.noxcrew.ft:plush_green.name=Yeşil Pelüş Geko	###
+tile.noxcrew.ft:plush_cyan.name=Camgöbeği Pelüş Çakal	###
+tile.noxcrew.ft:plush_aqua.name=Deniz Mavisi Pelüş Aksolotl	###
+tile.noxcrew.ft:plush_blue.name=Mavi Pelüş Yarasa	###
+tile.noxcrew.ft:plush_pink.name=Pembe Pelüş Papağan	###
+tile.noxcrew.ft:plush_purple.name=Mor Pelüş Panda	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=MCŞ Flaması Sol Üst	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=MCŞ Flaması Sağ Üst	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=MCŞ Flaması Sol Alt	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=MCŞ Flaması Sağ Alt	###
+tile.noxcrew.ft:decoration_present.name=MCŞ Hediye Kutusu	###
+tile.noxcrew.ft:cup_poster1.name=Ender Kupası Posteri 1	###
+tile.noxcrew.ft:cup_poster2.name=Ender Kupası Posteri 2	###
+tile.noxcrew.ft:logo_1.name=Noxcrew Logosu 1	###
+tile.noxcrew.ft:logo_2.name=Noxcrew Logosu 2	###
+tile.noxcrew.ft:logo_3.name=Noxcrew Logosu 3	###
+tile.noxcrew.ft:melt_spawner.name=Meltdown Canavar Canlandırıcı	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=Para Yığını	###
+entity.noxcrew.ft:treasure_chest.name=Hazine Sandığı	###
+entity.noxcrew.ft:key_podium.name=Anahtar Podyumu	###
+entity.noxcrew.ft:sand_podium.name=Kum Podyumu	###
+entity.noxcrew.ft:armor_podium.name=Zırh Podyumu	###
+entity.noxcrew.ft:paint_pot.name=Boya Kabı	###
+entity.noxcrew.ft:giant_cake.name=Doğum Günü Keki	###
+entity.noxcrew.ft:beach_ball.name=Plaj Topu	###
+entity.noxcrew.ft:balloon_helium.name=Helyum Balon	###
+entity.noxcrew.ft:disco_ball.name=Disko Topu	###
+entity.noxcrew.ft:lost_pearl.name=Gizemli İnci	###
+entity.noxcrew.ft:decoration_awning.name=Süslemeli Tente	###
+entity.noxcrew.ft:decoration_bunting.name=Süslemeli Flama	###
+entity.noxcrew.ft:decoration_cupcake.name=Doğum Günü Kapkeki	###
+entity.noxcrew.ft:decoration_ballons.name=Doğum Günü Balonları	###
+entity.noxcrew.ft:decoration_15.name=15 Balon	###
+entity.noxcrew.ft:decoration_board.name=Doğum Günü Panosu	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=Tavuk Balon	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=Maskot Balon	###
+entity.noxcrew.ft:trophy_help.name=Yardım	###
+entity.noxcrew.ft:sand_timer.name=Kum Saati	###
+entity.noxcrew.ft:crowned_frog.name=Kurbağa Prens	###
+entity.noxcrew.ft:cake_candles.name=Kek Mumu	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=Başlat Düğmesi	###
+entity.noxcrew.ft:vendor_mascot.name=Maskot Şapkaları	###
+entity.noxcrew.ft:vendor_hat.name=Şapkalar	###
+entity.noxcrew.ft:vendor_toys.name=Oyuncaklar	###
+entity.noxcrew.ft:vendor_food.name=Yiyecekler	###
+entity.noxcrew.ft:advert_creator_cup.name=Ender Kupası	###
+entity.noxcrew.ft:md_creeper.name=Creeper	###
+entity.noxcrew.ft:md_blaze.name=Blaze	###
+entity.noxcrew.ft:md_blaze<>.name=Blaze	###
+entity.noxcrew.ft:md_skeleton.name=İskelet	###
+entity.noxcrew.ft:md_skeleton<>.name=İskelet	###
+entity.noxcrew.ft:md_spider.name=Örümcek	###
+entity.noxcrew.ft:md_vindicator.name=İntikamcı	###
+entity.noxcrew.ft:md_zombie.name=Zombi	###
+entity.noxcrew.ft:md_zombie_baby.name=Bebek Zombi	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§oİnci gizemli bir şekilde yükselip alçalır...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r Bir mağara gizemi keşfettiniz!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=OYUNCULAR BEKLENİYOR...	###
+txt.misc.msg4=Oyunun başlamasına kalan süre: 	###
+txt.misc.msg5=Işınlanmak üzeresiniz	###
+txt.misc.msg6_1=§6§l!§r %s size bir hediye verdi!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r %s adlı oyuncuya bir hediye verdiniz!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r Bu oyuncu başka bir hediye kabul edemez	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= Elytra Kullanıldı 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §eBir bulmaca aşaması tamamlandı... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §aBir Mağara Bulmacasını tamamladınız! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: Kıpır kıpır mı hissediyorsunuz? O zaman neden  §6Ace Race§r  mini oyununda bulutların üzerinde koşmuyorsunuz?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: Bir meydan okuma ister misiniz?  §6Grid Runners§r  mini oyunundaki tüm görevleri tamamlamayı deneyin!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]:  §6Meltdown§r  mini oyunu sizi bekliyor... Canavar sürülerinden kurtulabilecek misiniz?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]:  §6Sands of Time§r  mini oyununun gizemli tapınağını keşfedin!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: Tamamladığınız tüm meydan okumaları Kupa Odası'nda görebilirsiniz! Odayı  ana lobideki  §6Grid Runners§r  geçidinin yanındaki büyük çadırda bulabilirsiniz!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: Takacak bir şapka mı arıyorsunuz? Şapka Mağazasına gidip bir tane satın alın! Mağazayı  ana lobideki büyük şapkanın altında bulabilirsiniz!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: Harika oyuncaklar ister misiniz? Oyuncak Mağazasından satın alabilirsiniz! Mağazayı  ana lobideki alışveriş arabası tabelalarının yanında bulabilirsiniz!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: Yemek yemek ister misiniz? Yiyecek Mağazasından satın alabilirsiniz! Mağazayı  ana lobideki büyük tavuk heykelinin yanındaki restoranda bulabilirsiniz!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]: Çözebileceğiniz  gizemli bulmacalar olduğunu biliyor muydunuz?  Ana lobideki dağın tepesindeki Gizem Mağarasına gidin!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: Her gün çözebileceğiniz yeni bir gizemli bulmaca olduğunu biliyor muydunuz?  yanındaki her , bir bulmacanın çözüldüğü anlamına gelir!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: Tüm lobilerde para yığınları bulabileceğinizi biliyor muydunuz? Aramaya başlayın!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: Envanteriniz çok mu dolu? Bazı eşyaları çöp kutusuna atabilirsiniz!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cBunun için yeterli paranız yok	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cBunu satın almak için yeriniz yok! Eşyaları çöp kutusuna atın.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r Bu Şapkaya zaten sahipsiniz!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s dolu!§r Farklı bir malzeme toplayın!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cBu sandığın anahtarı sizde yok!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6Bu sandığı zaten açtınız!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=Pizza! Hız arttırma için yiyin!	###
+txt.shop_info.mcc_burger=Burger! Hız ve zıplama arttırma için yiyin!	###
+txt.shop_info.anniversary_hot_dog=Sosisli Sandviç! Hız ve zıplama arttırma için yiyin!	###
+txt.shop_info.party_cupcake=Kapkek! Yavaş düşme için yiyin!	###
+txt.shop_info.party_cake=Kek! Havaya yükselme için yiyin!	###
+txt.shop_info.party_chips=Cips! Hız arttırma için yiyin!	###
+txt.shop_info.party_cookie=Kurabiye! Zıplama arttırma için yiyin!	###
+txt.shop_info.party_soda=Gazoz! Hız arttırma için için!	###
+txt.shop_info.cotton_candy=Pamuk Şeker! Zıplama arttırma için yiyin!	###
+txt.shop_info.popcorn=Patlamış Mısır! Zıplama arttırma için yiyin!	###
+txt.shop_info.super_wrap=Süper Dürüm! Tüm arttırmalar için yiyin!	###
+txt.shop_info.foam_finger=Köpük Parmak! Desteğinizi göstermek için tutun!	###
+txt.shop_info.balloon_animal=Balon Hayvan! Bir balonu patlatmak için kullanın!	###
+txt.shop_info.big_bubble_blower=Baloncuk Makinesi! Baloncuklar üflemek için kullanın!	###
+txt.shop_info.silly_horn=Şapşal Korna! Ses çıkarmak için kullanın!	###
+txt.shop_info.party_popper=Parti Patlangacı! Biraz konfeti patlatmak için kullanın!	###
+txt.shop_info.confetti_tag_prime=Konfeti Etiketi! Bir oyuncuyu konfeti ile etiketlemek için kullanın!	###
+txt.shop_info.pizza_box=Pizza Kutusu! Onlara pizza vermek için oyuncular üzerinde kullanın!	###
+txt.shop_info.celebration_fireworks=Havai Fişekler! Bir havai fişek patlatmak için kullanın!	###
+txt.shop_info.player_gift_giving=Hediye! Oyunculara bir hediye vermek için onlar üzerinde kullanın!	###
+txt.shop_info.disco_ball=Disko! Dans eden bir disko topu yapmak için kullanın!	###
+txt.shop_info.beach_ball=Deniz Topu! Bir deniz topu yapmak için kullanın, oynamak için vurun!	###
+txt.shop_info.balloon_helium=Balon! Bir balonu patlatmak için kullanın!	###
+
+##Ace Race
+txt.tut.ace_title= Ace Race 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6İpuçları ve tüyolar için başlangıç çizgisinde Seapeekay ile konuşun!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: Hız ve zıplama arttırma yastıklarını kullanarak bitiş çizgisine kadar yarışın!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= Canavarları yenin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6İpuçları ve tüyolar için başlangıç lobisinde Smajor ile konuşun!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: Zamanlayıcı sıfırlanmadan olabildiğince çok canavar yenin!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= Tuvali kopyalayın!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: Renkli boya kaplarını kullanarak tabloları kopyalayın!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= Biraz Kek pişirin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: Kek için malzeme toplayın ve bunları merkezde biriktirin!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= Depar atın!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: Bitiş çizgisine varın!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r Bir sonraki odaya geçin!	###
+
+txt.grid.wave_clear=Canavar Dalgası yenildi!	###
+txt.grid.wave_reward= 10 para kazandınız!	###
+txt.grid.painting_clear=Boyama tamamlandı!	###
+txt.grid.painting_reward= 10 para kazandınız!	###
+txt.grid.cake_clear=Kek pişti!	###
+txt.grid.cake_reward= 10 para kazandınız!	###
+
+##Meltdown
+txt.tut.melt_title= Meltdown 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6İpuçları ve tüyolar için girişte hannahxxrose ile konuşun!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: Erimeden önce her odadan kaçmayı başarın! Düşmanları yayınızla dondurun, sonra onlara vurun!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= UYARI: ERİYEN 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= TEHLİKE: KRİTİK ERİYEN 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1= 1/7 Eriyen Kaçtı 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= 2/7 Eriyen Kaçtı 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= 3/7 Eriyen Kaçtı 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= 4/7 Eriyen Kaçtı 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= 5/7 Eriyen Kaçtı 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= 6/7 Eriyen Kaçtı 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= 7/7 Eriyen Kaçtı 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= %s/7 Eriyen Kaçtı 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r Bir sonraki odaya geçin!	###
+
+##Sands of Time
+txt.tut.sands_title= Sands of Time 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6İpuçları ve tüyolar için piramidin yanında HBomb94 ile konuşun!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: Süre dolmadan olabildiğince çok para bulun! Ekstra süre için kum toplayın!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= 5 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= 10 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= 20 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= 30 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= 50 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= 100 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= 200 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= 400 para buldunuz!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=Sandık açıldı!	###
+txt.sot.key=Anahtar alındı!	###
+txt.sot.upgraded=Yükseltildi!	###
+
+##Lobby
+txt.lobby.coins5= 5 para buldunuz!	###
+txt.lobby.coins20= 20 para buldunuz!	###
+txt.lobby.coins30= 30 para buldunuz!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=HARİTA	###
+txt.ui.tp.confirm1=Emin misiniz?	#
+txt.ui.tp.confirm_target=Bu, sizi şuraya ışınlayacak: %s.	#
+txt.ui.tp.area_ace_race= Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= Grid Runners	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= Ana Lobi	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=Işınlayıcı hazır!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=Kozmetik Sandığı	###
+txt.ui.cosmetic=Bütün şapkalarınızı burada bulabileceksiniz!	###
+txt.ui.button.select=Seç	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=ÖDÜL AÇILDI	###
+txt.ui.title.red_rabbit_cc=Kırmızı Tavşan Kafası	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=Turuncu Vahşi Kedi Kafası	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=Sarı Yak Kafası	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=Açık Yeşil Lama Kafası	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=Yeşil Geko Kafası	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=Deniz Mavisi Aksolotl Kafası	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=Camgöbeği Kır Kurdu Kafası	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=Mavi Yarasa Kafası	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=Mor Panda Kafası	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=Pembe Papağan Kafası	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=Kalabalığa Öpücük İfadesi	###
+txt.ui.title.ride_victory_emote=Zafere Gidiş İfadesi	###
+txt.ui.title.cartwheel_victory_emote=Zafer Perendesi İfadesi	###
+txt.ui.title.flying_chicken_emote=Uçan Tavuk İfadesi	###
+txt.ui.title.cape=MCŞxMinecraft 15. Yıl Pelerini	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=MCŞ Taç	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=Bir Karakter Oluşturucu eşyasının kilidini açtınız! Soyunma Odası'nda bir göz atın.	###
+txt.ui.text.cape_unlocked=Tebrikler! MCŞ Pelerini'nin kilidini açtınız! Soyunma Odasından alın.	###
+txt.ui.button.claim=ALIN	###
+
+##UI Vendors
+txt.title.vendor_food= Yiyecek 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= Maskot Şapkaları 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= Şapkalar 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= Oyuncaklar 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=Satın Al	###
+txt.ui.sold_out=TÜKENDİ	###
+
+##Game Toasts
+txt.ui.toast.time= §lZAMAN§r	###
+txt.ui.toast.coins_collected= §lTOPLANAN PARA§r	###
+txt.ui.toast.coins_earned= §lKAZANILAN PARA§r	###
+txt.ui.toast.new_record=§lYENİ REKOR!§r	###
+txt.ui.toast.room=ODA	###
+txt.ui.toast.time_spent= §lHARCANAN ZAMAN§r	###
+txt.ui.toast.complete=TAMAMLANDI!	###
+txt.ui.toast.highscore= §lYÜKSEK PUAN§r	###
+txt.ui.toast.highest_coins= §lEN İYİ GANİMET§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §lNETHERİT MADALYANIN SAHİBİ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §lELMAS MADALYANIN SAHİBİ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §lALTIN MADALYANIN SAHİBİ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §lDEMİR MADALYANIN SAHİBİ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §lBAKIR MADALYANIN SAHİBİ	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §lAÇILAN SANDIKLAR§r	###
+txt.ui.toast.sot.escaped= §lKAÇTINIZ!§r	###
+txt.ui.toast.sot.failed= §lKAÇAMADINIZ...§r	###
+txt.ui.toast.gr.mobs_slain= §lMAĞLUP EDİLEN MOBLAR§r	###
+txt.ui.toast.gr.blocks_painted= §lBOYANAN BLOKLAR§r	###
+txt.ui.toast.gr.cakes_baked= §lPİŞİRİLEN KEKLER§r	###
+txt.ui.toast.ar.time= §lZAMAN§r	###
+txt.ui.toast.md.slain= §lPARÇALANAN MOBLAR§r	###
+txt.ui.toast.md.rooms_survived_0= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_survived_1= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_survived_2= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_survived_3= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_survived_4= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_survived_5= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_survived_6= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_survived_7= §lGERİDE BIRAKILAN ODALAR§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=KAPIŞMA LİSTESİ	###
+txt.ui.body1.challenge_list=İlgili kapışmayı görmek için bir Simgeye basın!	###
+txt.ui.reward.cape= PELERİN ÖDÜLÜ	###
+txt.ui.status.cape=Tamamlandı	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=Deniz Mavisi Aksolotl Kapışması	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=Başınızda §lDeniz Mavisi Aksolotl Beresi§r'yle Kayıp İnci'yi bulun. İnci, bir havuzda gizli...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oDeniz Mavisi Aksolotl Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=Mavi Yarasa Kapışması	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=Başınızda §lMavi Yarasa Beresi§r'yle §lSands of Time§r mini oyunundan 100 kum toplayın.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oMavi Yarasa Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=%s Kum toplandı.	###
+
+txt.ui.title.cyan_coyote_challenge=Camgöbeği Kır Kurdu Kapışması	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=Başınızda §lCamgöbeği Çakal Beresi§r'yle §lSands of Time§r veya §lMeltdown§r mini oyunlarından 75 Para Yığını toplayın.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oCamgöbeği Kır Kurdu Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=%s Para Yığını toplandı.	###
+
+txt.ui.title.green_gecko_challenge=Yeşil Geko Kapışması	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=Başınızda §lYeşil Geko Beresi§r'yle §lGrid Runners§r mini oyunundaki ''Tabloyu Kopyalayın'' meydan okumasında 200 blok boyayın.	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oYeşil Geko Kafası Karakter Oluşturucu Eşyası'nı kazanın	###
+txt.ui.progress.green_gecko_challenge=%s blok boyandı.	###
+
+txt.ui.title.lime_llama_challenge=Açık Yeşil Lama Kapışması	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=Başınızda §lAçık Yeşil Lama Beresi§r'yle 10 Hediye Kutusu dağıtın. Merkez dünyasındaki Oyuncak Satıcısından Hediye Kutuları satın alabilirsiniz.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oAçık Yeşil Lama Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=%s Hediye Kutusu hediye edildi.	###
+
+txt.ui.title.orange_ocelot_challenge=Turuncu Vahşi Kedi Kapışması	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=Başınızda §lTuruncu Vahşi Kedi Beresi§r'yle §lAce Race§r mini oyununu tamamlarken 100'den fazla Hız Artırıcının üzerinden geçin.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oTuruncu Vahşi Kedi Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=%s Hız Arttırıcı kullanıldı.	###
+
+txt.ui.title.pink_parrot_challenge=Pembe Papağan Kapışması	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=Başınızda §lPembe Papağanlar Beresi§r'yle §lAce Race§r mini oyununu 25 kez tamamlarken Elytra Kapıları'ndan geçin.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oPembe Papağan Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=%s Elytra Kapısı kullanıldı.	###
+
+txt.ui.title.purple_panda_challenge=Mor Panda Kapışması	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=Başınızda §lMor Panda Beresi§r'yle §lGrid Runners§r mini oyunundaki ''Kek Pişirin'' meydan okuması için 200 malzeme getirin.	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oMor Panda Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=%s malzeme getirildi.	###
+
+txt.ui.title.red_rabbit_challenge=Kırmızı Tavşan Kapışması	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=Başınızda §lKırmızı Tavşanlar Beresi§r'yle §lAce Race§r mini oyununu tamamlarken bir Fırlatma Yastığının üzerinden 50 kez geçin.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oKırmızı Tavşan Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=%s Fırlatma Yastığı kullanıldı.	###
+
+txt.ui.title.yellow_yak_challenge=Sarı Yak Kapışması	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=Başınızda §lSarı Yak Beresi§r'yle §lMeltdown§r mini oyununda 350 donmuş düşmanı yenin.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oSarı Yak Kafası Karakter Oluşturucu Eşyası'nı kazanın	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=%s donmuş düşman yenildi.	###
+
+txt.ui.title.ace_race_challenge=Ace Race Kapışması	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=§lAce Race§r mini oyununun bir parkurunu tamamlayın!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§o“Kalabalığa Öpücük” İfadesini kazanın	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=Grid Runners Kapışması	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=Bir §lGrid Runners§r mini oyununu tamamlayın!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§o“Zafere Gidiş” İfadesini kazanın	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=Meltdown Kapışması	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=§lMeltdown§r mini oyununda 3. odaya kadar hayatta kalın	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§o“Uçan Tavuk” İfadesini kazanın	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=Sands of Time Kapışması	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=§lSands of Time§r mini oyununa girin, 2 dakika boyunca hayatta kalın, ardından başarıyla kaçın!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§o“Zafer Perendesi” İfadesini kazanın	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=Gizemli Mağara Kapışması	###
+txt.ui.body1.cave_challenge=Gizemli mağaradaki 7 boyalı bulmaca kapışmasının hepsini tamamlayın.	###
+txt.ui.reward.cave_challenge=§oMCŞ Tacı Karakter Oluşturucu Eşyası'nı kazanın	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=7 bulmacadan %s tanesi tamamlandı.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e OYUNCULAR BEKLENİYOR §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §fOYUNCULAR BEKLENİYOR (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §eOYUNCULAR BEKLENİYOR §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §eOYUNCULAR BEKLENİYOR §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §eOYUNCULAR BEKLENİYOR §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §eOYUNCULAR BEKLENİYOR §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §eOYUNCULAR BEKLENİYOR §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§eMaksimum bekleme süresi:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e OYUN BEKLENİYOR... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §fOYUN BEKLENİYOR... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e OYUN BEKLENİYOR... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e OYUN BEKLENİYOR... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e OYUN BEKLENİYOR... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e OYUN BEKLENİYOR... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e OYUN BEKLENİYOR... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eAşağı yukarı §f%s§e Dakika veya daha kısa	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eAşağı yukarı §f%s§e Dakika veya daha kısa	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aOYUN HAZIR!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eIŞINLANMAYA §eKALAN SÜRE: §f%s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eIŞINLANMA GERÇEKLEŞTİRİLDİ!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§eHazır olun...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§eBaşlamaya:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aBAŞLA!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens ve  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=Yardım	###
+txt.title.dia.ender_cup= Ender Kupası 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=Kurbağa Prens	###
+
+txt.title.start_game=Oyunu Başlat	###
+txt.title.join_queue=Sıraya Katılın	###
+txt.title.ace_race= Ace Race 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= Grid Runners 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= Meltdown 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= Sands of Time 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= Ana Lobi 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=Tamam	###
+txt.button.yes=Evet	###
+txt.button.no=Hayır	###
+txt.button.back=Geri	###
+txt.button.exit=Çıkış	###
+txt.button.close=Kapat	###
+txt.button.start_game=Oyunu Başlat	###
+txt.button.join_queue=Sıraya Katılın	###
+txt.button.tutorial=Öğretici	###
+txt.button.challenges_q=Kapışmalara Var mısınız?	###
+txt.button.who_are_you_q=Sen kimsin?	###
+txt.button.what_games_q=Hangi Oyunlar?	###
+txt.button.cave_mystery_q=Mağara Gizemi?	###
+txt.button.go_to_portal=Geçide Gidin	###
+txt.button.remove_hat=Şapkayı çıkarın	###
+txt.button.no_hats=Burada şapka yok. Mağazalardan satın alın!	###
+txt.button.pet_frog=Kurbağayı sevin	###
+txt.button.talk_frog=Kurbağa ile konuşun	###
+txt.button.kiss_frog=Kurbağayı öpün	###
+txt.button.love_minecraft_q=Minecraft'ı çok mu seviyorsunuz?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=MCŞ'yi çok mu seviyorsunuz?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=En İyi Oyun?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=Ace Race?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=Yayın?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=En İyi Güncelleme?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=Grid Runners?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=Meltdown?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=En Güzel Anı?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=Sands of Time?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=İleri	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=Merhaba! Ben  Jens!	###
+txt.jagnes.1_0.dia2=Ben de  Agnes!	###
+txt.jagnes.1_0.dia3=MCŞ Minecraft 15. Yıl Dönümü Partisi'ne hoş geldiniz!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=MC Şampiyonası'ndan mini oyunlar oynamak için Noxcrew ile bir araya geldik!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=Keşfedin, mini oyunlar oynayın ve mağaranın gizemini çözün!	###
+txt.jagnes.1_0.dia6=Geçitlere giden yolları takip edin ve bir mini oyun oynamayı deneyin!	###
+txt.jagnes.1_0.dia6_1=Başlamak için, geçitlere giden yolları takip edin ve bir mini oyun oynamayı deneyin!	###
+txt.jagnes.1_0.dia6_2=Başlamak için süzülen  Palyaçoları takip ederek geçide ulaşın ve bir mini oyun oynamayı deneyin!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=MC Şampiyonası'ndaki mini oyunları oynamak için geçitlerden geçin.	###
+txt.jagnes.2_0.dia2=Mini oyunlarımız şunlar: §1Ace Race§r, §1Grid Runners§r, §1Meltdown§r ve §1Sands of Time§r!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=Mini oyunları deneyip favorilerinizi seçin!	###
+
+##What games?
+txt.jagnes.2_1.dia1=MC Şampiyonası'ndaki mini oyunları oynamak için geçitlerden geçin.	###
+txt.jagnes.2_1.dia2=§1Ace Race§r'ndaki bulutlara gidin ve gökyüzünü yarıp geçin!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=§1Grid Runners§r stadyumunu ziyaret edin ve meydan okumaları tamamlayın!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=§1Meltdown§r'e girin, zombilerden ve Meltdown odalardan kurtulup hayatta kalın!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=Bütün cesaretinizi toplayıp §1Sands of Time§r Tapınağı'na girin ve hazine yığınlarını bulun!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=Mini oyunları deneyip favorinizi seçin!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= Rivayete göre, Dağların tepesinde gizemli bir mağara varmış.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=Çözebileceğiniz boyalı  bulmacalar olduğu söyleniyor!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=Mağarayı bulun ve ortaya nelerin çıkacağını görün!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=Süzülen  Taçları takip ederek  §6Ace Race§r  Mini Oyunu geçidine ulaşın!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=Süzülen  Taçları takip ederek  §6Grid Runners§r  Mini Oyunu geçidine ulaşın!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=Süzülen  Taçları takip ederek  §6Meltdown§r  Mini Oyunu geçidine ulaşın!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=Süzülen  Taçları takip ederek  §6Sands of Time§r  Mini Oyunu geçidine ulaşın!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=Bir mağaza buldunuz!	###
+txt.jagnes.help_shop2=Mini oyunlar oynayarak kazandığınız paralarla eşya satın alın!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1= Kupa Odası'nı buldunuz!	###
+txt.jagnes.help_trophy2=Tamamladığınız Kapışmalardan kazandığınız kupalara ve ödüllere göz atın!	###
+txt.jagnes.help_trophy3=Bir resim çekip ilerleme durumunuzu yayınlayın!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=Kek Odası'nı buldunuz!	###
+txt.jagnes.help_cake2=Kek mumlarındaki başarıları görün. Özel ödüller kazanmak için bunları tamamlayın!	###
+txt.jagnes.help_cake3=Bir resim çekip ilerleme durumunuzu paylaşın!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=Bir Mini Oyun Geçidi buldunuz!	###
+txt.jagnes.help_portal2=Geçitten geçip Mini Oyun dünyasına ulaşın!	###
+txt.jagnes.help_portal3=Haydi durmayın, geçin!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=Güzel,  §6Ace Race§r  Geçidini buldunuz!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=Bulutlara ulaşın ve gökyüzünü yarıp geçin!	###
+txt.jagnes.help_ace_race_portal3=Haydi durmayın, geçin!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=Bakın, işte  §6Grid Runners§r  Geçidi!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=Stadyumu ziyaret edin ve kapışma odalarını tamamlayın!	###
+txt.jagnes.help_grid_runners_portal3=Haydi durmayın, geçin!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=Aa,  §6Meltdown§r  Geçidini buldunuz!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=Tesise girin, zombilerden ve eriyen odalardan kurtulup hayatta kalmaya çalışın!	###
+txt.jagnes.help_meltdown_portal3=Haydi durmayın, geçin!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=Harika,  §6Sands of Time§r  Geçidini buldunuz!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=Bütün cesaretinizi toplayıp antik tapınağa girin ve hazine yığınlarını bulun!	###
+txt.jagnes.help_sot_portal3=Haydi durmayın, geçin!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=Vay canına,  gizemli mağarayı buldunuz! 	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=Her gün burada beliren bulmacaları çözebilir misiniz?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=Çok güzel, bir etkinlik buldunuz!	###
+txt.jagnes.help_activity2=Biraz takılıp oyun oynamak ister misiniz?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lMinecraft'ı bu kadar sevmenizin nedeni ne?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lUnutamadığınız MCŞ anınız?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lEn İyi MCŞ Oyunu?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lAce Race ile ilgili en sevdiğiniz şey nedir?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lEnder Kupası Yayınınızı neden izleyelim?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=Merhaba! Ben §1Seapeekay§r. §1Ace Race§r semalarına hoş geldiniz!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=Arttırıcıları ve yastıkları kullanarak bitiş çizgisine kadar yarışın!	###
+txt.creator_ace.1_0.dia3=Daha fazla bilgi edinmek için “Öğretici” düğmesine basın.	###
+txt.creator_ace.1_0.dia4=Oynamaya hazırsanız Oyunu Başlat düğmesine de basabilirsiniz!	###
+txt.creator_ace.2_0.dia1=§1Ace Race§r bulutların üzerinde yürümek gibidir!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=Pistte bütün hızınızla koşup bitiş çizgisine ulaşın!	###
+txt.creator_ace.2_0.dia3=Zıplama Yastıkları, Fırlatma Yastıkları, Hız Yastıkları ve Elytra Kapılarını kullanarak daha da hızlanabilirsiniz!	###
+txt.creator_ace.2_0.dia4=Bitiş çizgisinde görüşürüz!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=Merhaba! Ben §1Seapeekay§r. Rekabet ve eğlence arasında iyi bir denge tutturmayı seven bir Minecraft yayıncısıyım.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Twitch'te arama kısmına ''Seapeekay'' yazarak beni bulabilirsiniz.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=Bu benim için önemli. Oyun açık dünya ve sandbox, yani ne isterseniz yapabilirsiniz.	###
+txt.creator_ace.3_1.dia2=Yaratıcılığınızı istediğiniz gibi konuşturabilirsiniz. Oynamanın doğru bir yolu yok.	###
+txt.creator_ace.3_1.dia3=Şu anki arkadaşlarımın hemen hepsiyle oyunu oynarken tanıştım.	###
+txt.creator_ace.3_1.dia4=Bence bu, Minecraft'ın hayatımda ne kadar büyük bir etkisi olduğunu gösteriyor.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=MCŞ 5'te nihayet ilk galibiyetimi almayı başardığım anı unutamıyorum!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=Hem de aşırı güçlü bir takımda da değildim. Topluluğun düşündüğünün aksine, bence hak edilmiş bir galibiyetti.	###
+txt.creator_ace.3_2.dia3=Ama Minecraft'ta hiçbir zaman çok iyi değildim, MCŞ de beni oyunda daha iyi olmaya teşvik etti.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=Artık bayağı iyi sayılırım, yani bu hikâyenin bir parçası olmak muhteşem.	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=MCŞ'deki en iyi oyunum kesinlikle bir §1Ace Race§r'nı nihayet kazandığım zamandı.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=Topluluk bana uzun bir süredir ''Bay Ace Race'' diyordu ama aslında hiç oyun kazanmamıştım.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=Yani, nihayet bu lakabı hak ettiğim günü asla unutacağımı sanmıyorum.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=§1Ace Race§r ile ilgili en sevdiğim şey kesinlikle parkuru tamamlamanın birçok farklı yolunun olması.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=Çok sayıda farklı beceri seviyesine oldukça uygun.	###
+txt.creator_ace.3_4.dia3=Bazı yollar daha hızlı... Bazı yollar daha zorlu...	###
+txt.creator_ace.3_4.dia4=Ama önemli olan, herkesin çizgiyi bir şekilde geçmesi.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=Ender Kupası'nı benim gözümden mutlaka izleyin. Tam tadında iyi vakit geçirip eğleneceğinizden eminim...	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=Ama yine de kazanmak istiyorum, orası kesin!	###
+txt.creator_ace.3_5.dia4=Bu, rekabetin hem eğlenceli hem de en güzel tarafı bence.	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lFavori Minecraft Güncellemesi?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lMCŞ'nin en iyi yanı?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lGrid Runners'nın en iyi yanı?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lEnder Kupası Yayınınızı neden izleyelim?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=Merhaba! Ben §1Smajor§r. §1Grid Runners§r parkuruna hoş geldiniz!	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=En yüksek puanı almak için her odadaki kapışmaları olabildiğince fazla kez tamamlayın!	###
+txt.creator_grid.1_0.dia3=Daha fazla bilgi edinmek için “Öğretici” düğmesine basın.	###
+txt.creator_grid.1_0.dia4=Oynamaya hazırsanız Sıraya Katılın düğmesine de basabilirsiniz!	###
+txt.creator_grid.2_0.dia1=§1Grid Runners§r, 4 farklı odası olan zorlu bir kapışmadır!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=Her odada, bir sonrakine geçmeden önce tamamlamanız gereken yeni bir kapışmayla karşılaşacaksınız.	###
+txt.creator_grid.2_0.dia3=Her oda için 1 dakikalık süreye sahipsiniz, o yüzden en iyisi acele edin!	###
+txt.creator_grid.3_0.dia1=Ben §1Smajor§r!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Farklı oyun yayınları yapıyorum ama esas olarak Minecraft'a odaklanıyorum!	###
+txt.creator_grid.3_0.dia3=Beni Twitch'te aratarak bulabilirsiniz.	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=En sevdiğim güncelleme, Su Güncellemesi!	###
+txt.creator_grid.3_1.dia2=Bu güncellemenin okyanus biyomlarına yaptığı eklemelerin hepsini gerçekten çok sevdim ve bunları keşfetmenin çok daha eğlenceli hissettirdiğini fark ettim.	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=MCŞ'ye dair en sevdiğim şey, Minecraft'ın ve içerik oluşturuculuğun farklı alanlarından gelen tüm oluşturucuların etkinlikte bir takım olarak oynamak için bir araya geldiğini görmek oldu.	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=Daha önce birbirini hiç görmeyen insanların tanışıp arkadaş olduklarını görmek harika.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=§1Grid Runners§r ile ilgili en sevdiğim şey, oyunun takım odaklı olması.	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=Takımınızın kapışmaları tamamlamak için tıkır tıkır işleyen bir makine gibi çalışmasından daha heyecan verici bir şey yok.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=Muhteşem bir atmosfer olacak!	###
+txt.creator_grid.3_4.dia3=MCŞ yayını yaparken amacım, takımımla beraber olabildiğince keyifli zaman geçirmek!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=Sonuncu olsak bile!	###
+
+txt.creator_grid.4_0.dia1=4 farklı kapışma var: Canavarları Yenin, Tabloyu Kopyalayın, Kek Pişirin ve Depar Atın!	###
+txt.creator_grid.4_0.dia2=Canavarları Yenin kapışmasında odadaki tüm canavarları yenmeniz gerekecek.	###
+txt.creator_grid.4_0.dia3=Tabloyu Kopyalayın'da odadaki Boya Fırçasını ve Kovaları kullanarak tabloyu kopyalamanız gerekecek.	###
+txt.creator_grid.4_0.dia4=Kek Pişirin'de kek pişirmek için gereken malzemeleri toplamanız ve onları ortada bulunan kek makinesine eklemeniz gerekecek!	###
+txt.creator_grid.4_0.dia5=Depar Atın kapışması için de bitiş çizgisine kadar koşmanız gerek!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lFavori Minecraft Güncellemesi?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lMinecraft'ın en iyi yanı?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lUnutamadığınız MCŞ anınız?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lMeltdown'in en iyi yanı?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lEnder Kupası Yayınınızı neden izleyelim?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=Merhaba! Ben §1hannahxxrose§r. §1Meltdown§r Tesis'e hoş geldiniz!	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=Her oda için, oda erimeye başlamadan hayatta kalın! Ekstra puan için canavarları yenin.	###
+txt.creator_melt.1_0.dia3=Daha fazla bilgi edinmek için “Öğretici” düğmesine basın.	###
+txt.creator_melt.1_0.dia4=Oynamaya hazırsanız Sıraya Katılın düğmesine de basabilirsiniz!	###
+txt.creator_melt.2_0.dia1=§1Meltdown§r, odaları resmen erimek üzere olan bir tesistir!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=Her odada, bir sonraki odanın kapısı açılana kadar hayatta kalmanız gerekir.	###
+txt.creator_melt.2_0.dia3=Ekstra puan kazanmak için canavarları dondurup onlara vurabilirsiniz!	###
+txt.creator_melt.2_0.dia4=Daha fazla ekstra puan için para yığınlarını da toplayabilirsiniz!	###
+txt.creator_melt.3_0.dia1=Ben §1hannahxxrose§r, Minecraft içerikleri oluşturuyorum!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=Yayınlarımı izlerseniz rekabet gücüyle ve hoş bir atmosferle karşılaşacaksınız!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=En sevdiğim Minecraft Güncellemesi, yeni kiraz çiçeği biyomundan dolayı ''Yollar ve Masallar''!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=Minecraft'a dair en çok sevdiğim şey... tabii ki PvP!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=Unutamadığım MCŞ Anım, Camgöbeği Kır Kurtları ile MCŞ Onur 2024'ü kazanmaktı!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=§1Meltdown§r ile ilgili en sevdiğim şey, oyunun rekabetçi oluşu ve takım çalışması.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=MCŞ'de beni izlerseniz harika takım çalışması ve PvP anları göreceksiniz.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=Beni Twitch kanalımda MCŞ'de oynarken izleyebilirsiniz!	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lMinecraft neden önemlidir?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lEn eski Minecraft anınız?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lUnutamadığınız MCŞ anınız?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§lSands of Time'nın en iyi yanı?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lEnder Kupası Yayınınızı neden izleyelim?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=Merhaba! Ben §1HBomb94§r. §1Sands of Time§r tapınağına hoş geldiniz!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=Amacınız tapınağı keşfetmek, olabildiğince çok para bulmak ve tüm bunları zamanınız dolmadan yapmak!	###
+txt.creator_sands.1_0.dia3=''Öğretici'' düğmesini görüyor musunuz? Daha fazla bilgi edinmek için tıklayın.	###
+txt.creator_sands.1_0.dia4=Oynamaya hazırsanız Oyunu Başlat düğmesine de basabilirsiniz! 	###
+txt.creator_sands.2_0.dia1=§1Sands of Time§r, amacın mümkün olduğunca çok para toplamak olduğu bir zindandır!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=Zindanda canavarlar, para, sandık anahtarları, zırhlar ve hatta zindanda daha uzun süre kalmanızı sağlayacak ekstra kum vardır!	###
+txt.creator_sands.2_0.dia3=Mücadeleye 2 Dakikalık süreyle başlarsınız ve her bir kum parçası size ekstra 10 saniye kazandırır, ancak dikkatli olmanız gerekir!	###
+txt.creator_sands.2_0.dia4=Zindanda ölürseniz veya içeride mahsur kalırsanız dışarı çıkmak için, topladığınız paraların bir kısmını harcamanız gerekir.	###
+txt.creator_sands.3_0.dia1=Ben §1HBomb94§r!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=Twitch'te yayın yapıyorum, beni şurada bulabilirsiniz:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft, tüm yetişkinlik hayatım boyunca benim için oldukça önemli oldu.	###
+txt.creator_sands.3_1.dia2=Şimdi 30 yaşındayım. Video yüklemeye de... 18 yaşında başladım galiba.	###
+txt.creator_sands.3_1.dia3=Yani on iki yıl falan olmuş.	###
+txt.creator_sands.3_1.dia4=Hayır ya... Yaşlanmışım!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Aslında Minecraft ile ilgili en eski anım, oluşturduğum ilk dünyaydı.	###
+txt.creator_sands.3_2.dia2=Kırık taştan bir kale yapmıştım. Sadece bir Meşe Kapısı vardı ve korkunç görünüyordu.	###
+txt.creator_sands.3_2.dia3=Sonra öldüm ve doğma noktası diye bir şeyin olduğundan haberim bile yoktu...	###
+txt.creator_sands.3_2.dia4=Ayrıca koordinat diye bir şeyin olduğunu bile bilmiyordum...	###
+txt.creator_sands.3_2.dia5=Dolayısıyla kalem, dünyada kaybolup gitti. Onu tekrar bulmak için saatler harcadım ama bulamadım.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=Bu aslında o kadar kolay ki!	###
+txt.creator_sands.3_3.dia2=MCŞ 9'da Hayatta Kalma Oyunları bittiği anda puan tablosuna baktığımı hatırlıyorum.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=Takımıma ''Lidere bakın!'' diye bağırmıştım.	###
+txt.creator_sands.3_3.dia4=Düşününce tüylerim hâlâ diken diken oluyor.	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=§1Sands of Time§r ile ilgili en sevdiğim şey, herkesin paniklemeye başladığı o an galiba.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=Herkes paniklemeye başladığı zaman en eğlenceli anlar yaşanıyor, herkes çılgına dönüp birbirine bağırmaya başlıyor falan.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=Çok basit!	###
+txt.creator_sands.3_5.dia3=Takımımız hem muhteşem bir enerjiye sahip olacak hem de her türlü takım oyununda rahatlıkla hakimiyet kuracak.	###
+txt.creator_sands.3_5.dia4=Sadece... PvP oyunları... Ya da parkur değil.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=Kupa Odası'na Hoş Geldiniz!	###
+txt.trophy_help.1_0.dia2=Her mum, tamamlayabileceğiniz bir kapışmadır!	###
+txt.trophy_help.1_0.dia3=Kapışmayı ve ilerlemesini görmek için bir mumla §6etkileşime geçin§r.	###
+txt.trophy_help.1_0.dia4=Tüm kapışmaları tamamlayabilir misiniz?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=§1Ender Kupası§r için bize katılın! Yayınlara şu adresten göz atın: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Minecraft'ın en önemli 40 İçerik Oluşturucusunun 10 takım hâlinde ve 8 farklı mini oyunda kapışmasını izleyin!	###
+txt.ender_cup.1_0.dia3=27 TEMMUZ 20.00'de bir yarışmacının canlı yayınına katılın!	###
+
+txt.ender_cup.ad1=§1Ender Kupası§r için bize katılın! Yayınlara şu adresten göz atın: https://www.twitch.tv/minecraft	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Minecraft'ın en önemli 40 İçerik Oluşturucusunun 10 takım hâlinde ve 8 farklı mini oyunda kapışmasını izleyin!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§oTaçlı kurbağa size umutla bakar.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§oNe yapmak istiyorsunuz?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oKurbağayı okşamak için elinizi uzatırsınız ve kurbağa dehşet içinde geri çekilir.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oKurbağa kaşlarını çatar ve tacını düzeltir.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oBirçok farklı şeyden bahsetmeye başlar, uzun uzun konuşursunuz...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oPartide, farklı oyunlarda, gizemli mağarada geçirdiğiniz zamanlardan bahsedersiniz...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oAma kurbağa ilgisiz görünür.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=Lanetimi bozdunuz! Teşekkürler!	###
+txt.frog_prince.2_0.dia2=§oÇok uzun zamandır§r burada oturup birinin beni öpmesini bekliyordum...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=O kadar çok insan gelip geçti ki!	###
+txt.frog_prince.2_0.dia4=Hatta bazıları tacımı almaya çalıştı!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= Bulmaca Yardımcısı 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=Tüm  bulmacaları çözdüm ve bazı düşüncelerim var!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=Bunları nasıl çözeceğinize dair yardıma mı ihtiyacınız var?	###
+txt.puzzle_help.landing.dia3=Aşağıdaki düğmelerle bir duvar seçin ve her bulmaca için ipuçları alın!	###
+txt.button.day1=1. Gün	###
+txt.button.day2=2. Gün	###
+txt.button.day3=3. Gün	###
+txt.button.day4=4. Gün	###
+txt.button.day5=5. Gün	###
+txt.button.day6=6. Gün	###
+txt.button.day7=7. Gün	###
+txt.button.wall1=Sol Duvar	###
+txt.button.wall2=Orta Duvar	###
+txt.button.wall3=Sağ Duvar	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=Çözdüğüm ilk tuvallerden bazıları!	###
+txt.puzzle_help.wall1.dia2=Üç gün sürdü!	###
+txt.puzzle_help.wall1.dia3=Hangi bulmaca için ipucu almak istersiniz?	###
+
+txt.puzzle_help.wall2.dia1=Ah, orta kısımda çözdüğüm tuvaller.	###
+txt.puzzle_help.wall2.dia2=İşte o zaman aklımda bir şeyler canlanmaya başladı!	###
+txt.puzzle_help.wall2.dia3=Hangi bulmaca için ipucu almak istersiniz?	###
+
+txt.puzzle_help.wall3.dia1=Çözdüğüm son tuvaller.	###
+txt.puzzle_help.wall3.dia2=Zordu ama sonunda başardık!	###
+txt.puzzle_help.wall3.dia3=Hangi bulmaca için ipucu almak istersiniz?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§oBir taç sembolü üzerinde sallanan el...	###
+txt.puzzle_help_day1.dia2=Kırmızı arka plan üzerinde büyük bir taç bulun ve üzerine çıkıp el sallayın!	###
+
+txt.puzzle_help_day2.dia1=§oMücevherli, taştan bir yüzün önünde bir parti patlangacı...	###
+txt.puzzle_help_day2.dia2=Gözlerinde mücevherler bulunan bir taş heykel bulun ve bir parti patlangacı patlatın!	###
+
+txt.puzzle_help_day3.dia1=§oAşağı doğru girdap yapan geniş bir su havuzu...	###
+txt.puzzle_help_day3.dia2=Aradığınız sır, büyük bir su birikintisinin... Belki de bir gölün dibinde olmalı!	###
+
+txt.puzzle_help_day4.dia1=§oHayrete düşmüş, yeşil bir seyirci kitlesinin önünde bir kristal top...	###
+txt.puzzle_help_day4.dia2=Hayrete düşmüş, yeşil bir seyirci kitlesinin önüne bir Disko Topu Buluntusu yerleştirin!	###
+
+txt.puzzle_help_day5.dia1=§oSiyah ve sarı şeritli, kare biçiminde bir açıklık ve H harfi üzerinde bir dilim kek...	###
+txt.puzzle_help_day5.dia2=Siyah ve sarı şeritli girişi bulun! Burası H'ye açılıyor olmalı, H'ye ulaştıktan sonra biraz kek yiyin!	###
+
+txt.puzzle_help_day6.dia1=§oBuzdan bir dağın tepesinde bir havai fişek...	###
+txt.puzzle_help_day6.dia2=En yüksek zirveye tırmanın ve bir havai fişek patlatın!	###
+
+txt.puzzle_help_day7.dia1=§oBir kapı, alkışlayan eller ve başında tacıyla bir kurbağa prens.	###
+txt.puzzle_help_day7.dia2=Kapıyı bulun ve önünde alkış tutun! Bu şekilde Kurbağa Prens'e ulaşabilmeniz gerekir.	###
+txt.puzzle_help_day7.dia3=Fakat kurbağa prens ile ne yapılabilir?	###
+txt.puzzle_help_day7.dia3_1=Öpünce prense dönüşen bir kurbağayla ilgili bir hikâye duymuştum ama kesinlikle bu olamaz...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=Tuvaller için mi geldiniz?  satırındaki her , yeni bir tuvalin çözüldüğü anlamına gelir!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=İlki sallanan bir el gibi görünüyor ama emin olamıyorum...	###
+txt.puzzle_lore_day1.dia3=Bir fikir edinebilmek için önce hepsini çözmem gerek.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=Tuvaller için mi geldiniz?  satırındaki her , yeni bir tuvalin çözüldüğü anlamına gelir!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=Az önce bir surat ve bir parti patlangacını ortaya çıkardım.	###
+txt.puzzle_lore_day2.dia3=Yine de ne anlama geldiklerinden henüz emin değilim...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=Tuvaller için mi geldiniz?  satırındaki her , yeni bir tuvalin çözüldüğü anlamına gelir!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=En sonuncusu harika bir havuz gibi duruyor, gerçi belki de sıçrayan suları görmüşümdür.	###
+txt.puzzle_lore_day3.dia3=Emin olmak için daha fazla zamana ihtiyacım var...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=Tuvaller için mi geldiniz?  satırındaki her , yeni bir tuvalin çözüldüğü anlamına gelir!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=Bir öncekinde disko topu ve bir insan mı vardı?	###
+txt.puzzle_lore_day4.dia3=Hepsi çok tuhaf ve gizemli...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=Tuvaller için mi geldiniz?  satırındaki her , yeni bir tuvalin çözüldüğü anlamına gelir!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=Sonuncusu kafa karıştırıcı. Siyah ve sarı renkli bir daire, Kek ve H harfi?	###
+txt.puzzle_lore_day5.dia3=Belki de eğik çizgi onları ayırıyordur...	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=Tuvaller için mi geldiniz?  satırındaki her , yeni bir tuvalin çözüldüğü anlamına gelir!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=Dünkü tuvalde pırıl pırıl sayılar ve bir dağ vardı!	###
+txt.puzzle_lore_day6.dia3=İnanılmaz şeyler!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=Sonunda bitirdim! Tüm  tuvaller çözüldü!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=En sonuncusu, en kafa karıştırıcı olanı.	###
+txt.puzzle_lore_day7.dia3=Kavuşmuş eller mi bunlar? Yoksa alkış mı tutuyorlar?	###
+txt.puzzle_lore_day7.dia4=Bir de kurbağa ve kapı var...	###
+txt.puzzle_lore_day7.dia5=Kafamı toplamak için biraz zamana ihtiyacım var.	###
+txt.puzzle_lore_day7.dia6=Yarın bu gizemleri çözeceğim!	###

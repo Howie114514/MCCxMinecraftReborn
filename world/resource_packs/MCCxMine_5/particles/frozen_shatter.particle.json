@@ -1,0 +1,81 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "noxcrew.ft:frozen_shatter",
+      "basic_render_parameters": {
+        "material": "particles_blend",
+        "texture": "textures/particles/frozen_shatter"
+      }
+    },
+    "events": {
+      "event1": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:frozen_shatter_e1",
+          "type": "emitter"
+        }
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 12
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1
+      },
+      "minecraft:emitter_lifetime_events": {
+        "creation_event": "event1"
+      },
+      "minecraft:emitter_shape_sphere": {
+        "offset": [
+          0,
+          1.2,
+          0
+        ],
+        "radius": 0.5,
+        "surface_only": true,
+        "direction": "outwards"
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "1+variable.particle_random_1"
+      },
+      "minecraft:particle_initial_spin": {
+        "rotation": "math.random(-180,180)",
+        "rotation_rate": "math.random(-180,180)"
+      },
+      "minecraft:particle_initial_speed": 4,
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [
+          0,
+          -8,
+          0
+        ],
+        "linear_drag_coefficient": 1
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          "(math.clamp(variable.particle_random_1,0.2,0.30))",
+          "(math.clamp(variable.particle_random_1,0.2,0.30))"
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "uv": {
+          "texture_width": 16,
+          "texture_height": 80,
+          "uv": [
+            0,
+            "16 * (0.0625 * (math.round(variable.particle_random_3*5)*16))"
+          ],
+          "uv_size": [
+            16,
+            16
+          ]
+        }
+      },
+      "minecraft:particle_motion_collision": {
+        "collision_drag": 0.5,
+        "coefficient_of_restitution": 0.5,
+        "collision_radius": 0.2
+      }
+    }
+  }
+}

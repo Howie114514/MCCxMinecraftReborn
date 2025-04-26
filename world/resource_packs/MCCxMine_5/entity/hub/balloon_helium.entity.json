@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:balloon_helium",
+      "textures": {
+        "default": "textures/entity/n/hub/helium_balloon/a",
+        "b": "textures/entity/n/hub/helium_balloon/b",
+        "c": "textures/entity/n/hub/helium_balloon/c",
+        "d": "textures/entity/n/hub/helium_balloon/d"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.helium_balloon"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "helium": "animation.n.ballons.helium"
+      },
+      "sound_effects": {
+        "helium": "balloon_helium"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.rand_rot = math.die_roll_integer(1, 0, 360);"
+        ],
+        "animate": [
+          "helium"
+        ],
+        "should_update_effects_offscreen": true
+      },
+      "render_controllers": [
+        "controller.render.four"
+      ]
+    }
+  }
+}

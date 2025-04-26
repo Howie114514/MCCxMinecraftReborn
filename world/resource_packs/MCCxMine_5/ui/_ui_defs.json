@@ -1,0 +1,18 @@
+{
+    "ui_defs": [
+        "ui/noxcrew/noxcrew_hud.json",
+        "ui/noxcrew/game_bar.json",
+        "ui/noxcrew/common_modal_ui.json",
+        "ui/noxcrew/quick_travel_modal.json",
+        "ui/noxcrew/cosmetic_modal.json",
+        "ui/noxcrew/vendor_modal.json",
+        "ui/noxcrew/challenge_list.json",
+        "ui/noxcrew/challenge_info.json",
+        "ui/noxcrew/unlock_screen.json",
+        "ui/noxcrew/game_toast.json",
+        "ui/noxcrew/fake_subtitle.json",
+        "ui/noxcrew/jens_agnes.json",
+        "ui/hud_screen.json",
+        "ui/server_form.json"
+    ]
+}

@@ -1,0 +1,218 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.key_podium_iron",
+        "texture_width": 128,
+        "texture_height": 64,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 5,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "podium",
+          "pivot": [
+            0,
+            11.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                18,
+                -6
+              ],
+              "size": [
+                12,
+                2,
+                12
+              ],
+              "uv": [
+                42,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -8
+              ],
+              "size": [
+                16,
+                5,
+                16
+              ],
+              "uv": [
+                0,
+                21
+              ]
+            },
+            {
+              "origin": [
+                -7,
+                5,
+                -7
+              ],
+              "size": [
+                14,
+                8,
+                14
+              ],
+              "uv": [
+                0,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                13,
+                -8
+              ],
+              "size": [
+                16,
+                5,
+                16
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ],
+          "locators": {
+            "sparkle_locator": [
+              0,
+              27,
+              0
+            ]
+          }
+        },
+        {
+          "name": "key",
+          "parent": "podium",
+          "pivot": [
+            0,
+            28,
+            0
+          ]
+        },
+        {
+          "name": "iron_key",
+          "parent": "key",
+          "pivot": [
+            -1.98492,
+            28.48492,
+            0.5
+          ],
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.48492,
+                26.38492,
+                -1
+              ],
+              "size": [
+                2,
+                7,
+                3
+              ],
+              "uv": [
+                42,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -0.48492,
+                26.38492,
+                -1
+              ],
+              "size": [
+                2,
+                7,
+                3
+              ],
+              "uv": [
+                0,
+                42
+              ]
+            },
+            {
+              "origin": [
+                -3.48492,
+                26.38492,
+                -1
+              ],
+              "size": [
+                3,
+                2,
+                3
+              ],
+              "uv": [
+                48,
+                31
+              ]
+            },
+            {
+              "origin": [
+                -3.48492,
+                31.38492,
+                -1
+              ],
+              "size": [
+                3,
+                2,
+                3
+              ],
+              "uv": [
+                48,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "name": "a_alph",
+          "parent": "iron_key",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.48492,
+                19.38492,
+                0.5
+              ],
+              "size": [
+                7,
+                7,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:paint_pot",
+      "textures": {
+        "default": "textures/entity/n/gr/paint_pot/black",
+        "b": "textures/entity/n/gr/paint_pot/blue",
+        "c": "textures/entity/n/gr/paint_pot/brown",
+        "d": "textures/entity/n/gr/paint_pot/green",
+        "e": "textures/entity/n/gr/paint_pot/purple",
+        "f": "textures/entity/n/gr/paint_pot/red",
+        "g": "textures/entity/n/gr/paint_pot/white",
+        "h": "textures/entity/n/gr/paint_pot/yellow"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.paint_pot"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "render_controllers": [
+        "controller.render.eight"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:advert_creator_cup",
+      "textures": {
+        "default": "textures/entity/n/hub/advert_creator_cup"
+      },
+      "geometry": {
+        "default": "geometry.n.advert_creator_cup"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "idle": "animation.advert_creator_cup.idle",
+        "eye": "animation.advert_creator_cup.eye",
+        "blink": "animation.advert_creator_cup.blink",
+        "blink_ctrl": "controller.animation.advert_creator_cup.blink_ctrl"
+      },
+      "sound_effects": {
+        "blink": "eye"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.blink = 0;"
+        ],
+        "animate": [
+          "idle",
+          "blink_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "sparkle": "noxcrew.ft:big_sparkle"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.logo_1",
+        "texture_width": 128,
+        "texture_height": 64,
+        "visible_bounds_width": 6,
+        "visible_bounds_height": 6,
+        "visible_bounds_offset": [
+          0,
+          3,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            16,
+            8,
+            -6
+          ]
+        },
+        {
+          "name": "1",
+          "parent": "root",
+          "pivot": [
+            16,
+            8,
+            -6
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -11,
+                0,
+                1
+              ],
+              "size": [
+                9,
+                11,
+                9
+              ],
+              "inflate": -2,
+              "uv": [
+                0,
+                2
+              ]
+            },
+            {
+              "origin": [
+                -6.86668,
+                -3.33623,
+                1
+              ],
+              "size": [
+                10,
+                10,
+                9
+              ],
+              "inflate": -2,
+              "pivot": [
+                15.13332,
+                -10.33623,
+                8
+              ],
+              "rotation": [
+                0,
+                0,
+                10
+              ],
+              "uv": [
+                9,
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

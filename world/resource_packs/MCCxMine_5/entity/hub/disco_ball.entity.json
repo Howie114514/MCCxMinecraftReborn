@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:disco_ball",
+      "textures": {
+        "default": "textures/entity/n/hub/disco_ball"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.disco_ball"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "idle": "animation.n.ft.disco_ball.idle",
+        "particle": "animation.n.ft.disco_ball.particle",
+        "spawn": "animation.n.ft.disco_ball.spawn"
+      },
+      "sound_effects": {
+        "idle": "disco_ball_idle",
+        "spawn": "disco_ball_spawn"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          "particle",
+          "spawn"
+        ],
+        "should_update_effects_offscreen": true
+      },
+      "particle_effects": {
+        "disco_floor": "noxcrew.ft:disco_floor",
+        "disco_beams": "noxcrew.ft:disco_beams"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:hat_jester",
+      "textures": {
+        "default": "textures/entity/n/hub/hat_jester"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.hat_jester"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "jester": "animation.n.hats.jester"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "jester": "query.ground_speed * 0.5"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

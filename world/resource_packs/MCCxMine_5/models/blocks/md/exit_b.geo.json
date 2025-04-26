@@ -1,0 +1,65 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.exit_b",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "b",
+          "pivot": [
+            -2.25,
+            9.5,
+            5.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                3,
+                4
+              ],
+              "size": [
+                12,
+                13,
+                4
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -8,
+                4,
+                5
+              ],
+              "size": [
+                11,
+                11,
+                0
+              ],
+              "uv": [
+                0,
+                17
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+	"$light_button_default_text_color_noxcrew": [ 0.0, 0.0, 0.0 ],
+	"$light_button_hover_text_color_noxcrew": [ 0.2, 0.2, 0.2 ],
+	"$light_button_pressed_text_color_noxcrew": [ 1.0, 1.0, 1.0 ],
+	"$light_button_locked_text_color_noxcrew": [ 0.7, 0.7, 0.7 ] ,
+
+	"$title_text_color_noxcrew": [ 1.0, 1.0, 1.0 ],
+
+	"$light_button_default_text_color": [ 1.0, 1.0, 1.0 ],
+	"$light_button_hover_text_color": [ 0.9, 0.9, 0.9 ],
+	"$light_button_pressed_text_color": [ 1.0, 1.0, 1.0 ],
+	"$light_button_locked_text_color": [ 0.7, 0.7, 0.7 ] ,
+
+	"$title_text_color": [ 1.0, 1.0, 1.0 ],
+	"$pocket_title_text_color": [ 1.0, 1.0, 1.0 ],
+
+	"$light_toggle_default_text_color": [ 1.0, 1.0, 1.0 ],
+	"$light_toggle_hover_text_color": [ 0.9, 0.9, 0.9 ],
+	"$light_toggle_checked_default_text_color": [ 1.0, 1.0, 1.0 ],
+	"$light_toggle_checked_hover_text_color": [ 1.0, 1.0, 1.0 ],
+
+	"$main_header_text_color": [ 1.0, 1.0, 1.0 ],
+	"$sub_header_text_color": [ 1.0, 1.0, 1.0 ],
+
+	"$light_glyph_default_color": [ 1.0, 1.0, 1.0 ],
+	"$light_glyph_hover_color": [ 0.9, 0.9, 0.9 ],
+	"$light_glyph_pressed_color": [ 1.0, 1.0, 1.0 ],
+	"$light_glyph_locked_color": [ 0.7, 0.7, 0.7 ],
+
+	"$player_score_color": [  1.0, 0.333, 0.333, 1.0 ],
+
+
+	"$profile_create_character_selected_color": [ 1.0, 1.0, 1.0 ]
+
+
+}

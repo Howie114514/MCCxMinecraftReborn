@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.item_interact": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "checkpoint": "q.is_item_name_any('slot.weapon.mainhand',0,'noxcrew:rsf.restart_checkpoint') && q.is_using_item"
+            },
+            {
+              "hub": "q.is_item_name_any('slot.weapon.mainhand',0,'noxcrew:rsf.return_to_hub') && q.is_using_item"
+            },
+            {
+              "biome": "q.is_item_name_any('slot.weapon.mainhand',0,'noxcrew:rsf.restart_biome') && q.is_using_item"
+            }
+          ]
+        },
+        "checkpoint": {
+          "transitions": [
+            {
+              "default": "!(q.is_item_name_any('slot.weapon.mainhand',0,'noxcrew:rsf.restart_checkpoint') && q.is_using_item)"
+            }
+          ],
+          "on_entry": [
+            "/execute if score @s course.state = .course_state.started var run function checkpoint/return"
+          ]
+        },
+        "hub": {
+          "transitions": [
+            {
+              "default": "!(q.is_item_name_any('slot.weapon.mainhand',0,'noxcrew:rsf.return_to_hub') && q.is_using_item)"
+            }
+          ],
+          "on_entry": [
+            "/execute if score @s course.state = .course_state.started var positioned ~ ~-30 ~ run dialogue open @e[type=noxcrew:rsf.ui_popup,c=1] @s noxcrew:rsf.return_to_hub",
+            "/execute unless score @s course.state = .course_state.started var positioned ~ ~-30 ~ run dialogue open @e[type=noxcrew:rsf.ui_popup,c=1] @s noxcrew:rsf.end_race"
+          ]
+        },
+        "biome": {
+          "transitions": [
+            {
+              "default": "!(q.is_item_name_any('slot.weapon.mainhand',0,'noxcrew:rsf.restart_biome') && q.is_using_item)"
+            }
+          ],
+          "on_entry": [
+            "/scoreboard players operation @s checkpoint = @s checkpoint.start",
+            "/function checkpoint/return"
+          ]
+        }
+      }
+    }
+  }
+}

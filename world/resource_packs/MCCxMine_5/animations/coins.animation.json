@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.coins.particle": {
+      "loop": true,
+      "animation_length": 1,
+      "sound_effects": {
+        "0.0": {
+          "effect": "sparkle"
+        }
+      },
+      "particle_effects": {
+        "0.0": {
+          "effect": "coin_pile_idle"
+        }
+      }
+    }
+  }
+}

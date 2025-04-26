@@ -1,0 +1,133 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.paintbrush",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 8.5,
+        "visible_bounds_offset": [
+          0,
+          3.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "rightItem",
+          "pivot": [
+            0.5,
+            24,
+            0
+          ],
+          "binding": "q.item_slot_to_bone_name(c.item_slot)"
+        },
+        {
+          "name": "brush",
+          "parent": "rightItem",
+          "pivot": [
+            3.5,
+            22.45,
+            -7.125
+          ],
+          "rotation": [
+            90,
+            0,
+            90
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                21.325,
+                -10.575
+              ],
+              "size": [
+                15,
+                5,
+                4
+              ],
+              "uv": [
+                0,
+                41
+              ]
+            },
+            {
+              "origin": [
+                1,
+                4.325,
+                -9.575
+              ],
+              "size": [
+                5,
+                17,
+                2
+              ],
+              "uv": [
+                32,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "name": "top",
+          "parent": "brush",
+          "pivot": [
+            3.5,
+            24.325,
+            -8.575
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                26.325,
+                -9.575
+              ],
+              "size": [
+                13,
+                16,
+                2
+              ],
+              "uv": [
+                0,
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "name": "paint_alph",
+          "parent": "top",
+          "pivot": [
+            0.19139,
+            24.33028,
+            -7.075
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                26.325,
+                -9.575
+              ],
+              "size": [
+                13,
+                16,
+                2
+              ],
+              "inflate": 0.5,
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

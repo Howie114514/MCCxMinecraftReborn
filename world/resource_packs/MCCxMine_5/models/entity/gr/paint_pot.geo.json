@@ -1,0 +1,240 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.paint_pot",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bottom_alph",
+          "pivot": [
+            0,
+            16.39689,
+            0.00513
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -18,
+                0.2,
+                -19
+              ],
+              "size": [
+                34,
+                0,
+                32
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            10.4676,
+            5.76579
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6,
+                0,
+                -6
+              ],
+              "size": [
+                3,
+                19,
+                12
+              ],
+              "uv": [
+                0,
+                82
+              ]
+            },
+            {
+              "origin": [
+                -6,
+                0,
+                -6
+              ],
+              "size": [
+                12,
+                2,
+                12
+              ],
+              "uv": [
+                0,
+                66
+              ]
+            },
+            {
+              "origin": [
+                -9,
+                0,
+                -6
+              ],
+              "size": [
+                3,
+                19,
+                12
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -9,
+                0,
+                -9
+              ],
+              "size": [
+                18,
+                19,
+                3
+              ],
+              "uv": [
+                48,
+                75
+              ]
+            },
+            {
+              "origin": [
+                -9,
+                0,
+                6
+              ],
+              "size": [
+                18,
+                19,
+                3
+              ],
+              "uv": [
+                48,
+                53
+              ]
+            },
+            {
+              "origin": [
+                9,
+                14,
+                -2
+              ],
+              "size": [
+                1,
+                4,
+                4
+              ],
+              "uv": [
+                2,
+                33
+              ]
+            },
+            {
+              "origin": [
+                -10,
+                14,
+                -2
+              ],
+              "size": [
+                1,
+                4,
+                4
+              ],
+              "uv": [
+                20,
+                2
+              ]
+            }
+          ],
+          "locators": {
+            "splash": [
+              0,
+              17,
+              0
+            ]
+          }
+        },
+        {
+          "name": "paint_alph",
+          "parent": "root",
+          "pivot": [
+            0,
+            15.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6,
+                16,
+                -6
+              ],
+              "size": [
+                12,
+                1,
+                12
+              ],
+              "uv": [
+                0,
+                53
+              ]
+            }
+          ]
+        },
+        {
+          "name": "handle_alph",
+          "parent": "root",
+          "pivot": [
+            0,
+            15.29689,
+            -0.29487
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -11,
+                15.10855,
+                0.10406
+              ],
+              "size": [
+                22,
+                2,
+                15
+              ],
+              "pivot": [
+                0,
+                16.39689,
+                0.00513
+              ],
+              "rotation": [
+                -47.5,
+                0,
+                0
+              ],
+              "uv": [
+                3,
+                35
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

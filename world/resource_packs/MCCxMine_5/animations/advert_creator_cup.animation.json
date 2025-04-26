@@ -1,0 +1,253 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.advert_creator_cup.idle": {
+      "loop": true,
+      "animation_length": 12,
+      "bones": {
+        "root": {
+          "rotation": [
+            0,
+            "Math.cos(query.anim_time * 30) *2.5",
+            0
+          ],
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 90) *0.5",
+            0
+          ]
+        }
+      },
+      "particle_effects": {
+        "0.0": {
+          "effect": "sparkle"
+        },
+        "1.0": {
+          "effect": "sparkle"
+        },
+        "2.0": {
+          "effect": "sparkle"
+        },
+        "3.0": {
+          "effect": "sparkle"
+        },
+        "4.0": {
+          "effect": "sparkle"
+        },
+        "5.0": {
+          "effect": "sparkle"
+        },
+        "6.0": {
+          "effect": "sparkle"
+        },
+        "7.0": {
+          "effect": "sparkle"
+        },
+        "8.0": {
+          "effect": "sparkle"
+        },
+        "9.0": {
+          "effect": "sparkle"
+        },
+        "10.0": {
+          "effect": "sparkle"
+        },
+        "11.0": {
+          "effect": "sparkle"
+        }
+      },
+      "timeline": {
+        "8.0": "v.blink = math.die_roll_integer(1, 1, 5);"
+      }
+    },
+    "animation.advert_creator_cup.eye": {
+      "loop": true,
+      "bones": {
+        "eyelid_top": {
+          "scale": 0
+        },
+        "eyelid_bottom": {
+          "scale": 0
+        }
+      }
+    },
+    "animation.advert_creator_cup.blink": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.3,
+      "bones": {
+        "eyelid_top": {
+          "rotation": {
+            "0.05": [
+              -37.5,
+              0,
+              0
+            ],
+            "0.1": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              -37.5,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.05": [
+              0,
+              0.25,
+              -0.75
+            ],
+            "0.1": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0.25,
+              -0.75
+            ]
+          },
+          "scale": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.05": {
+              "pre": [
+                0,
+                0,
+                0
+              ],
+              "post": [
+                1,
+                1,
+                1
+              ]
+            },
+            "0.25": [
+              1,
+              1,
+              1
+            ],
+            "0.3": {
+              "pre": [
+                1,
+                1,
+                1
+              ],
+              "post": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "eyelid_bottom": {
+          "rotation": {
+            "0.05": [
+              37.5,
+              0,
+              0
+            ],
+            "0.1": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              37.5,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.05": [
+              0,
+              0,
+              -0.75
+            ],
+            "0.1": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              -0.75
+            ]
+          },
+          "scale": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.05": {
+              "pre": [
+                0,
+                0,
+                0
+              ],
+              "post": [
+                1,
+                1,
+                1
+              ]
+            },
+            "0.25": [
+              1,
+              1,
+              1
+            ],
+            "0.3": {
+              "pre": [
+                1,
+                1,
+                1
+              ],
+              "post": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "blink"
+        }
+      },
+      "timeline": {
+        "0.0": "v.blink = 0;"
+      }
+    }
+  }
+}

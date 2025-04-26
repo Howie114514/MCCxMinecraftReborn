@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:md_spider",
+      "textures": {
+        "default": "textures/entity/n/vanilla_mob/spider",
+        "ice": "textures/entity/n/vanilla_mob/ice"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.spider",
+        "ice": "geometry.n.ft.wide_ice"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "default_leg_pose": "animation.spider.default_leg_pose",
+        "look_at_target": "animation.spider.look_at_target",
+        "walk": "animation.spider.walk",
+        "melt": "animation.n.ft.ice.melt",
+        "melt_ctrl": "controller.animation.melt.ctrl"
+      },
+      "scripts": {
+        "animate": [
+          "default_leg_pose",
+          "look_at_target",
+          {
+            "walk": "query.modified_move_speed"
+          },
+          "melt_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "melting": "noxcrew.ft:melting",
+        "frozen_shatter": "noxcrew.ft:frozen_shatter",
+        "frozen_shatter_e1": "noxcrew.ft:frozen_shatter_e1"
+      },
+      "render_controllers": [
+        "controller.render.md.base",
+        {
+          "controller.render.md_ice": "q.property('noxcrew.ft:frozen')"
+        }
+      ]
+    }
+  }
+}

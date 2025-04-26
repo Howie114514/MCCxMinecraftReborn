@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "name": "MCC复原包",
-    "description": "",
+    "description": "a",
     "uuid": "653b3ae1-4d4d-402b-bc03-b0d5bb5a07fc",
     "version": [1, 0, 0],
     "min_engine_version": [1, 20, 30]
@@ -26,11 +26,11 @@
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "1.17.0-beta"
+      "version": "2.0.0-beta"
     },
     {
       "module_name": "@minecraft/server-ui",
-      "version": "1.4.0-beta"
+      "version": "2.0.0-beta"
     },
     {
       "uuid": "73ce64e5-bfce-4fe3-bcdd-338d60f361d1",

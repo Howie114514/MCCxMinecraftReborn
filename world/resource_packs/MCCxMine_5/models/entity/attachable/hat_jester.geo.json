@@ -1,0 +1,213 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.hat_jester",
+        "texture_width": 64,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 4.5,
+        "visible_bounds_offset": [
+          0,
+          1.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "waist",
+          "parent": "root",
+          "pivot": [
+            0,
+            12,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "waist",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "head",
+          "parent": "body",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "hat",
+          "parent": "head",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "hat_alph",
+          "parent": "hat",
+          "pivot": [
+            0.5,
+            32,
+            1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4,
+                31,
+                -4
+              ],
+              "size": [
+                8,
+                5,
+                8
+              ],
+              "uv": [
+                1,
+                1
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                31,
+                -4
+              ],
+              "size": [
+                8,
+                2,
+                8
+              ],
+              "inflate": 0.25,
+              "uv": [
+                1,
+                22
+              ]
+            },
+            {
+              "origin": [
+                0,
+                34,
+                0
+              ],
+              "size": [
+                10,
+                7,
+                0
+              ],
+              "pivot": [
+                0,
+                37,
+                0
+              ],
+              "rotation": [
+                0,
+                -45,
+                0
+              ],
+              "uv": [
+                0,
+                14
+              ]
+            },
+            {
+              "origin": [
+                0,
+                34,
+                0
+              ],
+              "size": [
+                10,
+                7,
+                0
+              ],
+              "pivot": [
+                0,
+                37,
+                0
+              ],
+              "rotation": [
+                0,
+                45,
+                0
+              ],
+              "uv": [
+                0,
+                14
+              ]
+            },
+            {
+              "origin": [
+                0,
+                34,
+                0
+              ],
+              "size": [
+                10,
+                7,
+                0
+              ],
+              "pivot": [
+                0,
+                37,
+                0
+              ],
+              "rotation": [
+                0,
+                135,
+                0
+              ],
+              "uv": [
+                0,
+                14
+              ]
+            },
+            {
+              "origin": [
+                0,
+                34,
+                0
+              ],
+              "size": [
+                10,
+                7,
+                0
+              ],
+              "pivot": [
+                0,
+                37,
+                0
+              ],
+              "rotation": [
+                0,
+                -137.5,
+                0
+              ],
+              "uv": [
+                0,
+                14
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

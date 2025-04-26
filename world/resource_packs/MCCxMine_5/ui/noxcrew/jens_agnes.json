@@ -1,0 +1,158 @@
+{
+  "namespace": "jens_agnes",
+
+  "jens_agnes_entry": {
+    "type": "panel",
+    "size": ["72%", "14%"],
+    "anims": ["@jens_agnes.anim_jens_agnes_entry"],
+    "anchor_from": "left_middle",
+    "layer": 53,
+    
+    "$atext": "$actionbar_text",
+    "visible": "$is_visible",
+    "$is_visible|default": false,
+    "variables": [
+      {
+        "requires": "((not ($atext - '§znox:mojang_entry_' = $atext)))",
+        "$is_visible": true
+      }
+    ],
+    "controls": [
+
+      {
+        "jens_agnes_panel_entry": {
+          "size": ["88px", "88px"],
+          "offset": [0, -40],
+          "layer": 53,
+          "type": "image",
+          "keep_ratio": false,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_left",
+          "texture": "$jens_agnes_image",
+          "alpha": 1,
+          "uv_size": [44, 44],
+          "uv": "@jens_agnes.anim_jens_agnes_wait",
+
+          "$jens_agnes_image|default": "textures/ui/n/jens_agnes/jens",
+          "variables": [
+            {
+              "requires": "((not ($atext - 'nox:mojang_entry_jens' = $atext)))",
+              "$jens_agnes_image": "textures/ui/n/jens_agnes/jens"          },
+          {
+              "requires": "((not ($atext - 'nox:mojang_entry_agnes' = $atext)))",
+              "$jens_agnes_image": "textures/ui/n/jens_agnes/agnes"          }
+          ]
+        }
+      }
+    ]
+  },
+
+  "jens_agnes_exit": {
+    "type": "panel",
+    "size": ["72%", "14%"],
+    "anims": ["@jens_agnes.anim_jens_agnes_exit"],
+    "anchor_from": "left_middle",
+    "layer": 52,
+    "$atext": "$actionbar_text",
+    "visible": "$is_visible",
+    "$is_visible|default": true,
+    "alpha": "$ja_alpha",
+    "$ja_alpha|default": 0,
+    "variables": [
+      {
+        "requires": "((not ($atext - '§znox:mojang_entry_' = $atext)))"
+      },
+      {
+        "requires": "((not ($atext - '§znox:mojang_exit_' = $atext)))"
+      }
+    ],
+    "controls": [
+
+      {
+        "jens_panel_exit": {
+          "size": ["88px", "88px"],
+          "offset": [0, -40],
+          "layer": 52,
+          "type": "image",
+          "keep_ratio": false,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_left",
+          "texture": "textures/ui/n/jens_agnes/jens_exit",
+          "alpha": "$ja_alpha",   
+          "visible": true, 
+          "$ja_alpha|default": 0.0001,
+          "variables": [
+            {
+              "requires": "((not ($atext - 'nox:mojang_exit_jens' = $atext)))",
+              "$ja_alpha": 1         }
+          ]
+        }
+      },
+      {
+        "agnes_panel_exit": {
+          "size": ["88px", "88px"],
+          "offset": [0, -40],
+          "layer": 52,
+          "type": "image",
+          "keep_ratio": false,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_left",
+          "texture": "textures/ui/n/jens_agnes/agnes_exit",
+          "alpha": "$ja_alpha",   
+          "visible": true, 
+          "$ja_alpha|default": 0.0001,
+          "variables": [
+          {
+              "requires": "((not ($atext - 'nox:mojang_exit_agnes' = $atext)))",
+              "$ja_alpha": 1         }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "anim_jens_agnes_entry": {
+    "anim_type": "offset",
+    "easing": "out_quart",
+
+    "from": [-800, 0],
+    "to": [0, 0],
+    "duration": 0.8
+  },
+  "anim_jens_agnes_wait": {
+    "anim_type": "aseprite_flip_book",
+		"initial_uv": [0, 0]
+  },
+  "anim_jens_agnes_exit": {
+    "anim_type": "offset",
+    "easing": "in_quart",
+    "from": [0, 0],
+    //this should be -800 to leave the screen completely
+    "to": [-1800, 0],
+    "duration": 2.5
+  },
+
+
+
+  "jens_agnes_entry_factory": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "factory": {
+      "name": "hud_actionbar_text_factory",
+      "control_ids": {
+        "hud_actionbar_text": "jens_agnes_entry@jens_agnes.jens_agnes_entry"
+      }
+    }
+  },
+  "jens_agnes_exit_factory": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "factory": {
+      "name": "hud_actionbar_text_factory",
+      "control_ids": {
+        "hud_actionbar_text": "jens_agnes_exit@jens_agnes.jens_agnes_exit"
+      }
+    }
+  }
+}

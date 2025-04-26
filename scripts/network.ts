@@ -1,6 +1,5 @@
 import { Entity, Player, system, Vector3, world } from "@minecraft/server";
 import EventEmitter from "eventemitter3";
-import { overworld } from "./constants";
 import environment, { envTypes } from "./environment";
 
 export type SpawnEntityPacketSentEvent = {
@@ -29,6 +28,7 @@ class NetworkEventEmitter extends EventEmitter<"spawnEntityPacketSent"> {
  */
 export namespace network {
   export function syncEntityProperty(target: Entity, player: Player, property: string, value: boolean) {
+    if (!isLevilamina()) return;
     try {
       return target.runCommand(`mccr syncprop ${property} ${value} "${player.name}"`).successCount >= 1;
     } catch (e) {
@@ -36,7 +36,7 @@ export namespace network {
     }
   }
   export function spawnParticleForPlayer(p: Player, particle: string, pos: Vector3) {
-    overworld.runCommand(`mccr particle ${particle} ${pos.x} ${pos.y} ${pos.z} "${p.name}"`);
+    world.getDimension("overworld").runCommand(`mccr particle ${particle} ${pos.x} ${pos.y} ${pos.z} "${p.name}"`);
   }
   export let afterEvents = new NetworkEventEmitter();
   export function isLevilamina() {

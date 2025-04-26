@@ -129,7 +129,7 @@ export class AceRace extends BasicGame {
           : t == Trophy.iron
           ? 140
           : 100;
-      p.runCommandAsync("/scriptevent mccr:add_coins " + c.toString());
+      p.runCommand("/scriptevent mccr:add_coins " + c.toString());
       let isNewRecord = false;
       if (
         Date.now() - this.timer[p.name] <

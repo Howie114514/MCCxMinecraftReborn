@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:crowned_frog",
+      "textures": {
+        "default": "textures/entity/n/npc/crowned_frog"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.crowned_frog"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "frog_idle": "animation.n.crowned_frog.frog_idle",
+        "transform": "animation.n.crowned_frog.transform",
+        "prince_idle": "animation.n.crowned_frog.prince_idle",
+        "ctrl": "controller.animation.crowned_frog.ctrl",
+        "special_random": "animation.n.crowned_frog.special_random",
+        "special1": "animation.n.crowned_frog.special1",
+        "special2": "animation.n.crowned_frog.special2",
+        "special3": "animation.n.crowned_frog.special3",
+        "special4": "animation.n.crowned_frog.special4",
+        "special_ctrl": "controller.animation.crowned_frog.special_ctrl"
+      },
+      "sound_effects": {
+        "transform1": "frog_transform1",
+        "transform2": "frog_transform2",
+        "special1": "frog_special1",
+        "special2": "frog_special2",
+        "special3": "frog_special3",
+        "special4": "frog_special4"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.random = 0;"
+        ],
+        "animate": [
+          "ctrl",
+          {
+            "special_ctrl": "!q.property('noxcrew.ft:transform')"
+          }
+        ],
+        "should_update_bones_and_effects_offscreen": true
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

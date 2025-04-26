@@ -16,7 +16,6 @@ type JSONItem = {
 
 export namespace inventory {
   export function save(p: Player) {
-    if (isReloaded) return;
     let inv = p.getComponent("inventory")?.container;
     if (inv) {
       let s = inv.size;
@@ -35,7 +34,7 @@ export namespace inventory {
       }
       p.setDynamicProperty("mccr.lobby:inventory", JSON.stringify(jsonInv));
     }
-    Logger.info(`保存${p.name}的物品栏成功！`);
+    Logger.info(`保存${p.name}的物品栏成功！`, new Error().stack);
   }
   export function set(
     p: Player,
@@ -62,7 +61,7 @@ export namespace inventory {
       }
       p.getComponent("inventory")?.container?.setItem(parseInt(index), is);
     });
-    Logger.info(`设置${p.name}的物品栏成功！`, JSON.stringify(hb));
+    Logger.info(`设置${p.name}的物品栏成功！`, JSON.stringify(hb), new Error().stack);
   }
   export function hasItem(p: Player, id: string) {
     let inv = p.getComponent("inventory");

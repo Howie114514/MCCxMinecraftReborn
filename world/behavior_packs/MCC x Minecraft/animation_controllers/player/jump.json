@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player_jump": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "ground": "query.is_on_ground"
+            }
+          ]
+        },
+        "ground": {
+          "transitions": [
+            {
+              "default": "!query.is_on_ground"
+            }
+          ],
+          "on_exit": [
+            "/tag @s add this.player",
+            "/execute if score @s block_effect = .effect.jump var run playsound jump @s",
+            "/execute if score @s block_effect = .effect.jump var run playsound jump_neutral @a[tag=!this.player] ~ ~ ~",
+            "/tag @s remove this.player"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.hub.open.door": {
+      "loop": true,
+      "animation_length": 2.5,
+      "timeline": {
+        "0.0": [
+          "/fill 104 4 285 104 5 285 air"
+        ],
+        "0.25": [
+          "/clone 104 5 284 104 6 284 104 4 284 masked move"
+        ],
+        "0.5": [
+          "/clone 99 6 283 109 6 285 99 5 283 masked move",
+          "/clone 104 5 284 104 6 284 104 4 284 masked move"
+        ],
+        "0.75": [
+          "/setblock 104 4 284 air"
+        ],
+        "1.0": [
+          "/clone 99 5 283 109 5 285 99 4 283 masked move"
+        ],
+        "1.5": [
+          "/fill 99 4 283 109 4 285 air",
+          "@s noxcrew:despawn"
+        ]
+      }
+    }
+  }
+}

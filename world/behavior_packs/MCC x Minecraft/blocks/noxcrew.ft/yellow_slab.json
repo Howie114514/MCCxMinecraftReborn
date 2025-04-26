@@ -1,0 +1,82 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "noxcrew.ft:yellow_slab",
+			"is_experimental": true,
+			"register_to_creative_menu": true,
+			"menu_category": {
+				"category": "construction",
+				"group": ""
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"enabled": 1,
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					8,
+					16
+				]
+			},
+			"minecraft:geometry": "geometry.n.common.unit_slab",
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": true,
+					"face_dimming": true,
+					"render_method": "opaque",
+					"texture": "concrete_yellow"
+				}
+			},
+			"minecraft:selection_box": {
+				"enabled": 1,
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					8,
+					16
+				]
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						],
+						"scale": [
+							1,
+							1,
+							1
+						],
+						"translation": [
+							0,
+							0.5,
+							0
+						]
+					}
+				},
+				"condition": "query.block_state('minecraft:vertical_half') == 'top'"
+			}
+		]
+	}
+}

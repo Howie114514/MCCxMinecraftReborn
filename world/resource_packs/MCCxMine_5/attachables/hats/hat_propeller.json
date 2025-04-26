@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:hat_propeller",
+      "textures": {
+        "default": "textures/entity/n/hub/hat_propeller"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.hat_propeller"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "propeller": "animation.n.hats.propeller"
+      },
+      "scripts": {
+        "animate": [
+          "propeller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

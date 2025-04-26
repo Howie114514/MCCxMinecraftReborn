@@ -1,0 +1,65 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.scoreboard",
+      "textures": {
+        "default": "textures/entity/timer/base",
+        "time_0": "textures/entity/timer/0",
+        "time_1": "textures/entity/timer/1",
+        "time_2": "textures/entity/timer/2",
+        "time_3": "textures/entity/timer/3",
+        "time_4": "textures/entity/timer/4",
+        "time_5": "textures/entity/timer/5",
+        "time_6": "textures/entity/timer/6",
+        "time_7": "textures/entity/timer/7",
+        "time_8": "textures/entity/timer/8",
+        "time_9": "textures/entity/timer/9",
+        "par_board_locked": "textures/entity/timer/par_board_locked",
+        "par_board_1": "textures/entity/timer/par_board_1",
+        "par_board_2": "textures/entity/timer/par_board_2",
+        "par_board_3": "textures/entity/timer/par_board_3",
+        "par_board_4": "textures/entity/timer/par_board_4",
+        "par_board_5": "textures/entity/timer/par_board_5",
+        "par_board_6": "textures/entity/timer/par_board_6",
+        "par_board_7": "textures/entity/timer/par_board_7",
+        "par_board_all": "textures/entity/timer/par_board_all"
+      },
+      "geometry": {
+        "default": "geometry.timer",
+        "par_board": "geometry.par_board",
+        "timer_minute_a": "geometry.timer_minute_a",
+        "timer_minute_b": "geometry.timer_minute_b",
+        "timer_second_a": "geometry.timer_second_a",
+        "timer_second_b": "geometry.timer_second_b",
+        "timer_millisecond_a": "geometry.timer_millisecond_a",
+        "timer_millisecond_b": "geometry.timer_millisecond_b"
+      },
+      "materials": {
+        "default": "base",
+        "alpha": "transparency",
+        "translucent": "translucent"
+      },
+      "animations": {
+        "idle": "animation.timer.idle",
+        "thursters": "animation.timer.thursters"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          "thursters"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.scoreboard_base",
+        "controller.render.par_board",
+        "controller.render.timer_minute_a",
+        "controller.render.timer_minute_b",
+        "controller.render.timer_second_a",
+        "controller.render.timer_second_b",
+        "controller.render.timer_millisecond_a",
+        "controller.render.timer_millisecond_b"
+      ]
+    }
+  }
+}

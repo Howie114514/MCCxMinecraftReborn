@@ -1,0 +1,378 @@
+{
+    "namespace": "challenge_list_modal",
+    "main_panel@common_modal_ui.main_panel": {
+        // Varibles that send data to the common modal
+        // Skye - These change the overall design of the UI
+        "$top_content_texture": "textures/ui/n/challenge_list/border_cell",
+        "$main_content": "challenge_list_modal.challenge_list",
+        "$main_content_size": ["100%", "100%c + 18px"],
+        "$main_content_texture": "textures/ui/n/challenge_list/secondary_content_cell",
+        "$side_icon": "textures/ui/n/challenge",
+        "$modal_size": [350, "100%"]
+    },
+    "challenge_list": {
+        "type": "stack_panel",
+        "orientation": "horizontal",
+        "size": ["100%", "100%cm + 10px"],
+        "offset": [0, -5],
+        "anchor_to": "center",
+        "anchor_from": "center",
+        "controls": [
+            {
+                "left_info_panel@challenge_list_modal.left_info_panel": {}
+            },
+            {
+                "button_layout@challenge_list_modal.button_layout": {}
+            }
+        ]
+    },
+    "left_info_panel": {
+        "type": "panel",
+        "size": ["35%", 118],
+        "anchor_to": "top_left",
+        "anchor_from": "top_left",
+        "controls": [
+            {
+                "left_info_bkg": {
+                    "size": ["100%", "100%"],
+                    "layer": 2,
+                    "type": "image",        
+                    "offset": [0, 11],
+                    "texture": "textures/ui/n/challenge_list/capebg",
+                    "alpha": 1,
+                    "keep_ratio": false,
+                    "anchor_to": "top_left",
+                    "anchor_from": "top_left",
+                    "controls": [
+                        {
+                            "cape_info": {
+                                "type": "stack_panel",
+                                "orientation": "vertical",
+                                "size": ["100%", "100%"],
+                                "controls": [
+                                    {
+                                        "cape_nested_title@challenge_list_modal.cape_nested_title": {}
+                                    },
+                                    {
+                                        "cape_display@challenge_list_modal.cape_display": {}
+                                    },
+                                    {
+                                        "cape_nested_bottom@challenge_list_modal.cape_nested_bottom": {}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "cape_nested_title": {
+        "type": "panel",
+        "size": ["100%", "15%"],
+        "controls": [
+            {
+                "cape_title": {
+                    "offset": [0, -6],
+                    "size": ["100%", "100%"],
+                    "layer": 4,
+                    "type": "image",
+                    "texture": "textures/ui/n/challenge_list/dark_top",
+                    "alpha": 1,
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "title": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "txt.ui.reward.cape",
+                                "line_padding": 2,
+                                "color": "white",
+                                "font_size": "normal",
+                                "font_scale_factor": 1.3,
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "text_alignment": "center",
+                                "offset": [0, -2],
+                                "size": ["default", "default"],
+                                "layer": 6,
+                                "shadow": false
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "cape_display": {
+        "size": ["100%", "70%"],
+        "layer": 4,
+        "type": "image",
+        // Skye change this with the real cape image
+        "texture": "textures/ui/n/challenge_list/cape",
+        "alpha": 1,
+        "keep_ratio": true
+    },
+    "cape_nested_bottom": {
+        "type": "panel",
+        "size": ["100%", "15%"],
+        "controls": [
+            {
+                "cape_data": {
+                    "size": ["100%", "100%"],
+                    "offset": [0, 5],
+                    "layer": 4,
+                    "type": "image",
+                    "texture": "textures/ui/n/challenge_list/dark_bottom",
+                    "alpha": 1,
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "title": {
+                                "type": "label",
+                                "font_type": "MinecraftTen",
+                                "text": "#form_text",
+                                "line_padding": 2,
+                                "color": "white",
+                                "font_size": "normal",
+                                "font_scale_factor": 1.3,
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "text_alignment": "center",
+                                "offset": [0, 0],
+                                "size": ["default", "default"],
+                                "layer": 6,
+                                "shadow": false
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "button_layout": {
+        "type": "panel",
+        "anchor_to": "center",
+        "anchor_from": "center",
+        "size": ["64%", 130],
+        "controls": [
+            {
+                "content@challenge_list_modal.icon_button_renderer": {}
+            }
+        ]
+    },
+    // Render the buttons
+    "icon_button_renderer": {
+        "type": "grid",
+        "size": ["100%", "100%c"],
+        "offset": [0, 5],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "grid_dimensions": [5, 3],
+        "grid_item_template": "challenge_list_modal.challenge_button",
+        "grid_rescaling_type": "horizontal",
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#maximum_grid_items"
+            }
+        ]
+    },
+    "challenge_button": {
+        "type": "panel",
+        "$locked_flag": "§l§o§c§k",
+        
+        "size": ["20%", "40px"],
+        "controls": [
+            {
+                "button@common.button": {
+                    "size": ["100%", "100%"],
+                    "layer": 1,
+                    "$pressed_button_name": "button.form_button_click",
+                    "default_focus_precedence": 1,
+                    "controls": [
+                        {
+                            "default@challenge_list_modal.challenge_button_inside": {
+                                "$state": "default"
+                            }
+                        },
+                        {
+                            "hover@challenge_list_modal.challenge_button_inside": {
+                                "$state": "hover"
+                            }
+                        },
+                        {
+                            "pressed@challenge_list_modal.challenge_button_inside": {
+                                "$state": "pressed"
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_type": "collection_details",
+                            "binding_collection_name": "form_buttons"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Inside the button, displays the image & the text
+    "challenge_button_inside": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "$color|default": "white",
+        // Skye change these for the locked and unlocked buttons
+        "$unlocked_button_texture|default": "textures/ui/n/challenge_list/unlocked",
+        "$locked_button_texture|default": "textures/ui/n/challenge_list/locked",
+        "size": ["100%", "100%"],
+        "offset": [0, 0],
+        // Skye - Changes color on hover
+        // I wanted to use texture here but I could not get the locked/unlocked working
+        "variables": [
+            {
+                "requires": "($state = 'hover')",
+                "$color": [0.4, 0.4, 0.2]
+            }
+        ],
+        "controls": [
+            {
+                "button_inside@challenge_list_modal.button_inside": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "#form_button_text",
+                "binding_name_override": "#form_button_text",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            }
+        ]
+    },
+    "button_inside": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": ["100%", "100%"],
+        "offset": [0, 0],
+        "controls": [
+            {
+                "button_icon@challenge_list_modal.button_icon_wrapper": {}
+            }
+        ]
+    },
+    "button_icon_wrapper": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "controls": [
+            {
+                "disabled_button": {
+                    "size": ["100%", 40],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "layer": 2,
+                    "type": "image",
+                    "color": "$color",
+                    "texture": "$locked_button_texture",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "button_icon_image@challenge_list_modal.button_icon_image": {}
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not ((#form_button_text - $locked_flag) = #form_button_text))",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "active_button": {
+                    "size": ["100%", 40],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "layer": 2,
+                    "type": "image",
+                    "color": "$color",
+                    "texture": "$unlocked_button_texture",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "button_icon_image@challenge_list_modal.button_icon_image": {}
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "((#form_button_text - $locked_flag) = #form_button_text)",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "#form_button_texture",
+                "binding_name_override": "#button_texture",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_name": "#form_button_texture_file_system",
+                "binding_name_override": "#texture_file_system",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(not ((#button_texture = '') or (#button_texture = 'loading')))",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "button_icon_image": {
+        "size": ["100% - 10px", "100% - 10px"],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer": 2,
+        "type": "image",
+        "keep_ratio": true,
+        "bilinear": true,
+        "bindings": [
+            {
+                "binding_name": "#form_button_texture",
+                "binding_name_override": "#texture",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_name": "#form_button_texture_file_system",
+                "binding_name_override": "#texture_file_system",
+                "binding_type": "collection",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+                "target_property_name": "#visible"
+            }
+        ]
+    }
+}

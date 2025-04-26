@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:hat_birthday_present",
+      "textures": {
+        "default": "textures/entity/n/hub/hat_birthday_present"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.hat_birthday_present"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "render_controllers": [
+        "controller.render.base"
+      ]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.animator",
+      "is_spawnable": false,
+      "properties": {
+        "noxcrew:animation": {
+          "type": "int",
+          "range": [
+            0,
+            5
+          ],
+          "default": 0
+        }
+      },
+      "animations": {
+        "hub.open.door": "animation.hub.open.door"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "hub.open.door": "q.property('noxcrew:animation') == 1"
+          }
+        ]
+      },
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "height": 0,
+        "width": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:set_hub.open.door": {
+        "set_property": {
+          "noxcrew:animation": 1
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

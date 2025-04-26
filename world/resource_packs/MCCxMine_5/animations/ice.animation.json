@@ -1,0 +1,94 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.ft.ice.melt": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 10,
+      "bones": {
+        "large": {
+          "scale": {
+            "0.0": [
+              1,
+              1,
+              1
+            ],
+            "3.0": [
+              1,
+              1,
+              1
+            ],
+            "10.0": [
+              1,
+              0.6,
+              1
+            ]
+          }
+        },
+        "small": {
+          "scale": {
+            "0.0": [
+              1,
+              1,
+              1
+            ],
+            "3.0": [
+              1,
+              1,
+              1
+            ],
+            "10.0": [
+              1,
+              0.45,
+              1
+            ]
+          }
+        },
+        "mid": {
+          "scale": {
+            "0.0": [
+              1,
+              1,
+              1
+            ],
+            "3.0": [
+              1,
+              1,
+              1
+            ],
+            "10.0": [
+              1,
+              0.4,
+              1
+            ]
+          }
+        }
+      },
+      "particle_effects": {
+        "2.0": {
+          "effect": "melting"
+        },
+        "3.0": {
+          "effect": "melting"
+        },
+        "4.0": {
+          "effect": "melting"
+        },
+        "5.0": {
+          "effect": "melting"
+        },
+        "6.0": {
+          "effect": "melting"
+        },
+        "7.0": {
+          "effect": "melting"
+        },
+        "8.0": {
+          "effect": "melting"
+        },
+        "9.0": {
+          "effect": "melting"
+        }
+      }
+    }
+  }
+}

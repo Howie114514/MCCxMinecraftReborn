@@ -1,0 +1,127 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.biome_icon",
+      "properties": {
+        "noxcrew:biomes": {
+          "client_sync": true,
+          "type": "enum",
+          "values": [
+            "locked",
+            "nether",
+            "plains",
+            "jungle",
+            "caves",
+            "desert",
+            "ocean",
+            "cold",
+            "all"
+          ],
+          "default": "locked"
+        }
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:set_biome.locked": {
+        "set_property": {
+          "noxcrew:biomes": "locked"
+        }
+      },
+      "noxcrew:set_biome.nether": {
+        "set_property": {
+          "noxcrew:biomes": "nether"
+        }
+      },
+      "noxcrew:set_biome.plains": {
+        "set_property": {
+          "noxcrew:biomes": "plains"
+        }
+      },
+      "noxcrew:set_biome.jungle": {
+        "set_property": {
+          "noxcrew:biomes": "jungle"
+        }
+      },
+      "noxcrew:set_biome.caves": {
+        "set_property": {
+          "noxcrew:biomes": "caves"
+        }
+      },
+      "noxcrew:set_biome.desert": {
+        "set_property": {
+          "noxcrew:biomes": "desert"
+        }
+      },
+      "noxcrew:set_biome.ocean": {
+        "set_property": {
+          "noxcrew:biomes": "ocean"
+        }
+      },
+      "noxcrew:set_biome.cold": {
+        "set_property": {
+          "noxcrew:biomes": "cold"
+        }
+      },
+      "noxcrew:set_biome.all": {
+        "set_property": {
+          "noxcrew:biomes": "all"
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

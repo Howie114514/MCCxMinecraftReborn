@@ -1,0 +1,188 @@
+{
+    "namespace": "fake_subtitle",
+
+    "fake_subchat": {
+        "type": "panel",
+        "size": ["100%", "100%"],  
+          "layer": 41,
+        "controls": [
+            {
+                "fake_subchat_panel@fake_subchat_panel": {
+                    "bindings": [
+                        {
+                            "binding_name": "#chat_text",
+                            "binding_name_override": "#text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "chat_text_grid",
+                            "binding_condition": "once"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "((not ((#text - '§z§v') = #text)) and ((#text - '§n§o§x') = #text))",
+                            "target_property_name": "#visible",
+                            "binding_condition": "once"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not ((#text - '§z§v') = #text))",
+                            "target_property_name": "#enabled",
+                            "binding_condition": "once"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "fake_subtitle": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "layer": 41,
+        "controls": [
+            {
+                "fake_subtitle_panel": {
+                    "type": "panel",
+                  //pos medium, waiting game message etc
+                   "$top_offset|default": [0, 0],
+                    "offset": "$top_offset",
+        "variables": [
+            {
+              "requires": "$desktop_screen",
+              "$top_offset": [0, -26]
+            },
+            {
+                "requires": "$pocket_screen",
+                "$top_offset": [0, -26]
+            }
+          ],                    
+          "anims": ["@fake_subtitle.anim_actionbar_text_background_alpha_out_custom"],
+                    "controls": [
+                        {
+                            "fake_subtitle_text_bg": {
+                                "type": "image",
+                                "size": ["100%c + 12px", "100%c + 5px"],
+                                "offset": [0, "50%-70px"],
+                                "anims": ["@fake_subtitle.anim_actionbar_text_background_alpha_out_custom"],
+                                "texture": "textures/ui/hud_tip_text_background_custom",
+                                "alpha": 0.65,
+                                "controls": [
+                                    {
+                                        "fake_subtitle_message": {
+                                            "type": "label",
+                                            "$title_text|default": "#hud_title_text_string",
+                                            "$custom_subtitle|default": "($title_text - '§z§v')",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "color": "$tool_tip_text",
+                                            "anims": ["@fake_subtitle.anim_actionbar_text_background_alpha_out_custom"],
+                                            "layer": 31,
+                                            "text": "$custom_subtitle",
+                                            "localize": true
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "#hud_title_text_string"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "((not (#hud_title_text_string - '§z§v' = #hud_title_text_string)))",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "fake_subchat_panel": {
+        "type": "panel",
+        "$top_offset|default": [0, 0],
+        "offset": "$top_offset",
+        "variables": [
+            {
+              "requires": "$desktop_screen",
+              "$top_offset": [0, -42]
+            },
+            {
+                "requires": "$pocket_screen",
+                "$top_offset": [0, -42]
+            }
+          ],      
+        //pos highest game name, grid runners room name etc
+        "anims": ["@fake_subtitle.anim_actionbar_text_background_alpha_out_fakechat"],
+        "controls": [
+            {
+                "fake_chat_text_bg": {
+                    "type": "image",
+                    "size": ["100%c + 12px", "100%c + 5px"],
+                    "offset": [0, "50%-70px"],
+                    "anims": ["@fake_subtitle.anim_actionbar_text_background_alpha_out_fakechat"],
+                    "texture": "textures/ui/hud_tip_text_background_custom",
+                    "alpha": 0.65,
+                    "controls": [
+                        {
+                            "fake_chat_message": {
+                                "type": "label",
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "color": "$tool_tip_text",
+                                "anims": ["@fake_subtitle.anim_actionbar_text_background_alpha_out_fakechat"],
+                                "layer": 31,
+                                "text": "#text",
+                                "localize": true,
+                                "bindings": [
+                                    {
+                                        "binding_name": "#chat_text",
+                                        "binding_name_override": "#text",
+                                        "binding_type": "collection",
+                                        "binding_collection_name": "chat_text_grid",
+                                        "binding_condition": "once"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "anim_actionbar_text_background_alpha_out_custom": {
+        "anim_type": "alpha",
+        "easing": "in_expo",
+        //how long fake actionbars stay on screen
+        "duration": 8,
+        "from": 1,
+        "to": 0
+    },
+    "anim_actionbar_text_background_alpha_out_fakechat": {
+        "anim_type": "alpha",
+        "easing": "in_expo",
+        //how long fake chat actionbars stay on screen
+        "duration": 5,
+        "from": 1,
+        "to": 0
+    },
+    "fake_subchat_factory": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "factory": {
+            "name": "chat_item_factory",
+            "control_ids": {
+                "chat_item": "chat_item@fake_subtitle.fake_subchat"
+            }
+        }
+    },
+    "fake_subtitle_factory": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "factory": {
+            "name": "hud_title_text_factory",
+            "control_ids": {
+                "hud_title_text": "fake_subtitle@fake_subtitle.fake_subtitle"
+            }
+        }
+    }
+}

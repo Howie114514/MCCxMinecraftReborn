@@ -1,0 +1,322 @@
+{
+    "namespace": "common_modal_ui",
+    "main_panel": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "controls": [
+            {
+                "main_modal": {
+                    "type": "input_panel",
+                    "inline_modal": true,
+                    "layer": 3,
+                    "size": ["100%c", "100%"],
+                    "controls": [
+                        {
+                            "main_panel@common_modal_ui.main_panel_internal": {}
+                        }
+                    ]
+                }
+            },
+            {
+                "background_closer@common.button": {
+                    "size": ["100%", "100%"],
+                    "layer": 2,
+                    "$pressed_button_name": "button.menu_exit",
+                    "focus_enabled": false,
+                    "controls": [
+                        {
+                            "default": {
+                                "type": "panel",
+                                "size": ["100%", "100%"]
+                            }
+                        },
+                        {
+                            "hover": {
+                                "type": "panel",
+                                "size": ["100%", "100%"]
+                            }
+                        },
+                        {
+                            "pressed": {
+                                "type": "panel",
+                                "size": ["100%", "100%"]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    // Custom Image Button Grid UI
+    "main_panel_internal": {
+        // Variables
+        // Top Content Vars
+        "$top_content|default": "",
+        "$top_content_texture|default": "textures/ui/background_panel",
+        // Main Content Vars
+        "$main_content_texture|default": "textures/ui/background_panel",
+        "$main_content|default": "",
+        // bottom Content Vars
+        "$bottom_content|default": true,
+        "$bottom_content_custom|default": false,
+        "$bottom_content_custom_texture|default": "textures/ui/background_panel",
+        // Extra Vars
+        "$close_button|default": true,
+        "$side_icon|default": "",
+        "$side_icon_offset|default": [-150, 0],
+        // Currency
+        "$currency|default": false,
+        "$currency_offset|default": [135, 0],
+        // Main Panel
+        "type": "stack_panel",
+        // move main panel up a little
+        "offset": [0, -10],
+        "$modal_size|default": [200, "100%"],
+        "size": "$modal_size",
+        "orientation": "vertical",
+        "controls": [
+            // Spacer - Ensures vertical centering
+            {
+                "top_spacer": {
+                    "type": "panel",
+                    "size": [1, "fill"]
+                }
+            },
+            // Close_button
+            {
+                "close_button": {
+                    "type": "panel",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "size": ["100%", 20],
+                    "controls": [
+                        // Close button
+                        {
+                            "close_button@server_form.custom_close_button": {
+                                "ignored": "(not $close_button)"
+                            }
+                        }
+                    ]
+                }
+            },
+            // Spacer
+            {
+                "spacer": {
+                    "type": "panel",
+                    // between top of panel and close
+                    "size": ["100%", -2]
+                }
+            },
+            {
+                "custom_top_content": {
+                    "ignored": "($top_content = '')",
+                    "type": "stack_panel",
+                    "orientation": "vertical",
+                    "size": ["100%", "100%c"],
+                    "controls": [
+                        {
+                            "top_content@$top_content": {}
+                        },
+                        {
+                            "top_content_background": {
+                                "$top_content_size|default": ["100%", "25px"],
+                                "size": "$top_content_size",
+                                "offset": [0, 9],
+                                "layer": 3,
+                                "type": "image",
+                                "texture": "$top_content_texture",
+                                "alpha": 1,
+                                "keep_ratio": false
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "static_top_content": {
+                    "ignored": "(not ($top_content = ''))",
+                    "type": "panel",
+                    "size": ["100%", "100%c"],
+                    "controls": [
+                        {
+                            "top_content_background": {
+                                "$top_content_size|default": ["100%", "65%c - 10px"],
+                                "offset": [0, 9],
+                                "size": "$top_content_size",
+                                "layer": 3,
+                                "type": "image",
+                                "texture": "$top_content_texture",
+                                "alpha": 1,
+                                "keep_ratio": false,
+                                "controls": [
+                                    {
+                                        "icon": {
+                                            "ignored": "($side_icon = '')",
+                                            "type": "image",
+                                            "layer": 4,
+                                            "size": ["100%", "100%c + 24px"],
+                                            "offset": "$side_icon_offset",
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "keep_ratio": true,
+                                            "bilinear": false,
+                                            "texture": "$side_icon"
+                                        }
+                                    },
+                                    {
+                                        "title": {
+                                            "type": "label",
+                                            "font_type": "MinecraftTen",
+                                            "text": "#title_text",
+                                            "line_padding": 2,
+                                            "color": "white",
+                                            "font_size": "normal",
+                                            "font_scale_factor": 1.6,
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "text_alignment": "center",
+                                            "offset": [0, -2],
+                                            "size": ["default", "default"],
+                                            "layer": 6,
+                                            "shadow": true,
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "#title_text",
+                                                    "binding_type": "global"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "title_shadow": {
+                                            "type": "label",
+                                            "font_type": "MinecraftTen",
+                                            "text": "#title_text",
+                                            "line_padding": 2,
+                                            "color": "black",
+                                            "font_size": "normal",
+                                            "font_scale_factor": 1.6,
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "text_alignment": "center",
+                                            "offset": [0.5, -1.8],
+                                            "size": ["default", "default"],
+                                            "alpha": 0.4,
+                                            "layer": 5,
+                                            "shadow": false,
+                                            "bindings": [
+                                                {
+                                                    "binding_name": "#title_text",
+                                                    "binding_type": "global"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "coin_display": {
+                                            "ignored": "(not $currency)",
+                                            "type": "label",
+                                            "text": "#form_text",
+                                            "line_padding": 2,
+                                            "color": "white",
+                                            "font_size": "normal",
+                                            "font_scale_factor": 1.0,
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "text_alignment": "center",
+                                            "offset": "$currency_offset",
+                                            "size": ["default", "default"],
+                                            "layer": 6,
+                                            "shadow": true
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            // Main Content
+            {
+                "main_content_renderer": {
+                    "ignored": "($main_content = '')",
+                    "type": "panel",
+                    "size": ["100%", "100%c"],
+                    "controls": [
+                        {
+                            "main_content_background": {
+                                "$main_content_size|default": ["100%", "100%c + 24px"],
+                                "size": "$main_content_size",
+                                "layer": 2,
+                                "type": "image",
+                                "texture": "$main_content_texture",
+                                "alpha": 1,
+                                "keep_ratio": false,
+                                "tiled": true,
+                                "tiled_scale": [0.5, 0.5],
+                                "controls": [
+                                    {
+                                        "main_content@$main_content": {}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            // bottom Content
+            {
+                "bottom_border": {
+                    "ignored": "(not $bottom_content)",
+                    "type": "panel",
+                    "size": ["100%", "5%c"],
+                    "layer": 2,
+                    "controls": [
+                        {
+                            "bottom_content_background": {
+                                "$bottom_content_size|default": ["100%", "50%c + 24px"],
+                                "size": "$bottom_content_size",
+                                "offset": [0, -9],
+                                "layer": 3,
+                                "type": "image",
+                                "texture": "$top_content_texture",
+                                "alpha": 1,
+                                "keep_ratio": false
+                            }
+                        }
+                    ]
+                }
+            },
+            // bottom Content, with custom bottom content texture on bottom
+            {
+                "bottom_border_custom": {
+                    "ignored": "(not $bottom_content_custom)",
+                    "type": "panel",
+                    "size": ["100%", "5%c"],
+                    "layer": 2,
+                    "controls": [
+                        {
+                            "bottom_content_custom_background": {
+                                "$bottom_content_size|default": ["100%", "50%c + 24px"],
+                                "size": "$bottom_content_size",
+                                "offset": [0, -9],
+                                "layer": 3,
+                                "type": "image",
+                                "texture": "$bottom_content_custom_texture",
+                                "alpha": 1,
+                                "keep_ratio": false
+                            }
+                        }
+                    ]
+                }
+            },
+            // Spacer - Ensures vertical centering
+            {
+                "bottom_spacer": {
+                    "type": "panel",
+                    "size": [1, "fill"]
+                }
+            }
+        ]
+    }
+}

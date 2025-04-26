@@ -1,0 +1,71 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:advert",
+      "geometry": {
+        "default": "geometry.advert",
+        "screenshots_a": "geometry.advert_screenshots_a",
+        "screenshots_b": "geometry.advert_screenshots_b",
+        "screenshots_c": "geometry.advert_screenshots_c"
+      },
+      "textures": {
+        "default": "textures/entity/advert/base",
+        "keyart": "textures/entity/advert/keyart",
+        "screenshot_1": "textures/entity/advert/screenshot_1",
+        "screenshot_2": "textures/entity/advert/screenshot_2",
+        "screenshot_3": "textures/entity/advert/screenshot_3",
+        "screenshot_4": "textures/entity/advert/screenshot_4",
+        "screenshot_5": "textures/entity/advert/screenshot_5"
+      },
+      "materials": {
+        "default": "base",
+        "alpha": "transparency"
+      },
+      "animations": {
+        "press": "animation.advert.press",
+        "press_ctrl": "controller.animation.advert.press_ctrl",
+        "rotate": "animation.advert.rotate",
+        "rotate_ctrl": "controller.animation.advert.rotate_ctrl",
+        "swap1": "animation.advert.swap1",
+        "hold1": "animation.advert.hold1",
+        "swap2": "animation.advert.swap2",
+        "hold2": "animation.advert.hold2",
+        "swap3": "animation.advert.swap3",
+        "hold3": "animation.advert.hold3",
+        "swap_ctrl": "controller.animation.advert.swap_ctrl",
+        "blink": "animation.advert.blink",
+        "type": "animation.advert.type",
+        "random_ctrl": "controller.animation.advert.random_ctrl"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.diff = math.floor(math.random(1, 500));",
+          "variable.freq = math.floor(math.random(2, 5));"
+        ],
+        "pre_animation": [
+          "variable.time = (query.time_stamp * 0.5) + variable.diff;",
+          "variable.anim = Math.cos(variable.time * variable.freq);"
+        ],
+        "animate": [
+          "random_ctrl",
+          "swap_ctrl",
+          "rotate_ctrl",
+          "press_ctrl"
+        ]
+      },
+      "sound_effects": {
+        "noxcrew": "noxcrew",
+        "button": "advert_button",
+        "swap": "advert_swap",
+        "type": "advert_type"
+      },
+      "render_controllers": [
+        "controller.render.advert",
+        "controller.render.advert_screenshots_a",
+        "controller.render.advert_screenshots_b",
+        "controller.render.advert_screenshots_c"
+      ]
+    }
+  }
+}

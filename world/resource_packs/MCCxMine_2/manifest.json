@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "MCC x Minecraft 15th Anniversary Party - Sands of Time RP",
+    "name": "MCC x Minecraft 15th Anniversary Party - Sands of Time RP",
+    "uuid": "60d21ec4-0d22-482b-9c0f-2eec5b5a2e1f",
+    "version": [
+      1,
+      0,
+      8
+    ],
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "MCC x Minecraft 15th Anniversary Party - Sands of Time RP",
+      "type": "resources",
+      "uuid": "a8637186-00b4-4db8-ba8f-267a82cb3bdc",
+      "version": [
+        1,
+        0,
+        8
+      ]
+    }
+  ]
+}

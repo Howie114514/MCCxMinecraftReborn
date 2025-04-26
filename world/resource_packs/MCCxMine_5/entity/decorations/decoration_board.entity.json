@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:decoration_board",
+      "textures": {
+        "default": "textures/entity/n/decorations/decoration_board"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.decoration_board"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

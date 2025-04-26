@@ -4,7 +4,12 @@ export namespace Logger {
   export var withColor = true;
   function log(...msg: any[]) {
     console.warn(...msg);
-    world.getPlayers({ tags: ["canSeeLogs"] }).forEach((p) => p.sendMessage(msg.join(" ")));
+    try {
+      world.getPlayers({ tags: ["canSeeLogs"] }).forEach((p) => p.sendMessage(msg.join(" ")));
+    } catch (e) {}
+  }
+  export function logObj(obj: any) {
+    log(`${withColor ? "\u00a7f" : ""}[MCCxMineR] INFO - (Object) ${JSON.stringify(obj)}`);
   }
   export function info(...msg: any[]) {
     log(`${withColor ? "\u00a7f" : ""}[MCCxMineR] INFO - `, ...msg);

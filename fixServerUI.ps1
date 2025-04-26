@@ -1,1 +1,0 @@
-Remove-Item -Force -Recurse "./node_modules/@minecraft/server-ui/node_modules"

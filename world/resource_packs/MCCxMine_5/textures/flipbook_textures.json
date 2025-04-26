@@ -1,0 +1,134 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/md/a",
+    "atlas_tile": "deepslate_bricks_a",
+    "ticks_per_frame": 7,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "blend_frames": true
+  },
+  {
+    "flipbook_texture": "textures/blocks/md/b",
+    "atlas_tile": "deepslate_bricks_b",
+    "ticks_per_frame": 6,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "blend_frames": true
+  },
+  {
+    "flipbook_texture": "textures/blocks/md/c",
+    "atlas_tile": "deepslate_bricks_c",
+    "ticks_per_frame": 7,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "blend_frames": true
+  },
+  {
+    "flipbook_texture": "textures/blocks/md/d",
+    "atlas_tile": "deepslate_brick_d",
+    "ticks_per_frame": 8,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "blend_frames": true
+  },
+  {
+    "flipbook_texture": "textures/blocks/acerace/speed_pad",
+    "atlas_tile": "speed_pad",
+    "ticks_per_frame": 2,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/acerace/jump_pad",
+    "atlas_tile": "jump_pad",
+    "ticks_per_frame": 2,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/acerace/launch_pad",
+    "atlas_tile": "launch_pad",
+    "ticks_per_frame": 2,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/md/rotating_light_on",
+    "atlas_tile": "rotating_light_on",
+    "ticks_per_frame": 2,
+    "frames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/water_still_grey",
+    "atlas_tile": "still_water_grey",
+    "ticks_per_frame": 8,
+    "blend_frames": true
+  }
+]

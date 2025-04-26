@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.animator",
+      "textures": {
+        "default": "textures/entity/invisible"
+      },
+      "geometry": {
+        "default": "geometry.invisible"
+      },
+      "materials": {
+        "default": "transparency"
+      },
+      "render_controllers": [
+        {
+          "controller.render.invisible": "0"
+        }
+      ]
+    }
+  }
+}

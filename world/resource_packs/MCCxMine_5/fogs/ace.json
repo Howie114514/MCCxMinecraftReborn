@@ -1,0 +1,16 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "noxcrew.ft:ace"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 32,
+        "fog_end": 250,
+        "fog_color": "#a6d8d8",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

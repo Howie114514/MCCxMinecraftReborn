@@ -1,0 +1,60 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"category": "",
+			"identifier": "noxcrew.ft:party_cake",
+			"is_experimental": true
+		},
+		"components": {
+			"item_properties": {
+				"allow_off_hand": 0,
+				"can_destroy_in_creative": 1,
+				"creative_category": 4,
+				"creative_group": "",
+				"damage": 0,
+				"enchantable_slot": "none",
+				"enchantable_value": 0,
+				"foil": 0,
+				"frame_count": 1,
+				"hand_equipped": 0,
+				"liquid_clipped": 0,
+				"max_stack_size": 64,
+				"minecraft:icon": {
+					"textures": {
+						"default": "ft.party_cake"
+					}
+				},
+				"mining_speed": 1,
+				"should_despawn": 1,
+				"stacked_by_data": 0,
+				"use_animation": 1,
+				"use_duration": 40
+			},
+			"minecraft:cooldown": {
+				"category": "food",
+				"duration": 2
+			},
+			"minecraft:food": {
+				"can_always_eat": 1,
+				"nutrition": 3,
+				"saturation_modifier": 0.6,
+				"using_converts_to":{}
+			},
+			"minecraft:icon": {
+				"texture": "ft.party_cake"
+			},
+			"minecraft:interact_button": "action.interact.eat",
+			"minecraft:max_stack_size": {
+				"value": 64
+			},
+			"minecraft:use_animation": {
+				"value": "eat"
+			},
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0.2,
+				"use_duration": 2
+			}
+		}
+	}
+}

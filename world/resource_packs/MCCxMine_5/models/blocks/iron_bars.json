@@ -1,0 +1,127 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.iron_bars",
+        "texture_width": 32,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bone",
+          "pivot": [
+            0,
+            16,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0,
+                14,
+                -2
+              ],
+              "size": [
+                8,
+                2,
+                4
+              ],
+              "uv": [
+                8,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -8,
+                14,
+                -2
+              ],
+              "size": [
+                8,
+                2,
+                4
+              ],
+              "uv": [
+                8,
+                0
+              ]
+            },
+            {
+              "origin": [
+                1,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                14,
+                2
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                5,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                14,
+                2
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -7,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                14,
+                2
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -3,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                14,
+                2
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

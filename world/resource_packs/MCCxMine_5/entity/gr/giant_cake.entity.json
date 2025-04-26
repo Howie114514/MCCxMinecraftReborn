@@ -1,0 +1,72 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:giant_cake",
+      "textures": {
+        "default": "textures/entity/n/gr/giant_cake"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.giant_cake"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "stats": "animation.n.giant_cake.stats",
+        "cake_progress": "animation.n.giant_cake.cake_progress",
+        "empty": "animation.n.giant_cake.empty",
+        "sponge": "animation.n.giant_cake.sponge",
+        "icing": "animation.n.giant_cake.icing",
+        "cherries": "animation.n.giant_cake.cherries",
+        "candle": "animation.n.giant_cake.candle",
+        "complete": "animation.n.giant_cake.complete",
+        "ctrl": "controller.animation.giant_cake.ctrl",
+        "disapear": "animation.n.giant_cake.disapear",
+        "disapear_ctrl": "controller.animation.giant_cake.disapear_ctrl"
+      },
+      "sound_effects": {
+        "sponge": "cake_sponge",
+        "icing": "cake_icing",
+        "cherries": "cake_cherries",
+        "candle": "cake_candle",
+        "complete": "cake_complete",
+        "disappear": "cake_disappear"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.trans = 0;"
+        ],
+        "pre_animation": [
+          "variable.milk_bucket = math.clamp(q.property('noxcrew.ft:milk_bucket'), 0, 2);",
+          "variable.egg = math.clamp(q.property('noxcrew.ft:egg'), 0, 2);",
+          "variable.sugar = math.clamp(q.property('noxcrew.ft:sugar'), 0, 2);",
+          "variable.wheat = math.clamp(q.property('noxcrew.ft:wheat'), 0, 2);",
+          "variable.cake_completion = v.milk_bucket + v.egg + v.sugar + v.wheat;"
+        ],
+        "animate": [
+          "stats",
+          {
+            "cake_progress": "v.cake_completion < 8"
+          },
+          {
+            "ctrl": "!q.property('noxcrew.ft:disappear')"
+          },
+          "disapear_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "cake_candle": "noxcrew.ft:cake_candle",
+        "cake_1": "noxcrew.ft:cake_1",
+        "cake_2": "noxcrew.ft:cake_2",
+        "cake_3": "noxcrew.ft:cake_3",
+        "cake_3a": "noxcrew.ft:cake_3_a",
+        "cake_4": "noxcrew.ft:cake_4"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

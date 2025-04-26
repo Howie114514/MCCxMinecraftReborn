@@ -1,7 +1,5 @@
-import { world } from "@minecraft/server";
-import { overworld } from "./constants";
+import { system, world } from "@minecraft/server";
 import { Logger } from "./logger";
-import { isDevMode } from "./buildInfo";
 
 export enum envTypes {
   vanilla = "vanilla",
@@ -11,11 +9,11 @@ export enum envTypes {
 
 var environment = { type: envTypes.vanilla };
 
-world.afterEvents.worldInitialize.subscribe(() => {
+system.beforeEvents.startup.subscribe(() => {
   try {
-    overworld.runCommand("ll list");
+    world.getDimension("overworld").runCommand("ll list");
     environment.type = envTypes.LeviLamina;
-    overworld.runCommand("mccr detect");
+    world.getDimension("overworld").runCommand("mccr detect");
     environment.type = envTypes.LevilaminaWithPlugin;
   } catch (e) {}
   Logger.info("======环境信息======");

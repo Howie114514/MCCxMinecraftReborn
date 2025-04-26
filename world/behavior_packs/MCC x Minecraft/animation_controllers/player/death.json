@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player_death": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "dead": "!q.is_alive"
+            }
+          ],
+          "on_exit": [
+            "/scoreboard players add @s deaths 1"
+          ]
+        },
+        "dead": {
+          "transitions": [
+            {
+              "default": "q.is_alive"
+            }
+          ],
+          "on_exit": [
+            "/execute if score @s course.state = .course_state.started var run function checkpoint/return"
+          ]
+        }
+      }
+    }
+  }
+}

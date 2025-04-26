@@ -1,0 +1,184 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.rotating_light_off",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0,
+          1.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bone",
+          "pivot": [
+            0,
+            3.05,
+            3.7
+          ],
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5,
+                -1.2,
+                4.7
+              ],
+              "size": [
+                10,
+                3,
+                10
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    44,
+                    25
+                  ],
+                  "uv_size": [
+                    -10,
+                    3
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    54,
+                    25
+                  ],
+                  "uv_size": [
+                    -10,
+                    3
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    64,
+                    25
+                  ],
+                  "uv_size": [
+                    -10,
+                    3
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    34,
+                    25
+                  ],
+                  "uv_size": [
+                    -10,
+                    3
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    44,
+                    15
+                  ],
+                  "uv_size": [
+                    -10,
+                    10
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    54,
+                    25
+                  ],
+                  "uv_size": [
+                    -10,
+                    -10
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -3,
+                1.8,
+                6.7
+              ],
+              "size": [
+                6,
+                8,
+                6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    12,
+                    21
+                  ],
+                  "uv_size": [
+                    -6,
+                    8
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    18,
+                    21
+                  ],
+                  "uv_size": [
+                    -6,
+                    8
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    24,
+                    21
+                  ],
+                  "uv_size": [
+                    -6,
+                    8
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    6,
+                    21
+                  ],
+                  "uv_size": [
+                    -6,
+                    8
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    12,
+                    15
+                  ],
+                  "uv_size": [
+                    -6,
+                    6
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    18,
+                    21
+                  ],
+                  "uv_size": [
+                    -6,
+                    -6
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

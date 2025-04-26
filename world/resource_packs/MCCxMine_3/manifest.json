@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "MCC x Minecraft 15th Anniversary Party - Ace Race RP",
+    "name": "MCC x Minecraft 15th Anniversary Party - Ace Race RP",
+    "uuid": "ea58faec-0574-43b0-858b-e5c8cc188ca4",
+    "version": [
+      1,
+      0,
+      8
+    ],
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "MCC x Minecraft 15th Anniversary Party - Ace Race RP",
+      "type": "resources",
+      "uuid": "0560133e-70f6-4e82-9af0-4e870e5d39fe",
+      "version": [
+        1,
+        0,
+        8
+      ]
+    }
+  ]
+}

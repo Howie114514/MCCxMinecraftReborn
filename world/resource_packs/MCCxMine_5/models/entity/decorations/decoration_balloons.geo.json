@@ -1,0 +1,262 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.decoration_balloons",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0,
+          1.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "anti_rot",
+          "parent": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "b1_alph",
+          "parent": "anti_rot",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                12,
+                0
+              ],
+              "size": [
+                1,
+                5,
+                0
+              ],
+              "uv": [
+                8,
+                18
+              ]
+            },
+            {
+              "origin": [
+                -1.5,
+                17,
+                0
+              ],
+              "size": [
+                3,
+                3,
+                0
+              ],
+              "uv": [
+                0,
+                3
+              ]
+            },
+            {
+              "origin": [
+                -0.5,
+                0,
+                0
+              ],
+              "size": [
+                1,
+                12,
+                0
+              ],
+              "uv": [
+                4,
+                18
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                20,
+                -4
+              ],
+              "size": [
+                8,
+                10,
+                8
+              ],
+              "uv": [
+                32,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "name": "b3_alph",
+          "parent": "anti_rot",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            7.49294,
+            0.32621,
+            2.52136
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                14,
+                0
+              ],
+              "size": [
+                1,
+                7,
+                0
+              ],
+              "uv": [
+                6,
+                18
+              ]
+            },
+            {
+              "origin": [
+                -1.5,
+                21,
+                0
+              ],
+              "size": [
+                3,
+                3,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -0.5,
+                0,
+                0
+              ],
+              "size": [
+                1,
+                14,
+                0
+              ],
+              "uv": [
+                2,
+                18
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                24,
+                -4
+              ],
+              "size": [
+                8,
+                10,
+                8
+              ],
+              "uv": [
+                32,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "b2_alph",
+          "parent": "anti_rot",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -9.99067,
+            0.43399,
+            7.46207
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                0,
+                0
+              ],
+              "size": [
+                1,
+                12,
+                0
+              ],
+              "uv": [
+                0,
+                18
+              ]
+            },
+            {
+              "origin": [
+                -1.5,
+                12,
+                0
+              ],
+              "size": [
+                3,
+                3,
+                0
+              ],
+              "uv": [
+                24,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                15,
+                -4
+              ],
+              "size": [
+                8,
+                10,
+                8
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

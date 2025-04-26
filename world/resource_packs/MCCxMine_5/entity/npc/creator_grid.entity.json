@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:creator_grid",
+      "textures": {
+        "default": "textures/entity/n/npc/creator_grid"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.creator_grid"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "idle": "animation.n.creator.smajor.idle",
+        "special_picker": "animation.n.creator.special_picker",
+        "special1": "animation.n.creator.smajor.special1",
+        "special2": "animation.n.creator.smajor.special2",
+        "special_ctrl": "controller.animation.creator.special_ctrl"
+      },
+      "sound_effects": {
+        "smajor_special1": "smajor_special1",
+        "smajor_special2": "smajor_special2"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.special = 0;"
+        ],
+        "animate": [
+          "idle",
+          "special_ctrl"
+        ]
+      },
+      "particle_effects": {
+        "creator_brush": "noxcrew.ft:creator_brush",
+        "creator_cake": "noxcrew.ft:creator_cake"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

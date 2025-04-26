@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.paintbrush.ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "pull": "query.is_using_item"
+            }
+          ]
+        },
+        "pull": {
+          "animations": [
+            {
+              "pull_fp": "c.is_first_person"
+            },
+            {
+              "pull_tp": "!c.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "fire": "!query.is_using_item"
+            }
+          ]
+        },
+        "fire": {
+          "animations": [
+            {
+              "fire_fp": "c.is_first_person"
+            },
+            {
+              "fire_tp": "!c.is_first_person"
+            }
+          ],
+          "sound_effects": [
+            {
+              "effect": "fire"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1094 @@
+## Meta
+pack.name=MCC x Minecraft 15주년 기념 RP	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=MCC x Minecraft 15주년 기념 이벤트를 위한 리소스 팩.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=MC 챔피언십 미니 게임 이벤트!	###
+txt.event_overview.2=NoxCrew가 Bedrock Edition에서 최고의 MC 챔피언십을 선사합니다! 매일 파티를 즐기고, 파쿠르에서 몬스터와의 전투까지 여러분의 실력을 시험하기 위해 만들어진 미니 게임에서 실력을 겨루세요.	###
+txt.event_overview.3=무료 꾸미기 아이템 15개를 받으세요. 새로 나온 멋진 망토도 놓치지 마세요!	###
+txt.event_overview.4=검을 잡아 싸울 준비를 하세요 - 대혼란이 기다립니다!	###
+txt.event_overview.5=이벤트는 한국 시간 기준으로 7월 23일 오전 3시에 시작하며 8월 5일 오전 7시까지 진행됩니다	###
+
+##VANILLA
+item.warped_sign.name=동굴 표지판 	###
+tile.warped_standing_sign.name=동굴 표지판 	###
+tile.warped_wall_sign.name=동굴 표지판 	###
+tile.prismarine.dark.name=금속 블록 	###
+tile.stone_slab2.prismarine.dark.name=금속 판 	###
+tile.dark_prismarine_stairs.name=철제 계단 	###
+
+##INTERACT TEXTS
+action.interact.open=열기	###This is meant as a verb, action.
+action.interact.take=획득	###This is meant as a verb, action.
+action.interact.grab=잡기	###This is meant as a verb, action.
+action.interact.pick_up=획득	###This is meant as a verb, action.
+action.interact.use=사용	###This is meant as a verb, action.
+action.interact.change_color=색상 변경	###This is meant as a verb, action.
+action.interact.deposit=배치	###This is meant as a verb, action.
+action.interact.interact=상호작용	###This is meant as a verb, action.
+action.interact.trash=버리기	###To throw away or "trash" an item
+action.interact.eat=먹기	###To eat something, like a food
+action.interact.drink=마시기	###To drink something, like a soda
+action.interact.paint=페인트	###The verb to paint.
+action.interact.gift=플레이어에게 선물하기	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=상점	###The verb, "to shop" or "to browse"
+action.interact.decorate=장식	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=탭하여 몰래 나가기	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=탭하여 몰래 나가기	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=나가려면 :_input_key.sneak: 키를 누르세요	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§o매일 새로운 그림이 공개됩니다.	###
+txt.sign.cave2=§o7가지 그림을 모두 해결하고 보상을 받으세요!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=빙결의 활	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=빙결의 활	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=철제 열쇠	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=황금 열쇠	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=다이아몬드 열쇠	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=네더라이트 열쇠	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=빈 페인트 붓	###
+item.noxcrew.ft:paintbrush_green.name=녹색 페인트 붓	###
+item.noxcrew.ft:paintbrush_yellow.name=노란색 페인트 붓	###
+item.noxcrew.ft:paintbrush_blue.name=파란색 페인트 붓	###
+item.noxcrew.ft:paintbrush_red.name=빨간색 페인트 붓	###
+item.noxcrew.ft:paintbrush_white.name=흰색 페인트 붓	###
+item.noxcrew.ft:paintbrush_black.name=검은색 페인트 붓	###
+item.noxcrew.ft:paintbrush_brown.name=갈색 페인트 붓	###
+item.noxcrew.ft:paintbrush_purple.name=보라색 페인트 붓	###
+item.noxcrew.ft:beanie_red.name=빨간색 토끼 비니	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=주황색 오셀롯 비니	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=노란색 야크 비니	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=연두색 라마 비니	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=녹색 도마뱀붙이 비니	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=물색 아홀로틀 비니	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=청록색 코요테 비니	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=파란색 박쥐 비니	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=보라색 판다 비니	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=분홍색 앵무새 비니	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=파티 모자	###
+item.noxcrew.ft:hat_propeller.name=프로펠러 모자	###
+item.noxcrew.ft:hat_crown_cake.name=케이크 왕관	###
+item.noxcrew.ft:hat_birthday_present.name=생일 선물 모자	###
+item.noxcrew.ft:hat_jester.name=광대 모자	###
+item.noxcrew.ft:hat_chicken_jockey.name=닭 라이더 모자	###
+item.noxcrew.ft:hat_boombox.name=대형 라디오 모자	###
+item.noxcrew.ft:foam_finger.name=거품 손가락	###
+item.noxcrew.ft:balloon_animal.name=동물 풍선	###
+item.noxcrew.ft:big_bubble_blower.name=거대한 비눗방울	###
+item.noxcrew.ft:silly_horn.name=우스꽝스러운 뿔	###
+item.noxcrew.ft:party_popper.name=파티용 폭죽	###
+item.noxcrew.ft:confetti_tag_prime.name=색종이 조각 태그	###
+item.noxcrew.ft:confetti_tag_leftover.name=색종이 조각 태그	###
+item.noxcrew.ft:pizza_box.name=피자 상자	###
+item.noxcrew.ft:celebration_fireworks.name=생일 폭죽	###
+item.noxcrew.ft:player_gift_giving.name=선물 상자	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=선물 상자	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=디스코 볼	###
+item.noxcrew.ft:beach_ball.name=물놀이용 공	###
+item.noxcrew.ft:balloon_helium.name=헬륨 풍선	###
+item.noxcrew.ft:leave_game.name=§6게임 나가기	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=피자 조각	###
+item.noxcrew.ft:mcc_burger.name=맛있는 버거	###
+item.noxcrew.ft:anniversary_hot_dog.name=맛있는 핫도그	###
+item.noxcrew.ft:party_cupcake.name=컵케이크	###
+item.noxcrew.ft:party_cake.name=케이크 조각	###
+item.noxcrew.ft:party_chips.name=칩 한 그릇	###
+item.noxcrew.ft:party_cookie.name=쿠키	###
+item.noxcrew.ft:party_soda.name=탄산 소다	###
+item.noxcrew.ft:cotton_candy.name=코튼캔디	###
+item.noxcrew.ft:popcorn.name=팝콘	###
+item.noxcrew.ft:super_wrap.name=건강식 랩	###
+item.noxcrew.ft:cosmetic_chest.name=장식 용품 상자	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=순간이동 지도	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=챌린지 목록	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=달걀	###
+item.noxcrew.ft:milk_bucket.name=우유 양동이	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=빙결의 활	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=빙결의 활	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=철제 열쇠	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=황금 열쇠	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=다이아몬드 열쇠	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=네더라이트 열쇠	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=빈 페인트 붓	###
+item.noxcrew.ft:paintbrush_green=녹색 페인트 붓	###
+item.noxcrew.ft:paintbrush_yellow=노란색 페인트 붓	###
+item.noxcrew.ft:paintbrush_blue=파란색 페인트 붓	###
+item.noxcrew.ft:paintbrush_red=빨간색 페인트 붓	###
+item.noxcrew.ft:paintbrush_white=흰색 페인트 붓	###
+item.noxcrew.ft:paintbrush_black=검은색 페인트 붓	###
+item.noxcrew.ft:paintbrush_brown=갈색 페인트 붓	###
+item.noxcrew.ft:paintbrush_purple=보라색 페인트 붓	###
+item.noxcrew.ft:beanie_red=빨간색 토끼 비니	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=주황색 오셀롯 비니	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=노란색 야크 비니	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=연두색 라마 비니	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=녹색 도마뱀붙이 비니	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=물색 아홀로틀 비니	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=청록색 코요테 비니	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=파란색 박쥐 비니	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=보라색 판다 비니	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=분홍색 앵무새 비니	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=파티 모자	###
+item.noxcrew.ft:hat_propeller=프로펠러 모자	###
+item.noxcrew.ft:hat_crown_cake=케이크 왕관	###
+item.noxcrew.ft:hat_birthday_present=생일 선물 모자	###
+item.noxcrew.ft:hat_jester=광대 모자	###
+item.noxcrew.ft:hat_chicken_jockey=닭 라이더 모자	###
+item.noxcrew.ft:hat_boombox=대형 라디오 모자	###
+item.noxcrew.ft:foam_finger=거품 손가락	###
+item.noxcrew.ft:balloon_animal=동물 풍선	###
+item.noxcrew.ft:big_bubble_blower=거대한 비눗방울	###
+item.noxcrew.ft:silly_horn=우스꽝스러운 뿔	###
+item.noxcrew.ft:party_popper=파티용 폭죽	###
+item.noxcrew.ft:confetti_tag_prime=색종이 조각 태그	###
+item.noxcrew.ft:confetti_tag_leftover=색종이 조각 태그	###
+item.noxcrew.ft:pizza_box=피자 상자	###
+item.noxcrew.ft:celebration_fireworks=생일 폭죽	###
+item.noxcrew.ft:player_gift_giving=선물 상자	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=선물 상자	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=디스코 볼	###
+item.noxcrew.ft:beach_ball=물놀이용 공	###
+item.noxcrew.ft:balloon_helium=헬륨 풍선	###
+item.noxcrew.ft:leave_game=§6게임 나가기	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=피자 조각	###
+item.noxcrew.ft:mcc_burger=맛있는 버거	###
+item.noxcrew.ft:anniversary_hot_dog=맛있는 핫도그	###
+item.noxcrew.ft:party_cupcake=컵케이크	###
+item.noxcrew.ft:party_cake=케이크 조각	###
+item.noxcrew.ft:party_chips=칩 한 그릇	###
+item.noxcrew.ft:party_cookie=쿠키	###
+item.noxcrew.ft:party_soda=탄산 소다	###
+item.noxcrew.ft:cotton_candy=코튼캔디	###
+item.noxcrew.ft:popcorn=팝콘	###
+item.noxcrew.ft:super_wrap=건강식 랩	###
+item.noxcrew.ft:cosmetic_chest=장식 용품 상자	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=순간이동 지도	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=챌린지 목록	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=달걀	###
+item.noxcrew.ft:milk_bucket=우유 양동이	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=속도 강화 블록	###
+tile.noxcrew.ft:launch_pad.name=발사 패드 블록	###
+tile.noxcrew.ft:jump_pad.name=점프 강화 블록	###
+tile.noxcrew.ft:painting_green.name=녹색 블록	###
+tile.noxcrew.ft:painting_yellow.name=노란색 블록	###
+tile.noxcrew.ft:painting_blue.name=파란색 블록	###
+tile.noxcrew.ft:painting_red.name=빨간색 블록	###
+tile.noxcrew.ft:painting_white.name=흰색 블록	###
+tile.noxcrew.ft:painting_black.name=검은색 블록	###
+tile.noxcrew.ft:painting_brown.name=갈색 블록	###
+tile.noxcrew.ft:painting_purple.name=보라색 블록	###
+tile.noxcrew.ft:elytra_icon.name=딱지날개 성문 블록	###
+tile.noxcrew.ft:audience_member_oof.name=움찔한 관객	###
+tile.noxcrew.ft:audience_member_angry.name=화난 관객	###
+tile.noxcrew.ft:audience_member_joy.name=즐거운 관객	###
+tile.noxcrew.ft:audience_member_happy.name=행복한 관객	###
+tile.noxcrew.ft:audience_member_unimpressed.name=심드렁한 관객	###
+tile.noxcrew.ft:audience_member_unsure.name=이해를 못하고 있는 관객	###
+tile.noxcrew.ft:audience_member_starstruck.name=입덕한 관객	###
+tile.noxcrew.ft:cake_centre.name=케이크 중앙	###
+tile.noxcrew.ft:cake_edge.name=케이크 모서리	###
+tile.noxcrew.ft:cake_cherry.name=케이크 체리	###
+tile.noxcrew.ft:window_spruce.name=전나무 창문	###
+tile.noxcrew.ft:window_oak.name=참나무 창문	###
+tile.noxcrew.ft:iron_bars.name=곧게 선 철창	###
+tile.noxcrew.ft:iron_bars_h.name=철창 반쪽	###
+tile.noxcrew.ft:iron_bars_c.name=철창 모서리	###
+tile.noxcrew.ft:castle_pink.name=분홍색 성 테라코타 	###
+tile.noxcrew.ft:sot_flower.name=횃불꽃 조명 	###
+tile.noxcrew.ft:metal_rigging_v.name=수평 금속 삭구	###
+tile.noxcrew.ft:metal_rigging_h.name=수직 금속 삭구	###
+tile.noxcrew.ft:modern_light.name=현대적인 조명	###
+tile.noxcrew.ft:rope.name=밧줄 블록	###
+tile.noxcrew.ft:hieroglyph_1_a.name=동굴 퍼즐 1일차 좌측 상단	###
+tile.noxcrew.ft:hieroglyph_1_b.name=동굴 퍼즐 1일차 우측 상단	###
+tile.noxcrew.ft:hieroglyph_1_c.name=동굴 퍼즐 1일차 좌측 하단	###
+tile.noxcrew.ft:hieroglyph_1_d.name=동굴 퍼즐 1일차 우측 하단	###
+tile.noxcrew.ft:hieroglyph_2_a.name=동굴 퍼즐 2일차 좌측 상단	###
+tile.noxcrew.ft:hieroglyph_2_b.name=동굴 퍼즐 2일차 우측 상단	###
+tile.noxcrew.ft:hieroglyph_2_c.name=동굴 퍼즐 2일차 좌측 하단	###
+tile.noxcrew.ft:hieroglyph_2_d.name=동굴 퍼즐 2일차 우측 하단	###
+tile.noxcrew.ft:hieroglyph_3_a.name=동굴 퍼즐 3일차 좌측 상단	###
+tile.noxcrew.ft:hieroglyph_3_b.name=동굴 퍼즐 3일차 우측 상단	###
+tile.noxcrew.ft:hieroglyph_3_c.name=동굴 퍼즐 3일차 좌측 하단	###
+tile.noxcrew.ft:hieroglyph_3_d.name=동굴 퍼즐 3일차 우측 하단	###
+tile.noxcrew.ft:hieroglyph_4_a.name=동굴 퍼즐 4일차 좌측 상단	###
+tile.noxcrew.ft:hieroglyph_4_b.name=동굴 퍼즐 4일차 우측 상단	###
+tile.noxcrew.ft:hieroglyph_4_c.name=동굴 퍼즐 4일차 좌측 하단	###
+tile.noxcrew.ft:hieroglyph_4_d.name=동굴 퍼즐 4일차 우측 하단	###
+tile.noxcrew.ft:hieroglyph_5_a.name=동굴 퍼즐 5일차 좌측 상단	###
+tile.noxcrew.ft:hieroglyph_5_b.name=동굴 퍼즐 5일차 우측 상단	###
+tile.noxcrew.ft:hieroglyph_5_c.name=동굴 퍼즐 5일차 좌측 하단	###
+tile.noxcrew.ft:hieroglyph_5_d.name=동굴 퍼즐 5일차 우측 하단	###
+tile.noxcrew.ft:hieroglyph_6_a.name=동굴 퍼즐 6일차 좌측 상단	###
+tile.noxcrew.ft:hieroglyph_6_b.name=동굴 퍼즐 6일차 우측 상단	###
+tile.noxcrew.ft:hieroglyph_6_c.name=동굴 퍼즐 6일차 좌측 하단	###
+tile.noxcrew.ft:hieroglyph_6_d.name=동굴 퍼즐 6일차 우측 하단	###
+tile.noxcrew.ft:hieroglyph_7_a.name=동굴 퍼즐 7일차 좌측 상단	###
+tile.noxcrew.ft:hieroglyph_7_b.name=동굴 퍼즐 7일차 우측 상단	###
+tile.noxcrew.ft:hieroglyph_7_c.name=동굴 퍼즐 7일차 좌측 하단	###
+tile.noxcrew.ft:hieroglyph_7_d.name=동굴 퍼즐 7일차 우측 하단	###
+tile.noxcrew.ft:bigcake_top.name=케이크 블록 상단	###
+tile.noxcrew.ft:bigcake_bottom.name=케이크 블록 하단	###
+tile.noxcrew.ft:cake_slice.name=케이크 조각	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=15주년 긴 배너 상부	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=15주년 긴 배너 하부	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=MCC 긴 배너 상부	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=MCC 긴 배너 하부	###
+tile.noxcrew.ft:decoration_bunting_a.name=장식용 깃발 흰색	###
+tile.noxcrew.ft:decoration_bunting_b.name=장식용 깃발 녹색	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=장식용 깃발 MCC	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=창대 깃발 녹색	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=창대 깃발 흰색	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=창대 깃발 MCC	###
+tile.noxcrew.ft:decoration_flag_mcc.name=MCC 깃발 소형	###
+tile.noxcrew.ft:decoration_flag_15.name=15주년 깃발 소형	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=15주년 깃발 상부	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=15주년 깃발 하부	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=MCC 깃발 상부	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=MCC 깃발 하부	###
+tile.noxcrew.ft:plush_red.name=붉은 토끼 인형	###
+tile.noxcrew.ft:plush_orange.name=주황색 오셀롯 인형	###
+tile.noxcrew.ft:plush_yellow.name=노란색 야크 인형	###
+tile.noxcrew.ft:plush_lime.name=연두색 라마 인형	###
+tile.noxcrew.ft:plush_green.name=녹색 도마뱀 인형	###
+tile.noxcrew.ft:plush_cyan.name=청록색 코요테 인형	###
+tile.noxcrew.ft:plush_aqua.name=물색 아홀로틀 인형	###
+tile.noxcrew.ft:plush_blue.name=파란색 박쥐 인형	###
+tile.noxcrew.ft:plush_pink.name=분홍색 앵무새 인형	###
+tile.noxcrew.ft:plush_purple.name=보라색 판다 인형	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=MCC 배너 좌측 상부	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=MCC 배너 우측 상부	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=MCC 배너 좌측 하부	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=MCC 배너 우측 하부	###
+tile.noxcrew.ft:decoration_present.name=MCC 선물 상자	###
+tile.noxcrew.ft:cup_poster1.name=엔더 컵 포스터 1	###
+tile.noxcrew.ft:cup_poster2.name=엔더 컵 포스터 2	###
+tile.noxcrew.ft:logo_1.name=Noxcrew 로고 1	###
+tile.noxcrew.ft:logo_2.name=Noxcrew 로고 2	###
+tile.noxcrew.ft:logo_3.name=Noxcrew 로고 3	###
+tile.noxcrew.ft:melt_spawner.name=멜트다운 몬스터 생성기	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=동전 더미	###
+entity.noxcrew.ft:treasure_chest.name=보물 상자	###
+entity.noxcrew.ft:key_podium.name=열쇠 보관함	###
+entity.noxcrew.ft:sand_podium.name=모래 보관함	###
+entity.noxcrew.ft:armor_podium.name=방어구 보관함	###
+entity.noxcrew.ft:paint_pot.name=페인트 통	###
+entity.noxcrew.ft:giant_cake.name=생일 케이크	###
+entity.noxcrew.ft:beach_ball.name=물놀이용 공	###
+entity.noxcrew.ft:balloon_helium.name=헬륨 풍선	###
+entity.noxcrew.ft:disco_ball.name=디스코 볼	###
+entity.noxcrew.ft:lost_pearl.name=신비한 진주	###
+entity.noxcrew.ft:decoration_awning.name=장식된 차양	###
+entity.noxcrew.ft:decoration_bunting.name=장식된 깃발	###
+entity.noxcrew.ft:decoration_cupcake.name=생일 컵케이크	###
+entity.noxcrew.ft:decoration_ballons.name=생일 풍선	###
+entity.noxcrew.ft:decoration_15.name=풍선 15개	###
+entity.noxcrew.ft:decoration_board.name=생일 보드	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=닭 풍선	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=마스코트 풍선	###
+entity.noxcrew.ft:trophy_help.name=도움말	###
+entity.noxcrew.ft:sand_timer.name=모래시계	###
+entity.noxcrew.ft:crowned_frog.name=개구리 왕자	###
+entity.noxcrew.ft:cake_candles.name=케이크 촛불	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=시작 버튼	###
+entity.noxcrew.ft:vendor_mascot.name=마스코트 모자	###
+entity.noxcrew.ft:vendor_hat.name=모자	###
+entity.noxcrew.ft:vendor_toys.name=장난감	###
+entity.noxcrew.ft:vendor_food.name=음식	###
+entity.noxcrew.ft:advert_creator_cup.name=엔더 컵	###
+entity.noxcrew.ft:md_creeper.name=크리퍼	###
+entity.noxcrew.ft:md_blaze.name=블레이즈	###
+entity.noxcrew.ft:md_blaze<>.name=블레이즈	###
+entity.noxcrew.ft:md_skeleton.name=스켈레톤	###
+entity.noxcrew.ft:md_skeleton<>.name=스켈레톤	###
+entity.noxcrew.ft:md_spider.name=거미	###
+entity.noxcrew.ft:md_vindicator.name=변명자	###
+entity.noxcrew.ft:md_zombie.name=좀비	###
+entity.noxcrew.ft:md_zombie_baby.name=아기 좀비	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§o진주가 신비롭게 위아래로 움직이고 있어요...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r 동굴 미스터리를 발견했습니다!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=플레이어를 기다리는 중...	###
+txt.misc.msg4=게임 시작까지 	###
+txt.misc.msg5=곧 순간이동 됩니다	###
+txt.misc.msg6_1=§6§l!§r %s님에게 선물을 받았어요!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r %s님에게 선물을 보냈어요!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r 이 플레이어에게 더 이상 선물을 줄 수 없습니다	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= 딱지날개 장착됨 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §e퍼즐 스테이지가 완료되었어요... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §a동굴 퍼즐을 완료했어요! 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: 긴장되세요? 그럼  §6에이스 경주§r  미니 게임에서 구름 사이를 달려보는 건 어때요?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: 도전에 목 마르세요? 그러면  §6그리드 러너§r  미니 게임에서 모든 임무를 완수하세요!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]:  §6멜트다운§r  미니 게임이 여러분을 기다리고 있습니다... 과연 여러분은 몬스터 무리로부터 살아남을 수 있을까요?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]:  §6시간의 모래§r  미니 게임에서 신비한 사원을 탐험하세요!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: 트로피 방에서 완료한 도전을 모두 확인할 수 있답니다!  메인 로비에 있는  §6그리드 러너§r  포탈 근처의 커다란 텐트에 있어요!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: 쓸만한 모자를 찾고 계세요? 그러면 모자 상점에서 사세요!  메인 로비에 있는 대형 모자 아래에 있답니다!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: 멋진 장난감을 갖고 싶나요? 그러면 장난감 상점에서 사세요!  메인 로비에 있는 손수레 표지판 근처에 있답니다!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: 식사를 하고 싶다고요? 그러면 음식 상점에서 사서 드세요!  메인 로비의 대형 닭 조각상 근처에 있는 레스토랑을 찾아보세요!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]:  미스터리 퍼즐을 풀 수 있다는 걸 아셨나요?  메인 로비에 있는 산에 올라 미스터리 동굴에 들어가세요!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: 매일 새로운 미스터리 퍼즐을 풀어야 한다는 걸 알고 계셨나요?  옆에 있는 각각의 은(는) 퍼즐이 공개되었다는 걸 보여줍니다!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: 모든 로비에서 코인 더미를 찾을 수 있다는 사실을 아셨나요? 빨리 찾으러 가세요!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: 소지품이 가득 찼나요? 그럼 아이템을 휴지통에 넣어 버릴 수 있습니다!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§c코인이 부족합니다	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§c이걸 살 공간이 없어요! 아이템을 쓰레기통에 버리세요.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r 이 모자는 이미 가지고 있습니다!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c%s이(가) 가득 찼습니다!§r 다른 재료를 모으세요!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§c이 상자를 열 수 있는 열쇠가 없습니다!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6이 상자는 이미 열렸습니다!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=피자! 먹으면 속도가 빨라져요!	###
+txt.shop_info.mcc_burger=버거! 먹으면 속도가 빨라지고 점프가 강화돼요!	###
+txt.shop_info.anniversary_hot_dog=핫도그! 먹으면 속도가 빨라지고 점프가 강화돼요!	###
+txt.shop_info.party_cupcake=컵케이크! 먹으면 떨어지는 속도가 느려져요!	###
+txt.shop_info.party_cake=케이크! 먹으면 공중에 떠다닐 수 있어요!	###
+txt.shop_info.party_chips=감자칩! 먹으면 속도가 빨라져요!	###
+txt.shop_info.party_cookie=쿠키! 먹으면 점프가 강화돼요!	###
+txt.shop_info.party_soda=탄산음료! 먹으면 속도가 빨라져요!	###
+txt.shop_info.cotton_candy=솜사탕! 먹으면 점프가 강화돼요!	###
+txt.shop_info.popcorn=팝콘! 먹으면 점프가 강화돼요!	###
+txt.shop_info.super_wrap=슈퍼 랩! 먹으면 모든 강화를 받을 수 있어요!	###
+txt.shop_info.foam_finger=스티로폼 손가락! 누구를 응원하는지 보여주세요!	###
+txt.shop_info.balloon_animal=동물 모양 풍선! 사용해서 풍선을 날리세요!	###
+txt.shop_info.big_bubble_blower=비눗방울! 사용해서 비눗방울을 날리세요!	###
+txt.shop_info.silly_horn=우스꽝스러운 뿔! 사용해서 소리를 내세요!	###
+txt.shop_info.party_popper=파티용 폭죽! 사용해서 색종이 조각을 터뜨리세요!	###
+txt.shop_info.confetti_tag_prime=색종이 태그! 플레이어에게 사용하여 색종이로 태그를 지정하세요!	###
+txt.shop_info.pizza_box=피자 상자! 플레이어에게 사용해서 피자를 전달하세요!	###
+txt.shop_info.celebration_fireworks=폭죽! 사용해서 폭죽을 터뜨리세요!	###
+txt.shop_info.player_gift_giving=선물! 플레이어에게 사용해서 선물을 주세요!	###
+txt.shop_info.disco_ball=디스코! 사용해서 춤추는 디스코 볼을 만드세요!	###
+txt.shop_info.beach_ball=비치볼! 사용해서 비치볼을 만들고 공을 쳐서 경기를 시작하세요!	###
+txt.shop_info.balloon_helium=풍선! 사용해서 풍선을 날리세요!	###
+
+##Ace Race
+txt.tut.ace_title= 에이스 경주 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6출발선에서 Seapeekay에게 말을 걸어 힌트와 팁을 얻으세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: 속도 부스트 및 점프 강화 패드를 사용하여 결승선까지 질주하세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= 짐승을 물리치세요!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6시작 로비에 있는 Smajor에게 말을 걸어 힌트와 팁을 얻으세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: 타이머가 끝나기 전에 최대한 많은 몬스터를 처치하세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= 그림을 베끼세요!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: 색색의 페인트 통을 사용하여 따라 그리세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= 케이크를 만드세요!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: 케이크 재료를 모아 중앙에 놓으세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= 전력 질주!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: 결승선에 도착하세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r 다음 방으로 가세요!	###
+
+txt.grid.wave_clear=몬스터 웨이브 격파!	###
+txt.grid.wave_reward= 코인 10개를 획득했습니다!	###
+txt.grid.painting_clear=그림 그리기 완료!	###
+txt.grid.painting_reward= 코인 10개를 획득했습니다!	###
+txt.grid.cake_clear=케이크가 구워졌어요!	###
+txt.grid.cake_reward= 코인 10개를 획득했습니다!	###
+
+##Meltdown
+txt.tut.melt_title= 멜트다운 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6입구에 있는 hannahxxrose에게 말을 걸어 힌트와 팁을 얻으세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: 각 방이 녹아내리기 전에 살아남으세요! 활로 적을 얼린 후 주먹으로 때리세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= 경고: 멜트다운 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= 위험: 치명적인 멜트다운 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1= 멜트다운 1/7 탈출 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= 멜트다운 2/7 탈출 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= 멜트다운 3/7 탈출 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= 멜트다운 4/7 탈출 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= 멜트다운 5/7 탈출 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= 멜트다운 6/7 탈출 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= 멜트다운 7/7 탈출 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= 멜트다운 %s/7 탈출 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r 다음 방으로 가세요!	###
+
+##Sands of Time
+txt.tut.sands_title= 시간의 모래 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6피라미드 근처에 있는 HBomb94에게 말을 걸어 힌트와 팁을 얻으세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: 시간이 다 되기 전에 최대한 많은 코인을 찾으세요! 모래를 모아서 추가 시간을 확보하세요!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= 코인 5개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= 코인 10개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= 코인 20개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= 코인 30개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= 코인 50개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= 코인 100개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= 코인 200개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= 코인 400개를 발견했습니다!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=상자를 열었어요!	###
+txt.sot.key=열쇠를 획득했어요!	###
+txt.sot.upgraded=업그레이드 완료!	###
+
+##Lobby
+txt.lobby.coins5= 5!	###
+txt.lobby.coins20= 20!	###
+txt.lobby.coins30= 30!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=지도	###
+txt.ui.tp.confirm1=계속하시겠습니까?	#
+txt.ui.tp.confirm_target=%s(으)로 순간이동합니다.	#
+txt.ui.tp.area_ace_race= 에이스 경주	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= 그리드 러너	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= 허브	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= 시간의 모래	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= 멜트다운	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=텔레포터 준비 완료!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=장식 용품 상자	###
+txt.ui.cosmetic=여기 있는 모자를 전부 찾아보세요!	###
+txt.ui.button.select=선택	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=보상 잠금 해제됨!	###
+txt.ui.title.red_rabbit_cc=빨간색 토끼 머리	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=주황색 오셀롯 머리	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=노란색 야크 머리	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=연두색 라마 머리	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=녹색 도마뱀붙이 머리	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=물색 아홀로틀 머리	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=청록색 코요테 머리	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=파란색 박쥐 머리	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=보라색 판다 머리	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=분홍색 앵무새 머리	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=군중에게 키스 감정 표현	###
+txt.ui.title.ride_victory_emote=승리를 향한 질주 감정표현	###
+txt.ui.title.cartwheel_victory_emote=승리의 옆돌기 감정 표현	###
+txt.ui.title.flying_chicken_emote=날아다니는 닭 감정 표현	###
+txt.ui.title.cape=MCCxMinecraft 15주년 기념 망토	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=MCC 왕관	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=캐릭터 만들기 아이템을 잠금 해제했습니다! 탈의실에서 확인해 보세요.	###
+txt.ui.text.cape_unlocked=축하합니다! MCC 망토가 개방되었습니다! 탈의실에서 확인하세요.	###
+txt.ui.button.claim=보상 받기	###
+
+##UI Vendors
+txt.title.vendor_food= 음식 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= 마스코트 모자 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= 모자 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= 장난감 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=구매	###
+txt.ui.sold_out=품절	###
+
+##Game Toasts
+txt.ui.toast.time= §l시간§r	###
+txt.ui.toast.coins_collected= §l코인 수집함§r	###
+txt.ui.toast.coins_earned= §l코인 획득함§r	###
+txt.ui.toast.new_record=§l신기록!§r	###
+txt.ui.toast.room=방	###
+txt.ui.toast.time_spent= §l소요 시간§r	###
+txt.ui.toast.complete=완료!	###
+txt.ui.toast.highscore= §l높은 점수§r	###
+txt.ui.toast.highest_coins= §l최고 점수§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §l네더라이트 메달리스트	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §l다이아몬드 메달리스트	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §l금 메달리스트	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §l철 메달리스트	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §l동 메달리스트	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §l상자 열림§r	###
+txt.ui.toast.sot.escaped= §l탈출했습니다!§r	###
+txt.ui.toast.sot.failed= §l탈출하지 못했습니다...§r	###
+txt.ui.toast.gr.mobs_slain= §l몹 물리침§r	###
+txt.ui.toast.gr.blocks_painted= §l블록 칠함§r	###
+txt.ui.toast.gr.cakes_baked= §l케이크 완성§r	###
+txt.ui.toast.ar.time= §l시간§r	###
+txt.ui.toast.md.slain= §l몹 산산조각남§r	###
+txt.ui.toast.md.rooms_survived_0= §l방 생존함§r	###
+txt.ui.toast.md.rooms_survived_1= §l방 생존함§r	###
+txt.ui.toast.md.rooms_survived_2= §l방 생존함§r	###
+txt.ui.toast.md.rooms_survived_3= §l방 생존함§r	###
+txt.ui.toast.md.rooms_survived_4= §l방 생존함§r	###
+txt.ui.toast.md.rooms_survived_5= §l방 생존함§r	###
+txt.ui.toast.md.rooms_survived_6= §l방 생존함§r	###
+txt.ui.toast.md.rooms_survived_7= §l방 생존함§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=챌린지 목록	###
+txt.ui.body1.challenge_list=아이콘을 눌러 챌린지를 확인하세요!	###
+txt.ui.reward.cape= 망토 보상	###
+txt.ui.status.cape=완료	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=물색 아홀로틀 챌린지	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=§l물색 아홀로틀 비니§r를 착용한 상태로 잃어버린 진주를 찾으세요. 물웅덩이에 숨겨져 있습니다...	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§o물색 아홀로틀 머리 캐릭터 만들기 아이템을 획득하세요	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=파란색 박쥐 챌린지	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=§l파란색 박쥐 비니§r를 착용한 상태로 §l시간의 모래§r 미니 게임에서 모래 100개를 모으세요.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§o파란색 박쥐 머리 캐릭터 만들기 아이템을 획득하세요	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=모래 %s개를 모았습니다.	###
+
+txt.ui.title.cyan_coyote_challenge=청록색 코요테 챌린지	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=§l청록색 코요테 비니§r를 착용한 상태로 §l시간의 모래§r 또는 §l멜트다운§r 미니 게임에서 동전 더미 75개를 모으세요.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§o청록색 코요테 머리 캐릭터 만들기 아이템을 획득하세요	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=동전 더미 %s개를 수집했습니다.	###
+
+txt.ui.title.green_gecko_challenge=녹색 도마뱀붙이 챌린지	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=그리드 러너 미니 게임의 '그림 베끼기' 챌린지에서 녹색 도마뱀붙이 비니를 착용한 상태로 블록 200개를 칠하세요.	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§o녹색 도마뱀붙이 머리 캐릭터 만들기 아이템을 획득하세요	###
+txt.ui.progress.green_gecko_challenge=블록 %s개를 칠했습니다.	###
+
+txt.ui.title.lime_llama_challenge=연두색 라마 챌린지	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=§l연두색 라마 비니를§r를 착용한 상태로 선물 상자 10개를 나눠주세요. 선물 상자는 허브 월드의 장난감 상인에게서 구매할 수 있습니다.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§o연두색 라마 머리 캐릭터 만들기 아이템을 획득하세요	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=선물 상자 %s개를 나눠주었습니다.	###
+
+txt.ui.title.orange_ocelot_challenge=주황색 오셀롯 챌린지	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=§l주황색 오셀롯 비니§r를 착용한 상태로 §l에이스 경주 §r 미니 게임을 완주하는 동안 스피드 부스트를 100번 통과하세요.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§o주황색 오셀롯 머리 캐릭터 만들기 아이템을 획득하세요	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=속도 강화를 %s번 사용했습니다.	###
+
+txt.ui.title.pink_parrot_challenge=분홍색 앵무새 챌린지	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=§l분홍색 앵무새 비니§r를 착용한 상태로 §l에이스 경주 §r 미니 게임을 완주하는 동안 딱지날개 성문을 25번 통과하세요.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§o분홍색 앵무새 머리 캐릭터 만들기 아이템을 획득하세요	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=딱지날개 성문 %s개를 사용했습니다.	###
+
+txt.ui.title.purple_panda_challenge=보라색 판다 챌린지	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=§l보라색 판다 비니§r를 착용한 상태로 §l그리드 러너§r 미니 게임의 “케이크 만들기” 챌린지에서 재료를 200개 넣으세요.	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§o보라색 판다 머리 캐릭터 만들기 아이템을 획득하세요	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=재료를 %s개 넣었습니다.	###
+
+txt.ui.title.red_rabbit_challenge=빨간색 토끼 챌린지	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=§l빨간 토끼 비니§r를 착용한 상태로 §l에이스 경주 §r 미니 게임을 완주하는 동안 발사 패드를 50번 통과하세요.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§o빨간색 토끼 머리 캐릭터 만들기 아이템을 획득하세요	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=발사 패드를 %s번 사용했습니다.	###
+
+txt.ui.title.yellow_yak_challenge=노란색 야크 챌린지	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=§l노란색 야크 비니§r를 착용한 상태로 §l멜트다운§r 미니 게임에서 얼어붙은 적 350마리를 처치하세요.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§o노란색 야크 머리 캐릭터 만들기 아이템을 획득하세요	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=얼어붙은 적 %s명을 처치했습니다.	###
+
+txt.ui.title.ace_race_challenge=에이스 경주 챌린지	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=§l에이스 경주§r 미니 게임에서 코스를 완주하세요!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§o'군중에게 키스' 감정 표현을 획득하세요	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=그리드 러너 챌린지	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=§l그리드 러너§r 미니 게임을 완료하세요!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§o'승리를 향한 질주' 감정 표현을 획득하세요	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=붕괴 챌린지	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=§l멜트다운§r 미니 게임의 3번째 방까지 생존하세요.	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§o'날아다니는 닭' 감정 표현을 획득하세요	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=시간의 모래 챌린지	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=§l시간의 모래§r 미니 게임에 입장하여 2분 간 생존하고 탈출하세요!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§o승리의 옆돌기 감정 표현	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=미스터리 동굴 챌린지	###
+txt.ui.body1.cave_challenge=신비한 동굴 속에 있는 7가지 페인트 퍼즐 챌린지를 모두 완료하세요.	###
+txt.ui.reward.cave_challenge=§oMCC 왕관 캐릭터 만들기 아이템을 획득하세요	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=7개의 퍼즐 중 %s개를 완료했습니다.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e 플레이어를 기다리는 중 §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §f플레이어를 기다리는 중 (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §e플레이어를 기다리는 중 §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §e플레이어를 기다리는 중 §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §e플레이어를 기다리는 중 §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §e플레이어를 기다리는 중 §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §e플레이어를 기다리는 중 §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§e최대 대기 시간:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e 게임을 기다리는 중... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §f게임을 기다리는 중... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e 게임을 기다리는 중... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e 게임을 기다리는 중... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e 게임을 기다리는 중... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e 게임을 기다리는 중... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e 게임을 기다리는 중... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§e대략 §f%s§e분 이하	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§e대략 §f%s§e분 이하	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§a게임 준비 완료!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§f%s 후 §e순간이동§e!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§e순간이동 완료!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§e준비하세요...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§e시작까지:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§a출발!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens &  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=도움말	###
+txt.title.dia.ender_cup= 엔더 컵 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=개구리 왕자	###
+
+txt.title.start_game=게임 시작	###
+txt.title.join_queue=대기열 참여	###
+txt.title.ace_race= 에이스 경주 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= 그리드 러너 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= 멜트다운 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= 시간의 모래 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= 메인 로비 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=확인	###
+txt.button.yes=예	###
+txt.button.no=아니요	###
+txt.button.back=뒤로	###
+txt.button.exit=나가기	###
+txt.button.close=닫기	###
+txt.button.start_game=게임 시작	###
+txt.button.join_queue=대기열 참여	###
+txt.button.tutorial=튜토리얼	###
+txt.button.challenges_q=챌린지를 원하세요?	###
+txt.button.who_are_you_q=누구시죠?	###
+txt.button.what_games_q=어떤 게임이 좋으세요?	###
+txt.button.cave_mystery_q=동굴 미스터리는 어떠세요?	###
+txt.button.go_to_portal=포탈로 이동하세요	###
+txt.button.remove_hat=모자 장착 해제	###
+txt.button.no_hats=모자가 없습니다. 상점에서 구매하세요!	###
+txt.button.pet_frog=개구리 쓰다듬기	###
+txt.button.talk_frog=개구리와 대화하기	###
+txt.button.kiss_frog=개구리에게 키스하기	###
+txt.button.love_minecraft_q=Minecraft를 좋아하시나요?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=MCC를 좋아하시나요?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=최고의 플레이를 꼽자면?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=에이스 경주는요?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=어떤 스트리밍이 최고였나요?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=어떤 업데이트가 최고였나요?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=그리드 러너는 어땠어요?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=멜트다운은요?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=최고의 순간은?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=시간의 모래는 어땠어요?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=다음	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=안녕하세요! 저는  Jens라고 해요!	###
+txt.jagnes.1_0.dia2=그리고 저는  Agnes라고 해요!	###
+txt.jagnes.1_0.dia3=MCC Minecraft 15주년 기념 파티에 오신 걸 환영합니다!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=MC 챔피언십에서 미니 게임을 플레이하기 위해 NoxCrew를 모셨습니다!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=탐험하고 미니 게임을 플레이하고 동굴의 미스터리를 해결하세요!	###
+txt.jagnes.1_0.dia6=포탈로 향하는 길을 따라가서 미니 게임을 시작하세요!	###
+txt.jagnes.1_0.dia6_1=시작하려면, 포탈로 향하는 길을 따라가서 미니 게임을 시작하세요!	###
+txt.jagnes.1_0.dia6_2=시작하려면, 떠다니는  왕관을 따라 포탈로 가서 미니 게임을 시작하세요!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=계속 포탈을 통과하며 MC 챔피언십의 미니 게임을 플레이하세요.	###
+txt.jagnes.2_0.dia2=미니 게임은 §1에이스 경주§r, §1그리드 러너§r, §1멜트다운§r, §1시간의 모래§r입니다!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=한 번씩 해보고 마음에 드는 걸 고르세요!	###
+
+##What games?
+txt.jagnes.2_1.dia1=계속 포탈을 통과하며 MC 챔피언십의 미니 게임을 플레이하세요.	###
+txt.jagnes.2_1.dia2=§1에이스 경주§r가 벌어지는 구름 속에서 하늘을 질주하세요!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=§1그리드 러너§r 스타디움을 방문하여 도전을 완료하세요!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=§1멜트다운§r에 입장해 녹아내리는 방과 좀비 속에서 살아남으세요!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=§1시간의 모래§r의 사원을 용감하게 탐험하고 보물 창고를 발견하세요!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=한 번씩 해보고 마음에 드는 걸 고르세요!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= 소문에 의하면 높은 산 속에 신비한 동굴이 있다고 해요.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=그 곳에는  퍼즐이 그려져 있어 풀 수 있다고 해요!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=동굴을 찾아 비밀을 확인하세요!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=공중에 떠있는  왕관을 따라  §6에이스 경주§r  미니 게임 포탈로 가세요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=공중에 떠있는  왕관을 따라  §6그리드 러너§r  미니 게임 포탈로 가세요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=공중에 떠있는  왕관을 따라  §6멜트다운§r  미니 게임 포탈로 가세요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=공중에 떠있는  왕관을 따라  §6시간의 모래§r  미니 게임 포탈로 가세요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=상점을 찾았군요!	###
+txt.jagnes.help_shop2=미니 게임에서 얻은 동전으로 아이템을 구매하세요!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1= 트로피 방을 찾았군요!	###
+txt.jagnes.help_trophy2=완료한 챌린지에서 획득한 트로피와 보상을 확인하세요!	###
+txt.jagnes.help_trophy3=사진을 찍고 진행 상황을 공유하세요!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=케이크 방을 찾았군요!	###
+txt.jagnes.help_cake2=케이크 촛불에서 챌린지를 확인하세요. 챌린지를 완료하고 특별한 보상을 받으세요!	###
+txt.jagnes.help_cake3=사진을 찍고 진행 상황을 공유하세요!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=미니 게임 포탈을 발견했군요!	###
+txt.jagnes.help_portal2=포탈을 통해 미니 게임 월드로 들어가세요!	###
+txt.jagnes.help_portal3=어서 떠나 보세요!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=잘했어요,  §6에이스 경주§r  포탈을 찾았군요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=구름 위로 올라가 하늘을 질주하세요!	###
+txt.jagnes.help_ace_race_portal3=어서 떠나 보세요!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=오, 보세요.  §6그리드 러너§r  포탈이에요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=스타디움에 가서 챌린지 방을 완료하세요!	###
+txt.jagnes.help_grid_runners_portal3=어서 떠나 보세요!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=아,  §6멜트다운§r  포탈을 찾았군요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=시설에 들어가 녹아내리는 방과 좀비들에게서 살아 남으세요!	###
+txt.jagnes.help_meltdown_portal3=어서 떠나 보세요!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=훌륭해요,  §6시간의 모래§r  포탈을 찾았군요!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=고대 사원을 용감하게 탐험하고 보물 창고를 발견하세요!	###
+txt.jagnes.help_sot_portal3=어서 떠나 보세요!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=우와,  미스터리 동굴 을 찾았군요!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=과연 매일 나타나는 퍼즐을 풀 수 있을까요?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=좋아요, 활동을 발견했어요!	###
+txt.jagnes.help_activity2=같이 놀면서 게임 할래요?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lMinecraft의 어떤 점이 좋은가요?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lMCC에서 최고의 추억을 꼽자면?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§l최고의 MCC 플레이는 무엇인가요?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§l에이스 경주에서 마음에 드는 점은?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§l당신의 엔더 컵 스트리밍을 시청해야 하는 이유는?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=안녕하세요! 전 §1Seapeekay§r라고 해요. §1에이스 경주§r가 벌어지는 하늘에 오신 걸 환영합니다!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=강화와 패드를 사용하여 결승선까지 경주하세요!	###
+txt.creator_ace.1_0.dia3=자세한 내용을 보려면 '튜토리얼'을 누르세요.	###
+txt.creator_ace.1_0.dia4=플레이할 준비가 되었다면 게임 시작 버튼을 누르세요!	###
+txt.creator_ace.2_0.dia1=§1에이스 경주§r는 구름 속의 산책과도 같죠!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=가능한 한 빨리 코스를 통과하여 결승선에 도달하세요!	###
+txt.creator_ace.2_0.dia3=점프 패드, 발사 패드, 속도 패드, 딱지날개 성문을 사용하여 더 빨리 달릴 수 있습니다!	###
+txt.creator_ace.2_0.dia4=그럼 결승선에서 봐요!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=안녕하세요! 전 §1Seapeekay§r라고 해요. 대회에서 경쟁과 재미라는 두 마리 토끼를 한꺼번에 잡는 걸 좋아하는 Minecraft 스트리머죠.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Twitch에서 'Seapeekay'를 검색해서 제 스트리밍을 찾아주세요.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=Minecraft는 제게 중요해요. 그야말로 뭐든지 할 수 있는 오픈월드 샌드박스 게임이니까요.	###
+txt.creator_ace.3_1.dia2=공략을 따를 필요 없이 상상의 나래를 마음껏 펼칠 수 있어요.	###
+txt.creator_ace.3_1.dia3=그리고 Minecraft를 플레이하면서 사귄 친구들과 만나고 있답니다.	###
+txt.creator_ace.3_1.dia4=그래서 제 인생에서 가장 영향력 있는 게임으로 Minecraft를 꼽을 수 있을 것 같아요.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=제가 좋아하는 MCC 메모리는 MCC 5였어요. 마침내 첫 승리를 거뒀거든요!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=그렇게 강력한 팀도 아니었는데 말이죠. 커뮤니티의 의견이 어떻든 우승할 만했다고 생각해요.	###
+txt.creator_ace.3_2.dia3=전 Minecraft를 그리 잘하지 못했지만, MCC에 열심히 참여한 덕에 실력이 는 것 같아요.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=그리고 이젠 꽤 잘하게 되었으니, 멋진 일이죠.	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=MCC에서 제 최고의 플레이는 물론 §1에이스 경주§r에서 최종 우승한 순간이죠.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=저는 커뮤니티에서 정말 오랫동안  'Mr. Ace Race' 라고 불렸지만, 정작 우승한 적은 한 번도 없었죠.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=그러니 마침내 우승했을 때의 기억을 절대 잊을 수 없을 거예요.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=§1에이스 경주§r의 가장 큰 장점은 정말 기상천외한 방법으로 코스를 완주할 수 있다는 거예요.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=초보나 고수 모두 쉽게 플레이할 수 있어요.	###
+txt.creator_ace.3_4.dia3=더 빠르게 가는 방법도 있고... 더 어렵게 가는 방법도 있죠...	###
+txt.creator_ace.3_4.dia4=하지만 결국 모두 완주한다는 것이 제일 중요하죠.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=제 POV에서 엔더 컵을 한 번 봐 보세요. 장담하는데 재미도 있으면서... 즐겁게 게임도 할 수 있을 거예요...	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=그러면서도 여전히 승부욕을 발휘하는 균형잡힌 모습도 볼 수 있답니다!	###
+txt.creator_ace.3_5.dia4=게임을 즐기면서도 경쟁할 수 있는 점이 제일 좋은 것 같아요.	###
+
+##creator_grid
+txt.creator_grid.title_who1=§l가장 좋아하는 Minecraft 업데이트는?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lMCC의 가장 좋은 점은?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§l그리드 러너의 가장 좋은 점은?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§l당신의 엔더 컵 스트리밍을 시청해야 하는 이유는?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=안녕하세요! 전 §1Smajor§r라고 해요. §1그리드 러너§r 코스에 오신 걸 환영합니다!	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=각 방의 챌린지를 최대한 많이 완료하여 최고 점수를 획득하세요!	###
+txt.creator_grid.1_0.dia3=자세한 내용을 보려면 '튜토리얼'을 누르세요.	###
+txt.creator_grid.1_0.dia4=플레이할 준비가 되었다면 대기열에 참가 버튼을 누르세요!	###
+txt.creator_grid.2_0.dia1=§1그리드 러너§r는 총 4군데의 방에서 벌어지는 챌린지 모음입니다!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=각 방에서 받은 새로운 챌린지를 완료해야 다음 방으로 이동할 수 있습니다.	###
+txt.creator_grid.2_0.dia3=각 방의 제한 시간은 1분이니까 서두르세요!	###
+txt.creator_grid.3_0.dia1=저는 §1SMajor§r라고 해요!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Minecraft를 주로 하는 버라이어티 스트리머죠!	###
+txt.creator_grid.3_0.dia3=제 방송을 보고 싶으면 Twitch에서 제 이름으로 검색하세요.	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=제가 가장 좋아하는 업데이트는 Update Aquatic입니다!	###
+txt.creator_grid.3_1.dia2=바다 바이옴에 추가된 모든 것들이 정말 맘에 들고, 그곳을 탐험하는 걸 정말 즐겼던 것 같아요.	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=MCC에서 가장 마음에 드는 건, Minecraft 및 콘텐츠 생성의 다양한 영역을 다루는 모든 크리에이터를 보게 되고 이벤트를 위해 함께 팀을 이루어 협동하는 거죠.	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=전에는 전혀 알지 못하던 사람들을 새로 알게 되고 친구가 될 수 있다는 게 정말 좋아요.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=제가 §1그리드 러너§r에서 가장 마음에 드는 점은 바로 팀 중심의 게임이라는 점입니다.	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=도전을 완료하기 위해 기름칠이 잘 된 기계처럼 팀 모두가 협동하는 것만큼 흥미진진한 건 없거든요.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=정말 멋진 분위기가 나올 거예요!	###
+txt.creator_grid.3_4.dia3=MCC를 스트리밍할 때, 제 목표는 저와 팀이 함께 최고의 시간을 보내는 겁니다!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=우리가 꼴등을 하더라도 즐기는 게 더 중요하다는 거죠!	###
+
+txt.creator_grid.4_0.dia1=비스트 물리치기, 그림 베끼기, 케이크 굽기, 질주하기의 4가지 챌린지가 있습니다!	###
+txt.creator_grid.4_0.dia2=비스트 물리치기에서는 방 안의 몬스터를 모두 물리쳐야 합니다.	###
+txt.creator_grid.4_0.dia3=그림 베끼기에서는 방에 있는 페인트 붓과 양동이를 사용해서 그림을 따라 그려야 해요.	###
+txt.creator_grid.4_0.dia4=케이크 굽기에서는 케이크 재료를 모두 모아 중앙에 있는 케이크 기계에 넣어야 해요!	###
+txt.creator_grid.4_0.dia5=질주하기에서는 결승선을 향해 달려야 합니다!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§l가장 좋아하는 Minecraft 업데이트는 무엇인가요?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lMinecraft의 가장 좋은 점은 무엇인가요?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lMCC에서 최고의 추억을 꼽자면 무엇인가요?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§l 멜트다운에서 가장 마음에 드는 부분은 무엇인가요?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§l당신의 엔더 컵 스트리밍을 시청해야 하는 이유는 무엇인가요?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=안녕하세요! 저는 §1hannahxxrose§r입니다. §1멜트다운§r 시설에 오신 걸 환영합니다!	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=방이 녹아내리기 전에 각 방에서 살아남으세요! 몬스터를 처치하여 추가 점수를 얻으세요.	###
+txt.creator_melt.1_0.dia3=자세한 내용을 보려면 '튜토리얼'을 누르세요.	###
+txt.creator_melt.1_0.dia4=플레이 할 준비가 되었다면 대기열에 참가 버튼을 누르세요!	###
+txt.creator_melt.2_0.dia1=§1멜트다운§r은 말 그대로 녹아내리기 직전인 방들이 있는 시설입니다!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=다음 문이 열릴 때까지 각 방에서 생존해야 합니다.	###
+txt.creator_melt.2_0.dia3=몬스터를 얼린 후 타격하여 추가 점수를 획득하세요!	###
+txt.creator_melt.2_0.dia4=동전 더미를 집어서 추가 점수를 얻을 수도 있습니다!	###
+txt.creator_melt.3_0.dia1=제 이름은 §1hannahxxrose§r고, Minecraft 콘텐츠 크리에이터입니다!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=제 스트리밍에서 실력과 좋은 분위기를 체험할 수 있습니다!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=제가 가장 좋아하는 Minecraft 업데이트는 새로운 벚꽃 바이옴이 있는 “Trails and Trails” 입니다!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=제가 Minecraft에서 가장 좋아하는 건... 물론 PvP죠!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=MCC에서 최고의 추억은 Cyan Coyotes와 함께 MCC 프라이드 2024에서 우승한 거에요!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=§1멜트다운§r에서 가장 마음에 드는 부분은 게임이 팀워크 중심으로 치열하게 벌어진다는 것이에요.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=MCC에서 저를 보시면 많은 팀워크와 멋진 PvP 명장면을 볼 수 있을 거에요.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=제 Twitch 채널에 오시면 MCC에서 플레이 하는 걸 시청할 수 있습니다!	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§l왜 Minecraft가 중요한가요?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lMinecraft에서 만든 첫 추억은 무엇인가요?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lMCC에서 최고의 추억은 무엇인가요?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§l시간의 모래에서 가장 마음에 드는 점은 무엇인가요?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§l당신의 엔더 컵 스트리밍을 시청해야 하는 이유는 무엇인가요?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=안녕하세요! 저는 §1HBomb94§r라고 해요. §1시간의 모래§r 사원에 오신 걸 환영합니다!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=시간 제한이 끝나기 전에 사원을 탐험하고 최대한 많은 코인을 찾는 게 여러분의 목표입니다!	###
+txt.creator_sands.1_0.dia3='튜토리얼' 버튼이 보이시나요? 자세히 알아보려면 클릭하세요.	###
+txt.creator_sands.1_0.dia4=또는 플레이할 준비가 되셨으면 게임 시작 버튼을 누르세요! 	###
+txt.creator_sands.2_0.dia1=§1시간의 모래§r는 최대한 많은 코인을 얻는 걸 목표로 하는 던전입니다!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=던전에서 몬스터, 동전, 상자 열쇠, 방어구를 찾을 수 있으며, 추가 모래를 찾아 던전 제한 시간을 늘릴 수도 있습니다!	###
+txt.creator_sands.2_0.dia3=시작할 때 2분이 주어지며 모래 1개당 10초가 추가되지만 주의해야 해요!	###
+txt.creator_sands.2_0.dia4=던전에서 죽거나 갇힌 경우 수집한 동전을 일부 지불해야 나올 수 있습니다.	###
+txt.creator_sands.3_0.dia1=저는 §1HBomb94§r입니다!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=저는 twitch 스트리머예요. 제 방송을 보려면:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft는 제가 성인이 된 이후 제 삶에 있어 엄청 중요했어요.	###
+txt.creator_sands.3_1.dia2=전 지금 30살이고, 제가 영상을 업로드하기 시작했을 때가... 18살?	###
+txt.creator_sands.3_1.dia3=그럼 12년이 되었군요?	###
+txt.creator_sands.3_1.dia4=아, 이런... 저도 정말 늙었네요!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Minecraft에서 제 첫 추억은 제가 처음으로 만든 월드에요.	###
+txt.creator_sands.3_2.dia2=조약돌로만 지어지고 참나무 문을 달랑 한 개만 달은 못생긴 성을 만들었었죠.	###
+txt.creator_sands.3_2.dia3=그리고 죽었는데, 생성 지점이 있다는 걸 몰랐죠...	###
+txt.creator_sands.3_2.dia4=그리고 저는 그 당시에 좌표의 중요성을 몰랐어요...	###
+txt.creator_sands.3_2.dia5=그래서 그 월드에서 성을 찾을 수 없었어요. 오랜 시간 동안 찾아다녔지만, 헛수고로 끝났죠.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=그건 정말 쉬운건데!	###
+txt.creator_sands.3_3.dia2=MCC 9에서 서바이벌 게임이 막 끝난 순간에, 점수판을 쳐다보던 때가 생각나요.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=그리고 저희 팀에게 소리쳤죠, “점수 차이 좀 봐!”	###
+txt.creator_sands.3_3.dia4=아직도 정말 소름 돋는 순간이에요.	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=§1시간의 모래§r에서 가장 재밌는 순간은 바로 모두가 공포에 휩싸이는 때죠.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=모두가 당황하기 시작하고 겁에 질린 채 서로에게 소리를 지르는 그 순간이 가장 재미있어요.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=간단하네요!	###
+txt.creator_sands.3_5.dia3=우리의 팀의 분위기는 최고라서 모든 팀 게임에서 쉽게 승리할 수 있을 거에요.	###
+txt.creator_sands.3_5.dia4=그러니까 어, PVP 게임이나... 파쿠르는 빼고 말이죠.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=트로피 룸에 오신 것을 환영합니다!	###
+txt.trophy_help.1_0.dia2=완료할 수 있는 도전마다 촛불이 있습니다!	###
+txt.trophy_help.1_0.dia3=촛불과 §6상호작용§r 하여 도전의 내용과 진행도를 확인하세요.	###
+txt.trophy_help.1_0.dia4=과연 모든 챌린지를 완료할 수 있을까요?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=§1엔더 컵§r에 함께하세요! https://endercup.com/에서 스트리밍 목록을 확인하세요.	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Minecraft의 최대 콘텐츠 크리에이터 40명이 10개 팀으로 나뉘어 8가지 미니 게임에서 경쟁하는 모습을 시청하세요!	###
+txt.ender_cup.1_0.dia3=7월 28일 오전 2시에 진행되는 참가자의 라이브 스트리밍을 시청하세요!	###
+
+txt.ender_cup.ad1=§1엔더 컵§r에 함께하세요! https://www.twitch.tv/minecraft에서 스트리밍 목록을 확인하세요.	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Minecraft의 최대 콘텐츠 크리에이터 40명이 10개 팀으로 나뉘어 8가지 미니 게임에서 경쟁하는 모습을 시청하세요!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§o왕관을 쓴 개구리가 기대하는 눈빛으로 여러분을 바라보고 있습니다.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§o무엇을 하고 싶은가요?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§o여러분은 개구리를 향해 손을 내밀어 쓰다듬고, 개구리는 공포에 질려 팔짝 뜁니다.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§o개구리는 표정을 찡그리며 왕관을 정돈했습니다.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§o여러분은 다양한 것에 대해 오랫동안 말하기 시작했습니다...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§o파티에서 보냈던 시간, 다양한 게임들, 그리고 신비로운 동굴...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§o하지만 개구리는 관심이 없는 것 같군요.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=내 저주를 풀다니! 고맙소!	###
+txt.frog_prince.2_0.dia2=난 정말 오랜 §o세월§r 동안 누군가 내게 키스해주기를 바랐소...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=수많은 사람들이 그저 나를 지나쳐갔다오!	###
+txt.frog_prince.2_0.dia4=심지어 내 왕관을 차지하려는 놈들도 있었지!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= 퍼즐 도우미 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=모든  퍼즐을 해결하자 생각나는 게 있어요!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=퍼즐을 푸는 데 도움이 필요한가요?	###
+txt.puzzle_help.landing.dia3=아래 버튼으로 벽을 선택하고 각 퍼즐에 대한 힌트를 받으세요!	###
+txt.button.day1=-1일-	###
+txt.button.day2=2일 차	###
+txt.button.day3=3일 차	###
+txt.button.day4=4일 차	###
+txt.button.day5=5일째	###
+txt.button.day6=6일 차	###
+txt.button.day7=7일 차	###
+txt.button.wall1=왼쪽 벽	###
+txt.button.wall2=중앙 벽	###
+txt.button.wall3=오른쪽 벽	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=제가 처음 공개한 그림이에요!	###
+txt.puzzle_help.wall1.dia2=이걸 그리는 데 3일이 걸렸어요!	###
+txt.puzzle_help.wall1.dia3=어떤 퍼즐의 힌트를 받고 싶으신가요?	###
+
+txt.puzzle_help.wall2.dia1=아, 제가 중간에 공개한 그림이요.	###
+txt.puzzle_help.wall2.dia2=바로 그때 아이디어가 떠오르기 시작했죠!	###
+txt.puzzle_help.wall2.dia3=어떤 퍼즐의 힌트를 받고 싶으신가요?	###
+
+txt.puzzle_help.wall3.dia1=제가 마지막으로 공개한 그림이요.	###
+txt.puzzle_help.wall3.dia2=힘들었지만 결국 해냈어요!	###
+txt.puzzle_help.wall3.dia3=어떤 퍼즐의 힌트를 받고 싶으신가요?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§o왕관 상징 위에서 손을 흔드는 모습...	###
+txt.puzzle_help_day1.dia2=빨간색 배경 이미지 위에 있는 커다란 왕관을 찾고 그 위에 서서 손을 흔들어 보세요!	###
+
+txt.puzzle_help_day2.dia1=§o보석으로 장식된 석상 얼굴 앞에 놓인 파티용 폭죽...	###
+txt.puzzle_help_day2.dia2=눈에 보석이 박힌 석상을 찾고 파티용 폭죽을 터뜨리세요!	###
+
+txt.puzzle_help_day3.dia1=§o나선형으로 떨어지는 큰 물웅덩이...	###
+txt.puzzle_help_day3.dia2=비밀이 있는 곳은 바로 큰 웅덩이죠... 호수라고 하던가요!	###
+
+txt.puzzle_help_day4.dia1=§o눈부신 녹색 청중 앞에 있는 크리스탈 공...	###
+txt.puzzle_help_day4.dia2=눈부신 녹색 관객 앞에 디스코 볼을 놓으세요!	###
+
+txt.puzzle_help_day5.dia1=§o검은색과 노란색 줄무늬가 있는 정사각형 입구, H 위에 있는 케이크 한 조각...	###
+txt.puzzle_help_day5.dia2=검은색과 노란색 줄무늬가 있는 입구를 찾으세요! H에게 갈 수 있을 거예요. 그리고 케이크를 드세요!	###
+
+txt.puzzle_help_day6.dia1=§o얼음 산 정상에서 벌어지는 불꽃놀이...	###
+txt.puzzle_help_day6.dia2=가장 높은 봉우리에 올라 폭죽을 터뜨리세요!	###
+
+txt.puzzle_help_day7.dia1=§o문, 손뼉 치기, 왕관을 쓴 개구리 왕자...	###
+txt.puzzle_help_day7.dia2=문을 찾아 그 앞에서 박수를 치세요! 개구리 왕자가 나타날 겁니다.	###
+txt.puzzle_help_day7.dia3=그런데 개구리 왕자랑 뭘 해야 할까요?	###
+txt.puzzle_help_day7.dia3_1=개구리 왕자와 키스한 이야기는 들었지만, 설마 그건 아니겠죠...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=그림을 보러 왔나요? 각  줄에 있는 은 새로운 그림이 공개된다는 걸 의미하죠!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=첫 번째 그림은 손을 흔드는 것 같은데, 잘 모르겠네요...	###
+txt.puzzle_lore_day1.dia3=아이디어가 떠오르기 전에 모두 공개해야 해요.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=그림을 보러 왔나요? 각  줄에 있는 은 새로운 그림이 공개된다는 걸 의미하죠!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=방금 전에 얼굴이랑 파티용 폭죽을 공개했어요.	###
+txt.puzzle_lore_day2.dia3=하지만 아직은 그게 무슨 의미인지 모르겠네요...	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=그림을 보러 왔나요? 각  줄에 있는 은 새로운 그림이 공개된다는 걸 의미하죠!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=가장 최근에 공개된 그림은 커다란 수영장 같아요, 아니면 물이 튀는 모습?	###
+txt.puzzle_lore_day3.dia3=확신을 가지려면 시간이 더 필요해요...	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=그림을 보러 왔나요? 각  줄에 있는 은 새로운 그림이 공개된다는 걸 의미하죠!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=이전 그림에는 디스코 볼이랑 사람이 있었다고요?	###
+txt.puzzle_lore_day4.dia3=전부 정말 이상하고 수수께끼 같은데요...	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=그림을 보러 왔나요? 각  줄에 있는 은 새로운 그림이 공개된다는 걸 의미하죠!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=마지막 그림은 어려운데요. 검은색과 노란색 원에, 케이크랑 H인가요?	###
+txt.puzzle_lore_day5.dia3=사선으로 나뉜 것 같기도 하고요...	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=그림을 보러 왔나요? 각  줄에 있는 은 새로운 그림이 공개된다는 걸 의미하죠!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=어제 봤던 그림에는 반짝이는 숫자가 있었어요! 그리고 산도!	###
+txt.puzzle_lore_day6.dia3=멋진데요!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=드디어 끝났어요! 모든  그림이 공개되었어요!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=이 마지막 하나가 제일 헷갈려요.	###
+txt.puzzle_lore_day7.dia3=손을 모은 것 같은데요? 아니면 손뼉을 치는 걸까요?	###
+txt.puzzle_lore_day7.dia4=그리고 개구리와 문이 있네요...	###
+txt.puzzle_lore_day7.dia5=생각을 정리할 시간이 필요해요.	###
+txt.puzzle_lore_day7.dia6=수수께끼는 내일 해결하겠어요!	###

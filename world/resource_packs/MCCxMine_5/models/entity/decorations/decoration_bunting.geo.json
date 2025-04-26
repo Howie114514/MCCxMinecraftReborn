@@ -1,0 +1,97 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.decoration_bunting",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 6,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0,
+          1.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bones_alph",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -38,
+                3,
+                0
+              ],
+              "size": [
+                19,
+                25,
+                0
+              ],
+              "uv": [
+                0,
+                25
+              ]
+            },
+            {
+              "origin": [
+                -19,
+                3,
+                0
+              ],
+              "size": [
+                19,
+                25,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                0,
+                3,
+                0
+              ],
+              "size": [
+                19,
+                25,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                19,
+                3,
+                0
+              ],
+              "size": [
+                19,
+                25,
+                0
+              ],
+              "uv": [
+                0,
+                25
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.launcher",
+      "properties": {
+        "noxcrew:boost_id": {
+          "type": "int",
+          "range": [
+            1,
+            8
+          ],
+          "client_sync": false,
+          "default": "1"
+        }
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "component_groups": {
+      "noxcrew:jump_boost": {
+        "minecraft:type_family": {
+          "family": [
+            "launcher",
+            "jump_boost"
+          ]
+        },
+        "minecraft:behavior.knockback_roar": {
+          "priority": 1,
+          "duration": 0.1,
+          "attack_time": 0.1,
+          "knockback_damage": 0,
+          "knockback_horizontal_strength": 4,
+          "knockback_vertical_strength": 1,
+          "knockback_range": 4,
+          "knockback_filters": {
+            "all_of": [
+              {
+                "test": "is_family",
+                "subject": "other",
+                "operator": "==",
+                "value": "player"
+              },
+              {
+                "test": "rider_count",
+                "subject": "other",
+                "operator": ">=",
+                "value": 2
+              },
+              {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 1
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 2
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 3
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 4
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 5
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 6
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 7
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 7
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "self",
+                        "value": 8
+                      },
+                      {
+                        "test": "int_property",
+                        "domain": "noxcrew:boost_id",
+                        "subject": "other",
+                        "value": 8
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "cooldown_time": 0
+        }
+      },
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:type_family": {
+        "family": [
+          "launcher"
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "time": 0.1,
+        "time_down_event": {
+          "event": "noxcrew:despawn"
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "protection": 1
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:add_jump_boost.id1": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 1
+        }
+      },
+      "noxcrew:add_jump_boost.id2": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 2
+        }
+      },
+      "noxcrew:add_jump_boost.id3": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 3
+        }
+      },
+      "noxcrew:add_jump_boost.id4": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 4
+        }
+      },
+      "noxcrew:add_jump_boost.id5": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 5
+        }
+      },
+      "noxcrew:add_jump_boost.id6": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 6
+        }
+      },
+      "noxcrew:add_jump_boost.id7": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 7
+        }
+      },
+      "noxcrew:add_jump_boost.id8": {
+        "add": {
+          "component_groups": [
+            "noxcrew:jump_boost"
+          ]
+        },
+        "set_property": {
+          "noxcrew:boost_id": 8
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

@@ -1,0 +1,66 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "noxcrew.ft:paint_land_red",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particles/paint"
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_manual": {
+        "max_particles": 100
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1
+      },
+      "minecraft:emitter_shape_point": {},
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.Random(1.6,2.5)"
+      },
+      "minecraft:particle_initial_spin": {
+        "rotation": "math.random(-180,180)"
+      },
+      "minecraft:particle_initial_speed": 0.01,
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 1
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          "0.08 + variable.particle_random_1*0.35",
+          "0.08 + variable.particle_random_1*0.35"
+        ],
+        "facing_camera_mode": "direction_y",
+        "direction": {
+          "mode": "custom",
+          "custom_direction": [
+            1,
+            0,
+            1
+          ]
+        },
+        "uv": {
+          "texture_width": 16,
+          "texture_height": 96,
+          "uv": [
+            0,
+            "16 * (0.0625 * (math.round(variable.particle_random_3*5)*16))"
+          ],
+          "uv_size": [
+            16,
+            16
+          ]
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "color": [
+          0.81176,
+          0.12157,
+          0.15686,
+          1
+        ]
+      }
+    }
+  }
+}

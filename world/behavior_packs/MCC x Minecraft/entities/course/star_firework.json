@@ -1,0 +1,110 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.star_firework",
+      "properties": {
+        "noxcrew:rating": {
+          "type": "int",
+          "range": [
+            0,
+            33
+          ],
+          "default": 0,
+          "client_sync": true
+        }
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "time": 10,
+        "time_down_event": {
+          "event": "noxcrew:despawn"
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "protection": 1
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:set_rating.0": {
+        "set_property": {
+          "noxcrew:rating": 0
+        }
+      },
+      "noxcrew:set_rating.1": {
+        "set_property": {
+          "noxcrew:rating": 1
+        }
+      },
+      "noxcrew:set_rating.21": {
+        "set_property": {
+          "noxcrew:rating": 21
+        }
+      },
+      "noxcrew:set_rating.22": {
+        "set_property": {
+          "noxcrew:rating": 22
+        }
+      },
+      "noxcrew:set_rating.31": {
+        "set_property": {
+          "noxcrew:rating": 31
+        }
+      },
+      "noxcrew:set_rating.32": {
+        "set_property": {
+          "noxcrew:rating": 32
+        }
+      },
+      "noxcrew:set_rating.33": {
+        "set_property": {
+          "noxcrew:rating": 33
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

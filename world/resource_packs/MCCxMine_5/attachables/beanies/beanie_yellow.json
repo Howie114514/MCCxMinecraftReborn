@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:beanie_yellow",
+      "textures": {
+        "default": "textures/entity/n/hub/beanie/yellow_yaks"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.beanie"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "render_controllers": [
+        "controller.render.base"
+      ]
+    }
+  }
+}

@@ -3,30 +3,32 @@
 */
 
 
-import {Vector3,BlockVolume} from "@minecraft/server";
+import {Vector3} from "@minecraft/server";
+
+import {createBlockVolumeArgs,BlockVolumeArguments} from "../utils";
 
 export const points={
   start:{x: 56.02,y: 66.14,z: 2169.45},
 }
 export const doors=[
-  new BlockVolume({x:54,y:66,z:2175},{x:57,y:69,z:2175}),
-  new BlockVolume({x:40,y:66,z:2193},{x:40,y:69,z:2190}),
-  new BlockVolume({x:8,y:66,z:2189},{x:8,y:69,z:2186}),
-  new BlockVolume({x:-18,y:67,z:2160},{x:-15,y:70,z:2160}),
-  new BlockVolume({x:-18,y:68,z:2128},{x:-15,y:71,z:2128}),
-  new BlockVolume({x:7,y:68,z:2102},{x:7,y:71,z:2105}),
-  new BlockVolume({x:47,y:69,z:2094},{x:47,y:72,z:2097}),
-  new BlockVolume({x:65,y:75,z:2127},{x:62,y:78,z:2127}),
+  createBlockVolumeArgs({x:54,y:66,z:2175},{x:57,y:69,z:2175}),
+  createBlockVolumeArgs({x:40,y:66,z:2193},{x:40,y:69,z:2190}),
+  createBlockVolumeArgs({x:8,y:66,z:2189},{x:8,y:69,z:2186}),
+  createBlockVolumeArgs({x:-18,y:67,z:2160},{x:-15,y:70,z:2160}),
+  createBlockVolumeArgs({x:-18,y:68,z:2128},{x:-15,y:71,z:2128}),
+  createBlockVolumeArgs({x:7,y:68,z:2102},{x:7,y:71,z:2105}),
+  createBlockVolumeArgs({x:47,y:69,z:2094},{x:47,y:72,z:2097}),
+  createBlockVolumeArgs({x:65,y:75,z:2127},{x:62,y:78,z:2127}),
 ]
-export const structure_points: Record<string,BlockVolume>={
-  r1:new BlockVolume({x:48,y:65,z:2162},{x:59,y:70,z:2173}),
-  r2:new BlockVolume({x:41,y:65,z:2177},{x:70,y:82,z:2206}),
-  r3:new BlockVolume({x:9,y:64,z:2177},{x:38,y:88,z:2206}),
-  r4:new BlockVolume({x:-31,y:65,z:2161},{x:6,y:84,z:2198}),
-  r5:new BlockVolume({x:-28,y:65,z:2129},{x:-2,y:82,z:2148}),
-  r6:new BlockVolume({x:-31,y:64,z:2089},{x:6,y:83,z:2126}),
-  r7:new BlockVolume({x:9,y:64,z:2081},{x:46,y:84,z:2118}),
-  r8:new BlockVolume({x:49,y:64,z:2082},{x:94,y:84,z:2126}),
+export const structure_points: Record<string,BlockVolumeArguments>={
+  r1:createBlockVolumeArgs({x:48,y:65,z:2162},{x:59,y:70,z:2173}),
+  r2:createBlockVolumeArgs({x:41,y:65,z:2177},{x:70,y:82,z:2206}),
+  r3:createBlockVolumeArgs({x:9,y:64,z:2177},{x:38,y:88,z:2206}),
+  r4:createBlockVolumeArgs({x:-31,y:65,z:2161},{x:6,y:84,z:2198}),
+  r5:createBlockVolumeArgs({x:-28,y:65,z:2129},{x:-2,y:82,z:2148}),
+  r6:createBlockVolumeArgs({x:-31,y:64,z:2089},{x:6,y:83,z:2126}),
+  r7:createBlockVolumeArgs({x:9,y:64,z:2081},{x:46,y:84,z:2118}),
+  r8:createBlockVolumeArgs({x:49,y:64,z:2082},{x:94,y:84,z:2126}),
 }
 export const hardcoded_melt_order: number[][]=[
 [10, 11, 12, 13, 14, 15, 16],[2,7,10,11,12],]

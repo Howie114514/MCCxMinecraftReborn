@@ -1,0 +1,120 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.beanie",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "waist",
+          "parent": "root",
+          "pivot": [
+            0,
+            12,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "waist",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "head",
+          "parent": "body",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "helmet",
+          "parent": "head",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "hat_alpha",
+          "parent": "helmet",
+          "pivot": [
+            0,
+            30.5,
+            1.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.5,
+                29.5,
+                -4.5
+              ],
+              "size": [
+                9,
+                3,
+                9
+              ],
+              "inflate": 0.1,
+              "uv": [
+                0,
+                16
+              ]
+            },
+            {
+              "origin": [
+                -4,
+                30.7,
+                -3.6
+              ],
+              "size": [
+                8,
+                6,
+                8
+              ],
+              "inflate": 0.1,
+              "pivot": [
+                0,
+                33.5,
+                0
+              ],
+              "rotation": [
+                -12.5,
+                0,
+                0
+              ],
+              "uv": [
+                27,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

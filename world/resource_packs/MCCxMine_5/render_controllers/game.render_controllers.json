@@ -1,0 +1,215 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.sot_type": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": [
+            "Geometry.default",
+            "Geometry.a",
+            "Geometry.b",
+            "Geometry.c"
+          ]
+        }
+      },
+      "geometry": "Array.geos[q.property('noxcrew.ft:unlock_type')]",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.key_podium": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": [
+            "Geometry.default",
+            "Geometry.a",
+            "Geometry.b",
+            "Geometry.c"
+          ]
+        }
+      },
+      "geometry": "Array.geos[q.property('noxcrew.ft:unlock_type')]",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": ["Texture.default"],
+      "part_visibility": [
+        {
+          "diamond_key": "!q.property('noxcrew.ft:collected')"
+        },
+        {
+          "gold_key": "!q.property('noxcrew.ft:collected')"
+        },
+        {
+          "iron_key": "!q.property('noxcrew.ft:collected')"
+        },
+        {
+          "netherite_key": "!q.property('noxcrew.ft:collected')"
+        },
+        {
+          "a_alph": "!q.property('noxcrew.ft:collected')"
+        }
+      ]
+    },
+    "controller.render.armor_podium": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": ["Geometry.default", "Geometry.a", "Geometry.b"]
+        }
+      },
+      "geometry": "Array.geos[q.property('noxcrew.ft:unlock_type')]",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alph": "Material.alpha"
+        }
+      ],
+      "textures": ["Texture.default"],
+      "part_visibility": [
+        {
+          "chestplate_alph": "!q.property('noxcrew.ft:collected')"
+        },
+        {
+          "leggings_alph": "!q.property('noxcrew.ft:collected')"
+        },
+        {
+          "boots_alph": "!q.property('noxcrew.ft:collected')"
+        }
+      ]
+    },
+    "controller.render.sand_blocks": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.default"],
+      "part_visibility": [
+        {
+          "sand": "!q.property('noxcrew.ft:collected')"
+        }
+      ]
+    },
+    "controller.render.sot_coin_stack": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": ["Geometry.default", "Geometry.a", "Geometry.b"]
+        }
+      },
+      "geometry": "Array.geos[q.property('noxcrew:variant') - 1]",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.md_ice": {
+      "geometry": "Geometry.ice",
+      "materials": [
+        {
+          "*": "Material.default"
+        },
+        {
+          "*alpha": "Material.alpha"
+        }
+      ],
+      "textures": ["Texture.ice"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.black": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.default"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.blue": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.blue"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.brown": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.brown"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.green": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.green"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.purple": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.purple"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.red": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.red"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.white": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.white"],
+      "ignore_lighting": true
+    },
+    "controller.render.proj.yellow": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.yellow"],
+      "ignore_lighting": true
+    }
+  }
+}

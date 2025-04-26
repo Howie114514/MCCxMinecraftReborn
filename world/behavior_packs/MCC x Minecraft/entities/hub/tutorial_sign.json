@@ -1,0 +1,95 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.tutorial_sign",
+      "properties": {
+        "noxcrew:variant": {
+          "client_sync": true,
+          "type": "int",
+          "range": [
+            0,
+            3
+          ],
+          "default": 0
+        }
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:set_variant.0": {
+        "set_property": {
+          "noxcrew:variant": 0
+        }
+      },
+      "noxcrew:set_variant.1": {
+        "set_property": {
+          "noxcrew:variant": 1
+        }
+      },
+      "noxcrew:set_variant.2": {
+        "set_property": {
+          "noxcrew:variant": 2
+        }
+      },
+      "noxcrew:set_variant.3": {
+        "set_property": {
+          "noxcrew:variant": 3
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

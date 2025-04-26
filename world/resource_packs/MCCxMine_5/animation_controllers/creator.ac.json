@@ -1,0 +1,119 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.creator.special_ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "special_picker"
+          ],
+          "transitions": [
+            {
+              "special1": "v.special == 1"
+            },
+            {
+              "special2": "v.special == 2"
+            }
+          ]
+        },
+        "special1": {
+          "animations": [
+            "special1"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        },
+        "special2": {
+          "animations": [
+            "special2"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.agnes.special_ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "agnes_idle"
+          ],
+          "transitions": [
+            {
+              "special1": "v.agnes == 1"
+            },
+            {
+              "special2": "v.agnes == 2"
+            }
+          ]
+        },
+        "special1": {
+          "animations": [
+            "agnes_special1"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        },
+        "special2": {
+          "animations": [
+            "agnes_special2"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.jens.special_ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "jens_idle"
+          ],
+          "transitions": [
+            {
+              "special1": "v.jens == 1"
+            },
+            {
+              "special2": "v.jens == 2"
+            }
+          ]
+        },
+        "special1": {
+          "animations": [
+            "jens_special1"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        },
+        "special2": {
+          "animations": [
+            "jens_special2"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "MCC x Minecraft 15th Anniversary Party - Meltdown RP",
+    "name": "MCC x Minecraft 15th Anniversary Party - Meltdown RP",
+    "uuid": "b6042996-0eec-4a28-9dc8-888aff4c2a4a",
+    "version": [
+      1,
+      0,
+      8
+    ],
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "MCC x Minecraft 15th Anniversary Party - Meltdown RP",
+      "type": "resources",
+      "uuid": "2eba0d1f-8542-4a3d-91af-c9647afb450d",
+      "version": [
+        1,
+        0,
+        8
+      ]
+    }
+  ]
+}

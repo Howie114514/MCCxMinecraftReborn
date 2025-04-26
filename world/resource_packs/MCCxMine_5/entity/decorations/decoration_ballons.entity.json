@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:decoration_balloons",
+      "textures": {
+        "default": "textures/entity/n/decorations/balloons/default",
+        "b": "textures/entity/n/decorations/balloons/aqua_axolotls",
+        "c": "textures/entity/n/decorations/balloons/blue_bats",
+        "d": "textures/entity/n/decorations/balloons/cyan_coyotes",
+        "e": "textures/entity/n/decorations/balloons/lime_llamas",
+        "f": "textures/entity/n/decorations/balloons/green_geckos",
+        "g": "textures/entity/n/decorations/balloons/orange_ocelots",
+        "h": "textures/entity/n/decorations/balloons/pink_parrots",
+        "i": "textures/entity/n/decorations/balloons/purple_pandas",
+        "j": "textures/entity/n/decorations/balloons/red_rabbits",
+        "k": "textures/entity/n/decorations/balloons/yellow_yaks"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.decoration_balloons"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "sway": "animation.n.ballons.sway"
+      },
+      "scripts": {
+        "animate": [
+          "sway"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.eleven"
+      ]
+    }
+  }
+}

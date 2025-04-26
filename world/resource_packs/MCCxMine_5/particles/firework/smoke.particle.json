@@ -1,0 +1,74 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "noxcrew.ft:c_firework_smoke",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particles/cake_2"
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_steady": {
+        "spawn_rate": 4,
+        "max_particles": 5
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1
+      },
+      "minecraft:emitter_shape_point": {
+        "offset": [
+          0,
+          -0.1,
+          0
+        ]
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": 1.5
+      },
+      "minecraft:particle_initial_speed": 0.2,
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          0.2,
+          0.2
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "uv": {
+          "texture_width": 16,
+          "texture_height": 80,
+          "flipbook": {
+            "base_UV": [
+              0,
+              0
+            ],
+            "size_UV": [
+              16,
+              16
+            ],
+            "step_UV": [
+              0,
+              16
+            ],
+            "frames_per_second": 4,
+            "max_frame": 4
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "color": [
+          0.20784,
+          0.20784,
+          0.20784,
+          1
+        ]
+      }
+    }
+  }
+}

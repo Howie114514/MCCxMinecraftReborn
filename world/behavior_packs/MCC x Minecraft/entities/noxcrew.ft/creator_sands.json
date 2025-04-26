@@ -1,0 +1,60 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "noxcrew.ft:creator_sands",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": true
+		},
+		"components": {
+			"minecraft:absorption": {
+				"max": 16,
+				"min": 0,
+				"value": 0
+			},
+			"minecraft:collision_box": {
+				"height": 2,
+				"width": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:health": {
+				"min": 0,
+				"value": 20
+			},
+			"minecraft:is_stackable": {},
+			"minecraft:lava_movement": {
+				"min": 0,
+				"value": 0
+			},
+			"minecraft:luck": {
+				"max": 1024,
+				"min": -1024,
+				"value": 0
+			},
+			"minecraft:movement": {
+				"min": 0,
+				"value": 0
+			},
+			"minecraft:nameable": {
+				"always_show": true
+			},
+			"minecraft:push_through": 1,
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:underwater_movement": {
+				"min": 0,
+				"value": 0
+			}
+		}
+	}
+}

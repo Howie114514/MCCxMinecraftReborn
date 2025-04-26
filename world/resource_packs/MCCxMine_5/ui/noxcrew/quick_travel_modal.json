@@ -1,0 +1,216 @@
+{
+    "namespace": "quick_travel_modal",
+    "main_panel@common_modal_ui.main_panel": {
+        "$top_content_texture": "textures/ui/n/teleport/modal_background_cell",
+        "$main_content": "quick_travel_modal.main_image",
+        "$main_content_texture": "textures/ui/n/teleport/secondary_content_cell",
+        "$bottom_content": false,
+        "$side_icon": "textures/ui/n/map",
+        "$side_icon_offset": [-60, 0],
+        "offset": [0, -14],
+        "$modal_size": [160, "100% - 30px"]
+    },
+    // Render the main image
+    "main_image": {
+        "type": "panel",
+        "size": [140, 140],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+            {
+                // LOBBY
+                "button_1@map_button_wrapper": {
+                    "offset": [65, 65],
+                    "$button_index": 0
+                }
+            },
+            {
+                // MD
+                "button_2@map_button_wrapper": {
+                    "offset": [30, 20],
+                    "$button_index": 1
+                }
+            },
+            {
+                // SOT
+                "button_3@map_button_wrapper": {
+                    "offset": [110, 40],
+                    "$button_index": 2
+                }
+            },
+            {
+                // AR
+                "button_4@map_button_wrapper": {
+                    "offset": [95, 110],
+                    "$button_index": 3
+                }
+            },
+            {
+                // GR
+                "button_5@map_button_wrapper": {
+                    "offset": [15, 90],
+                    "$button_index": 4
+                }
+            },
+            {
+                "map_background": {
+                    "size": ["100%", "100%"],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/n/teleport/map_background",
+                    "keep_ratio": false,
+                    "bilinear": false
+                }
+            }
+        ]
+    },
+    "map_button_wrapper": {
+        "$button_index|default": 0,
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "collection_name": "form_buttons",
+        "factory": {
+            "name": "button_list_factory",
+            "control_name": "quick_travel_modal.map_button_filter"
+        },
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#collection_length"
+            }
+        ]
+    },
+    "map_button_filter": {
+        "type": "panel",
+        "size": ["100%c", "100%c"],
+        "controls": [
+            {
+                "internal_button@button_entry": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_type": "collection_details",
+                "binding_collection_name": "form_buttons"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(#collection_index = $button_index)",
+                "target_property_name": "#visible"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "(#collection_index = $button_index)",
+                "target_property_name": "#enabled"
+            }
+        ]
+    },
+    // Button list entry (allows it to be clickable and nests the inside)
+    "button_entry@common.button": {
+        "size": ["100%c", "100%c"],
+        "layer": 3,
+        "$pressed_button_name": "button.form_button_click",
+        "default_focus_precedence": 1,
+        "controls": [
+            {
+                "default@quick_travel_modal.button_list_entry_inside": {
+                    "$state": "default"
+                }
+            },
+            {
+                "hover@quick_travel_modal.button_list_entry_inside": {
+                    "$state": "hover"
+                }
+            },
+            {
+                "pressed@quick_travel_modal.button_list_entry_inside": {
+                    "$state": "pressed"
+                }
+            }
+        ],
+        "bindings": [
+            {
+                "binding_type": "collection_details",
+                "binding_collection_name": "form_buttons"
+            }
+        ]
+    },
+    // Inside the button, displays the image & the text below it
+    "button_list_entry_inside": {
+        "type": "panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "size": [11.5, 11.5],
+        "$texture|default": "textures/ui/n/teleport/button_default",
+        // Change color on hover
+        "variables": [
+            {
+                "requires": "($state = 'hover')",
+                "$texture": "textures/ui/n/teleport/button_hover"
+            }
+        ],
+        "controls": [
+            // Button
+            {
+                "button": {
+                    "size": [11.5, 11.5],
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "$texture",
+                    "keep_ratio": false,
+                    "controls": [
+                        {
+                            "hud_game_bar_inner": {
+                                "$flag_title": "§m§c",
+                                "type": "image",
+                                "size": ["100%cm + 4px", "100%cm + 2px"],
+                                "offset": [0, -12],
+                                "texture": "textures/ui/hud_tip_text_background",
+                                "layer": 5,
+                                "alpha": 0.7,
+                                "controls": [
+                                    {
+                                        "button_label": {
+                                            "type": "label",
+                                            "offset": [0.5, -0.15],
+                                            "font_type": "MinecraftTen",
+                                            "text": "#form_button_text",
+                                            "line_padding": 1,
+                                            "color": "white",
+                                            "font_scale_factor": 0.75,
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "text_alignment": "center",
+                                            "size": ["default", "default"],
+                                            "layer": 5,
+                                            "shadow": false,
+                                            "bindings": [
+                                                {
+                                                    "binding_type": "collection",
+                                                    "binding_collection_name": "form_buttons",
+                                                    "binding_condition": "none",
+                                                    "binding_name": "#form_button_text",
+                                                    "binding_name_override": "#form_button_text"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#form_button_text",
+                            "binding_name_override": "#form_button_text",
+                            "binding_type": "collection",
+                            "binding_collection_name": "form_buttons"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

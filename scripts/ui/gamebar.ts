@@ -45,3 +45,27 @@ export function showMDGameBar(p: Player, a1: string, _: number, coins: number) {
   text = replace(text, 83, coins.toString() + "_".repeat(23 - coins.toString().length));
   p.onScreenDisplay.setTitle(text);
 }
+export function showGRGameBar(p: Player, info: string, hasAdditionalInfo: boolean, coins: number) {
+  let text = new Text().txt("nox:bargrd___");
+  text.txt(info + "_".repeat(63 + (hasAdditionalInfo ? 1 : 0) - info.length));
+  text.txt(getPuzzles(p).toString());
+  text.txt("__" + coins.toString());
+  p.onScreenDisplay.setTitle(text);
+}
+
+export namespace gridRunnersGamebar {
+  export function showGRGameBar(p: Player, info: string, coins: number) {
+    let text = new Text().txt("nox:bargrd___");
+    text.txt(info + "_".repeat(63 - info.length));
+    text.txt(getPuzzles(p).toString());
+    text.txt("_____" + coins.toString());
+    p.onScreenDisplay.setTitle(text);
+  }
+  export function showGRGameBarWithAdditionalInfo(p: Player, info: string, coins: number) {
+    let text = new Text().txt("nox:bargrd___");
+    text.txt(info + "_".repeat(62 - info.length));
+    text.txt(getPuzzles(p).toString());
+    text.txt("______" + coins.toString());
+    p.onScreenDisplay.setTitle(text);
+  }
+}

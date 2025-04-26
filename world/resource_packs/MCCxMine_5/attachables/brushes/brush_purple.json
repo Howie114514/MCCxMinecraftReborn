@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:paintbrush_purple",
+      "textures": {
+        "default": "textures/entity/n/gr/paintbrush/purple"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.paintbrush"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "particle": "animation.n.paintbrush.particle",
+        "pull_tp": "animation.n.paintbrush.pull.tp",
+        "pull_fp": "animation.n.paintbrush.pull.fp",
+        "fire_tp": "animation.n.paintbrush.fire.tp",
+        "fire_fp": "animation.n.paintbrush.fire.fp",
+        "ctrl": "controller.animation.paintbrush.ctrl",
+        "first_person": "animation.n.paintbrush.first_person",
+        "third_person": "animation.n.paintbrush.third_person"
+      },
+      "sound_effects": {
+        "fire": "paintbrush_fire"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person"
+          },
+          {
+            "third_person": "!c.is_first_person"
+          },
+          "particle",
+          "ctrl"
+        ]
+      },
+      "particle_effects": {
+        "drip": "noxcrew.ft:brush_drip_purple"
+      },
+      "render_controllers": [
+        "controller.render.base_alpha"
+      ]
+    }
+  }
+}

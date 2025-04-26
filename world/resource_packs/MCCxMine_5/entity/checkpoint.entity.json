@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.checkpoint",
+      "textures": {
+        "default": "textures/entity/checkpoint",
+        "scanline": "textures/entity/scanline_checkpoint",
+        "biome_finish_banner": "textures/entity/biome_finish_banner"
+      },
+      "geometry": {
+        "default": "geometry.checkpoint",
+        "toolswap_gate_center": "geometry.checkpoint_center",
+        "biome_finish_banner": "geometry.biome_finish_banner"
+      },
+      "materials": {
+        "default": "base",
+        "alpha": "transparency",
+        "onewayalpha": "onewayalpha",
+        "translucent": "translucent",
+        "animated": "animated",
+        "animated_banner": "animated_banner"
+      },
+      "animations": {
+        "idle": "animation.checkpoint.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "particle_effects": {
+        "checkpoint_corner": "noxcrew:rsf.checkpoint_corner"
+      },
+      "render_controllers": [
+        "controller.render.checkpoint",
+        "controller.render.checkpoint_scanline",
+        "controller.render.biome_finish_banner"
+      ]
+    }
+  }
+}

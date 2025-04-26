@@ -1,0 +1,56 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.start_button.ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "interact": "q.property('noxcrew.ft:interact')"
+            }
+          ]
+        },
+        "interact": {
+          "animations": [
+            "interact"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.start_button.special_ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "special_random"
+          ],
+          "transitions": [
+            {
+              "special": "v.random == 1"
+            }
+          ]
+        },
+        "special": {
+          "animations": [
+            "special"
+          ],
+          "transitions": [
+            {
+              "default": "q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

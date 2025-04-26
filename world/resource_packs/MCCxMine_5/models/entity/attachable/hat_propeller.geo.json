@@ -1,0 +1,152 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.hat_propeller",
+        "texture_width": 32,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0,
+          1.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "waist",
+          "parent": "root",
+          "pivot": [
+            0,
+            12,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "waist",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "head",
+          "parent": "body",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "hat",
+          "parent": "head",
+          "pivot": [
+            0,
+            24,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                32,
+                -3
+              ],
+              "size": [
+                6,
+                4,
+                6
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -0.5,
+                36,
+                -0.5
+              ],
+              "size": [
+                1,
+                2,
+                1
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hat_alph",
+          "parent": "hat",
+          "pivot": [
+            0,
+            36.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.5,
+                37.5,
+                -0.5
+              ],
+              "size": [
+                5,
+                0,
+                5
+              ],
+              "uv": [
+                13,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -4.5,
+                37.5,
+                -0.5
+              ],
+              "size": [
+                5,
+                0,
+                5
+              ],
+              "pivot": [
+                0,
+                37.5,
+                0
+              ],
+              "rotation": [
+                0,
+                180,
+                0
+              ],
+              "uv": [
+                13,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

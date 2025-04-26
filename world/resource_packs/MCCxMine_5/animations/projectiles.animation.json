@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.projectiles.rotations": {
+      "loop": true,
+      "bones": {
+        "arrow": {
+          "rotation": [
+            "-query.body_x_rotation",
+            "-query.body_y_rotation",
+            0
+          ]
+        }
+      }
+    },
+    "animation.n.projectiles.trail": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "trail",
+          "locator": "trail"
+        }
+      }
+    }
+  }
+}

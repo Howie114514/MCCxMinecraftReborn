@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:hub_coin",
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.small_coin",
+        "a": "geometry.n.ft.medium_coin",
+        "b": "geometry.n.ft.large_coin"
+      },
+      "textures": {
+        "default": "textures/entity/n/sot/coin_stack"
+      },
+      "animations": {
+        "particle": "animation.n.coins.particle"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "particle": "!q.property('noxcrew.ft:collected')"
+          }
+        ],
+        "should_update_effects_offscreen": true
+      },
+      "sound_effects": {
+        "sparkle": "sparkle"
+      },
+      "particle_effects": {
+        "coin_pile_idle": "noxcrew.ft:coin_pile_idle"
+      },
+      "render_controllers": [
+        {
+          "controller.render.sot_coin_stack": "!q.property('noxcrew.ft:collected')"
+        }
+      ]
+    }
+  }
+}

@@ -1,4 +1,18 @@
-import { BlockVolume, Dimension, Entity, Player, system, TicksPerSecond, Vector3, world } from "@minecraft/server";
+import {
+  BlockFillOptions,
+  BlockPermutation,
+  BlockType,
+  BlockVolume,
+  Dimension,
+  Entity,
+  EquipmentSlot,
+  ItemStack,
+  Player,
+  system,
+  TicksPerSecond,
+  Vector3,
+  world,
+} from "@minecraft/server";
 import { Logger } from "./logger";
 
 export function vaildateNum(n: number) {
@@ -77,7 +91,11 @@ export function debounce(f: Function, t: number) {
 }
 
 export function playerByName(n: string) {
-  return world.getPlayers({ name: n })[0];
+  try {
+    return world.getPlayers({ name: n })[0];
+  } catch (e) {
+    return;
+  }
 }
 
 let currentAreaId = 0;
@@ -91,4 +109,56 @@ export function loadArea(dim: Dimension, p: BlockVolume) {
 export function unloadArea(dim: Dimension, id: number) {
   dim.runCommand(`tickingarea remove temp_${id}`);
   currentAreaId--;
+}
+
+export namespace random {
+  export function randint(from: number, to: number) {
+    return Math.min(from, to) + Math.floor(Math.random() * (Math.max(from, to) - Math.min(from, to)));
+  }
+  export function choice<T>(arr: T[]): T {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+}
+
+export type EntityPropertyProxy = { entity: Entity; [x: string]: string | number | boolean | Entity | undefined };
+export function createEntityPropertyProxy(e: Entity) {
+  return new Proxy<EntityPropertyProxy>(
+    { entity: e },
+    {
+      get(target, p, receiver) {
+        return target.entity.getProperty(p as string);
+      },
+      set(target, p, newValue, receiver) {
+        target.entity.setProperty(p as string, newValue);
+        return true;
+      },
+    }
+  );
+}
+
+export function useItem(p: Player) {
+  let slot = p.getComponent("equippable")?.getEquipmentSlot(EquipmentSlot.Mainhand);
+  slot?.setItem(slot.amount == 1 ? undefined : new ItemStack(slot.getItem()?.typeId ?? "", slot.amount - 1));
+}
+
+export interface BlockVolumeArguments {
+  from: Vector3;
+  to: Vector3;
+}
+export function createBlockVolumeArgs(from: Vector3, to: Vector3): BlockVolumeArguments {
+  return { from, to };
+}
+export function initializeBlockVolume({ from, to }: BlockVolumeArguments) {
+  return new BlockVolume(from, to);
+}
+export function fill(bv: BlockVolumeArguments, b: BlockPermutation | BlockType | string, opt?: BlockFillOptions) {
+  world.getDimension("overworld").fillBlocks(initializeBlockVolume(bv), b, opt);
+}
+
+export function runAfterStartup(cb: Function) {
+  system.beforeEvents.startup.subscribe(() => {
+    system.run(() => {
+      cb();
+    });
+  });
 }

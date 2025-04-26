@@ -1,0 +1,643 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.paintproj.trail.black": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_black",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.black": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_black",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.trail.blue": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_blue",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.blue": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_blue",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.trail.brown": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_brown",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.brown": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_brown",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.trail.green": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_green",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.green": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_green",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.trail.purple": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_purple",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.purple": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_purple",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.trail.red": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_red",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.red": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_red",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.trail.white": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_white",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.white": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_white",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.trail.yellow": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "trail_yellow",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintproj.fling.yellow": {
+      "animation_length": 0.1,
+      "particle_effects": {
+        "0.0": {
+          "effect": "fling_yellow",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.n.paintbrush.particle": {
+      "loop": true,
+      "animation_length": 1,
+      "particle_effects": {
+        "0.05": {
+          "effect": "drip"
+        }
+      }
+    },
+    "animation.n.paintbrush.pull.tp": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "brush": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1": [
+              1.8799,
+              4.40675,
+              3.09692
+            ],
+            "0.2": [
+              4.54303,
+              10.61191,
+              7.46323
+            ],
+            "0.3": [
+              7.1682,
+              16.68842,
+              11.75063
+            ],
+            "0.4": [
+              9.58945,
+              22.2475,
+              15.68559
+            ],
+            "0.5": [
+              11.7381,
+              27.12742,
+              19.15293
+            ],
+            "0.6": [
+              13.57517,
+              31.23557,
+              22.08589
+            ],
+            "0.7": [
+              15.07325,
+              34.50599,
+              24.43608
+            ],
+            "0.8": [
+              16.21015,
+              36.88342,
+              26.16205
+            ],
+            "0.9": [
+              16.96563,
+              38.31804,
+              27.22607
+            ],
+            "1.0": [
+              17.32,
+              38.76,
+              27.59
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1": [
+              -0.18952,
+              1.0198,
+              0
+            ],
+            "0.2": [
+              -0.44315,
+              2.45751,
+              0
+            ],
+            "0.3": [
+              -0.67585,
+              3.86322,
+              0
+            ],
+            "0.4": [
+              -0.87107,
+              5.14719,
+              0
+            ],
+            "0.5": [
+              -1.02204,
+              6.27305,
+              0
+            ],
+            "0.6": [
+              -1.1248,
+              7.22106,
+              0
+            ],
+            "0.7": [
+              -1.17645,
+              7.97781,
+              0
+            ],
+            "0.8": [
+              -1.17448,
+              8.5328,
+              0
+            ],
+            "0.9": [
+              -1.11648,
+              8.87642,
+              0
+            ],
+            "1.0": [
+              -1,
+              9,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.n.paintbrush.pull.fp": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "brush": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1": [
+              4.1158,
+              4.44264,
+              3.64402
+            ],
+            "0.2": [
+              9.93499,
+              10.71456,
+              8.78323
+            ],
+            "0.3": [
+              15.66822,
+              16.88283,
+              13.82836
+            ],
+            "0.4": [
+              20.95188,
+              22.55503,
+              18.4577
+            ],
+            "0.5": [
+              25.6328,
+              27.56588,
+              22.53656
+            ],
+            "0.6": [
+              29.62237,
+              31.81967,
+              25.98738
+            ],
+            "0.7": [
+              32.85656,
+              35.24712,
+              28.75461
+            ],
+            "0.8": [
+              35.2807,
+              37.78898,
+              30.79078
+            ],
+            "0.9": [
+              36.84519,
+              39.3914,
+              32.05357
+            ],
+            "1.0": [
+              37.5,
+              40,
+              32.5
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1": [
+              -0.44649,
+              0.88431,
+              -0.43333
+            ],
+            "0.2": [
+              -1.07653,
+              2.13391,
+              -1.04681
+            ],
+            "0.3": [
+              -1.69546,
+              3.36276,
+              -1.65286
+            ],
+            "0.4": [
+              -2.26384,
+              4.49281,
+              -2.2132
+            ],
+            "0.5": [
+              -2.76517,
+              5.49156,
+              -2.71152
+            ],
+            "0.6": [
+              -3.18996,
+              6.34044,
+              -3.13823
+            ],
+            "0.7": [
+              -3.5314,
+              7.02628,
+              -3.48632
+            ],
+            "0.8": [
+              -3.78368,
+              7.53806,
+              -3.74976
+            ],
+            "0.9": [
+              -3.94163,
+              7.86592,
+              -3.92287
+            ],
+            "1.0": [
+              -4,
+              8,
+              -4
+            ]
+          }
+        }
+      }
+    },
+    "animation.n.paintbrush.fire.tp": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.5,
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "brush": {
+          "rotation": {
+            "0.0": [
+              17.32,
+              38.76,
+              27.59
+            ],
+            "0.05": {
+              "pre": [
+                -33.91,
+                -10.88,
+                14.31
+              ],
+              "post": [
+                -33.91,
+                -10.88,
+                14.31
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "0.1": {
+              "post": [
+                -80.12,
+                -53.8,
+                58.7
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "0.5": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              -1,
+              9,
+              0
+            ],
+            "0.05": {
+              "pre": [
+                1.8,
+                -0.74,
+                2.81
+              ],
+              "post": [
+                1.8,
+                -0.74,
+                2.81
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "0.1": {
+              "post": [
+                2.31,
+                -9.31,
+                5
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "0.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "fire"
+        }
+      }
+    },
+    "animation.n.paintbrush.fire.fp": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.5,
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "brush": {
+          "rotation": {
+            "0.0": [
+              37.5,
+              40,
+              32.5
+            ],
+            "0.05": [
+              -48.03,
+              17.16,
+              37.25
+            ],
+            "0.1": [
+              -75.57,
+              4.32,
+              42
+            ],
+            "0.2": [
+              -76.6,
+              0.42,
+              43.17
+            ],
+            "0.3": [
+              -73.5,
+              0.35,
+              40.64
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              -4,
+              8,
+              -4
+            ],
+            "0.05": [
+              -0.78,
+              -7.09,
+              0.56
+            ],
+            "0.1": [
+              0.94,
+              -13.19,
+              2.87
+            ],
+            "0.2": [
+              1.26,
+              -13.59,
+              3.5
+            ],
+            "0.3": [
+              1.3,
+              -12.32,
+              3.42
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "fire"
+        }
+      }
+    },
+    "animation.n.paintbrush.first_person": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            90,
+            70,
+            45
+          ],
+          "position": [
+            -2,
+            4,
+            -2
+          ]
+        },
+        "brush": {
+          "position": [
+            -2,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.n.paintbrush.third_person": {
+      "loop": true,
+      "bones": {
+        "brush": {
+          "rotation": [
+            30,
+            0,
+            0
+          ],
+          "position": [
+            -4,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.n.paintproj.spin": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            0,
+            "query.anim_time * 225",
+            "query.anim_time * 225"
+          ]
+        }
+      }
+    }
+  }
+}

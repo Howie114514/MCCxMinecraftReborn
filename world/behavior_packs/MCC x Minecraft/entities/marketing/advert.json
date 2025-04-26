@@ -1,0 +1,594 @@
+{
+  "format_version": "1.16.200",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:advert",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "noxcrew:0": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "noxcrew:1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "noxcrew:2": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "noxcrew:3": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "noxcrew:4": {
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "noxcrew:5": {
+        "minecraft:variant": {
+          "value": 5
+        }
+      },
+      "noxcrew:s_id_0": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "noxcrew:s_id_1": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "noxcrew:s_id_2": {
+        "minecraft:skin_id": {
+          "value": 2
+        }
+      },
+      "noxcrew:s_id_3": {
+        "minecraft:skin_id": {
+          "value": 3
+        }
+      },
+      "noxcrew:s_id_4": {
+        "minecraft:skin_id": {
+          "value": 4
+        }
+      },
+      "noxcrew:s_id_5": {
+        "minecraft:skin_id": {
+          "value": 5
+        }
+      },
+      "noxcrew:s_id_6": {
+        "minecraft:skin_id": {
+          "value": 6
+        }
+      },
+      "noxcrew:s_id_7": {
+        "minecraft:skin_id": {
+          "value": 7
+        }
+      },
+      "noxcrew:s_id_8": {
+        "minecraft:skin_id": {
+          "value": 8
+        }
+      },
+      "noxcrew:s_id_9": {
+        "minecraft:skin_id": {
+          "value": 9
+        }
+      },
+      "noxcrew:mv_0": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "noxcrew:mv_1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "noxcrew:mv_2": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+      "noxcrew:looping": {
+        "minecraft:timer": {
+          "time": 3.5,
+          "looping": true,
+          "time_down_event": {
+            "event": "noxcrew:upcycle_variant",
+            "target": "self"
+          }
+        }
+      },
+      "noxcrew:pressed": {
+        "minecraft:is_sheared": {},
+        "minecraft:interact": {
+          "interactions": [
+            {}
+          ]
+        }
+      },
+      "noxcrew:timer": {
+        "minecraft:ageable": {
+          "duration": 0.5,
+          "grow_up": {
+            "event": "noxcrew:to_default",
+            "target": "self"
+          }
+        }
+      },
+      "noxcrew:interact": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": [
+                  {
+                    "test": "has_component",
+                    "value": "minecraft:is_sheared",
+                    "operator": "!=",
+                    "subject": "self"
+                  }
+                ],
+                "target": "self",
+                "event": "noxcrew:add_pressed"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "marketing"
+        ]
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 1.4,
+            "height": 3,
+            "pivot": [
+              0,
+              1.6,
+              0
+            ]
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:scale": {
+        "value": 0.8
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": [
+                {
+                  "test": "has_component",
+                  "value": "minecraft:is_sheared",
+                  "operator": "!=",
+                  "subject": "self"
+                }
+              ],
+              "target": "self",
+              "event": "noxcrew:add_pressed"
+            }
+          }
+        ]
+      }
+    },
+    "events": {
+      "noxcrew:upcycle_variant": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 0
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:1"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 1
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:0"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 2
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:2"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 3
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:0"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 4
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:3"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 5
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:0"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 6
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:4"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 7
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:0"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 8
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:5"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 9
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:0"
+              ]
+            },
+            "trigger": "noxcrew:upcycle_skin_id"
+          }
+        ]
+      },
+      "noxcrew:upcycle_skin_id": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 0
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_1"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 1
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_2"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 2
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_3"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 3
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_4"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 4
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_5"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 5
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_6"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 6
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_7"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 7
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_8"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 8
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:s_id_9"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_skin_id",
+              "subject": "self",
+              "operator": "=",
+              "value": 9
+            },
+            "trigger": "noxcrew:upcycle_m_var"
+          }
+        ]
+      },
+      "noxcrew:upcycle_m_var": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_mark_variant",
+              "subject": "self",
+              "operator": "=",
+              "value": 0
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:mv_1"
+              ]
+            },
+            "trigger": "noxcrew:add_var_reset"
+          },
+          {
+            "filters": {
+              "test": "is_mark_variant",
+              "subject": "self",
+              "operator": "=",
+              "value": 1
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:mv_2"
+              ]
+            },
+            "trigger": "noxcrew:add_var_reset"
+          },
+          {
+            "filters": {
+              "test": "is_mark_variant",
+              "subject": "self",
+              "operator": "=",
+              "value": 2
+            },
+            "add": {
+              "component_groups": [
+                "noxcrew:mv_0"
+              ]
+            },
+            "trigger": "noxcrew:add_var_reset"
+          }
+        ]
+      },
+      "noxcrew:add_var_reset": {
+        "add": {
+          "component_groups": [
+            "noxcrew:0",
+            "noxcrew:s_id_0",
+            "noxcrew:looping"
+          ]
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "noxcrew:looping"
+          ]
+        }
+      },
+      "noxcrew:add_pressed": {
+        "add": {
+          "component_groups": [
+            "noxcrew:pressed",
+            "noxcrew:timer"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "noxcrew:looping"
+          ]
+        },
+        "trigger": "noxcrew:upcycle_m_var"
+      },
+      "noxcrew:to_default": {
+        "remove": {
+          "component_groups": [
+            "noxcrew:pressed",
+            "noxcrew:timer"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:interact",
+            "noxcrew:looping"
+          ]
+        }
+      }
+    }
+  }
+}

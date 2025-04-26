@@ -1,0 +1,1159 @@
+{
+    "namespace": "complete",
+
+    "complete_entry": {
+        "type": "panel",
+        "size": ["72%", "14%"],
+        "anims": ["@complete.anim_complete_entry"],
+        "anchor_from": "left_middle",
+        "layer": 53,
+        "$atext": "$actionbar_text",
+        "visible": "$is_visible",
+        "$is_visible|default": false,
+        "variables": [
+            {
+                "requires": "((not ($atext - '§znox:complete' = $atext)))",
+                "$is_visible": true
+            }
+        ],
+        "controls": [
+            {
+                "complete_text_panel_entry": {
+                    "type": "panel",
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "offset": [0, -10],
+                    "controls": [
+                        {
+                            "complete_text_label_entry": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [12, -42],
+                                "font_type": "MinecraftTen",
+                                "font_size": "large",
+                                "font_scale_factor": 1.2,
+                                "anchor_from": "top_middle",
+                                "anchor_to": "top_left",
+                                "text": "txt.ui.toast.complete",
+                                "$is_visible|default": false,
+                                "visible": "$is_visible",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - '§znox:complete' = $atext)))",
+                                        "$is_visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "crown_entry": {
+                                "offset": [36, -96],
+                                "layer": 56,
+                                "keep_ratio": true,
+                                "size": ["70px", "70px"],
+                                "anchor_from": "top_middle",
+                                "anchor_to": "top_left",
+                                "type": "image",
+                                "texture": "textures/ui/n/crown",
+                                "alpha": 1,
+                                "$is_visible|default": false,
+                                "visible": "$is_visible",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - '§znox:complete' = $atext)))",
+                                        "$is_visible": true
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "second_bg_entry": {
+                    "size": ["160px", "200px"],
+                    "offset": [0, -60],
+                    "layer": 52,
+                    "keep_ratio": true,
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_left",
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/dark",
+                    "alpha": 0.6,
+                    "$is_visible|default": false,
+                    "visible": "$is_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - '§znox:complete' = $atext)))",
+                            "$is_visible": true
+                        }
+                    ]
+                }
+            },
+
+            {
+                "complete_bg_entry": {
+                    "size": "$crown_bg_size",
+                    "offset": [0, -26],
+                    "layer": 53,
+                    "type": "image",
+                    "keep_ratio": false,
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_left",
+                    "texture": "$crown_bg_image",
+                    "alpha": 1,
+
+                    "$crown_bg_image|default": "textures/ui/n/complete/border_cell",
+                    "$crown_bg_size|default": ["185px", "97px"],
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$crown_bg_image": "textures/ui/n/complete/border_cell_4",
+                            "$crown_bg_size": ["185px", "120px"]
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$crown_bg_image": "textures/ui/n/complete/border_cell_4",
+                            "$crown_bg_size": ["185px", "140px"]
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$crown_bg_image": "textures/ui/n/complete/border_cell_5",
+                            "$crown_bg_size": ["185px", "160px"]
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$crown_bg_image": "textures/ui/n/complete/border_cell_4",
+                            "$crown_bg_size": ["185px", "140px"]
+                        }
+                    ]
+                }
+            },
+            {
+                "data_ar_entry": {
+                    "type": "stack_panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_left",
+                    "orientation": "vertical",
+                    "layer": 54,
+                    "offset": [5, 6],
+                    "$is_visible|default": false,
+                    "visible": "$is_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$is_visible": true
+                        }
+                    ],
+                    "controls": [
+                        { "data1_panel@data1_panel": {} },
+                        { "spacing@spacing": {} },
+                        { "data2_panel@data2_panel": {} },
+                        { "spacing2@spacing2": {} },
+                        { "data3_panel@data3_panel": {} },
+                        { "spacing3@spacing3": {} },
+                        { "data4_panel@data4_panel": {} },
+                        { "spacing_record@spacing_record": {} },
+                        { "newrecord_ar_panel@newrecord_ar_panel": {} }
+                    ]
+                }
+            },
+            {
+                "data_sot_entry": {
+                    "type": "stack_panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_left",
+                    "orientation": "vertical",
+                    "layer": 54,
+                    "offset": [5, 6],
+                    "$is_visible|default": false,
+                    "visible": "$is_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$is_visible": true
+                        }
+                    ],
+                    "controls": [
+                        { "data1_panel@data1_panel": {} },
+                        { "spacing@spacing": {} },
+                        { "data2_panel@data2_panel": {} },
+                        { "spacing2@spacing2": {} },
+                        { "data3_panel@data3_panel": {} },
+                        { "spacing3@spacing3": {} },
+                        { "data4_panel@data4_panel": {} },
+                        { "spacing4@spacing4": {} },
+                        { "data5_panel@data5_panel": {} },
+                        { "spacing5@spacing5": {} },
+                        { "data6_panel@data6_panel": {} },
+                        { "spacing_record@spacing_record": {} },
+                        { "newrecord_sot_panel@newrecord_sot_panel": {} }
+                    ]
+                }
+            },
+            {
+                "data_md_entry": {
+                    "type": "stack_panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_left",
+                    "orientation": "vertical",
+                    "layer": 54,
+                    "offset": [5, 6],
+                    "$is_visible|default": false,
+                    "visible": "$is_visible",
+                    "$atext": "$actionbar_text",
+
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$is_visible": true
+                        }
+                    ],
+                    "controls": [
+                        { "data1_panel@data1_panel": {} },
+                        { "spacing@spacing": {} },
+                        { "data2_panel@data2_panel": {} },
+                        { "spacing2@spacing2": {} },
+                        { "data3_panel@data3_panel": {} },
+                        { "spacing3@spacing3": {} },
+                        { "data4_panel@data4_panel": {} },
+                        { "spacing4@spacing4": {} },
+                        { "data5_panel@data5_panel": {} },
+                        { "spacing_record@spacing_record": {} },
+                        { "newrecord_md_panel@newrecord_md_panel": {} }
+                    ]
+                }
+            },
+            {
+                "data_gr_entry": {
+                    "type": "stack_panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_left",
+                    "orientation": "vertical",
+                    "layer": 54,
+                    "offset": [5, 6],
+                    "$is_visible|default": false,
+                    "visible": "$is_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$is_visible": true
+                        }
+                    ],
+                    "controls": [
+                        { "data1_panel@data1_panel": {} },
+                        { "spacing@spacing": {} },
+                        { "data2_panel@data2_panel": {} },
+                        { "spacing2@spacing2": {} },
+                        { "data3_panel@data3_panel": {} },
+                        { "spacing3@spacing3": {} },
+                        { "data4_panel@data4_panel": {} },
+                        { "spacing4@spacing4": {} },
+                        { "data5_panel@data5_panel": {} },
+                        { "spacing_record@spacing_record": {} },
+                        { "newrecord_gr_panel@newrecord_gr_panel": {} }
+                    ]
+                }
+            }
+        ]
+    },
+
+    "anim_complete_entry": {
+        "anim_type": "offset",
+        "easing": "out_quart",
+
+        "from": [-800, 0],
+        "to": [0, 0],
+        "duration": 1,
+        "next": "@complete.anim_complete_wait"
+    },
+    "anim_complete_wait": {
+        "anim_type": "offset",
+        "easing": "out_quart",
+        "from": [0, 0],
+        "to": [0, 0],
+        //how long to leave toast on screen
+
+        "duration": 12,
+        "next": "@complete.anim_complete_exit"
+    },
+    "anim_complete_exit": {
+        "anim_type": "offset",
+        "easing": "in_quart",
+        "from": [0, 0],
+        //this should be -800 to leave the screen completely
+        "to": [-1800, 0],
+        "duration": 2.5
+    },
+
+    "spacing": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [5, 6]
+    },
+    "spacing2": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [5, 6]
+    },
+    "spacing3": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [5, 6]
+    },
+    "spacing4": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [5, 6]
+    },
+    "spacing5": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [5, 6]
+    },
+    "spacing_record": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": [5, 24]
+    },
+    "data1_panel": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [205, 12],
+        "controls": [
+            {
+                "data1_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, 0],
+                    "layer": 53,
+                    "$is_data1_visible|default": false,
+                    "visible": "$is_data1_visible",
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/bar",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$is_data1_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$is_data1_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$is_data1_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$is_data1_visible": true
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "data1_left": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "$complete_string_1|default": "§l$complete_string_1",
+                                "$is_data1_visible|default": false,
+                                "visible": "$is_data1_visible",
+                                "offset": [10, 0],
+                                "localize": true,
+
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "text": "$complete_string_1",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                                        "$complete_string_1": "txt.ui.toast.coins_earned",
+                                        //"$complete_string_1": " ",
+                                        "$is_data1_visible": true
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                                        "$complete_string_1": "txt.ui.toast.coins_earned",
+                                        "$is_data1_visible": true
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                                        "$complete_string_1": "txt.ui.toast.coins_earned",
+                                        "$is_data1_visible": true
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                                        "$complete_string_1": "txt.ui.toast.coins_earned",
+                                        "$is_data1_visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "data1_right": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [-20, 0],
+
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+
+                                "$complete_data_1|default": " ",
+                                "localize": true,
+                                "text": "$complete_data_1",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_' = $atext)))",
+                                        //§z at the start of a number counts as 3 characters. this gets the first ten leftover numbers
+                                        "$complete_data_1": "('%.15s' *($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - '~' - 'd1')",
+                                        "$is_data1_visible": true
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+
+    "data2_panel": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [205, 12],
+        "controls": [
+            {
+                "data2_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, 0],
+                    "$is_data2_visible|default": false,
+                    "visible": "$is_data2_visible",
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/bar",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$is_data2_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$is_data2_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$is_data2_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$is_data2_visible": true
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "data2_left": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "$is_data2_visible|default": false,
+                                "visible": "$is_data2_visible",
+                                "offset": [10, 0],
+                                "localize": true,
+
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "$complete_string_2|default": "§l$complete_string_2",
+                                "text": "$complete_string_2",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                                        "$complete_string_2": "txt.ui.toast.ar.time",
+                                        "$is_data2_visible": true
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                                        "$complete_string_2": "txt.ui.toast.md.slain",
+                                        "$is_data2_visible": true
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                                        "$complete_string_2": "txt.ui.toast.gr.mobs_slain",
+                                        "$is_data2_visible": true
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                                        "$complete_string_2": "txt.ui.toast.coins_collected",
+                                        "$is_data2_visible": true
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "data2_right": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [-20, 0],
+                                "localize": true,
+
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+
+                                "$complete_data_2|default": " ",
+                                "text": "$complete_data_2",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_' = $atext)))",
+                                        //§z at the start of a number counts as 3 characters. this gets the first ten leftover numbers. and d1 is two char.
+                                        "$complete_data_2": "((('%.15s' *(($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - ('%.15s' * ($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5')))))- '~' - 'd2')",
+                                        "$is_data1_visible": true
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+
+    "data3_panel": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [205, 12],
+        "controls": [
+            {
+                "data3_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, 0],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/bar",
+                    "$is_data3_visible|default": false,
+                    "visible": "$is_data3_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$is_data3_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$is_data3_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$is_data3_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$is_data3_visible": true
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "data3_left": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "localize": true,
+
+                                "offset": [10, 0],
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "$complete_string_3|default": "§l$complete_string_3",
+                                "text": "$complete_string_3",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                                        "$complete_string_3": "txt.ui.toast.sot.chests_opened"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                                        "$complete_string_3": "txt.ui.toast.gr.blocks_painted"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:ar_trophy_1' = $atext)))",
+                                        "$complete_string_3": "txt.ui.string_ar_trophy_1"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:ar_trophy_2' = $atext)))",
+                                        "$complete_string_3": "txt.ui.string_ar_trophy_2"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:ar_trophy_3' = $atext)))",
+                                        "$complete_string_3": "txt.ui.string_ar_trophy_3"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:ar_trophy_4' = $atext)))",
+                                        "$complete_string_3": "txt.ui.string_ar_trophy_4"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:ar_trophy_5' = $atext)))",
+                                        "$complete_string_3": "txt.ui.string_ar_trophy_5"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "data3_right": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [-20, 0],
+
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+                                "localize": true,
+                                "$complete_data_3|default": "§l$complete_data_3",
+                                "text": "$complete_data_3",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                                        "$complete_data_3": "((('%.15s' *(($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - ('%.30s' * ($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5')))))- '~' - 'd3')"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                                        "$complete_data_3": "((('%.15s' *(($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - ('%.30s' * ($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5')))))- '~' - 'd3')"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:ar_trophy' = $atext)))",
+                                        //no data here, empty on right
+                                        "$complete_data_3": ""
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "data4_panel": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [205, 12],
+        "controls": [
+            {
+                "data4_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, 0],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/bar",
+                    "$is_data4_visible|default": false,
+                    "visible": "$is_data4_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$is_data4_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$is_data4_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$is_data4_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$is_data4_visible": true
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "data4_left": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [10, 0],
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "$complete_string_4|default": "§l$complete_string_4",
+                                "text": "$complete_string_4",
+                                "variables": [
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.time_spent"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.gr.cakes_baked"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.highscore"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_0' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_0"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_1' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_1"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_2' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_2"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_3' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_3"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_4' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_4"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_5' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_5"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_6' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_6"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_7' = $atext)))",
+                                        "$complete_string_4": "txt.ui.toast.md.rooms_survived_7"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "data4_right": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [-20, 0],
+
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+
+                                "$complete_data_4|default": "§l$complete_data_4",
+                                "text": "$complete_data_4",
+                                "variables": [
+                                    {
+                                        "requires": "(not (($atext - 'nox:type_sot' = $atext) and ($atext - 'nox:type_gr' = $atext) and ($atext - 'nox:type_ar' = $atext)))",
+                                        "$complete_data_4": "((('%.15s' *(($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - ('%.45s' * ($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5')))))- '~' - 'd4')"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_0' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_0"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_1' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_1"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_2' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_2"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_3' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_3"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_4' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_4"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_5' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_5"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_6' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_6"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:md_rooms_7' = $atext)))",
+                                        "$complete_data_4": "txt.ui.toast.md.rooms_7"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "data5_panel": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [205, 12],
+        "controls": [
+            {
+                "data5_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, 0],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/bar",
+                    "$is_data5_visible|default": false,
+                    "visible": "$is_data5_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$is_data5_visible": false
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$is_data5_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$is_data5_visible": true
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$is_data5_visible": true
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "data5_left": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [10, 0],
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "$complete_string_5|default": "§l$complete_string_5",
+                                "text": "$complete_string_5",
+                                "variables": [
+                                    {
+                                        "requires": "(not (($atext - 'nox:type_md' = $atext) and ($atext - 'nox:type_gr' = $atext)))",
+                                        "$complete_string_5": "txt.ui.toast.highscore"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:sot_escaped' = $atext)))",
+                                        "$complete_string_5": "txt.ui.toast.sot.escaped"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:sot_failed' = $atext)))",
+                                        "$complete_string_5": "txt.ui.toast.sot.failed"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "data5_right": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [-20, 0],
+
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+                                "$complete_data_5|default": "§l$complete_data_5",
+                                "text": "$complete_data_5",
+                                "variables": [
+                                    {
+                                        "requires": "(not (($atext - 'nox:type_md' = $atext) and ($atext - 'nox:type_gr' = $atext)))",
+                                        "$complete_data_5": "((('%.15s' *(($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - ('%.60s' * ($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5')))))- '~' - 'd5')"
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:sot_escaped' = $atext)))",
+                                        //no data here, empty on right
+                                        "$complete_data_5": ""
+                                    },
+                                    {
+                                        "requires": "((not ($atext - 'nox:sot_failed' = $atext)))",
+                                        "$complete_data_5": "((('%.15s' *(($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - ('%.60s' * ($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5')))))- '~' - 'd5')"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "data6_panel": {
+        "type": "panel",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [205, 12],
+        "controls": [
+            {
+                "data6_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, 0],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/bar",
+                    "$is_data6_visible|default": false,
+                    "visible": "$is_data6_visible",
+                    "variables": [
+                        {
+                            "requires": "((not ($atext - 'nox:type_ar' = $atext)))",
+                            "$is_data6_visible": false
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_gr' = $atext)))",
+                            "$is_data6_visible": false
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_md' = $atext)))",
+                            "$is_data6_visible": false
+                        },
+                        {
+                            "requires": "((not ($atext - 'nox:type_sot' = $atext)))",
+                            "$is_data6_visible": true
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "data6_left": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [10, 0],
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "$complete_string_6|default": "§l$complete_string_6",
+                                "text": "$complete_string_6",
+                                "variables": [
+                                    {
+                                        "requires": "(not (($atext - 'nox:type_sot' = $atext)))",
+                                        "$complete_string_6": "txt.ui.toast.highscore"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "data6_right": {
+                                "type": "label",
+                                "shadow": true,
+                                "layer": 55,
+                                "offset": [-20, 0],
+
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+                                "$complete_data_6|default": "§l$complete_data_6",
+                                "text": "$complete_data_6",
+                                "variables": [
+                                    {
+                                        "requires": "(not (($atext - 'nox:type_sot' = $atext)))",
+                                        "$complete_data_6": "((('%.15s' *(($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5') - ('%.75s' * ($atext - '§znox:complete' - 'nox:new_record'  - ' ' - 'nox:type_ar'  - 'nox:md_rooms_0' - 'nox:md_rooms_1' - 'nox:md_rooms_2' - 'nox:md_rooms_3' - 'nox:md_rooms_4'- 'nox:md_rooms_5' - 'nox:md_rooms_6' - 'nox:md_rooms_7' - 'nox:sot_escaped'  - 'nox:sot_failed' - 'nox:type_gr' - 'nox:type_sot' - 'nox:type_md'   - 'nox:ar_trophy_1' - 'nox:ar_trophy_2' - 'nox:ar_trophy_3' - 'nox:ar_trophy_4' - 'nox:ar_trophy_5')))))- '~' - 'd6')"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "newrecord_sot_panel": {
+        "type": "panel",
+        "$is_new_record_sot_visible|default": false,
+        "visible": "$is_new_record_sot_visible",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+
+        "offset": [0, 224],
+        "size": [120, 12],
+        "variables": [
+            {
+                "requires": "(((not ($atext - 'nox:new_record' = $atext)) and (not ($atext - 'nox:type_sot' = $atext))))",
+                "$is_new_record_sot_visible": true
+            }
+        ],
+        "controls": [
+            {
+                "newrecord_sot_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, -4],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/record_bar"
+                }
+            },
+            {
+                "newrecord_sot_left": {
+                    "type": "label",
+                    "shadow": true,
+                    "layer": 55,
+                    "offset": [0, -4],
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$new_record_string|default": "§l$new_record_string",
+                    "text": "txt.ui.toast.new_record"
+                }
+            }
+        ]
+    },
+    "newrecord_md_panel": {
+        "type": "panel",
+        "$is_new_record_md_visible|default": false,
+        "visible": "$is_new_record_md_visible",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [120, 12],
+        "variables": [
+            {
+                "requires": "(((not ($atext - 'nox:new_record' = $atext)) and (not ($atext - 'nox:type_md' = $atext))))",
+                "$is_new_record_md_visible": true
+            }
+        ],
+        "controls": [
+            {
+                "newrecord_md_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, -4],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/record_bar"
+                }
+            },
+            {
+                "newrecord_md_left": {
+                    "type": "label",
+                    "shadow": true,
+                    "layer": 55,
+                    "offset": [0, -4],
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$new_record_string|default": "§l$new_record_string",
+                    "text": "txt.ui.toast.new_record"
+                }
+            }
+        ]
+    },
+    "newrecord_gr_panel": {
+        "type": "panel",
+        "$is_new_record_gr_visible|default": false,
+        "visible": "$is_new_record_gr_visible",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [120, 12],
+        "variables": [
+            {
+                "requires": "(((not ($atext - 'nox:new_record' = $atext)) and (not ($atext - 'nox:type_gr' = $atext))))",
+                "$is_new_record_gr_visible": true
+            }
+        ],
+        "controls": [
+            {
+                "newrecord_gr_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, -4],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/record_bar"
+                }
+            },
+            {
+                "newrecord_gr_left": {
+                    "type": "label",
+                    "shadow": true,
+                    "layer": 55,
+                    "offset": [0, -4],
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$new_record_string|default": "§l$new_record_string",
+                    "text": "txt.ui.toast.new_record"
+                }
+            }
+        ]
+    },
+    "newrecord_ar_panel": {
+        "type": "panel",
+        "$is_new_record_ar_visible|default": false,
+        "visible": "$is_new_record_ar_visible",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "alpha": 0.6,
+        "size": [120, 12],
+        "variables": [
+            {
+                "requires": "(((not ($atext - 'nox:new_record' = $atext)) and (not ($atext - 'nox:type_ar' = $atext))))",
+                "$is_new_record_ar_visible": true
+            }
+        ],
+        "controls": [
+            {
+                "newrecord_ar_bg": {
+                    "size": ["100%", "100%"],
+                    "offset": [-10, -4],
+                    "layer": 53,
+                    "type": "image",
+                    "texture": "textures/ui/n/complete/record_bar"
+                }
+            },
+            {
+                "newrecord_ar_left": {
+                    "type": "label",
+                    "shadow": true,
+                    "layer": 55,
+                    "offset": [0, -4],
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "$new_record_string|default": "§l$new_record_string",
+                    "text": "txt.ui.toast.new_record"
+                }
+            }
+        ]
+    },
+
+    "data2_right": {
+        "type": "panel",
+        "layer": 55,
+        "anchor_from": "left_middle",
+        "anchor_to": "left_middle",
+        "$tesst|default": false,
+        "visible": "$tesst"
+    },
+
+    "complete_entry_factory": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "factory": {
+            "name": "hud_actionbar_text_factory",
+            "control_ids": {
+                "hud_actionbar_text": "complete_entry@complete.complete_entry"
+            }
+        }
+    },
+    "glow_factory": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "factory": {
+            "name": "hud_actionbar_text_factory",
+            "control_ids": {
+                "hud_actionbar_text": "glow_entry@complete.glow_entry"
+            }
+        }
+    },
+    "gradient_factory": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "factory": {
+            "name": "hud_actionbar_text_factory",
+            "control_ids": {
+                "hud_actionbar_text": "gradient_entry@complete.gradient_entry"
+            }
+        }
+    }
+}

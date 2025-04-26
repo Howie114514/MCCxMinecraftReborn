@@ -1,0 +1,1094 @@
+## Meta
+pack.name=RP Ulang Tahun Ke-15 MCC x Minecraft	### "MCC" is the short form for "MC Championship". You'll see "MC Championship" or "MCC" several times throughout this document. "MC" is an abbreviation for "Minecraft". It is named as such because using the full name would be a EULA violation. So when translating "MC Championship", please use a functional abbreviation in your language. Thanks!
+pack.description=Paket Sumber Daya untuk acara Ulang Tahun ke-15 MCC x Minecraft.	###
+txt.version.lang=1.10
+
+
+##Event Overview
+txt.event_overview.1=ACARA PERMAINAN MINI MC CHAMPIONSHIP!	###
+txt.event_overview.2=Noxcrew menghadirkan MC Championship terbaik ke Bedrock Edition! Berpesta seharian dan bertarung dalam permainan mini yang dirancang untuk menguji kemampuanmu, dari parkur hingga melawan monster.	###
+txt.event_overview.3=Dapatkan 15 item kosmetik gratis ... dan jubah baru yang mewah!	###
+txt.event_overview.4=Ambil pedang; kekacauan sudah menunggu!	###
+txt.event_overview.5=Acara ini dimulai di sini pada 22 Juli, 10.00 PST dan berlangsung sampai 4 Agustus, 16.00 PST	###
+
+##VANILLA
+item.warped_sign.name=Tanda Gua 	###
+tile.warped_standing_sign.name=Tanda Gua 	###
+tile.warped_wall_sign.name=Tanda Gua 	###
+tile.prismarine.dark.name=Blok Logam 	###
+tile.stone_slab2.prismarine.dark.name=Lempeng Logam 	###
+tile.dark_prismarine_stairs.name=Tangga Logam 	###
+
+##INTERACT TEXTS
+action.interact.open=Buka	###This is meant as a verb, action.
+action.interact.take=Ambil	###This is meant as a verb, action.
+action.interact.grab=Ambil	###This is meant as a verb, action.
+action.interact.pick_up=Ambil	###This is meant as a verb, action.
+action.interact.use=Gunakan	###This is meant as a verb, action.
+action.interact.change_color=Ganti Warna	###This is meant as a verb, action.
+action.interact.deposit=Simpan	###This is meant as a verb, action.
+action.interact.interact=Berinteraksi	###This is meant as a verb, action.
+action.interact.trash=Sampah	###To throw away or "trash" an item
+action.interact.eat=Makan	###To eat something, like a food
+action.interact.drink=Minum	###To drink something, like a soda
+action.interact.paint=Cat	###The verb to paint.
+action.interact.gift=Hadiah untuk Pemain	###The verb to gift, as in "Give the gift to the player."
+action.interact.shop=Belanja	###The verb, "to shop" or "to browse"
+action.interact.decorate=Mendekorasi	###The verb, "to shop" or "to browse"
+
+##ACTION HINTS
+action.hint.exit.noxcrew.ft:seat=Ketuk Menyelinap untuk keluar	###"Sneak" is an action within minecraft
+
+action.hint.exit.scheme.noxcrew.ft:seat=Ketuk Menyelinap untuk keluar	###"Sneak" is an action within minecraft
+
+action.hint.exit.console.noxcrew.ft:seat=Tekan :_input_key.sneak: untuk keluar	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
+
+##SIGNS
+txt.sign.cave1=§oSetiap hari lukisan baru akan terungkap.	###
+txt.sign.cave2=§oPecahkan ketujuhnya dan ambil hadiah!	###
+
+##ITEMS
+item.noxcrew.ft:freezing_bow.name=Busur Membeku	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow.name=Busur Membeku	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron.name=Kunci Besi	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold.name=Kunci Emas	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond.name=Kunci Berlian	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite.name=Kunci Netherite	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush.name=Kuas Cat Kosong	###
+item.noxcrew.ft:paintbrush_green.name=Kuas Cat Hijau	###
+item.noxcrew.ft:paintbrush_yellow.name=Kuas Cat Kuning	###
+item.noxcrew.ft:paintbrush_blue.name=Kuas Cat Biru	###
+item.noxcrew.ft:paintbrush_red.name=Kuas Cat Merah	###
+item.noxcrew.ft:paintbrush_white.name=Kuas Cat Putih	###
+item.noxcrew.ft:paintbrush_black.name=Kuas Cat Hitam	###
+item.noxcrew.ft:paintbrush_brown.name=Kuas Cat Cokelat	###
+item.noxcrew.ft:paintbrush_purple.name=Kuas Cat Ungu	###
+item.noxcrew.ft:beanie_red.name=Kupluk Kelinci Merah	### Beanies are hats. "Red Rabbits" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_orange.name=Beanie Ocelot Oranye	### Beanies are hats. "Orange Ocelots" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_yellow.name=Beanie Yak Kuning	### Beanies are hats. "Yellow Yaks" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_lime.name=Beanie Llama Hijau Pupus	### Beanies are hats. "Lime Llamas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_green.name=Beanie Tokek Hijau	### Beanies are hats. "Green Geckos" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_aqua.name=Beanie Axolotl Aqua	### Beanies are hats. "Aqua Axolotls" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_cyan.name=Beanie Coyote Sian	### Beanies are hats. "Cyan Coyotes" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_blue.name=Beanie Kelelawar Biru	### Beanies are hats. "Blue Bats" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_purple.name=Beanie Panda Ungu	### Beanies are hats. "Purple Pandas" is a team mascot name, do not translate.
+item.noxcrew.ft:beanie_pink.name=Kupluk Kakatua Merah Muda	### Beanies are hats. "Pink Parrots" is a team mascot name, do not translate.
+item.noxcrew.ft:hat_party.name=Topi Pesta	###
+item.noxcrew.ft:hat_propeller.name=Topi Baling-baling	###
+item.noxcrew.ft:hat_crown_cake.name=Mahkota Kue	###
+item.noxcrew.ft:hat_birthday_present.name=Topi Hadiah Ulang Tahun	###
+item.noxcrew.ft:hat_jester.name=Topi Pelawak	###
+item.noxcrew.ft:hat_chicken_jockey.name=Topi Joki Ayam	###
+item.noxcrew.ft:hat_boombox.name=Topi Boombox	###
+item.noxcrew.ft:foam_finger.name=Jari Busa	###
+item.noxcrew.ft:balloon_animal.name=Hewan Balon	###
+item.noxcrew.ft:big_bubble_blower.name=Peniup Gelembung Raksasa	###
+item.noxcrew.ft:silly_horn.name=Tanduk Konyol	###
+item.noxcrew.ft:party_popper.name=Peletup Pesta	###
+item.noxcrew.ft:confetti_tag_prime.name=Tag Konfeti	###
+item.noxcrew.ft:confetti_tag_leftover.name=Tag Konfeti	###
+item.noxcrew.ft:pizza_box.name=Kotak Piza	###
+item.noxcrew.ft:celebration_fireworks.name=Kembang Api Ulang Tahun	###
+item.noxcrew.ft:player_gift_giving.name=Kotak Hadiah	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving.name=Kotak Hadiah	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball.name=Bola Disko	###
+item.noxcrew.ft:beach_ball.name=Bola Pantai	###
+item.noxcrew.ft:balloon_helium.name=Balon Helium	###
+item.noxcrew.ft:leave_game.name=§6Tinggalkan Game	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice.name=Irisan Piza	###
+item.noxcrew.ft:mcc_burger.name=Burger Lezat	###
+item.noxcrew.ft:anniversary_hot_dog.name=Hot Dog Lezat	###
+item.noxcrew.ft:party_cupcake.name=Cupcake	###
+item.noxcrew.ft:party_cake.name=Irisan Kue	###
+item.noxcrew.ft:party_chips.name=Mangkuk Keripik	###
+item.noxcrew.ft:party_cookie.name=Kukis	###
+item.noxcrew.ft:party_soda.name=Soda Berbuih	###
+item.noxcrew.ft:cotton_candy.name=Gula Kapas	###
+item.noxcrew.ft:popcorn.name=Popcorn	###
+item.noxcrew.ft:super_wrap.name=Pembungkus Sehat	###
+item.noxcrew.ft:cosmetic_chest.name=Peti Kosmetik	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter.name=Peta Teleportasi	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list.name=Daftar Tantangan	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg.name=Telur	###
+item.noxcrew.ft:milk_bucket.name=Ember Susu	###
+
+##Attachments
+item.noxcrew.ft:freezing_bow=Busur Membeku	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.bow=Busur Membeku	### This bow shoots arrows which freeze mobs into blocks of ice.
+item.noxcrew.ft:key_iron=Kunci Besi	### A key which opens a chest. "Iron" references Minecraft iron.
+item.noxcrew.ft:key_gold=Kunci Emas	### A key which opens a chest. "Gold" references Minecraft Gold.
+item.noxcrew.ft:key_diamond=Kunci Berlian	### A key which opens a chest. "Diamond" references Minecraft Diamond.
+item.noxcrew.ft:key_netherite=Kunci Netherite	### A key which opens a chest. "Netherite" references Minecraft Netherite.
+item.noxcrew.ft:paintbrush=Kuas Cat Kosong	###
+item.noxcrew.ft:paintbrush_green=Kuas Cat Hijau	###
+item.noxcrew.ft:paintbrush_yellow=Kuas Cat Kuning	###
+item.noxcrew.ft:paintbrush_blue=Kuas Cat Biru	###
+item.noxcrew.ft:paintbrush_red=Kuas Cat Merah	###
+item.noxcrew.ft:paintbrush_white=Kuas Cat Putih	###
+item.noxcrew.ft:paintbrush_black=Kuas Cat Hitam	###
+item.noxcrew.ft:paintbrush_brown=Kuas Cat Cokelat	###
+item.noxcrew.ft:paintbrush_purple=Kuas Cat Ungu	###
+item.noxcrew.ft:beanie_red=Kupluk Kelinci Merah	### Beanies are hats. "Red Rabbits" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_orange=Beanie Ocelot Oranye	### Beanies are hats. "Orange Ocelots" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_yellow=Beanie Yak Kuning	### Beanies are hats. "Yellow Yaks" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_lime=Beanie Llama Hijau Pupus	### Beanies are hats. "Lime Llamas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_green=Beanie Tokek Hijau	### Beanies are hats. "Green Geckos" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_aqua=Beanie Axolotl Aqua	### Beanies are hats. "Aqua Axolotls" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_cyan=Beanie Coyote Sian	### Beanies are hats. "Cyan Coyotes" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_blue=Beanie Kelelawar Biru	### Beanies are hats. "Blue Bats" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_purple=Beanie Panda Ungu	### Beanies are hats. "Purple Pandas" is a team mascot, do not translate.
+item.noxcrew.ft:beanie_pink=Kupluk Kakatua Merah Muda	### Beanies are hats. "Pink Parrots" is a team mascot, do not translate.
+item.noxcrew.ft:hat_party=Topi Pesta	###
+item.noxcrew.ft:hat_propeller=Topi Baling-baling	###
+item.noxcrew.ft:hat_crown_cake=Mahkota Kue	###
+item.noxcrew.ft:hat_birthday_present=Topi Hadiah Ulang Tahun	###
+item.noxcrew.ft:hat_jester=Topi Pelawak	###
+item.noxcrew.ft:hat_chicken_jockey=Topi Joki Ayam	###
+item.noxcrew.ft:hat_boombox=Topi Boombox	###
+item.noxcrew.ft:foam_finger=Jari Busa	###
+item.noxcrew.ft:balloon_animal=Hewan Balon	###
+item.noxcrew.ft:big_bubble_blower=Peniup Gelembung Raksasa	###
+item.noxcrew.ft:silly_horn=Tanduk Konyol	###
+item.noxcrew.ft:party_popper=Peletup Pesta	###
+item.noxcrew.ft:confetti_tag_prime=Tag Konfeti	###
+item.noxcrew.ft:confetti_tag_leftover=Tag Konfeti	###
+item.noxcrew.ft:pizza_box=Kotak Pizza	###
+item.noxcrew.ft:celebration_fireworks=Kembang Api Ulang Tahun	###
+item.noxcrew.ft:player_gift_giving=Kotak Hadiah	### Players buy these, then can give them to other players. The player who is given a "Gifting Box" receives a "Gift Box".
+item.noxcrew.ft:player_gift_receiving=Kotak Hadiah	### Players get this item when another player clicks on them with a "Gifting Box". This resulting "Gift Box" can be opened and has a small prize inside.
+item.noxcrew.ft:disco_ball=Bola Disko	###
+item.noxcrew.ft:beach_ball=Bola Pantai	###
+item.noxcrew.ft:balloon_helium=Balon Helium	###
+item.noxcrew.ft:leave_game=§6Tinggalkan Game	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:pizza_slice=Irisan Piza	###
+item.noxcrew.ft:mcc_burger=Burger Lezat	###
+item.noxcrew.ft:anniversary_hot_dog=Hot Dog Lezat	###
+item.noxcrew.ft:party_cupcake=Cupcake	###
+item.noxcrew.ft:party_cake=Irisan Kue	###
+item.noxcrew.ft:party_chips=Mangkuk Keripik	###
+item.noxcrew.ft:party_cookie=Kukis	###
+item.noxcrew.ft:party_soda=Soda Berbuih	###
+item.noxcrew.ft:cotton_candy=Gula Kapas	###
+item.noxcrew.ft:popcorn=Popcorn	###
+item.noxcrew.ft:super_wrap=Roti Lapis Sehat	###
+item.noxcrew.ft:cosmetic_chest=Peti Kosmetik	###A chest that a player can open to find their wearable hats.
+item.noxcrew.ft:teleporter=Peta Teleportasi	###A map that allows players to teleport places
+item.noxcrew.ft:challenge_list=Daftar Tantangan	###A list the player can open to see their challenges.
+item.noxcrew.ft:egg=Telur	###
+item.noxcrew.ft:milk_bucket=Ember Susu	###
+
+
+##TILES
+tile.noxcrew.ft:speed_pad.name=Blok Pendorong Kecepatan	###
+tile.noxcrew.ft:launch_pad.name=Blok Landasan Peluncur	###
+tile.noxcrew.ft:jump_pad.name=Blok Peningkat Lompatan	###
+tile.noxcrew.ft:painting_green.name=Blok Hijau	###
+tile.noxcrew.ft:painting_yellow.name=Blok Kuning	###
+tile.noxcrew.ft:painting_blue.name=Blok Biru	###
+tile.noxcrew.ft:painting_red.name=Blok Merah	###
+tile.noxcrew.ft:painting_white.name=Blok Putih	###
+tile.noxcrew.ft:painting_black.name=Blok Hitam	###
+tile.noxcrew.ft:painting_brown.name=Blok Cokelat	###
+tile.noxcrew.ft:painting_purple.name=Blok Ungu	###
+tile.noxcrew.ft:elytra_icon.name=Blok Gerbang Elytra	###
+tile.noxcrew.ft:audience_member_oof.name=Anggota Audiens Mengernyit	###
+tile.noxcrew.ft:audience_member_angry.name=Anggota Audiens Marah	###
+tile.noxcrew.ft:audience_member_joy.name=Anggota Audiens Gembira	###
+tile.noxcrew.ft:audience_member_happy.name=Anggota Audiens Bahagia	###
+tile.noxcrew.ft:audience_member_unimpressed.name=Anggota Audiens Tak Terkesan	###
+tile.noxcrew.ft:audience_member_unsure.name=Anggota Audiens Tak Yakin	###
+tile.noxcrew.ft:audience_member_starstruck.name=Anggota Audiens Terpukau	###
+tile.noxcrew.ft:cake_centre.name=Pusat Kue	###
+tile.noxcrew.ft:cake_edge.name=Tepi Kue	###
+tile.noxcrew.ft:cake_cherry.name=Ceri Kue	###
+tile.noxcrew.ft:window_spruce.name=Jendela Spruce	###
+tile.noxcrew.ft:window_oak.name=Jendela Ek	###
+tile.noxcrew.ft:iron_bars.name=Batang Besi Lurus	###
+tile.noxcrew.ft:iron_bars_h.name=Batang Besi Setengah	###
+tile.noxcrew.ft:iron_bars_c.name=Pojok Batang Besi	###
+tile.noxcrew.ft:castle_pink.name=Terakota Kastel Merah Muda 	###
+tile.noxcrew.ft:sot_flower.name=Bunga Kecombrang Menyala 	###
+tile.noxcrew.ft:metal_rigging_v.name=Rangkaian Logam Horizontal	###
+tile.noxcrew.ft:metal_rigging_h.name=Rangkaian Logam Vertikal	###
+tile.noxcrew.ft:modern_light.name=Lampu Modern	###
+tile.noxcrew.ft:rope.name=Blok Tali	###
+tile.noxcrew.ft:hieroglyph_1_a.name=Teka-Teki Gua Hari 1 Kiri Atas	###
+tile.noxcrew.ft:hieroglyph_1_b.name=Teka-Teki Gua Hari 1 Kanan Atas	###
+tile.noxcrew.ft:hieroglyph_1_c.name=Teka-Teki Gua Hari 1 Kiri Bawah	###
+tile.noxcrew.ft:hieroglyph_1_d.name=Teka-Teki Gua Hari 1 Kanan Bawah	###
+tile.noxcrew.ft:hieroglyph_2_a.name=Teka-Teki Gua Hari 2 Kiri Atas	###
+tile.noxcrew.ft:hieroglyph_2_b.name=Teka-Teki Gua Hari 2 Kanan Atas	###
+tile.noxcrew.ft:hieroglyph_2_c.name=Teka-Teki Gua Hari 2 Kiri Bawah	###
+tile.noxcrew.ft:hieroglyph_2_d.name=Teka-Teki Gua Hari 2 Kanan Bawah	###
+tile.noxcrew.ft:hieroglyph_3_a.name=Teka-Teki Gua Hari 3 Kiri Atas	###
+tile.noxcrew.ft:hieroglyph_3_b.name=Teka-Teki Gua Hari 3 Kanan Atas	###
+tile.noxcrew.ft:hieroglyph_3_c.name=Teka-Teki Gua Hari 3 Kiri Bawah	###
+tile.noxcrew.ft:hieroglyph_3_d.name=Teka-Teki Gua Hari 3 Kanan Bawah	###
+tile.noxcrew.ft:hieroglyph_4_a.name=Teka-Teki Gua Hari 4 Kiri Atas	###
+tile.noxcrew.ft:hieroglyph_4_b.name=Teka-Teki Gua Hari 4 Kanan Atas	###
+tile.noxcrew.ft:hieroglyph_4_c.name=Teka-Teki Gua Hari 4 Kiri Bawah	###
+tile.noxcrew.ft:hieroglyph_4_d.name=Teka-Teki Gua Hari 4 Kanan Bawah	###
+tile.noxcrew.ft:hieroglyph_5_a.name=Teka-Teki Gua Hari 5 Kiri Atas	###
+tile.noxcrew.ft:hieroglyph_5_b.name=Teka-Teki Gua Hari 5 Kanan Atas	###
+tile.noxcrew.ft:hieroglyph_5_c.name=Teka-Teki Gua Hari 5 Kiri Bawah	###
+tile.noxcrew.ft:hieroglyph_5_d.name=Teka-Teki Gua Hari 5 Kanan Bawah	###
+tile.noxcrew.ft:hieroglyph_6_a.name=Teka-Teki Gua Hari 6 Kiri Atas	###
+tile.noxcrew.ft:hieroglyph_6_b.name=Teka-Teki Gua Hari 6 Kanan Atas	###
+tile.noxcrew.ft:hieroglyph_6_c.name=Teka-Teki Gua Hari 6 Kiri Bawah	###
+tile.noxcrew.ft:hieroglyph_6_d.name=Teka-Teki Gua Hari 6 Kanan Bawah	###
+tile.noxcrew.ft:hieroglyph_7_a.name=Teka-Teki Gua Hari 7 Kiri Atas	###
+tile.noxcrew.ft:hieroglyph_7_b.name=Teka-Teki Gua Hari 7 Kanan Atas	###
+tile.noxcrew.ft:hieroglyph_7_c.name=Teka-Teki Gua Hari 7 Kiri Bawah	###
+tile.noxcrew.ft:hieroglyph_7_d.name=Teka-Teki Gua Hari 7 Kanan Bawah	###
+tile.noxcrew.ft:bigcake_top.name=Blok Kue Atas	###
+tile.noxcrew.ft:bigcake_bottom.name=Blok Kue Bawah	###
+tile.noxcrew.ft:cake_slice.name=Irisan Kue	###
+tile.noxcrew.ft:decoration_banner_15_long_a.name=Panji 15 Atas Panjang	###
+tile.noxcrew.ft:decoration_banner_15_long_b.name=Panji 15 Bawah Panjang	###
+tile.noxcrew.ft:decoration_banner_mcc_long_a.name=Panji MCC Atas Panjang	###
+tile.noxcrew.ft:decoration_banner_mcc_long_b.name=Panji MCC Bawah Panjang	###
+tile.noxcrew.ft:decoration_bunting_a.name=Rangkaian Bendera Putih	###
+tile.noxcrew.ft:decoration_bunting_b.name=Rangkaian Bendera Hijau	###
+tile.noxcrew.ft:decoration_bunting_mcc.name=Rangkaian Bendera MCC	###
+tile.noxcrew.ft:decoration_pennon_15_a.name=Umbul-Umbul Hijau	###
+tile.noxcrew.ft:decoration_pennon_15_b.name=Umbul-Umbul Putih	###
+tile.noxcrew.ft:decoration_pennon_mcc.name=Umbul-Umbul MCC	###
+tile.noxcrew.ft:decoration_flag_mcc.name=Bendera MCC Kecil	###
+tile.noxcrew.ft:decoration_flag_15.name=Bendera 15 Tahun Kecil	###
+tile.noxcrew.ft:decoration_flag_15_long_a.name=Bendera 15 Tahun Atas	###
+tile.noxcrew.ft:decoration_flag_15_long_b.name=Bendera 15 Tahun Bawah	###
+tile.noxcrew.ft:decoration_flag_mcc_long_a.name=Bendera MCC Atas	###
+tile.noxcrew.ft:decoration_flag_mcc_long_b.name=Bendera MCC Bawah	###
+tile.noxcrew.ft:plush_red.name=Boneka Kelinci Merah	###
+tile.noxcrew.ft:plush_orange.name=Boneka Ocelot Oranye	###
+tile.noxcrew.ft:plush_yellow.name=Boneka Yak Kuning	###
+tile.noxcrew.ft:plush_lime.name=Boneka Llama Hijau Pupus	###
+tile.noxcrew.ft:plush_green.name=Boneka Tokek Hijau	###
+tile.noxcrew.ft:plush_cyan.name=Boneka Koyot Sian	###
+tile.noxcrew.ft:plush_aqua.name=Boneka Axolotl Aqua	###
+tile.noxcrew.ft:plush_blue.name=Boneka Kelelawar Biru	###
+tile.noxcrew.ft:plush_pink.name=Boneka Kakatua Merah Muda	###
+tile.noxcrew.ft:plush_purple.name=Boneka Panda Ungu	###
+tile.noxcrew.ft:decoration_banner_mcc_a.name=Panji MCC Kiri Atas	###
+tile.noxcrew.ft:decoration_banner_mcc_b.name=Panji MCC Kanan Atas	###
+tile.noxcrew.ft:decoration_banner_mcc_c.name=Panji MCC Kiri Bawah	###
+tile.noxcrew.ft:decoration_banner_mcc_d.name=Panji MCC Kanan Bawah	###
+tile.noxcrew.ft:decoration_present.name=Kotak Kado MCC	###
+tile.noxcrew.ft:cup_poster1.name=Poster Ender Cup 1	###
+tile.noxcrew.ft:cup_poster2.name=Poster Ender Cup 2	###
+tile.noxcrew.ft:logo_1.name=Logo Noxcrew 1	###
+tile.noxcrew.ft:logo_2.name=Logo Noxcrew 2	###
+tile.noxcrew.ft:logo_3.name=Logo Noxcrew 3	###
+tile.noxcrew.ft:melt_spawner.name=Pemuncul Monster Meleleh	###
+
+##ENTITIES
+entity.noxcrew.ft:coin_pile.name=Tumpukan Koin	###
+entity.noxcrew.ft:treasure_chest.name=Peti Harta Karun	###
+entity.noxcrew.ft:key_podium.name=Podium Kunci	###
+entity.noxcrew.ft:sand_podium.name=Podium Pasir	###
+entity.noxcrew.ft:armor_podium.name=Podium Baju Zirah	###
+entity.noxcrew.ft:paint_pot.name=Pot Cat	###
+entity.noxcrew.ft:giant_cake.name=Kue Ulang Tahun	###
+entity.noxcrew.ft:beach_ball.name=Bola Pantai	###
+entity.noxcrew.ft:balloon_helium.name=Balon Helium	###
+entity.noxcrew.ft:disco_ball.name=Bola Disko	###
+entity.noxcrew.ft:lost_pearl.name=Mutiara Misterius	###
+entity.noxcrew.ft:decoration_awning.name=Kanopi Dekorasi	###
+entity.noxcrew.ft:decoration_bunting.name=Bendera Dekorasi	###
+entity.noxcrew.ft:decoration_cupcake.name=Cupcake Ulang Tahun	###
+entity.noxcrew.ft:decoration_ballons.name=Balon Ulang Tahun	###
+entity.noxcrew.ft:decoration_15.name=15 Balon	###
+entity.noxcrew.ft:decoration_board.name=Papan Ulang Tahun	###
+entity.noxcrew.ft:decoration_chicken_balloon.name=Balon Ayam	###
+entity.noxcrew.ft:decoration_mcc_balloon.name=Balon Maskot	###
+entity.noxcrew.ft:trophy_help.name=Bantuan	###
+entity.noxcrew.ft:sand_timer.name=Jam Pasir	###
+entity.noxcrew.ft:crowned_frog.name=Pangeran Katak	###
+entity.noxcrew.ft:cake_candles.name=Lilin Kue	###
+entity.noxcrew.ft:creator_ace.name=Seapeekay	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_grid.name=Smajor	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_melt.name=hannahxxrose	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_sands.name=HBomb94	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_agnes.name=Agnes	### This is a name or gamertag of a person
+entity.noxcrew.ft:creator_jens.name=Jens	### This is a name or gamertag of a person
+entity.noxcrew.ft:start_button.name=Tombol Start	###
+entity.noxcrew.ft:vendor_mascot.name=Topi Maskot	###
+entity.noxcrew.ft:vendor_hat.name=Topi	###
+entity.noxcrew.ft:vendor_toys.name=Mainan	###
+entity.noxcrew.ft:vendor_food.name=Makanan	###
+entity.noxcrew.ft:advert_creator_cup.name=Cangkir Ender	###
+entity.noxcrew.ft:md_creeper.name=Creeper	###
+entity.noxcrew.ft:md_blaze.name=Kobaran Api	###
+entity.noxcrew.ft:md_blaze<>.name=Kobaran Api	###
+entity.noxcrew.ft:md_skeleton.name=Kerangka	###
+entity.noxcrew.ft:md_skeleton<>.name=Kerangka	###
+entity.noxcrew.ft:md_spider.name=Laba-Laba	###
+entity.noxcrew.ft:md_vindicator.name=Vindicator	###
+entity.noxcrew.ft:md_zombie.name=Zombie	###
+entity.noxcrew.ft:md_zombie_baby.name=Zombie Bayi	###
+
+
+##MESSAGES
+##Misc
+txt.misc.msg1=§6§l!§r§oMutiara naik dan turun secara misterius...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l!§r Kamu menemukan misteri gua!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg3=MENUNGGU PEMAIN ...	###
+txt.misc.msg4=Game akan dimulai dalam 	###
+txt.misc.msg5=Kamu akan diteleportasi	###
+txt.misc.msg6_1=§6§l!§r %s memberimu hadiah!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l!§r Kamu memberikan hadiah ke %s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l!§r Pemain itu tidak bisa menerima hadiah lain	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg7= Elytra Terpasang 	###Contains unicode symbols, ensure they remain in the translation.
+txt.misc.msg8= §eSatu babak teka-teki terselesaikan ... 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.misc.msg9= §aKamu sudah menyelesaikan Teka-Teki Gua!	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+
+##Nudge Tutorials
+txt.nudge.msg1=[§6§l!§r]: Merasa ingin melompat? Cobalah berlari di sepanjang awan dalam permainan mini  §6Ace Race§r !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.nudge.msg2=[§6§l!§r]: Ingin tantangan? Coba selesaikan semua tugas dalam permainan mini  §6Grid Runners!§r 	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg3=[§6§l!§r]: Permainan mini  §6Meltdown§r  menunggu ... bisakah kamu bertahan dari gerombolan monster?	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.nudge.msg4=[§6§l!§r]: Jelajahi kuil misterius dalam permainan mini  §6Sands of Time§r !	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.nudge.msg5=[§6§l!§r]: Kamu bisa melihat semua tantanganmu yang selesai di Ruang Trofi! Temukan di tenda besar di dekat portal  §6Grid Runners §r  di  lobi utama!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.nudge.msg6=[§6§l!§r]: Mencari topi untuk dikenakan? Beli di Toko Topi! Temukan di bawah topi besar di  lobi utama!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg7=[§6§l!§r]: Ingin mencoba beberapa mainan keren? Kamu bisa membelinya di Toko Mainan! Temukan di dekat tanda kereta troli di  lobi utama!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg8=[§6§l!§r]: Ingin mencoba makanan? Kamu bisa membeli beberapa di Toko Makanan! Temukan di restoran di dekat patung ayam besar di  lobi utama!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg9=[§6§l!§r]: Apakah kamu tahu ada  teka-teki misteri yang bisa kamu selesaikan? Pergi ke Gua Misteri atas gunung di  lobi utama!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg10=[§6§l!§r]: Apakah kamu tahu setiap hari ada teka-teki misteri baru untuk dipecahkan? Setiap  di sebelah  berarti sebuah teka-teki telah terbuka!	###Contains unicode symbols and Minecraft formatting codes (§ followed by one character), ensure they remain in the translation.
+txt.nudge.msg11=[§6§l!§r]: Apakah kamu tahu kamu bisa menemukan tumpukan koin di semua lobi? Mulai cari!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.nudge.msg12=[§6§l!§r]: Persediaan terlalu penuh? Kamu bisa menyingkirkan beberapa item di tempat sampah!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Errors
+txt.error.msg1=§cKoinmu tidak cukup untuk keperluan ini	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg2=§cKamu tidak punya ruang untuk membeli ini! Buang item di tempat sampah.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg3=§6§l!§r Kamu sudah punya Topi ini!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg4=§c %s penuh!§r Kumpulkan bahan yang lain!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg5=§cKamu tidak punya kunci untuk peti ini!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.error.msg6=§6Peti ini sudah kamu buka!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Vendor
+txt.shop_info.pizza_slice=Ada piza! Makan untuk dapat pendorong kecepatan!	###
+txt.shop_info.mcc_burger=Ada burger! Makan untuk dapat pendorong kecepatan & lompatan!	###
+txt.shop_info.anniversary_hot_dog=Ada hot dog! Makan untuk dapat pendorong kecepatan & lompatan!	###
+txt.shop_info.party_cupcake=Ada cupcake! Makan untuk bisa jatuh perlahan!	###
+txt.shop_info.party_cake=Ada kue! Makan untuk bisa melayang!	###
+txt.shop_info.party_chips=Ada keripik! Makan untuk dapat pendorong kecepatan!	###
+txt.shop_info.party_cookie=Ada kukis! Makan untuk dapat pendorong lompatan!	###
+txt.shop_info.party_soda=Ada soda! Makan untuk dapat pendorong kecepatan!	###
+txt.shop_info.cotton_candy=Ada kembang gula! Makan untuk dapat pendorong lompatan!	###
+txt.shop_info.popcorn=Ada jagung berondong! Makan untuk dapat pendorong lompatan!	###
+txt.shop_info.super_wrap=Ada tortila isi super! Makan untuk dapat semua pendorong!	###
+txt.shop_info.foam_finger=Ada jari gabus! Angkat untuk menunjukkan dukunganmu!	###
+txt.shop_info.balloon_animal=Ada balon binatang! Pakai untuk menerbangkan balon!	###
+txt.shop_info.big_bubble_blower=Ada peniup gelembung! Pakai untuk meniupkan gelembung!	###
+txt.shop_info.silly_horn=Ada klakson konyol! Pakai untuk membuat suara!	###
+txt.shop_info.party_popper=Ada petasan pesta! Pakai untuk melontarkan konfeti!	###
+txt.shop_info.confetti_tag_prime=Tag Konfeti! Gunakan pada pemain untuk melabeli mereka dengan konfeti!	###
+txt.shop_info.pizza_box=Ada kotak piza! Pakaikan kepada pemain untuk memberinya piza!	###
+txt.shop_info.celebration_fireworks=Ada kembang api! Pakai untuk menyulut kembang api!	###
+txt.shop_info.player_gift_giving=Ada kado! Pakaikan kepada pemain untuk memberinya hadiah!	###
+txt.shop_info.disco_ball=Ada disko! Pakai untuk membuat bola disko menari!	###
+txt.shop_info.beach_ball=Ada bola pantai! Pakai untuk membuat bola pantai, pukul untuk memainkannya!	###
+txt.shop_info.balloon_helium=Ada balon! Pakai untuk menerbangkan balon!	###
+
+##Ace Race
+txt.tut.ace_title= Ace Race 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.ace_prompt=[§6§l!§r]: §6Bicara dengan Seapeekay di garis start untuk petunjuk dan tips!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.ace_text=[§6§l!§r]: Balapan ke finis menggunakan kecepatan dan bantalan pemacu lompatan!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+##Grid Runners
+txt.tut.grid1_title= Kalahkan Hewan Buas!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid1_prompt=[§6§l!§r]: §6Bicara dengan Smajor di lobi awal untuk petunjuk dan tips!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid1_text=[§6§l!§r]: Kalahkan sebanyak mungkin monster sebelum waktunya berakhir!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid2_title= Salin Lukisannya!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid2_text=[§6§l!§r]: Gunakan wadah cat berwarna dan salin lukisannya!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid3_title= Panggang Kue!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid3_text=[§6§l!§r]: Kumpulkan bahan-bahan untuk kue dan taruh di tengah-tengah!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.grid4_title= Lari!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.grid4_text=[§6§l!§r]: Balapan hingga garis finis!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.grid.warning_hint=§6§l!§r Pergi ke ruang selanjutnya!	###
+
+txt.grid.wave_clear=Gelombang Monster terkalahkan!	###
+txt.grid.wave_reward= Kamu dapat 10 koin!	###
+txt.grid.painting_clear=Lukisan selesai!	###
+txt.grid.painting_reward= Kamu dapat 10 koin!	###
+txt.grid.cake_clear=Kue sudah dipanggang!	###
+txt.grid.cake_reward= Kamu dapat 10 koin!	###
+
+##Meltdown
+txt.tut.melt_title= Meltdown 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.melt_prompt=[§6§l!§r]: §6Bicara dengan hannahxxrose di pintu masuk untuk petunjuk dan tips!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.melt_text=[§6§l!§r]: Bertahan hidup di setiap ruangan sebelum ruangan itu meleleh! Bekukan musuh dengan busur, lalu tinju mereka!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.melt.warning= PERINGATAN: MELELEH 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.danger= BAHAYA: MELELEH KRITIS 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_1= Lolos dari 1/7 Meleleh 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_2= Lolos dari 2/7 Meleleh 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_3= Lolos dari 3/7 Meleleh 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_4= Lolos dari 4/7 Meleleh 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_5= Lolos dari 5/7 Meleleh 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_6= Lolos dari 6/7 Meleleh 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room_7= Lolos dari 7/7 Meleleh 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.room= Lolos dari %s/7 Meleleh 	###the %s is a placeholder for a number. Contains unicode symbols, ensure they remain in the translation.**
+txt.melt.warning_hint=§6§l!§r Pergi ke ruang selanjutnya!	###
+
+##Sands of Time
+txt.tut.sands_title= Sands of Time 	###Contains unicode symbols, ensure they remain in the translation.**
+txt.tut.sands_prompt=[§6§l!§r]: §6Bicara dengan HBomb94 di dekat piramida untuk petunjuk dan tips!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.tut.sands_text=[§6§l!§r]: Temukan sebanyak mungkin koin sebelum waktu habis! Kumpulkan pasir untuk waktu tambahan!	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.sot.coins5= Kamu menemukan 5 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins10= Kamu menemukan 10 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins20= Kamu menemukan 20 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins30= Kamu menemukan 30 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins50= Kamu menemukan 50 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins100= Kamu menemukan 100 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins200= Kamu menemukan 200 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.coins400= Kamu menemukan 400 koin!	###Contains unicode symbols, ensure they remain in the translation.**
+txt.sot.chest=Peti dibuka!	###
+txt.sot.key=Kunci sudah diambil!	###
+txt.sot.upgraded=Sudah Ditingkatkan	###
+
+##Lobby
+txt.lobby.coins5= Kamu menemukan 5 koin!	###
+txt.lobby.coins20= Kamu menemukan 20 koin!	###
+txt.lobby.coins30= Kamu menemukan 30 koin!	###
+
+##UI
+##Unicode Icon Fix
+txt.lang.space=
+txt.lang.unicode=
+
+### Quick Travel Modal
+txt.ui.map=PETA	###
+txt.ui.tp.confirm1=Kamu yakin?	#
+txt.ui.tp.confirm_target=Ini akan menteleportasi kamu ke %s.	#
+txt.ui.tp.area_ace_race= Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.tp.area_grid_runners= Grid Runners	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.tp.area_lobby= Lobi Utama	###Contains unicode symbols, ensure they remain in the translation.**
+txt.ui.tp.area_sot= Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.tp.area_meltdown= Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.title.teleporter=Teleporter siap!	#
+
+##Cosmetic Chest
+txt.title.cosmetic=Peti Kosmetik	###
+txt.ui.cosmetic=Temukan semua topimu di sini!	###
+txt.ui.button.select=Pilih	###
+
+##UI Titles
+txt.ui.title.reward_unlocked=HADIAH DIBUKA	###
+txt.ui.title.red_rabbit_cc=Kepala Kelinci Merah	### "Red Rabbits" is a team mascot, do not translate.
+txt.ui.title.orange_ocelot_cc=Kepala Ocelot Oranye	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.title.yellow_yak_cc=Kepala Yak Kuning	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.title.lime_llama_cc=Kepala Llama Hijau Pupus	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.title.green_gecko_cc=Kepala Tokek Hijau	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.title.aqua_axolotl_cc=Kepala Axolotl Aqua	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.title.cyan_coyote_cc=Kepala Coyote Sian	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.title.blue_bat_cc=Kepala Kelelawar Biru	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.title.purple_panda_cc=Kepala Panda Ungu	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.title.pink_parrot_cc=Kepala Kakatua Merah Muda	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.title.kiss_crowd_emote=Emote Cium Kerumunan	###
+txt.ui.title.ride_victory_emote=Emote Kendarai ke Kemenangan	###
+txt.ui.title.cartwheel_victory_emote=Emote Jungkir Balik Kemenangan	###
+txt.ui.title.flying_chicken_emote=Emote Ayam Terbang	###
+txt.ui.title.cape=Jubah Ulang Tahun MCCxMinecraft ke-15	### "MCC" is the name of an event, do not translate.
+txt.ui.title.crown=Mahkota MCC	### "MCC" is the name of an event, do not translate.
+txt.ui.text.reward_unlocked=Kamu telah membuka item Kreator Karakter! Lihat di Kamar Ganti.	###
+txt.ui.text.cape_unlocked=Selamat! Kamu sudah membuka Jubah MCC! Lihat di Kamar Ganti.	###
+txt.ui.button.claim=KLAIM	###
+
+##UI Vendors
+txt.title.vendor_food= Makanan 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_mascot= Topi Maskot 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_hat= Topi 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.title.vendor_toy= Mainan 	###Contains unicode symbols, ensure they remain in the translation. Character limit of 20
+txt.ui.button.buy=Beli	###
+txt.ui.sold_out=TERJUAL HABIS	###
+
+##Game Toasts
+txt.ui.toast.time= §lWAKTU§r	###
+txt.ui.toast.coins_collected= §lKOIN DIKUMPULKAN§r	###
+txt.ui.toast.coins_earned= §lKOIN DIPEROLEH§r	###
+txt.ui.toast.new_record=§lREKOR BARU!§r	###
+txt.ui.toast.room=RUANG	###
+txt.ui.toast.time_spent= §lWAKTU TERPAKAI§r	###
+txt.ui.toast.complete=SELESAI!	###
+txt.ui.toast.highscore= §lSKOR TINGGI§r	###
+txt.ui.toast.highest_coins= §lHASIL TERBAIK§r	###To be used in a sentence that displays the most amount of coins you've earned, as in "Your best haul was #"
+
+##Game-specific Game Toasts
+txt.ui.string_ar_trophy_1= §lMEDALIS NETHERIT	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Netherite" is a minecraft term for an ore
+txt.ui.string_ar_trophy_2= §lMEDALIS BERLIAN	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Diamond" is a minecraft term for an ore
+txt.ui.string_ar_trophy_3= §lMEDALIS EMAS	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Gold" is a minecraft term for an ore
+txt.ui.string_ar_trophy_4= §lMEDALIS BESI	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Iron" is a minecraft term for an ore
+txt.ui.string_ar_trophy_5= §lMEDALIS TEMBAGA	###Contains unicode symbols & mincraft formatting codes (§ followed by one character), ensure they remain in the translation. "Copper" is a minecraft term for an ore
+txt.ui.toast.sot.chests_opened= §lPETI TERBUKA§r	###
+txt.ui.toast.sot.escaped= §lKAMU LOLOS!§r	###
+txt.ui.toast.sot.failed= §lKAMU TIDAK LOLOS ...§r	###
+txt.ui.toast.gr.mobs_slain= §lMOB DIKALAHKAN§r	###
+txt.ui.toast.gr.blocks_painted= §lBLOK DICAT§r	###
+txt.ui.toast.gr.cakes_baked= §lKUE DIPANGGANG§r	###
+txt.ui.toast.ar.time= §lWAKTU§r	###
+txt.ui.toast.md.slain= §lMOB DIHANCURKAN§r	###
+txt.ui.toast.md.rooms_survived_0= §lRUANG DILALUI DENGAN SELAMAT§r	###
+txt.ui.toast.md.rooms_survived_1= §lRUANG DILALUI DENGAN SELAMAT§r	###
+txt.ui.toast.md.rooms_survived_2= §lRUANG DILALUI DENGAN SELAMAT§r	###
+txt.ui.toast.md.rooms_survived_3= §lRUANG DILALUI DENGAN SELAMAT§r	###
+txt.ui.toast.md.rooms_survived_4= §lRUANG DILALUI DENGAN SELAMAT§r	###
+txt.ui.toast.md.rooms_survived_5= §lRUANG DILALUI DENGAN SELAMAT§r	###
+txt.ui.toast.md.rooms_survived_6= §lRUANG DILALUI DENGAN SELAMAT§r	###
+txt.ui.toast.md.rooms_survived_7= §lRUANGAN DILEWATI§r	###
+txt.ui.toast.md.rooms_0=0/7	###
+txt.ui.toast.md.rooms_1=1/7	###
+txt.ui.toast.md.rooms_2=2/7	###
+txt.ui.toast.md.rooms_3=3/7	###
+txt.ui.toast.md.rooms_4=4/7	###
+txt.ui.toast.md.rooms_5=5/7	###
+txt.ui.toast.md.rooms_6=6/7	###
+txt.ui.toast.md.rooms_7=7/7	###
+
+##Challenge List
+txt.ui.title.challenge_list=DAFTAR TANTANGAN	###
+txt.ui.body1.challenge_list=Tekan Ikon untuk melihat tantangannya!	###
+txt.ui.reward.cape= HADIAH JUBAH	###
+txt.ui.status.cape=Selesai	###
+
+##Candle Challenges
+txt.ui.title.aqua_axolotl_challenge=Tantangan Axolotl Aqua	### "Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.body1.aqua_axolotl_challenge=Saat pakai §lKupluk Axolotl Aqua§r, temukan Mutiara yang Hilang. Benda itu tersembunyi di dalam genangan ....	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.reward.aqua_axolotl_challenge=§oDapatkan Item Kreator Karakter Kepala Axolotl Aqua	###"Aqua Axolotls" is a team mascot, do not translate.
+txt.ui.progress.aqua_axolotl_challenge=§r	###
+
+txt.ui.title.blue_bat_challenge=Tantangan Kelelawar Biru	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.body1.blue_bat_challenge=Saat pakai §lKupluk Kelelawar Biru§r, kumpulkan 100 pasir dari permainan mini §lSands of Time§r.	###"Blue Bats" is a team mascot, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.blue_bat_challenge=§oDapatkan Item Kreator Karakter Kepala Kelelawar Biru	###"Blue Bats" is a team mascot, do not translate.
+txt.ui.progress.blue_bat_challenge=%s Pasir dikumpulkan.	###
+
+txt.ui.title.cyan_coyote_challenge=Tantangan Coyote Sian	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.body1.cyan_coyote_challenge=Saat pakai §lKupluk Koyot Sian§r, Kumpulkan 75 Tumpukan Koin dari permainan mini §lSands of Time§r atau §lMeltdown§r.	###"Cyan Coyotes" is a team mascot, do not translate. "Sands of Time" and "Meltdown" are the names of games, do not translate.
+txt.ui.reward.cyan_coyote_challenge=§oDapatkan Item Kreator Karakter Kepala Coyote Sian	###"Cyan Coyotes" is a team mascot, do not translate.
+txt.ui.progress.cyan_coyote_challenge=%s Tumpukan Koin dikumpulkan.	###
+
+txt.ui.title.green_gecko_challenge=Tantangan Tokek Hijau	###"Green Geckos" is a team mascot, do not translate.
+txt.ui.body1.green_gecko_challenge=Saat pakai §lKupluk Tokek Hijau§r, cat 200 blok dalam tantangan “Salin Lukisan” dari permainan mini §lGrid Runners§r.	###"Green Geckos" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.green_gecko_challenge=§oDapatkan Item Kreator Karakter Kepala Tokek Hijau	###
+txt.ui.progress.green_gecko_challenge=%s blok dicat.	###
+
+txt.ui.title.lime_llama_challenge=Tantangan Llama Hijau Pupus	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.body1.lime_llama_challenge=Saat pakai §lKupluk Llama Hijau Pupus§r, berikan 10 Kotak Kado. Kamu bisa beli Kotak Kado dari Penjual Mainan di dunia hub.	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.reward.lime_llama_challenge=§oDapatkan Item Kreator Karakter Kepala Llama Hijau Pupus	###"Lime Llamas" is a team mascot, do not translate.
+txt.ui.progress.lime_llama_challenge=%s Kotak Hadiah diberikan.	###
+
+txt.ui.title.orange_ocelot_challenge=Tantangan Ocelot Oranye	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.body1.orange_ocelot_challenge=Saat pakai §lKupluk Ocelot Oranye§r, lari melewati 100 Pendorong Kecepatan sambil menyelesaikan permainan mini §lAce Race§r.	###"Orange Ocelots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.orange_ocelot_challenge=§oDapatkan Item Kreator Karakter Kepala Ocelot Oranye	###"Orange Ocelots" is a team mascot, do not translate.
+txt.ui.progress.orange_ocelot_challenge=%s Pemacu Kecepatan dipakai.	###
+
+txt.ui.title.pink_parrot_challenge=Tantangan Kakatua Merah Muda	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.body1.pink_parrot_challenge=Saat pakai §lKupluk Kakatua Merah Muda§r, lari melewati Gerbang Elytra sambil menyelesaikan permainan mini §lAce Race§r 25 kali.	###"Pink Parrots" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.pink_parrot_challenge=§oDapatkan Item Kreator Karakter Kepala Kakatua Merah Muda	###"Pink Parrots" is a team mascot, do not translate.
+txt.ui.progress.pink_parrot_challenge=%s Gerbang Elytra dipakai.	###
+
+txt.ui.title.purple_panda_challenge=Tantangan Panda Ungu	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.body1.purple_panda_challenge=Saat pakai §lKupluk Panda Ungu§r, taruh 200 bahan dalam tantangan “Panggang Kue” dari permainan mini §lGrid Runners§r,	###"Purple Pandas" is a team mascot, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.purple_panda_challenge=§oDapatkan Item Kreator Karakter Kepala Panda Ungu	###"Purple Pandas" is a team mascot, do not translate.
+txt.ui.progress.purple_panda_challenge=%s bahan ditaruh.	###
+
+txt.ui.title.red_rabbit_challenge=Tantangan Kelinci Merah	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.body1.red_rabbit_challenge=Saat pakai §lKupluk Kelinci Merah§r, lari melewati 50 Landasan Peluncur sambil menyelesaikan permainan mini §lAce Race§r.	###"Red Rabbits" is a team mascot, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.ui.reward.red_rabbit_challenge=§oDapatkan Item Kreator Karakter Kepala Kelinci Merah	###"Red Rabbits" is a team mascot, do not translate.
+txt.ui.progress.red_rabbit_challenge=%s Landasan Peluncur dipakai.	###
+
+txt.ui.title.yellow_yak_challenge=Tantangan Yak Kuning	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.body1.yellow_yak_challenge=Saat pakai §lKupluk Yak Kuning§r, kalahkan 350 musuh beku dalam permainan mini §lMeltdown§r.	###"Yellow Yaks" is a team mascot, do not translate. "Meltdown" is the name of a game, do not translate.
+txt.ui.reward.yellow_yak_challenge=§oDapatkan Item Kreator Karakter Kepala Yak Kuning	###"Yellow Yaks" is a team mascot, do not translate.
+txt.ui.progress.yellow_yak_challenge=%s musuh beku dikalahkan.	###
+
+txt.ui.title.ace_race_challenge=Tantangan Ace Race	###"Ace Race" is the name of a game, do not translate.
+txt.ui.body1.ace_race_challenge=Selesaikan satu ronde permainan mini §lAce Race§r!	###"Ace Race" is the name of a game, do not translate.
+txt.ui.reward.ace_race_challenge=§oDapatkan Emote “Cium Kerumunan”	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.ace_race_challenge=§r	###
+
+txt.ui.title.grid_runners_challenge=Tantangan Pelari Kisi	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.body1.grid_runners_challenge=Selesaikan permainan mini §lGrid Pelari§r satu kali!	###"Grid Runners" is the name of a game, do not translate.
+txt.ui.reward.grid_runners_challenge=§oDapatkan Emote “Berkendara ke Kemenangan”	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.grid_runners_challenge=§r	###
+
+txt.ui.title.meltdown_challenge=Tantangan Meltdown	###"Meltdown" is the name of a game, do not translate.
+txt.ui.body1.meltdown_challenge=Bertahan hidup sampai ruang ke-3 dalam permainan mini §lMeltdown§r	###"Meltdown" is the name of a game, do not translate.
+txt.ui.reward.meltdown_challenge=§oDapatkan Emote “Ayam Terbang”	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.meltdown_challenge=§r	###
+
+
+txt.ui.title.sot_challenge=Tantangan Sands of Time	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.body1.sot_challenge=Masuk ke permainan mini §lSands of Time§r, bertahan hidup selama 2 menit, lalu kabur!	###"Sands of Time" is the name of a game, do not translate.
+txt.ui.reward.sot_challenge=§oDapatkan Emote “Jungkir Balik Kemenangan”	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.ui.progress.sot_challenge=§r	###
+
+txt.ui.title.cave_challenge=Tantangan Gua Misteri	###
+txt.ui.body1.cave_challenge=Selesaikan 7 tantangan teka-teki yang dicat di gua misterius.	###
+txt.ui.reward.cave_challenge=§oDapatkan Item Kreator Karakter Mahkota MCC	###"MCC" is the name of an event, do not translate.
+txt.ui.progress.cave_challenge=%s dari 7 puzzle selesai.	###
+
+##QUEUE
+txt.matchmaking.status.in_queue.0=§e MENUNGGU PEMAIN §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.1=§e §fMENUNGGU PEMAIN (%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.2=§e §eMENUNGGU PEMAIN §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.3=§e §eMENUNGGU PEMAIN §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.4=§e §eMENUNGGU PEMAIN §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.5=§e §eMENUNGGU PEMAIN §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.in_queue.6=§e §eMENUNGGU PEMAIN §f(%s) §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.max_wait=§eWaktu tunggu maksimal:§f %s	###
+
+txt.matchmaking.status.preparing.0=§e MENUNGGU GAME .... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.1=§e §fMENUNGGU GAME .... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.2=§e MENUNGGU GAME .... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.3=§e MENUNGGU GAME .... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.4=§e MENUNGGU GAME .... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.5=§e MENUNGGU GAME .... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.preparing.6=§e MENUNGGU GAME .... §e§r	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
+txt.matchmaking.status.rough_wait=§eKira-kira §f%s§e Menit atau kurang	### Used when there are at least 2 minutes remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.rough_wait_singular=§eKira-kira §f%s§e Menit atau kurang	### Used when there is exactly 1 minute remaining. **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.ready=§aGAME SIAP!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleporting=§eTELEPORTASI §eDALAM §f%s!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.matchmaking.status.teleported=§eDITELEPORTASI!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.matchmaking.status.start.0=§eBersiap ....	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.1=§eDimulai dalam:	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+txt.matchmaking.status.start.2=§e§l>§r    §f%s    §e§l<
+txt.matchmaking.status.start.3=§e§l>§r   §f%s   §e§l<
+txt.matchmaking.status.start.4=§e§l>§r  §f%s  §e§l<
+txt.matchmaking.status.start.5=§e§l>§r §f%s §e§l<
+txt.matchmaking.status.start.6=§aMULAI!	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!
+
+##DIALOGUES
+##Titles
+txt.title.dia.jens=Jens	### This is a name or gamertag of a person
+txt.title.dia.agnes=Agnes	### This is a name or gamertag of a person
+txt.title.dia.jagnes= Jens &  Agnes	### This is a name or gamertag of a person Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_ace= Seapeekay 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_grid= Smajor 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_melt= hannahxxrose 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.creator_sands= HBomb94 	### This is a name or gamertag of a person. Contains unicode symbols, ensure they remain in the translation.
+txt.title.dia.help=Bantuan	###
+txt.title.dia.ender_cup= Cangkir Ender 	###Contains unicode symbols, ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+txt.title.dia.frog_prince=Pangeran Katak	###
+
+txt.title.start_game=Mulai Permainan	###
+txt.title.join_queue=Gabung Antrean	###
+txt.title.ace_race= Ace Race 	### Contains unicode symbols, ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.title.grid_runners= Grid Runners 	### Contains unicode symbols, ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.title.meltdown= Meltdown 	### Contains unicode symbols, ensure they remain in the translation. "Meltdown" is the name of a game, do not translate.
+txt.title.sot= Sands of Time 	### Contains unicode symbols, ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.title.lobby= Lobi Utama 	### Contains unicode symbols, ensure they remain in the translation.
+
+##Buttons
+txt.button.ok=Oke	###
+txt.button.yes=Ya	###
+txt.button.no=Tidak	###
+txt.button.back=Kembali	###
+txt.button.exit=Keluar	###
+txt.button.close=Tutup	###
+txt.button.start_game=Mulai Permainan	###
+txt.button.join_queue=Gabung Antrean	###
+txt.button.tutorial=Tutorial	###
+txt.button.challenges_q=Tantangan?	###
+txt.button.who_are_you_q=Siapa kamu?	###
+txt.button.what_games_q=Game Apa?	###
+txt.button.cave_mystery_q=Misteri Gua?	###
+txt.button.go_to_portal=Buka Portal	###
+txt.button.remove_hat=Lepas Topi	###
+txt.button.no_hats=Tidak ada topi yang tersedia. Beli dari toko!	###
+txt.button.pet_frog=Elus Katak Itu	###
+txt.button.talk_frog=Bicara dengan Katak	###
+txt.button.kiss_frog=Kecup Katak Itu	###
+txt.button.love_minecraft_q=Suka Minecraft?	###Shorthand for "What do you love about Minecraft?"
+txt.button.love_mcc_q=Suka MCC?	###Shorthand for "What do you love about MCC?"
+txt.button.best_play_q=Permainan Terbaik?	###Shorthand for "What is your Best Play?" Play meaning, best performance within a game, e.g. "the play of the game."
+txt.button.ace_race_q=Ace Race?	###Shorthand for "What do you like about Ace Race?" Ace Race being the name of a mini-game in the event. "Ace Race" is the name of a game, do not translate.
+txt.button.stream_q=Streaming?	###Shorthand for "Why should we watch your stream?"
+txt.button.best_update_q=Pembaruan Terbaik?	###Shorthand for "What's your favourite/best update of Minecraft"
+txt.button.grid_runners_q=Grid Runners?	###Shorthand for "What do you like about Grid Runners?" Grid Runners being the name of a mini-game in the event. "Grid Runners" is the name of a game, do not translate.
+txt.button.meltdown_q=Meltdown?	###Shorthand for "What do you like about Meltdown?" Meltdown being the name of a mini-game in the event. "Meltdown" is the name of a game, do not translate.
+txt.button.best_memory_q=Kenangan Terbaik?	###Shorthand for "What's your best/favorite memory in Minecraft?"
+txt.button.sot_q=Sands of Time?	###Shorthand for "What do you like about Sands of Time?" Sands of Time being the name of a mini-game in the event. "Sands of Time" is the name of a game, do not translate.
+txt.button.next=Berikutnya	###
+
+##NPCs
+##Creator NPCs
+##Jens & Agnes
+txt.jagnes.1_0.dia1=Halo! Aku  Jens!	###
+txt.jagnes.1_0.dia2=Dan aku  Agnes!	###
+txt.jagnes.1_0.dia3=Selamat datang di Pesta Ulang Tahun ke-15 Minecraft!	### "MCC" is the name of an event, do not translate.
+txt.jagnes.1_0.dia4=Kami di sini bersama Noxcrew untuk memainkan permainan mini dari MC Championship!	### "MC Championship" is the name of an event, do not translate.
+txt.jagnes.1_0.dia5=Jelajahi, coba permainan mini, dan pecahkan misteri gua!	###
+txt.jagnes.1_0.dia6=Ikuti jalur ke portal dan cobalah permainan mini!	###
+txt.jagnes.1_0.dia6_1=Untuk memulai, ikuti jalur ke portal dan cobalah permainan mini!	###
+txt.jagnes.1_0.dia6_2=Ikuti Mahkota  melayang menuju portal dan coba permainan mini untuk memulai!	###Contains unicode symbols, ensure they remain in the translation.
+
+##What games?
+txt.jagnes.2_0.dia1=Jelajahi portal untuk memainkan permainan mini dari MC Championship.	###
+txt.jagnes.2_0.dia2=Game mininya adalah §1Ace Race§r, §1Grid Runners §r, §1Meltdown§r, dan §1Sands of Time§r!	### "Ace Race", "Grid Runners", "Meltdown" and "Sands of Time" are the names of games, do not translate.
+txt.jagnes.2_0.dia3=Cobalah dan pilih favoritmu!	###
+
+##What games?
+txt.jagnes.2_1.dia1=Jelajahi portal untuk memainkan permainan mini dari MC Championship.	###
+txt.jagnes.2_1.dia2=Pergi ke awan §1Ace Race§r dan berlari menembus langit!	### "Ace Race" is the name of a game, do not translate.
+txt.jagnes.2_1.dia3=Kunjungi stadion §1Grid Runners§r dan selesaikan tantangan!	### "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.2_1.dia4=Masuki §1Meltdown§r lalu cobalah bertahan hidup dari zombie dan ruangan meleleh!	### "Meltdown" is the name of a game, do not translate.
+txt.jagnes.2_1.dia5=Tantang kuil §1Sands of Time§r dan temukan timbunan harta karun!	### "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.2_1.dia6=Cobalah dan pilih favoritmu!	###
+
+##Cave Mystery?
+txt.jagnes.3_0.dia1= Kabarnya ada gua misterius di atas Pegunungan.	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia2=Katanya ada  teka-teki bercat yang bisa kamu pecahkan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.3_0.dia3=Temukan gua dan lihat apa yang terungkap!	###
+
+##Go to Portal
+txt.jagnes.4_0.dia1=Ikuti  Mahkota yang melayang ke portal permainan mini  §6Ace Race§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.4_0.dia2=Ikuti  Mahkota yang melayang ke portal permainan mini  §6Grid Runners§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.4_0.dia3=Ikuti  Mahkota yang melayang ke portal permainan mini  §6Meltdown§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.4_0.dia4=Ikuti  Mahkota yang melayang ke portal permainan min §6Sands of Time!§r 	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+
+##Help Box - Shop
+txt.jagnes.help_shop1=Kamu menemukan toko!	###
+txt.jagnes.help_shop2=Beli item dengan koin yang kamu dapatkan dari bermain permainan mini!	###
+
+##Help Box - Trophy Room
+txt.jagnes.help_trophy1=Kamu telah menemukan  Ruang Trofi!	###
+txt.jagnes.help_trophy2=Lihat trofi dan hadiah dari Tantangan yang selesai!	###
+txt.jagnes.help_trophy3=Ambil gambar dan posting kemajuanmu!	###
+
+##Help Box - Trophy Room (Alt)
+txt.jagnes.help_cake1=Kamu menemukan Ruang Kue!	###
+txt.jagnes.help_cake2=Lihat prestasi di lilin kue. Selesaikan untuk mendapatkan hadiah khusus!	###
+txt.jagnes.help_cake3=Ambil gambar dan bagikan kemajuanmu!	###
+
+##Help Box - Portal
+txt.jagnes.help_portal1=Kamu menemukan Portal Permainan Mini!	###
+txt.jagnes.help_portal2=Jelajahi portal ke dunia Permainan Mini!	###
+txt.jagnes.help_portal3=Lanjutkan dan berjalanlah!	###
+
+##Help Box - Portal (ace race)
+txt.jagnes.help_ace_race_portal1=Bagus, kamu menemukan Portal  §6Ace Race§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Ace Race" is the name of a game, do not translate.
+txt.jagnes.help_ace_race_portal2=Pergilah ke awan dan berlari melintasi langit!	###
+txt.jagnes.help_ace_race_portal3=Lanjutkan dan berjalanlah!	###
+
+##Help Box - Portal (grid runners)
+txt.jagnes.help_grid_runners_portal1=Ooh lihat, itu adalah Portal  §6Grid Runners§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Grid Runners" is the name of a game, do not translate.
+txt.jagnes.help_grid_runners_portal2=Kunjungi stadion dan selesaikan ruang tantangan!	###
+txt.jagnes.help_grid_runners_portal3=Lanjutkan dan berjalanlah!	###
+
+##Help Box - Portal (meltdown)
+txt.jagnes.help_meltdown_portal1=Ah, kamu telah menemukan Portal  §6Meltdown§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Meltdown" is the name of a game, do not translate.
+txt.jagnes.help_meltdown_portal2=Masuki fasilitas dan cobalah bertahan hidup dari zombie dan ruangan meleleh!	###
+txt.jagnes.help_meltdown_portal3=Lanjutkan dan berjalanlah!	###
+
+##Help Box - Portal (sands of time)
+txt.jagnes.help_sot_portal1=Bagus, kamu telah menemukan Portal  §6Sands of Time§r !	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.** "Sands of Time" is the name of a game, do not translate.
+txt.jagnes.help_sot_portal2=Tantang kuil kuno dan temukan timbunan harta karun!	###
+txt.jagnes.help_sot_portal3=Lanjutkan dan berjalanlah!	###
+
+##Help Box - Cave
+txt.jagnes.help_cave1=Wow, kamu menemukan  gua misterius! 	###Contains unicode symbols, ensure they remain in the translation.
+txt.jagnes.help_cave2=Bisakah kamu memecahkan teka-teki yang muncul di sini setiap hari?	###
+
+##Help Box - hub-game
+txt.jagnes.help_activity1=Bagus, kamu menemukan aktivitas!	###
+txt.jagnes.help_activity2=Ingin nongkrong dan bermain game?	###
+
+##creator_ace
+txt.creator_ace.title_who1=§lKenapa kamu menyukai Minecraft?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_ace.title_who2=§lKenangan MCC favorit?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who3=§lPermainan Terbaik dalam MCC?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_ace.title_who4=§lYang paling disukai dari Ace Race?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.title_who5=§lKenapa Ender Cup Stream kamu perlu ditonton?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_ace.1_0.dia1=Halo! Aku §1Seapeekay§r dan selamat datang di langit §1Ace Race§r!	### "Seapeekay" is a name, do not translate. "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.1_0.dia2=Pakai pemacu dan landasan untuk membalap sampai ke garis finis!	###
+txt.creator_ace.1_0.dia3=Tekan “Panduan” untuk mempelajari lebih lanjut.	###
+txt.creator_ace.1_0.dia4=Atau tekan tombol Start Game jika kamu siap untuk bermain!	###
+txt.creator_ace.2_0.dia1=§1Ace Race§r adalah perjalanan di atas awan!	###"Ace Race" is the name of a game, do not translate.
+txt.creator_ace.2_0.dia2=Lari melewati jalur secepat mungkin sampai garis finis!	###
+txt.creator_ace.2_0.dia3=Pakai Landasan Lompat, Landasan Peluncur, Landasan Cepat, dan Gerbang Elytra untuk mempercepat larimu!	###
+txt.creator_ace.2_0.dia4=Kutunggu di garis finis!	###
+
+##Who are you?
+txt.creator_ace.3_0.dia1=Hai! Aku §1Seapeekay§r, streamer Minecraft yang suka cari persaingan dan keseruan sekaligus.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia2=Cari aku di Twitch dengan mencari “Seapeekay”.	###"Seapeekay" is a name, do not translate.
+txt.creator_ace.3_0.dia3=https://www.twitch.tv/seapeekay
+
+##Why do you love Minecraft?
+txt.creator_ace.3_1.dia1=Kemampuan untuk bisa melakukan apa pun semau kita itu penting untukku karena game ini bersifat dunia terbuka dan sandbox.	###
+txt.creator_ace.3_1.dia2=Kita bebas berkreasi. Tidak ada cara main yang tepat dan yang salah.	###
+txt.creator_ace.3_1.dia3=Dan aku ketemu semua temanku sekarang, (hampir semuanya), dari game ini.	###
+txt.creator_ace.3_1.dia4=Rasanya karena itu game ini jadi permainan yang paling berpengaruh dalam hidupku.	###
+
+##What's your favorite MCC Memory?
+txt.creator_ace.3_2.dia1=Memori MCC favoritku adalah MCC 5 karena di situ aku akhirnya berhasil dapat kemenangan pertama!	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia2=Dan itu di tim yang jelas tidak terlalu kuat, terlepas dari apa kata komunitas, kemenangan itu memang layak didapat.	###
+txt.creator_ace.3_2.dia3=Tapi, aku dulu bukan pemain Minecraft yang hebat. MCC mendorongku jadi pemain yang lebih hebat.	###"MCC" is the name of an event, do not translate.
+txt.creator_ace.3_2.dia4=Sekarang aku cukup jago, jadi jalan ceritaku cukup keren.	###
+
+##Best MCC Play?
+txt.creator_ace.3_3.dia1=Permainan terbaikku di MCC sudah pasti saat aku akhirnya menang §1Ace Race§r.	### "Ace Race" is the name of a game, do not translate. "MCC" is the name of an event, do not translate.
+txt.creator_ace.3_3.dia2=Aku sudah lama dipanggil “Mister Ace Race” oleh komunitas, padahal aku belum pernah memenanginya.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_3.dia3=Jadi, sewaktu aku akhirnya memenanginya, itu jadi ingatan yang akan tertanam di memoriku selamanya.	###
+
+##Favorite thing about Ace Race?
+txt.creator_ace.3_4.dia1=Yang paling kusukai dari §1Ace Race§r adalah banyaknya cara yang bisa kita tempuh untuk menyelesaikan jalurnya.	### "Ace Race" is the name of a game, do not translate.
+txt.creator_ace.3_4.dia2=Jalurnya cocok untuk berbagai tingkat keahlian.	###
+txt.creator_ace.3_4.dia3=Ada cara yang lebih cepat ... ada juga yang lebih sulit.	###
+txt.creator_ace.3_4.dia4=Tapi, yang penting adalah semua orang bisa sampai ke garis finis.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_ace.3_5.dia1=https://www.twitch.tv/seapeekay
+txt.creator_ace.3_5.dia2=Harus ada yang menonton dari sudut pandangku di Turnamen Ender karena kamu pasti akan dapat tontonan seru yang juga ... sangat mengasyikkan.	### "Ender Cup" is the name of an event, do not translate.
+txt.creator_ace.3_5.dia3=Tapi, aku jelas masih mau menang!	###
+txt.creator_ace.3_5.dia4=Jadi, ini sisi seru dari kompetisi dan menurutku itu sisi terbaiknya.	###
+
+##creator_grid
+txt.creator_grid.title_who1=§lPembaruan Minecraft Favorit?§r	###Short hand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who2=§lBagian terbaik dari MCC?§r	###Short hand for "What's the best part about MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_grid.title_who3=§lBagian terbaik dari Grid Runners?§r	###Short hand for "Whats the best part about Grid Runners?". Contains Minecraft formatting codes (§ followed by one character)  ensure they remain in the translation. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.title_who4=§lKenapa Ender Cup Stream kamu perlu ditonton?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_grid.1_0.dia1=Halo! Aku §1Smajor§r dan selamat datang di jalur §1Grid Runners§r!	### "Smajor" is a name, do not translate. "Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.1_0.dia2=Selesaikan tantangan di setiap ruangan sebanyak mungkin untuk meraih skor tertinggi!	###
+txt.creator_grid.1_0.dia3=Tekan “Panduan” untuk mempelajari lebih lanjut.	###
+txt.creator_grid.1_0.dia4=Kamu juga bisa menekan tombol Ikut Antre kalau sudah siap bermain!	###
+txt.creator_grid.2_0.dia1=§1Grid Runners§r adalah rangkaian tantangan yang terdiri atas 4 ruang!	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.2_0.dia2=Setiap ruangan berisi tantangan baru yang harus diselesaikan sebelum berpindah ke ruang berikutnya.	###
+txt.creator_grid.2_0.dia3=Kamu punya waktu 1 menit di setiap ruangan, jadi bergegaslah!	###
+txt.creator_grid.3_0.dia1=Nama saya §1SMajor§r!	### "Smajor" is a name, do not translate.
+txt.creator_grid.3_0.dia2=Saya streamer variasi dengan fokus utama di Minecraft!	###
+txt.creator_grid.3_0.dia3=Kalian bisa mencari saya di Twitch.	###
+txt.creator_grid.3_0.dia4=https://www.twitch.tv/smajor
+
+##What's your favorite Minecraft Update?
+txt.creator_grid.3_1.dia1=Pembaruan favorit saya adalah Pembaruan Akuatik!	###
+txt.creator_grid.3_1.dia2=Saya suka sekali semua hal yang ditambahkan ke bioma samudra. Menurut saya, rasanya jauh lebih seru untuk dijelajahi.	###
+
+##What's the best part about MCC?
+txt.creator_grid.3_2.dia1=Yang paling saya sukai dari MCC adalah melihat semua kreator dari berbagai area Minecraft dan pembuatan konten bersatu untuk main sebagai satu tim dalam acara itu.	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_2.dia2=Saya suka kalau orang yang belum pernah ketemu saling kenal dan jadi teman.	###
+
+##Whats the best part about Grid Runners?
+txt.creator_grid.3_3.dia1=Yang paling saya suka dari §1Grid Runners§r adalah permainan itu ternyata menekankan pentingnya tim.	###"Grid Runners" is the name of a game, do not translate.
+txt.creator_grid.3_3.dia2=Tidak ada yang lebih menarik dari saat tim kita bekerja dengan sangat baik untuk menyelesaikan tantangan.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_grid.3_4.dia1=https://www.twitch.tv/smajor
+txt.creator_grid.3_4.dia2=Suasananya akan luar biasa!	###
+txt.creator_grid.3_4.dia3=Saat melakukan streaming MCC, tujuan saya adalah menikmati waktu sebaik mungkin dengan tim!	###"MCC" is the name of an event, do not translate.
+txt.creator_grid.3_4.dia4=Walau jadi juru kunci, tetap terasa seru!	###
+
+txt.creator_grid.4_0.dia1=Ada 4 tantangan berbeda, Kalahkan Hewan Buas, Salin Lukisan, Panggang Kue, dan Berlari!	###
+txt.creator_grid.4_0.dia2=Kalahkan Hewan Buas menantangmu untuk mengalahkan semua monster di dalam ruangan.	###
+txt.creator_grid.4_0.dia3=Salin Lukisan menantangmu untuk menyalin lukisan dengan Kuas Cat dan Ember yang disediakan di dalam ruangan.	###
+txt.creator_grid.4_0.dia4=Panggang Kue menantangmu untuk mengumpulkan semua bahan untuk membuat kue dan memasukkannya ke mesin kue di tengah!	###
+txt.creator_grid.4_0.dia5=Berlari menantangmu untuk lari ke garis finis!	###
+
+##creator_melt
+txt.creator_melt.title_who1=§lPembaruan Minecraft Favorit?§r	###Shorthand for "What's your favorite Minecraft Update?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who2=§lYang Terbaik dari Minecraft?§r	###Shorthand for "What do you love most about Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who3=§lMemori MCC Favorit?§r	###Shorthand for "What's your favorite MCC memory?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_melt.title_who4=§lYang Terbaik dari Meltdown?§r	###Shorthand for "What's the best part of Meltdown?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_melt.title_who5=§lKenapa Ender Cup Stream kamu perlu ditonton?§r	### Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_melt.1_0.dia1=Halo! Aku §1hannahxxrose§r dan selamat datang di §1Fasilitas§r Meleleh!	### "hannahxxrose" is a name, don't translate. "Meltdown" is the name of a game, do not translate.
+txt.creator_melt.1_0.dia2=Bertahan hidup di setiap ruangan sebelum ruangan itu mulai meleleh! Kalahkan monster untuk dapat poin tambahan.	###
+txt.creator_melt.1_0.dia3=Tekan “Panduan” untuk mempelajari lebih lanjut.	###
+txt.creator_melt.1_0.dia4=Kamu juga bisa menekan tombol Ikut Antre kalau sudah siap bermain!	###
+txt.creator_melt.2_0.dia1=§1Meltdown§r adalah fasilitas dengan ruangan yang betul-betul akan hancur!	### "Meltdown" is the name of a game, do not translate. The uncapitalised "meltdown" refers to a nuclear melt down, not ice.
+txt.creator_melt.2_0.dia2=Kamu harus bertahan hidup di setiap ruangan sampai pintu ke ruangan berikutnya terbuka.	###
+txt.creator_melt.2_0.dia3=Kamu bisa membekukan dan meninju monster beku untuk mencetak poin tambahan!	###
+txt.creator_melt.2_0.dia4=Kamu juga bisa mengambil tumpukan koin untuk mencetak lebih banyak lagi poin tambahan!	###
+txt.creator_melt.3_0.dia1=Namaku §1hannaxxrose§r dan aku pembuat konten Minecraft!	### "hannahxxrose" is a name, don't translate.
+txt.creator_melt.3_0.dia2=Di stream-ku kamu akan menonton persaingan dan suasana yang baik!	###
+txt.creator_melt.3_0.dia3=https://www.twitch.tv/hannahxxrose
+
+##What's your favorite Minecraft Update?
+txt.creator_melt.3_1.dia1=Pembaruan Minecraft favorit saya adalah “Trails and Tails” karena ada bioma bunga sakura yang baru!	###
+
+##What do you love most about Minecraft?
+txt.creator_melt.3_2.dia1=Yang paling saya sukai dari Minecraft adalah ... sudah pasti PvP!	###
+
+##What's your favorite MCC memory?
+txt.creator_melt.3_3.dia1=Memori MCC favorit saya adalah memenangi MCC Pride 2024 bersama Cyan Coyotes!	### "MCC" is the name of an event, do not translate. "Cyan Coyotes" is a team mascot, do not translate.
+
+##What's the best part of Meltdown?
+txt.creator_melt.3_4.dia1=Yang paling kusukai dari §1Meltdown§r adalah persaingan dan kerja sama tim dalam game.	###"Meltdown" is the name of a game, do not translate.
+
+##Why watch your Ender Cup Stream?
+txt.creator_melt.3_5.dia1=https://www.twitch.tv/hannahxxrose
+txt.creator_melt.3_5.dia2=Kalau kamu menonton saya di MCC, kamu akan melihat banyak sekali kerja sama tim dan momen PvP yang keren.	### "MCC" is the name of an event, do not translate.
+txt.creator_melt.3_5.dia3=Kamu bisa menonton saya main di MCC di saluran Twitch saya!	### "MCC" is the name of an event, do not translate.
+
+##creator_sands
+txt.creator_sands.title_who1=§lKenapa Minecraft itu penting?§r	###Shorthand for "Why is Minecraft important to you?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who2=§lKenangan pertama tentang Minecraft?§r	###Shorthand for "What is your earliest memory of Minecraft?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation.
+txt.creator_sands.title_who3=§lKenangan Favorit tentang MCC?§r	###Shorthand for "What is your favorite memory of MCC?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "MCC" is the name of an event, do not translate.
+txt.creator_sands.title_who4=§lYang Terbaik dari Sands of Time?§r	###Shorthand for "What is the best part of Sands of Time?". Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.title_who5=§lKenapa Ender Cup Stream kamu perlu ditonton?§r	###Contains Minecraft formatting codes (§ followed by one character) ensure they remain in the translation. "Ender Cup" is the name of an event, do not translate.
+
+txt.creator_sands.1_0.dia1=Halo! Aku §1HBomb94§r dan selamat datang di kuil §1Sands of Time§r!	###"HBomb94" is a name, do not translate. "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.1_0.dia2=Tujuanmu adalah menjelajahi kuil, menemukan koin sebanyak mungkin, dan melakukan semua ini sebelum waktumu habis!	###
+txt.creator_sands.1_0.dia3=Lihat tombol  “Tutorial” itu? Klik untuk tahu lebih lanjut.	###
+txt.creator_sands.1_0.dia4=Atau kalau kamu sudah siap untuk main, tekan tombol Mulai Game! 	###
+txt.creator_sands.2_0.dia1=§1Sands of Time §r adalah ruang bawah tanah untuk mendapat koin sebanyak mungkin!	###"Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.2_0.dia2=Di dungeon ini ada monster, koin, kunci peti, baju zirah, bahkan pasir tambahan untuk memberimu lebih banyak waktu di dungeon!	###
+txt.creator_sands.2_0.dia3=Awalnya kamu diberi 2 Menit, lalu setiap bulir pasir memberimu 10 detik tambahan, tetapi kamu harus berhati-hati!	###
+txt.creator_sands.2_0.dia4=Kalau kamu mati di dungeon, atau terjebak di dalamnya, kamu harus mengeluarkan beberapa koin untuk keluar.	###
+txt.creator_sands.3_0.dia1=Aku §1HBomb94§r!	###"HBomb94" is a name, do not translate. 
+txt.creator_sands.3_0.dia2=Aku streamer di Twitch yang bisa kamu tonton di:	###
+txt.creator_sands.3_0.dia3=https://www.twitch.tv/hbomb94
+
+##Why is Minecraft important to you?
+txt.creator_sands.3_1.dia1=Minecraft sangat penting untuk saya di sepanjang masa dewasa saya.	###
+txt.creator_sands.3_1.dia2=Umur saya sekarang 30 tahun. Saya mulai mengunggah video sejak berumur ... 18 tahun?	###
+txt.creator_sands.3_1.dia3=Jadi, sudah dua belas tahun?	###
+txt.creator_sands.3_1.dia4=Ya ampun ... tua sekali saya!	###
+
+##What is your earliest memory of Minecraft?
+txt.creator_sands.3_2.dia1=Kenangan paling awal saya tentang Minecraft adalah dunia pertama yang pernah saya buat.	###
+txt.creator_sands.3_2.dia2=Saya membangun kastel jelek yang hanya terbuat dari batu bulat dan satu Pintu Ek.	###
+txt.creator_sands.3_2.dia3=Lalu, aku mati dan tidak tahu ada yang namanya titik kemunculan ...	###
+txt.creator_sands.3_2.dia4=Saya juga belum tahu ada yang namanya koordinat ....	###
+txt.creator_sands.3_2.dia5=Jadi, itu hilang di dunia itu selamanya. Saya menghabiskan berjam-jam untuk mencarinya, tapi tetap tidak ketemu.	###
+
+##What is your favorite memory of MCC?
+txt.creator_sands.3_3.dia1=Padahal sebetulnya sangat mudah!	###
+txt.creator_sands.3_3.dia2=Momen di MCC 9, ketika Permainan Bertahan Hidup baru berakhir, dan saya ingat melihat papan skor.	###"MCC" is the name of an event, do not translate.
+txt.creator_sands.3_3.dia3=Dan langsung teriak kepada tim, “Lihat selisihnya!”	###
+txt.creator_sands.3_3.dia4=Saya masih merinding sampai hari ini.	###
+
+##What is the best part of Sands of Time?
+txt.creator_sands.3_4.dia1=Yang paling kusukai dari §1Sands of Time§r adalah momen ketika semua orang mulai panik.	### "Sands of Time" is the name of a game, do not translate.
+txt.creator_sands.3_4.dia2=Saat semua orang mulai panik adalah saat keseruan terjadi dan semua orang mulai ketakutan, saling berteriak.	###
+
+##Why watch your Ender Cup Stream?
+txt.creator_sands.3_5.dia1=https://www.twitch.tv/hbomb94
+txt.creator_sands.3_5.dia2=Tidak rumit-rumit!	###
+txt.creator_sands.3_5.dia3=Tim kami akan punya suasana terbaik dan mudah mendominasi permainan tim apa pun.	###
+txt.creator_sands.3_5.dia4=Pokoknya bukan ... permainan PvP ... atau parkur.	###
+
+##Trophy Help Entity
+txt.trophy_help.1_0.dia1=Selamat datang di Ruang Trofi!	###
+txt.trophy_help.1_0.dia2=Setiap lilin adalah tantangan yang bisa kamu selesaikan!	###
+txt.trophy_help.1_0.dia3=§6Berinteraksilah§r dengan lilin untuk melihat tantangan dan kemajuannya.	###
+txt.trophy_help.1_0.dia4=Apa kamu bisa menyelesaikan semua tantangan?	###
+
+##Ender Cup Entity
+txt.ender_cup.1_0.dia1=Gabung dengan kami dalam §1Ender Cup§r! Tonton stream-nya di: https://endercup.com/	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.1_0.dia2=Tonton 40 Pembuat Konten terbesar Minecraft bertanding dalam 10 tim di 8 permainan mini!	###
+txt.ender_cup.1_0.dia3=Ikuti stream langsung kontestan pada 27 Juli, 13.00 EDT!	###
+
+txt.ender_cup.ad1=Gabung dengan kami dalam §1Ender Cup§r! Tonton stream-nya di: https://www.twitch.tv/minecraft	###"Ender Cup" is the name of an event, do not translate.
+txt.ender_cup.ad2=Tonton 40 Pembuat Konten terbesar Minecraft bertanding dalam 10 tim di 8 permainan mini!	###
+
+##Frog Prince
+txt.frog_prince.1_0.dia1=§oKatak bermahkota menatapmu dengan penuh harap.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_0.dia2=§oApa yang ingin kamu lakukan?	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_1.dia1=§oKamu mengulurkan tangan untuk mengelus katak itu, lalu katak itu melompat ketakutan.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_1.dia2=§oKatak itu mengernyit dan membetulkan mahkotanya.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.1_2.dia1=§oKamu mulai berpidato panjang lebar tentang banyak hal ....	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia2=§oWaktumu di pesta, permainan lain, gua misteri ...	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.1_2.dia3=§oTetapi, katak itu tampak tidak tertarik.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+
+txt.frog_prince.2_0.dia1=Kamu sudah menghilangkan kutukanku! Terima kasih!	###
+txt.frog_prince.2_0.dia2=Demi menunggu orang yang mau mengecupku, aku sudah duduk di sini §obertahun-tahun§r.	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.frog_prince.2_0.dia3=Orangnya makin banyak!	###
+txt.frog_prince.2_0.dia4=Bahkan ada dari mereka yang berusaha merebut mahkotaku!	###
+
+##Puzzle Helper
+txt.puzzle_help.title= Penolong Teka-Teki 	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia1=Aku sudah membuka semua  teka-tekinya dan punya pendapat!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_help.landing.dia2=Butuh bantuan untuk menyelesaikannya?	###
+txt.puzzle_help.landing.dia3=Pilih dinding mana dengan tombol di bawah ini dan dapatkan petunjuk untuk setiap teka-teki!	###
+txt.button.day1=Hari ke-1	###
+txt.button.day2=Hari ke-2	###
+txt.button.day3=Hari ke-3	###
+txt.button.day4=Hari ke-4	###
+txt.button.day5=Hari ke-5	###
+txt.button.day6=Hari ke-6	###
+txt.button.day7=Hari ke-7	###
+txt.button.wall1=Dinding Kiri	###
+txt.button.wall2=Dinding Tengah	###
+txt.button.wall3=Dinding Kanan	###
+
+##Puzzle Wall Pages
+txt.puzzle_help.wall1.dia1=Beberapa lukisan pertama yang aku buka!	###
+txt.puzzle_help.wall1.dia2=Butuh waktu tiga hari!	###
+txt.puzzle_help.wall1.dia3=Teka-teki mana yang petunjuknya kamu perlukan?	###
+
+txt.puzzle_help.wall2.dia1=Ah, lukisan yang kutemukan di tengah.	###
+txt.puzzle_help.wall2.dia2=Saat itu aku mulai dapat ide!	###
+txt.puzzle_help.wall2.dia3=Teka-teki mana yang petunjuknya kamu perlukan?	###
+
+txt.puzzle_help.wall3.dia1=Lukisan terakhir yang kutemukan.	###
+txt.puzzle_help.wall3.dia2=Memang sulit, tetapi akhirnya kami berhasil!	###
+txt.puzzle_help.wall3.dia3=Teka-teki mana yang petunjuknya kamu perlukan?	###
+
+##Puzzle Hints
+txt.puzzle_help_day1.dia1=§oTangan melambai di atas simbol mahkota...	###
+txt.puzzle_help_day1.dia2=Temukan mahkota besar di latar merah dan lambaikan tanganmu saat berdiri di atasnya!	###
+
+txt.puzzle_help_day2.dia1=§oPeletup pesta di depan wajah batu berhias permata ....	###
+txt.puzzle_help_day2.dia2=Temukan patung batu bermata permata dan pakai peletup pesta untuk mereka!	###
+
+txt.puzzle_help_day3.dia1=§oKolam air besar, mengalir turun ke dalam...	###
+txt.puzzle_help_day3.dia2=Rahasianya pasti berada di dasar genangan air besar... atau di danau!	###
+
+txt.puzzle_help_day4.dia1=§oBola kristal di depan penonton hijau yang terpesona ....	###
+txt.puzzle_help_day4.dia2=Tempatkan Temuan Bola Disko di depan penonton hijau yang terpesona!	###
+
+txt.puzzle_help_day5.dia1=§oBukaan persegi bergaris hitam kuning dengan irisan kue di atas H ....	###
+txt.puzzle_help_day5.dia2=Temukan pintu masuk bergaris hitam kuning! Itu pasti mengarah ke H, lalu makan kue!	###
+
+txt.puzzle_help_day6.dia1=§oKembang api di puncak gunung es ....	###
+txt.puzzle_help_day6.dia2=Panjat puncak tertinggi dan sulut kembang api!	###
+
+txt.puzzle_help_day7.dia1=§oPintu, tangan bertepuk, dan pangeran katak bermahkota ...	###
+txt.puzzle_help_day7.dia2=Temukan pintu dan tepuk tangan di depannya! Itu pasti akan mengarah ke Pangeran Katak.	###
+txt.puzzle_help_day7.dia3=Namun selanjutnya harus bagaimana dengan pangeran katak?	###
+txt.puzzle_help_day7.dia3_1=Aku dengar ada cerita tentang mencium pangeran katak, tapi masa iya itu benar ...	###
+
+##Puzzle Helper Lore
+##Day 1
+txt.puzzle_lore_day1.dia1=Datang untuk lihat lukisannya? Setiap  di baris  berarti ada lukisan baru yang ditemukan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day1.dia2=Yang pertama tampak seperti tangan melambai, tetapi aku tidak yakin.	###
+txt.puzzle_lore_day1.dia3=Aku harus menemukan semuanya agar dapat ide.	###
+
+##Day 2
+txt.puzzle_lore_day2.dia1=Datang untuk melihat lukisannya? Setiap  di baris  berarti ada lukisan baru yang ditemukan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day2.dia2=Aku baru saja menemukan muka dan petasan pesta.	###
+txt.puzzle_lore_day2.dia3=Tapi, aku belum yakin apa maksudnya.	###
+
+##Day 3
+txt.puzzle_lore_day3.dia1=Datang untuk melihat lukisannya? Setiap  di baris  berarti ada lukisan baru yang ditemukan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day3.dia2=Yang terakhir terlihat seperti kolam renang besar atau mungkin percikan air?	###
+txt.puzzle_lore_day3.dia3=Aku masih perlu waktu untuk memastikan.	###
+
+##Day 4
+txt.puzzle_lore_day4.dia1=Datang untuk melihat lukisannya? Setiap  di baris  berarti ada lukisan baru yang ditemukan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day4.dia2=Sebelumnya, ada bola disko dan orang?	###
+txt.puzzle_lore_day4.dia3=Semuanya sangat aneh dan misterius.	###
+
+##Day 5
+txt.puzzle_lore_day5.dia1=Datang untuk melihat lukisannya? Setiap  di baris  berarti ada lukisan baru yang ditemukan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day5.dia2=Yang terakhir membingungkan. Lingkaran hitam dan kuning, lalu ada kue dan huruf H?	###
+txt.puzzle_lore_day5.dia3=Mungkin garis miring ini memisahkannya.	###
+
+##Day 6
+txt.puzzle_lore_day6.dia1=Datang untuk melihat lukisannya? Setiap  di baris  berarti ada lukisan baru yang ditemukan!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day6.dia2=Di lukisan kemarin ada angka yang berkilau! Dan ada gunung!	###
+txt.puzzle_lore_day6.dia3=Hal-hal menarik!	###
+
+##Day 7
+txt.puzzle_lore_day7.dia1=Akhirnya aku selesai! Semua  lukisan terbuka!	###Contains unicode symbols, ensure they remain in the translation.
+txt.puzzle_lore_day7.dia2=Yang terakhir ini paling membingungkan.	###
+txt.puzzle_lore_day7.dia3=Kedua tangannya sepertinya saling menggenggam? Atau bertepuk?	###
+txt.puzzle_lore_day7.dia4=Kemudian, ada katak dan pintu.	###
+txt.puzzle_lore_day7.dia5=Aku perlu waktu untuk merangkai ide.	###
+txt.puzzle_lore_day7.dia6=Besok akan kupecahkan misterinya!	###

@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.n.podiums.spinbob": {
+      "loop": true,
+      "animation_length": 3,
+      "bones": {
+        "key": {
+          "rotation": [
+            0,
+            "query.anim_time * 120",
+            0
+          ],
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 120) *0.5 + 0.25",
+            0
+          ]
+        },
+        "sand": {
+          "rotation": [
+            0,
+            "query.anim_time * 120",
+            0
+          ],
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 120) *0.5 + 0.25",
+            0
+          ]
+        },
+        "armor": {
+          "rotation": [
+            0,
+            "query.anim_time * 120",
+            0
+          ],
+          "position": [
+            0,
+            "Math.cos(query.anim_time * 120) *0.5 + 0.25",
+            0
+          ]
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "sparkle"
+        },
+        "1.0": {
+          "effect": "sparkle"
+        },
+        "2.0": {
+          "effect": "sparkle"
+        }
+      },
+      "particle_effects": {
+        "0.0": {
+          "effect": "idle_sparkle",
+          "locator": "sparkle_locator"
+        },
+        "0.1": {
+          "effect": "sand_falling",
+          "locator": "sand"
+        },
+        "1.0": {
+          "effect": "idle_sparkle",
+          "locator": "sparkle_locator"
+        },
+        "1.1": {
+          "effect": "sand_falling",
+          "locator": "sand"
+        },
+        "2.0": {
+          "effect": "idle_sparkle",
+          "locator": "sparkle_locator"
+        }
+      }
+    }
+  }
+}

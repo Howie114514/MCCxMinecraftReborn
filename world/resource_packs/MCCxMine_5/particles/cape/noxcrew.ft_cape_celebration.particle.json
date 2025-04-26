@@ -1,0 +1,99 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "noxcrew.ft:cape_celebration",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particles/pixel"
+      }
+    },
+    "events": {
+      "cape2": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:cape2",
+          "type": "emitter"
+        }
+      },
+      "cape_burst": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:cape_burst",
+          "type": "emitter"
+        }
+      },
+      "cape1": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:cape1",
+          "type": "emitter"
+        }
+      },
+      "cape3": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:cape3",
+          "type": "emitter"
+        }
+      },
+      "cape4": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:player_gift_giving_b",
+          "type": "emitter"
+        }
+      }
+    },
+    "components": {
+      "minecraft:emitter_initialization": {
+        "creation_expression": "variable.size = 0.08;"
+      },
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 0
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 9
+      },
+      "minecraft:emitter_lifetime_events": {
+        "creation_event": [
+          "cape2",
+          "cape1"
+        ],
+        "timeline": {
+          "6.00": "cape_burst",
+          "6.10": "cape4",
+          "6.20": "cape3"
+        }
+      },
+      "minecraft:emitter_shape_point": {},
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": 7
+      },
+      "minecraft:particle_initial_speed": 0,
+      "minecraft:particle_motion_dynamic": {},
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          0.2,
+          0.2
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "uv": {
+          "texture_width": 16,
+          "texture_height": 16,
+          "uv": [
+            0,
+            0
+          ],
+          "uv_size": [
+            16,
+            16
+          ]
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "color": [
+          1,
+          0.98431,
+          0.68235,
+          1
+        ]
+      }
+    }
+  }
+}

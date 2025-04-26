@@ -1,0 +1,56 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "noxcrew.ft:painting_green",
+      "is_experimental": true,
+      "register_to_creative_menu": true,
+      "menu_category": {
+        "category": "construction",
+        "group": ""
+      },
+      "states": {
+        "noxcrew.ft:painted": [false, true]
+      }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque",
+          "texture": "canvas_white"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "ambient_occlusion": true,
+              "face_dimming": true,
+              "render_method": "opaque",
+              "texture": "canvas_white"
+            }
+          }
+        },
+        "condition": "query.block_state('noxcrew.ft:painted') == false"
+      },
+      {
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "ambient_occlusion": true,
+              "face_dimming": true,
+              "render_method": "opaque",
+              "texture": "painting_green"
+            }
+          }
+        },
+        "condition": "query.block_state('noxcrew.ft:painted') == true"
+      }
+    ]
+  }
+}

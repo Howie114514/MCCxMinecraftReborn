@@ -1,0 +1,90 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.ace_banner",
+        "texture_width": 32,
+        "texture_height": 16,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bone",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -12,
+                0,
+                7.5
+              ],
+              "size": [
+                12,
+                16,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                0,
+                0,
+                7.5
+              ],
+              "size": [
+                12,
+                16,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -1,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                14,
+                2
+              ],
+              "pivot": [
+                0,
+                7,
+                0
+              ],
+              "rotation": [
+                -90,
+                0,
+                0
+              ],
+              "uv": [
+                24,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

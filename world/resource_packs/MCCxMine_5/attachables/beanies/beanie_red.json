@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:beanie_red",
+      "textures": {
+        "default": "textures/entity/n/hub/beanie/red_rabbits"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.beanie"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "render_controllers": [
+        "controller.render.base"
+      ]
+    }
+  }
+}

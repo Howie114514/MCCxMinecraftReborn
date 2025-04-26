@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew.ft:cake_candles",
+      "textures": {
+        "default": "textures/entity/n/hub/candles/1",
+        "b": "textures/entity/n/hub/candles/2",
+        "c": "textures/entity/n/hub/candles/3",
+        "d": "textures/entity/n/hub/candles/4",
+        "e": "textures/entity/n/hub/candles/5",
+        "f": "textures/entity/n/hub/candles/6",
+        "g": "textures/entity/n/hub/candles/7",
+        "h": "textures/entity/n/hub/candles/8",
+        "i": "textures/entity/n/hub/candles/9",
+        "j": "textures/entity/n/hub/candles/10",
+        "k": "textures/entity/n/hub/candles/11",
+        "l": "textures/entity/n/hub/candles/12",
+        "m": "textures/entity/n/hub/candles/13",
+        "n": "textures/entity/n/hub/candles/14",
+        "o": "textures/entity/n/hub/candles/15"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.cake_candles"
+      },
+      "materials": {
+        "default": "noxcrew_base",
+        "alpha": "noxcrew_alpha"
+      },
+      "animations": {
+        "complete": "animation.n.cake_candles.complete",
+        "locked": "animation.n.cake_candles.locked"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "complete": "q.property('noxcrew.ft:complete')"
+          },
+          {
+            "locked": "!q.property('noxcrew.ft:complete')"
+          }
+        ]
+      },
+      "particle_effects": {
+        "cake_candle": "noxcrew.ft:cake_candle"
+      },
+      "render_controllers": [
+        "controller.render.fifteen"
+      ]
+    }
+  }
+}

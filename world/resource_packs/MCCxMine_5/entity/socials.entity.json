@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:socials",
+      "geometry": {
+        "default": "geometry.social_banner"
+      },
+      "textures": {
+        "default": "textures/entity/social_banner"
+      },
+      "materials": {
+        "default": "base"
+      },
+      "render_controllers": [
+        "controller.render.base_lit"
+      ]
+    }
+  }
+}

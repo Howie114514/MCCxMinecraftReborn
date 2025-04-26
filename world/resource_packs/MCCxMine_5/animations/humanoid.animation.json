@@ -1,0 +1,64 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.humanoid.holding": {
+      "loop": true,
+      "bones": {
+        "leftArm": {
+          "rotation": [
+            "variable.is_holding_left ? (-this * 0.5 - 18.0) : 0.0",
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            "variable.is_holding_right ? (-this * 0.5 - 18.0) : 0.0",
+            0,
+            0
+          ]
+        },
+        "rightItem": {
+          "position": [
+            2,
+            1,
+            6.5
+          ]
+        }
+      }
+    },
+    "animation.humanoid.md.move": {
+      "loop": true,
+      "bones": {
+        "leftarm": {
+          "rotation": [
+            "query.has_target ? 0 : variable.tcos0",
+            0,
+            0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            "query.has_target ? 0 : -variable.tcos0",
+            0,
+            0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            "variable.tcos0 * -1.4",
+            0,
+            0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            "variable.tcos0 * 1.4",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

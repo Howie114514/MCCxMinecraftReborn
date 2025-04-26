@@ -1,0 +1,402 @@
+{
+    "namespace": "gamebar",
+    "gamebar_panel@data_controller": {
+        "$control_flag": "nox:bar",
+        "$element": "gamebar.gamebar_panel_inner"
+    },
+    //game bar casing. Invisible
+    "gamebar_panel_inner": {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "$top_offset|default": [0, 0],
+        "offset": "$top_offset",
+        "size": [ "100%", "100%"],
+        "variables": [
+            {
+              "requires": "$desktop_screen",
+              "$top_offset": [0, 0]
+            },
+            {
+                "requires": "$pocket_screen",
+                "$top_offset": [0, 12]
+            }
+          ],
+        "controls": [
+            {
+                "gb_stack": {
+                    "type": "stack_panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "orientation": "horizontal",
+                    "offset": [0, 3],
+                    "controls": [
+                        {
+                            "games@games_panel": {}
+                        },
+                        {
+                            "glyphs@glyph_panel": {}
+                        },
+                        {
+                            "padding_right@padding": {}
+                        },
+                        {
+                            "coins@coin_panel": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    //padding between the game bar panels
+    "padding": {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "alpha": 0.6,
+        "size": [4, 16]
+    },
+    //stack panel for all games info
+    "games_panel": {
+        "type": "stack_panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "orientation": "horizontal",
+        "alpha": 0.6,
+        "size": [
+            "100%cm",
+            "100%c"
+        ],
+        "controls": [
+            {
+                "games_info": {
+                    "size": [
+                        "100%cm+4px",
+                        18
+                    ],
+                    "layer": 3,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "alpha": 0.6,
+                    "controls": [
+                        {
+                            "game_info@game_info_panel": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "game_info_panel": {
+        "type": "stack_panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "orientation": "horizontal",
+        "size": [
+            "100%c",
+            18
+        ],
+        "offset": [
+            2,
+            4
+        ],
+        "controls": [
+            {
+                "lby_label@game_info_label": {
+                    "$instance_type": "lby"
+                }
+            },
+            {
+                "ace_label@game_info_label": {
+                    "$instance_type": "ace",
+                    "size": [50, 16]
+                }
+            },
+            {
+                "grd_label@game_info_label": {
+                    "$instance_type": "grd",
+                    "size": [86, 16]
+                }
+            },
+            {
+                "mlt_label@game_info_label": {
+                    "$instance_type": "mlt",
+                    "size": [116, 16]
+                }
+            },
+            {
+                "sot_label@game_info_label": {
+                    "$instance_type": "sot",
+                    "size": [90, 16]
+                }
+            }
+        ]
+    },
+    "game_info_label": {
+        "type": "label",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "shadow": false,
+        "text": "#text",
+        "visible": "#visible",
+        "$instance_type|default": "lby",
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "element",
+                "source_property_name": "(('%.76s' * #text) - ('%.12s' * #text) - '_')",
+                "target_property_name": "#text"
+            },
+            {
+                "binding_type": "view",
+                "source_control_name": "element",
+                "source_property_name": "(('%.10s' * #text) = 'nox:bar' + $instance_type)",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+
+    //Panel switches between long and short
+    "glyph_panel": {
+        "type": "stack_panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "orientation": "horizontal",
+        "alpha": 0.6,
+        "controls": [
+            {
+                "padding_left@padding": {}
+            },
+            {
+                "glyph": {
+                    "size": [
+                        "100%cm+4px",
+                        18
+                    ],
+                    "layer": 3,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "alpha": 0.6,
+                    "controls": [
+                        {
+                            "glyph_s@glyph_short": {}
+                        }
+                    ]
+                }
+            }
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "element",
+                "source_property_name": "(not (('%.10s' * #text) = 'nox:barlby'))",
+                "target_property_name": "#visible"
+            }
+        ]
+    },
+    "glyph_text_amount": {
+        "type": "label",
+        "text": "#text",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "shadow": true,
+        "color": [
+            0.5,
+            1,
+            0.2,
+            1
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "element",
+                "source_property_name": "('§z' + ('%.80s' * #text) - ('%.78s' * #text) - '_')",
+                "target_property_name": "#text"
+            }
+        ]
+    },
+    "glyph_short": {
+        "type": "stack_panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "orientation": "horizontal",
+        "offset": [
+            2,
+            4
+        ],
+        "controls": [
+            {
+                "glyph_icon": {
+                    "type": "label",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "text": "",
+                    "size": [
+                        17,
+                        16
+                    ]
+                }
+            },
+            {
+                "glyph_padding": {
+                    "type": "panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "alpha": 0.6,
+                    "size": [
+                        2,
+                        16
+                    ]
+                }
+            },
+            {
+                "glyph_amount_data@glyph_text_amount": {}
+            },
+            {
+                "glyph_text_total": {
+                    "type": "label",
+                    "text": "/7",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "shadow": true,
+                    "color": [
+                        0.8,
+                        0.8,
+                        1,
+                        1
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#hud_title_text_string",
+                            "binding_type": "global"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    //Panel for the coin amount, always active
+    "coin_panel": {
+        "type": "image",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_left",
+        "texture": "textures/ui/hud_tip_text_background",
+        "alpha": 0.6,
+        "size": [
+            68,
+            18
+        ],
+        "controls": [
+            {
+                "coin_value_panel@coin_value": {}
+            }
+        ]
+    },
+    //coin icon and number
+    "coin_value": {
+        "type": "stack_panel",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "orientation": "horizontal",
+        "offset": [
+            1,
+            4
+        ],
+        "controls": [
+            {
+                "coin_icon": {
+                    "type": "label",
+                    "anchor_from": "top_left",
+                    "anchor_to": "center",
+                    "text": "",
+                    "size": [
+                        17,
+                        16
+                    ]
+                }
+            },
+            {
+                "coin_padding": {
+                    "type": "panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "alpha": 0.6,
+                    "size": [
+                        2,
+                        16
+                    ]
+                }
+            },
+            {
+                "coin_amount@coin_amount_text": { }
+            }
+        ]
+    },
+    "coin_amount_text": {
+        "type": "label",
+        "text": "#text",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "shadow": true,
+        "color": [
+            1,
+            1,
+            0,
+            1
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "element",
+                "source_property_name": "('§z' + #text - ('%.82s' * #text) - '_')",
+                "target_property_name": "#text"
+            }
+        ]
+    },
+    "data_controller": {
+        "type": "panel",
+        "size": [ "100%", "100%"],
+        "$original_binding|default": "#hud_title_text_string",
+        "controls": [
+            {
+                "element@$element": {
+                    "bindings": [
+                        {
+                            "binding_type": "view",
+                            "source_control_name": "data_controller_sibling",
+                            "resolve_sibling_scope": true,
+                            "source_property_name": "#datacontroller_value",
+                            "target_property_name": "#text"
+                        },
+                        {
+                            "source_property_name": "(not ((#text - $control_flag) = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "data_controller_sibling": {
+                    "type": "panel",
+                    "size": [0, 0],
+                    "bindings": [
+                        {
+                            "binding_name": "$original_binding"
+                        },
+                        {
+                            "binding_name": "$original_binding",
+                            "binding_name_override": "#datacontroller_value",
+                            "binding_condition": "visibility_changed"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(not ($original_binding = #datacontroller_value) and not (($original_binding - $control_flag) = $original_binding))",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

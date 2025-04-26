@@ -1,0 +1,135 @@
+{
+  "individual_event_sounds": {
+    "events": {
+      "ambient.cave": {
+        "sound": "dud",
+        "volume": 0,
+        "pitch": 1
+      },
+      "bow": {
+        "pitch": [
+          0.83,
+          1.25
+        ],
+        "sound": "freeze_bow_fire",
+        "volume": 1
+      },
+      "bow.hit": {
+        "pitch": [
+          1.09,
+          1.3
+        ],
+        "sound": "freeze_bow_hit",
+        "volume": 1
+      }
+    }
+  },
+  "entity_sounds": {
+    "defaults": {
+      "events": {
+        "death": ""
+      }
+    },
+    "entities": {
+      "noxcrew.ft:beach_ball": {
+        "volume": 1,
+        "pitch": [
+          0.9,
+          1.1
+        ],
+        "events": {
+          "step": "nothing",
+          "hurt": "ball_hit"
+        }
+      },
+      "noxcrew.ft:md_blaze": {
+        "volume": 1,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "step": "nothing",
+          "ambient": "mob.blaze.breathe",
+          "death": "mob.blaze.death",
+          "hurt": "mob.blaze.hit"
+        }
+      },
+      "noxcrew.ft:md_creeper": {
+        "volume": 1,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "death": "mob.creeper.death",
+          "hurt": "mob.creeper.say"
+        }
+      },
+      "noxcrew.ft:md_skeleton": {
+        "volume": 1,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "step": "mob.skeleton.step",
+          "ambient": "mob.skeleton.say",
+          "death": "mob.skeleton.death",
+          "hurt": "mob.skeleton.hurt"
+        }
+      },
+      "noxcrew.ft:md_spider": {
+        "volume": 1,
+        "pitch": [
+          0.9,
+          1.1
+        ],
+        "events": {
+          "step": "mob.spider.step",
+          "ambient": "mob.spider.say",
+          "death": "mob.spider.death",
+          "hurt": "mob.spider.say"
+        }
+      },
+      "noxcrew.ft:md_vindicator": {
+        "volume": 1,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "ambient": "mob.vindicator.idle",
+          "death": "mob.vindicator.death",
+          "hurt": "mob.vindicator.hurt"
+        }
+      },
+      "noxcrew.ft:md_zombie": {
+        "volume": 1,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "step": "mob.zombie.step",
+          "ambient": "mob.zombie.say",
+          "death": "mob.zombie.death",
+          "hurt": "mob.zombie.hurt"
+        }
+      },
+      "noxcrew.ft:md_zombie_baby": {
+        "volume": 1,
+        "pitch": [
+          1.6,
+          1.9
+        ],
+        "events": {
+          "step": "mob.zombie.step",
+          "ambient": "mob.zombie.say",
+          "death": "mob.zombie.death",
+          "hurt": "mob.zombie.hurt"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.fake_netherportal",
+      "textures": {
+        "default": "textures/blocks/portal"
+      },
+      "geometry": {
+        "default": "geometry.fake_netherportal"
+      },
+      "materials": {
+        "animated": "animated"
+      },
+      "animations": {
+        "idle": "animation.fake_netherportal.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "particle_effects": {
+        "fake_netherportal": "noxcrew:rsf.fake_netherportal"
+      },
+      "render_controllers": [
+        "controller.render.fake_netherportal"
+      ]
+    }
+  }
+}

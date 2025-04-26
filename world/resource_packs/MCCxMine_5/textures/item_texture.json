@@ -1,0 +1,321 @@
+{
+  "resource_pack_name": "French Toast",
+  "texture_data": {
+    "ft.anniversary_hot_dog": {
+      "textures": [
+        "textures/items/hub/anniversary_hot_dog"
+      ]
+    },
+    "ft.balloon_animal": {
+      "textures": [
+        "textures/items/hub/balloon_animal"
+      ]
+    },
+    "ft.balloon_helium": {
+      "textures": [
+        "textures/items/hub/balloon_helium"
+      ]
+    },
+    "ft.beach_ball": {
+      "textures": [
+        "textures/items/hub/beach_ball"
+      ]
+    },
+    "ft.beanie_aqua": {
+      "textures": [
+        "textures/items/hub/beanie_aqua"
+      ]
+    },
+    "ft.beanie_blue": {
+      "textures": [
+        "textures/items/hub/beanie_blue"
+      ]
+    },
+    "ft.beanie_cyan": {
+      "textures": [
+        "textures/items/hub/beanie_cyan"
+      ]
+    },
+    "ft.beanie_green": {
+      "textures": [
+        "textures/items/hub/beanie_green"
+      ]
+    },
+    "ft.beanie_lime": {
+      "textures": [
+        "textures/items/hub/beanie_lime"
+      ]
+    },
+    "ft.beanie_orange": {
+      "textures": [
+        "textures/items/hub/beanie_orange"
+      ]
+    },
+    "ft.beanie_pink": {
+      "textures": [
+        "textures/items/hub/beanie_pink"
+      ]
+    },
+    "ft.beanie_purple": {
+      "textures": [
+        "textures/items/hub/beanie_purple"
+      ]
+    },
+    "ft.beanie_red": {
+      "textures": [
+        "textures/items/hub/beanie_red"
+      ]
+    },
+    "ft.beanie_yellow": {
+      "textures": [
+        "textures/items/hub/beanie_yellow"
+      ]
+    },
+    "ft.big_bubble_blower": {
+      "textures": [
+        "textures/items/hub/big_bubble_blower"
+      ]
+    },
+    "ft.brush_black": {
+      "textures": [
+        "textures/items/gr/brush/black"
+      ]
+    },
+    "ft.brush_blue": {
+      "textures": [
+        "textures/items/gr/brush/blue"
+      ]
+    },
+    "ft.brush_brown": {
+      "textures": [
+        "textures/items/gr/brush/brown"
+      ]
+    },
+    "ft.brush_empty": {
+      "textures": [
+        "textures/items/gr/brush/empty"
+      ]
+    },
+    "ft.brush_green": {
+      "textures": [
+        "textures/items/gr/brush/green"
+      ]
+    },
+    "ft.brush_purple": {
+      "textures": [
+        "textures/items/gr/brush/purple"
+      ]
+    },
+    "ft.brush_red": {
+      "textures": [
+        "textures/items/gr/brush/red"
+      ]
+    },
+    "ft.brush_white": {
+      "textures": [
+        "textures/items/gr/brush/white"
+      ]
+    },
+    "ft.brush_yellow": {
+      "textures": [
+        "textures/items/gr/brush/yellow"
+      ]
+    },
+    "ft.celebration_fireworks": {
+      "textures": [
+        "textures/items/hub/celebration_fireworks"
+      ]
+    },
+    "ft.challenge_list": {
+      "textures": [
+        "textures/items/hub/challenge_list"
+      ]
+    },
+    "ft.confetti_tag": {
+      "textures": [
+        "textures/items/hub/confetti_tag"
+      ]
+    },
+    "ft.cosmetic_chest": {
+      "textures": [
+        "textures/items/hub/cosmetic_chest"
+      ]
+    },
+    "ft.cotton_candy": {
+      "textures": [
+        "textures/items/hub/cotton_candy"
+      ]
+    },
+    "ft.disco_ball": {
+      "textures": [
+        "textures/items/hub/disco_ball"
+      ]
+    },
+    "ft.milk_bucket": {
+      "textures": [
+        "textures/items/gr/milk_bucket"
+      ]
+    },
+    "ft.egg": {
+      "textures": [
+        "textures/items/gr/egg"
+      ]
+    },
+    "ft.fake_bow": {
+      "textures": [
+        "textures/items/fake_bow"
+      ]
+    },
+    "ft.foam_finger": {
+      "textures": [
+        "textures/items/hub/foam_finger"
+      ]
+    },
+    "ft.hat_birthday_present": {
+      "textures": [
+        "textures/items/hub/hat_birthday_present"
+      ]
+    },
+    "ft.hat_boombox": {
+      "textures": [
+        "textures/items/hub/hat_boombox"
+      ]
+    },
+    "ft.hat_chicken_jockey": {
+      "textures": [
+        "textures/items/hub/hat_chicken_jockey"
+      ]
+    },
+    "ft.hat_crown_cake": {
+      "textures": [
+        "textures/items/hub/hat_crown_cake"
+      ]
+    },
+    "ft.hat_jester": {
+      "textures": [
+        "textures/items/hub/hat_jester"
+      ]
+    },
+    "ft.hat_party": {
+      "textures": [
+        "textures/items/hub/hat_party"
+      ]
+    },
+    "ft.hat_propeller": {
+      "textures": [
+        "textures/items/hub/hat_propeller"
+      ]
+    },
+    "ft.key_diamond": {
+      "textures": [
+        "textures/items/sot/keys/diamond"
+      ]
+    },
+    "ft.key_gold": {
+      "textures": [
+        "textures/items/sot/keys/gold"
+      ]
+    },
+    "ft.key_iron": {
+      "textures": [
+        "textures/items/sot/keys/iron"
+      ]
+    },
+    "ft.key_netherite": {
+      "textures": [
+        "textures/items/sot/keys/netherite"
+      ]
+    },
+    "ft.leave_game": {
+      "textures": [
+        "textures/items/leave_game"
+      ]
+    },
+    "ft.mcc_burger": {
+      "textures": [
+        "textures/items/hub/mcc_burger"
+      ]
+    },
+    "ft.party_chips": {
+      "textures": [
+        "textures/items/hub/party_chips"
+      ]
+    },
+    "ft.party_cookie": {
+      "textures": [
+        "textures/items/hub/party_cookie"
+      ]
+    },
+    "ft.party_cupcake": {
+      "textures": [
+        "textures/items/hub/party_cupcake"
+      ]
+    },
+    "ft.party_cake": {
+      "textures": [
+        "textures/items/hub/party_cake"
+      ]
+    },
+    "ft.party_popper": {
+      "textures": [
+        "textures/items/hub/party_popper"
+      ]
+    },
+    "ft.party_soda": {
+      "textures": [
+        "textures/items/hub/party_soda"
+      ]
+    },
+    "ft.pizza_box": {
+      "textures": [
+        "textures/items/hub/pizza_box"
+      ]
+    },
+    "ft.pizza_slice": {
+      "textures": [
+        "textures/items/hub/pizza_slice"
+      ]
+    },
+    "ft.player_gift_giving": {
+      "textures": [
+        "textures/items/hub/player_gift_giving"
+      ]
+    },
+    "ft.player_gift_receiving": {
+      "textures": [
+        "textures/items/hub/player_gift_receiving"
+      ]
+    },
+    "ft.popcorn": {
+      "textures": [
+        "textures/items/hub/popcorn"
+      ]
+    },
+    "ft.super_wrap": {
+      "textures": [
+        "textures/items/hub/super_wrap"
+      ]
+    },
+    "ft.silly_horn": {
+      "textures": [
+        "textures/items/hub/silly_horn"
+      ]
+    },
+    "ft.teleporter": {
+      "textures": [
+        "textures/items/hub/teleport"
+      ]
+    },
+    "bow_pulling": {
+      "textures": [
+        "textures/items/bow_pulling_0",
+        "textures/items/bow_pulling_1",
+        "textures/items/bow_pulling_2"
+      ]
+    },
+    "bow_standby": {
+      "textures": "textures/items/bow_standby"
+    }
+  },
+  "texture_name": "atlas.items"
+}

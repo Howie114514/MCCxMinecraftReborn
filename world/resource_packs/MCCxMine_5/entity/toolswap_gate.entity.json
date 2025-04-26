@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.toolswap_gate",
+      "textures": {
+        "default": "textures/entity/toolswap_gate",
+        "scanline": "textures/entity/scanline_toolswap_gate"
+      },
+      "geometry": {
+        "default": "geometry.toolswap_gate",
+        "toolswap_gate_center": "geometry.toolswap_gate_center"
+      },
+      "materials": {
+        "default": "base",
+        "alpha": "transparency",
+        "onewayalpha": "onewayalpha",
+        "translucent": "translucent",
+        "animated": "animated"
+      },
+      "animations": {
+        "idle": "animation.checkpoint.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "particle_effects": {
+        "checkpoint_corner": "noxcrew:rsf.checkpoint_corner"
+      },
+      "render_controllers": [
+        "controller.render.toolswap_gate",
+        "controller.render.toolswap_gate_scanline"
+      ]
+    }
+  }
+}

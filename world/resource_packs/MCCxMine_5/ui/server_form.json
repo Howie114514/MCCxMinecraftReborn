@@ -1,0 +1,333 @@
+{
+    "namespace": "server_form",
+    // Screen movement animations
+    "screen_exit_animation_push_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_push",
+        "from": [0, 0],
+        "to": [0, "-25%"],
+        "play_event": "screen.exit_push",
+        "end_event": "screen.exit_end"
+    },
+    "screen_exit_animation_pop_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_pop",
+        "from": [0, 0],
+        "to": [0, "25%"],
+        "play_event": "screen.exit_pop",
+        "end_event": "screen.exit_end"
+    },
+    "screen_entrance_animation_push_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_push",
+        "from": [0, "25%"],
+        "to": [0, 0],
+        "play_event": "screen.entrance_push",
+        "end_event": "screen.entrance_end"
+    },
+    "screen_entrance_animation_pop_offset": {
+        "anim_type": "offset",
+        "easing": "out_cubic",
+        "duration": "$transition_time_pop",
+        "from": [0, "-25%"],
+        "to": [0, 0],
+        "play_event": "screen.entrance_pop",
+        "end_event": "screen.entrance_end"
+    },
+    // Override base screen
+    "third_party_server_screen@common.base_screen": {
+        "$screen_content": "server_form.custom_main_screen_content",
+        "$transition_time_pop": 0.2,
+        "$transition_time_push": 0.2,
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_cancel",
+                "to_button_id": "button.menu_exit",
+                "mapping_type": "global"
+            }
+        ],
+        "$screen_animations": [
+            "@server_form.screen_exit_animation_push_offset",
+            "@server_form.screen_exit_animation_pop_offset",
+            "@server_form.screen_entrance_animation_push_offset",
+            "@server_form.screen_entrance_animation_pop_offset",
+            "@common.screen_exit_animation_push_fade",
+            "@common.screen_exit_animation_pop_fade",
+            "@common.screen_entrance_animation_push_fade",
+            "@common.screen_entrance_animation_pop_fade"
+        ],
+        "$background_animations": [
+            "@common.screen_exit_animation_push_alpha",
+            "@common.screen_exit_animation_pop_alpha",
+            "@common.screen_entrance_animation_push_alpha",
+            "@common.screen_entrance_animation_pop_alpha"
+        ]
+    },
+    // Override main_screen_content, this is so we have control over the long_form (ensuring we have control of the size)
+    "custom_main_screen_content": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "controls": [
+            {
+                "server_form_factory": {
+                    "type": "factory",
+                    "control_ids": {
+                        "long_form": "@server_form.switcher_long_form",
+                        "custom_form": "@server_form.custom_form"
+                    }
+                }
+            }
+        ]
+    },
+    // Switch the long_form based on context
+    "switcher_long_form": {
+        "type": "panel",
+        "$flag_quick_travel_modal": "§m§a§p",
+        "$flag_cosmetic_modal": "§c§o§s§m§e§t§i§c",
+        "$flag_vendor_modal": "§v§e§n§d",
+        "$flag_challenge_list_modal": "§l§i§s§t",
+        "$flag_challenge_info_modal": "§i§n§f§o",
+        "$flag_unlock_screen": "§r§e§w§a§r§d",
+        "$flag_override": "§n§o§x",
+        "size": ["100%", "100%"],
+        "controls": [
+            // Normal long_form, can still be overrided by other packs
+            {
+                "long_form@long_form": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((((#title_text - $flag_quick_travel_modal) = #title_text) and ((#title_text - $flag_cosmetic_modal) = #title_text) and ((#title_text - $flag_vendor_modal) = #title_text) and ((#title_text - $flag_challenge_list_modal) = #title_text) and ((#title_text - $flag_challenge_info_modal) = #title_text) and ((#title_text - $flag_unlock_screen) = #title_text) or (not ((#text - $flag_override) = #text)))",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((((#title_text - $flag_quick_travel_modal) = #title_text) and ((#title_text - $flag_cosmetic_modal) = #title_text) and ((#title_text - $flag_vendor_modal) = #title_text) and ((#title_text - $flag_challenge_list_modal) = #title_text) and ((#title_text - $flag_challenge_info_modal) = #title_text) and ((#title_text - $flag_unlock_screen) = #title_text)) or (not ((#text - $flag_override) = #text)))",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            },
+            // Quick travel modal
+            {
+                "quick_travel_modal@quick_travel_modal.main_panel": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_quick_travel_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_quick_travel_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            },
+            {
+                "cosmetic_modal@cosmetic_modal.main_panel": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_cosmetic_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_cosmetic_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            },
+            {
+                "vendor_modal@vendor_modal.main_panel": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_vendor_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_vendor_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            },
+            {
+                "challenge_list_modal@challenge_list_modal.main_panel": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_challenge_list_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_challenge_list_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            },
+            {
+                "challenge_info_modal@challenge_info_modal.main_panel": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_challenge_info_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_challenge_info_modal) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            },
+            {
+                "unlock_screen@unlock_screen.main_panel": {
+                    "enabled": false,
+                    "visible": false,
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_condition": "none",
+                            "binding_name": "#title_text",
+                            "binding_name_override": "#title_text"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_unlock_screen) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#visible"
+                        },
+                        {
+                            "source_property_name": "((not ((#title_text - $flag_unlock_screen) = #title_text)) and ((#text - '§n§o§x') = #text)",
+                            "binding_type": "view",
+                            "target_property_name": "#enabled"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "custom_close_button@common.close_button": {
+        "$default_button_alpha": 1,
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "offset": [1, 6],
+        "layer": 6,
+        "controls": [
+            {
+                "default": {
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "color": "black",
+                    "keep_ratio": false,
+                    "size": ["100%c", "100%c"],
+                    "alpha": 0.6,
+                    "controls": [
+                        {
+                            "close@common.close_button_panel": {
+                                "$close_button_texture": "textures/ui/close_button_custom",
+                                "$close_button_panel_size": [12, 12]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "hover": {
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "keep_ratio": false,
+                    "size": ["100%c", "100%c"],
+                    "alpha": 0.7,
+                    "controls": [
+                        {
+                            "close@common.close_button_panel": {
+                                "$close_button_texture": "textures/ui/close_button_custom",
+                                "$close_button_panel_size": [12, 12]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "pressed": {
+                    "layer": 2,
+                    "type": "image",
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "keep_ratio": false,
+                    "size": ["100%c", "100%c"],
+                    "alpha": 0.8,
+                    "controls": [
+                        {
+                            "close@common.close_button_panel": {
+                                "$close_button_texture": "textures/ui/close_button_custom",
+                                "$close_button_panel_size": [12, 12]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

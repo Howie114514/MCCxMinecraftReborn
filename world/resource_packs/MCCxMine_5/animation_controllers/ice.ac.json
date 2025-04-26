@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.melt.ctrl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "melt": "q.property('noxcrew.ft:frozen')"
+            }
+          ]
+        },
+        "melt": {
+          "animations": [
+            "melt"
+          ],
+          "transitions": [
+            {
+              "breakout": "!q.property('noxcrew.ft:frozen')"
+            }
+          ]
+        },
+        "breakout": {
+          "particle_effects": [
+            {
+              "effect": "frozen_shatter_e1"
+            },
+            {
+              "effect": "frozen_shatter"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "!q.property('noxcrew.ft:frozen')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

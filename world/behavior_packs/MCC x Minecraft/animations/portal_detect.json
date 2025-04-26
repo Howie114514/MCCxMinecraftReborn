@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.portal_sound_detect": {
+      "loop": true,
+      "animation_length": 0.04,
+      "timeline": {
+        "0.0": [
+          "/execute positioned 322 59 405 as @a[dy=3,dz=1] run event entity @s noxcrew:set.portal_sound.true"
+        ]
+      }
+    }
+  }
+}

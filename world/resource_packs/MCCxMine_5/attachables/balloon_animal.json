@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "noxcrew.ft:balloon_animal",
+      "textures": {
+        "default": "textures/entity/n/hub/balloon_animal"
+      },
+      "geometry": {
+        "default": "geometry.n.ft.balloon_animal"
+      },
+      "materials": {
+        "default": "noxcrew_base"
+      },
+      "animations": {
+        "first_person": "animation.n.balloon_animal.first_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.base"
+      ]
+    }
+  }
+}

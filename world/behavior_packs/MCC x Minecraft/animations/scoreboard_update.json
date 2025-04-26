@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.update_scoreboard": {
+      "loop": true,
+      "animation_length": 0.3,
+      "timeline": {
+        "0.0": [
+          "/function timer/store/zstatic"
+        ]
+      }
+    }
+  }
+}

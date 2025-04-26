@@ -1,0 +1,134 @@
+{
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew:rsf.toolswap_gate",
+      "properties": {
+        "noxcrew:type": {
+          "type": "enum",
+          "values": [
+            "boots",
+            "trident",
+            "elytra"
+          ],
+          "default": "boots",
+          "client_sync": true
+        }
+      },
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      }
+    },
+    "component_groups": {
+      "noxcrew:type_boots": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "toolswap",
+            "boots"
+          ]
+        }
+      },
+      "noxcrew:type_trident": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "toolswap",
+            "trident"
+          ]
+        }
+      },
+      "noxcrew:type_elytra": {
+        "minecraft:type_family": {
+          "family": [
+            "checkpoint",
+            "toolswap",
+            "elytra"
+          ]
+        }
+      },
+      "noxcrew:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:type_family": {
+        "family": [
+          "checkpoint",
+          "toolswap",
+          "boots"
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "protection": 1
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "noxcrew:set_type.boots": {
+        "set_property": {
+          "noxcrew:type": "boots"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_boots"
+          ]
+        }
+      },
+      "noxcrew:set_type.trident": {
+        "set_property": {
+          "noxcrew:type": "trident"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_trident"
+          ]
+        }
+      },
+      "noxcrew:set_type.elytra": {
+        "set_property": {
+          "noxcrew:type": "elytra"
+        },
+        "add": {
+          "component_groups": [
+            "noxcrew:type_elytra"
+          ]
+        }
+      },
+      "noxcrew:despawn": {
+        "add": {
+          "component_groups": [
+            "noxcrew:despawn"
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.19.51"
+}

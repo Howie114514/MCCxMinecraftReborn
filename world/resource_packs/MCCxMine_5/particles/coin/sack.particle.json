@@ -1,0 +1,93 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "noxcrew.ft:coin_sack",
+      "basic_render_parameters": {
+        "material": "particles_blend",
+        "texture": "textures/particles/coin_particle"
+      }
+    },
+    "events": {
+      "event": {
+        "particle_effect": {
+          "effect": "noxcrew.ft:coin_sack_e1",
+          "type": "emitter"
+        }
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 6
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1
+      },
+      "minecraft:emitter_lifetime_events": {
+        "creation_event": "event"
+      },
+      "minecraft:emitter_shape_box": {
+        "offset": [
+          0,
+          0.5,
+          0
+        ],
+        "half_dimensions": [
+          0.3,
+          0,
+          0.3
+        ],
+        "surface_only": true,
+        "direction": [
+          "math.random(-6,6)",
+          8,
+          "math.random(-6,6)"
+        ]
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "math.clamp(variable.particle_random_1*2,1.6,3)"
+      },
+      "minecraft:particle_initial_spin": {
+        "rotation": "math.random(-18,18)",
+        "rotation_rate": "math.random(-100,100)"
+      },
+      "minecraft:particle_initial_speed": "math.random(4,5)",
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 2
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          0.2,
+          0.2
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "uv": {
+          "texture_width": 16,
+          "texture_height": 128,
+          "flipbook": {
+            "base_UV": [
+              0,
+              0
+            ],
+            "size_UV": [
+              16,
+              16
+            ],
+            "step_UV": [
+              0,
+              16
+            ],
+            "frames_per_second": 12,
+            "max_frame": 6,
+            "loop": true
+          }
+        }
+      },
+      "minecraft:particle_motion_collision": {
+        "collision_drag": 0.5,
+        "coefficient_of_restitution": 1,
+        "collision_radius": 0.2
+      }
+    }
+  }
+}

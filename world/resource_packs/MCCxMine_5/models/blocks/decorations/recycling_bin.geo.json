@@ -1,0 +1,106 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.n.ft.recycling_bin",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "bone",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5,
+                0,
+                -5
+              ],
+              "size": [
+                10,
+                15,
+                10
+              ],
+              "uv": [
+                0,
+                30
+              ]
+            },
+            {
+              "origin": [
+                -6,
+                15,
+                -6
+              ],
+              "size": [
+                6,
+                1,
+                12
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            },
+            {
+              "origin": [
+                0,
+                15,
+                -6
+              ],
+              "size": [
+                6,
+                1,
+                12
+              ],
+              "uv": [
+                0,
+                0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -4.5,
+                14,
+                -4
+              ],
+              "size": [
+                9,
+                7,
+                10
+              ],
+              "pivot": [
+                0,
+                18,
+                0
+              ],
+              "rotation": [
+                -20,
+                0,
+                0
+              ],
+              "uv": [
+                0,
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
