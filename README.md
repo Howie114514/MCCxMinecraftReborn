@@ -11,7 +11,8 @@
 [本地图修改自视频中的地图](https://www.bilibili.com/video/BV1r7iwedEZe/)
 <br>
 
-> [!IMPORTANT] > [Levilamina 服务器推荐配合本插件使用](https://github.com/Howie114514/MCCxMinecraftReborn-llplugin)（不完善且可能不适配新版本，待重构）
+> [!IMPORTANT]
+> [Levilamina 服务器推荐配合本插件使用](https://github.com/Howie114514/MCCxMinecraftReborn-llplugin)（不完善且可能不适配新版本，待重构）
 
 ---
 
