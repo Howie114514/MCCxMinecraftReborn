@@ -151,7 +151,7 @@ system.beforeEvents.startup.subscribe(() => {
       } else if ((gameInstances.lobby as Lobby).getPlayerArea(p) == "meltdown") {
         gameInstances.meltdown.addPlayer(p);
       } else if ((gameInstances.lobby as Lobby).getPlayerArea(p) == "grid_runners") {
-        if (isDevMode) gameInstances.grid_runners.addPlayer(p);
+        gameInstances.grid_runners.addPlayer(p);
       } else {
         p.sendMessage("[!] 这个游戏还没有开发完成＞﹏＜ 敬请期待");
       }

@@ -609,7 +609,11 @@ export class GridRunners extends ComplexGame {
     });
     this.timer_iid = system.runInterval(() => {
       if (this.started) {
-        this.plans[this.tick_timer]?.();
+        try {
+          this.plans[this.tick_timer]?.();
+        } catch (e) {
+          Logger.error(e);
+        }
         this.tick_timer++;
       }
     });
