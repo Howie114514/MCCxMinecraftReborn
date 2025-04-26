@@ -1,32 +1,25 @@
 import {
   world,
   system,
-  ScriptEventSource,
   Player,
   Vector3,
   EquipmentSlot,
   ItemStack,
-  EffectType,
-  EffectTypes,
   TicksPerSecond,
   ItemLockMode,
-  BlockVolume,
   GameMode,
   MolangVariableMap,
   RGB,
-  PaletteColor,
   PlayerBreakBlockAfterEvent,
-  BlockComponentRegistry,
   InputPermissionCategory,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData } from "@minecraft/server-ui";
 import flags from "./flags";
-import { Vector2Builder, Vector3Builder, Vector3Utils } from "./minecraft/math";
+import { Vector3Utils } from "./minecraft/math";
 import { Vec3Utils } from "./math";
-import { tr, itemName } from "./lang";
-import { MinecraftCameraPresetsTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
-import { showLobbyGameBar } from "./ui/gamebar";
-import { debounce, forIn, rgb, vaildateNum } from "./utils";
+import { tr } from "./lang";
+import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
+import { debounce, forIn, rgb } from "./utils";
 import { cosmetic_chest, info, vendor_food, vendor_hat, vendor_mascot, vendor_toys } from "./ui/screens";
 import { gameInstances } from "./games/gameInstance";
 import { addCoins, clearAllData, getCoins, setCoins } from "./gameData";
@@ -34,8 +27,6 @@ import { Lobby } from "./game";
 import { puzzles } from "./puzzles/puzzle";
 import env, { envTypes } from "./environment";
 import { inventory } from "./inventory";
-import { LKey } from "./langfile";
-import { rules } from "./rule";
 import { Logger } from "./logger";
 import { blockCompoents, itemCompoents } from "./compoents";
 import { showSubTitle } from "./ui/title";
