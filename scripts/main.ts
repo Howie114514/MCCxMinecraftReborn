@@ -21,7 +21,7 @@ import {
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData } from "@minecraft/server-ui";
 import flags from "./flags";
-import { Vector2Builder, Vector3Builder, Vector3Utils } from "@minecraft/math";
+import { Vector2Builder, Vector3Builder, Vector3Utils } from "./minecraft/math";
 import { Vec3Utils } from "./math";
 import { tr, itemName } from "./lang";
 import { MinecraftCameraPresetsTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";

@@ -20,7 +20,7 @@ import {
 import { BasicGame } from "../game";
 import { coordinates, isReloaded } from "../main";
 import { Vec3Utils } from "../math";
-import { Vector3Utils } from "@minecraft/math";
+import { Vector3Utils } from "../minecraft/math";
 import { Text } from "../text";
 import { tr } from "../lang";
 import { showSOTGameBar } from "../ui/gamebar";

@@ -1,4 +1,4 @@
-import { Vector3Utils } from "@minecraft/math";
+import { Vector3Utils } from "./minecraft/math";
 import { BlockVolume, Player, Vector3 } from "@minecraft/server";
 
 export namespace Vec3Utils {

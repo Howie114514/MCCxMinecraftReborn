@@ -21,7 +21,7 @@ import { coordinates } from "../main";
 import { inventory } from "../inventory";
 import { sound } from "../sound";
 import { MinecraftBlockTypes, MinecraftEnchantmentTypes } from "@minecraft/vanilla-data";
-import { Vector3Utils } from "@minecraft/math";
+import { Vector3Utils } from "../minecraft/math";
 import { gameInstances } from "./gameInstance";
 import { Queue } from "../queue";
 import { tr } from "../lang";

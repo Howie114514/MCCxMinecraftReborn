@@ -35,7 +35,7 @@ import { showSubTitle } from "../ui/title";
 import { doors, mob_spawnpoints, paintings, reeds, start_blocks, starts, wheats } from "../data/gr";
 import { inventory } from "../inventory";
 import { colors, coordinates } from "../main";
-import { Vector3Utils } from "@minecraft/math";
+import { Vector3Utils } from "../minecraft/math";
 import { gameInstances } from "./gameInstance";
 import { MinecraftBlockTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { gridRunnersGamebar } from "../ui/gamebar";
