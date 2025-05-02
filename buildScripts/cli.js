@@ -79,6 +79,8 @@ const config = {
         build.onEnd(async (r) => {
           if (r.errors.length == 0) {
             if (subcommand == "build" && args.release) {
+              cpSync(bpPath, resolve("./build/world/behavior_packs"));
+              cpSync(rpPath, resolve("./build/world/resource_packs"));
               await compress(resolve("./dist/mccr_bp.mcpack"), bpPath);
               await compress(resolve("./dist/mccr_rp.mcpack"), rpPath);
               await compress(resolve("./dist/MCCxMinecraft.mcworld"), resolve("./build/world"));
