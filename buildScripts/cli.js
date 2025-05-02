@@ -79,12 +79,16 @@ const config = {
         build.onEnd(async (r) => {
           if (r.errors.length == 0) {
             if (subcommand == "build" && args.release) {
-              cpSync(bpPath, resolve("./build/world/behavior_packs"));
-              cpSync(rpPath, resolve("./build/world/resource_packs"));
-              await compress(resolve("./dist/mccr_bp.mcpack"), bpPath);
-              await compress(resolve("./dist/mccr_rp.mcpack"), rpPath);
-              await compress(resolve("./dist/MCCxMinecraft.mcworld"), resolve("./build/world"));
-              await compress(resolve("./dist/MCCxMinecraft.mctemplate"), resolve("./build/world"));
+              try {
+                cpSync(bpPath, resolve("./build/world/behavior_packs"), { recursive: true });
+                cpSync(rpPath, resolve("./build/world/resource_packs"), { recursive: true });
+                await compress(resolve("./dist/mccr_bp.mcpack"), bpPath);
+                await compress(resolve("./dist/mccr_rp.mcpack"), rpPath);
+                await compress(resolve("./dist/MCCxMinecraft.mcworld"), resolve("./build/world"));
+                await compress(resolve("./dist/MCCxMinecraft.mctemplate"), resolve("./build/world"));
+              } catch (e) {
+                console.error(e);
+              }
             }
             buildTimes++;
             console.log(`\x1b[1;32mBuilt in ${new Date().getTime() - startTime}ms\x1b[0m`);
