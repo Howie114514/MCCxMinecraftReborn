@@ -15,7 +15,7 @@ English|[简体中文](./README_zh_CN.md)<br>
 
 A project that fixes the MCC x Minecraft 15th Anniversary Party server's map
 
-[The orginal map is the one shown in the video](https://www.bilibili.com/video/BV1r7iwedEZe/)
+[The map is adapted from the one shown in this video](https://www.bilibili.com/video/BV1r7iwedEZe/)
 <br>
 
 > [!TIP]
