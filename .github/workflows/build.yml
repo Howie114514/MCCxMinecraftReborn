@@ -16,8 +16,9 @@ jobs:
       - name: Install dependencies
         run: npm i
       - name: Build
-        run: $Env:BUILD_ID = "${{github.sha}}"
-          | npm run release
+        env:
+          BUILD_ID: ${{github.sha}}
+        run: npm run release
       - name: Upload BP
         uses: actions/upload-artifact@v4
         with:
