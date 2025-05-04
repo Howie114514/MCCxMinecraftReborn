@@ -4,8 +4,6 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: Setup environment
-        run: echo "BUILD_ID=${{github.sha}}}" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -16,18 +14,19 @@ jobs:
         with:
           python-version: "3.13"
       - name: Install dependencies
-        run: npm i --force
+        run: npm i
       - name: Build
-        run: npm run release
+        run: $Env:BUILD_ID = "${{github.sha}}"
+          | npm run release
       - name: Upload BP
         uses: actions/upload-artifact@v4
         with:
-          name: mccr_bp_${{github.run_id}}.mcpack
+          name: mccr_bp_${{github.sha}}.mcpack
           path: dist/mccr_bp.mcpack
       - name: Upload RP
         uses: actions/upload-artifact@v4
         with:
-          name: mccr_rp_${{github.run_id}}.mcpack
+          name: mccr_rp_${{github.sha}}.mcpack
           path: dist/mccr_rp.mcpack
       - name: Upload world
         uses: actions/upload-artifact@v4

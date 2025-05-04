@@ -7,6 +7,8 @@ import watch from "node-watch";
 import path, { resolve } from "path";
 import { Zip } from "zip-lib";
 
+console.log(process.env["BUILD_ID"]);
+
 const args = parseArg(process.argv);
 const subcommand = args._[2];
 const dirname = import.meta.dirname;
@@ -52,6 +54,7 @@ const config = {
   format: "esm",
   define: {
     isDevMode: args.mode == "dev" ? "true" : "false",
+    BUILD_ID: `"${process.env["BUILD_ID"] ?? "DEV"}"`,
   },
   outfile: resolve(path.join(bpPath, "scripts/main.js")),
   plugins: [
@@ -126,9 +129,6 @@ async function fetchMCPackageVersion(p) {
   );
   return `${p}@${latest}`;
 }
-
-console.log(process.env["BUILD_ID"]);
-
 const subcommands = {
   build: async () => {
     generateData();

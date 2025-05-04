@@ -106,6 +106,9 @@ MCCxMinecraft活动服务器地图的社区还原版:一个以GPLv3为协议的�
 - 每一位向作者提出建议的朋友们
 
 注意：本项目§l并非§rMojang、Microsoft或Noxcrew的项目。
+
+Commit ID :${BUILD_ID}
+版本 :1.0.0-beta
 `
     )
     .button("好的");
