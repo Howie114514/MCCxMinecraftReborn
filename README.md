@@ -2,6 +2,8 @@
 
 ## MCC X Minecraft Reborn Project
 
+English|[简体中文](./README_zh_CN.md)<br>
+
 ![Static Badge](https://img.shields.io/badge/minecraft-1.21.80-purple)
 ![Static Badge](https://img.shields.io/badge/API-2.0.0--beta-purple)
 
@@ -11,43 +13,44 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Howie114514/MCCxMinecraftReborn/build.yml)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Howie114514/MCCxMinecraftReborn?style=flat)
 
-还原 MCC 活动服务器的项目，致力于打造怀旧版地图。
+A project that fixes the MCC x Minecraft 15th Anniversary Party server's map
 
-[本地图修改自视频中的地图](https://www.bilibili.com/video/BV1r7iwedEZe/)
+[The orginal map is the one shown in the video](https://www.bilibili.com/video/BV1r7iwedEZe/)
 <br>
 
-> [!TIP] > [Levilamina 服务器推荐配合本插件使用](https://github.com/Howie114514/MCCxMinecraftReborn-llplugin)（不完善且可能不适配新版本，待重构）
+> [!TIP]
+>
+> [There's a plugin for the Levilamina servers](https://github.com/Howie114514/MCCxMinecraftReborn-llplugin) (Not yet compatible with newer versions)
 
 ---
 
-### 计划(8/12)
+### TODO
 
-##### ✅ 游戏
+##### ✅ Games
 
-- [x] 主城及其功能
-- [x] 时之沙
-- [x] 王牌竞速
-- [x] 熔毁（待完善）
-- [x] 网格跑者
+- [x] Lobby
+- [x] Sands of time
+- [x] Ace Race
+- [x] Meltdown(Needs improvement)
+- [x] Grid Runners
 
-##### ⚠️ 功能
+##### ⚠️ Features
 
-- [x] 食物
-- [x] 装扮
-- [x] 金币
-- [ ] 谜题（部分）
-- [ ] 玩具（部分）
-- [ ] NPC 对话（部分）
+- [x] Food
+- [x] Decorations
+- [x] Coins
+- [ ] Puzzles
+- [ ] Toys
+- [ ] NPC
 
-##### ⚠️ 技术性
+##### ⚠️ Technical
 
-- [ ] Levilamina 插件（待重构）
+- [ ] Plugin
 
 ---
 
-### 命令：
+### Commands：
 
-`npm run dev` - 进入 watch 模式，观察文件变化并进行更新<br><br>
-`npm run release` - 导出<br><br>
-`npm run sync` - 同步世界文件<br><br>
-`rm .\\node_modules\\@minecraft\\server-ui\\node_modules\\ -Recurse` - 移除 server-ui 中的 node_modules 文件，防止版本不兼容
+`npm run dev` - Enter watch mode<br><br>
+`npm run release` - Export the world and world template<br><br>
+`npm run sync` - Synchronize the world files
