@@ -4,6 +4,8 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
+      - name: Setup environment
+        run: echo "BUILD_ID=${{github.sha}}}" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -30,10 +32,10 @@ jobs:
       - name: Upload world
         uses: actions/upload-artifact@v4
         with:
-          name: mccr_rp_${{github.run_id}}.mcworld
+          name: mccr_world_${{github.sha}}.mcworld
           path: dist/MCCxMinecraft.mcworld
       - name: Upload world template
         uses: actions/upload-artifact@v4
         with:
-          name: mccr_rp_${{github.run_id}}.mctemplate
+          name: mccr_template_${{github.sha}}.mctemplate
           path: dist/MCCxMinecraft.mctemplate

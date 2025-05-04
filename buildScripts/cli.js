@@ -80,8 +80,8 @@ const config = {
           if (r.errors.length == 0) {
             if (subcommand == "build" && args.release) {
               try {
-                cpSync(bpPath, resolve("./build/world/behavior_packs"), { recursive: true });
-                cpSync(rpPath, resolve("./build/world/resource_packs"), { recursive: true });
+                cpSync(bpPath, resolve("./build/world/behavior_packs/mccr"), { recursive: true });
+                cpSync(rpPath, resolve("./build/world/resource_packs/mccr"), { recursive: true });
                 await compress(resolve("./dist/mccr_bp.mcpack"), bpPath);
                 await compress(resolve("./dist/mccr_rp.mcpack"), rpPath);
                 await compress(resolve("./dist/MCCxMinecraft.mcworld"), resolve("./build/world"));
@@ -126,6 +126,8 @@ async function fetchMCPackageVersion(p) {
   );
   return `${p}@${latest}`;
 }
+
+console.log(process.env["BUILD_ID"]);
 
 const subcommands = {
   build: async () => {
