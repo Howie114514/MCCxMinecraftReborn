@@ -16,6 +16,7 @@
   "type": "module",
   "scripts": {
     "build": "node .\\buildScripts\\cli.js build",
+    "check-update": "node .\\buildScripts\\cli.js check-update",
     "typecheck": "npx tsc --noEmit",
     "release": "npm run typecheck&npm run sync&node .\\buildScripts\\cli.js build --release",
     "sync": "node .\\buildScripts\\cli.js sync-world",
