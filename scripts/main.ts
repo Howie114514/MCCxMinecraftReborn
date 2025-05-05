@@ -610,6 +610,7 @@ system.beforeEvents.startup.subscribe(() => {
         ev.sender.sendMessage("\u00a7e聊天在当前世界已被禁用");
       }
       if (/^\.获取信息$|^.info$/.test(ev.message)) {
+        ev.cancel = true;
         ev.sender.sendMessage("退出聊天栏即可查看。");
         let s = () => {
           system.run(() =>
