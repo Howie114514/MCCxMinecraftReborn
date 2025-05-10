@@ -1,17 +1,22 @@
 import {
   BlockComponentPlayerInteractEvent,
+  BlockComponentStepOffEvent,
   BlockComponentStepOnEvent,
+  BlockComponentTickEvent,
   BlockCustomComponent,
   EquipmentSlot,
   ItemComponentUseEvent,
   ItemComponentUseOnEvent,
   ItemCustomComponent,
   ItemLockMode,
+  Player,
   system,
   TicksPerSecond,
   world,
 } from "@minecraft/server";
 import { sound } from "./sound";
+import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
+import { Vec3Utils } from "./math";
 
 class n_button implements BlockCustomComponent {
   constructor() {

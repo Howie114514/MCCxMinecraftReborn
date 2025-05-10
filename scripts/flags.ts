@@ -7,4 +7,9 @@ export default {
   flag_unlock_screen: "§r§e§w§a§r§d",
   flag_override: "§n§o§x",
   flag_subtile: "§z§v",
+  locked: "§l§o§c§k",
+  image_flag: "§i§m§g",
+  content_flag: "§c§o§n§t",
+  title_flag: "§t§i",
+  locked_flag: "§l§o§c§k",
 };

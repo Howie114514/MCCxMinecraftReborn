@@ -11,9 +11,7 @@
 			},
 			"traits": {
 				"minecraft:placement_direction": {
-					"enabled_states": [
-						"minecraft:cardinal_direction"
-					],
+					"enabled_states": ["minecraft:cardinal_direction"],
 					"y_rotation_offset": 0
 				}
 			}
@@ -33,21 +31,9 @@
 			{
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [
-							0,
-							0,
-							0
-						],
-						"scale": [
-							1,
-							1,
-							1
-						],
-						"translation": [
-							0,
-							0,
-							0
-						]
+						"rotation": [0, 0, 0],
+						"scale": [1, 1, 1],
+						"translation": [0, 0, 0]
 					}
 				},
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'"
@@ -55,21 +41,9 @@
 			{
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [
-							0,
-							180,
-							0
-						],
-						"scale": [
-							1,
-							1,
-							1
-						],
-						"translation": [
-							0,
-							0,
-							0
-						]
+						"rotation": [0, 180, 0],
+						"scale": [1, 1, 1],
+						"translation": [0, 0, 0]
 					}
 				},
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'"
@@ -77,21 +51,9 @@
 			{
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [
-							0,
-							90,
-							0
-						],
-						"scale": [
-							1,
-							1,
-							1
-						],
-						"translation": [
-							0,
-							0,
-							0
-						]
+						"rotation": [0, 90, 0],
+						"scale": [1, 1, 1],
+						"translation": [0, 0, 0]
 					}
 				},
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'"
@@ -99,21 +61,9 @@
 			{
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [
-							0,
-							270,
-							0
-						],
-						"scale": [
-							1,
-							1,
-							1
-						],
-						"translation": [
-							0,
-							0,
-							0
-						]
+						"rotation": [0, 270, 0],
+						"scale": [1, 1, 1],
+						"translation": [0, 0, 0]
 					}
 				},
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'"

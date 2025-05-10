@@ -43,6 +43,7 @@ import { getCoins } from "../gameData";
 import { Logger } from "../logger";
 import { Vec3Utils } from "../math";
 import { showGRCompleteToast } from "../ui/gametoast";
+import { challenges } from "../challenges";
 
 export class GRLevel {
   game: GridRunners;
@@ -386,6 +387,7 @@ class Level3 extends GRLevel {
               }
               let p = BlockPermutation.resolve("minecraft:wheat", { growth: growth });
               block?.setPermutation(p);
+              block.below()?.setPermutation(BlockPermutation.resolve(MinecraftBlockTypes.Farmland));
             }
           });
         } catch (e) {}
@@ -682,6 +684,8 @@ export class GridRunners extends ComplexGame {
     if (this.players[p.name]) {
       let d = this.player_data[p.name];
       showGRCompleteToast(p, d.coins, d.mobs, d.painted, d.cakes);
+      p.applyKnockback({ x: 4, z: 0 }, 0.5);
+      challenges.gr.recordProgesss(p);
       super.player_finish(p);
     }
   }
@@ -787,6 +791,6 @@ system.afterEvents.scriptEventReceive.subscribe((ev) => {
         p.removeTag("returning");
       }, 1.2 * TicksPerSecond);
       p.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, true);
-    }, 3.5 * TicksPerSecond);
+    }, 3 * TicksPerSecond);
   }
 });

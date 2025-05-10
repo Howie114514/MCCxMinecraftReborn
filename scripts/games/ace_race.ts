@@ -20,6 +20,8 @@ import { FTSoundDefinitions, sound } from "../sound";
 import { inventory } from "../inventory";
 import { spawnpoints } from "../data/ar";
 import { Logger } from "../logger";
+import { challenges } from "../challenges";
+import { addCoins } from "../gameData";
 
 export type Range = {
   max?: number;
@@ -112,6 +114,8 @@ export class AceRace extends BasicGame {
   player_finish(p: Player): void {
     if (this.players[p.name]) {
       sound.play(p, "scoreacquired", undefined);
+      p.applyKnockback({ x: -3, z: 0 }, 0.5);
+      challenges["ar"].recordProgesss(p);
       let time = (Date.now() - this.timer[p.name]) / 1000;
       let t: Trophy = 1;
       this.trophys.forEach((tro, index) => {
@@ -129,7 +133,7 @@ export class AceRace extends BasicGame {
           : t == Trophy.iron
           ? 140
           : 100;
-      p.runCommand("/scriptevent mccr:add_coins " + c.toString());
+      addCoins(p, c);
       let isNewRecord = false;
       if (
         Date.now() - this.timer[p.name] <

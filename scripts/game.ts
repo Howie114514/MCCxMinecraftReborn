@@ -251,7 +251,7 @@ export class ComplexGame {
         this.queue.items.forEach((v) => {
           if (
             !playerByName(v) ||
-            (playerByName(v) && (gameInstances.lobby as Lobby).getPlayerArea(playerByName(v) as Player) != "meltdown")
+            (playerByName(v) && (gameInstances.lobby as Lobby).getPlayerArea(playerByName(v) as Player) != this.name)
           ) {
             this.queue.remove(v);
           }

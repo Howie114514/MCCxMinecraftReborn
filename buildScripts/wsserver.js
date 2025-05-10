@@ -1,35 +1,42 @@
-import { Server } from "ws";
+import * as ws from "ws";
 
+/**@type {ws.Server} */
 let server;
+/**@type {WebSocket}*/
+let client;
 
 export function createServer() {
-  server = new Server({
+  server = new ws.WebSocketServer({
     port: 1145,
   });
+  server.on("connection", (c) => {
+    client = c;
+    console.log("[Websocket] connected");
+    run(`tellraw @a {"rawtext":[{"text":"[§bmcpack devtools§r] connected"}]}`);
+  });
+  console.log("WSServer running on wss://localhost:%d", 1145);
 }
 
-function run(c, cmd) {
-  c.send(
-    JSON.stringify({
-      body: {
-        origin: {
-          type: "player",
+async function run(cmd) {
+  server.clients.forEach((c) => {
+    c.send(
+      JSON.stringify({
+        body: {
+          origin: {
+            type: "player",
+          },
+          commandLine: cmd,
+          version: 1,
         },
-        commandLine: cmd,
-        version: 1,
-      },
-      header: {
-        requestId: "00000000-0000-0000-0000-000000000000",
-        messagePurpose: "commandRequest",
-        version: 1,
-        messageType: "commandRequest",
-      },
-    })
-  );
+        header: {
+          requestId: "00000000-0000-0000-0000-000000000000",
+          messagePurpose: "commandRequest",
+          version: 1,
+          messageType: "commandRequest",
+        },
+      })
+    );
+  });
 }
-server.on("connection", (c) => {
-  console.log("连上了");
-  run(c, `tellraw @a {"rawtext":[{"text":"[§bmcpack devtools§r] connected"}]}`);
-});
 
 export let runCommand = run;

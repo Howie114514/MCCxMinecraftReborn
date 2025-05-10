@@ -20,7 +20,15 @@ import { Vec3Utils } from "./math";
 import { tr } from "./lang";
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { debounce, forIn, rgb } from "./utils";
-import { cosmetic_chest, info, vendor_food, vendor_hat, vendor_mascot, vendor_toys } from "./ui/screens";
+import {
+  challenge_list,
+  cosmetic_chest,
+  info,
+  vendor_food,
+  vendor_hat,
+  vendor_mascot,
+  vendor_toys,
+} from "./ui/screens";
 import { gameInstances } from "./games/gameInstance";
 import { addCoins, clearAllData, getCoins, setCoins } from "./gameData";
 import { Lobby } from "./game";
@@ -32,6 +40,7 @@ import { blockCompoents, itemCompoents } from "./compoents";
 import { showSubTitle } from "./ui/title";
 import { sound } from "./sound";
 import { network } from "./network";
+import { challengeColors, challenges } from "./challenges";
 
 system.beforeEvents.startup.subscribe((init) => {
   forIn(blockCompoents, (v, k) => {
@@ -720,6 +729,15 @@ system.beforeEvents.startup.subscribe(() => {
             }
           });
       }
+      if (ev.itemStack.typeId == "noxcrew.ft:challenge_list") {
+        (async () => {
+          (await challenge_list(ev.source)).show(ev.source).then((r) => {
+            if (!r.canceled) {
+              challenges[challengeColors[r.selection ?? 0]]?.composeInfoUI(ev.source).show(ev.source);
+            }
+          });
+        })();
+      }
     });
 
     world.beforeEvents.playerLeave.subscribe((ev) => {
@@ -789,7 +807,6 @@ system.beforeEvents.startup.subscribe(() => {
         }
       });
     });
-
     Logger.info("所有内容加载完成！");
   });
 });

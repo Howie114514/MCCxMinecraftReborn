@@ -1,6 +1,9 @@
 import { ActionFormData, MessageFormData } from "@minecraft/server-ui";
 import flags from "../flags";
 import tr, { itemName } from "../lang";
+import { Text } from "../text";
+import { Player } from "@minecraft/server";
+import { challengeColors, challenges } from "../challenges";
 
 export const cosmetic_chest = (hats: string[]) => {
   let ad = new ActionFormData()
@@ -113,4 +116,18 @@ Commit ID :${BUILD_ID}
 `
     )
     .button("好的");
+};
+
+export const challenge_list = async (p: Player) => {
+  let ad = new ActionFormData().title(
+    new Text().tr("txt.ui.title.challenge_list").txt(flags.flag_challenge_list_modal)
+  );
+  let completed = 0;
+  challengeColors.forEach((c) => {
+    let data = challenges[c]?.getPlayerChallengeData(p);
+    ad.button(data?.finished ? "" : flags.locked, "textures/ui/n/i_info/" + c + (data?.finished ? "" : "_locked"));
+    if (data?.finished) completed++;
+  });
+  ad.body(`${Math.floor((completed / 15) * 100)}%%`);
+  return ad;
 };

@@ -6,12 +6,17 @@ import parseArg from "minimist";
 import watch from "node-watch";
 import path, { resolve } from "path";
 import { Zip } from "zip-lib";
+import * as wss from "./wsserver.js";
 
 console.log(process.env["BUILD_ID"]);
 
 const args = parseArg(process.argv);
 const subcommand = args._[2];
 const dirname = import.meta.dirname;
+
+if (args.mode == "dev" && subcommand == "watch") {
+  wss.createServer();
+}
 
 const worldDir = "MCCxMCReborn+";
 const mcdir = `${process.env["localappdata"]}\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\`;
@@ -95,6 +100,8 @@ const config = {
             }
             buildTimes++;
             console.log(`\x1b[1;32mBuilt in ${new Date().getTime() - startTime}ms\x1b[0m`);
+            await wss.runCommand("reload");
+            await wss.runCommand(`tellraw @a {"rawtext":[{"text":"[§bmcpack devtools§r] reloaded"}]}`);
           } else {
             console.log(`\x1b[1;31mBuild failed. ${r.errors.length} errors found.\x1b[0m`);
           }
@@ -164,6 +171,7 @@ const subcommands = {
       generateData();
     });
     console.log("\x1b[1;32mWatching for file changes...\x1b[0m");
+    console.log("WSServer running on ws://localhost:1145\nType '/connect localhost:1145' to connect");
   },
   "sync-world": () => {
     if (existsSync(path.join(mcdir, "minecraftWorlds", worldDir))) {
@@ -171,6 +179,9 @@ const subcommands = {
     } else {
       cpSync(resolve("./world"), path.join(mcdir, "minecraftWorlds", worldDir), { recursive: true });
     }
+  },
+  override() {
+    cpSync(resolve("./world"), path.join(mcdir, "minecraftWorlds", worldDir), { recursive: true });
   },
   "check-update": async () => {
     let v = [await fetchMCPackageVersion("@minecraft/server"), await fetchMCPackageVersion("@minecraft/server-ui")];

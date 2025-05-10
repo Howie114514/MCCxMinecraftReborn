@@ -23,8 +23,7 @@ export class Text implements RawText {
     this.rawtext.push({ text: t });
     return this;
   }
-  tr(t: LKey, ...args: (RawMessage | string)[]): this;
-  tr(t: string, ...args: (RawMessage | string)[]): this {
+  tr<T extends string = LKey>(t: T, ...args: (RawMessage | string)[]): Text {
     this.rawtext.push(tr(t, ...args));
     return this;
   }

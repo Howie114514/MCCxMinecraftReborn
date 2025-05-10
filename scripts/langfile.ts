@@ -881,4 +881,4 @@ type langfile = {
   "txt.puzzle_lore_day7.dia6": "明天再来解开谜团！";
 };
 
-export type LKey = keyof langfile;
+export type LKey = Exclude<keyof langfile, number>;
