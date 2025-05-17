@@ -1,5 +1,7 @@
 import { system, world } from "@minecraft/server";
 import { Logger } from "./logger";
+import { plugin } from "./plugin";
+import { runAfterStartup } from "./utils";
 
 export enum envTypes {
   vanilla = "vanilla",
@@ -9,19 +11,22 @@ export enum envTypes {
 
 var environment = { type: envTypes.vanilla };
 
-system.beforeEvents.startup.subscribe(() => {
+runAfterStartup(() => {
   try {
-    world.getDimension("overworld").runCommand("ll list");
-    environment.type = envTypes.LeviLamina;
-    world.getDimension("overworld").runCommand("mccr detect");
+    world.getDimension("overworld").runCommand(`mccr detect`);
     environment.type = envTypes.LevilaminaWithPlugin;
-  } catch (e) {}
+  } catch (e) {
+    Logger.info(e);
+  }
   Logger.info("======环境信息======");
   Logger.info("环境类型:", environment.type);
   Logger.info("开发者模式:", isDevMode);
   if (environment.type == envTypes.LeviLamina) {
     Logger.warn("检测到当前正在使用插件服务端，建议安装相应插件以实现更好的功能");
     Logger.warn("支持的插件端：Levilamina");
+  }
+  if (environment.type == envTypes.LevilaminaWithPlugin) {
+    plugin.tryConnect();
   }
 });
 

@@ -1,27 +1,8 @@
 import { Entity, Player, system, Vector3, world } from "@minecraft/server";
 import EventEmitter from "eventemitter3";
 import environment, { envTypes } from "./environment";
+import { plugin } from "./plugin";
 
-export type SpawnEntityPacketSentEvent = {
-  typeId: string;
-  player: string;
-  entityPos: Vector3;
-};
-
-class NetworkEventEmitter extends EventEmitter<"spawnEntityPacketSent"> {
-  on(event: "spawnEntityPacketSent", fn: (ev: SpawnEntityPacketSentEvent) => void, context?: any): this;
-  on<T extends "spawnEntityPacketSent">(event: T, fn: (...args: any[]) => void, context?: any): this {
-    return super.on(event, fn, context);
-  }
-  constructor() {
-    super();
-    system.afterEvents.scriptEventReceive.subscribe((ev) => {
-      if (ev.id == "mccr.network:ev_spawnEntityPacketSent") {
-        this.emit("spawnEntityPacketSent", JSON.parse(ev.message) as SpawnEntityPacketSentEvent);
-      }
-    });
-  }
-}
 /**
  * 适配插件
  * https://github.com/Howie114514/MCCxMinecraftReborn-llplugin
@@ -29,16 +10,16 @@ class NetworkEventEmitter extends EventEmitter<"spawnEntityPacketSent"> {
 export namespace network {
   export function syncEntityProperty(target: Entity, player: Player, property: string, value: boolean) {
     if (!isLevilamina()) return;
-    try {
-      return target.runCommand(`mccr syncprop ${property} ${value} "${player.name}"`).successCount >= 1;
-    } catch (e) {
-      return false;
-    }
+    plugin.send({ type: plugin.BPMsgTypes.set_property, actor: target.id, prop: property, value, player: player.name });
   }
   export function spawnParticleForPlayer(p: Player, particle: string, pos: Vector3) {
-    world.getDimension("overworld").runCommand(`mccr particle ${particle} ${pos.x} ${pos.y} ${pos.z} "${p.name}"`);
+    if (!isLevilamina()) return;
+    plugin.send({ type: plugin.BPMsgTypes.spawn_particle, particle, pos });
   }
-  export let afterEvents = new NetworkEventEmitter();
+  export function setTime(p: Player, time: number) {
+    if (!isLevilamina()) return;
+    plugin.send({ type: plugin.BPMsgTypes.set_time, time, player: p.name });
+  }
   export function isLevilamina() {
     return environment.type == envTypes.LevilaminaWithPlugin;
   }

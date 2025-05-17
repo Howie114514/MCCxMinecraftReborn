@@ -12,6 +12,7 @@ import {
   RGB,
   PlayerBreakBlockAfterEvent,
   InputPermissionCategory,
+  TimeOfDay,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData } from "@minecraft/server-ui";
 import flags from "./flags";
@@ -153,7 +154,9 @@ system.beforeEvents.startup.subscribe(() => {
       } else if ((gameInstances.lobby as Lobby).getPlayerArea(p) == "grid_runners") {
         gameInstances.grid_runners.addPlayer(p);
       } else {
-        p.sendMessage("[!] 这个游戏还没有开发完成＞﹏＜ 敬请期待");
+        p.sendMessage(
+          `未查找到与您所在的区域${gameInstances.lobby.getPlayerArea(p)}匹配的有效游戏，请尝试重新加入当前游戏大厅。`
+        );
       }
       Logger.info("触发加入游戏按钮：", p.name, (gameInstances.lobby as Lobby).getPlayerArea(p));
     }
@@ -164,9 +167,6 @@ system.beforeEvents.startup.subscribe(() => {
       }
     });
     world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
-      if (ev.itemStack?.typeId == "minecraft:stick") {
-        ev.target.remove();
-      }
       if (ev.target.typeId == "noxcrew.ft:start_button") {
         joinGame(ev.player);
       }
@@ -354,16 +354,13 @@ system.beforeEvents.startup.subscribe(() => {
                 if (/mccr\:collected_.*/.test(id)) {
                   let p1 = id.replace(/mccr\:collected_/g, "").split("$");
                   let pos: Vector3 = { x: parseInt(p1[0]), y: parseInt(p1[1]), z: parseInt(p1[2]) };
-                  if (Vec3Utils.distance(pos, p.location) < 256)
-                    network.syncEntityProperty(
-                      world
-                        .getDimension("overworld")
-                        .getEntitiesAtBlockLocation(pos)
-                        .filter((e) => e.typeId == "noxcrew.ft:hub_coin")[0],
-                      p,
-                      "noxcrew.ft:collected",
-                      true
-                    );
+                  if (Vec3Utils.distance(pos, p.location) < 256) {
+                    let entity = world
+                      .getDimension("overworld")
+                      .getEntitiesAtBlockLocation(pos)
+                      .filter((e) => e.typeId == "noxcrew.ft:hub_coin")[0];
+                    if (entity) network.syncEntityProperty(entity, p, "noxcrew.ft:collected", true);
+                  }
                 }
                 yield;
               }
@@ -382,8 +379,11 @@ system.beforeEvents.startup.subscribe(() => {
           })()
         );
     };
-    if (network.isLevilamina()) system.runInterval(syncAllProperties, 5 * TicksPerSecond);
+    if (network.isLevilamina()) system.runInterval(syncAllProperties, 1 * TicksPerSecond);
 
+    const time: Record<string, number> = {
+      lobby: TimeOfDay.Sunset,
+    };
     function teleport(player: Player, dest: "ace_race" | "sot" | "lobby" | string, from: Vector3, to: Vector3) {
       if ((gameInstances.lobby as Lobby).getPlayerArea(player) != dest)
         new MessageFormData()
@@ -401,6 +401,7 @@ system.beforeEvents.startup.subscribe(() => {
               player.teleport(from);
             } else {
               sound.play(player, "quick_travel", {});
+              network.setTime(player, time[dest] ?? TimeOfDay.Noon);
               player.teleport(to);
               (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
               if (network.isLevilamina()) syncPropertyForPlayer(player);
@@ -792,6 +793,12 @@ system.beforeEvents.startup.subscribe(() => {
       }
     });
     //#endregion
+
+    system.afterEvents.scriptEventReceive.subscribe((e) => {
+      if (e.id == "mccr.test:info") {
+        console.log(e.sourceEntity?.id);
+      }
+    });
 
     system.runInterval(() => {
       world.getAllPlayers().forEach((p) => {
