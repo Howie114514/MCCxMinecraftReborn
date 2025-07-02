@@ -13,7 +13,7 @@ English|[简体中文](./README_zh_CN.md)<br>
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Howie114514/MCCxMinecraftReborn/build.yml)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Howie114514/MCCxMinecraftReborn?style=flat)
 
-A project that fixes the MCC x Minecraft 15th Anniversary Party server's map
+A project that revitalizes the MCC x Minecraft 15th Anniversary server map by adding original gameplay functionalities to its existing structures.
 
 [The map is adapted from the one shown in this video](https://www.bilibili.com/video/BV1r7iwedEZe/)
 <br>
