@@ -21,6 +21,7 @@ runAfterStartup(() => {
   Logger.info("======环境信息======");
   Logger.info("环境类型:", environment.type);
   Logger.info("开发者模式:", isDevMode);
+  Logger.info("Commit ID:", BUILD_ID);
   if (environment.type == envTypes.LeviLamina) {
     Logger.warn("检测到当前正在使用插件服务端，建议安装相应插件以实现更好的功能");
     Logger.warn("支持的插件端：Levilamina");

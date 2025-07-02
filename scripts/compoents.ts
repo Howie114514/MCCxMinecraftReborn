@@ -73,11 +73,26 @@ class InteractiveItem implements ItemCustomComponent {
   onUseOn(arg: any) {}
 }
 
+class Boost implements BlockCustomComponent {
+  constructor() {
+    this.onStepOn = this.onStepOn.bind(this);
+  }
+  onStepOn(ev: BlockComponentStepOnEvent) {
+    ev.entity?.runCommand("function boost");
+    system.runTimeout(() => {
+      try {
+        ev.entity?.removeEffect("levitation");
+      } catch (e) {}
+    }, 6);
+  }
+}
+
 export const blockCompoents = {
   n_button: new n_button(),
   recycling_bin: new recycling_bin(),
   bench: new bench(),
   interactive: new Interactive(),
+  boost: new Boost(),
 };
 export const itemCompoents = {
   interactive_item: new InteractiveItem(),

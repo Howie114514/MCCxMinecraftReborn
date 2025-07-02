@@ -13,8 +13,14 @@ import {
   PlayerBreakBlockAfterEvent,
   InputPermissionCategory,
   TimeOfDay,
+  CommandPermissionLevel,
+  CustomCommandStatus,
+  CustomCommandSource,
+  CustomCommandParamType,
+  Entity,
+  Block,
 } from "@minecraft/server";
-import { ActionFormData, FormCancelationReason, MessageFormData } from "@minecraft/server-ui";
+import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import flags from "./flags";
 import { Vector3Utils } from "./minecraft/math";
 import { Vec3Utils } from "./math";
@@ -42,6 +48,19 @@ import { showSubTitle } from "./ui/title";
 import { sound } from "./sound";
 import { network } from "./network";
 import { challengeColors, challenges } from "./challenges";
+import { debugScriptsDialog } from "./debug";
+
+Player.prototype.toString = function () {
+  return `Player[${this.name},${this.id}]`;
+};
+
+Entity.prototype.toString = function () {
+  return `Entity[${this.typeId},${this.id}]`;
+};
+
+Block.prototype.toString = function () {
+  return `Block[${this.typeId},{${this.dimension.id},${this.location.x},${this.location.y},${this.location.z}}]`;
+};
 
 system.beforeEvents.startup.subscribe((init) => {
   forIn(blockCompoents, (v, k) => {
@@ -134,7 +153,64 @@ export const coordinates: Record<string, Vector3> = {
   },
 };
 
-system.beforeEvents.startup.subscribe(() => {
+system.beforeEvents.startup.subscribe((ev) => {
+  ev.customCommandRegistry.registerCommand(
+    { name: "mccr:info", description: "MCCxMinecraft Reborn info", permissionLevel: CommandPermissionLevel.Any },
+    (o) => {
+      if (o.sourceType != CustomCommandSource.Entity || o.sourceEntity?.typeId != "minecraft:player") {
+        return { message: "只有玩家能执行该命令。", status: CustomCommandStatus.Failure };
+      }
+      system.run(() => {
+        info().show(o.sourceEntity as Player);
+      });
+      return { status: CustomCommandStatus.Success };
+    }
+  );
+  ev.customCommandRegistry.registerCommand(
+    {
+      name: "mccr:trigger",
+      permissionLevel: CommandPermissionLevel.Any,
+      description: "触发事件",
+      mandatoryParameters: [
+        {
+          name: "event",
+          type: CustomCommandParamType.String,
+        },
+        {
+          name: "target",
+          type: CustomCommandParamType.PlayerSelector,
+        },
+      ],
+    },
+    (origin, event: string, target: Player) => {
+      if (event == "sot.collect") {
+        system.run(() => {
+          console.log(event, target, target.name, Object.keys(gameInstances.sot.player_data).length);
+          gameInstances.sot.onCollect(target, origin.sourceEntity as Entity);
+        });
+      }
+      return undefined;
+    }
+  );
+  if (isDevMode) {
+    ev.customCommandRegistry.registerCommand(
+      {
+        name: "mccr:debug",
+        description: "MCCxMinecraft Reborn debug",
+        permissionLevel: CommandPermissionLevel.GameDirectors,
+      },
+      (origin) => {
+        if (origin.sourceEntity && origin.sourceEntity.typeId == "minecraft:player") {
+          system.run(() => {
+            debugScriptsDialog(origin.sourceEntity as Player);
+          });
+        } else {
+          return { status: CustomCommandStatus.Failure, message: "执行者必须为玩家" };
+        }
+        return undefined;
+      }
+    );
+  }
   system.run(() => {
     world.afterEvents.playerEmote.subscribe((ev) => {
       Logger.info("检测到表情", ev.personaPieceId);
@@ -433,9 +509,9 @@ system.beforeEvents.startup.subscribe(() => {
         }
       } else if (ev.id == "mccr:clear_effect") {
         system.runTimeout(() => p.playSound("launch"), 2);
-        if (p) {
+        if (p && p.isValid) {
           system.runTimeout(() => {
-            p.removeEffect(MinecraftEffectTypes.Levitation);
+            p?.removeEffect(MinecraftEffectTypes.Levitation);
           }, parseInt(ev.message));
         }
       } else if (ev.id == "mccr:add_coins") {
@@ -555,8 +631,8 @@ system.beforeEvents.startup.subscribe(() => {
     });
     world.afterEvents.playerSpawn.subscribe((ev) => {
       ev.player.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, true);
-      if (ev.player.getGameMode() == GameMode.survival) {
-        ev.player.setGameMode(GameMode.adventure);
+      if (ev.player.getGameMode() == GameMode.Survival) {
+        ev.player.setGameMode(GameMode.Adventure);
       }
       if (network.isLevilamina()) syncPropertyForPlayer(ev.player);
       if (ev.initialSpawn) {
@@ -816,4 +892,16 @@ system.beforeEvents.startup.subscribe(() => {
     });
     Logger.info("所有内容加载完成！");
   });
+});
+
+system.afterEvents.scriptEventReceive.subscribe((ev) => {
+  if (ev.id == "mccr:test") {
+    let md = new ModalFormData()
+      .title("test§m§c§c§r")
+      .header("Test")
+      .textField("测试", "--")
+      .label("Test1")
+      .submitButton("提交")
+      .show(ev.sourceEntity as Player);
+  }
 });

@@ -134,7 +134,6 @@ async function fetchMCPackageVersion(p) {
     pkg.dependencies[p],
     "\n"
   );
-  execSync(`echo "${p}=${latest}">> "$GITHUB_OUTPUT"`);
   return `${p}@${latest}`;
 }
 const subcommands = {

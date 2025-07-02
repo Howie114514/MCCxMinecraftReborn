@@ -96,10 +96,12 @@ export const vendor_toys = (t: string[], price: number[]) => {
 
 export const info = () => {
   return new ActionFormData()
-    .title("信息")
-    .body(
-      `===§lMCCxMinecraft §eReborn§r===
-MCCxMinecraft活动服务器地图的社区还原版:一个以GPLv3为协议的开源项目
+    .title("MCCxMinecraftReborn")
+    .header("§l§eMCCxMinecraft")
+    .header("     §l§bReborn")
+    .divider()
+    .label(
+      `MCCxMinecraft活动服务器地图的社区还原版:一个以GPLv3为协议的开源项目
 
 主要作者：HowieMC(https://github.com/Howie114514)
 本项目的贡献者：

@@ -1,6 +1,5 @@
 function portals
 function elytra_gates
-function boost
 function ace_race
 function coins
 function sot

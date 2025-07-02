@@ -56,11 +56,14 @@ export class BasicGame {
         gameInstances[o]?.player_quit(p);
       }
       p.setDynamicProperty("mccr:game", this.name);
-      system.run(() =>
+      system.run(() => {
+        console.log("Play music");
         p.playMusic(this.music, {
           loop: true,
-        })
-      );
+          volume: 1,
+          fade: 0,
+        });
+      });
       this.player_join(p);
     }
   }
