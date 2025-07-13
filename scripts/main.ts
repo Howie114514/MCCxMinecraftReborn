@@ -19,6 +19,7 @@ import {
   CustomCommandParamType,
   Entity,
   Block,
+  CommandResult,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import flags from "./flags";
@@ -201,6 +202,8 @@ system.beforeEvents.startup.subscribe((ev) => {
     },
     (origin, event: string, targets: Player[]) => {
       //Logger.info(event, targets);
+      if (origin.sourceType == CustomCommandSource.Entity && origin.sourceEntity?.typeId == "minecraft:player")
+        return { status: CustomCommandStatus.Failure };
       switch (event) {
         case "sot.collect": {
           system.run(() => {
@@ -233,6 +236,27 @@ system.beforeEvents.startup.subscribe((ev) => {
           });
         }
       }
+      return undefined;
+    }
+  );
+  ev.customCommandRegistry.registerCommand(
+    { name: "mccr:reset", permissionLevel: CommandPermissionLevel.Any, description: "重置个人数据" },
+    (origin) => {
+      system.run(() => {
+        new MessageFormData()
+          .title("你确定吗")
+          .body("你的个人数据将会被清除")
+          .button1("确定")
+          .button2("取消")
+          .show(origin.sourceEntity as Player)
+          .then((v) => {
+            if (v.selection == 0) {
+              clearAllData(origin.sourceEntity as Player);
+              (origin.sourceEntity as Player).runCommand("scriptevent mccr:reset_inv");
+            }
+          });
+      });
+
       return undefined;
     }
   );

@@ -204,7 +204,7 @@ export class SandsOfTime extends BasicGame {
     "noxcrew.ft:key_podium": {
       onCollect: (p, item, success) => {
         p.getComponent(EntityComponentTypes.Inventory)?.container.addItem(
-          new ItemStack(SOTKeyUnlockTypeMap[(item.getProperty("noxcrew.ft:variant") as number) ?? 0])
+          new ItemStack(SOTKeyUnlockTypeMap[(item.getProperty("noxcrew.ft:unlock_type") as number) ?? 0])
         );
         sound.play(p, "key_unlock", {});
         showSubTitle(p, new Text().tr("txt.sot.key"));
