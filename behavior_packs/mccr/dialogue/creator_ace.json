@@ -1,0 +1,49 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "ace_desc",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.title.dia.creator_ace" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.creator_ace.1_0.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.creator_ace.1_0.dia2"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.creator_ace.1_0.dia3"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.creator_ace.1_0.dia4"
+            },
+            {
+              "text": "\n\n"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.creator_ace.title_who1" }]
+            },
+            "commands": []
+          }
+        ]
+      }
+    ]
+  }
+}

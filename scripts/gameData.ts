@@ -13,4 +13,5 @@ export function getCoins(p: Player) {
 
 export function clearAllData(p: Player) {
   p.clearDynamicProperties();
+  p.sendMessage("OK.");
 }

@@ -49,6 +49,7 @@ import { sound } from "./sound";
 import { network } from "./network";
 import { challengeColors, challenges } from "./challenges";
 import { debugScriptsDialog } from "./debug";
+import { Text } from "./text";
 
 Player.prototype.toString = function () {
   return `Player[${this.name},${this.id}]`;
@@ -153,6 +154,22 @@ export const coordinates: Record<string, Vector3> = {
   },
 };
 
+let coin_data: Record<string, boolean> = {};
+
+function collectHubCoin(p: Player, coin: Entity) {
+  let collected = p.getDynamicProperty("mccr:collected_" + coin.id) as boolean | undefined;
+  console.log(collected);
+  if (!collected) {
+    p.setPropertyOverrideForEntity(coin, "noxcrew.ft:collected", true);
+    p.setDynamicProperty("mccr:collected_" + coin.id, true);
+    let count = (coin.getProperty("noxcrew:variant") as number) ?? 1;
+    p.playSound(count == 3 ? "bigcoins" : "smallcoins");
+    let c = count == 1 ? 5 : count == 2 ? 20 : 50;
+    showSubTitle(p, new Text().tr("txt.lobby.coins" + c));
+    addCoins(p, c);
+  }
+}
+
 system.beforeEvents.startup.subscribe((ev) => {
   ev.customCommandRegistry.registerCommand(
     { name: "mccr:info", description: "MCCxMinecraft Reborn info", permissionLevel: CommandPermissionLevel.Any },
@@ -182,12 +199,39 @@ system.beforeEvents.startup.subscribe((ev) => {
         },
       ],
     },
-    (origin, event: string, target: Player) => {
-      if (event == "sot.collect") {
-        system.run(() => {
-          console.log(event, target, target.name, Object.keys(gameInstances.sot.player_data).length);
-          gameInstances.sot.onCollect(target, origin.sourceEntity as Entity);
-        });
+    (origin, event: string, targets: Player[]) => {
+      //Logger.info(event, targets);
+      switch (event) {
+        case "sot.collect": {
+          system.run(() => {
+            targets.forEach((p) => gameInstances.sot.onCollect(p, origin.sourceEntity as Entity));
+          });
+          break;
+        }
+        case "hub.collect": {
+          system.run(() => {
+            targets.forEach((p) => {
+              if (origin.sourceEntity) {
+                collectHubCoin(p, origin.sourceEntity);
+              }
+            });
+          });
+          break;
+        }
+        case "hub.coin.update": {
+          system.run(() => {
+            targets.forEach((p) => {
+              if (origin.sourceEntity && !coin_data[`${p.name}_${origin.sourceEntity.id}`]) {
+                p.setPropertyOverrideForEntity(
+                  origin.sourceEntity,
+                  "noxcrew.ft:collected",
+                  (p.getDynamicProperty("mccr:collected_" + origin.sourceEntity.id) as boolean | undefined) ?? false
+                );
+                coin_data[`${p.name}_${origin.sourceEntity.id}`] = true;
+              }
+            });
+          });
+        }
       }
       return undefined;
     }
@@ -420,43 +464,6 @@ system.beforeEvents.startup.subscribe((ev) => {
           break;
       }
     });
-
-    function syncPropertyForPlayer(p: Player) {
-      system.runTimeout(() => {
-        if (network.isLevilamina())
-          system.runJob(
-            (function* () {
-              for (let id of p.getDynamicPropertyIds()) {
-                if (/mccr\:collected_.*/.test(id)) {
-                  let p1 = id.replace(/mccr\:collected_/g, "").split("$");
-                  let pos: Vector3 = { x: parseInt(p1[0]), y: parseInt(p1[1]), z: parseInt(p1[2]) };
-                  if (Vec3Utils.distance(pos, p.location) < 256) {
-                    let entity = world
-                      .getDimension("overworld")
-                      .getEntitiesAtBlockLocation(pos)
-                      .filter((e) => e.typeId == "noxcrew.ft:hub_coin")[0];
-                    if (entity) network.syncEntityProperty(entity, p, "noxcrew.ft:collected", true);
-                  }
-                }
-                yield;
-              }
-            })()
-          );
-      }, 1 * TicksPerSecond);
-    }
-    const syncAllProperties = () => {
-      if (network.isLevilamina())
-        system.runJob(
-          (function* () {
-            for (const p of world.getAllPlayers()) {
-              syncPropertyForPlayer(p);
-              yield;
-            }
-          })()
-        );
-    };
-    if (network.isLevilamina()) system.runInterval(syncAllProperties, 1 * TicksPerSecond);
-
     const time: Record<string, number> = {
       lobby: TimeOfDay.Sunset,
     };
@@ -480,7 +487,6 @@ system.beforeEvents.startup.subscribe((ev) => {
               network.setTime(player, time[dest] ?? TimeOfDay.Noon);
               player.teleport(to);
               (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
-              if (network.isLevilamina()) syncPropertyForPlayer(player);
             }
             system.runTimeout(() => player.removeTag("inPortal"), 10);
           });
@@ -546,33 +552,6 @@ system.beforeEvents.startup.subscribe((ev) => {
             gameInstances.lobby.addPlayer(p);
           }
         }
-      } else if (ev.id == "mccr:collect_coins") {
-        if (p) {
-          let collected = p.getDynamicProperty(
-            "mccr:collected_" + Vec3Utils.toMiniString(Vector3Utils.floor(p.location))
-          ) as boolean;
-          //console.error("mccr:collected_" + Vec3Utils.toMiniString(Vector3Utils.floor(p.location)));
-          if (!collected) {
-            let ce = p.dimension.getEntities({
-              location: p.location,
-              maxDistance: 0.6,
-              type: "noxcrew.ft:hub_coin",
-            })[0];
-            let count = (ce.getProperty("noxcrew:variant") as number) ?? 1;
-            p.playSound(count == 3 ? "bigcoins" : "smallcoins");
-            let c = count == 1 ? 5 : count == 2 ? 20 : 50;
-
-            addCoins(p, c);
-            showSubTitle(p, tr("txt.lobby.coins" + c.toString()));
-            p.setDynamicProperty("mccr:collected_" + Vec3Utils.toMiniString(Vector3Utils.floor(p.location)), true);
-            if (env.type == envTypes.LevilaminaWithPlugin) {
-              network.syncEntityProperty(ce, p, "noxcrew.ft:collected", true);
-            }
-          } else {
-            if (!(env.type == envTypes.LevilaminaWithPlugin))
-              p.onScreenDisplay.setActionBar(tr("mccr.coins.collected"));
-          }
-        }
       } else if (ev.id == "mccr:clear_data") {
         if (p) {
           new MessageFormData()
@@ -634,7 +613,6 @@ system.beforeEvents.startup.subscribe((ev) => {
       if (ev.player.getGameMode() == GameMode.Survival) {
         ev.player.setGameMode(GameMode.Adventure);
       }
-      if (network.isLevilamina()) syncPropertyForPlayer(ev.player);
       if (ev.initialSpawn) {
         let item = ev.player.getComponent("equippable")?.getEquipment(EquipmentSlot.Head);
         (gameInstances.lobby as Lobby).setPlayerArea(ev.player, "lobby");
@@ -665,30 +643,26 @@ system.beforeEvents.startup.subscribe((ev) => {
       }
     });
 
-    system.beforeEvents.startup.subscribe((ev) => {
-      isReloaded.value = true;
-      world.getAllPlayers().forEach((p) => {
-        let g = (p.getDynamicProperty("mccr:game") as string) ?? "lobby";
-        gameInstances.lobby.addPlayer(p);
-        if (gameInstances[g]) {
-          gameInstances[g].addPlayer(p);
-        }
-      });
-      system.runInterval(() => {
-        world
-          .getDimension("overworld")
-          .getEntities({ type: "noxcrew.ft:seat" })
-          .forEach((e) => {
-            let c = e.getComponent("rideable");
-            let r = c?.getRiders() ?? [];
-            if (r.length == 0) {
-              e.remove();
-            }
-          });
-      });
-      world.getDimension("overworld").runCommand("scriptevent mccr.sot:reset_all");
-      isReloaded.value = false;
+    world.getAllPlayers().forEach((p) => {
+      let g = (p.getDynamicProperty("mccr:game") as string) ?? "lobby";
+      gameInstances.lobby.addPlayer(p);
+      if (gameInstances[g]) {
+        gameInstances[g].addPlayer(p);
+      }
     });
+    system.runInterval(() => {
+      world
+        .getDimension("overworld")
+        .getEntities({ type: "noxcrew.ft:seat" })
+        .forEach((e) => {
+          let c = e.getComponent("rideable");
+          let r = c?.getRiders() ?? [];
+          if (r.length == 0) {
+            e.remove();
+          }
+        });
+    });
+    world.getDimension("overworld").runCommand("scriptevent mccr.sot:reset_all");
     let dc = false;
     world.beforeEvents.chatSend.subscribe((ev) => {
       if (dc) {
@@ -841,6 +815,17 @@ system.beforeEvents.startup.subscribe((ev) => {
         p.getComponent("equippable")?.setEquipment(EquipmentSlot.Mainhand);
       }
     }
+
+    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+      if (ev.target.typeId == "noxcrew.ft:hub_coin") {
+        collectHubCoin(ev.player, ev.target);
+      }
+    });
+    world.afterEvents.entityHitEntity.subscribe((ev) => {
+      if (ev.hitEntity.typeId == "noxcrew.ft:hub_coin" && ev.damagingEntity.typeId == "minecraft:player") {
+        collectHubCoin(ev.damagingEntity as Player, ev.hitEntity);
+      }
+    });
     //#region toys
     world.afterEvents.itemUse.subscribe((ev) => {
       switch (ev.itemStack.typeId) {

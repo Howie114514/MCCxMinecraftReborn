@@ -14,6 +14,9 @@ import {
   world,
 } from "@minecraft/server";
 import { Logger } from "./logger";
+import { Text } from "./text";
+import { BasicGame } from "./game";
+import { sound } from "./sound";
 
 export function vaildateNum(n: number) {
   return n != n ? 0 : n;
@@ -161,4 +164,21 @@ export function runAfterStartup(cb: Function) {
       cb();
     });
   });
+}
+
+export function teleporting(game: { players: Record<string, Player> }, callback: () => void) {
+  for (let i = 0; i < 5; i++) {
+    system.runTimeout(() => {
+      forIn(game.players, (p) => {
+        p.onScreenDisplay.setActionBar(new Text().tr("txt.matchmaking.status.teleporting", (5 - i).toString()));
+        sound.play(p, "queue_countdown", {});
+      });
+    }, i * 20);
+  }
+  system.runTimeout(() => {
+    forIn(game.players, (p) => {
+      sound.play(p, "queue_teleport", {});
+    });
+    callback();
+  }, 100);
 }

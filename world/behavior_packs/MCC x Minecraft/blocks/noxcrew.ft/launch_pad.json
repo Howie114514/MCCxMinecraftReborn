@@ -17,6 +17,7 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components": ["mccr:boost"],
 			"minecraft:geometry": "minecraft:geometry.full_block",
 			"minecraft:material_instances": {
 				"*": {

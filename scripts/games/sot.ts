@@ -7,6 +7,7 @@
 import {
   Entity,
   EntityComponentTypes,
+  EntityInventoryComponent,
   EquipmentSlot,
   ItemStack,
   Player,
@@ -28,6 +29,7 @@ import { Logger } from "../logger";
 import { FTSounds, sound } from "../sound";
 import { showSubTitle } from "../ui/title";
 import { Text } from "../text";
+import { challenges } from "../challenges";
 
 export type SOTPlayerData = {
   collected_items: Record<string, Entity>;
@@ -88,8 +90,13 @@ export class SandsOfTime extends BasicGame {
     system.afterEvents.scriptEventReceive.subscribe((ev) => {
       if (ev.id == "mccr.sot:finish") {
         const p = ev.sourceEntity as Player;
-        if (p) this.player_data[p.name].escaped = true;
-        this.player_finish(p);
+        if (p && this.player_data[p.name]) {
+          this.player_data[p.name].escaped = true;
+          if (this.player_data[p.name].lifeTime > 2400) {
+            challenges["sot"].recordProgesss(p);
+          }
+          this.player_finish(p);
+        }
       }
       if (ev.id == "mccr.sot:reset_all") {
         world
@@ -153,13 +160,14 @@ export class SandsOfTime extends BasicGame {
         let count = (item.getProperty("noxcrew:variant") as number) ?? 1;
         let c = count == 1 ? 5 : count == 2 ? 20 : 30;
         this.getPlayerData(p).coins += c;
-        showSubTitle(p, new Text().tr(`txt.sot.coins${c}`));
+        p.onScreenDisplay.setActionBar(new Text().tr(`txt.sot.coins${c}`));
       },
     },
     "noxcrew.ft:sand_blocks": {
       collectSound: "sand_place",
       onCollect: (p, item, success) => {
         this.getPlayerData(p).time += 10 * TicksPerSecond;
+        world.getDimension("overworld").spawnParticle("noxcrew.ft:sand_collect", item.location);
       },
     },
     "noxcrew.ft:treasure_chest": {
@@ -167,13 +175,26 @@ export class SandsOfTime extends BasicGame {
       canCollect: (p, item) => {
         if (this.hasItem(p, SOTKeyUnlockTypeMap[(item.getProperty("noxcrew.ft:unlock_type") as number) ?? 0]))
           return true;
-        else showSubTitle(p, new Text().tr("txt.error.msg5"));
+        else {
+          showSubTitle(p, new Text().tr("txt.error.msg5"));
+          item.playAnimation("animation.n.ft.treasure_chest.wrong1", { players: [p] });
+          world.getDimension("overworld").spawnParticle("noxcrew.ft:treasure_chest_wrong", item.location);
+        }
         return false;
       },
       onCollect: (p, item, success) => {
         if (success) {
-          switch (item.getProperty("noxcrew.ft:variant")) {
-          }
+          let t = item.getProperty("noxcrew.ft:unlock_type") as number;
+          let c = t == 0 ? 50 : t == 1 ? 100 : t == 2 ? 200 : 400;
+          this.player_data[p.name].coins += c;
+          this.player_data[p.name].opened_chests++;
+          p.onScreenDisplay.setActionBar(new Text().tr("txt.sot.coins" + c.toString()));
+          showSubTitle(p, new Text().tr("txt.sot.chest"));
+          let inv = p.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
+          let slot = inv.container.find(
+            new ItemStack(SOTKeyUnlockTypeMap[(item.getProperty("noxcrew.ft:unlock_type") as number) ?? 0])
+          );
+          inv.container.setItem(slot ?? 0, undefined);
         }
       },
       onFail(p, item) {
@@ -185,17 +206,30 @@ export class SandsOfTime extends BasicGame {
         p.getComponent(EntityComponentTypes.Inventory)?.container.addItem(
           new ItemStack(SOTKeyUnlockTypeMap[(item.getProperty("noxcrew.ft:variant") as number) ?? 0])
         );
+        sound.play(p, "key_unlock", {});
         showSubTitle(p, new Text().tr("txt.sot.key"));
       },
     },
     "noxcrew.ft:armor_podium": {
+      collectSound: "armor_upgrade",
       onCollect(p, item, success) {
-        //TODO
+        let t = item.getProperty("noxcrew.ft:unlock_type") as number;
+        p.getComponent("equippable")?.setEquipment(
+          t == 0 ? EquipmentSlot.Chest : t == 1 ? EquipmentSlot.Legs : EquipmentSlot.Feet,
+          new ItemStack(
+            t == 0
+              ? MinecraftItemTypes.IronChestplate
+              : t == 1
+              ? MinecraftItemTypes.IronLeggings
+              : MinecraftItemTypes.IronBoots
+          )
+        );
+        showSubTitle(p, new Text().tr("txt.sot.upgraded"));
       },
     },
   };
   onCollect(p: Player, item: Entity) {
-    console.log(p, p.nameTag, p.name, JSON.stringify(this.player_data), this.player_data[p.name]);
+    //console.log(p, p.nameTag, p.name, JSON.stringify(this.player_data), this.player_data[p.name]);
     let data = this.player_data[p.name];
     if (!data || data.collected_items[item.id]) {
       this.collect_events[item.typeId]?.onFail?.(p, item);
@@ -227,6 +261,11 @@ export class SandsOfTime extends BasicGame {
     super.player_onTick(p);
     this.player_data[p.name].time--;
     this.player_data[p.name].lifeTime++;
+    p.setPropertyOverrideForEntity(
+      world.getDimension("overworld").getEntities({ type: "noxcrew.ft:sand_timer", closest: 1 })[0],
+      "noxcrew.ft:time",
+      Math.floor(Math.min(this.player_data[p.name].time, 2400) / 20)
+    );
     if (this.player_data[p.name].time == 30 * TicksPerSecond) {
       p.playSound("sandtimer_30sec");
     }
@@ -261,6 +300,14 @@ export class SandsOfTime extends BasicGame {
       opened_chests: 0,
     };
     p.teleport({ x: 2160.25, y: 51.0, z: 79.17 });
+    forInAsync(this.collect_events, (v, k) => {
+      world
+        .getDimension("overworld")
+        .getEntities({ type: k })
+        .forEach((e) => {
+          p.clearPropertyOverridesForEntity(e);
+        });
+    });
   }
   showGameBar(p: Player): void {
     showSOTGameBar(

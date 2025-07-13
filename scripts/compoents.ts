@@ -78,6 +78,7 @@ class Boost implements BlockCustomComponent {
     this.onStepOn = this.onStepOn.bind(this);
   }
   onStepOn(ev: BlockComponentStepOnEvent) {
+    console.log("boost");
     ev.entity?.runCommand("function boost");
     system.runTimeout(() => {
       try {

@@ -480,7 +480,7 @@ export class GridRunners extends ComplexGame {
   plans: Record<number, () => void> = {
     0: () => {
       forIn(this.players, (p) => {
-        p.setGameMode(GameMode.survival);
+        p.setGameMode(GameMode.Survival);
         showSubTitle(p, new Text().tr("txt.matchmaking.status.start.0"));
         p.onScreenDisplay.setActionBar(new Text().tr("txt.matchmaking.status.start.2", "4"));
       });
@@ -673,7 +673,7 @@ export class GridRunners extends ComplexGame {
     });
   }
   removePlayer(p: Player): void {
-    p.setGameMode(GameMode.adventure);
+    p.setGameMode(GameMode.Adventure);
     super.removePlayer(p);
   }
   player_quit(p: Player, withItem?: boolean): void {
@@ -759,7 +759,7 @@ world.beforeEvents.itemUse.subscribe((ev) => {
 });
 
 world.beforeEvents.playerBreakBlock.subscribe((ev) => {
-  if (ev.player.getGameMode() == GameMode.survival) {
+  if (ev.player.getGameMode() == GameMode.Survival) {
     if (!/wheat|reeds/.test(ev.block.typeId)) {
       ev.cancel = true;
     }

@@ -1,1 +1,2 @@
-execute as @e[type=noxcrew.ft:hub_coin] at @s positioned ~~~ as @p[r=0.5] run scriptevent mccr:collect_coins _
+execute as @e[type=noxcrew.ft:hub_coin] at @s if entity @a[r=0.5] run mccr:trigger hub.collect @a[r=0.5]
+execute as @e[type=noxcrew.ft:hub_coin] at @s if entity @a[r=30] run mccr:trigger hub.coin.update @a[r=30]

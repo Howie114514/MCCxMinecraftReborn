@@ -8,6 +8,9 @@
 			"is_experimental": true
 		},
 		"components": {
+			"minecraft:npc": {
+				"npc_data": {}
+			},
 			"minecraft:absorption": {
 				"max": 16,
 				"min": 0,

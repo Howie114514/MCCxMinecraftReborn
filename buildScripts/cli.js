@@ -154,6 +154,7 @@ const subcommands = {
         rmSync(path.join(bpPath, relpath), { recursive: true });
         console.log("[\x1b[1;31mremove\x1b[0m] BP\\", relpath);
       }
+      wss.runCommand("reload");
     });
     watch(resolve("./resource_packs/mccr"), { recursive: true }).on("change", (e, fn) => {
       const relpath = path.relative(resolve("./resource_packs/mccr"), fn.toString());
