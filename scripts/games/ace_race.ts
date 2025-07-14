@@ -11,7 +11,7 @@ import {
 } from "@minecraft/server";
 import { BasicGame } from "../game";
 import { showARGameBar } from "../ui/gamebar";
-import { formatTime, tick2Time } from "../utils";
+import { formatTime, getHat, tick2Time } from "../utils";
 import { showARCompleteToast, Trophy } from "../ui/gametoast";
 import { MinecraftBlockTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { Vec3Utils } from "../math";
@@ -31,10 +31,17 @@ export function inRange(n: number, r: Range) {
   return n <= (r.max ?? Number.MAX_SAFE_INTEGER) && n >= (r.min ?? 0);
 }
 
+export interface ARPlayerStats {
+  launchPad: number;
+  speed: number;
+  elytra: number;
+}
+
 export class AceRace extends BasicGame {
   name = "ace_race";
   music = "music_ar";
   timer: Record<string, number> = {};
+  stats: Record<string, ARPlayerStats> = {};
   spawnpoints: Record<string, number> = {};
   trophys: Range[] = [
     {
@@ -115,7 +122,11 @@ export class AceRace extends BasicGame {
     if (this.players[p.name]) {
       sound.play(p, "scoreacquired", undefined);
       p.applyKnockback({ x: -3, z: 0 }, 0.5);
-      challenges["ar"].recordProgesss(p);
+      challenges.ar.recordProgesss(p);
+      let stats = this.stats[p.name];
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_red") challenges.red.recordProgesss(p, stats.launchPad);
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_orange") challenges.orange.recordProgesss(p, stats.speed);
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_pink") challenges.pink.recordProgesss(p, stats.elytra);
       let time = (Date.now() - this.timer[p.name]) / 1000;
       let t: Trophy = 1;
       this.trophys.forEach((tro, index) => {
@@ -159,6 +170,11 @@ export class AceRace extends BasicGame {
     inventory.set(p, { 8: new ItemStack("noxcrew.ft:leave_game") });
     sound.play(p, "go", {});
     this.timer[p.name] = Date.now();
+    this.stats[p.name] = {
+      speed: 0,
+      launchPad: 0,
+      elytra: 0,
+    };
   }
   player_onTick(p: Player): void {
     if (p.location.y <= -60) {

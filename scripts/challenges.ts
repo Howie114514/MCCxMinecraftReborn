@@ -1,9 +1,11 @@
 import { Player, system } from "@minecraft/server";
-import { ActionFormData } from "@minecraft/server-ui";
+import { ActionFormData, ActionFormResponse, FormCancelationReason, uiManager } from "@minecraft/server-ui";
 import { Text } from "./text";
 import flags from "./flags";
 import { Logger } from "./logger";
 import { sound } from "./sound";
+import { PlayerRecord } from "./types";
+import { Queue } from "./queue";
 
 export type Challenges =
   | "red"
@@ -44,6 +46,8 @@ interface ChallengeInfo {
   finished: boolean;
   progress: number;
 }
+
+const playerFormLock: PlayerRecord<boolean> = {};
 
 class Challenge {
   id = 0;
@@ -97,27 +101,44 @@ class Challenge {
       );
     return ad;
   }
+  checkCape(p: Player) {
+    let data = JSON.parse((p.getDynamicProperty("mccr:challenge_data") as string) ?? "{}");
+    let finishedCount = 0;
+    (Object.values(data) as { finished: boolean }[]).forEach((i: { finished: boolean }) => {
+      if (i) finishedCount++;
+    });
+    console.log(finishedCount);
+    if (finishedCount == 15) {
+      console.log("cape");
+      sound.play(p, "cape_reward", {});
+      let ad = new ActionFormData()
+        .title(new Text().tr("txt.ui.title.reward_unlocked").txt(flags.flag_unlock_screen))
+        .button(new Text().tr("txt.ui.text.reward_unlocked").txt(flags.image_flag), "textures/ui/n/i_reward/cape")
+        .button(new Text().tr("txt.ui.button.claim"));
+      ad.show(p);
+    }
+  }
   onFinish(p: Player) {
     sound.play(p, "challenge_complete", {});
     system.runTimeout(() => {
       sound.play(p, "reward_recieve", {});
-      new ActionFormData()
+      let ad = new ActionFormData()
         .title(new Text().tr("txt.ui.title.reward_unlocked").txt(flags.flag_unlock_screen))
         .button(
           new Text().tr("txt.ui.text.reward_unlocked").txt(flags.image_flag),
           "textures/ui/n/i_reward/" + this.color
         )
-        .button(new Text().tr("txt.ui.button.claim"))
-        .show(p)
-        .then(() => {
-          sound.play(p, "reward_claim", {});
-        });
+        .button(new Text().tr("txt.ui.button.claim"));
+      ad.show(p).then(() => {
+        sound.play(p, "reward_claim", {});
+        this.checkCape(p);
+      });
     }, 40);
   }
   recordProgesss(pl: Player, p?: number) {
     let data: ChallengeInfo = this.getPlayerChallengeData(pl);
     if (data.finished) return;
-    if (p && this.withProgress) {
+    if (p != undefined && this.withProgress) {
       data.progress += p;
       if (data.progress >= this.maxProgress) {
         data.finished = true;
@@ -265,16 +286,24 @@ class MysteryCave extends Challenge {
       );
     return ad;
   }
+
   onFinish(p: Player) {
-    new ActionFormData()
-      .title(new Text().tr("txt.ui.title.reward_unlocked").txt(flags.flag_unlock_screen))
-      .button(new Text().tr("txt.ui.text.reward_unlocked").txt(flags.image_flag), "textures/ui/n/i_reward/crown")
-      .button(new Text().tr("txt.ui.button.claim"))
-      .show(p);
+    sound.play(p, "challenge_complete", {});
+    system.runTimeout(() => {
+      sound.play(p, "reward_recieve", {});
+      let ad = new ActionFormData()
+        .title(new Text().tr("txt.ui.title.reward_unlocked").txt(flags.flag_unlock_screen))
+        .button(new Text().tr("txt.ui.text.reward_unlocked").txt(flags.image_flag), "textures/ui/n/i_reward/crown")
+        .button(new Text().tr("txt.ui.button.claim"));
+      ad.show(p).then(() => {
+        sound.play(p, "reward_claim", {});
+        this.checkCape(p);
+      });
+    }, 40);
   }
 }
 
-export const challenges: Record<string, Challenge> = {
+export const challenges: Record<Challenges, Challenge> & { [P in string]: Challenge } = {
   red: new RedRabbit(),
   orange: new OrangeOcelot(),
   yellow: new YellowYak(),

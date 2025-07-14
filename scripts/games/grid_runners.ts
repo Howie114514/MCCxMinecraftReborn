@@ -26,6 +26,7 @@ import {
   fill,
   forIn,
   forInAsync,
+  getHat,
   initializeBlockVolume,
   random,
   tick2Time,
@@ -454,19 +455,22 @@ class Level4 extends GRLevel {
   }
 }
 
+export interface GRPlayerData {
+  coins: number;
+  area: number;
+  cakes: number;
+  mobs: number;
+  painted: number;
+  stats: {
+    placedItems: number;
+    foundPearl: boolean;
+  };
+}
+
 export class GridRunners extends ComplexGame {
   music: FTSounds = "music_gr";
   name: string = "grid_runners";
-  player_data: Record<
-    string,
-    {
-      coins: number;
-      area: number;
-      cakes: number;
-      mobs: number;
-      painted: number;
-    }
-  > = {};
+  player_data: Record<string, GRPlayerData> = {};
   currentLevelId = 0;
   levels = [new Level0(this), new Level1(this), new Level2(this), new Level3(this), new Level4(this)];
   started: boolean = true;
@@ -589,6 +593,15 @@ export class GridRunners extends ComplexGame {
   }
   constructor() {
     super();
+    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+      if (
+        ev.target.typeId == "noxcrew.ft:lost_pearl" &&
+        this.players[ev.player.name] &&
+        getHat(ev.player)?.typeId == "noxcrew.ft:beanie_aqua"
+      ) {
+        this.player_data[ev.player.name].stats.foundPearl = true;
+      }
+    });
     world.afterEvents.entityDie.subscribe((ev) => {
       let player = ev.damageSource.damagingEntity as Player;
       if (player.typeId == "minecraft:player" && this.players[player.name]) {
@@ -658,6 +671,10 @@ export class GridRunners extends ComplexGame {
         cakes: 0,
         painted: 0,
         mobs: 0,
+        stats: {
+          foundPearl: false,
+          placedItems: 0,
+        },
       };
       player.onScreenDisplay.setActionBar(new Text().tr("txt.title.grid_runners"));
       this.levels[0].playerEnter(player);
@@ -686,6 +703,8 @@ export class GridRunners extends ComplexGame {
       showGRCompleteToast(p, d.coins, d.mobs, d.painted, d.cakes);
       p.applyKnockback({ x: 4, z: 0 }, 0.5);
       challenges.gr.recordProgesss(p);
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_green") challenges.green.recordProgesss(p, d.painted);
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_aqua" && d.stats.foundPearl) challenges.aqua.recordProgesss(p);
       super.player_finish(p);
     }
   }
@@ -703,7 +722,6 @@ export namespace GridRunners {
     return gameInstances.grid_runners;
   }
 }
-
 world.afterEvents.itemUse.subscribe((ev) => {
   let reg = /^noxcrew\.ft:paintbrush_?(.*)$/;
   if (reg.test(ev.itemStack.typeId)) {

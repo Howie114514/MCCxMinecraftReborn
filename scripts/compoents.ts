@@ -4,6 +4,7 @@ import {
   BlockComponentStepOnEvent,
   BlockComponentTickEvent,
   BlockCustomComponent,
+  CustomComponentParameters,
   EquipmentSlot,
   ItemComponentUseEvent,
   ItemComponentUseOnEvent,
@@ -12,13 +13,18 @@ import {
   Player,
   system,
   TicksPerSecond,
+  Vector3,
   world,
 } from "@minecraft/server";
 import { sound } from "./sound";
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { Vec3Utils } from "./math";
+import { asPlayer } from "./utils";
+import { gameInstances } from "./games/gameInstance";
+import { playerSessionData } from "./data";
+import { Vector3Builder, Vector3Utils } from "./minecraft/math";
 
-class n_button implements BlockCustomComponent {
+class NButton implements BlockCustomComponent {
   constructor() {
     this.onPlayerInteract = this.onPlayerInteract.bind(this);
   }
@@ -32,7 +38,7 @@ class n_button implements BlockCustomComponent {
     }
   }
 }
-class recycling_bin implements BlockCustomComponent {
+class RecyclingBin implements BlockCustomComponent {
   constructor() {
     this.onPlayerInteract = this.onPlayerInteract.bind(this);
   }
@@ -44,7 +50,7 @@ class recycling_bin implements BlockCustomComponent {
     }
   }
 }
-class bench implements BlockCustomComponent {
+class Bench implements BlockCustomComponent {
   constructor() {
     this.onPlayerInteract = this.onPlayerInteract.bind(this);
   }
@@ -78,22 +84,56 @@ class Boost implements BlockCustomComponent {
     this.onStepOn = this.onStepOn.bind(this);
   }
   onStepOn(ev: BlockComponentStepOnEvent) {
-    console.log("boost");
-    ev.entity?.runCommand("function boost");
+    let player = asPlayer(ev.entity);
+    if (!player) return;
+
+    if (gameInstances.ace_race.players[player.name]) {
+      gameInstances.ace_race.stats[player.name].launchPad++;
+    }
+    player.runCommand("function boost");
     system.runTimeout(() => {
       try {
-        ev.entity?.removeEffect("levitation");
+        player.removeEffect("levitation");
       } catch (e) {}
     }, 6);
   }
 }
 
+class SpeedPad implements BlockCustomComponent {
+  constructor() {
+    this.onStepOn = this.onStepOn.bind(this);
+  }
+  onStepOn(ev: BlockComponentStepOnEvent, _: CustomComponentParameters) {
+    let p = asPlayer(ev.entity);
+    if (!p) return;
+    if (gameInstances.ace_race.players[p.name]) {
+      let sd = playerSessionData[p.name];
+      if (!sd.onSpeedPad) {
+        gameInstances.ace_race.stats[p.name].speed++;
+        console.log("speed++");
+        sd.onSpeedPad = true;
+      }
+    }
+  }
+  onStepOff(ev: BlockComponentStepOffEvent, arg1: CustomComponentParameters) {
+    let p = asPlayer(ev.entity);
+    if (!p) return;
+    let sd = playerSessionData[p.name];
+    system.runTimeout(() => {
+      if (!(p.dimension.getBlockBelow(p.location)?.typeId == "noxcrew.ft:speed_pad")) {
+        sd.onSpeedPad = false;
+      }
+    }, 5);
+  }
+}
+
 export const blockCompoents = {
-  n_button: new n_button(),
-  recycling_bin: new recycling_bin(),
-  bench: new bench(),
+  n_button: new NButton(),
+  recycling_bin: new RecyclingBin(),
+  bench: new Bench(),
   interactive: new Interactive(),
   boost: new Boost(),
+  speed_pad: new SpeedPad(),
 };
 export const itemCompoents = {
   interactive_item: new InteractiveItem(),

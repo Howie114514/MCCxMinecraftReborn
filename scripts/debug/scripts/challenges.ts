@@ -6,7 +6,8 @@ export default {
   name: "challenges",
   run(loc, p) {
     forIn(challenges, (c) => {
-      c.onFinish(p);
+      if (!c.withProgress) c.recordProgesss(p);
+      else c.recordProgesss(p, c.maxProgress);
     });
   },
 } as DebugScript;

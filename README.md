@@ -39,8 +39,8 @@ A project that revitalizes the MCC x Minecraft 15th Anniversary server map by ad
 - [x] Food
 - [x] Decorations
 - [x] Coins
-- [ ] Puzzles
-- [ ] Toys
+- [x] Puzzles
+- [x] Toys
 - [ ] NPC
 
 ##### ⚠️ Technical

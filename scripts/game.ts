@@ -9,6 +9,8 @@ import { Queue } from "./queue";
 import { inventory } from "./inventory";
 import { rules } from "./rule";
 import { Logger } from "./logger";
+import { Text } from "./text";
+import { sound } from "./sound";
 
 type SetHotbarOpt = {
   lock?: boolean;
@@ -210,6 +212,11 @@ export class Lobby extends BasicGame {
   }
 }
 
+export enum MatchingStatus {
+  countdown,
+  none,
+}
+
 export class ComplexGame {
   queue = new Queue<string>();
   players: Record<string, Player> = {};
@@ -220,6 +227,8 @@ export class ComplexGame {
   name = "test";
   music = "music_md";
   anim_t = 0;
+  countdown_timer = -1;
+  status: MatchingStatus = MatchingStatus.none;
   constructor() {
     system.runInterval(() => {
       this.anim_t++;
@@ -246,10 +255,27 @@ export class ComplexGame {
     }, 3);
     system.runInterval(() => {
       this.tick++;
+      if (this.countdown_timer > -1) this.countdown_timer--;
       if (world.getAllPlayers().length > 0) {
         this.queue.minCount = Math.min(world.getAllPlayers().length, 4);
         if (this.queue.items.length >= this.queue.minCount) {
-          if (!this.started) this.start();
+          if (this.countdown_timer == 0 && !this.started) this.start();
+          else {
+            if (this.countdown_timer < 0) {
+              this.countdown_timer = 100;
+            }
+            let cdSeconds = this.countdown_timer / 20;
+            if (this.countdown_timer > 0 && cdSeconds % 1 == 0) {
+              this.queue._next().forEach((pl) => {
+                let p = playerByName(pl);
+                if (!p) return;
+                p?.onScreenDisplay.setActionBar(
+                  new Text().tr("txt.matchmaking.status.teleporting", cdSeconds.toString())
+                );
+                sound.play(p as Player, "queue_countdown", {});
+              });
+            }
+          }
         }
         this.queue.items.forEach((v) => {
           if (

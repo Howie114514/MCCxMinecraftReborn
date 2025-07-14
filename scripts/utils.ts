@@ -5,6 +5,7 @@ import {
   BlockVolume,
   Dimension,
   Entity,
+  EntityComponentTypes,
   EquipmentSlot,
   ItemStack,
   Player,
@@ -166,19 +167,18 @@ export function runAfterStartup(cb: Function) {
   });
 }
 
-export function teleporting(game: { players: Record<string, Player> }, callback: () => void) {
-  for (let i = 0; i < 5; i++) {
-    system.runTimeout(() => {
-      forIn(game.players, (p) => {
-        p.onScreenDisplay.setActionBar(new Text().tr("txt.matchmaking.status.teleporting", (5 - i).toString()));
-        sound.play(p, "queue_countdown", {});
-      });
-    }, i * 20);
-  }
-  system.runTimeout(() => {
-    forIn(game.players, (p) => {
-      sound.play(p, "queue_teleport", {});
-    });
-    callback();
-  }, 100);
+export function getHat(p: Player) {
+  return p.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Head);
+}
+
+export function asPlayer(e?: Entity): Player | false {
+  return e?.typeId == "minecraft:player" ? (e as Player) : false;
+}
+
+export function give(p: Player, item: ItemStack) {
+  p.getComponent(EntityComponentTypes.Inventory)?.container.addItem(item);
+}
+
+export function choice<T>(arr: T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)];
 }

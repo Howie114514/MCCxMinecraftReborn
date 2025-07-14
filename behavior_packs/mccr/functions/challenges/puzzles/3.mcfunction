@@ -1,0 +1,1 @@
+execute as @a[x=2187.0,y=99.0,z=2145.0,dx=0.0,dy=2.0,dz=2.0] at @s run scriptevent mccr.p:complete_3

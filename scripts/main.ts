@@ -20,6 +20,7 @@ import {
   Entity,
   Block,
   CommandResult,
+  EntityComponentTypes,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import flags from "./flags";
@@ -27,7 +28,7 @@ import { Vector3Utils } from "./minecraft/math";
 import { Vec3Utils } from "./math";
 import { tr } from "./lang";
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
-import { debounce, forIn, rgb } from "./utils";
+import { asPlayer, choice, debounce, forIn, give, rgb, runAfterStartup } from "./utils";
 import {
   challenge_list,
   cosmetic_chest,
@@ -51,6 +52,7 @@ import { network } from "./network";
 import { challengeColors, challenges } from "./challenges";
 import { debugScriptsDialog } from "./debug";
 import { Text } from "./text";
+import { playerSessionData } from "./data";
 
 Player.prototype.toString = function () {
   return `Player[${this.name},${this.id}]`;
@@ -203,7 +205,7 @@ system.beforeEvents.startup.subscribe((ev) => {
     (origin, event: string, targets: Player[]) => {
       //Logger.info(event, targets);
       if (origin.sourceType == CustomCommandSource.Entity && origin.sourceEntity?.typeId == "minecraft:player")
-        return { status: CustomCommandStatus.Failure };
+        return { status: CustomCommandStatus.Failure, message: "你无权使用该命令" };
       switch (event) {
         case "sot.collect": {
           system.run(() => {
@@ -253,6 +255,7 @@ system.beforeEvents.startup.subscribe((ev) => {
             if (v.selection == 0) {
               clearAllData(origin.sourceEntity as Player);
               (origin.sourceEntity as Player).runCommand("scriptevent mccr:reset_inv");
+              gameInstances.lobby.addPlayer(origin.sourceEntity as Player);
             }
           });
       });
@@ -657,9 +660,7 @@ system.beforeEvents.startup.subscribe((ev) => {
         }
         system.runTimeout(
           () =>
-            ev.player.sendMessage(
-              "欢迎来到MCC X Minecraft Reborn!\n聊天栏输入.info或.获取信息即可查看本地图的详细信息。"
-            ),
+            ev.player.sendMessage("欢迎来到MCC X Minecraft Reborn!\n聊天栏输入/mccr:info即可查看本地图的详细信息。"),
           50
         );
         gameInstances.lobby.addPlayer(ev.player);
@@ -851,14 +852,32 @@ system.beforeEvents.startup.subscribe((ev) => {
       }
     });
     //#region toys
+    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+      let target = asPlayer(ev.target);
+      if (ev.itemStack?.typeId == "noxcrew.ft:player_gift_giving")
+        if (target) {
+          useItem(ev.player, ev.itemStack);
+          target
+            .getComponent(EntityComponentTypes.Inventory)
+            ?.container.addItem(new ItemStack("noxcrew.ft:player_gift_receiving"));
+          target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.player.name));
+          ev.player.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
+        }
+    });
     world.afterEvents.itemUse.subscribe((ev) => {
       switch (ev.itemStack.typeId) {
         case "noxcrew.ft:celebration_fireworks":
           ev.source.dimension.spawnParticle("noxcrew.ft:c_firework_rocket", ev.source.location);
           useItem(ev.source, ev.itemStack);
+          if (Vec3Utils.distance({ x: 2192, y: 171, z: 2095 }, ev.source.location) < 3) {
+            puzzles.day6.complete(ev.source);
+          }
           break;
         case "noxcrew.ft:party_popper":
           ev.source.dimension.spawnParticle("noxcrew.ft:party_popper", ev.source.location);
+          if (Vec3Utils.distance(ev.source.location, { x: 2178.54, y: 79.0, z: 100.78 }) < 5) {
+            puzzles.day2.complete(ev.source);
+          }
           useItem(ev.source, ev.itemStack);
           break;
         case "noxcrew.ft:big_bubble_blower":
@@ -873,8 +892,38 @@ system.beforeEvents.startup.subscribe((ev) => {
           break;
         case "noxcrew.ft:disco_ball":
           world.getDimension("overworld").spawnEntity("noxcrew.ft:disco_ball", ev.source.location);
+          if (Vec3Utils.distance({ x: 2210, y: 82, z: 4281 }, ev.source.location) < 3) {
+            puzzles.day4.complete(ev.source);
+          }
           useItem(ev.source, ev.itemStack);
           break;
+        case "noxcrew.ft:player_gift_receiving":
+          let items = [
+            "noxcrew.ft:foam_finger",
+            "noxcrew.ft:balloon_animal",
+            "noxcrew.ft:big_bubble_blower",
+            "noxcrew.ft:silly_horn",
+            "noxcrew.ft:party_popper",
+            "noxcrew.ft:confetti_tag_prime",
+            "noxcrew.ft:pizza_box",
+            "noxcrew.ft:celebration_fireworks",
+            "noxcrew.ft:disco_ball",
+            "noxcrew.ft:beach_ball",
+            "noxcrew.ft:balloon_helium",
+          ];
+          useItem(ev.source, ev.itemStack);
+          give(ev.source, new ItemStack(choice(items)));
+          challenges.lime.recordProgesss(ev.source, 1);
+          break;
+      }
+    });
+
+    world.afterEvents.itemCompleteUse.subscribe((ev) => {
+      if (
+        ev.itemStack.typeId == "noxcrew.ft:party_cake" &&
+        Vec3Utils.distance({ x: 67, y: 88, z: 2180 }, ev.source.location) < 8
+      ) {
+        puzzles.day5.complete(ev.source);
       }
     });
     //#endregion
@@ -894,6 +943,9 @@ system.beforeEvents.startup.subscribe((ev) => {
           }
           if (p.isOnGround && p.getDynamicProperty("mccr:used_elytra")) {
             e.setEquipment(EquipmentSlot.Chest, undefined);
+            if (gameInstances.ace_race.players[p.name]) {
+              gameInstances.ace_race.stats[p.name].elytra++;
+            }
             p.setDynamicProperty("mccr:used_elytra", false);
           }
         }
@@ -903,14 +955,12 @@ system.beforeEvents.startup.subscribe((ev) => {
   });
 });
 
-system.afterEvents.scriptEventReceive.subscribe((ev) => {
-  if (ev.id == "mccr:test") {
-    let md = new ModalFormData()
-      .title("test§m§c§c§r")
-      .header("Test")
-      .textField("测试", "--")
-      .label("Test1")
-      .submitButton("提交")
-      .show(ev.sourceEntity as Player);
-  }
+world.afterEvents.playerJoin.subscribe((ev) => {
+  playerSessionData[ev.playerName] = {};
+});
+
+runAfterStartup(() => {
+  world.getAllPlayers().forEach((p) => {
+    playerSessionData[p.name] = {};
+  });
 });

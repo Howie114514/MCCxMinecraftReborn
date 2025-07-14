@@ -12,6 +12,9 @@ export class Queue<T> {
     this.items = this.items.slice(0, this.items.length - this.minCount);
     return result;
   }
+  _next(): T[] {
+    return this.items.slice(this.items.length - this.minCount);
+  }
   clear() {
     this.items = [];
   }

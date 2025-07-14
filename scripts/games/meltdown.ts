@@ -14,7 +14,7 @@ import {
 } from "@minecraft/server";
 import { doors, hardcoded_melt_order, mobs, points, spawners, structure_points } from "../data/meltdown";
 import { BasicGame, ComplexGame } from "../game";
-import { BlockVolumeArguments, fill, forIn, forInAsync, initializeBlockVolume, playerByEntity } from "../utils";
+import { BlockVolumeArguments, fill, forIn, forInAsync, getHat, initializeBlockVolume, playerByEntity } from "../utils";
 import { showMDGameBar } from "../ui/gamebar";
 import { addCoins, getCoins } from "../gameData";
 import { coordinates } from "../main";
@@ -30,12 +30,15 @@ import { Logger } from "../logger";
 import { showSubTitle } from "../ui/title";
 import { showMDCompleteToast } from "../ui/gametoast";
 import { isReloaded } from "../main";
+import { challenges } from "../challenges";
 
 export type MeltdownPlayerData = {
   room: number;
   coins: number;
   killed: number;
 };
+
+export type MeltdownPlayerStats = {};
 
 const default_time = rules.md_default_time as number;
 
@@ -347,6 +350,10 @@ export class Meltdown extends ComplexGame {
     if (d) {
       if (d.room) {
         showMDCompleteToast(p, d.coins, d.killed, d.room, d.coins);
+        if (d.room >= 3) {
+          challenges.md.recordProgesss(p);
+        }
+        if (getHat(p)?.typeId == "noxcrew.ft:beanie_yellow") challenges.yellow.recordProgesss(p, d.killed);
       }
       addCoins(p, d.coins);
       //p.sendMessage("你完成了游戏");

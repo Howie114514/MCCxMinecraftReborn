@@ -19,7 +19,7 @@ import { BasicGame } from "../game";
 import { coordinates } from "../main";
 import { showSOTGameBar } from "../ui/gamebar";
 import { showSOTCompleteToast } from "../ui/gametoast";
-import { forIn, forInAsync, tick2Time } from "../utils";
+import { forIn, forInAsync, getHat, tick2Time } from "../utils";
 import { gameInstances } from "./gameInstance";
 import { addCoins } from "../gameData";
 import { MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
@@ -30,6 +30,7 @@ import { FTSounds, sound } from "../sound";
 import { showSubTitle } from "../ui/title";
 import { Text } from "../text";
 import { challenges } from "../challenges";
+import { PlayerRecord } from "../types";
 
 export type SOTPlayerData = {
   collected_items: Record<string, Entity>;
@@ -54,10 +55,16 @@ interface SOTItem {
   collectSound?: string;
 }
 
+interface SOTPlayerStats {
+  coinStacks: number;
+  sands: number;
+}
+
 export class SandsOfTime extends BasicGame {
   name = "sot";
   music: string = "music_sot";
-  player_data: Record<string, SOTPlayerData> = {};
+  player_data: PlayerRecord<SOTPlayerData> = {};
+  stats: PlayerRecord<SOTPlayerStats> = {};
   spawner_points = sotMobSpawnPoints;
   mobs = [MinecraftEntityTypes.Zombie, MinecraftEntityTypes.Skeleton, MinecraftEntityTypes.Spider];
   tick_timer = 0;
@@ -160,6 +167,7 @@ export class SandsOfTime extends BasicGame {
         let count = (item.getProperty("noxcrew:variant") as number) ?? 1;
         let c = count == 1 ? 5 : count == 2 ? 20 : 30;
         this.getPlayerData(p).coins += c;
+        this.stats[p.name].coinStacks++;
         p.onScreenDisplay.setActionBar(new Text().tr(`txt.sot.coins${c}`));
       },
     },
@@ -167,6 +175,7 @@ export class SandsOfTime extends BasicGame {
       collectSound: "sand_place",
       onCollect: (p, item, success) => {
         this.getPlayerData(p).time += 10 * TicksPerSecond;
+        this.stats[p.name].sands++;
         world.getDimension("overworld").spawnParticle("noxcrew.ft:sand_collect", item.location);
       },
     },
@@ -299,6 +308,10 @@ export class SandsOfTime extends BasicGame {
       escaped: false,
       opened_chests: 0,
     };
+    this.stats[p.name] = {
+      sands: 0,
+      coinStacks: 0,
+    };
     p.teleport({ x: 2160.25, y: 51.0, z: 79.17 });
     forInAsync(this.collect_events, (v, k) => {
       world
@@ -319,34 +332,41 @@ export class SandsOfTime extends BasicGame {
   }
   removePlayer(p: Player) {
     super.removePlayer(p);
-    p.teleport(coordinates.sot);
-    if (p && !p.getDynamicProperty("mccr:is_leaving")) {
-      let e = p.getComponent("equippable");
-      e?.setEquipment(EquipmentSlot.Legs, undefined);
-      e?.setEquipment(EquipmentSlot.Chest, undefined);
-      e?.setEquipment(EquipmentSlot.Feet, undefined);
+    if (this.player_data[p.name]) {
+      p.teleport(coordinates.sot);
+      if (p && !p.getDynamicProperty("mccr:is_leaving")) {
+        let e = p.getComponent("equippable");
+        e?.setEquipment(EquipmentSlot.Legs, undefined);
+        e?.setEquipment(EquipmentSlot.Chest, undefined);
+        e?.setEquipment(EquipmentSlot.Feet, undefined);
+      }
+      let d = this.player_data[p.name];
+      system.runTimeout(() => {
+        forInAsync(d.collected_items, (e: Entity) => {
+          try {
+            p.setPropertyOverrideForEntity(e, "noxcrew.ft:collected", false);
+          } catch (e) {
+            Logger.error(e);
+          }
+        });
+      }, 1);
+      delete this.player_data[p.name];
+      gameInstances.lobby.addPlayer(p);
     }
-    let d = this.player_data[p.name];
-    system.runTimeout(() => {
-      forInAsync(d.collected_items, (e: Entity) => {
-        try {
-          p.setPropertyOverrideForEntity(e, "noxcrew.ft:collected", false);
-        } catch (e) {
-          Logger.error(e);
-        }
-      });
-    }, 1);
-    delete this.player_data[p.name];
-    gameInstances.lobby.addPlayer(p);
   }
   player_finish(p: Player): void {
-    system.runTimeout(() => p.teleport(coordinates.sot), 2);
-    let d = this.player_data[p.name];
-    let rmCoins = d.escaped ? 0 : Math.ceil(d.coins / 4);
-    let e = d.coins - rmCoins;
-    showSOTCompleteToast(p, d.coins, e, d.opened_chests, tick2Time(d.lifeTime), d.escaped, !d.escaped, rmCoins);
-    addCoins(p, d.coins - rmCoins);
-    this.removePlayer(p);
+    if (this.players[p.name]) {
+      system.runTimeout(() => p.teleport(coordinates.sot), 2);
+      let d = this.player_data[p.name];
+      let rmCoins = d.escaped ? 0 : Math.ceil(d.coins / 4);
+      let e = Math.max(d.coins - rmCoins, 0);
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_blue") challenges.blue.recordProgesss(p, this.stats[p.name].sands);
+      if (getHat(p)?.typeId == "noxcrew.ft:cyan_blue") challenges.cyan.recordProgesss(p, this.stats[p.name].coinStacks);
+
+      showSOTCompleteToast(p, d.coins, e, d.opened_chests, tick2Time(d.lifeTime), d.escaped, !d.escaped, rmCoins);
+      addCoins(p, d.coins - rmCoins);
+      this.removePlayer(p);
+    }
   }
   mainloop(): void {
     this.tick_timer++;
