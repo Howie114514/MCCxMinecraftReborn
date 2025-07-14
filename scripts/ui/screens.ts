@@ -114,7 +114,7 @@ export const info = () => {
 
 === 构建信息 ===
 Commit ID :${BUILD_ID}
-版本 :1.0.0-beta
+版本 :1.0.0-rc.1
 `
     )
     .button("好的");
