@@ -86,10 +86,10 @@ class Boost implements BlockCustomComponent {
   onStepOn(ev: BlockComponentStepOnEvent) {
     let player = asPlayer(ev.entity);
     if (!player) return;
-
     if (gameInstances.ace_race.players[player.name]) {
       gameInstances.ace_race.stats[player.name].launchPad++;
     }
+    sound.play(player, "launch", {});
     player.runCommand("function boost");
     system.runTimeout(() => {
       try {
