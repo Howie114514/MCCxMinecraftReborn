@@ -2,6 +2,7 @@
 
 ## MCC X Minecraft Reborn Project
 
+![Static Badge](https://img.shields.io/badge/%F0%9F%90%A7QQGroup-1033951707-blue)
 ![Static Badge](https://img.shields.io/badge/minecraft-1.21.80-purple)
 ![Static Badge](https://img.shields.io/badge/API-2.0.0--beta-purple)
 

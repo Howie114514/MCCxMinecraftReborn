@@ -4,6 +4,7 @@
 
 English|[简体中文](./README_zh_CN.md)<br>
 
+![Static Badge](https://img.shields.io/badge/%F0%9F%90%A7QQGroup-1033951707-blue)
 ![Static Badge](https://img.shields.io/badge/minecraft-1.21.80-purple)
 ![Static Badge](https://img.shields.io/badge/API-2.0.0--beta-purple)
 
@@ -45,7 +46,7 @@ A project that revitalizes the MCC x Minecraft 15th Anniversary server map by ad
 
 ##### ⚠️ Technical
 
-- [ ] Plugin
+~~- [ ] Plugin~~
 
 ---
 

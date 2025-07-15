@@ -48,7 +48,6 @@ import { Logger } from "./logger";
 import { blockCompoents, itemCompoents } from "./compoents";
 import { showSubTitle } from "./ui/title";
 import { sound } from "./sound";
-import { network } from "./network";
 import { challengeColors, challenges } from "./challenges";
 import { debugScriptsDialog } from "./debug";
 import { Text } from "./text";
@@ -511,7 +510,6 @@ system.beforeEvents.startup.subscribe((ev) => {
               player.teleport(from);
             } else {
               sound.play(player, "quick_travel", {});
-              network.setTime(player, time[dest] ?? TimeOfDay.Noon);
               player.teleport(to);
               (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
             }
