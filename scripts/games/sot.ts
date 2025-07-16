@@ -1,9 +1,3 @@
-/**
- * 时之沙 - Sands Of Time
- * 本项目最大的依托石山
- */
-//待重构
-
 import {
   Entity,
   EntityComponentTypes,

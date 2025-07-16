@@ -10,6 +10,7 @@ import {
   EquipmentSlot,
   GameMode,
   InputPermissionCategory,
+  ItemComponentTypes,
   ItemStack,
   Player,
   system,
@@ -45,6 +46,15 @@ import { Logger } from "../logger";
 import { Vec3Utils } from "../math";
 import { showGRCompleteToast } from "../ui/gametoast";
 import { challenges } from "../challenges";
+
+export interface GRCakeData {
+  cake: {
+    eggs: number;
+    wheat: number;
+    milk: number;
+    sugar: number;
+  };
+}
 
 export class GRLevel {
   game: GridRunners;
@@ -111,15 +121,44 @@ class Level1 extends GRLevel {
     sound.play(p, "room_beast", {});
     p.sendMessage(new Text().tr("txt.tut.grid1_text"));
     showSubTitle(p, new Text().tr("txt.tut.grid1_title"));
-    inventory.set(p, { 0: new ItemStack("minecraft:stone_sword"), 8: new ItemStack("noxcrew.ft:leave_game") });
+    inventory.set(p, { 0: new ItemStack("minecraft:iron_sword"), 8: new ItemStack("noxcrew.ft:leave_game") });
   }
-  mobGroups = [
-    ["minecraft:zombie", "minecraft:husk"],
-    ["minecraft:skeleton", "minecraft:stray"],
-    ["minecraft:pillager", "minecraft:witch"],
+  getMobFuncs: ((first: boolean, location: Vector3) => string | Entity)[] = [
+    //Zombies
+    (first) => {
+      return first ? "minecraft:husk" : "minecraft:zombie";
+    },
+    //Slimes
+    (_, loc) => {
+      return world.getDimension("overworld").spawnEntity("minecraft:slime", loc, { spawnEvent: "spawn_small" });
+    },
+    /**嘟嘟哒嘟嘟哒 */
+    (first) => {
+      return first ? "minecraft:stray" : "minecraft:skeleton";
+    },
+    /**嘟嘟哒嘟嘟哒2 */
+    (first) => {
+      return first ? "minecraft:stray" : "minecraft:bogged";
+    },
+    //Nether
+    (first) => {
+      return first ? "minecraft:blaze" : "minecraft:magma_cube";
+    },
+    //Pillagers
+    (first) => {
+      return first ? "minecraft:witch" : "minecraft:pillager";
+    },
+    //1.21
+    (first) => {
+      return first ? "minecraft:breeze" : "minecraft:bogged";
+    },
   ];
   mainloop(): void {
     let e = world.getDimension("overworld").getEntities({ tags: ["gr_mobs"] });
+    forIn(this.game.players, (p) => {
+      p.removeEffect("poison");
+      p.removeEffect("slowness");
+    });
     if (e.length == 0) {
       if (this.game.tick_timer > 82) {
         forIn(this.game.players, (p) => {
@@ -129,11 +168,12 @@ class Level1 extends GRLevel {
           this.game.player_data[p.name].coins += 10;
         });
       }
-      let group = random.choice(this.mobGroups);
-      mob_spawnpoints.forEach((p) => {
-        let e = world.getDimension("overworld").spawnEntity(random.choice(group), p);
-        e.addTag("gr_mobs");
-        e.addEffect("fire_resistance", 20000000, { showParticles: false });
+      let getMob = random.choice(this.getMobFuncs);
+      mob_spawnpoints.forEach((p, i) => {
+        let mob = getMob(i == 0, p);
+        if (typeof mob == "string") mob = world.getDimension("overworld").spawnEntity(mob, p);
+        mob.addTag("gr_mobs");
+        mob.addEffect("fire_resistance", 20000000, { showParticles: false });
       });
     }
   }
@@ -155,11 +195,6 @@ class Level2 extends GRLevel {
     super(gr);
     world.afterEvents.projectileHitBlock.subscribe((ev) => {
       if (ev.projectile?.typeId == "noxcrew.ft:paint_proj") {
-        Logger.info(
-          "Projectile hit block:",
-          ev.projectile.getProperty("noxcrew.ft:color"),
-          ev.getBlockHit().block.typeId
-        );
         let block = ev.getBlockHit().block;
         let paintBlock = (block: Block) => {
           if (
@@ -194,11 +229,11 @@ class Level2 extends GRLevel {
             }
           }
         };
-        paintBlock(block);
-        paintBlock(block.above() as Block);
-        paintBlock(block.below() as Block);
-        paintBlock(block.east() as Block);
-        paintBlock(block.west() as Block);
+        for (let i = -2; i < 2; i++) {
+          for (let j = -2; j < 2; j++) {
+            paintBlock(block.east(i)?.above(j) as Block);
+          }
+        }
         ev.projectile.remove();
       }
     });
@@ -266,6 +301,14 @@ class Level2 extends GRLevel {
 class Level3 extends GRLevel {
   id = 3;
   pos = { x: 2228.08, y: 64.0, z: 4256.02 };
+  data: GRCakeData = {
+    cake: {
+      eggs: 0,
+      milk: 0,
+      wheat: 0,
+      sugar: 0,
+    },
+  };
   playerEnter(p: Player): void {
     showSubTitle(p, new Text().tr("txt.tut.grid3_title"));
     p.sendMessage(new Text().tr("txt.tut.grid3_text"));
@@ -291,13 +334,15 @@ class Level3 extends GRLevel {
       for (let s = 0; s < c?.size; s++) {
         c.setItem(s, new ItemStack("minecraft:bucket", 16));
       }
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 3; i++) {
       let chicken = world
         .getDimension("overworld")
         .spawnEntity("minecraft:chicken", { x: 2229.48, y: 67.0, z: 4245.05 });
+      chicken.addTag("gr_animals");
+    }
+    for (let i = 0; i < 2; i++) {
       let cow = world.getDimension("overworld").spawnEntity("minecraft:cow", { x: 2250.53, y: 65.0, z: 4263.52 });
       cow.addTag("gr_animals");
-      chicken.addTag("gr_animals");
     }
     reeds.forEach((r) => {
       world
@@ -313,6 +358,7 @@ class Level3 extends GRLevel {
     this.cake.setProperty("noxcrew.ft:sugar", 0);
     this.cake.setProperty("noxcrew.ft:wheat", 0);
     this.cake.setProperty("noxcrew.ft:disappear", false);
+    this.checkCompletion();
   }
   checkCompletion() {
     if (this.cake) {
@@ -330,8 +376,12 @@ class Level3 extends GRLevel {
           this.game.player_data[p.name].cakes += 1;
           this.game.playSound("scoreacquired");
         });
-        props["noxcrew.ft:disappear"] = true;
-        system.runTimeout(() => this.reset(), 2 * TicksPerSecond);
+        this.cake.playAnimation("animation.n.giant_cake.complete");
+        this.cake.setProperty("noxcrew.ft:egg", this.data.cake.eggs < 2 ? this.data.cake.eggs : 2);
+        this.cake.setProperty("noxcrew.ft:milk_bucket", this.data.cake.milk < 2 ? this.data.cake.milk : 2);
+        this.cake.setProperty("noxcrew.ft:sugar", this.data.cake.sugar < 2 ? this.data.cake.sugar : 2);
+        this.cake.setProperty("noxcrew.ft:wheat", this.data.cake.wheat < 2 ? this.data.cake.wheat : 2);
+        system.runTimeout(() => this.reset(), 20);
       }
     }
   }
@@ -401,6 +451,7 @@ class Level3 extends GRLevel {
           let props = createEntityPropertyProxy(ev.target);
           switch (ev.itemStack.typeId) {
             case "minecraft:sugar":
+              if (this.data.cake.sugar > 48) return;
               (() => {
                 let p: number = props["noxcrew.ft:sugar"] as number;
                 if (p < 2) {
@@ -408,9 +459,11 @@ class Level3 extends GRLevel {
                   (props["noxcrew.ft:sugar"] as number) += 1;
                 }
               })();
+              this.data.cake.sugar++;
               game.player_data[ev.player.name].coins += 3;
               break;
             case "minecraft:egg":
+              if (this.data.cake.eggs > 48) return;
               (() => {
                 let p: number = props["noxcrew.ft:egg"] as number;
                 if (p < 2) {
@@ -418,9 +471,11 @@ class Level3 extends GRLevel {
                   (props["noxcrew.ft:egg"] as number) += 1;
                 }
               })();
+              this.data.cake.eggs++;
               game.player_data[ev.player.name].coins += 3;
               break;
             case "minecraft:wheat":
+              if (this.data.cake.wheat > 48) return;
               (() => {
                 let p: number = props["noxcrew.ft:wheat"] as number;
                 if (p < 2) {
@@ -428,9 +483,11 @@ class Level3 extends GRLevel {
                   (props["noxcrew.ft:wheat"] as number) += 1;
                 }
               })();
+              this.data.cake.wheat++;
               game.player_data[ev.player.name].coins += 3;
               break;
             case "noxcrew.ft:milk_bucket":
+              if (this.data.cake.milk > 48) return;
               (() => {
                 let p: number = props["noxcrew.ft:milk_bucket"] as number;
                 if (p < 2) {
@@ -438,6 +495,7 @@ class Level3 extends GRLevel {
                   (props["noxcrew.ft:milk_bucket"] as number) += 1;
                 }
               })();
+              this.data.cake.milk++;
               game.player_data[ev.player.name].coins += 3;
               break;
           }
@@ -450,8 +508,13 @@ class Level3 extends GRLevel {
 class Level4 extends GRLevel {
   id = 4;
   pos = { x: 2259.28, y: 62.2, z: 4255.88 };
-  playerEnter(p: Player): void {
-    sound.play(p, "room_complete", {});
+  playerEnter(p: Player): void {}
+  showGamebar(p: Player): void {
+    gridRunnersGamebar.showGRGameBarWithAdditionalInfo(
+      p,
+      `\ue195 ${this.game.player_data[p.name].coins} \ue1ca 1s`,
+      getCoins(p)
+    );
   }
 }
 
@@ -548,6 +611,7 @@ export class GridRunners extends ComplexGame {
         p.onScreenDisplay.setActionBar(new Text().tr("txt.grid.warning_hint"));
         p.getComponent("health")?.resetToMaxValue();
         p.runCommand("effect @s clear");
+        sound.play(p, "room_complete", {});
       });
     },
     2480: () => {
@@ -565,6 +629,7 @@ export class GridRunners extends ComplexGame {
       }, 15 * TicksPerSecond);
       forIn(this.players, (p) => {
         p.onScreenDisplay.setActionBar(new Text().tr("txt.grid.warning_hint"));
+        sound.play(p, "room_complete", {});
         inventory.set(p, { 8: new ItemStack("noxcrew.ft:leave_game") });
       });
     },
@@ -599,7 +664,8 @@ export class GridRunners extends ComplexGame {
         this.players[ev.player.name] &&
         getHat(ev.player)?.typeId == "noxcrew.ft:beanie_aqua"
       ) {
-        this.player_data[ev.player.name].stats.foundPearl = true;
+        challenges.aqua.recordProgesss(ev.player);
+        //this.player_data[ev.player.name].stats.foundPearl = true;
       }
     });
     world.afterEvents.entityDie.subscribe((ev) => {
@@ -701,6 +767,7 @@ export class GridRunners extends ComplexGame {
     if (this.players[p.name]) {
       let d = this.player_data[p.name];
       showGRCompleteToast(p, d.coins, d.mobs, d.painted, d.cakes);
+      sound.play(p, "finish", {});
       p.applyKnockback({ x: 4, z: 0 }, 0.5);
       challenges.gr.recordProgesss(p);
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_green") challenges.green.recordProgesss(p, d.painted);

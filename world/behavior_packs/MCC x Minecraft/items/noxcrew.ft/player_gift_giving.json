@@ -1,47 +1,46 @@
 {
-	"format_version": "1.20.50",
-	"minecraft:item": {
-		"description": {
-			"category": "",
-			"identifier": "noxcrew.ft:player_gift_giving",
-			"is_experimental": true
-		},
-		"components": {
-			"item_properties": {
-				"allow_off_hand": 0,
-				"can_destroy_in_creative": 1,
-				"creative_category": 4,
-				"creative_group": "",
-				"damage": 0,
-				"enchantable_slot": "none",
-				"enchantable_value": 0,
-				"foil": 0,
-				"frame_count": 1,
-				"hand_equipped": 0,
-				"liquid_clipped": 0,
-				"max_stack_size": 32,
-				"minecraft:icon": {
-					"textures": {
-						"default": "ft.player_gift_giving"
-					}
-				},
-				"mining_speed": 1,
-				"should_despawn": 1,
-				"stacked_by_data": 0,
-				"use_animation": 0,
-				"use_duration": 0
-			},
-			"minecraft:cooldown": {
-				"category": "party",
-				"duration": 2
-			},
-			"minecraft:icon": {
-				"texture": "ft.player_gift_giving"
-			},
-			"minecraft:interact_button": "action.interact.gift",
-			"minecraft:max_stack_size": {
-				"value": 32
-			}
-		}
-	}
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "category": "",
+      "identifier": "noxcrew.ft:player_gift_giving",
+      "is_experimental": true
+    },
+    "components": {
+      "item_properties": {
+        "allow_off_hand": 0,
+        "can_destroy_in_creative": 1,
+        "creative_category": 4,
+        "creative_group": "",
+        "damage": 0,
+        "enchantable_slot": "none",
+        "enchantable_value": 0,
+        "foil": 0,
+        "frame_count": 1,
+        "hand_equipped": 0,
+        "liquid_clipped": 0,
+        "max_stack_size": 32,
+        "minecraft:icon": {
+          "textures": {
+            "default": "ft.player_gift_giving"
+          }
+        },
+        "mining_speed": 1,
+        "should_despawn": 1,
+        "stacked_by_data": 0,
+        "use_animation": 0,
+        "use_duration": 0
+      },
+      "minecraft:cooldown": {
+        "category": "party",
+        "duration": 2
+      },
+      "minecraft:icon": {
+        "texture": "ft.player_gift_giving"
+      },
+      "minecraft:max_stack_size": {
+        "value": 32
+      }
+    }
+  }
 }

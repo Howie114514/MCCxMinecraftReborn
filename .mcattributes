@@ -1,1 +1,3 @@
 diagnostic.disable.behaviorpack.block.missing=true
+diagnostic.disable.minecraft.commands.invalid=true
+diagnostic.disable.minecraft.tag.missing=true

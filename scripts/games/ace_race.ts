@@ -177,8 +177,9 @@ export class AceRace extends BasicGame {
     };
   }
   player_onTick(p: Player): void {
-    if (p.location.y <= -60) {
+    if (p.location.y <= 0) {
       this.player_respawn(p);
+      sound.play(p, "rescue", {});
     }
     p.addEffect(MinecraftEffectTypes.InstantHealth, 10, { amplifier: 255, showParticles: false });
   }

@@ -182,3 +182,10 @@ export function give(p: Player, item: ItemStack) {
 export function choice<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
+
+export function setFog(p: Player, fog: string) {
+  try {
+    p.runCommand(`fog @s remove mccr_current`);
+  } catch (e) {}
+  p.runCommand(`fog @s push ${fog} mccr_current`);
+}

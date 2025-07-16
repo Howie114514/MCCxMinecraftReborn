@@ -239,7 +239,6 @@ export class ComplexGame {
               tr("txt.matchmaking.status.preparing." + (this.anim_t % 6).toString())
             );
           });
-          console.log("matching...");
         }
       } else {
         this.queue.items.forEach((p) => {
@@ -249,7 +248,6 @@ export class ComplexGame {
               `${this.queue.items.length}/${this.queue.minCount}`
             )
           );
-          console.log("matching...");
         });
       }
     }, 3);

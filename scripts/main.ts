@@ -21,6 +21,7 @@ import {
   Block,
   CommandResult,
   EntityComponentTypes,
+  InputButton,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import flags from "./flags";
@@ -28,7 +29,7 @@ import { Vector3Utils } from "./minecraft/math";
 import { Vec3Utils } from "./math";
 import { tr } from "./lang";
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
-import { asPlayer, choice, debounce, forIn, give, rgb, runAfterStartup } from "./utils";
+import { asPlayer, choice, debounce, forIn, give, random, rgb, runAfterStartup, setFog } from "./utils";
 import {
   challenge_list,
   cosmetic_chest,
@@ -73,6 +74,14 @@ system.beforeEvents.startup.subscribe((init) => {
     init.itemComponentRegistry.registerCustomComponent("mccr:" + k, v);
   });
 });
+
+export const fogs = {
+  lobby: "noxcrew.ft:hub",
+  meltdown: "noxcrew.ft:melt",
+  ace_race: "noxcrew.ft:ace",
+  grid_runners: "noxcrew.ft:grid",
+  sot: "noxcrew.ft:sand",
+};
 
 export const colors: Record<string, RGB> = {
   aqua: rgb(127, 255, 212),
@@ -166,7 +175,7 @@ function collectHubCoin(p: Player, coin: Entity) {
     p.setDynamicProperty("mccr:collected_" + coin.id, true);
     let count = (coin.getProperty("noxcrew:variant") as number) ?? 1;
     p.playSound(count == 3 ? "bigcoins" : "smallcoins");
-    let c = count == 1 ? 5 : count == 2 ? 20 : 50;
+    let c = count == 1 ? 5 : count == 2 ? 20 : 30;
     showSubTitle(p, new Text().tr("txt.lobby.coins" + c));
     addCoins(p, c);
   }
@@ -185,6 +194,32 @@ system.beforeEvents.startup.subscribe((ev) => {
       return { status: CustomCommandStatus.Success };
     }
   );
+  let pipes = {
+    "1": {
+      from: {
+        x: 2326.0,
+        y: 62,
+        z: 4247.0,
+      },
+      to: {
+        x: 2098.0,
+        y: 90,
+        z: 4245.0,
+      },
+    },
+    "2": {
+      from: {
+        x: 2326.0,
+        y: 62,
+        z: 4265.0,
+      },
+      to: {
+        x: 2098.0,
+        y: 90,
+        z: 4267.0,
+      },
+    },
+  };
   ev.customCommandRegistry.registerCommand(
     {
       name: "mccr:trigger",
@@ -200,9 +235,14 @@ system.beforeEvents.startup.subscribe((ev) => {
           type: CustomCommandParamType.PlayerSelector,
         },
       ],
+      optionalParameters: [
+        {
+          name: "params",
+          type: CustomCommandParamType.String,
+        },
+      ],
     },
-    (origin, event: string, targets: Player[]) => {
-      //Logger.info(event, targets);
+    (origin, event: string, targets: Player[], params?: string) => {
       if (origin.sourceType == CustomCommandSource.Entity && origin.sourceEntity?.typeId == "minecraft:player")
         return { status: CustomCommandStatus.Failure, message: "你无权使用该命令" };
       switch (event) {
@@ -235,6 +275,41 @@ system.beforeEvents.startup.subscribe((ev) => {
               }
             });
           });
+          break;
+        }
+        case "hub.candle.update": {
+          targets.forEach((p) => {
+            let c = challengeColors[origin.sourceEntity?.getProperty("noxcrew:variant") as number];
+            system.run(() =>
+              p.setPropertyOverrideForEntity(
+                origin.sourceEntity as Entity,
+                "noxcrew.ft:complete",
+                challenges[c].getPlayerChallengeData(p).finished ?? false
+              )
+            );
+          });
+          break;
+        }
+        case "hub.gr.pipe_tp": {
+          if (!params) return;
+          let pipe = pipes[params as keyof typeof pipes];
+          system.run(() => {
+            targets.forEach((p) => {
+              p.addTag("returning");
+              p.teleport(pipe.from);
+              sound.play(p, "pipe_suck_start", {});
+              p.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, false);
+              p.addEffect(MinecraftEffectTypes.Levitation, 60, { amplifier: 3, showParticles: false });
+              system.runTimeout(() => {
+                p.teleport(pipe.to);
+                p.removeTag("returning");
+                p.runCommand("playsound pipe_teleport @s");
+                p.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, true);
+              }, 60);
+            });
+          });
+
+          break;
         }
       }
       return undefined;
@@ -335,6 +410,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               hats.push("noxcrew.ft:beanie_" + colors[v.selection ?? 0]);
               ev.player.runCommand("scriptevent mccr:remove_coins 250");
               ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats));
+              sound.play(ev.player, "purchase", {});
             }
           });
       }
@@ -365,6 +441,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               hats1.push(hats[v.selection ?? 0]);
               ev.player.runCommand("scriptevent mccr:remove_coins 300");
               ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats1));
+              sound.play(ev.player, "purchase", {});
             }
           });
       }
@@ -398,6 +475,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               }
               ev.player.runCommand(`give @s ${foods[v.selection as number]}`);
               ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
+              sound.play(ev.player, "purchase", {});
             }
           });
       }
@@ -437,6 +515,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               }
               ev.player.runCommand(`give @s ${toys[v.selection as number]}`);
               ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
+              sound.play(ev.player, "purchase", {});
             }
           });
       }
@@ -509,6 +588,7 @@ system.beforeEvents.startup.subscribe((ev) => {
             if (v.selection == 0) {
               player.teleport(from);
             } else {
+              setFog(player, fogs[dest as keyof typeof fogs]);
               sound.play(player, "quick_travel", {});
               player.teleport(to);
               (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
@@ -516,6 +596,7 @@ system.beforeEvents.startup.subscribe((ev) => {
             system.runTimeout(() => player.removeTag("inPortal"), 10);
           });
       else {
+        setFog(player, fogs[dest as keyof typeof fogs]);
         player.teleport(to);
       }
     }
@@ -716,6 +797,7 @@ system.beforeEvents.startup.subscribe((ev) => {
           let vmap = new MolangVariableMap();
           vmap.setColorRGB("color", colors[ev.block.typeId.replace(/noxcrew.ft:plush_/, "")] ?? colors.red);
           world.getDimension("overworld").spawnParticle("noxcrew.ft:sparkley", ev.block.center(), vmap);
+          world.getDimension("overworld").playSound("sparkle", ev.block, { volume: 0.5 });
         }
       }, 2)
     );
@@ -850,17 +932,22 @@ system.beforeEvents.startup.subscribe((ev) => {
       }
     });
     //#region toys
-    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
-      let target = asPlayer(ev.target);
-      if (ev.itemStack?.typeId == "noxcrew.ft:player_gift_giving")
-        if (target) {
-          useItem(ev.player, ev.itemStack);
-          target
-            .getComponent(EntityComponentTypes.Inventory)
-            ?.container.addItem(new ItemStack("noxcrew.ft:player_gift_receiving"));
-          target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.player.name));
-          ev.player.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
-        }
+    world.afterEvents.itemUse.subscribe((ev) => {
+      let entity = ev.source.getEntitiesFromViewDirection({ type: "minecraft:player", maxDistance: 3.5 });
+      console.log(entity[0]?.entity.nameTag);
+      if (entity[0] && ev.itemStack?.typeId == "noxcrew.ft:player_gift_giving") {
+        let target = entity[0].entity as Player;
+        useItem(ev.source, ev.itemStack);
+        target
+          .getComponent(EntityComponentTypes.Inventory)
+          ?.container.addItem(new ItemStack("noxcrew.ft:player_gift_receiving"));
+        target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.source.name));
+        ev.source.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
+      } else if (entity[0] && ev.itemStack?.typeId == "noxcrew.ft:confetti_tag_prime") {
+        useItem(ev.source, ev.itemStack);
+        let target = entity[0].entity as Player;
+        world.getDimension("overworld").spawnParticle("noxcrew.ft:party_popper", target.location);
+      }
     });
     world.afterEvents.itemUse.subscribe((ev) => {
       switch (ev.itemStack.typeId) {
@@ -941,6 +1028,7 @@ system.beforeEvents.startup.subscribe((ev) => {
           }
           if (p.isOnGround && p.getDynamicProperty("mccr:used_elytra")) {
             e.setEquipment(EquipmentSlot.Chest, undefined);
+            sound.play(p, "elytra_remove", {});
             if (gameInstances.ace_race.players[p.name]) {
               gameInstances.ace_race.stats[p.name].elytra++;
             }
