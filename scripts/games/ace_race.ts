@@ -167,6 +167,7 @@ export class AceRace extends BasicGame {
   }
   player_join(p: Player): void {
     p.onScreenDisplay.setActionBar(tr("txt.tut.ace_title"));
+    inventory.save(p);
     inventory.set(p, { 8: new ItemStack("noxcrew.ft:leave_game") });
     sound.play(p, "go", {});
     this.timer[p.name] = Date.now();
