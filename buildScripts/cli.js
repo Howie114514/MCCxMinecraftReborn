@@ -60,6 +60,7 @@ const config = {
   define: {
     isDevMode: args.mode == "dev" ? "true" : "false",
     BUILD_ID: `"${process.env["BUILD_ID"] ?? "DEV"}"`,
+    VERSION: `"${JSON.parse(readFileSync(resolve("./package.json")).toString()).version}"`,
   },
   outfile: resolve(path.join(bpPath, "scripts/main.js")),
   plugins: [

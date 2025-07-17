@@ -658,6 +658,11 @@ export class GridRunners extends ComplexGame {
   }
   constructor() {
     super();
+    world.afterEvents.entitySpawn.subscribe((ev) => {
+      if (ev.entity.typeId == "minecraft:magma_cube") {
+        ev.entity.addTag("gr_mobs");
+      }
+    });
     world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
       if (
         ev.target.typeId == "noxcrew.ft:lost_pearl" &&

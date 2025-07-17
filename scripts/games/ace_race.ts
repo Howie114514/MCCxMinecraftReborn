@@ -199,6 +199,8 @@ export class AceRace extends BasicGame {
   }
   player_respawn(p: Player): void {
     Logger.info(this.spawnpoints[p.name]);
+
+    sound.play(p, "rescue", { volume: 3 });
     if (this.spawnpoints[p.name] != undefined) {
       p.teleport(spawnpoints[this.spawnpoints[p.name]]);
     } else p.teleport({ x: 4234.98, y: 60.0, z: 2120.14 });

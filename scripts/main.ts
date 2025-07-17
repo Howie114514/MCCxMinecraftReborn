@@ -296,14 +296,14 @@ system.beforeEvents.startup.subscribe((ev) => {
           system.run(() => {
             targets.forEach((p) => {
               p.addTag("returning");
-              p.teleport(pipe.from);
               sound.play(p, "pipe_suck_start", {});
+              p.teleport(pipe.from);
               p.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, false);
               p.addEffect(MinecraftEffectTypes.Levitation, 60, { amplifier: 3, showParticles: false });
               system.runTimeout(() => {
+                sound.play(p, "pipe_teleport", {});
                 p.teleport(pipe.to);
                 p.removeTag("returning");
-                p.runCommand("playsound pipe_teleport @s");
                 p.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, true);
               }, 60);
             });
@@ -329,6 +329,9 @@ system.beforeEvents.startup.subscribe((ev) => {
             if (v.selection == 0) {
               clearAllData(origin.sourceEntity as Player);
               (origin.sourceEntity as Player).runCommand("scriptevent mccr:reset_inv");
+              (origin.sourceEntity as Player)
+                .getComponent(EntityComponentTypes.Equippable)
+                ?.setEquipment(EquipmentSlot.Head, undefined);
               gameInstances.lobby.addPlayer(origin.sourceEntity as Player);
             }
           });
@@ -934,7 +937,6 @@ system.beforeEvents.startup.subscribe((ev) => {
     //#region toys
     world.afterEvents.itemUse.subscribe((ev) => {
       let entity = ev.source.getEntitiesFromViewDirection({ type: "minecraft:player", maxDistance: 3.5 });
-      console.log(entity[0]?.entity.nameTag);
       if (entity[0] && ev.itemStack?.typeId == "noxcrew.ft:player_gift_giving") {
         let target = entity[0].entity as Player;
         useItem(ev.source, ev.itemStack);
