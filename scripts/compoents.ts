@@ -90,7 +90,7 @@ class Boost implements BlockCustomComponent {
       gameInstances.ace_race.stats[player.name].launchPad++;
     }
     sound.play(player, "launch", {});
-    player.runCommand("function boost");
+    player.runCommand("function mccr/boost");
     system.runTimeout(() => {
       try {
         player.removeEffect("levitation");

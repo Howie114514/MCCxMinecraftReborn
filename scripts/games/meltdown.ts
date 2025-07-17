@@ -14,7 +14,17 @@ import {
 } from "@minecraft/server";
 import { doors, hardcoded_melt_order, mobs, points, spawners, structure_points } from "../data/meltdown";
 import { BasicGame, ComplexGame } from "../game";
-import { BlockVolumeArguments, fill, forIn, forInAsync, getHat, initializeBlockVolume, playerByEntity } from "../utils";
+import {
+  BlockVolumeArguments,
+  fill,
+  forIn,
+  forInAsync,
+  getHat,
+  giveArmor,
+  initializeBlockVolume,
+  playerByEntity,
+  removeArmor,
+} from "../utils";
 import { showMDGameBar } from "../ui/gamebar";
 import { addCoins, getCoins } from "../gameData";
 import { coordinates } from "../main";
@@ -342,6 +352,7 @@ export class Meltdown extends ComplexGame {
         1: new ItemStack("minecraft:arrow", 64),
         8: new ItemStack("noxcrew.ft:leave_game"),
       });
+      giveArmor(p);
     });
     this.isStarting = false;
   }
@@ -370,6 +381,7 @@ export class Meltdown extends ComplexGame {
   removePlayer(p: Player): void {
     delete this.player_data[p.name];
     delete this.players[p.name];
+    removeArmor(p);
     gameInstances.lobby.addPlayer(p);
   }
   showGamebar(p: Player): void {

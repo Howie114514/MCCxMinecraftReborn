@@ -3,7 +3,7 @@
 ## Called from player/effect/update
 
 tag @s add this.player
-playsound jump @s
+playsound jump_alert @s
 playsound jump_neutral @a[tag=!this.player] ~ ~ ~
 tag @s remove this.player
 

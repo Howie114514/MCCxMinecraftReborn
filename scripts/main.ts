@@ -22,6 +22,8 @@ import {
   CommandResult,
   EntityComponentTypes,
   InputButton,
+  ItemComponentTypes,
+  ItemDurabilityComponent,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import flags from "./flags";
@@ -468,13 +470,7 @@ system.beforeEvents.startup.subscribe((ev) => {
           .then((v) => {
             if (!v.canceled) {
               if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
-                new MessageFormData()
-                  .title("")
-                  .body(tr("txt.error.msg1"))
-                  .button1("确认")
-                  .button2("取消")
-                  .show(ev.player);
-                return;
+                showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
               }
               ev.player.runCommand(`give @s ${foods[v.selection as number]}`);
               ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
@@ -508,12 +504,7 @@ system.beforeEvents.startup.subscribe((ev) => {
           .then((v) => {
             if (!v.canceled) {
               if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
-                new MessageFormData()
-                  .title("")
-                  .body(tr("txt.error.msg1"))
-                  .button1("确认")
-                  .button2("取消")
-                  .show(ev.player);
+                showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
                 return;
               }
               ev.player.runCommand(`give @s ${toys[v.selection as number]}`);
@@ -937,29 +928,40 @@ system.beforeEvents.startup.subscribe((ev) => {
     //#region toys
     world.afterEvents.itemUse.subscribe((ev) => {
       let entity = ev.source.getEntitiesFromViewDirection({ type: "minecraft:player", maxDistance: 3.5 });
-      if (entity[0] && ev.itemStack?.typeId == "noxcrew.ft:player_gift_giving") {
+      if (entity[0]) {
         let target = entity[0].entity as Player;
-        useItem(ev.source, ev.itemStack);
-        target
-          .getComponent(EntityComponentTypes.Inventory)
-          ?.container.addItem(new ItemStack("noxcrew.ft:player_gift_receiving"));
-        target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.source.name));
-        ev.source.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
-      } else if (entity[0] && ev.itemStack?.typeId == "noxcrew.ft:confetti_tag_prime") {
-        useItem(ev.source, ev.itemStack);
-        let target = entity[0].entity as Player;
-        world.getDimension("overworld").spawnParticle("noxcrew.ft:party_popper", target.location);
+        switch (ev.itemStack.typeId) {
+          case "noxcrew.ft:player_gift_giving": {
+            useItem(ev.source, ev.itemStack);
+            target
+              .getComponent(EntityComponentTypes.Inventory)
+              ?.container.addItem(new ItemStack("noxcrew.ft:player_gift_receiving"));
+            target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.source.name));
+            ev.source.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
+            break;
+          }
+          case "noxcrew.ft:confetti_tag_prime": {
+            useItem(ev.source, ev.itemStack);
+            let target = entity[0].entity as Player;
+            world.getDimension("overworld").spawnParticle("noxcrew.ft:party_popper", target.location);
+            break;
+          }
+          case "noxcrew.ft:pizza_box": {
+            let d = ev.itemStack.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent;
+            if (d.damage == d.maxDurability) useItem(ev.source, ev.itemStack);
+            else d.damage += 1;
+            give(target, new ItemStack("noxcrew.ft:pizza_slice"));
+          }
+        }
+      }
+    });
+    world.afterEvents.entityHitEntity.subscribe((ev) => {
+      if (ev.hitEntity.typeId == "noxcrew.ft:beach_ball") {
+        ev.hitEntity.applyKnockback(Vec3Utils.getProjectileMotion(ev.damagingEntity, 100), 1);
       }
     });
     world.afterEvents.itemUse.subscribe((ev) => {
       switch (ev.itemStack.typeId) {
-        case "noxcrew.ft:celebration_fireworks":
-          ev.source.dimension.spawnParticle("noxcrew.ft:c_firework_rocket", ev.source.location);
-          useItem(ev.source, ev.itemStack);
-          if (Vec3Utils.distance({ x: 2192, y: 171, z: 2095 }, ev.source.location) < 3) {
-            puzzles.day6.complete(ev.source);
-          }
-          break;
         case "noxcrew.ft:party_popper":
           ev.source.dimension.spawnParticle("noxcrew.ft:party_popper", ev.source.location);
           if (Vec3Utils.distance(ev.source.location, { x: 2178.54, y: 79.0, z: 100.78 }) < 5) {
@@ -975,13 +977,6 @@ system.beforeEvents.startup.subscribe((ev) => {
         case "noxcrew.ft:silly_horn":
           ev.source.dimension.spawnParticle("noxcrew.ft:horn", ev.source.location);
           sound.play(world.getDimension("overworld"), "silly_horn", { location: ev.source.location });
-          useItem(ev.source, ev.itemStack);
-          break;
-        case "noxcrew.ft:disco_ball":
-          world.getDimension("overworld").spawnEntity("noxcrew.ft:disco_ball", ev.source.location);
-          if (Vec3Utils.distance({ x: 2210, y: 82, z: 4281 }, ev.source.location) < 3) {
-            puzzles.day4.complete(ev.source);
-          }
           useItem(ev.source, ev.itemStack);
           break;
         case "noxcrew.ft:player_gift_receiving":
@@ -1001,6 +996,41 @@ system.beforeEvents.startup.subscribe((ev) => {
           useItem(ev.source, ev.itemStack);
           give(ev.source, new ItemStack(choice(items)));
           challenges.lime.recordProgesss(ev.source, 1);
+          break;
+      }
+    });
+
+    world.afterEvents.itemUse.subscribe((ev) => {
+      let block = ev.source.getBlockFromViewDirection({ maxDistance: 8 });
+      if (!block?.block) return;
+      let above = block.block.above();
+      switch (ev.itemStack?.typeId) {
+        case "noxcrew.ft:disco_ball":
+          if (!above) return;
+          world.getDimension("overworld").spawnEntity("noxcrew.ft:disco_ball", above.bottomCenter());
+          if (Vec3Utils.distance({ x: 2210, y: 82, z: 4281 }, ev.source.location) < 3) {
+            puzzles.day4.complete(ev.source);
+          }
+          useItem(ev.source, ev.itemStack);
+          break;
+        case "noxcrew.ft:beach_ball": {
+          if (!above) return;
+          let ball = ev.source.dimension.spawnEntity("noxcrew.ft:beach_ball", above.bottomCenter());
+          system.runTimeout(() => ball.remove(), 600);
+          useItem(ev.source, ev.itemStack);
+          break;
+        }
+        case "noxcrew.ft:celebration_fireworks":
+          if (!above) return;
+          ev.source.dimension.spawnParticle("noxcrew.ft:c_firework_rocket", above.bottomCenter());
+          world.getDimension("overworld").playSound("firework.launch", above.bottomCenter());
+          system.runTimeout(() => {
+            world.getDimension("overworld").playSound("firework.blast", above.bottomCenter());
+          }, 80);
+          useItem(ev.source, ev.itemStack);
+          if (Vec3Utils.distance({ x: 2192, y: 171, z: 2095 }, ev.source.location) < 3) {
+            puzzles.day6.complete(ev.source);
+          }
           break;
       }
     });
@@ -1039,12 +1069,21 @@ system.beforeEvents.startup.subscribe((ev) => {
         }
       });
     });
+    system.runInterval(() => {
+      world.getDimension("overworld").runCommand("function mccr/index");
+    });
     Logger.info("所有内容加载完成！");
   });
 });
 
 world.afterEvents.playerJoin.subscribe((ev) => {
   playerSessionData[ev.playerName] = {};
+});
+
+world.afterEvents.pressurePlatePush.subscribe((ev) => {
+  if (Vector3Utils.equals(ev.block, { x: 2112, y: 102, z: 2167 })) {
+    (ev.source as Player).onScreenDisplay?.setActionBar(new Text().tr("txt.misc.msg8"));
+  }
 });
 
 runAfterStartup(() => {

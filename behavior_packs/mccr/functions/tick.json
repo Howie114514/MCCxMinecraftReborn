@@ -1,13 +1,14 @@
 {
   "values": [
-    "on_tick",
-    "portals",
-    "elytra_gates",
-    "coins",
-    "sot",
-    "meltdown",
-    "gr",
-    "ace_race",
-    "challenges/puzzles/index"
+    /*
+    "mccr/on_tick",
+    "mccr/portals",
+    "mccr/elytra_gates",
+    "mccr/coins",
+    "mccr/sot",
+    "mccr/meltdown",
+    "mccr/gr",
+    "mccr/ace_race",
+    "challenges/puzzles/index"*/
   ]
 }

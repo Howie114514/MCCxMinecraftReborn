@@ -6,6 +6,7 @@ import {
   Dimension,
   Entity,
   EntityComponentTypes,
+  EntityEquippableComponent,
   EquipmentSlot,
   ItemStack,
   Player,
@@ -188,4 +189,18 @@ export function setFog(p: Player, fog: string) {
     p.runCommand(`fog @s remove mccr_current`);
   } catch (e) {}
   p.runCommand(`fog @s push ${fog} mccr_current`);
+}
+
+export function giveArmor(p: Player) {
+  let component = p.getComponent(EntityComponentTypes.Equippable) as EntityEquippableComponent;
+  component.setEquipment(EquipmentSlot.Chest, new ItemStack("minecraft:iron_chestplate"));
+  component.setEquipment(EquipmentSlot.Legs, new ItemStack("minecraft:iron_leggings"));
+  component.setEquipment(EquipmentSlot.Feet, new ItemStack("minecraft:iron_boots"));
+}
+
+export function removeArmor(p: Player) {
+  let component = p.getComponent(EntityComponentTypes.Equippable) as EntityEquippableComponent;
+  component.setEquipment(EquipmentSlot.Chest, undefined);
+  component.setEquipment(EquipmentSlot.Legs, undefined);
+  component.setEquipment(EquipmentSlot.Feet, undefined);
 }

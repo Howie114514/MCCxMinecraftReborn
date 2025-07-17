@@ -28,8 +28,10 @@ import {
   forIn,
   forInAsync,
   getHat,
+  giveArmor,
   initializeBlockVolume,
   random,
+  removeArmor,
   tick2Time,
   useItem,
 } from "../utils";
@@ -41,7 +43,7 @@ import { Vector3Utils } from "../minecraft/math";
 import { gameInstances } from "./gameInstance";
 import { MinecraftBlockTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { gridRunnersGamebar } from "../ui/gamebar";
-import { getCoins } from "../gameData";
+import { addCoins, getCoins } from "../gameData";
 import { Logger } from "../logger";
 import { Vec3Utils } from "../math";
 import { showGRCompleteToast } from "../ui/gametoast";
@@ -548,6 +550,7 @@ export class GridRunners extends ComplexGame {
     0: () => {
       forIn(this.players, (p) => {
         p.setGameMode(GameMode.Survival);
+        giveArmor(p);
         showSubTitle(p, new Text().tr("txt.matchmaking.status.start.0"));
         p.onScreenDisplay.setActionBar(new Text().tr("txt.matchmaking.status.start.2", "4"));
       });
@@ -640,12 +643,15 @@ export class GridRunners extends ComplexGame {
         inventory.set(p, {
           8: new ItemStack("noxcrew.ft:leave_game"),
         });
+        p.onScreenDisplay.setActionBar(new Text().tr("txt.grid.warning_hint"));
+        sound.play(p, "room_complete", {});
       });
       world
         .getDimension("overworld")
         .getEntities({ tags: ["gr_animals"] })
         .forEach((e) => e.remove());
       this.levels[3].openDoor();
+
       this.currentLevelId = 4;
       this.addPlan(() => {
         this.levels[4].tpAllPlayers();
@@ -762,6 +768,7 @@ export class GridRunners extends ComplexGame {
   }
   removePlayer(p: Player): void {
     p.setGameMode(GameMode.Adventure);
+    removeArmor(p);
     super.removePlayer(p);
   }
   player_quit(p: Player, withItem?: boolean): void {
@@ -772,6 +779,7 @@ export class GridRunners extends ComplexGame {
     if (this.players[p.name]) {
       let d = this.player_data[p.name];
       showGRCompleteToast(p, d.coins, d.mobs, d.painted, d.cakes);
+      addCoins(p, d.coins);
       sound.play(p, "finish", {});
       p.applyKnockback({ x: 4, z: 0 }, 0.5);
       challenges.gr.recordProgesss(p);

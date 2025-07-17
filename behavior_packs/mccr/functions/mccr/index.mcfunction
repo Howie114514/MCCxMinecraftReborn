@@ -1,0 +1,9 @@
+function mccr/on_tick
+function mccr/portals
+function mccr/elytra_gates
+function mccr/coins
+function mccr/sot
+function mccr/meltdown
+function mccr/gr
+function mccr/ace_race
+function challenges/puzzles/index
