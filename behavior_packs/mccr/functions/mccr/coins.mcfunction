@@ -1,2 +1,2 @@
-execute as @e[type=noxcrew.ft:hub_coin] at @s if entity @a[r=0.5] run mccr:trigger hub.collect @a[r=0.5]
-execute as @e[type=noxcrew.ft:hub_coin] at @s if entity @a[r=30] run mccr:trigger hub.coin.update @a[r=30]
+execute as @e[type=noxcrew.ft:hub_coin] at @s if entity @a[r=0.5] run scriptevent mccr:trigger {"selector":{"maxDistance":0.5},"event":"hub.collect"}
+execute as @e[type=noxcrew.ft:hub_coin] at @s if entity @a[r=30] run scriptevent mccr:trigger {"selector":{"maxDistance":30},"event":"hub.coin.update"}

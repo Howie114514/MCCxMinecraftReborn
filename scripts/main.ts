@@ -24,6 +24,8 @@ import {
   InputButton,
   ItemComponentTypes,
   ItemDurabilityComponent,
+  EntityQueryOptions,
+  ScriptEventSource,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import flags from "./flags";
@@ -222,6 +224,84 @@ system.beforeEvents.startup.subscribe((ev) => {
       },
     },
   };
+  system.afterEvents.scriptEventReceive.subscribe((ev) => {
+    if (ev.id == "mccr:trigger") {
+      let parsed: { selector?: EntityQueryOptions; params: string; event: string } = JSON.parse(ev.message);
+      let { params, event, selector } = parsed;
+      selector = selector ?? {};
+      selector.location = ev.sourceEntity?.location;
+      let origin = ev;
+      let targets = world.getDimension("overworld").getPlayers(parsed.selector);
+      switch (event) {
+        case "sot.collect": {
+          system.run(() => {
+            targets.forEach((p) => gameInstances.sot.onCollect(p, origin.sourceEntity as Entity));
+          });
+          break;
+        }
+        case "hub.collect": {
+          system.run(() => {
+            targets.forEach((p) => {
+              if (origin.sourceEntity) {
+                collectHubCoin(p, origin.sourceEntity);
+              }
+            });
+          });
+          break;
+        }
+        case "hub.coin.update": {
+          system.run(() => {
+            targets.forEach((p) => {
+              if (origin.sourceEntity && !coin_data[`${p.name}_${origin.sourceEntity.id}`]) {
+                p.setPropertyOverrideForEntity(
+                  origin.sourceEntity,
+                  "noxcrew.ft:collected",
+                  (p.getDynamicProperty("mccr:collected_" + origin.sourceEntity.id) as boolean | undefined) ?? false
+                );
+                coin_data[`${p.name}_${origin.sourceEntity.id}`] = true;
+              }
+            });
+          });
+          break;
+        }
+        case "hub.candle.update": {
+          targets.forEach((p) => {
+            let c = challengeColors[origin.sourceEntity?.getProperty("noxcrew:variant") as number];
+            system.run(() =>
+              p.setPropertyOverrideForEntity(
+                origin.sourceEntity as Entity,
+                "noxcrew.ft:complete",
+                challenges[c].getPlayerChallengeData(p).finished ?? false
+              )
+            );
+          });
+          break;
+        }
+        case "hub.gr.pipe_tp": {
+          if (!params) return;
+          let pipe = pipes[params as keyof typeof pipes];
+          system.run(() => {
+            targets.forEach((p) => {
+              p.addTag("returning");
+              sound.play(p, "pipe_suck_start", {});
+              p.teleport(pipe.from);
+              p.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, false);
+              p.addEffect(MinecraftEffectTypes.Levitation, 60, { amplifier: 3, showParticles: false });
+              system.runTimeout(() => {
+                sound.play(p, "pipe_teleport", {});
+                p.teleport(pipe.to);
+                p.removeTag("returning");
+                p.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, true);
+              }, 60);
+            });
+          });
+
+          break;
+        }
+      }
+    }
+  });
+  /*
   ev.customCommandRegistry.registerCommand(
     {
       name: "mccr:trigger",
@@ -316,7 +396,7 @@ system.beforeEvents.startup.subscribe((ev) => {
       }
       return undefined;
     }
-  );
+  );*/
   ev.customCommandRegistry.registerCommand(
     { name: "mccr:reset", permissionLevel: CommandPermissionLevel.Any, description: "重置个人数据" },
     (origin) => {
@@ -1068,9 +1148,6 @@ system.beforeEvents.startup.subscribe((ev) => {
           }
         }
       });
-    });
-    system.runInterval(() => {
-      world.getDimension("overworld").runCommand("function mccr/index");
     });
     Logger.info("所有内容加载完成！");
   });
