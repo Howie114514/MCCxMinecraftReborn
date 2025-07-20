@@ -410,10 +410,10 @@ system.beforeEvents.startup.subscribe((ev) => {
     (origin) => {
       system.run(() => {
         new MessageFormData()
-          .title("你确定吗")
-          .body("你的个人数据将会被清除")
-          .button1("确定")
-          .button2("取消")
+          .title(new Text().tr("form.reset.title"))
+          .body(new Text().tr("form.reset.body"))
+          .button1(new Text().tr("txt.button.ok"))
+          .button2(new Text().tr("txt.button.close"))
           .show(origin.sourceEntity as Player)
           .then((v) => {
             if (v.selection == 0) {
@@ -820,11 +820,7 @@ system.beforeEvents.startup.subscribe((ev) => {
         if (!ev.player.getDynamicProperty("mccr:coins")) {
           setCoins(ev.player, 0);
         }
-        system.runTimeout(
-          () =>
-            ev.player.sendMessage("欢迎来到MCC X Minecraft Reborn!\n聊天栏输入/mccr:info即可查看本地图的详细信息。"),
-          50
-        );
+        system.runTimeout(() => ev.player.sendMessage(new Text().tr("msg.mccr.welcome")), 50);
         gameInstances.lobby.addPlayer(ev.player);
         ev.player.teleport(coordinates.lobby);
       }
@@ -1046,7 +1042,8 @@ system.beforeEvents.startup.subscribe((ev) => {
     });
     world.afterEvents.entityHitEntity.subscribe((ev) => {
       if (ev.hitEntity.typeId == "noxcrew.ft:beach_ball") {
-        ev.hitEntity.applyKnockback(Vec3Utils.getProjectileMotion(ev.damagingEntity, 100), 1);
+        sound.play(ev.damagingEntity.dimension, "ball_hit", { location: ev.hitEntity.location });
+        ev.hitEntity.applyKnockback(Vec3Utils.getProjectileMotion(ev.damagingEntity, 5), 1);
       }
     });
     world.afterEvents.itemUse.subscribe((ev) => {
@@ -1088,7 +1085,11 @@ system.beforeEvents.startup.subscribe((ev) => {
           break;
       }
     });
-
+    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+      if (ev.target.typeId == "noxcrew.ft:beach_ball") {
+        ev.target.remove();
+      }
+    });
     world.afterEvents.itemUse.subscribe((ev) => {
       let block = ev.source.getBlockFromViewDirection({ maxDistance: 8 });
       if (!block?.block) return;
@@ -1105,7 +1106,15 @@ system.beforeEvents.startup.subscribe((ev) => {
         case "noxcrew.ft:beach_ball": {
           if (!above) return;
           let ball = ev.source.dimension.spawnEntity("noxcrew.ft:beach_ball", above.bottomCenter());
-          system.runTimeout(() => ball.remove(), 600);
+          system.runTimeout(() => {
+            if (ball.isValid) ball.remove();
+          }, 2400);
+          useItem(ev.source, ev.itemStack);
+          break;
+        }
+        case "noxcrew.ft:balloon_helium": {
+          if (!above) return;
+          world.getDimension("overworld").spawnEntity("noxcrew.ft:balloon_helium", above.bottomCenter());
           useItem(ev.source, ev.itemStack);
           break;
         }
@@ -1121,6 +1130,13 @@ system.beforeEvents.startup.subscribe((ev) => {
             puzzles.day6.complete(ev.source);
           }
           break;
+        case "noxcrew.ft:balloon_animal": {
+          if (!above) return;
+          world.getDimension("overworld").spawnParticle("noxcrew.ft:balloon_animal", above.bottomCenter());
+          sound.play(world.getDimension("overworld"), "balloon_animal", { location: above });
+          useItem(ev.source, ev.itemStack);
+          break;
+        }
       }
     });
 
@@ -1176,4 +1192,16 @@ runAfterStartup(() => {
   world.getAllPlayers().forEach((p) => {
     playerSessionData[p.name] = {};
   });
+});
+
+function launch(p: Player) {
+  let motion = Object.assign(Vec3Utils.getProjectileMotion(p, 10), { y: 0 });
+  p.applyKnockback(motion, 0.5);
+  sound.play(p, "launch", {});
+}
+
+system.afterEvents.scriptEventReceive.subscribe((ev) => {
+  if (ev.sourceEntity && ev.id == "mccr:test_launch") {
+    launch(ev.sourceEntity as Player);
+  }
 });

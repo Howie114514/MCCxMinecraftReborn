@@ -14,5 +14,5 @@ export function getCoins(p: Player) {
 
 export function clearAllData(p: Player) {
   p.clearDynamicProperties();
-  p.sendMessage(new Text().txt("请退出重进保证生效"));
+  p.sendMessage(new Text().tr("msg.reset.rejoin"));
 }

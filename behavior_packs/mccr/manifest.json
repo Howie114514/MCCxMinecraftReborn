@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "name": "MCCxMinecraftReborn",
-    "description": "",
+    "description": "MCCxMinecraftReborn - v1.0.0-rc.3",
     "uuid": "653b3ae1-4d4d-402b-bc03-b0d5bb5a07fc",
     "version": [1, 0, 0],
     "min_engine_version": [1, 20, 30]
@@ -33,7 +33,7 @@
       "version": "2.1.0-beta"
     },
     {
-      "uuid": "73ce64e5-bfce-4fe3-bcdd-338d60f361d1",
+      "uuid": "fe80c236-1284-4bc9-8c35-667d70ce2ffd",
       "version": [1, 0, 0]
     }
   ]

@@ -1,1 +1,7 @@
 dialog.prince.btn=重播剧情
+form.reset.title=你确定吗？
+form.reset.body=你的个人数据将会被清除。
+msg.reset.rejoin=请重新加入世界以保证生效。
+
+###mccr
+msg.mccr.welcome=欢迎来到§eMCC X Minecraft §bReborn!§r\n聊天栏输入/mccr:info即可查看本地图的详细信息。

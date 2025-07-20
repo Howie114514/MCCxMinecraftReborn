@@ -696,7 +696,7 @@ export class GridRunners extends ComplexGame {
     });
     world.afterEvents.entityDie.subscribe((ev) => {
       let player = ev.damageSource.damagingEntity as Player;
-      if (player.typeId == "minecraft:player" && this.players[player.name]) {
+      if (player?.typeId == "minecraft:player" && this.players[player.name]) {
         this.player_data[player.name].coins += 3;
         this.player_data[player.name].mobs += 1;
         world.getDimension("overworld").spawnParticle("noxcrew.ft:coin_burst_small", ev.deadEntity.location);

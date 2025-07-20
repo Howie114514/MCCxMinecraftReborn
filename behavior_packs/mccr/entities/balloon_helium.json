@@ -1,0 +1,48 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "noxcrew.ft:balloon_helium",
+      "is_experimental": false,
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "queue_command": { "command": "effect @s levitation 10 1 true" }
+      },
+      "mccr:despawn": {
+        "add": {
+          "component_groups": ["mccr:despawn"]
+        }
+      }
+    },
+    "component_groups": {
+      "mccr:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:timer": {
+        "time": 10,
+        "looping": false,
+        "time_down_event": {
+          "event": "mccr:despawn",
+          "target": "self"
+        }
+      }
+    }
+  }
+}

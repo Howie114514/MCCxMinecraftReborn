@@ -110,7 +110,6 @@ class SpeedPad implements BlockCustomComponent {
       let sd = playerSessionData[p.name];
       if (!sd.onSpeedPad) {
         gameInstances.ace_race.stats[p.name].speed++;
-        console.log("speed++");
         sd.onSpeedPad = true;
       }
     }

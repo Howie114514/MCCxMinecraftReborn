@@ -1,2 +1,7 @@
-
 dialog.prince.btn=Play again
+form.reset.title=Are you sure?
+form.reset.body=Your personal data will be cleared.
+msg.reset.rejoin=Please rejoin the world to ensure it takes effect.
+
+###mccr
+msg.mccr.welcome=Welcome to §eMCC X Minecraft §bReborn!§r\nRun "/mccr:info" to learn more about this map.
