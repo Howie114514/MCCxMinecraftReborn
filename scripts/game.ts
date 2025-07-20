@@ -256,7 +256,7 @@ export class ComplexGame {
       if (this.countdown_timer > -1) this.countdown_timer--;
       if (world.getAllPlayers().length > 0) {
         this.queue.minCount = Math.min(world.getAllPlayers().length, 4);
-        if (this.queue.items.length >= this.queue.minCount) {
+        if (this.queue.items.length >= this.queue.minCount && !this.started) {
           if (this.countdown_timer == 0 && !this.started) this.start();
           else {
             if (this.countdown_timer < 0) {

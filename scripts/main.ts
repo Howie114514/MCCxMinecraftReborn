@@ -224,6 +224,13 @@ system.beforeEvents.startup.subscribe((ev) => {
       },
     },
   };
+  system.runInterval(() => {
+    let overworld = world.getDimension("overworld");
+    try {
+      overworld.spawnParticle("noxcrew.ft:gr_pipe", pipes[1].from);
+      overworld.spawnParticle("noxcrew.ft:gr_pipe", pipes[2].from);
+    } catch (e) {}
+  }, 20);
   system.afterEvents.scriptEventReceive.subscribe((ev) => {
     if (ev.id == "mccr:trigger") {
       let parsed: { selector?: EntityQueryOptions; params: string; event: string } = JSON.parse(ev.message);
@@ -279,6 +286,7 @@ system.beforeEvents.startup.subscribe((ev) => {
         }
         case "hub.gr.pipe_tp": {
           if (!params) return;
+          targets = [origin.sourceEntity as Player];
           let pipe = pipes[params as keyof typeof pipes];
           system.run(() => {
             targets.forEach((p) => {
@@ -789,6 +797,7 @@ system.beforeEvents.startup.subscribe((ev) => {
       //if (ev.cancel) system.run(() => ev.player.onScreenDisplay.setActionBar("已阻止一次可能无意间产生的方块破坏"));
     });
     world.afterEvents.playerSpawn.subscribe((ev) => {
+      setFog(ev.player, fogs.lobby);
       ev.player.inputPermissions.setPermissionCategory(InputPermissionCategory.Movement, true);
       if (ev.player.getGameMode() == GameMode.Survival) {
         ev.player.setGameMode(GameMode.Adventure);
