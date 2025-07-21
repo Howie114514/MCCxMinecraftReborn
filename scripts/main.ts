@@ -1033,9 +1033,10 @@ system.beforeEvents.startup.subscribe((ev) => {
           }
           case "noxcrew.ft:pizza_box": {
             let d = ev.itemStack.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent;
-            if (d.damage == d.maxDurability) useItem(ev.source, ev.itemStack);
+            if (d?.damage == d?.maxDurability) useItem(ev.source, ev.itemStack);
             else d.damage += 1;
             give(target, new ItemStack("noxcrew.ft:pizza_slice"));
+            break;
           }
         }
       }
