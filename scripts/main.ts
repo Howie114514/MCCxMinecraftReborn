@@ -667,13 +667,13 @@ system.beforeEvents.startup.subscribe((ev) => {
           .button2(tr("txt.button.yes"))
           .show(player)
           .then((v) => {
-            if (v.selection == 0) {
-              player.teleport(from);
-            } else {
+            if (v.selection == 1) {
               setFog(player, fogs[dest as keyof typeof fogs]);
               sound.play(player, "quick_travel", {});
               player.teleport(to);
               (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
+            } else {
+              player.teleport(from);
             }
             system.runTimeout(() => player.removeTag("inPortal"), 10);
           });
