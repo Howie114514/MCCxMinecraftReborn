@@ -2,6 +2,7 @@ import {
   world,
   system,
   Player,
+  Vector2,
   Vector3,
   EquipmentSlot,
   ItemStack,
@@ -166,6 +167,60 @@ export const coordinates: Record<string, Vector3> = {
     x: 2158.0,
     y: 110.0,
     z: 2131.0,
+  },
+};
+export const coordinates_rotation: Record<string, Vector2> = {
+  plobby2sot: {
+    x: 0,
+    y: 0,
+  },
+  psot2lobby: {
+    x: 0,
+    y: 0,
+  },
+  plobby2ace_race: {
+    x: 0,
+    y: 90,
+  },
+  pace_race2lobby: {
+    x: 0,
+    y: 0,
+  },
+  plobby2grid_runners: {
+    x: 0,
+    y: 180,
+  },
+  pgrid_runners2lobby: {
+    x: 0,
+    y: 90,
+  },
+  plobby2meltdown: {
+    x: 0,
+    y: 270,
+  },
+  pmeltdown2lobby: {
+    x: 0,
+    y: 270,
+  },
+  meltdown: {
+    x: 0,
+    y: 90,
+  },
+  grid_runners: {
+    x: 0,
+    y: 270,
+  },
+  sot: {
+    x: 0,
+    y: 180,
+  },
+  ace_race: {
+    x: 0,
+    y: 180,
+  },
+  lobby: {
+    x: 0,
+    y: 90,
   },
 };
 
@@ -654,7 +709,7 @@ system.beforeEvents.startup.subscribe((ev) => {
     const time: Record<string, number> = {
       lobby: TimeOfDay.Sunset,
     };
-    function teleport(player: Player, dest: "ace_race" | "sot" | "lobby" | string, from: Vector3, to: Vector3) {
+    function teleport(player: Player, dest: "ace_race" | "sot" | "lobby" | string, from: Vector3, to: Vector3, from_rotation: Vector2 | undefined, to_rotation: Vector2 | undefined) {
       if ((gameInstances.lobby as Lobby).getPlayerArea(player) != dest)
         new MessageFormData()
           .body({
@@ -670,16 +725,16 @@ system.beforeEvents.startup.subscribe((ev) => {
             if (v.selection == 1) {
               setFog(player, fogs[dest as keyof typeof fogs]);
               sound.play(player, "quick_travel", {});
-              player.teleport(to);
+              player.teleport(to, {rotation: to_rotation});
               (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
             } else {
-              player.teleport(from);
+              player.teleport(from, {rotation: from_rotation});
             }
             system.runTimeout(() => player.removeTag("inPortal"), 10);
           });
       else {
         setFog(player, fogs[dest as keyof typeof fogs]);
-        player.teleport(to);
+        player.teleport(to, {rotation: to_rotation});
       }
     }
 
@@ -698,7 +753,9 @@ system.beforeEvents.startup.subscribe((ev) => {
             p,
             pos[0],
             pos[1] == "here" ? p.location : (coordinates[pos[1]] as Vector3),
-            pos[2] == "here" ? p.location : (coordinates[pos[2]] as Vector3)
+            pos[2] == "here" ? p.location : (coordinates[pos[2]] as Vector3),
+            pos[1] == "here" ? undefined : (coordinates_rotation[pos[1]] as Vector2),
+            pos[2] == "here" ? undefined : (coordinates_rotation[pos[2]] as Vector2),
           );
         }
       } else if (ev.id == "mccr:clear_effect") {
@@ -822,7 +879,7 @@ system.beforeEvents.startup.subscribe((ev) => {
         }
         system.runTimeout(() => ev.player.sendMessage(new Text().tr("msg.mccr.welcome")), 50);
         gameInstances.lobby.addPlayer(ev.player);
-        ev.player.teleport(coordinates.lobby);
+        ev.player.teleport(coordinates.lobby, {rotation: coordinates_rotation.lobby});
       }
     });
 
@@ -897,19 +954,19 @@ system.beforeEvents.startup.subscribe((ev) => {
               var p = ev.source;
               switch (v.selection) {
                 case 0:
-                  teleport(p, "lobby", here, coordinates.lobby);
+                  teleport(p, "lobby", here, coordinates.lobby, undefined, coordinates_rotation.lobby);
                   break;
                 case 1:
-                  teleport(p, "meltdown", here, coordinates.meltdown);
+                  teleport(p, "meltdown", here, coordinates.meltdown, undefined, coordinates_rotation.meltdown);
                   break;
                 case 2:
-                  teleport(p, "sot", here, coordinates.sot);
+                  teleport(p, "sot", here, coordinates.sot, undefined, coordinates_rotation.sot);
                   break;
                 case 3:
-                  teleport(p, "ace_race", here, coordinates.ace_race);
+                  teleport(p, "ace_race", here, coordinates.ace_race, undefined, coordinates_rotation.ace_race);
                   break;
                 case 4:
-                  teleport(p, "grid_runners", here, coordinates.grid_runners);
+                  teleport(p, "grid_runners", here, coordinates.grid_runners, undefined, coordinates_rotation.grid_runners);
                   break;
                 default:
                   p.sendMessage("666这个入是桂，尝试传送到一个不存在的地方");
