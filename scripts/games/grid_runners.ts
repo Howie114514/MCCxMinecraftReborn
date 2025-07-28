@@ -873,7 +873,12 @@ world.beforeEvents.playerBreakBlock.subscribe((ev) => {
     }
 
     if (/wheat/.test(ev.block.typeId)) {
-      system.run(() => world.getDimension("overworld").spawnItem(new ItemStack("minecraft:wheat"), ev.block.center()));
+      let growth = ev.block.permutation.getAllStates().growth as number;
+      if (growth == 7) {
+        system.run(() => world.getDimension("overworld").spawnItem(new ItemStack("minecraft:wheat"), ev.block.center()));
+      } else {
+        ev.cancel = true;
+      }
     }
   }
 });
