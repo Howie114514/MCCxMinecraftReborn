@@ -531,7 +531,7 @@ class Level4 extends GRLevel {
   showGamebar(p: Player): void {
     gridRunnersGamebar.showGRGameBarWithAdditionalInfo(
       p,
-      `\ue195 ${this.game.player_data[p.name].coins} \ue1ca 1s`,
+      `\ue195 ${this.game.player_data[p.name].coins} \ue1ca`,
       getCoins(p)
     );
   }
