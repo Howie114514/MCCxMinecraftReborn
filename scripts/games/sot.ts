@@ -319,7 +319,7 @@ export class SandsOfTime extends BasicGame {
   showGameBar(p: Player): void {
     showSOTGameBar(
       p,
-      `\ue195${this.player_data[p.name].coins}   \ue1b7${Math.floor(this.player_data[p.name].time / TicksPerSecond)}s`,
+      `\ue195${this.player_data[p.name].coins} \ue1b7${Math.floor(this.player_data[p.name].time / TicksPerSecond)}s`,
       0,
       (p.getDynamicProperty("mccr:coins") as number) ?? 0
     );
