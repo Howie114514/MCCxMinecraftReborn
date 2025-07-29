@@ -13,7 +13,7 @@ import { BasicGame } from "../game";
 import { coordinates } from "../main";
 import { showSOTGameBar } from "../ui/gamebar";
 import { showSOTCompleteToast } from "../ui/gametoast";
-import { forIn, forInAsync, getHat, tick2Time } from "../utils";
+import { forIn, forInAsync, formatTime, getHat, tick2Time } from "../utils";
 import { gameInstances } from "./gameInstance";
 import { addCoins } from "../gameData";
 import { MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
@@ -25,12 +25,14 @@ import { showSubTitle } from "../ui/title";
 import { Text } from "../text";
 import { challenges } from "../challenges";
 import { PlayerRecord } from "../types";
+import { record } from "../record";
 
 export type SOTPlayerData = {
   collected_items: Record<string, Entity>;
   time: number;
   coins: number;
   lifeTime: number;
+  startTime: number;
   escaped: boolean;
   opened_chests: number;
 };
@@ -301,6 +303,7 @@ export class SandsOfTime extends BasicGame {
       lifeTime: 0,
       escaped: false,
       opened_chests: 0,
+      startTime: Date.now(),
     };
     this.stats[p.name] = {
       sands: 0,
@@ -356,9 +359,20 @@ export class SandsOfTime extends BasicGame {
       let e = Math.max(d.coins - rmCoins, 0);
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_blue") challenges.blue.recordProgesss(p, this.stats[p.name].sands);
       if (getHat(p)?.typeId == "noxcrew.ft:cyan_blue") challenges.cyan.recordProgesss(p, this.stats[p.name].coinStacks);
-
-      showSOTCompleteToast(p, d.coins, e, d.opened_chests, tick2Time(d.lifeTime), d.escaped, !d.escaped, rmCoins);
-      addCoins(p, d.coins - rmCoins);
+      let isNewRecord = record.update(p, "sot", e);
+      showSOTCompleteToast(
+        p,
+        d.coins,
+        e,
+        d.opened_chests,
+        formatTime(Date.now() - d.startTime),
+        d.escaped,
+        !d.escaped,
+        rmCoins,
+        isNewRecord,
+        record.get(p, "sot").toString()
+      );
+      addCoins(p, e);
       this.removePlayer(p);
     }
   }

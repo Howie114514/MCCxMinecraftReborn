@@ -34,7 +34,18 @@ import { Vector3Utils } from "./minecraft/math";
 import { Vec3Utils } from "./math";
 import { tr } from "./lang";
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
-import { asPlayer, choice, debounce, forIn, give, random, rgb, runAfterStartup, setFog } from "./utils";
+import {
+  asPlayer,
+  choice,
+  debounce,
+  forIn,
+  give,
+  isInventoryFull,
+  random,
+  rgb,
+  runAfterStartup,
+  setFog,
+} from "./utils";
 import {
   challenge_list,
   cosmetic_chest,
@@ -472,12 +483,18 @@ system.beforeEvents.startup.subscribe((ev) => {
           .show(origin.sourceEntity as Player)
           .then((v) => {
             if (v.selection == 0) {
-              clearAllData(origin.sourceEntity as Player);
-              (origin.sourceEntity as Player).runCommand("scriptevent mccr:reset_inv");
               (origin.sourceEntity as Player)
                 .getComponent(EntityComponentTypes.Equippable)
                 ?.setEquipment(EquipmentSlot.Head, undefined);
-              gameInstances.lobby.addPlayer(origin.sourceEntity as Player);
+
+              (origin.sourceEntity as Player).runCommand("scriptevent mccr:reset_inv");
+              clearAllData(origin.sourceEntity as Player);
+              system.run(() => {
+                gameInstances.lobby.addPlayer(origin.sourceEntity as Player);
+                forIn(challenges, (c) => {
+                  c.reset(origin.sourceEntity as Player);
+                });
+              });
             }
           });
       });
@@ -614,8 +631,13 @@ system.beforeEvents.startup.subscribe((ev) => {
             if (!v.canceled) {
               if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
                 showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
+                return;
               }
-              ev.player.runCommand(`give @s ${foods[v.selection as number]}`);
+              if (isInventoryFull(ev.player)) {
+                showSubTitle(ev.player, new Text().tr("txt.error.msg2"));
+                return;
+              }
+              give(ev.player, new ItemStack(foods[v.selection as number]));
               ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
               sound.play(ev.player, "purchase", {});
             }
@@ -650,7 +672,11 @@ system.beforeEvents.startup.subscribe((ev) => {
                 showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
                 return;
               }
-              ev.player.runCommand(`give @s ${toys[v.selection as number]}`);
+              if (isInventoryFull(ev.player)) {
+                showSubTitle(ev.player, new Text().tr("txt.error.msg2"));
+                return;
+              }
+              give(ev.player, new ItemStack(toys[v.selection as number]));
               ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
               sound.play(ev.player, "purchase", {});
             }
@@ -709,7 +735,14 @@ system.beforeEvents.startup.subscribe((ev) => {
     const time: Record<string, number> = {
       lobby: TimeOfDay.Sunset,
     };
-    function teleport(player: Player, dest: "ace_race" | "sot" | "lobby" | string, from: Vector3, to: Vector3, from_rotation: Vector2 | undefined, to_rotation: Vector2 | undefined) {
+    function teleport(
+      player: Player,
+      dest: "ace_race" | "sot" | "lobby" | string,
+      from: Vector3,
+      to: Vector3,
+      from_rotation: Vector2 | undefined,
+      to_rotation: Vector2 | undefined
+    ) {
       if ((gameInstances.lobby as Lobby).getPlayerArea(player) != dest)
         new MessageFormData()
           .body({
@@ -725,16 +758,16 @@ system.beforeEvents.startup.subscribe((ev) => {
             if (v.selection == 1) {
               setFog(player, fogs[dest as keyof typeof fogs]);
               sound.play(player, "quick_travel", {});
-              player.teleport(to, {rotation: to_rotation});
+              player.teleport(to, { rotation: to_rotation });
               (gameInstances.lobby as Lobby).setPlayerArea(player, dest);
             } else {
-              player.teleport(from, {rotation: from_rotation});
+              player.teleport(from, { rotation: from_rotation });
             }
             system.runTimeout(() => player.removeTag("inPortal"), 10);
           });
       else {
         setFog(player, fogs[dest as keyof typeof fogs]);
-        player.teleport(to, {rotation: to_rotation});
+        player.teleport(to, { rotation: to_rotation });
       }
     }
 
@@ -755,7 +788,7 @@ system.beforeEvents.startup.subscribe((ev) => {
             pos[1] == "here" ? p.location : (coordinates[pos[1]] as Vector3),
             pos[2] == "here" ? p.location : (coordinates[pos[2]] as Vector3),
             pos[1] == "here" ? undefined : (coordinates_rotation[pos[1]] as Vector2),
-            pos[2] == "here" ? undefined : (coordinates_rotation[pos[2]] as Vector2),
+            pos[2] == "here" ? undefined : (coordinates_rotation[pos[2]] as Vector2)
           );
         }
       } else if (ev.id == "mccr:clear_effect") {
@@ -879,7 +912,7 @@ system.beforeEvents.startup.subscribe((ev) => {
         }
         system.runTimeout(() => ev.player.sendMessage(new Text().tr("msg.mccr.welcome")), 50);
         gameInstances.lobby.addPlayer(ev.player);
-        ev.player.teleport(coordinates.lobby, {rotation: coordinates_rotation.lobby});
+        ev.player.teleport(coordinates.lobby, { rotation: coordinates_rotation.lobby });
       }
     });
 
@@ -966,7 +999,14 @@ system.beforeEvents.startup.subscribe((ev) => {
                   teleport(p, "ace_race", here, coordinates.ace_race, undefined, coordinates_rotation.ace_race);
                   break;
                 case 4:
-                  teleport(p, "grid_runners", here, coordinates.grid_runners, undefined, coordinates_rotation.grid_runners);
+                  teleport(
+                    p,
+                    "grid_runners",
+                    here,
+                    coordinates.grid_runners,
+                    undefined,
+                    coordinates_rotation.grid_runners
+                  );
                   break;
                 default:
                   p.sendMessage("666这个入是桂，尝试传送到一个不存在的地方");

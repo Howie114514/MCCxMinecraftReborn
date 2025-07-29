@@ -204,3 +204,12 @@ export function removeArmor(p: Player) {
   component.setEquipment(EquipmentSlot.Legs, undefined);
   component.setEquipment(EquipmentSlot.Feet, undefined);
 }
+
+export function fillString(s: string, length: number, placeholder = "~") {
+  return s + placeholder.repeat(length - s.length);
+}
+
+export function isInventoryFull(p: Player) {
+  let c = p.getComponent(EntityComponentTypes.Inventory);
+  return c?.container.firstEmptySlot() == undefined;
+}

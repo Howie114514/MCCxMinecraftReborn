@@ -22,6 +22,7 @@ import { spawnpoints } from "../data/ar";
 import { Logger } from "../logger";
 import { challenges } from "../challenges";
 import { addCoins } from "../gameData";
+import { record } from "../record";
 
 export type Range = {
   max?: number;
@@ -128,6 +129,7 @@ export class AceRace extends BasicGame {
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_orange") challenges.orange.recordProgesss(p, stats.speed);
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_pink") challenges.pink.recordProgesss(p, stats.elytra);
       let time = (Date.now() - this.timer[p.name]) / 1000;
+      let timems = Date.now() - this.timer[p.name];
       let t: Trophy = 1;
       this.trophys.forEach((tro, index) => {
         if (inRange(time, tro)) {
@@ -145,15 +147,8 @@ export class AceRace extends BasicGame {
           ? 140
           : 100;
       addCoins(p, c);
-      let isNewRecord = false;
-      if (
-        Date.now() - this.timer[p.name] <
-        ((p.getDynamicProperty("mccr.ar:new_record") ?? Number.MAX_SAFE_INTEGER) as number)
-      ) {
-        isNewRecord = true;
-        p.setDynamicProperty("mccr.ar:new_record", Date.now() - this.timer[p.name]);
-      }
-      showARCompleteToast(p, c, formatTime(Date.now() - this.timer[p.name]), t, isNewRecord);
+      let isNewRecord = record.update(p, "ar", timems);
+      showARCompleteToast(p, c, formatTime(timems), t, isNewRecord, formatTime(timems));
 
       super.player_finish(p);
     }

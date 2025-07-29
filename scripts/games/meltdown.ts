@@ -41,6 +41,7 @@ import { showSubTitle } from "../ui/title";
 import { showMDCompleteToast } from "../ui/gametoast";
 import { isReloaded } from "../main";
 import { challenges } from "../challenges";
+import { record } from "../record";
 
 export type MeltdownPlayerData = {
   room: number;
@@ -131,6 +132,10 @@ class MDRoom {
   melt() {
     let bv = initializeBlockVolume(this.volume);
     this.isMelting = true;
+    world
+      .getDimension("overworld")
+      .getEntities({ tags: ["md_room_" + this.id.toString()] })
+      .forEach((e) => e.remove());
     system.runTimeout(() => {
       this.melt_tick = 0;
     }, 4 * TicksPerSecond);
@@ -303,7 +308,7 @@ export class Meltdown extends ComplexGame {
     });
     system.runInterval(() => {
       forInAsync(this.players, (p, n) => {
-        if (!p.isValid) {
+        if (!p?.isValid) {
           delete this.players[n];
         }
         if (p && !this.rooms[this.player_data[p?.name]?.room]?.isValid) {
@@ -360,7 +365,8 @@ export class Meltdown extends ComplexGame {
     let d = this.player_data[p.name];
     if (d) {
       if (d.room) {
-        showMDCompleteToast(p, d.coins, d.killed, d.room, d.coins);
+        let isNewRecord = record.update(p, "md", d.coins);
+        showMDCompleteToast(p, d.coins, d.killed, d.room, isNewRecord, record.get(p, "md").toString());
         if (d.room >= 3) {
           challenges.md.recordProgesss(p);
         }

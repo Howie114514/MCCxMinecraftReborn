@@ -47,9 +47,6 @@
     },
     "component_groups": {
       "mccr:frozen": {
-        "minecraft:movement": {
-          "value": 0
-        },
         "minecraft:damage_sensor": {
           "triggers": [
             {
@@ -57,6 +54,10 @@
               "deals_damage": false
             }
           ]
+        },
+        "minecraft:physics": {},
+        "minecraft:movement": {
+          "value": 0
         }
       },
       "mccr:normal": {
@@ -130,7 +131,8 @@
         },
         "minecraft:navigation.climb": {
           "can_path_over_water": true,
-          "blocks_to_avoid": ["minecraft:structure_void"]
+          "blocks_to_avoid": ["minecraft:structure_void"],
+          "avoid_damage_blocks": true
         },
         "minecraft:movement.basic": {},
         "minecraft:jump.static": {},

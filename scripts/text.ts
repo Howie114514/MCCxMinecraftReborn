@@ -27,4 +27,11 @@ export class Text implements RawText {
     this.rawtext.push(tr(t, ...args));
     return this;
   }
+  toString() {
+    let s = "[rawtext] ";
+    this.rawtext.forEach((msg) => {
+      s += msg.text ?? msg.translate;
+    });
+    return s;
+  }
 }

@@ -48,6 +48,7 @@ import { Logger } from "../logger";
 import { Vec3Utils } from "../math";
 import { showGRCompleteToast } from "../ui/gametoast";
 import { challenges } from "../challenges";
+import { record } from "../record";
 
 export interface GRCakeData {
   eggs: number;
@@ -788,13 +789,16 @@ export class GridRunners extends ComplexGame {
     super.removePlayer(p);
   }
   player_quit(p: Player, withItem?: boolean): void {
-    if (withItem) p.teleport(coordinates.grid_runners);
-    this.removePlayer(p);
+    if (this.players[p.name]) {
+      if (withItem) p.teleport(coordinates.grid_runners);
+      this.removePlayer(p);
+    }
   }
   player_finish(p: Player): void {
     if (this.players[p.name]) {
       let d = this.player_data[p.name];
-      showGRCompleteToast(p, d.coins, d.mobs, d.painted, d.cakes);
+      let isNewRecord = record.update(p, "gr", d.coins);
+      showGRCompleteToast(p, d.coins, d.mobs, d.painted, d.cakes, isNewRecord, record.get(p, "gr").toString());
       addCoins(p, d.coins);
       sound.play(p, "finish", {});
       p.applyKnockback({ x: 4, z: 0 }, 0.5);
@@ -875,7 +879,9 @@ world.beforeEvents.playerBreakBlock.subscribe((ev) => {
     if (/wheat/.test(ev.block.typeId)) {
       let growth = ev.block.permutation.getAllStates().growth as number;
       if (growth == 7) {
-        system.run(() => world.getDimension("overworld").spawnItem(new ItemStack("minecraft:wheat"), ev.block.center()));
+        system.run(() =>
+          world.getDimension("overworld").spawnItem(new ItemStack("minecraft:wheat"), ev.block.center())
+        );
       } else {
         ev.cancel = true;
       }
