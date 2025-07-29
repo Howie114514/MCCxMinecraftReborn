@@ -398,10 +398,11 @@ class Level3 extends GRLevel {
   isCooking = false;
   updateCake() {
     if (!this.cake || !this.cake?.isValid || this.game.currentLevelId != 3) return;
-    this.cake.setProperty("noxcrew.ft:egg", Math.min(2, this.data.eggs));
-    this.cake.setProperty("noxcrew.ft:milk_bucket", Math.min(2, this.data.milk));
-    this.cake.setProperty("noxcrew.ft:sugar", Math.min(2, this.data.sugar));
-    this.cake.setProperty("noxcrew.ft:wheat", Math.min(2, this.data.wheat));
+    // 超过两个原料时蛋糕会显示绿色加号
+    this.cake.setProperty("noxcrew.ft:egg", Math.min(3, this.data.eggs));
+    this.cake.setProperty("noxcrew.ft:milk_bucket", Math.min(3, this.data.milk));
+    this.cake.setProperty("noxcrew.ft:sugar", Math.min(3, this.data.sugar));
+    this.cake.setProperty("noxcrew.ft:wheat", Math.min(3, this.data.wheat));
     if (this.data.eggs >= 2 && this.data.milk >= 2 && this.data.sugar >= 2 && this.data.wheat >= 2 && !this.isCooking) {
       this.data.eggs -= 2;
       this.data.milk -= 2;
@@ -530,7 +531,7 @@ class Level4 extends GRLevel {
   showGamebar(p: Player): void {
     gridRunnersGamebar.showGRGameBarWithAdditionalInfo(
       p,
-      `\ue195 ${this.game.player_data[p.name].coins} \ue1ca 1s`,
+      `\ue195 ${this.game.player_data[p.name].coins} \ue1ca`,
       getCoins(p)
     );
   }
@@ -872,7 +873,12 @@ world.beforeEvents.playerBreakBlock.subscribe((ev) => {
     }
 
     if (/wheat/.test(ev.block.typeId)) {
-      system.run(() => world.getDimension("overworld").spawnItem(new ItemStack("minecraft:wheat"), ev.block.center()));
+      let growth = ev.block.permutation.getAllStates().growth as number;
+      if (growth == 7) {
+        system.run(() => world.getDimension("overworld").spawnItem(new ItemStack("minecraft:wheat"), ev.block.center()));
+      } else {
+        ev.cancel = true;
+      }
     }
   }
 });
