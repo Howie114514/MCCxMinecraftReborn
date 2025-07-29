@@ -39,6 +39,7 @@ import {
   choice,
   debounce,
   forIn,
+  getHat,
   give,
   isInventoryFull,
   random,
@@ -1179,7 +1180,7 @@ system.beforeEvents.startup.subscribe((ev) => {
           ];
           useItem(ev.source, ev.itemStack);
           give(ev.source, new ItemStack(choice(items)));
-          challenges.lime.recordProgesss(ev.source, 1);
+          if (getHat(ev.source)?.typeId == "noxcrew.ft:beanie_lime") challenges.lime.recordProgesss(ev.source, 1);
           break;
       }
     });

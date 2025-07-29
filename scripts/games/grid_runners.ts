@@ -11,6 +11,7 @@ import {
   GameMode,
   InputPermissionCategory,
   ItemComponentTypes,
+  ItemLockMode,
   ItemStack,
   Player,
   system,
@@ -857,17 +858,14 @@ world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
     )
   ) {
     sound.play(ev.player, "paintpot", {});
-    ev.player
-      .getComponent("equippable")
-      ?.setEquipment(
-        EquipmentSlot.Mainhand,
-        new ItemStack(
-          "noxcrew.ft:paintbrush_" +
-            ["black", "blue", "brown", "green", "purple", "red", "white", "yellow"][
-              ev.target.getProperty("noxcrew:variant") as number
-            ]
-        )
-      );
+    let i = new ItemStack(
+      "noxcrew.ft:paintbrush_" +
+        ["black", "blue", "brown", "green", "purple", "red", "white", "yellow"][
+          ev.target.getProperty("noxcrew:variant") as number
+        ]
+    );
+    i.lockMode = ItemLockMode.slot;
+    ev.player.getComponent("equippable")?.setEquipment(EquipmentSlot.Mainhand, i);
   }
 });
 
