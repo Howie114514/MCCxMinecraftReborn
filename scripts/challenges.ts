@@ -186,7 +186,7 @@ class GreenGecko extends Challenge {
   id = 4;
   animal: string = "gecko";
   color: Challenges = "green";
-  maxProgress: number = 10;
+  maxProgress: number = 80;
 }
 
 class CyanCoyote extends Challenge {
