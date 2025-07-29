@@ -103,17 +103,23 @@ export function playerByName(n: string) {
   }
 }
 
-let currentAreaId = 0;
 export function loadArea(dim: Dimension, p: BlockVolume) {
-  dim.runCommand(
-    `tickingarea add ${p.from.x} ${p.from.y} ${p.from.z} ${p.to.x} ${p.to.y} ${p.to.z} temp_${currentAreaId}`
-  );
-  currentAreaId++;
-  return currentAreaId - 1;
+  let id = `_${p.from.x}_${p.from.y}_${p.from.z}_${p.to.x}_${p.to.y}_${p.to.z}`;
+  try {
+    dim.runCommand(`tickingarea add ${p.from.x} ${p.from.y} ${p.from.z} ${p.to.x} ${p.to.y} ${p.to.z} ${id}`);
+  } catch (e) {
+    Logger.error(e);
+  }
+  Logger.info("加载区域", id);
+  return id;
 }
-export function unloadArea(dim: Dimension, id: number) {
-  dim.runCommand(`tickingarea remove temp_${id}`);
-  currentAreaId--;
+export function unloadArea(dim: Dimension, id: string) {
+  try {
+    dim.runCommand(`tickingarea remove ${id}`);
+  } catch (e) {
+    Logger.error(e);
+  }
+  Logger.info("取消常加载区域", id);
 }
 
 export namespace random {

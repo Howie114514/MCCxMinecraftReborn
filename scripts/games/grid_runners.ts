@@ -30,9 +30,11 @@ import {
   getHat,
   giveArmor,
   initializeBlockVolume,
+  loadArea,
   random,
   removeArmor,
   tick2Time,
+  unloadArea,
   useItem,
 } from "../utils";
 import { showSubTitle } from "../ui/title";
@@ -95,17 +97,28 @@ export class GRLevel {
   closeDoor() {
     let d: BlockVolumeArguments = doors[this.id];
     if (!d) return;
-    fill(d, MinecraftBlockTypes.NetheriteBlock);
-    world
-      .getDimension("overworld")
-      .fillBlocks(
-        new BlockVolume(Vector3Utils.add(d.from, { x: 0, y: 1, z: 0 }), Vector3Utils.add(d.to, { x: 0, y: -1, z: 0 })),
-        MinecraftBlockTypes.IronBlock
-      );
+    let tmp = loadArea(world.getDimension("overworld"), initializeBlockVolume(d));
+    system.run(() => {
+      fill(d, MinecraftBlockTypes.NetheriteBlock);
+      world
+        .getDimension("overworld")
+        .fillBlocks(
+          new BlockVolume(
+            Vector3Utils.add(d.from, { x: 0, y: 1, z: 0 }),
+            Vector3Utils.add(d.to, { x: 0, y: -1, z: 0 })
+          ),
+          MinecraftBlockTypes.IronBlock
+        );
+      unloadArea(world.getDimension("overworld"), tmp);
+    });
   }
   openDoor() {
     let d: BlockVolumeArguments = doors[this.id];
-    fill(d, MinecraftBlockTypes.Air);
+    let tmp = loadArea(world.getDimension("overworld"), initializeBlockVolume(d));
+    system.run(() => {
+      fill(d, MinecraftBlockTypes.Air);
+      unloadArea(world.getDimension("overworld"), tmp);
+    });
   }
 }
 

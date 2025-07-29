@@ -105,7 +105,7 @@ class Challenge {
     let data = JSON.parse((p.getDynamicProperty("mccr:challenge_data") as string) ?? "{}");
     let finishedCount = 0;
     (Object.values(data) as { finished: boolean }[]).forEach((i: { finished: boolean }) => {
-      if (i) finishedCount++;
+      if (i.finished) finishedCount++;
     });
     console.log(finishedCount);
     if (finishedCount == 15) {
