@@ -701,11 +701,7 @@ export class GridRunners extends ComplexGame {
       }
     });
     world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
-      if (
-        ev.target.typeId == "noxcrew.ft:lost_pearl" &&
-        this.players[ev.player.name] &&
-        getHat(ev.player)?.typeId == "noxcrew.ft:beanie_aqua"
-      ) {
+      if (ev.target.typeId == "noxcrew.ft:lost_pearl" && getHat(ev.player)?.typeId == "noxcrew.ft:beanie_aqua") {
         challenges.aqua.recordProgesss(ev.player);
         //this.player_data[ev.player.name].stats.foundPearl = true;
       }

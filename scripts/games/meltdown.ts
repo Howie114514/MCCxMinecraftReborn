@@ -132,10 +132,6 @@ class MDRoom {
   melt() {
     let bv = initializeBlockVolume(this.volume);
     this.isMelting = true;
-    world
-      .getDimension("overworld")
-      .getEntities({ tags: ["md_room_" + this.id.toString()] })
-      .forEach((e) => e.remove());
     system.runTimeout(() => {
       this.melt_tick = 0;
     }, 4 * TicksPerSecond);
@@ -268,7 +264,7 @@ export class Meltdown extends ComplexGame {
             p.getComponent("health")?.resetToMaxValue();
             this.player_data[p.name].room = parseInt(ev.message);
             showSubTitle(p, tr("txt.melt.room", (parseInt(ev.message) - 1).toString()));
-            sound.play(p, "meltdown_entrance", {});
+            sound.play(p, "room_clear", {});
           }
         }
       }

@@ -189,6 +189,8 @@ export class SandsOfTime extends BasicGame {
       },
       onCollect: (p, item, success) => {
         if (success) {
+          sound.play(p, "bigcoins", {});
+          sound.play(p, "teamvault_open", {});
           let t = item.getProperty("noxcrew.ft:unlock_type") as number;
           let c = t == 0 ? 50 : t == 1 ? 100 : t == 2 ? 200 : 400;
           this.player_data[p.name].coins += c;
@@ -358,7 +360,8 @@ export class SandsOfTime extends BasicGame {
       let rmCoins = d.escaped ? 0 : Math.ceil(d.coins / 4);
       let e = Math.max(d.coins - rmCoins, 0);
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_blue") challenges.blue.recordProgesss(p, this.stats[p.name].sands);
-      if (getHat(p)?.typeId == "noxcrew.ft:cyan_blue") challenges.cyan.recordProgesss(p, this.stats[p.name].coinStacks);
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_cyan")
+        challenges.cyan.recordProgesss(p, this.stats[p.name].coinStacks);
       let isNewRecord = record.update(p, "sot", e);
       showSOTCompleteToast(
         p,
