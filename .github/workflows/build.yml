@@ -19,23 +19,8 @@ jobs:
         env:
           BUILD_ID: ${{github.sha}}
         run: npm run release
-      - name: Upload BP
+      - name: Upload packs
         uses: actions/upload-artifact@v4
         with:
-          name: mccr_bp_${{github.sha}}.mcpack
-          path: dist/mccr_bp.mcpack
-      - name: Upload RP
-        uses: actions/upload-artifact@v4
-        with:
-          name: mccr_rp_${{github.sha}}.mcpack
-          path: dist/mccr_rp.mcpack
-      - name: Upload world
-        uses: actions/upload-artifact@v4
-        with:
-          name: MCCxMinecraft_${{github.sha}}.mcworld
-          path: dist/MCCxMinecraft.mcworld
-      - name: Upload world template
-        uses: actions/upload-artifact@v4
-        with:
-          name: MCCxMinecraft_${{github.sha}}.mctemplate
-          path: dist/MCCxMinecraft.mctemplate
+          name: mccr_${{github.sha}}.mcpack
+          path: dist/*
