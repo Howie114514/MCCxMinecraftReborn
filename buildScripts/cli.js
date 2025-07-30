@@ -94,7 +94,7 @@ const config = {
                 await compress(resolve("./dist/mccr_bp.mcpack"), bpPath);
                 await compress(resolve("./dist/mccr_rp.mcpack"), rpPath);
                 await compress(resolve("./dist/MCCxMinecraft.mcworld"), resolve("./build/world"));
-                await compress(resolve("./dist/MCCxMinecraft.mctemplate"), resolve("./build/world"));
+                //await compress(resolve("./dist/MCCxMinecraft.mctemplate"), resolve("./build/world"));
               } catch (e) {
                 console.error(e);
               }
@@ -175,6 +175,9 @@ const subcommands = {
     console.log("WSServer running on ws://localhost:1145\nType '/connect localhost:1145' to connect");
   },
   "sync-world": () => {
+    if (process.env["BUILD_ID"]) {
+      console.log("skipped");
+    }
     if (existsSync(path.join(mcdir, "minecraftWorlds", worldDir))) {
       cpSync(path.join(mcdir, "minecraftWorlds", worldDir), resolve("./world"), { recursive: true });
     } else {
