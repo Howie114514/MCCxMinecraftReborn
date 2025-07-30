@@ -177,6 +177,9 @@ class Level1 extends GRLevel {
     if (e.length == 0) {
       if (this.game.tick_timer > 82) {
         forIn(this.game.players, (p) => {
+          if(p.location.x < doors[0].from.x) {
+            return;
+          }
           p.onScreenDisplay.setActionBar(new Text().tr("txt.grid.wave_clear"));
           showSubTitle(p, new Text().tr("txt.grid.wave_reward"));
           this.game.playSound("scoreacquired");
