@@ -117,7 +117,7 @@ class MDRoom {
         this.openDoor();
         this.melt();
       }
-    }, Math.max(this.time - 30 * TicksPerSecond, 0));
+    }, Math.max(this.time - 31 * TicksPerSecond, 0));
     Logger.info("初始化熔毁房间：", this.id);
     Logger.info("调用栈：", new Error().stack);
   }
