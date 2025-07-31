@@ -177,7 +177,7 @@ class Level1 extends GRLevel {
     if (e.length == 0) {
       if (this.game.tick_timer > 82) {
         forIn(this.game.players, (p) => {
-          if(p.location.x < doors[0].from.x) {
+          if (p.location.x < doors[0].from.x) {
             return;
           }
           p.onScreenDisplay.setActionBar(new Text().tr("txt.grid.wave_clear"));
@@ -813,7 +813,7 @@ export class GridRunners extends ComplexGame {
       let isNewRecord = record.update(p, "gr", d.coins);
       showGRCompleteToast(p, d.coins, d.mobs, d.painted, d.cakes, isNewRecord, record.get(p, "gr").toString());
       addCoins(p, d.coins);
-      sound.play(p, "finish", {});
+      sound.play(p, "music_gr_win", {});
       p.applyKnockback({ x: 4, z: 0 }, 0.5);
       challenges.gr.recordProgesss(p);
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_purple") challenges.purple.recordProgesss(p, d.cakes);

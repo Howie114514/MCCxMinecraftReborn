@@ -1304,3 +1304,8 @@ system.afterEvents.scriptEventReceive.subscribe((ev) => {
     launch(ev.sourceEntity as Player);
   }
 });
+
+system.afterEvents.scriptEventReceive.subscribe((ev) => {
+  if (ev.id == "mccr:test" && ev.sourceEntity) {
+  }
+});

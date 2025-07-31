@@ -21,7 +21,7 @@ export class Puzzle {
       p.dimension.spawnParticle("noxcrew.ft:party_popper", p.location);
       p.setDynamicProperty("mccr.p:puzzle_data", JSON.stringify(o));
       p.onScreenDisplay.setActionBar(tr("txt.misc.msg9"));
-      sound.play(p, "puzzle_complete", { volume: 2 });
+      sound.play(p, "hieroglyphics_complete", { volume: 2 });
       challenges.challenge.recordProgesss(p, 1);
       Logger.info("玩家完成谜题：", p.name, this.day);
     }

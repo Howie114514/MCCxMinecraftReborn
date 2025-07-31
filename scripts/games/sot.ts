@@ -216,6 +216,7 @@ export class SandsOfTime extends BasicGame {
         sound.play(p, "key_unlock", {});
         showSubTitle(p, new Text().tr("txt.sot.key"));
       },
+      collectSound: "key_pickup_vault",
     },
     "noxcrew.ft:armor_podium": {
       collectSound: "armor_upgrade",
@@ -311,7 +312,7 @@ export class SandsOfTime extends BasicGame {
       sands: 0,
       coinStacks: 0,
     };
-    p.teleport({ x: 2160.25, y: 51.0, z: 79.17 }, {rotation: { x: 0, y: 180 }});
+    p.teleport({ x: 2160.25, y: 51.0, z: 79.17 }, { rotation: { x: 0, y: 180 } });
     forInAsync(this.collect_events, (v, k) => {
       world
         .getDimension("overworld")
@@ -332,7 +333,7 @@ export class SandsOfTime extends BasicGame {
   removePlayer(p: Player) {
     super.removePlayer(p);
     if (this.player_data[p.name]) {
-      p.teleport(coordinates.sot, {rotation: coordinates_rotation.sot});
+      p.teleport(coordinates.sot, { rotation: coordinates_rotation.sot });
       if (p && !p.getDynamicProperty("mccr:is_leaving")) {
         let e = p.getComponent("equippable");
         e?.setEquipment(EquipmentSlot.Legs, undefined);
@@ -355,7 +356,7 @@ export class SandsOfTime extends BasicGame {
   }
   player_finish(p: Player): void {
     if (this.players[p.name]) {
-      system.runTimeout(() => p.teleport(coordinates.sot, {rotation: coordinates_rotation.sot}), 2);
+      system.runTimeout(() => p.teleport(coordinates.sot, { rotation: coordinates_rotation.sot }), 2);
       let d = this.player_data[p.name];
       let rmCoins = d.escaped ? 0 : Math.ceil(d.coins / 4);
       let e = Math.max(d.coins - rmCoins, 0);

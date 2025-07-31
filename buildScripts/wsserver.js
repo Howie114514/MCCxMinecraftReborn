@@ -14,7 +14,6 @@ export function createServer() {
     console.log("[Websocket] connected");
     run(`tellraw @a {"rawtext":[{"text":"[§bmcpack devtools§r] connected"}]}`);
   });
-  console.log("WSServer running on wss://localhost:%d", 1145);
 }
 
 async function run(cmd) {

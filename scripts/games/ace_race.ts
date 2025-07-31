@@ -91,6 +91,7 @@ export class AceRace extends BasicGame {
           );
         ev.player.playSound("castle_door");
         ev.player.onScreenDisplay.setActionBar(tr("txt.misc.msg8"));
+        ev.player.playSound("hieroglyphics_solve");
         system.runTimeout(() => {
           world
             .getDimension("overworld")

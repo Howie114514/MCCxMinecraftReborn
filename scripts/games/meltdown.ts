@@ -38,7 +38,7 @@ import { tr } from "../lang";
 import { rules } from "../rule";
 import { Logger } from "../logger";
 import { showSubTitle } from "../ui/title";
-import { showMDCompleteToast } from "../ui/gametoast";
+import { showMDCompleteToast, Trophy } from "../ui/gametoast";
 import { isReloaded } from "../main";
 import { challenges } from "../challenges";
 import { record } from "../record";
@@ -362,7 +362,23 @@ export class Meltdown extends ComplexGame {
     if (d) {
       if (d.room) {
         let isNewRecord = record.update(p, "md", d.coins);
-        showMDCompleteToast(p, d.coins, d.killed, d.room, isNewRecord, record.get(p, "md").toString());
+        showMDCompleteToast(
+          p,
+          d.coins,
+          d.killed,
+          d.room,
+          isNewRecord,
+          record.get(p, "md").toString(),
+          d.room <= 1
+            ? Trophy.copper
+            : d.room > 1 && d.room <= 3
+            ? Trophy.iron
+            : d.room > 3 && d.room <= 5
+            ? Trophy.gold
+            : d.room == 6
+            ? Trophy.diamond
+            : Trophy.netherrite
+        );
         if (d.room >= 3) {
           challenges.md.recordProgesss(p);
         }
