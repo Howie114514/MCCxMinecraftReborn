@@ -357,7 +357,7 @@ export class Meltdown extends ComplexGame {
     });
     this.isStarting = false;
   }
-  player_finish(p: Player): void {
+  player_finish(p: Player, all?: boolean): void {
     let d = this.player_data[p.name];
     if (d) {
       if (d.room) {
@@ -383,6 +383,9 @@ export class Meltdown extends ComplexGame {
           challenges.md.recordProgesss(p);
         }
         if (getHat(p)?.typeId == "noxcrew.ft:beanie_yellow") challenges.yellow.recordProgesss(p, d.killed);
+      }
+      if (all) {
+        p.applyKnockback({ x: 0, z: 7.5 }, 0);
       }
       addCoins(p, d.coins);
       //p.sendMessage("你完成了游戏");

@@ -820,7 +820,7 @@ system.beforeEvents.startup.subscribe((ev) => {
       } else if (ev.id == "mccr:end_game") {
         if (p) {
           if (gameInstances[ev.message]) {
-            gameInstances[ev.message].player_finish(p);
+            gameInstances[ev.message].player_finish(p, true);
             gameInstances.lobby.addPlayer(p);
           }
         }
@@ -1302,10 +1302,5 @@ function launch(p: Player) {
 system.afterEvents.scriptEventReceive.subscribe((ev) => {
   if (ev.sourceEntity && ev.id == "mccr:test_launch") {
     launch(ev.sourceEntity as Player);
-  }
-});
-
-system.afterEvents.scriptEventReceive.subscribe((ev) => {
-  if (ev.id == "mccr:test" && ev.sourceEntity) {
   }
 });

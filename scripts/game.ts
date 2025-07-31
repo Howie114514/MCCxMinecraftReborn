@@ -334,7 +334,7 @@ export class ComplexGame {
   player_quit(p: Player, withItem = false) {
     this.removePlayer(p);
   }
-  player_finish(p: Player) {
+  player_finish(p: Player, all: boolean = false) {
     //p.sendMessage("你完成了游戏！");
     this.removePlayer(p);
   }
