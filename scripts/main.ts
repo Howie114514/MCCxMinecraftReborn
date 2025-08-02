@@ -37,6 +37,7 @@ import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import {
   asPlayer,
   choice,
+  createEntityPropertyProxy,
   debounce,
   forIn,
   getHat,
@@ -744,6 +745,10 @@ system.beforeEvents.startup.subscribe((ev) => {
       from_rotation: Vector2 | undefined,
       to_rotation: Vector2 | undefined
     ) {
+      if (gameInstances.ace_race.players[player.name]) {
+        gameInstances.ace_race.player_quit(player);
+        gameInstances.lobby.addPlayer(player);
+      }
       if ((gameInstances.lobby as Lobby).getPlayerArea(player) != dest)
         new MessageFormData()
           .body({
@@ -1143,6 +1148,10 @@ system.beforeEvents.startup.subscribe((ev) => {
       if (ev.hitEntity.typeId == "noxcrew.ft:beach_ball") {
         sound.play(ev.damagingEntity.dimension, "ball_hit", { location: ev.hitEntity.location });
         ev.hitEntity.applyKnockback(Vec3Utils.getProjectileMotion(ev.damagingEntity, 5), 1);
+        if (Math.random() < 0.05) {
+          ev.hitEntity.dimension.spawnParticle("noxcrew.ft:ball_pop", ev.hitEntity.location);
+          ev.hitEntity.remove();
+        }
       }
     });
     world.afterEvents.itemUse.subscribe((ev) => {

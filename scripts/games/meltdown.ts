@@ -339,6 +339,7 @@ export class Meltdown extends ComplexGame {
     this.rooms[0].setup();
     forIn(this.players, (p) => {
       p.teleport(points.start);
+      p.triggerEvent("mccr:become_not_invulnerable");
       p.onScreenDisplay.setActionBar(tr("txt.tut.melt_title"));
       p.sendMessage(tr("txt.tut.melt_text"));
       this.player_data[p.name] = { room: 0, coins: 0, killed: 0 };

@@ -39,6 +39,18 @@
         ]
       }
     },
+    "component_groups": {
+      "mccr:invulnerable": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "all",
+              "deals_damage": false
+            }
+          ]
+        }
+      }
+    },
     "components": {
       "minecraft:interact": {
         "interactions": [{}]
@@ -137,7 +149,7 @@
         "triggers": [
           {
             "cause": "fire_tick",
-            "deals_damage": false
+            "deals_damage": true
           }
         ]
       },
@@ -145,6 +157,18 @@
       "minecraft:block_climber": {}
     },
     "events": {
+      "mccr:become_invulnerable": {
+        "add": {
+          "component_groups": ["mccr:invulnerable"]
+        }
+      },
+
+      "mccr:become_not_invulnerable": {
+        "remove": {
+          "component_groups": ["mccr:invulnerable"]
+        }
+      },
+
       "noxcrew:set_boost_id.1": {
         "set_property": {
           "noxcrew:boost_id": 1

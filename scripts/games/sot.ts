@@ -292,35 +292,38 @@ export class SandsOfTime extends BasicGame {
       fadeColor: { red: 0, blue: 0, green: 0 },
       fadeTime: { fadeInTime: 0.1, fadeOutTime: 1, holdTime: 0.2 },
     });
-    let s = new ItemStack("minecraft:stone_sword");
-    inventory.save(p);
-    inventory.set(p, { 0: s, 8: new ItemStack("noxcrew.ft:leave_game") });
-    let eq = p.getComponent("equippable");
-    eq?.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.LeatherChestplate));
-    eq?.setEquipment(EquipmentSlot.Legs, new ItemStack(MinecraftItemTypes.LeatherLeggings));
-    eq?.setEquipment(EquipmentSlot.Feet, new ItemStack(MinecraftItemTypes.LeatherBoots));
-    this.player_data[p.name] = {
-      collected_items: {},
-      time: 120 * TicksPerSecond,
-      coins: 0,
-      lifeTime: 0,
-      escaped: false,
-      opened_chests: 0,
-      startTime: Date.now(),
-    };
-    this.stats[p.name] = {
-      sands: 0,
-      coinStacks: 0,
-    };
-    p.teleport({ x: 2160.25, y: 51.0, z: 79.17 }, { rotation: { x: 0, y: 180 } });
-    forInAsync(this.collect_events, (v, k) => {
-      world
-        .getDimension("overworld")
-        .getEntities({ type: k })
-        .forEach((e) => {
-          p.clearPropertyOverridesForEntity(e);
-        });
-    });
+    system.runTimeout(() => {
+      let s = new ItemStack("minecraft:stone_sword");
+      inventory.save(p);
+      inventory.set(p, { 0: s, 8: new ItemStack("noxcrew.ft:leave_game") });
+      let eq = p.getComponent("equippable");
+      eq?.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.LeatherChestplate));
+      eq?.setEquipment(EquipmentSlot.Legs, new ItemStack(MinecraftItemTypes.LeatherLeggings));
+      eq?.setEquipment(EquipmentSlot.Feet, new ItemStack(MinecraftItemTypes.LeatherBoots));
+      this.player_data[p.name] = {
+        collected_items: {},
+        time: 120 * TicksPerSecond,
+        coins: 0,
+        lifeTime: 0,
+        escaped: false,
+        opened_chests: 0,
+        startTime: Date.now(),
+      };
+      this.stats[p.name] = {
+        sands: 0,
+        coinStacks: 0,
+      };
+      p.teleport({ x: 2160.25, y: 51.0, z: 79.17 }, { rotation: { x: 0, y: 180 } });
+      p.triggerEvent("mccr:become_not_invulnerable");
+      forInAsync(this.collect_events, (v, k) => {
+        world
+          .getDimension("overworld")
+          .getEntities({ type: k })
+          .forEach((e) => {
+            p.clearPropertyOverridesForEntity(e);
+          });
+      });
+    }, 3);
   }
   showGameBar(p: Player): void {
     showSOTGameBar(

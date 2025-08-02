@@ -124,9 +124,10 @@ export class Lobby extends BasicGame {
   }
   player_onTick(p: Player): void {
     super.player_onTick(p);
-    p.addEffect(MinecraftEffectTypes.InstantHealth, 10, { amplifier: 255, showParticles: false });
+    //p.addEffect(MinecraftEffectTypes.InstantHealth, 10, { amplifier: 255, showParticles: false });
   }
   player_join(p: Player): void {
+    p.triggerEvent("mccr:become_invulnerable");
     let e = p.getComponent("equippable");
     e?.setEquipment(EquipmentSlot.Legs, undefined);
     e?.setEquipment(EquipmentSlot.Chest, undefined);
