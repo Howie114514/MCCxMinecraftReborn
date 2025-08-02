@@ -266,6 +266,21 @@ system.beforeEvents.startup.subscribe((ev) => {
       return { status: CustomCommandStatus.Success };
     }
   );
+  ev.customCommandRegistry.registerEnum("mccr:theme", ["default", "theFirstWeek"]);
+  ev.customCommandRegistry.registerCommand(
+    {
+      name: "mccr:set_theme",
+      mandatoryParameters: [{ type: CustomCommandParamType.Enum, name: "mccr:theme" }],
+      permissionLevel: CommandPermissionLevel.GameDirectors,
+      description: "设置顶部栏的主题",
+    },
+    (origin, res) => {
+      if (!["default", "theFirstWeek"].includes(res))
+        return { status: CustomCommandStatus.Failure, message: "无效的主题" + res };
+      world.setDynamicProperty("mccr:theme", res);
+      return undefined;
+    }
+  );
   let pipes = {
     "1": {
       from: {

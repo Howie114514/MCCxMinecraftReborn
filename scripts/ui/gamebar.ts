@@ -1,4 +1,4 @@
-import { Player } from "@minecraft/server";
+import { Player, world } from "@minecraft/server";
 import { replace } from "../utils";
 import { getPuzzles } from "../puzzles/puzzle";
 import { Text } from "../text";
@@ -10,7 +10,10 @@ function replace(str, start, str1){
 export function showLobbyGameBar(p: Player, _: number, coins: number) {
   var text = new Text().txt("nox:barlby___");
   let glyphs = getPuzzles(p);
-  var glyphstxt = "\ue177" + "\ue179".repeat(glyphs) + "\ue17a".repeat(7 - glyphs);
+  var glyphstxt =
+    "\ue177" +
+    ((world.getDynamicProperty("mccr:theme") ?? "default") == "default" ? "\ue178" : "\ue179").repeat(glyphs) +
+    "\ue17a".repeat(7 - glyphs);
   text.txt(glyphstxt);
   text.txt("_".repeat(82 - 13 - glyphstxt.length));
   text.txt(coins.toString());
