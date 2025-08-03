@@ -136,6 +136,7 @@ class Level1 extends GRLevel {
     sound.play(p, "room_beast", {});
     p.sendMessage(new Text().tr("txt.tut.grid1_text"));
     showSubTitle(p, new Text().tr("txt.tut.grid1_title"));
+    p.triggerEvent("mccr:become_not_invulnerable");
     inventory.set(p, { 0: new ItemStack("minecraft:iron_sword"), 8: new ItemStack("noxcrew.ft:leave_game") });
   }
   getMobFuncs: ((first: boolean, location: Vector3) => string | Entity)[] = [
@@ -646,6 +647,7 @@ export class GridRunners extends ComplexGame {
         this.levels[1].closeDoor();
       }, 15 * TicksPerSecond);
       forIn(this.players, (p) => {
+        p.triggerEvent("mccr:become_invulnerable");
         p.onScreenDisplay.setActionBar(new Text().tr("txt.grid.warning_hint"));
         p.getComponent("health")?.resetToMaxValue();
         p.runCommand("effect @s clear");

@@ -160,7 +160,8 @@
       "mccr:become_invulnerable": {
         "add": {
           "component_groups": ["mccr:invulnerable"]
-        }
+        },
+        "queue_command": { "command": "effect @s instant_health 20 255 true" }
       },
 
       "mccr:become_not_invulnerable": {

@@ -27,6 +27,7 @@ import {
   ItemDurabilityComponent,
   EntityQueryOptions,
   ScriptEventSource,
+  EntityNpcComponent,
 } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import flags from "./flags";
@@ -1323,8 +1324,30 @@ function launch(p: Player) {
   sound.play(p, "launch", {});
 }
 
+let texts: Record<string, string> = {};
 system.afterEvents.scriptEventReceive.subscribe((ev) => {
   if (ev.sourceEntity && ev.id == "mccr:test_launch") {
     launch(ev.sourceEntity as Player);
+  }
+  if (ev.id == "mccr.dev:find_floating_texts") {
+    world
+      .getDimension("overworld")
+      .getEntities({ type: "noxcrew.ft:floating_text" })
+      .forEach((e) => {
+        texts[e.id] = e.nameTag;
+      });
+    Logger.logObj(texts);
+  }
+  if (ev.id == "mccr.dev:get_ftext_data") {
+    Logger.logObj(texts);
+  }
+  if (ev.id == "mccr.dev:rename_floating_text") {
+    Logger.logObj(texts);
+    world
+      .getDimension("overworld")
+      .getEntities({ type: "noxcrew.ft:floating_text" })
+      .forEach((e) => {
+        e.runCommand(`dialogue change @s text_${e.id.replace(/\-/, "_")}`);
+      });
   }
 });
