@@ -65,7 +65,7 @@ import { puzzles } from "./puzzles/puzzle";
 import env, { envTypes } from "./environment";
 import { inventory } from "./inventory";
 import { Logger } from "./logger";
-import { blockCompoents, itemCompoents } from "./compoents";
+import { blockCompoents, itemCompoents } from "./components";
 import { showSubTitle } from "./ui/title";
 import { sound } from "./sound";
 import { challengeColors, challenges } from "./challenges";
