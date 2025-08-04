@@ -121,6 +121,15 @@ export class Lobby extends BasicGame {
         }
       });
     });
+    let n = 1;
+    system.runInterval(() => {
+      forInAsync(this.players, (p) => {
+        p.sendMessage(new Text().tr("txt.nudge.msg" + n.toString()));
+        n++;
+        if (n == 13) n = 1;
+        if (n == 8) n++;
+      });
+    }, 600);
   }
   player_onTick(p: Player): void {
     super.player_onTick(p);
