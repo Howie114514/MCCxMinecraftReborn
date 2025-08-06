@@ -280,6 +280,7 @@ export class ComplexGame {
                 p?.onScreenDisplay.setActionBar(
                   new Text().tr("txt.matchmaking.status.teleporting", cdSeconds.toString())
                 );
+                if (cdSeconds == 5) sound.play(p as Player, "queue_success", {});
                 sound.play(p as Player, "queue_countdown", {});
               });
             }

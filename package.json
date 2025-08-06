@@ -28,7 +28,7 @@
     "postinstall": "node ./buildScripts/postinstall.js"
   },
   "dependencies": {
-    "@minecraft/server": "2.1.0-beta.1.21.90-stable",
+    "@minecraft/server": "^2.3.0-beta.1.21.110-preview.22",
     "@minecraft/server-ui": "2.1.0-beta.1.21.90-stable",
     "@minecraft/vanilla-data": "1.21.70",
     "@types/node": "^22.15.27",
