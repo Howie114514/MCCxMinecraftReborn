@@ -12,8 +12,8 @@ export function showLobbyGameBar(p: Player, _: number, coins: number) {
   let glyphs = getPuzzles(p);
   var glyphstxt =
     "\ue177" +
-    ((world.getDynamicProperty("mccr:theme") ?? "default") == "default" ? "\ue178" : "\ue179").repeat(glyphs) +
-    "\ue17a".repeat(7 - glyphs);
+    "\ue179".repeat(glyphs) +
+    ((world.getDynamicProperty("mccr:theme") ?? "default") == "default" ? "\ue178" : "\ue17a").repeat(7 - glyphs);
   text.txt(glyphstxt);
   text.txt("_".repeat(82 - 13 - glyphstxt.length));
   text.txt(coins.toString());
