@@ -2,8 +2,8 @@
 
 dialog.prince.btn=重播劇情
 form.reset.title=你確定嗎？
-form.reset.body=你的個人資料將會被刪除。
-msg.reset.rejoin=請重新加入世界以確保生效。
+form.reset.body=你的個人資料將會被刪除
+msg.reset.rejoin=請重新加入世界以確保生效
 
 ###mccr
-msg.mccr.welcome=歡迎來到§eMCC X Minecraft §bReborn!§r\n在聊天欄輸入/mccr:info即可查看本地圖的詳細資訊。
+msg.mccr.welcome=歡迎來到§eMCC X Minecraft §bReborn!§r\n在聊天欄輸入/mccr:info即可查看本地圖的詳細資訊
