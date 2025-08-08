@@ -11,6 +11,8 @@ import { rules } from "./rule";
 import { Logger } from "./logger";
 import { Text } from "./text";
 import { sound } from "./sound";
+import { Matcher } from "./matcher";
+import EventEmitter from "eventemitter3";
 
 type SetHotbarOpt = {
   lock?: boolean;
@@ -227,6 +229,9 @@ export enum MatchingStatus {
   none,
 }
 
+/**
+ * @deprecated
+ */
 export class ComplexGame {
   queue = new Queue<string>();
   players: Record<string, Player> = {};
@@ -355,5 +360,16 @@ export class ComplexGame {
   removePlayer(p: Player) {
     gameInstances.lobby.addPlayer(p);
     this.removePlayerByName(p.name);
+  }
+}
+
+class GameInstance{
+
+}
+
+class GameManager extends EventEmitter{
+  matcher:Matcher = new Matcher();
+  constructor(){
+    super();
   }
 }
