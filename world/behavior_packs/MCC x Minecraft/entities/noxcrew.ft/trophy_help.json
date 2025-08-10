@@ -40,6 +40,9 @@
 				"min": 0,
 				"value": 0
 			},
+			"minecraft:npc": {
+				"npc_data": {}
+			},	
 			"minecraft:nameable": {
 				"always_show": true
 			},
