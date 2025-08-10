@@ -46,8 +46,16 @@ A project that revitalizes the MCC x Minecraft 15th Anniversary server map by ad
 
 ---
 
-### Commands：
+### Commands
 
 `npm run dev` - Enter watch mode<br><br>
 `npm run release` - Export the world and world template<br><br>
 `npm run sync` - Synchronize the world files
+
+---
+
+### Contributors
+
+<a href="https://github.com/Howie114514/MCCxMinecraftReborn/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Howie114514/MCCxMinecraftReborn" />
+</a>
