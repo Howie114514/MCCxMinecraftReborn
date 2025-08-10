@@ -40,8 +40,11 @@
 				"min": 0,
 				"value": 0
 			},
-			"minecraft:nameable": {
-				"always_show": true
+            "minecraft:npc": {
+				"npc_data": {}
+			},
+	    	"minecraft:nameable": {
+			"always_show": true
 			},
 			"minecraft:push_through": 1,
 			"minecraft:pushable": {
