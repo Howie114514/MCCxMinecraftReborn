@@ -206,6 +206,7 @@ export class SandsOfTime extends BasicGame {
       },
       onFail(p, item) {
         showSubTitle(p, new Text().tr("txt.error.msg6"));
+        sound.play(p, "treasure_chest_wrong", {});
       },
     },
     "noxcrew.ft:key_podium": {
