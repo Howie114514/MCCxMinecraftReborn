@@ -1121,6 +1121,8 @@ system.beforeEvents.startup.subscribe((ev) => {
             target
               .getComponent(EntityComponentTypes.Inventory)
               ?.container.addItem(new ItemStack("noxcrew.ft:player_gift_receiving"));
+
+            if (getHat(ev.source)?.typeId == "noxcrew.ft:beanie_lime") challenges.lime.recordProgesss(ev.source, 1);
             target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.source.name));
             ev.source.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
             break;
@@ -1186,7 +1188,6 @@ system.beforeEvents.startup.subscribe((ev) => {
           ];
           useItem(ev.source, ev.itemStack);
           give(ev.source, new ItemStack(choice(items)));
-          if (getHat(ev.source)?.typeId == "noxcrew.ft:beanie_lime") challenges.lime.recordProgesss(ev.source, 1);
           inventory.save(ev.source);
           break;
       }
