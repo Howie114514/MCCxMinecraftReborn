@@ -57,18 +57,18 @@
             },
             "commands": ["/dialogue open @s @initiator sands_3_5"]
           },
-          {"name":{
-            "rawtext": [{
-              "translate": "txt.button.close"}]
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }
           }
-         }
         ],
-        "on_open_commands": [
-          "/playsound creator_sands.3_0 @initiator"
-        ],
-        "on_close_commands": [
-          "/stopsound @initiator creator_sands.3_0"
-        ]
+        "on_open_commands": ["/playsound creator_sands.3_0 @initiator"],
+        "on_close_commands": ["/stopsound @initiator creator_sands.3_0"]
       },
       {
         "scene_tag": "sands_2",
@@ -84,26 +84,21 @@
             { "text": "\n\n" }
           ]
         },
-        "on_open_commands": [
-          "/playsound creator_sands.2_0 @initiator"
-        ],
-        "on_close_commands": [
-          "/stopsound @initiator creator_sands.2_0"
-        ],
+        "on_open_commands": ["/playsound creator_sands.2_0 @initiator"],
+        "on_close_commands": ["/stopsound @initiator creator_sands.2_0"],
         "buttons": [
-          {"name":{
-            "rawtext": [
-                {"translate": "txt.button.start_game"}]
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.start_game" }]
+            },
+            "commands": ["/execute as @initiator run scriptevent mccr:join"]
           },
-          "commands": ["/tp @initiator 4243 60 2119 facing 4241 60 2119"]
-          },
-          {"name":{
-            "rawtext": [
-              {"translate": "txt.button.who_are_you_q"}]
-          },
-          "commands": [
-            "/dialogue open @s @initiator sands_desc"]
-        }
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.who_are_you_q" }]
+            },
+            "commands": ["/dialogue open @s @initiator sands_desc"]
+          }
         ]
       },
       {
@@ -122,22 +117,29 @@
             { "text": "\n\n" }
           ]
         },
-        "buttons": [{"name":{
-          "rawtext": [{
-            "translate": "txt.button.back"}]
-        },"commands": [
-          "/dialogue open @s @initiator sands_desc"]
-        },{"name":{"rawtext": [{
-          "translate": "txt.button.close"}]
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.back"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @s @initiator sands_desc"]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }
           }
-        }
-      ],
-      "on_open_commands": [
-        "/playsound creator_sands.3_1 @initiator"
-      ],
-      "on_close_commands": [
-        "/stopsound @initiator creator_sands.3_1"
-      ]
+        ],
+        "on_open_commands": ["/playsound creator_sands.3_1 @initiator"],
+        "on_close_commands": ["/stopsound @initiator creator_sands.3_1"]
       },
       {
         "scene_tag": "sands_3_2",
@@ -155,22 +157,29 @@
             { "text": "\n\n" }
           ]
         },
-        "buttons": [{"name":{
-          "rawtext": [{
-            "translate": "txt.button.back"}]
-        },"commands": [
-          "/dialogue open @s @initiator sands_desc"]
-        },{"name":{"rawtext": [{
-          "translate": "txt.button.close"}]
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.back"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @s @initiator sands_desc"]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }
           }
-        }
-      ],
-      "on_open_commands": [
-        "/playsound creator_sands.3_2 @initiator"
-      ],
-      "on_close_commands": [
-        "/stopsound @initiator creator_sands.3_2"
-      ]
+        ],
+        "on_open_commands": ["/playsound creator_sands.3_2 @initiator"],
+        "on_close_commands": ["/stopsound @initiator creator_sands.3_2"]
       },
       {
         "scene_tag": "sands_3_3",
@@ -188,22 +197,29 @@
             { "text": "\n\n" }
           ]
         },
-        "buttons": [{"name":{
-          "rawtext": [{
-            "translate": "txt.button.back"}]
-        },"commands": [
-          "/dialogue open @s @initiator sands_desc"]
-        },{"name":{"rawtext": [{
-          "translate": "txt.button.close"}]
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.back"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @s @initiator sands_desc"]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }
           }
-        }
-      ],
-      "on_open_commands": [
-        "/playsound creator_sands.3_3 @initiator"
-      ],
-      "on_close_commands": [
-        "/stopsound @initiator creator_sands.3_3"
-      ]
+        ],
+        "on_open_commands": ["/playsound creator_sands.3_3 @initiator"],
+        "on_close_commands": ["/stopsound @initiator creator_sands.3_3"]
       },
       {
         "scene_tag": "sands_3_4",
@@ -214,25 +230,32 @@
             { "translate": "txt.creator_sands.3_4.dia1" },
             { "text": "\n\n" },
             { "translate": "txt.creator_sands.3_4.dia2" },
-            { "text": "\n\n" }            
+            { "text": "\n\n" }
           ]
         },
-        "buttons": [{"name":{
-          "rawtext": [{
-            "translate": "txt.button.back"}]
-        },"commands": [
-          "/dialogue open @s @initiator sands_desc"]
-        },{"name":{"rawtext": [{
-          "translate": "txt.button.close"}]
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.back"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @s @initiator sands_desc"]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }
           }
-        }
-      ],
-      "on_open_commands": [
-        "/playsound creator_sands.3_4 @initiator"
-      ],
-      "on_close_commands": [
-        "/stopsound @initiator creator_sands.3_4"
-      ]
+        ],
+        "on_open_commands": ["/playsound creator_sands.3_4 @initiator"],
+        "on_close_commands": ["/stopsound @initiator creator_sands.3_4"]
       },
       {
         "scene_tag": "sands_3_5",
@@ -250,22 +273,29 @@
             { "text": "\n\n" }
           ]
         },
-        "buttons": [{"name":{
-          "rawtext": [{
-            "translate": "txt.button.back"}]
-        },"commands": [
-          "/dialogue open @s @initiator sands_desc"]
-        },{"name":{"rawtext": [{
-          "translate": "txt.button.close"}]
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.back"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @s @initiator sands_desc"]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }
           }
-        }
-      ],
-      "on_open_commands": [
-        "/playsound creator_sands.3_5 @initiator"
-      ],
-      "on_close_commands": [
-        "/stopsound @initiator creator_sands.3_5"
-      ]
+        ],
+        "on_open_commands": ["/playsound creator_sands.3_5 @initiator"],
+        "on_close_commands": ["/stopsound @initiator creator_sands.3_5"]
       }
     ]
   }

@@ -564,6 +564,11 @@ system.beforeEvents.startup.subscribe((ev) => {
       }
       Logger.info("触发加入游戏按钮：", p.name, (gameInstances.lobby as Lobby).getPlayerArea(p));
     }
+    system.afterEvents.scriptEventReceive.subscribe((ev) => {
+      if (ev.id == "mccr:join") {
+        joinGame(ev.sourceEntity as Player);
+      }
+    });
     world.afterEvents.entityHitEntity.subscribe((ev) => {
       if (ev.hitEntity.typeId == "noxcrew.ft:start_button") {
         ev.hitEntity.playAnimation("animation.n.start_button.interact");
