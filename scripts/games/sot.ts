@@ -210,13 +210,13 @@ export class SandsOfTime extends BasicGame {
     },
     "noxcrew.ft:key_podium": {
       onCollect: (p, item, success) => {
-        p.getComponent(EntityComponentTypes.Inventory)?.container.addItem(
-          new ItemStack(SOTKeyUnlockTypeMap[(item.getProperty("noxcrew.ft:unlock_type") as number) ?? 0])
-        );
+        let keyId = (item.getProperty("noxcrew.ft:unlock_type") as number) ?? 0;
+        p.getComponent(EntityComponentTypes.Inventory)?.container.addItem(new ItemStack(SOTKeyUnlockTypeMap[keyId]));
         sound.play(p, "key_unlock", {});
+        sound.play(p, keyId == 3 ? "key_pickup_gold" : "key_pickup_vault", {});
         showSubTitle(p, new Text().tr("txt.sot.key"));
       },
-      collectSound: "key_pickup_vault",
+      //collectSound: "key_pickup_vault",
     },
     "noxcrew.ft:armor_podium": {
       collectSound: "armor_upgrade",
