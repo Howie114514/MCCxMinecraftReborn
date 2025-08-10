@@ -19,7 +19,28 @@
               "text": "\n\n"
             }
           ]
-        }
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.back"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @e[type=noxcrew.ft:crowned_frog] @initiator"]
+          },
+          {
+            "name":{
+              "rawtext":[
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }            
+          }
+        ]
       },
       {
         "scene_tag": "talk_frog",
@@ -41,7 +62,28 @@
               "translate": "txt.frog_prince.1_2.dia3"
             }
           ]
-        }
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "translate": "txt.button.back"
+                }
+              ]
+            },
+            "commands": ["/dialogue open @e[type=noxcrew.ft:crowned_frog] @initiator"]
+          },
+          {
+            "name":{
+              "rawtext":[
+                {
+                  "translate": "txt.button.close"
+                }
+              ]
+            }            
+          }
+        ]
       },
       {
         "scene_tag": "kiss_frog",
