@@ -44,8 +44,8 @@ action.hint.exit.scheme.noxcrew.ft:seat=轻触“潜行”离开	###"Sneak" is a
 action.hint.exit.console.noxcrew.ft:seat=按 :_input_key.sneak: 离开	###:_input_key.sneak: is a Minecraft formatting code, ensure it remains in the translation. It would show a button
 
 ##SIGNS
-txt.sign.cave1=§o 每天都会有一张新画被揭晓。	###
-txt.sign.cave2=§o 解决所有七个谜题，即可领取奖励！	###
+txt.sign.cave1=§o每天都会有一张新画被揭晓。	###
+txt.sign.cave2=§o解决所有七个谜题，即可领取奖励！	###
 
 ##ITEMS
 item.noxcrew.ft:freezing_bow.name=霜冻之弓	### This bow shoots arrows which freeze mobs into blocks of ice.
@@ -94,7 +94,7 @@ item.noxcrew.ft:player_gift_receiving.name=礼物盒	### Players get this item w
 item.noxcrew.ft:disco_ball.name=迪斯科球	###
 item.noxcrew.ft:beach_ball.name=沙滩球	###
 item.noxcrew.ft:balloon_helium.name=氦气球	###
-item.noxcrew.ft:leave_game.name=§6 离开游戏	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:leave_game.name=§6离开游戏	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
 item.noxcrew.ft:pizza_slice.name=小块披萨	###
 item.noxcrew.ft:mcc_burger.name=美味汉堡	###
 item.noxcrew.ft:anniversary_hot_dog.name=美味热狗	###
@@ -159,7 +159,7 @@ item.noxcrew.ft:player_gift_receiving=礼物盒	### Players get this item when a
 item.noxcrew.ft:disco_ball=迪斯科球	###
 item.noxcrew.ft:beach_ball=沙滩球	###
 item.noxcrew.ft:balloon_helium=氦气球	###
-item.noxcrew.ft:leave_game=§6 离开游戏	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+item.noxcrew.ft:leave_game=§6离开游戏	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
 item.noxcrew.ft:pizza_slice=小块披萨	###
 item.noxcrew.ft:mcc_burger=美味汉堡	###
 item.noxcrew.ft:anniversary_hot_dog=美味热狗	###
@@ -330,14 +330,14 @@ entity.noxcrew.ft:md_zombie_baby.name=僵尸宝宝	###
 
 ##MESSAGES
 ##Misc
-txt.misc.msg1=§6 §l ！§r §o 那颗珍珠正在神秘地上下浮动...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
-txt.misc.msg2=§6 §l ！§r 你发现了一个洞穴谜题！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg1=§6§l！§r§o那颗珍珠正在神秘地上下浮动...	### **Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg2=§6§l！§r 你发现了一个洞穴谜题！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
 txt.misc.msg3=正在等待玩家...	###
 txt.misc.msg4=游戏开始倒计时 	###
 txt.misc.msg5=你即将被传送	###
-txt.misc.msg6_1=§6 §l ！§r %s给了你一份礼物！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
-txt.misc.msg6_2=§6 §l ！§r 你给了%s一份礼物！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
-txt.misc.msg6_3=§6§l！§r该玩家不能再接受另一份礼物	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_1=§6§l！§r %s给了你一份礼物！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_2=§6§l！§r 你给了%s一份礼物！	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
+txt.misc.msg6_3=§6§l！§r 该玩家不能再接受另一份礼物	###**Contains Minecraft formatting codes (§ followed by one character). Ensure they are kept in the translation!**
 txt.misc.msg7= 鞘翅已装备 	###Contains unicode symbols, ensure they remain in the translation.
 txt.misc.msg8= §e已完成一个谜题阶段...	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**
 txt.misc.msg9= §a你已完成一个洞穴谜题！	###**Contains Minecraft formatting codes (§ followed by one character) and unicode symbols, ensure they remain in the translation.**

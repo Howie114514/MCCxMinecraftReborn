@@ -13,7 +13,34 @@
             { "text": "\n\n" },
             { "translate": "txt.jagnes.2_0.dia3" }
           ]
+        },
+        "on_open_commands":[
+          "/playsound jagnes.2_0 @initiator"
+        ],
+        "on_close_commands": [
+          "/stopsound @initiator jagnes.2_0"
+        ],
+        "buttons": [
+          {
+            "name":{
+              "rawtext": [
+                {"translate": "txt.button.cave_mystery_q"}
+              ]
+            },
+            "commands":[
+              "/dialogue open @s @initiator cave_mystery"
+            ]
+          },
+          {"name":{
+            "rawtext": [
+              {"translate": "txt.button.go_to_portal"}
+            ]
+          },
+          "commands": [
+            "/dialogue open @s @initiator go_to_portal"
+          ]
         }
+        ]
       },
       {
         "scene_tag": "cave_mystery",
@@ -26,7 +53,33 @@
             { "text": "\n\n" },
             { "translate": "txt.jagnes.3_0.dia3" }
           ]
-        }
+        },
+        "on_open_commands": [
+          "/playsound jagnes.3_0 @initiator"
+        ],
+        "on_close_commands": [
+          "/stopsound @initiator jagnes.3_0"
+        ],
+        "buttons": [
+          {"name":{
+            "rawtext": [
+              {"translate": "txt.button.what_games_q"}
+            ]
+          },
+          "commands": [
+            "/dialogue open @s @initiator what_games"
+          ]
+        },
+        {"name":{
+          "rawtext": [
+            {"translate": "txt.button.go_to_portal"}
+          ]
+        },
+        "commands": [
+          "/dialogue open @s @initiator go_to_portal"
+        ]
+      }
+        ]
       },
       {
         "scene_tag": "go_to_portal",
