@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "join_queue",
+        "npc_name": { "rawtext": [{ "translate": "txt.title.join_queue" }] },
+        "text": {
+          "rawtext": []
+        }
+      }
+    ]
+  }
+}

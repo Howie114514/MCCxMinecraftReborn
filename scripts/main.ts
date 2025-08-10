@@ -570,10 +570,16 @@ system.beforeEvents.startup.subscribe((ev) => {
         joinGame(ev.damagingEntity as Player);
       }
     });
-    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+    world.beforeEvents.playerInteractWithEntity.subscribe((ev) => {
       if (ev.target.typeId == "noxcrew.ft:start_button") {
-        joinGame(ev.player);
+        ev.cancel = true;
+        system.run(() => {
+          ev.target.playAnimation("animation.n.start_button.interact");
+          joinGame(ev.player);
+        });
       }
+    });
+    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
       if (ev.target.typeId == "noxcrew.ft:vendor_mascot") {
         vendor_mascot()
           .body(`\ue17b${getCoins(ev.player)}`)
