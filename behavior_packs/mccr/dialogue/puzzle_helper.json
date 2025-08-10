@@ -1,0 +1,337 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "left_wall",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help.wall1.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help.wall1.dia2"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help.wall1.dia3"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.day1" }]
+            },
+            "commands": ["/dialogue open @s @initiator day1"]
+          },
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.day2" }]
+            },
+            "commands": ["/dialogue open @s @initiator day2"]
+          },
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.day3" }]
+            },
+            "commands": ["/dialogue open @s @initiator day3"]
+          },
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @e[type=noxcrew.ft:hieroglyph_helper] @initiator"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "middle_wall",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help.wall2.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help.wall2.dia2"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help.wall2.dia3"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.day4" }]
+            },
+            "commands": ["/dialogue open @s @initiator day4"]
+          },
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.day5" }]
+            },
+            "commands": ["/dialogue open @s @initiator day5"]
+          },
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @e[type=noxcrew.ft:hieroglyph_helper] @initiator"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "right_wall",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help.wall3.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help.wall3.dia2"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help.wall3.dia3"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.day6" }]
+            },
+            "commands": ["/dialogue open @s @initiator day6"]
+          },
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.day7" }]
+            },
+            "commands": ["/dialogue open @s @initiator day7"]
+          },
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @e[type=noxcrew.ft:hieroglyph_helper] @initiator"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "day1",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help_day1.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help_day1.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator left_wall"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "day2",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help_day2.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help_day2.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator left_wall"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "day3",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help_day3.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help_day3.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator left_wall"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "day4",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help_day4.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help_day4.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator middle_wall"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "day5",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help_day5.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help_day5.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator middle_wall"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "day6",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help_day6.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help_day6.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator right_wall"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "day7",
+        "npc_name": {
+          "rawtext": [{ "translate": "txt.puzzle_help.title" }]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "translate": "txt.puzzle_help_day7.dia1"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "txt.puzzle_help_day7.dia2"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator right_wall"]
+          }
+        ]
+      }
+    ]
+  }
+}
