@@ -594,6 +594,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               ev.player.runCommand("scriptevent mccr:remove_coins 250");
               ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats));
               sound.play(ev.player, "purchase", {});
+              inventory.save(ev.player);
             }
           });
       }
@@ -625,6 +626,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               ev.player.runCommand("scriptevent mccr:remove_coins 300");
               ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats1));
               sound.play(ev.player, "purchase", {});
+              inventory.save(ev.player);
             }
           });
       }
@@ -658,6 +660,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               give(ev.player, new ItemStack(foods[v.selection as number]));
               ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
               sound.play(ev.player, "purchase", {});
+              inventory.save(ev.player);
             }
           });
       }
@@ -697,6 +700,7 @@ system.beforeEvents.startup.subscribe((ev) => {
               give(ev.player, new ItemStack(toys[v.selection as number]));
               ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
               sound.play(ev.player, "purchase", {});
+              inventory.save(ev.player);
             }
           });
       }
@@ -1183,6 +1187,7 @@ system.beforeEvents.startup.subscribe((ev) => {
           useItem(ev.source, ev.itemStack);
           give(ev.source, new ItemStack(choice(items)));
           if (getHat(ev.source)?.typeId == "noxcrew.ft:beanie_lime") challenges.lime.recordProgesss(ev.source, 1);
+          inventory.save(ev.source);
           break;
       }
     });
