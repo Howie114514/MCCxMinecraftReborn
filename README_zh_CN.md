@@ -19,7 +19,7 @@
 
 ---
 
-### 计划(8/12)
+### 计划
 
 ##### ✅ 游戏
 
@@ -29,18 +29,14 @@
 - [x] 熔毁（待完善）
 - [x] 网格跑者
 
-##### ⚠️ 功能
+##### ✅ 功能
 
 - [x] 食物
 - [x] 装扮
 - [x] 金币
-- [ ] 谜题（部分）
-- [ ] 玩具（部分）
-- [ ] NPC 对话（部分）
-
-##### ⚠️ 技术性
-
-- [ ] Levilamina 插件（待重构）
+- [x] 谜题
+- [x] 玩具
+- [x] NPC 对话
 
 ---
 
@@ -49,4 +45,11 @@
 `npm run dev` - 进入 watch 模式，观察文件变化并进行更新<br><br>
 `npm run release` - 导出<br><br>
 `npm run sync` - 同步世界文件<br><br>
-`rm .\\node_modules\\@minecraft\\server-ui\\node_modules\\ -Recurse` - 移除 server-ui 中的 node_modules 文件，防止版本不兼容
+
+---
+
+### 贡献者
+
+<a href="https://github.com/Howie114514/MCCxMinecraftReborn/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Howie114514/MCCxMinecraftReborn" />
+</a>

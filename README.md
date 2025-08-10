@@ -31,18 +31,14 @@ A project that revitalizes the MCC x Minecraft 15th Anniversary server map by ad
 - [x] Meltdown(Needs improvement)
 - [x] Grid Runners
 
-##### ⚠️ Features
+##### ✅ Features
 
 - [x] Food
 - [x] Decorations
 - [x] Coins
 - [x] Puzzles
 - [x] Toys
-- [ ] NPC
-
-##### ⚠️ Technical
-
-~~- [ ] Plugin~~
+- [x] NPC
 
 ---
 
