@@ -1,0 +1,101 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "what_games",
+        "npc_name": { "rawtext": [{ "translate": "txt.title.dia.jagnes" }] },
+        "text": {
+          "rawtext": [
+            { "translate": "txt.jagnes.2_0.dia1" },
+            { "text": "\n\n" },
+            { "translate": "txt.jagnes.2_0.dia2" },
+            { "text": "\n\n" },
+            { "translate": "txt.jagnes.2_0.dia3" }
+          ]
+        },
+        "on_open_commands":[
+          "/playsound jagnes.2_0 @initiator"
+        ],
+        "on_close_commands": [
+          "/stopsound @initiator jagnes.2_0"
+        ],
+        "buttons": [
+          {
+            "name":{
+              "rawtext": [
+                {"translate": "txt.button.cave_mystery_q"}
+              ]
+            },
+            "commands":[
+              "/dialogue open @s @initiator cave_mystery"
+            ]
+          },
+          {"name":{
+            "rawtext": [
+              {"translate": "txt.button.go_to_portal"}
+            ]
+          },
+          "commands": [
+            "/dialogue open @s @initiator go_to_portal"
+          ]
+        }
+        ]
+      },
+      {
+        "scene_tag": "cave_mystery",
+        "npc_name": { "rawtext": [{ "translate": "txt.title.dia.jagnes" }] },
+        "text": {
+          "rawtext": [
+            { "translate": "txt.jagnes.3_0.dia1" },
+            { "text": "\n\n" },
+            { "translate": "txt.jagnes.3_0.dia2" },
+            { "text": "\n\n" },
+            { "translate": "txt.jagnes.3_0.dia3" }
+          ]
+        },
+        "on_open_commands": [
+          "/playsound jagnes.3_0 @initiator"
+        ],
+        "on_close_commands": [
+          "/stopsound @initiator jagnes.3_0"
+        ],
+        "buttons": [
+          {"name":{
+            "rawtext": [
+              {"translate": "txt.button.what_games_q"}
+            ]
+          },
+          "commands": [
+            "/dialogue open @s @initiator what_games"
+          ]
+        },
+        {"name":{
+          "rawtext": [
+            {"translate": "txt.button.go_to_portal"}
+          ]
+        },
+        "commands": [
+          "/dialogue open @s @initiator go_to_portal"
+        ]
+      }
+        ]
+      },
+      {
+        "scene_tag": "go_to_portal",
+        "npc_name": { "rawtext": [{ "translate": "txt.title.dia.jagnes" }] },
+        "text": {
+          "rawtext": [
+            { "translate": "txt.jagnes.4_0.dia1" },
+            { "text": "\n\n" },
+            { "translate": "txt.jagnes.4_0.dia2" },
+            { "text": "\n\n" },
+            { "translate": "txt.jagnes.4_0.dia3" },
+            { "text": "\n\n" },
+            { "translate": "txt.jagnes.4_0.dia4" }
+          ]
+        }
+      }
+    ]
+  }
+}
