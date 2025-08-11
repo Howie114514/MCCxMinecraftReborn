@@ -57,11 +57,12 @@
             },
             "commands": ["/dialogue open @s @initiator ace_3_5"]
           },
-          {"name":{
-            "rawtext": [{
-              "translate": "txt.button.close"}]
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator"]
           }
-         }
         ],
         "on_open_commands": [
           "/playsound creator_ace.3_0 @initiator"
@@ -89,19 +90,23 @@
           "/stopsound @initiator creator_ace.2_0"
         ],
         "buttons": [
-          {"name":{
-            "rawtext": [
-                {"translate": "txt.button.start_game"}]
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.start_game" }]
+            },
+            "commands": ["/tp @initiator 4243 60 2119 facing 4241 60 2119"]
           },
-          "commands": ["/tp @initiator 4243 60 2119 facing 4241 60 2119"]
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator"]
           },
-          {"name":{
-            "rawtext": [
-              {"translate": "txt.button.who_are_you_q"}]
-          },
-          "commands": [
-            "/dialogue open @s @initiator ace_desc"]
-        }
+          {
+            "name": {
+              "rawtext": [{ "translate": "txt.button.close" }]
+            }
+          }
         ]
       },
       {
