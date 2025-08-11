@@ -1138,36 +1138,39 @@ system.beforeEvents.startup.subscribe((ev) => {
       }
     });
     //#region toys
-    world.afterEvents.itemUse.subscribe((ev) => {
-      let entity = ev.source.getEntitiesFromViewDirection({ type: "minecraft:player", maxDistance: 3.5 });
-      if (entity[0]) {
-        let target = entity[0].entity as Player;
-        switch (ev.itemStack.typeId) {
+    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+      if (ev.target instanceof Player) {
+        let target = ev.target;
+        switch (ev.itemStack?.typeId) {
           case "noxcrew.ft:player_gift_giving": {
-            useItem(ev.source, ev.itemStack);
+            useItem(ev.player, ev.itemStack);
             target
               .getComponent(EntityComponentTypes.Inventory)
               ?.container.addItem(new ItemStack("noxcrew.ft:player_gift_receiving"));
 
-            if (getHat(ev.source)?.typeId == "noxcrew.ft:beanie_lime") challenges.lime.recordProgesss(ev.source, 1);
-            target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.source.name));
-            ev.source.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
+            if (getHat(ev.player)?.typeId == "noxcrew.ft:beanie_lime") challenges.lime.recordProgesss(ev.player, 1);
+            target.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_1", ev.player.name));
+            ev.player.onScreenDisplay.setActionBar(new Text().tr("txt.misc.msg6_2", target.name));
             break;
           }
           case "noxcrew.ft:confetti_tag_prime": {
-            useItem(ev.source, ev.itemStack);
-            let target = entity[0].entity as Player;
+            useItem(ev.player, ev.itemStack);
             world.getDimension("overworld").spawnParticle("noxcrew.ft:party_popper", target.location);
             break;
           }
           case "noxcrew.ft:pizza_box": {
             let d = ev.itemStack.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent;
-            if (d?.damage == d?.maxDurability) useItem(ev.source, ev.itemStack);
+            if (d?.damage == d?.maxDurability) useItem(ev.player, ev.itemStack);
             else d.damage += 1;
             give(target, new ItemStack("noxcrew.ft:pizza_slice"));
             break;
           }
         }
+      }
+    });
+    world.afterEvents.itemUse.subscribe((ev) => {
+      let entity = ev.source.getEntitiesFromViewDirection({ type: "minecraft:player", maxDistance: 3.5 });
+      if (entity[0]) {
       }
     });
     world.afterEvents.entityHitEntity.subscribe((ev) => {
