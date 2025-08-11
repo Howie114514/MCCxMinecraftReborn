@@ -59,12 +59,9 @@
           },
           {
             "name": {
-              "rawtext": [
-                {
-                  "translate": "txt.button.close"
-                }
-              ]
-            }
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator"]
           }
         ],
         "on_open_commands": ["/playsound creator_grid.3_0 @initiator"],
@@ -87,15 +84,20 @@
         "buttons": [
           {
             "name": {
-              "rawtext": [{ "translate": "txt.button.start_game" }]
+              "rawtext": [{ "translate": "txt.button.join_queue" }]
             },
             "commands": ["/execute as @initiator run scriptevent mccr:join"]
           },
           {
             "name": {
-              "rawtext": [{ "translate": "txt.button.who_are_you_q" }]
+              "rawtext": [{ "translate": "txt.button.back" }]
             },
-            "commands": ["/dialogue open @s @initiator grid_desc"]
+            "commands": ["/dialogue open @s @initiator"]
+          },
+          {
+            "name": {
+              "rawtext": [{"translate": "txt.button.close"}]
+            }
           }
         ]
       },
