@@ -149,7 +149,7 @@ export class AceRace extends BasicGame {
           : 100;
       addCoins(p, c);
       let isNewRecord = record.update(p, "ar", timems);
-      showARCompleteToast(p, c, formatTime(timems), t, isNewRecord, formatTime(timems));
+      showARCompleteToast(p, c, formatTime(timems), t, isNewRecord, formatTime(record.get(p, "ar")));
 
       super.player_finish(p);
     }
