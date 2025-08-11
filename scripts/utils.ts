@@ -17,7 +17,7 @@ import {
 } from "@minecraft/server";
 import { Logger } from "./logger";
 import { Text } from "./text";
-import { BasicGame } from "./game";
+import { BasicGame, ComplexGame } from "./game";
 import { sound } from "./sound";
 
 export function vaildateNum(n: number) {
@@ -218,4 +218,10 @@ export function fillString(s: string, length: number, placeholder = "~") {
 export function isInventoryFull(p: Player) {
   let c = p.getComponent(EntityComponentTypes.Inventory);
   return c?.container.firstEmptySlot() == undefined;
+}
+
+export function updateIsFirstJoin(p: Player, game: ComplexGame | BasicGame) {
+  let r: boolean = (p.getDynamicProperty(`mccr.played:${game.name}`) ?? false) as boolean;
+  p.setDynamicProperty(`mccr.played:${game.name}`, true);
+  return !r;
 }

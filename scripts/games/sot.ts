@@ -155,7 +155,7 @@ export class SandsOfTime extends BasicGame {
         });
     });
   }
-
+  prompt_id: string = "sands";
   collect_events: Record<string, SOTItem> = {
     "noxcrew.ft:coin_stack": {
       collectSound: "smallcoins",

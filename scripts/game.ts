@@ -1,7 +1,7 @@
 import { EquipmentSlot, ItemLockMode, ItemStack, Player, RawMessage, system, world } from "@minecraft/server";
 import { showLobbyGameBar } from "./ui/gamebar";
 import { gameInstances } from "./games/gameInstance";
-import { forIn, forInAsync, playerByName } from "./utils";
+import { forIn, forInAsync, playerByName, updateIsFirstJoin } from "./utils";
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
 import { coordinates } from "./main";
 import { tr } from "./lang";
@@ -49,8 +49,11 @@ export class BasicGame {
   setProperty<T extends string | number | boolean>(id: string, value: T) {
     world.setDynamicProperty(`mccr.${this.name}:${id}`, value);
   }
+  prompt_id = "unknown";
   addPlayer(p: Player) {
     if (p.getDynamicProperty("mccr:is_leaving")) return;
+    if (this.name != "lobby" && updateIsFirstJoin(p, this))
+      p.sendMessage(new Text().tr(`txt.tut.${this.prompt_id}_prompt`));
     if (!this.players[p.name]) {
       this.players[p.name] = p;
       let o = p.getDynamicProperty("mccr:game") as string;
@@ -262,6 +265,11 @@ export class ComplexGame {
       }
     }, 3);
     system.runInterval(() => {
+      this.queue.items.forEach((p) => {
+        playerByName(p)?.playSound("queue_joining");
+      });
+    }, 100);
+    system.runInterval(() => {
       this.tick++;
       if (this.countdown_timer > -1) this.countdown_timer--;
       if (world.getAllPlayers().length > 0) {
@@ -281,7 +289,9 @@ export class ComplexGame {
                   new Text().tr("txt.matchmaking.status.teleporting", cdSeconds.toString())
                 );
                 if (cdSeconds == 5) sound.play(p as Player, "queue_success", {});
-                sound.play(p as Player, "queue_countdown", {});
+                else {
+                  sound.play(p as Player, "queue_countdown", {});
+                }
               });
             }
           }
@@ -318,19 +328,26 @@ export class ComplexGame {
   addPlayer(p: Player) {
     if (!this.queue.items.includes(p.name)) {
       this.queue.enqueue(p.name);
-      p.sendMessage("你加入了队列");
+      //p.sendMessage("你加入了队列");
     }
   }
+  prompt_id: string = "unknown";
   start() {
-    this.queue.next().forEach((p) => {
-      let player = playerByName(p);
-      if (!player) return;
-      this.players[p] = player;
-      inventory.save(player);
-      this.queue.remove(p);
-      player.sendMessage("你已加入游戏");
-      player.setDynamicProperty("mccr:game", this.name);
-      player.playMusic(this.music, { loop: true });
+    this.queue.next().forEach((pn) => {
+      let p = playerByName(pn);
+      if (!p) return;
+      if (updateIsFirstJoin(p, this)) p.sendMessage(new Text().tr(`txt.tut.${this.prompt_id}_prompt`));
+      sound.play(p, "queue_teleport", {});
+      this.players[pn] = p;
+      inventory.save(p);
+      this.queue.remove(pn);
+      //player.sendMessage("你已加入游戏");
+      p.setDynamicProperty("mccr:game", this.name);
+      p.playMusic(this.music, { loop: true });
+      p.camera.fade({
+        fadeColor: { red: 0, blue: 0, green: 0 },
+        fadeTime: { fadeInTime: 0.1, fadeOutTime: 1, holdTime: 0.2 },
+      });
     });
     //system.runTimeout(() => this.end(), 100);
     this.started = true;

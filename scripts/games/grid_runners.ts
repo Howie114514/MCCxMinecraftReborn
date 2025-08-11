@@ -571,6 +571,7 @@ export interface GRPlayerData {
 export class GridRunners extends ComplexGame {
   music: FTSounds = "music_gr";
   name: string = "grid_runners";
+  prompt_id: string = "grid1";
   player_data: Record<string, GRPlayerData> = {};
   currentLevelId = 0;
   levels = [new Level0(this), new Level1(this), new Level2(this), new Level3(this), new Level4(this)];

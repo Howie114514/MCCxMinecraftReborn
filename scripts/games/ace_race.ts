@@ -41,6 +41,7 @@ export interface ARPlayerStats {
 export class AceRace extends BasicGame {
   name = "ace_race";
   music = "music_ar";
+  prompt_id: string = "ace";
   timer: Record<string, number> = {};
   stats: Record<string, ARPlayerStats> = {};
   spawnpoints: Record<string, number> = {};

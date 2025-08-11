@@ -59,7 +59,6 @@ class MDRoom {
   isValid: boolean = false;
   volume: BlockVolumeArguments;
   id = 0;
-  gameUid = 0;
   time;
   anim_tick = 0;
   melt_tick = 0;
@@ -105,18 +104,20 @@ class MDRoom {
     this.isValid = true;
     this.restTime = this.time;
     //let uid = this.gameUid;
-    this.gameUid = this.meltdown.gameUniqueId;
+    let gameUid = this.meltdown.gameUniqueId;
     this.meltdown.loadStructure(this.id);
     world
       .getDimension("overworld")
       .getEntities({ tags: ["md_room_" + this.id.toString()] })
       .forEach((e) => e.remove());
     this.closeDoor();
+    Logger.info(gameUid);
     system.runTimeout(() => {
-      if (this.meltdown.inTheSameGame(this.gameUid)) {
+      Logger.info(gameUid);
+      if (this.meltdown.inTheSameGame(gameUid)) {
         this.openDoor();
         this.melt();
-      }
+      } else Logger.info("Canceled");
     }, Math.max(this.time - 31 * TicksPerSecond, 0));
     Logger.info("初始化熔毁房间：", this.id);
     Logger.info("调用栈：", new Error().stack);
@@ -148,7 +149,8 @@ class MDRoom {
     });
 
     system.runJob(
-      (function* (thisarg: MDRoom) {
+      function* (this: MDRoom) {
+        let gameUid = this.meltdown.gameUniqueId;
         let size = bv.getSpan();
         let sections: BlockVolume[] = [];
         let sectionSizeX = size.x / 5;
@@ -180,16 +182,16 @@ class MDRoom {
           }, (i / sections.length) * 25 * TicksPerSecond);
           */
           let t = (Math.random() > 0.5 ? 5 : 10) * TicksPerSecond;
-          if (hardcoded_melt_order[thisarg.id]?.includes(i)) {
+          if (hardcoded_melt_order[this.id]?.includes(i)) {
             t = 20 * TicksPerSecond;
           }
           system.runTimeout(() => {
-            if (thisarg.meltdown.inTheSameGame(thisarg.gameUid) && thisarg.isMelting) {
+            if (this.meltdown.inTheSameGame(gameUid) && this.isMelting) {
               fill(section, "noxcrew.ft:md_a", {
                 blockFilter: { excludeTypes: [MinecraftBlockTypes.Air, "minecraft:light_block"] },
               });
               system.runTimeout(() => {
-                if (thisarg.meltdown.inTheSameGame(thisarg.gameUid) && thisarg.isMelting)
+                if (this.meltdown.inTheSameGame(gameUid) && this.isMelting)
                   fill(section, MinecraftBlockTypes.Air, {
                     blockFilter: { includeTypes: ["noxcrew.ft:md_a"] },
                   });
@@ -203,11 +205,11 @@ class MDRoom {
           () =>
             world
               .getDimension("overworld")
-              .getEntities({ tags: ["md_room_" + thisarg.id.toString()] })
+              .getEntities({ tags: ["md_room_" + this.id.toString()] })
               .forEach((e) => e.remove()),
           30 * TicksPerSecond
         );
-      })(this)
+      }.apply(this)
     );
   }
 }
@@ -231,6 +233,7 @@ export class Meltdown extends ComplexGame {
   ];
   gameUniqueId = 0;
   isStarting: boolean = false;
+  prompt_id: string = "melt";
   constructor() {
     super();
     //this.recover();
@@ -335,7 +338,7 @@ export class Meltdown extends ComplexGame {
     //this.recover();
     super.start();
 
-    this.gameUniqueId = new Date().getUTCDate();
+    this.gameUniqueId = Date.now();
     this.rooms[0].setup();
     forIn(this.players, (p) => {
       p.teleport(points.start);
