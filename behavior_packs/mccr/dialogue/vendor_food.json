@@ -1,0 +1,1 @@
+{"format_version": "1.21.50", "minecraft:npc_dialogue": {"scenes": [{"scene_tag": "vendor_food", "npc_name": {"rawtext": [{"translate": "entity.noxcrew.ft:vendor_food.name"}]}, "text": {"rawtext": []}}]}}

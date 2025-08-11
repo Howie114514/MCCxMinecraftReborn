@@ -593,136 +593,141 @@ system.beforeEvents.startup.subscribe((ev) => {
         });
       }
     });
-    world.afterEvents.playerInteractWithEntity.subscribe((ev) => {
-      if (ev.target.typeId == "noxcrew.ft:vendor_mascot") {
-        vendor_mascot()
-          .body(`\ue17b${getCoins(ev.player)}`)
-          .show(ev.player)
-          .then((v) => {
-            let colors = ["aqua", "blue", "cyan", "green", "lime", "orange", "pink", "purple", "red", "yellow"];
-            if (!v.canceled) {
-              let hats: string[] = JSON.parse((ev.player.getDynamicProperty("mccr:hats") ?? "[]") as string);
-              if (hats.includes("noxcrew.ft:beanie_" + colors[v.selection ?? 0])) {
-                showSubTitle(ev.player, tr("txt.error.msg3"));
-                return;
-              }
-              if ((ev.player.getDynamicProperty("mccr:coins") as number) < 250) {
-                showSubTitle(ev.player, tr("txt.error.msg1"));
-                return;
-              }
-              hats.push("noxcrew.ft:beanie_" + colors[v.selection ?? 0]);
-              ev.player.runCommand("scriptevent mccr:remove_coins 250");
-              ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats));
-              sound.play(ev.player, "purchase", {});
-              inventory.save(ev.player);
-            }
-          });
-      }
-      if (ev.target.typeId == "noxcrew.ft:vendor_hat") {
-        let hats = [
-          "noxcrew.ft:hat_birthday_present",
-          "noxcrew.ft:hat_boombox",
-          "noxcrew.ft:hat_chicken_jockey",
-          "noxcrew.ft:hat_crown_cake",
-          "noxcrew.ft:hat_jester",
-          "noxcrew.ft:hat_party",
-          "noxcrew.ft:hat_propeller",
-        ];
-        vendor_hat(hats)
-          .body(`\ue17b${getCoins(ev.player)}`)
-          .show(ev.player)
-          .then((v) => {
-            if (!v.canceled) {
-              let hats1: string[] = JSON.parse((ev.player.getDynamicProperty("mccr:hats") ?? "[]") as string);
-              if (hats1.includes(hats[v.selection ?? 0])) {
-                showSubTitle(ev.player, tr("txt.error.msg3"));
-                return;
-              }
-              if ((ev.player.getDynamicProperty("mccr:coins") as number) < 300) {
-                showSubTitle(ev.player, tr("txt.error.msg1"));
-                return;
-              }
-              hats1.push(hats[v.selection ?? 0]);
-              ev.player.runCommand("scriptevent mccr:remove_coins 300");
-              ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats1));
-              sound.play(ev.player, "purchase", {});
-              inventory.save(ev.player);
-            }
-          });
-      }
-      if (ev.target.typeId == "noxcrew.ft:vendor_food") {
-        let foods = [
-          "noxcrew.ft:anniversary_hot_dog",
-          "noxcrew.ft:party_soda",
-          "noxcrew.ft:cotton_candy",
-          "noxcrew.ft:popcorn",
-          "noxcrew.ft:mcc_burger",
-          "noxcrew.ft:party_cupcake",
-          "noxcrew.ft:party_cake",
-          "noxcrew.ft:party_chips",
-          "noxcrew.ft:party_cookie",
-          "noxcrew.ft:super_wrap",
-        ];
-        let price = [10, 10, 10, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20];
-        vendor_food(foods, price)
-          .body(`\ue17b${getCoins(ev.player)}`)
-          .show(ev.player)
-          .then((v) => {
-            if (!v.canceled) {
-              if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
-                showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
-                return;
-              }
-              if (isInventoryFull(ev.player)) {
-                showSubTitle(ev.player, new Text().tr("txt.error.msg2"));
-                return;
-              }
-              give(ev.player, new ItemStack(foods[v.selection as number]));
-              ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
-              sound.play(ev.player, "purchase", {});
-              inventory.save(ev.player);
-            }
-          });
-      }
+    world.beforeEvents.playerInteractWithEntity.subscribe((ev) => {
+      if (/^noxcrew.ft:vendor_.*/.test(ev.target.typeId)) {
+        ev.cancel = true;
+        system.run(() => {
+          if (ev.target.typeId == "noxcrew.ft:vendor_mascot") {
+            vendor_mascot()
+              .body(`\ue17b${getCoins(ev.player)}`)
+              .show(ev.player)
+              .then((v) => {
+                let colors = ["aqua", "blue", "cyan", "green", "lime", "orange", "pink", "purple", "red", "yellow"];
+                if (!v.canceled) {
+                  let hats: string[] = JSON.parse((ev.player.getDynamicProperty("mccr:hats") ?? "[]") as string);
+                  if (hats.includes("noxcrew.ft:beanie_" + colors[v.selection ?? 0])) {
+                    showSubTitle(ev.player, tr("txt.error.msg3"));
+                    return;
+                  }
+                  if ((ev.player.getDynamicProperty("mccr:coins") as number) < 250) {
+                    showSubTitle(ev.player, tr("txt.error.msg1"));
+                    return;
+                  }
+                  hats.push("noxcrew.ft:beanie_" + colors[v.selection ?? 0]);
+                  ev.player.runCommand("scriptevent mccr:remove_coins 250");
+                  ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats));
+                  sound.play(ev.player, "purchase", {});
+                  inventory.save(ev.player);
+                }
+              });
+          }
+          if (ev.target.typeId == "noxcrew.ft:vendor_hat") {
+            let hats = [
+              "noxcrew.ft:hat_birthday_present",
+              "noxcrew.ft:hat_boombox",
+              "noxcrew.ft:hat_chicken_jockey",
+              "noxcrew.ft:hat_crown_cake",
+              "noxcrew.ft:hat_jester",
+              "noxcrew.ft:hat_party",
+              "noxcrew.ft:hat_propeller",
+            ];
+            vendor_hat(hats)
+              .body(`\ue17b${getCoins(ev.player)}`)
+              .show(ev.player)
+              .then((v) => {
+                if (!v.canceled) {
+                  let hats1: string[] = JSON.parse((ev.player.getDynamicProperty("mccr:hats") ?? "[]") as string);
+                  if (hats1.includes(hats[v.selection ?? 0])) {
+                    showSubTitle(ev.player, tr("txt.error.msg3"));
+                    return;
+                  }
+                  if ((ev.player.getDynamicProperty("mccr:coins") as number) < 300) {
+                    showSubTitle(ev.player, tr("txt.error.msg1"));
+                    return;
+                  }
+                  hats1.push(hats[v.selection ?? 0]);
+                  ev.player.runCommand("scriptevent mccr:remove_coins 300");
+                  ev.player.setDynamicProperty("mccr:hats", JSON.stringify(hats1));
+                  sound.play(ev.player, "purchase", {});
+                  inventory.save(ev.player);
+                }
+              });
+          }
+          if (ev.target.typeId == "noxcrew.ft:vendor_food") {
+            let foods = [
+              "noxcrew.ft:anniversary_hot_dog",
+              "noxcrew.ft:party_soda",
+              "noxcrew.ft:cotton_candy",
+              "noxcrew.ft:popcorn",
+              "noxcrew.ft:mcc_burger",
+              "noxcrew.ft:party_cupcake",
+              "noxcrew.ft:party_cake",
+              "noxcrew.ft:party_chips",
+              "noxcrew.ft:party_cookie",
+              "noxcrew.ft:super_wrap",
+            ];
+            let price = [10, 10, 10, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20];
+            vendor_food(foods, price)
+              .body(`\ue17b${getCoins(ev.player)}`)
+              .show(ev.player)
+              .then((v) => {
+                if (!v.canceled) {
+                  if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
+                    showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
+                    return;
+                  }
+                  if (isInventoryFull(ev.player)) {
+                    showSubTitle(ev.player, new Text().tr("txt.error.msg2"));
+                    return;
+                  }
+                  give(ev.player, new ItemStack(foods[v.selection as number]));
+                  ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
+                  sound.play(ev.player, "purchase", {});
+                  inventory.save(ev.player);
+                }
+              });
+          }
 
-      /**
-       * 玩具商店代码由mc火燃贡献
-       */
-      if (ev.target.typeId == "noxcrew.ft:vendor_toys") {
-        let toys = [
-          "noxcrew.ft:foam_finger",
-          "noxcrew.ft:balloon_animal",
-          "noxcrew.ft:big_bubble_blower",
-          "noxcrew.ft:silly_horn",
-          "noxcrew.ft:party_popper",
-          "noxcrew.ft:confetti_tag_prime",
-          "noxcrew.ft:pizza_box",
-          "noxcrew.ft:celebration_fireworks",
-          "noxcrew.ft:player_gift_giving",
-          "noxcrew.ft:disco_ball",
-          "noxcrew.ft:beach_ball",
-          "noxcrew.ft:balloon_helium",
-        ];
-        let price = [60, 60, 60, 100, 40, 40, 80, 40, 100, 60, 60, 60];
-        vendor_toys(toys, price)
-          .body(`\ue17b${getCoins(ev.player)}`)
-          .show(ev.player)
-          .then((v) => {
-            if (!v.canceled) {
-              if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
-                showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
-                return;
-              }
-              if (isInventoryFull(ev.player)) {
-                showSubTitle(ev.player, new Text().tr("txt.error.msg2"));
-                return;
-              }
-              give(ev.player, new ItemStack(toys[v.selection as number]));
-              ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
-              sound.play(ev.player, "purchase", {});
-              inventory.save(ev.player);
-            }
-          });
+          /**
+           * 玩具商店代码由mc火燃贡献
+           */
+          if (ev.target.typeId == "noxcrew.ft:vendor_toys") {
+            let toys = [
+              "noxcrew.ft:foam_finger",
+              "noxcrew.ft:balloon_animal",
+              "noxcrew.ft:big_bubble_blower",
+              "noxcrew.ft:silly_horn",
+              "noxcrew.ft:party_popper",
+              "noxcrew.ft:confetti_tag_prime",
+              "noxcrew.ft:pizza_box",
+              "noxcrew.ft:celebration_fireworks",
+              "noxcrew.ft:player_gift_giving",
+              "noxcrew.ft:disco_ball",
+              "noxcrew.ft:beach_ball",
+              "noxcrew.ft:balloon_helium",
+            ];
+            let price = [60, 60, 60, 100, 40, 40, 80, 40, 100, 60, 60, 60];
+            vendor_toys(toys, price)
+              .body(`\ue17b${getCoins(ev.player)}`)
+              .show(ev.player)
+              .then((v) => {
+                if (!v.canceled) {
+                  if ((ev.player.getDynamicProperty("mccr:coins") as number) < price[v.selection ?? 0]) {
+                    showSubTitle(ev.player, new Text().tr("txt.error.msg1"));
+                    return;
+                  }
+                  if (isInventoryFull(ev.player)) {
+                    showSubTitle(ev.player, new Text().tr("txt.error.msg2"));
+                    return;
+                  }
+                  give(ev.player, new ItemStack(toys[v.selection as number]));
+                  ev.player.runCommand("scriptevent mccr:remove_coins " + price[v.selection ?? 0].toString());
+                  sound.play(ev.player, "purchase", {});
+                  inventory.save(ev.player);
+                }
+              });
+          }
+        });
       }
     });
 
