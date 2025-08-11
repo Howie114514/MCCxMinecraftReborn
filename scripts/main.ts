@@ -182,6 +182,11 @@ export const coordinates: Record<string, Vector3> = {
     y: 110.0,
     z: 2131.0,
   },
+  lobby_center: {
+    x: 2143,
+    y: 109,
+    z: 2144,
+  },
 };
 export const coordinates_rotation: Record<string, Vector2> = {
   plobby2sot: {
@@ -235,6 +240,10 @@ export const coordinates_rotation: Record<string, Vector2> = {
   lobby: {
     x: 0,
     y: 90,
+  },
+  lobby_center: {
+    x: 0,
+    y: 45,
   },
 };
 
@@ -1001,7 +1010,9 @@ system.beforeEvents.startup.subscribe((ev) => {
               var p = ev.source;
               switch (v.selection) {
                 case 0:
-                  teleport(p, "lobby", here, coordinates.lobby, undefined, coordinates_rotation.lobby);
+                  if (gameInstances.lobby.getPlayerArea(p) == "lobby")
+                    teleport(p, "lobby", here, coordinates.lobby_center, undefined, coordinates_rotation.lobby_center);
+                  else teleport(p, "lobby", here, coordinates.lobby, undefined, coordinates_rotation.lobby);
                   break;
                 case 1:
                   teleport(p, "meltdown", here, coordinates.meltdown, undefined, coordinates_rotation.meltdown);
