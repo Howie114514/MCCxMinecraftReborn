@@ -59,12 +59,9 @@
           },
           {
             "name": {
-              "rawtext": [
-                {
-                  "translate": "txt.button.close"
-                }
-              ]
-            }
+              "rawtext": [{ "translate": "txt.button.back" }]
+            },
+            "commands": ["/dialogue open @s @initiator"]
           }
         ],
         "on_open_commands": ["/playsound creator_sands.3_0 @initiator"],
@@ -95,9 +92,14 @@
           },
           {
             "name": {
-              "rawtext": [{ "translate": "txt.button.who_are_you_q" }]
+              "rawtext": [{ "translate": "txt.button.back" }]
             },
-            "commands": ["/dialogue open @s @initiator sands_desc"]
+            "commands": ["/dialogue open @s @initiator"]
+          },
+          {
+            "name": {
+              "rawtext": [{"translate": "txt.button.close"}]
+            }
           }
         ]
       },
@@ -154,7 +156,8 @@
             { "translate": "txt.creator_sands.3_2.dia3" },
             { "text": "\n\n" },
             { "translate": "txt.creator_sands.3_2.dia4" },
-            { "text": "\n\n" }
+            { "text": "\n\n" },
+            { "translate": "txt.creator_sands.3_2.dia5" }
           ]
         },
         "buttons": [
@@ -300,3 +303,4 @@
     ]
   }
 }
+
