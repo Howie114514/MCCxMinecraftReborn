@@ -1,8 +1,7 @@
-/*
-{
+/*{
 	"namespace": "npc_interact",
 	"npc_screen_contents/teacher": {
-		"visible":false,
+		"visible": false,
 		"bindings": []
 	},
 	"npc_screen_contents/student": {
@@ -18,17 +17,17 @@
 		"type": "image",
 		"texture": "textures/ui/banners2"
 	},
-  // Point on the speach bubble, positioned right at the edge of the bubble pointing into the paper doll window
-  "bubble_point": {
-    "type": "image",
-    "texture": "textures/ui/dialog_bubble_point",
-    "size": [16, 18],
-    "layer": 6,
-    "anchor_from": "right_middle",
-    "anchor_to": "right_middle",
-    // Offset to be on just to the left of the text
-    "offset": ["-221px + 1px", 0]
-  },
+	// Point on the speach bubble, positioned right at the edge of the bubble pointing into the paper doll window
+	"bubble_point": {
+		"type": "image",
+		"texture": "textures/ui/dialog_bubble_point",
+		"size": [16, 18],
+		"layer": 6,
+		"anchor_from": "right_middle",
+		"anchor_to": "right_middle",
+		// Offset to be on just to the left of the text
+		"offset": ["-221px + 1px", 0]
+	},
 	"npc_screen_contents": {
 		"type": "panel",
 		"controls": [
