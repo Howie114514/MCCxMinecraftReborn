@@ -1303,6 +1303,7 @@ world.afterEvents.playerJoin.subscribe((ev) => {
 world.afterEvents.pressurePlatePush.subscribe((ev) => {
   if (Vector3Utils.equals(ev.block, { x: 2112, y: 102, z: 2167 })) {
     (ev.source as Player).onScreenDisplay?.setActionBar(new Text().tr("txt.misc.msg8"));
+    (ev.source as Player).playSound("hieroglyphics_solve");
   }
 });
 
