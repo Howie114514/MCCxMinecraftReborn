@@ -156,7 +156,8 @@
             { "translate": "txt.creator_sands.3_2.dia3" },
             { "text": "\n\n" },
             { "translate": "txt.creator_sands.3_2.dia4" },
-            { "text": "\n\n" }
+            { "text": "\n\n" },
+            { "translate": "txt.creator_sands.3_2.dia5" }
           ]
         },
         "buttons": [
@@ -302,3 +303,4 @@
     ]
   }
 }
+
