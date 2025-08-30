@@ -80,7 +80,8 @@
             { "translate": "txt.creator_ace.2_0.dia2" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.2_0.dia3" },
-            { "text": "\n\n" }
+            { "text": "\n\n" },
+            { "translate": "txt.creator_ace.2_0.dia4"}
           ]
         },
         "on_open_commands": [
@@ -114,15 +115,14 @@
         "text": {
           "rawtext": [
             { "translate": "txt.creator_ace.title_who1" },
-            { "text": "\n\n" },
+            { "text": "\n"},
             { "translate": "txt.creator_ace.3_1.dia1" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_1.dia2" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_1.dia3" },
             { "text": "\n\n" },
-            { "translate": "txt.creator_ace.3_1.dia4" },
-            { "text": "\n\n" }
+            { "translate": "txt.creator_ace.3_1.dia4" }
           ]
         },
         "buttons": [{"name":{
@@ -147,15 +147,14 @@
         "text": {
           "rawtext": [
             { "translate": "txt.creator_ace.title_who2" },
-            { "text": "\n\n" },
+            { "text": "\n"},
             { "translate": "txt.creator_ace.3_2.dia1" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_2.dia2" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_2.dia3" },
             { "text": "\n\n" },
-            { "translate": "txt.creator_ace.3_2.dia4" },
-            { "text": "\n\n" }
+            { "translate": "txt.creator_ace.3_2.dia4" }
           ]
         },
         "buttons": [{"name":{
@@ -180,13 +179,12 @@
         "text": {
           "rawtext": [
             { "translate": "txt.creator_ace.title_who3" },
-            { "text": "\n\n" },
+            { "text": "\n"},
             { "translate": "txt.creator_ace.3_3.dia1" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_3.dia2" },
             { "text": "\n\n" },
-            { "translate": "txt.creator_ace.3_3.dia3" },
-            { "text": "\n\n" }
+            { "translate": "txt.creator_ace.3_3.dia3" }
           ]
         },
         "buttons": [{"name":{
@@ -211,15 +209,14 @@
         "text": {
           "rawtext": [
             { "translate": "txt.creator_ace.title_who4" },
-            { "text": "\n\n" },
+            { "text": "\n"},
             { "translate": "txt.creator_ace.3_4.dia1" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_4.dia2" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_4.dia3" },
             { "text": "\n\n" },
-            { "translate": "txt.creator_ace.3_4.dia4" },
-            { "text": "\n\n" }
+            { "translate": "txt.creator_ace.3_4.dia4" }
           ]
         },
         "buttons": [{"name":{
@@ -244,15 +241,14 @@
         "text": {
           "rawtext": [
             { "translate": "txt.creator_ace.title_who5" },
-            { "text": "\n\n" },
+            { "text": "\n"},
             { "translate": "txt.creator_ace.3_5.dia1" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_5.dia2" },
             { "text": "\n\n" },
             { "translate": "txt.creator_ace.3_5.dia3" },
             { "text": "\n\n" },
-            { "translate": "txt.creator_ace.3_5.dia4" },
-            { "text": "\n\n" }
+            { "translate": "txt.creator_ace.3_5.dia4" }
           ]
         },
         "buttons": [{"name":{
