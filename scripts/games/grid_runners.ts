@@ -451,6 +451,7 @@ class Level3 extends GRLevel {
       });
     } else {
       this.updateCake();
+      this.game.player_data[p.name].stats.placedItems++;
       this.game.player_data[p.name].coins += 5;
 
       let slot = p.getComponent("equippable")?.getEquipmentSlot(EquipmentSlot.Mainhand);
@@ -819,7 +820,7 @@ export class GridRunners extends ComplexGame {
       sound.play(p, "music_gr_win", {});
       p.applyKnockback({ x: 4, z: 0 }, 0.5);
       challenges.gr.recordProgesss(p);
-      if (getHat(p)?.typeId == "noxcrew.ft:beanie_purple") challenges.purple.recordProgesss(p, d.cakes);
+      if (getHat(p)?.typeId == "noxcrew.ft:beanie_purple") challenges.purple.recordProgesss(p, d.stats.placedItems);
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_green") challenges.green.recordProgesss(p, d.painted);
       if (getHat(p)?.typeId == "noxcrew.ft:beanie_aqua" && d.stats.foundPearl) challenges.aqua.recordProgesss(p);
       super.player_finish(p);
