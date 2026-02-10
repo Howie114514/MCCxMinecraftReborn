@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: "3.13"
       - name: Install dependencies
-        run: npm i
+        run: npm i --force
       - name: Build
         env:
           BUILD_ID: ${{github.sha}}
