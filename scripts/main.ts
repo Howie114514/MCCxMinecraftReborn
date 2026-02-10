@@ -20,35 +20,18 @@ import {
   CustomCommandParamType,
   Entity,
   Block,
-  CommandResult,
   EntityComponentTypes,
-  InputButton,
   ItemComponentTypes,
   ItemDurabilityComponent,
   EntityQueryOptions,
-  ScriptEventSource,
-  EntityNpcComponent,
 } from "@minecraft/server";
-import { ActionFormData, FormCancelationReason, MessageFormData, ModalFormData } from "@minecraft/server-ui";
+import { ActionFormData, MessageFormData } from "@minecraft/server-ui";
 import flags from "./flags";
 import { Vector3Utils } from "./minecraft/math";
 import { Vec3Utils } from "./math";
 import { tr } from "./lang";
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
-import {
-  asPlayer,
-  choice,
-  createEntityPropertyProxy,
-  debounce,
-  forIn,
-  getHat,
-  give,
-  isInventoryFull,
-  random,
-  rgb,
-  runAfterStartup,
-  setFog,
-} from "./utils";
+import { choice, debounce, forIn, getHat, give, isInventoryFull, rgb, runAfterStartup, setFog } from "./utils";
 import {
   challenge_list,
   cosmetic_chest,
@@ -62,7 +45,7 @@ import { gameInstances } from "./games/gameInstance";
 import { addCoins, clearAllData, getCoins, setCoins } from "./gameData";
 import { Lobby } from "./game";
 import { puzzles } from "./puzzles/puzzle";
-import env, { envTypes } from "./environment";
+import env from "./environment";
 import { inventory } from "./inventory";
 import { Logger } from "./logger";
 import { blockCompoents, itemCompoents } from "./components";
