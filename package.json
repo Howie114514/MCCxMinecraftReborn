@@ -1,6 +1,6 @@
 {
   "name": "mccxminecraft-reborn",
-  "version": "1.0.0-rc.4-1.21.100",
+  "version": "1.0.0-1.21.132",
   "productName": "MCCxMinecraftReborn",
   "description": "A project that revitalizes the MCC x Minecraft 15th Anniversary server map by adding original gameplay functionalities to its existing structures.",
   "private": true,
@@ -28,8 +28,8 @@
     "postinstall": "node ./buildScripts/postinstall.js"
   },
   "dependencies": {
-    "@minecraft/server": "^2.3.0-beta.1.21.110-preview.22",
-    "@minecraft/server-ui": "2.1.0-beta.1.21.90-stable",
+    "@minecraft/server": "^2.5.0-beta.1.21.132-stable",
+    "@minecraft/server-ui": "^2.1.0-beta.1.21.132-stable",
     "@minecraft/vanilla-data": "1.21.70",
     "@types/node": "^22.15.27",
     "eventemitter3": "^5.0.1",

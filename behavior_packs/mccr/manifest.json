@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "name": "MCCxMinecraftReborn",
-    "description": "MCCxMinecraftReborn - v1.0.0-rc.3",
+    "description": "MCCxMinecraftReborn - v1.0.0-1.21.132",
     "uuid": "653b3ae1-4d4d-402b-bc03-b0d5bb5a07fc",
     "version": [1, 0, 0],
     "min_engine_version": [1, 20, 30]
@@ -26,7 +26,7 @@
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "2.2.0-beta"
+      "version": "2.5.0-beta"
     },
     {
       "module_name": "@minecraft/server-ui",
