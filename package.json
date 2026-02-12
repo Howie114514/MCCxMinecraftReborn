@@ -28,8 +28,8 @@
     "postinstall": "node ./buildScripts/postinstall.js"
   },
   "dependencies": {
-    "@minecraft/server": "^2.5.0-beta.1.21.132-stable",
-    "@minecraft/server-ui": "^2.1.0-beta.1.21.132-stable",
+    "@minecraft/server": "^2.6.0-beta.1.26.0-stable",
+    "@minecraft/server-ui": "^2.1.0-beta.1.26.0-stable",
     "@minecraft/vanilla-data": "1.21.70",
     "@types/node": "^22.15.27",
     "eventemitter3": "^5.0.1",
